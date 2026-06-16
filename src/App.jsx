@@ -1,0 +1,35 @@
+import { Routes, Route, Navigate } from 'react-router-dom'
+import { AuthProvider, useAuth } from './lib/AuthContext'
+import Login from './pages/Login'
+import Questoes from './pages/Questoes'
+import Perfil from './pages/Perfil'
+import Historico from './pages/Historico'
+import Layout from './components/Layout'
+
+function PrivateRoute({ children }) {
+  const { user, loading } = useAuth()
+  if (loading) return <div style={{ display:'flex', alignItems:'center', justifyContent:'center', height:'100vh', color:'#6b7280', fontSize:'14px' }}>Carregando...</div>
+  return user ? children : <Navigate to="/login" />
+}
+
+function AppRoutes() {
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<PrivateRoute><Layout /></PrivateRoute>}>
+        <Route index element={<Navigate to="/questoes" />} />
+        <Route path="questoes" element={<Questoes />} />
+        <Route path="perfil" element={<Perfil />} />
+        <Route path="historico" element={<Historico />} />
+      </Route>
+    </Routes>
+  )
+}
+
+export default function App() {
+  return (
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>
+  )
+}

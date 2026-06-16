@@ -1,0 +1,45 @@
+import { Outlet, NavLink, useNavigate } from 'react-router-dom'
+import { useAuth } from '../lib/AuthContext'
+import styles from './Layout.module.css'
+
+export default function Layout() {
+  const { user, signOut } = useAuth()
+  const navigate = useNavigate()
+  const nome = user?.user_metadata?.nome || user?.email?.split('@')[0] || 'Aluno'
+
+  async function handleSignOut() {
+    await signOut()
+    navigate('/login')
+  }
+
+  return (
+    <div className={styles.wrap}>
+      <nav className={styles.nav}>
+        <div className={styles.logo}>
+          <i className="ti ti-school" aria-hidden="true"></i>
+          Estuda<span>ENEM</span>
+        </div>
+        <div className={styles.tabs}>
+          <NavLink to="/questoes" className={({ isActive }) => isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
+            <i className="ti ti-clipboard-list" aria-hidden="true"></i> Questões
+          </NavLink>
+          <NavLink to="/perfil" className={({ isActive }) => isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
+            <i className="ti ti-chart-bar" aria-hidden="true"></i> Desempenho
+          </NavLink>
+          <NavLink to="/historico" className={({ isActive }) => isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
+            <i className="ti ti-history" aria-hidden="true"></i> Histórico
+          </NavLink>
+        </div>
+        <div className={styles.user}>
+          <span className={styles.userName}><i className="ti ti-user-circle" aria-hidden="true"></i> {nome}</span>
+          <button className={styles.signOut} onClick={handleSignOut} title="Sair">
+            <i className="ti ti-logout" aria-hidden="true"></i>
+          </button>
+        </div>
+      </nav>
+      <main className={styles.main}>
+        <Outlet />
+      </main>
+    </div>
+  )
+}

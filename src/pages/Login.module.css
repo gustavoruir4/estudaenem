@@ -1,0 +1,93 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F8F8F7;
+  padding: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 2rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.logoWrap { text-align: center; margin-bottom: 1.75rem; }
+.logoText { font-size: 22px; font-weight: 700; color: #1a1a1a; margin: 8px 0 4px; }
+.logoText span { color: #185FA5; }
+.sub { font-size: 13px; color: #6b7280; line-height: 1.5; }
+
+.tabs {
+  display: flex;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.tabBtn {
+  flex: 1;
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  background: transparent;
+  color: #6b7280;
+  transition: all 0.15s;
+  font-weight: 500;
+}
+.tabBtn:hover { color: #1a1a1a; }
+.tabActive { background: #E6F1FB; color: #185FA5; }
+
+.form { display: flex; flex-direction: column; gap: 14px; }
+
+.field { display: flex; flex-direction: column; gap: 5px; }
+.field label { font-size: 12px; font-weight: 500; color: #6b7280; }
+.field input {
+  padding: 9px 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.15s;
+  outline: none;
+  background: white;
+  color: #1a1a1a;
+}
+.field input:focus { border-color: #185FA5; box-shadow: 0 0 0 3px rgba(24,95,165,0.1); }
+
+.btn {
+  padding: 10px;
+  background: #185FA5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.15s;
+  margin-top: 4px;
+}
+.btn:hover:not(:disabled) { background: #0C447C; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.error {
+  background: #FCEBEB;
+  color: #A32D2D;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.successMsg {
+  background: #E1F5EE;
+  color: #085041;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
