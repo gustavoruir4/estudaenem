@@ -1,10 +1,23 @@
-import { useState, useCallback } from 'react'
+import { useState } from 'react'
 import { useAuth } from '../lib/AuthContext'
 import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
 import styles from './Questoes.module.css'
 
-async function fetchAIExplanation(question) {
+// Busca explicação no cache (Supabase) ou gera via IA e salva
+async function getExplanation(question) {
+  // 1. Tenta buscar do cache primeiro
+  const { data: cached } = await supabase
+    .from('explicacoes')
+    .select('explicacao')
+    .eq('question_id', question.id)
+    .single()
+
+  if (cached?.explicacao) {
+    return cached.explicacao // cache hit — sem custo de IA
+  }
+
+  // 2. Cache miss — chama a IA
   const opcaoCorreta = question.opcoes.find(o => o.letra === question.correta)
   const prompt = `Você é um professor especialista em ENEM. A questão é:
 
@@ -24,7 +37,17 @@ Explique de forma didática e direta em 3 a 4 frases por que essa é a resposta 
     })
   })
   const data = await res.json()
-  return data.content?.map(b => b.text || '').join('') || ''
+  const explicacao = data.content?.map(b => b.text || '').join('') || ''
+
+  // 3. Salva no cache para os próximos alunos
+  if (explicacao) {
+    await supabase.from('explicacoes').insert({
+      question_id: question.id,
+      explicacao,
+    })
+  }
+
+  return explicacao
 }
 
 export default function Questoes() {
@@ -64,7 +87,7 @@ export default function Questoes() {
     if (!isCorrect) {
       setAiLoading(true)
       try {
-        const text = await fetchAIExplanation(q)
+        const text = await getExplanation(q)
         setAiText(text)
       } catch {
         setAiText('Não foi possível gerar a explicação. Tente novamente.')
