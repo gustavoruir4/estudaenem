@@ -1,23 +1,27 @@
-import { useState } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { useAuth } from '../lib/AuthContext'
 import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
 import styles from './Questoes.module.css'
 
-// Busca explicação no cache (Supabase) ou gera via IA e salva
+function shuffle(arr) {
+  const a = [...arr]
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]]
+  }
+  return a
+}
+
 async function getExplanation(question) {
-  // 1. Tenta buscar do cache primeiro
   const { data: cached } = await supabase
     .from('explicacoes')
     .select('explicacao')
     .eq('question_id', question.id)
     .single()
 
-  if (cached?.explicacao) {
-    return cached.explicacao // cache hit — sem custo de IA
-  }
+  if (cached?.explicacao) return cached.explicacao
 
-  // 2. Cache miss — chama a IA
   const opcaoCorreta = question.opcoes.find(o => o.letra === question.correta)
   const prompt = `Você é um professor especialista em ENEM. A questão é:
 
@@ -29,7 +33,12 @@ Explique de forma didática e direta em 3 a 4 frases por que essa é a resposta 
 
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
+      'anthropic-version': '2023-06-01',
+      'anthropic-dangerous-direct-browser-access': 'true',
+    },
     body: JSON.stringify({
       model: 'claude-sonnet-4-6',
       max_tokens: 1000,
@@ -39,12 +48,8 @@ Explique de forma didática e direta em 3 a 4 frases por que essa é a resposta 
   const data = await res.json()
   const explicacao = data.content?.map(b => b.text || '').join('') || ''
 
-  // 3. Salva no cache para os próximos alunos
   if (explicacao) {
-    await supabase.from('explicacoes').insert({
-      question_id: question.id,
-      explicacao,
-    })
+    await supabase.from('explicacoes').insert({ question_id: question.id, explicacao })
   }
 
   return explicacao
@@ -59,17 +64,34 @@ export default function Questoes() {
   const [answered, setAnswered] = useState(false)
   const [aiText, setAiText] = useState('')
   const [aiLoading, setAiLoading] = useState(false)
+  const [respondidas, setRespondidas] = useState(new Set())
+  const [finished, setFinished] = useState(false)
+  const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
-  const filteredQs = QUESTIONS.filter(q =>
-    (areaFilter === 'Todas' || q.area === areaFilter) &&
-    (provaFilter === 'Todas' || q.prova === provaFilter)
-  )
-  const q = filteredQs[qIndex] || null
+  // Questões filtradas e embaralhadas (embaralha só quando o filtro muda)
+  const filteredQs = useMemo(() => {
+    const qs = QUESTIONS.filter(q =>
+      (areaFilter === 'Todas' || q.area === areaFilter) &&
+      (provaFilter === 'Todas' || q.prova === provaFilter)
+    )
+    return shuffle(qs)
+  }, [areaFilter, provaFilter])
+
+  // Pular questões já respondidas nesta sessão
+  const pendentes = filteredQs.filter(q => !respondidas.has(q.id))
+  const q = pendentes[qIndex] || null
+  const total = filteredQs.length
+  const feitas = respondidas.size
 
   async function handleAnswer() {
     if (!selected || !q) return
     const isCorrect = selected === q.correta
     setAnswered(true)
+    setRespondidas(prev => new Set([...prev, q.id]))
+    setSessionStats(prev => ({
+      acertos: prev.acertos + (isCorrect ? 1 : 0),
+      erros: prev.erros + (isCorrect ? 0 : 1),
+    }))
 
     if (user) {
       await supabase.from('respostas').insert({
@@ -88,7 +110,7 @@ export default function Questoes() {
       setAiLoading(true)
       try {
         const text = await getExplanation(q)
-        setAiText(text)
+        setAiText(text || 'Não foi possível gerar a explicação.')
       } catch {
         setAiText('Não foi possível gerar a explicação. Tente novamente.')
       }
@@ -101,7 +123,24 @@ export default function Questoes() {
     setAnswered(false)
     setAiText('')
     setAiLoading(false)
-    setQIndex(i => (i + 1) % filteredQs.length)
+
+    // Verificar se terminou todas
+    const proxPendentes = filteredQs.filter(q => !respondidas.has(q.id))
+    if (proxPendentes.length <= 1) {
+      setFinished(true)
+      return
+    }
+    setQIndex(i => (i + 1) % (proxPendentes.length - 1 || 1))
+  }
+
+  function resetSession() {
+    setRespondidas(new Set())
+    setQIndex(0)
+    setSelected(null)
+    setAnswered(false)
+    setAiText('')
+    setFinished(false)
+    setSessionStats({ acertos: 0, erros: 0 })
   }
 
   function handleFilterArea(a) {
@@ -110,13 +149,52 @@ export default function Questoes() {
     setSelected(null)
     setAnswered(false)
     setAiText('')
+    setFinished(false)
+    setRespondidas(new Set())
+    setSessionStats({ acertos: 0, erros: 0 })
   }
+
   function handleFilterProva(p) {
     setProvaFilter(p)
     setQIndex(0)
     setSelected(null)
     setAnswered(false)
     setAiText('')
+    setFinished(false)
+    setRespondidas(new Set())
+    setSessionStats({ acertos: 0, erros: 0 })
+  }
+
+  // Tela de conclusão
+  if (finished) {
+    const pct = total > 0 ? Math.round((sessionStats.acertos / total) * 100) : 0
+    return (
+      <div>
+        <div className={styles.finishCard}>
+          <div className={styles.finishIcon}>🎉</div>
+          <h2 className={styles.finishTitle}>Você completou todas as questões!</h2>
+          <p className={styles.finishSub}>Veja seu desempenho nessa rodada:</p>
+          <div className={styles.finishStats}>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{color:'#1D9E75'}}>{sessionStats.acertos}</div>
+              <div className={styles.finishStatLabel}>Acertos</div>
+            </div>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{color:'#E24B4A'}}>{sessionStats.erros}</div>
+              <div className={styles.finishStatLabel}>Erros</div>
+            </div>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{color: pct >= 60 ? '#1D9E75' : '#E24B4A'}}>{pct}%</div>
+              <div className={styles.finishStatLabel}>Aproveitamento</div>
+            </div>
+          </div>
+          {pct >= 70 && <p className={styles.finishMsg}>Excelente desempenho! Continue assim! 🚀</p>}
+          {pct >= 50 && pct < 70 && <p className={styles.finishMsg}>Bom resultado! Revise os temas que errou. 📚</p>}
+          {pct < 50 && <p className={styles.finishMsg}>Não desanime! Revise os conteúdos e tente novamente. 💪</p>}
+          <button className={styles.btn} onClick={resetSession}>Reiniciar questões</button>
+        </div>
+      </div>
+    )
   }
 
   return (
@@ -131,6 +209,16 @@ export default function Questoes() {
           <button key={p} className={`${styles.pill} ${provaFilter === p ? styles.pillActive : ''}`} onClick={() => handleFilterProva(p)}>{p}</button>
         ))}
       </div>
+
+      {/* Barra de progresso */}
+      {total > 0 && (
+        <div className={styles.progressWrap}>
+          <div className={styles.progressBar}>
+            <div className={styles.progressFill} style={{width: `${(feitas/total)*100}%`}}></div>
+          </div>
+          <span className={styles.progressText}>{feitas} de {total} questões respondidas</span>
+        </div>
+      )}
 
       {!q ? (
         <div className={styles.empty}>
@@ -194,7 +282,7 @@ export default function Questoes() {
             ) : (
               <button className={styles.btn} onClick={nextQuestion}>Próxima questão →</button>
             )}
-            <span className={styles.counter}>{qIndex + 1} / {filteredQs.length}</span>
+            <span className={styles.counter}>{feitas + (answered ? 0 : 0)} / {total}</span>
           </div>
         </div>
       )}
