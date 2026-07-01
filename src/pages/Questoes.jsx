@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react'
+import { useState, useMemo } from 'react'
 import { useAuth } from '../lib/AuthContext'
 import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
@@ -68,7 +68,6 @@ export default function Questoes() {
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
-  // Questões filtradas e embaralhadas (embaralha só quando o filtro muda)
   const filteredQs = useMemo(() => {
     const qs = QUESTIONS.filter(q =>
       (areaFilter === 'Todas' || q.area === areaFilter) &&
@@ -77,9 +76,7 @@ export default function Questoes() {
     return shuffle(qs)
   }, [areaFilter, provaFilter])
 
-  // Pular questões já respondidas nesta sessão
-  const pendentes = filteredQs.filter(q => !respondidas.has(q.id))
-  const q = pendentes[qIndex] || null
+  const q = filteredQs[qIndex] || null
   const total = filteredQs.length
   const feitas = respondidas.size
 
@@ -119,18 +116,21 @@ export default function Questoes() {
   }
 
   function nextQuestion() {
+    // Calcula próximo índice com base nas respondidas atuais + questão atual
+    const novasRespondidas = new Set([...respondidas, q.id])
+    const proxIndex = filteredQs.findIndex(x => !novasRespondidas.has(x.id))
+
     setSelected(null)
     setAnswered(false)
     setAiText('')
     setAiLoading(false)
 
-    // Verificar se terminou todas
-    const proxPendentes = filteredQs.filter(q => !respondidas.has(q.id))
-    if (proxPendentes.length <= 1) {
+    if (proxIndex === -1) {
       setFinished(true)
       return
     }
-    setQIndex(i => (i + 1) % (proxPendentes.length - 1 || 1))
+
+    setQIndex(proxIndex)
   }
 
   function resetSession() {
@@ -165,7 +165,6 @@ export default function Questoes() {
     setSessionStats({ acertos: 0, erros: 0 })
   }
 
-  // Tela de conclusão
   if (finished) {
     const pct = total > 0 ? Math.round((sessionStats.acertos / total) * 100) : 0
     return (
@@ -210,7 +209,6 @@ export default function Questoes() {
         ))}
       </div>
 
-      {/* Barra de progresso */}
       {total > 0 && (
         <div className={styles.progressWrap}>
           <div className={styles.progressBar}>
@@ -282,7 +280,7 @@ export default function Questoes() {
             ) : (
               <button className={styles.btn} onClick={nextQuestion}>Próxima questão →</button>
             )}
-            <span className={styles.counter}>{feitas + (answered ? 0 : 0)} / {total}</span>
+            <span className={styles.counter}>{feitas} / {total}</span>
           </div>
         </div>
       )}
