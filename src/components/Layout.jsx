@@ -2,10 +2,13 @@ import { Outlet, NavLink, useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
 import styles from './Layout.module.css'
 
+const ADMIN_EMAIL = 'gustavoruir4@gmail.com'
+
 export default function Layout() {
   const { user, signOut } = useAuth()
   const navigate = useNavigate()
   const nome = user?.user_metadata?.nome || user?.email?.split('@')[0] || 'Aluno'
+  const isAdmin = user?.email === ADMIN_EMAIL
 
   async function handleSignOut() {
     await signOut()
@@ -29,6 +32,11 @@ export default function Layout() {
           <NavLink to="/historico" className={({ isActive }) => isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
             <i className="ti ti-history" aria-hidden="true"></i> Histórico
           </NavLink>
+          {isAdmin && (
+            <NavLink to="/admin" className={({ isActive }) => isActive ? `${styles.tab} ${styles.active}` : styles.tab}>
+              <i className="ti ti-settings" aria-hidden="true"></i> Admin
+            </NavLink>
+          )}
         </div>
         <div className={styles.user}>
           <span className={styles.userName}><i className="ti ti-user-circle" aria-hidden="true"></i> {nome}</span>
