@@ -14,6 +14,7 @@ function shuffle(arr) {
 }
 
 async function getExplanation(question) {
+  // 1. Tenta buscar do cache primeiro
   const { data: cached } = await supabase
     .from('explicacoes')
     .select('explicacao')
@@ -22,32 +23,30 @@ async function getExplanation(question) {
 
   if (cached?.explicacao) return cached.explicacao
 
+  // 2. Cache miss — chama a Edge Function (chave da Anthropic fica no servidor)
   const opcaoCorreta = question.opcoes.find(o => o.letra === question.correta)
-  const prompt = `Você é um professor especialista em ENEM. A questão é:
 
-"${question.enunciado}"
+  const res = await fetch(
+    `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/explicacao`,
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
+      },
+      body: JSON.stringify({
+        question_id: question.id,
+        enunciado: question.enunciado,
+        correta: question.correta,
+        opcao_correta_texto: opcaoCorreta?.texto || '',
+      })
+    }
+  )
 
-A alternativa correta é ${question.correta}: "${opcaoCorreta?.texto}".
-
-Explique de forma didática e direta em 3 a 4 frases por que essa é a resposta certa, qual o conceito envolvido e por que as outras alternativas estão erradas. Responda em português brasileiro.`
-
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-api-key': import.meta.env.VITE_ANTHROPIC_API_KEY,
-      'anthropic-version': '2023-06-01',
-      'anthropic-dangerous-direct-browser-access': 'true',
-    },
-    body: JSON.stringify({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 1000,
-      messages: [{ role: 'user', content: prompt }]
-    })
-  })
   const data = await res.json()
-  const explicacao = data.content?.map(b => b.text || '').join('') || ''
+  const explicacao = data.explicacao || ''
 
+  // 3. Salva no cache
   if (explicacao) {
     await supabase.from('explicacoes').insert({ question_id: question.id, explicacao })
   }
@@ -103,7 +102,6 @@ export default function Questoes() {
       })
     }
 
-    // Busca explicação tanto para acertos quanto para erros
     setAiLoading(true)
     try {
       const text = await getExplanation(q)
@@ -115,7 +113,6 @@ export default function Questoes() {
   }
 
   function nextQuestion() {
-    // Calcula próximo índice com base nas respondidas atuais + questão atual
     const novasRespondidas = new Set([...respondidas, q.id])
     const proxIndex = filteredQs.findIndex(x => !novasRespondidas.has(x.id))
 
