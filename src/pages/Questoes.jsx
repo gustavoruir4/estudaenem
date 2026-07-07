@@ -16,12 +16,36 @@ function shuffle(arr) {
 function limparMarkdown(texto) {
   return texto
     .replace(/#{1,6}\s+/g, '')
-    .replace(/\*\*(.+?)\*\*/g, '$1')
-    .replace(/\*(.+?)\*/g, '$1')
+    .replace(/\*\*(.+?)\*\*/gs, '$1')
+    .replace(/\*(.+?)\*/gs, '$1')
     .replace(/`(.+?)`/g, '$1')
-    .replace(/^[-*+]\s+/gm, '• ')
+    .replace(/^---+$/gm, '')
     .replace(/\n{3,}/g, '\n\n')
     .trim()
+}
+
+function ExplicacaoTexto({ texto, className }) {
+  const limpo = limparMarkdown(texto)
+  const paragrafos = limpo.split('\n\n').filter(p => p.trim())
+  return (
+    <div className={className}>
+      {paragrafos.map((p, i) => {
+        const linhas = p.split('\n').filter(l => l.trim())
+        if (linhas.length > 1) {
+          return (
+            <div key={i} style={{ marginBottom: i < paragrafos.length - 1 ? '0.75rem' : 0 }}>
+              {linhas.map((linha, j) => (
+                <p key={j} style={{ marginBottom: j < linhas.length - 1 ? '0.3rem' : 0 }}>{linha}</p>
+              ))}
+            </div>
+          )
+        }
+        return (
+          <p key={i} style={{ marginBottom: i < paragrafos.length - 1 ? '0.75rem' : 0 }}>{p}</p>
+        )
+      })}
+    </div>
+  )
 }
 
 async function getExplanation(question) {
@@ -273,7 +297,7 @@ export default function Questoes() {
                     Carregando explicação<span>.</span><span>.</span><span>.</span>
                   </div>
                 ) : (
-                  <p className={styles.aiText}>{limparMarkdown(aiText)}</p>
+                  <ExplicacaoTexto texto={aiText} className={styles.aiText} />
                 )}
               </div>
             </>
