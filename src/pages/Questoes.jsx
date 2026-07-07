@@ -13,8 +13,18 @@ function shuffle(arr) {
   return a
 }
 
+function limparMarkdown(texto) {
+  return texto
+    .replace(/#{1,6}\s+/g, '')
+    .replace(/\*\*(.+?)\*\*/g, '$1')
+    .replace(/\*(.+?)\*/g, '$1')
+    .replace(/`(.+?)`/g, '$1')
+    .replace(/^[-*+]\s+/gm, '• ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+}
+
 async function getExplanation(question) {
-  // 1. Tenta buscar do cache primeiro
   const { data: cached } = await supabase
     .from('explicacoes')
     .select('explicacao')
@@ -23,7 +33,6 @@ async function getExplanation(question) {
 
   if (cached?.explicacao) return cached.explicacao
 
-  // 2. Cache miss — chama a Edge Function (chave da Anthropic fica no servidor)
   const opcaoCorreta = question.opcoes.find(o => o.letra === question.correta)
 
   const res = await fetch(
@@ -46,7 +55,6 @@ async function getExplanation(question) {
   const data = await res.json()
   const explicacao = data.explicacao || ''
 
-  // 3. Salva no cache
   if (explicacao) {
     await supabase.from('explicacoes').insert({ question_id: question.id, explicacao })
   }
@@ -265,7 +273,7 @@ export default function Questoes() {
                     Carregando explicação<span>.</span><span>.</span><span>.</span>
                   </div>
                 ) : (
-                  <p className={styles.aiText}>{aiText}</p>
+                  <p className={styles.aiText}>{limparMarkdown(aiText)}</p>
                 )}
               </div>
             </>
