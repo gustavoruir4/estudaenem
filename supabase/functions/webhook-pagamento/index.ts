@@ -53,47 +53,39 @@ serve(async (req) => {
         paid_at: new Date().toISOString(),
       }, { onConflict: 'email' })
 
-    // ── Email de confirmação pós-pagamento ──
-    //
-    // TODO: migrar para a API do Resend (https://api.resend.com/emails) quando
-    // a conta em resend.com estiver criada. Fica assim, pronto pra ligar:
-    //
-    // await fetch('https://api.resend.com/emails', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Authorization': `Bearer ${Deno.env.get('RESEND_API_KEY')}`,
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify({
-    //     from: 'EstudaENEM <contato@estudaenem.com>',
-    //     to: email,
-    //     subject: 'Pagamento confirmado — ative sua conta',
-    //     html: `<p>Seu pagamento foi confirmado! Clique para ativar sua conta:</p>
-    //            <p><a href="https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}">Ativar minha conta</a></p>`,
-    //   }),
-    // })
-    //
-    // Por enquanto, geramos o link de ativação pelo Supabase Auth. IMPORTANTE:
-    // generateLink SÓ gera o link — ele não envia e-mail sozinho (isso exige
-    // um provedor de e-mail customizado, como o Resend acima, ou
-    // supabase.auth.admin.inviteUserByEmail, que dispara o e-mail padrão do
-    // Supabase mas já cria a conta na hora). Deixamos a chamada pronta para
-    // quando o envio (Resend) for ligado; hoje ela só teria efeito de log.
+    // ── Email de confirmação pós-pagamento (via Resend) ──
     try {
-      const supabaseAdmin = createClient(
-        Deno.env.get('SUPABASE_URL')!,
-        Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
-      )
-      await supabaseAdmin.auth.admin.generateLink({
-        type: 'signup',
-        email,
-        password: crypto.randomUUID(),
-        options: {
-          redirectTo: `https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`,
+      const resendKey = Deno.env.get('RESEND_API_KEY')
+
+      const linkAtivacao = `https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`
+
+      await fetch('https://api.resend.com/emails', {
+        method: 'POST',
+        headers: {
+          'Authorization': `Bearer ${resendKey}`,
+          'Content-Type': 'application/json',
         },
+        body: JSON.stringify({
+          from: 'EstudaENEM <onboarding@resend.dev>',
+          to: email,
+          subject: 'Seu acesso ao EstudaENEM está pronto!',
+          html: `
+            <div style="font-family: sans-serif; max-width: 500px; margin: 0 auto; padding: 32px;">
+              <h1 style="color: #8B5CF6;">Pagamento confirmado! 🎉</h1>
+              <p>Olá! Seu pagamento foi confirmado com sucesso.</p>
+              <p>Clique no botão abaixo para criar sua senha e acessar a plataforma:</p>
+              <a href="${linkAtivacao}" style="display: inline-block; margin: 24px 0; padding: 14px 28px; background: #8B5CF6; color: white; border-radius: 8px; text-decoration: none; font-weight: bold;">
+                Ativar minha conta
+              </a>
+              <p style="color: #666; font-size: 14px;">Se o botão não funcionar, copie e cole este link no navegador:<br>${linkAtivacao}</p>
+              <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;">
+              <p style="color: #999; font-size: 12px;">EstudaENEM — Questões reais com explicação por IA</p>
+            </div>
+          `
+        })
       })
     } catch (mailErr) {
-      console.error('Erro ao gerar link de ativação:', mailErr)
+      console.error('Erro ao enviar email de confirmação:', mailErr)
     }
 
     return new Response(
