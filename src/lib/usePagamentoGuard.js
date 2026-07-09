@@ -19,13 +19,16 @@ export function usePagamentoGuard() {
 
     supabase
       .from('acessos')
-      .select('status')
-      .eq('user_id', user.id)
+      .select('status, user_id')
+      .eq('email', user.email)
       .single()
       .then(({ data }) => {
         if (!ativo) return
         if (!data || data.status !== 'pago') {
           navigate('/pagamento')
+        } else if (!data.user_id) {
+          // Autoconserta o vínculo caso a conta tenha sido criada fora do fluxo /ativar
+          supabase.from('acessos').update({ user_id: user.id }).eq('email', user.email)
         }
         setChecking(false)
       })

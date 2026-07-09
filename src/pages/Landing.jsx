@@ -53,7 +53,7 @@ export default function Landing() {
           </div>
           <div className={styles.navActions}>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
-            <Link to="/login" className={styles.navCta}>Começar agora</Link>
+            <Link to="/pagamento" className={styles.navCta}>Começar agora</Link>
           </div>
         </div>
       </nav>
@@ -71,7 +71,7 @@ export default function Landing() {
           seus erros até dominar cada assunto — tudo em um só lugar.
         </p>
         <div className={styles.heroActions}>
-          <Link to="/login" className={styles.btnPrimary}>
+          <Link to="/pagamento" className={styles.btnPrimary}>
             <i className="ti ti-rocket" aria-hidden="true"></i> Começar agora
           </Link>
           <a href="#precos" className={styles.btnSecondary}>Ver preço</a>
@@ -148,7 +148,7 @@ export default function Landing() {
         <div className={styles.pricingCard}>
           <span className={styles.pricingBadge}>Pagamento único</span>
           <div className={styles.pricingValue}>
-            <span className={styles.pricingCurrency}>R$</span>25
+            <span className={styles.pricingCurrency}>R$</span>39,90
           </div>
           <p className={styles.pricingSub}>Acesso completo até o ENEM</p>
           <ul className={styles.pricingList}>
@@ -158,8 +158,8 @@ export default function Landing() {
             <li><i className="ti ti-check" aria-hidden="true"></i> Revisão de erros e acompanhamento de desempenho</li>
             <li><i className="ti ti-check" aria-hidden="true"></i> Sem mensalidade, sem renovação</li>
           </ul>
-          <Link to="/login" className={styles.pricingCta}>
-            <i className="ti ti-rocket" aria-hidden="true"></i> Quero começar agora
+          <Link to="/pagamento" className={styles.pricingCta}>
+            <i className="ti ti-rocket" aria-hidden="true"></i> Garantir meu acesso
           </Link>
         </div>
       </section>

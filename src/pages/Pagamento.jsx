@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
-import { useAuth } from '../lib/AuthContext'
 import styles from './Pagamento.module.css'
 
 const PRECO = 'R$ 39,90'
@@ -13,14 +11,51 @@ const BENEFICIOS = [
   'Sem mensalidade, sem renovação',
 ]
 
+function formatCPF(value) {
+  const d = value.replace(/\D/g, '').slice(0, 11)
+  return d
+    .replace(/(\d{3})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d)/, '$1.$2')
+    .replace(/(\d{3})(\d{1,2})$/, '$1-$2')
+}
+
+function formatTelefone(value) {
+  const d = value.replace(/\D/g, '').slice(0, 11)
+  return d
+    .replace(/(\d{2})(\d)/, '($1) $2')
+    .replace(/(\d{5})(\d{1,4})$/, '$1-$2')
+}
+
 export default function Pagamento() {
-  const { user } = useAuth()
+  const [email, setEmail] = useState('')
+  const [nome, setNome] = useState('')
+  const [cpf, setCpf] = useState('')
+  const [telefone, setTelefone] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
 
   async function handlePagar() {
-    if (!user) return
     setError('')
+
+    if (!email || !email.includes('@')) {
+      setError('Informe um e-mail válido.')
+      return
+    }
+    if (!nome.trim()) {
+      setError('Informe seu nome completo.')
+      return
+    }
+    const cpfDigits = cpf.replace(/\D/g, '')
+    if (cpfDigits.length !== 11) {
+      setError('Informe um CPF válido.')
+      return
+    }
+    const telefoneDigits = telefone.replace(/\D/g, '')
+    if (telefoneDigits.length < 10) {
+      setError('Informe um WhatsApp válido, com DDD.')
+      return
+    }
+
     setLoading(true)
     try {
       const res = await fetch(
@@ -31,7 +66,12 @@ export default function Pagamento() {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
           },
-          body: JSON.stringify({ user_id: user.id, email: user.email }),
+          body: JSON.stringify({
+            email,
+            nome: nome.trim(),
+            cpf: cpfDigits,
+            telefone: telefoneDigits,
+          }),
         }
       )
       const data = await res.json()
@@ -41,6 +81,10 @@ export default function Pagamento() {
       setError(err.message || 'Algo deu errado. Tente novamente.')
       setLoading(false)
     }
+  }
+
+  function handleKey(e) {
+    if (e.key === 'Enter') handlePagar()
   }
 
   return (
@@ -53,7 +97,7 @@ export default function Pagamento() {
             <i className="ti ti-school" aria-hidden="true"></i>
           </div>
           <h1 className={styles.title}>Estuda<span>ENEM</span></h1>
-          <p className={styles.subtitle}>Finalize seu acesso e comece a estudar agora</p>
+          <p className={styles.subtitle}>Garanta seu acesso completo até o ENEM</p>
         </div>
 
         <div className={styles.resumo}>
@@ -72,34 +116,79 @@ export default function Pagamento() {
           ))}
         </ul>
 
+        <div className={styles.field}>
+          <label className={styles.label}>Seu e-mail</label>
+          <input
+            className={styles.input}
+            type="email"
+            placeholder="seu@email.com"
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            onKeyDown={handleKey}
+            autoComplete="email"
+          />
+        </div>
+
+        <div className={styles.field}>
+          <label className={styles.label}>Nome completo</label>
+          <input
+            className={styles.input}
+            type="text"
+            placeholder="Como está no seu documento"
+            value={nome}
+            onChange={e => setNome(e.target.value)}
+            onKeyDown={handleKey}
+            autoComplete="name"
+          />
+        </div>
+
+        <div className={styles.fieldRow}>
+          <div className={styles.field}>
+            <label className={styles.label}>CPF</label>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="000.000.000-00"
+              value={cpf}
+              onChange={e => setCpf(formatCPF(e.target.value))}
+              onKeyDown={handleKey}
+              inputMode="numeric"
+            />
+          </div>
+
+          <div className={styles.field}>
+            <label className={styles.label}>WhatsApp</label>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="(00) 00000-0000"
+              value={telefone}
+              onChange={e => setTelefone(formatTelefone(e.target.value))}
+              onKeyDown={handleKey}
+              inputMode="numeric"
+            />
+          </div>
+        </div>
+
         {error && (
           <div className={styles.error}>
             <i className="ti ti-alert-circle" aria-hidden="true"></i> {error}
           </div>
         )}
 
-        {user ? (
-          <button className={styles.submit} onClick={handlePagar} disabled={loading}>
-            {loading ? (
-              <span className={styles.dots}>Preparando pagamento<span>.</span><span>.</span><span>.</span></span>
-            ) : (
-              <>
-                <i className="ti ti-credit-card" aria-hidden="true"></i> Pagar com PIX ou Cartão
-              </>
-            )}
-          </button>
-        ) : (
-          <>
-            <p className={styles.loginPrompt}>Crie uma conta ou entre para continuar com o pagamento.</p>
-            <Link to="/login" className={styles.submit}>
-              <i className="ti ti-login" aria-hidden="true"></i> Entrar ou criar conta
-            </Link>
-          </>
-        )}
+        <button className={styles.submit} onClick={handlePagar} disabled={loading}>
+          {loading ? (
+            <span className={styles.dots}>Preparando pagamento<span>.</span><span>.</span><span>.</span></span>
+          ) : (
+            <>
+              <i className="ti ti-credit-card" aria-hidden="true"></i> Pagar {PRECO}
+            </>
+          )}
+        </button>
 
         <p className={styles.footer}>
           <i className="ti ti-lock" aria-hidden="true"></i>
-          Pagamento seguro via Pix ou cartão
+          Pagamento seguro via Pix
         </p>
       </div>
     </div>
