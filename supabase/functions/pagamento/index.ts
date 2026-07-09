@@ -21,6 +21,9 @@ serve(async (req) => {
       )
     }
 
+    const cpfLimpo = cpf.replace(/\D/g, '')
+    const telefoneLimpo = telefone.replace(/\D/g, '')
+
     const ABACATEPAY_KEY = Deno.env.get('ABACATEPAY_KEY')
 
     const res = await fetch('https://api.abacatepay.com/v1/billing/create', {
@@ -43,9 +46,9 @@ serve(async (req) => {
         completionUrl: `https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`,
         customer: {
           name: nome,
-          cellphone: telefone,
+          cellphone: telefoneLimpo,
           email,
-          taxId: cpf,
+          taxId: cpfLimpo,
         },
         metadata: { email },
       }),
