@@ -1,16 +1,18 @@
 # EstudaENEM — Documentação Completa do Projeto
 
-**Última atualização:** 06/07/2026  
-**Desenvolvido por:** Gustavo + Claude (Anthropic)  
-**Status:** Em desenvolvimento ativo ✅
+**Última atualização:** 11/07/2026
+**Desenvolvido por:** Gustavo + Claude (Anthropic)
+**Status:** Em desenvolvimento ativo — produto pago em operação
 
 ---
 
 ## 1. Visão Geral
 
-Plataforma web **100% paga** de revisão para o ENEM e vestibulares com questões de provas reais, correção automática e explicação por IA. Sem versão gratuita.
+Plataforma web **100% paga** de revisão para o ENEM e vestibulares, com questões de provas reais, correção automática e explicação por IA, simulados cronometrados e revisão de erros.
 
-**Modelo de negócio:** R$25 acesso único até o ENEM em novembro.
+> **Renomeação em andamento:** o produto se chama **EstudaENEM** em todo o código, domínio e banco de dados hoje. Está em processo de renomeação para **ProvAI** (candidato alternativo: **Questa**) — nome final ainda não decidido, nenhuma mudança de código feita ainda. Ver seção 7.
+
+**Modelo de negócio atual:** pagamento único de **R$39,90**, acesso completo até o ENEM. O usuário paga **antes** de criar a conta (ver seção 4).
 
 ### URLs de Produção
 | Serviço | URL |
@@ -23,282 +25,292 @@ Plataforma web **100% paga** de revisão para o ENEM e vestibulares com questõe
 
 ---
 
-## 2. Stack Tecnológica
+## 2. Stack Técnica
 
-| Camada | Tecnologia | Motivo |
+| Camada | Tecnologia | Observações |
 |---|---|---|
-| Frontend | React 18 + Vite | Rápido, moderno |
-| Roteamento | React Router v6 | SPA sem reload |
-| Banco de dados | Supabase (PostgreSQL) | Gratuito, auth inclusa, RLS |
-| Autenticação | Supabase Auth | Login/cadastro com email |
-| IA (explicações) | Anthropic API (claude-sonnet-4-6) | Explicações didáticas |
-| Hospedagem | Vercel | Deploy automático via GitHub |
-| Estilização | CSS Modules | Estilos isolados por componente |
+| Frontend | React 18 + Vite | SPA, build com `vite build` |
+| Roteamento | React Router v6 | Rotas públicas + protegidas (ver seção 3) |
+| Estilização | CSS Modules | Um `.module.css` por página/componente, dark mode roxo como padrão + toggle claro/escuro |
+| Ícones | Tabler Icons (CDN, `tabler-icons.min.css`) | Carregado via `<link>` no `index.html` |
+| Fonte | Inter (Google Fonts) | Carregada via `<link>` no `index.html` |
+| Fórmulas matemáticas | KaTeX (CDN, `auto-render`) | Renderiza `$...$` / `$$...$$` nas explicações de IA |
+| Backend / dados | Supabase (PostgreSQL + Auth + Edge Functions + RLS) | Projeto `avtolxrbmvcqcvvfdcvv` |
+| IA (explicações) | Anthropic Claude API, via Supabase Edge Function `explicacao` | Chamada pelo frontend, resultado cacheado no banco |
+| Pagamento | AbacatePay — **API v1** (`/v1/billing/create`), método PIX | Ver seção 4 |
+| Email transacional | Resend (`api.resend.com/emails`) | Remetente atual `onboarding@resend.dev` (domínio de teste — ver pendências) |
+| Hospedagem | Vercel | Deploy automático a cada push em `main`; SPA fallback via `vercel.json` |
 
 ---
 
-## 3. Estrutura de Arquivos
+## 3. Estrutura do Projeto
+
+### Rotas (`src/App.jsx`)
+
+| Rota | Página | Acesso |
+|---|---|---|
+| `/` | `Landing.jsx` | Pública |
+| `/login` | `Login.jsx` | Pública (login e criação de conta direta, sem pagamento — ver nota na seção 4) |
+| `/pagamento` | `Pagamento.jsx` | Pública |
+| `/pagamento/erro` | `PagamentoErro.jsx` | Pública |
+| `/ativar` | `Ativar.jsx` | Pública (espera `?email=` na query string) |
+| `/app` → redireciona para `/app/questoes` | `Layout.jsx` (shell) | **Protegida** (login + pagamento confirmado) |
+| `/app/questoes` | `Questoes.jsx` | Protegida |
+| `/app/simulado` | `Simulado.jsx` | Protegida |
+| `/app/revisao` | `Revisao.jsx` | Protegida |
+| `/app/perfil` | `Perfil.jsx` | Protegida |
+| `/app/historico` | `Historico.jsx` | Protegida |
+| `/app/admin` | `Admin.jsx` | Protegida + restrita a `gustavoruir4@gmail.com` |
+
+Todas as rotas `/app/*` passam pelo componente `PrivateRoute` (dentro de `App.jsx`), que:
+1. Bloqueia se não houver usuário logado (`useAuth`) → redireciona para `/login`.
+2. Roda o hook `usePagamentoGuard` (ver seção 4) → redireciona para `/pagamento` se o acesso não estiver pago.
+
+### Componentes e libs principais
 
 ```
-estudaenem/
-├── index.html
-├── vite.config.js
-├── package.json
-├── vercel.json                   # Configuração SPA routing
-├── .env.example
-├── supabase_setup.sql            # SQL tabela respostas
-├── supabase_explicacoes.sql      # SQL tabela explicacoes
-├── gerar_explicacoes.mjs         # Script pré-geração de explicações
-└── src/
-    ├── main.jsx
-    ├── App.jsx                   # Rotas
-    ├── index.css
-    ├── lib/
-    │   ├── supabase.js
-    │   ├── AuthContext.jsx
-    │   └── questions.js          # 555 questões
-    ├── components/
-    │   ├── Layout.jsx
-    │   └── Layout.module.css
-    └── pages/
-        ├── Login.jsx / .module.css
-        ├── Questoes.jsx / .module.css
-        ├── Perfil.jsx / .module.css
-        ├── Historico.jsx / .module.css
-        └── Admin.jsx / .module.css
+src/
+├── main.jsx                      # ThemeProvider > BrowserRouter > App
+├── App.jsx                       # Rotas (tabela acima)
+├── index.css                     # Tokens de tema (roxo dark/light), reset, KaTeX
+├── lib/
+│   ├── supabase.js               # Client do Supabase (anon key)
+│   ├── AuthContext.jsx           # signUp/signIn/signOut, estado global de user/loading
+│   ├── ThemeContext.jsx          # Tema dark/light, persistido em localStorage
+│   ├── usePagamentoGuard.js      # Hook: verifica acesso pago por email, autoconserta user_id
+│   └── questions.js              # Banco de questões estático (ver seção 5)
+├── components/
+│   └── Layout.jsx / .module.css  # Shell do app logado: nav, tabs, toggle de tema, logout
+└── pages/
+    ├── Landing.jsx / .module.css
+    ├── Login.jsx / .module.css
+    ├── Pagamento.jsx / .module.css
+    ├── PagamentoErro.jsx / .module.css
+    ├── Ativar.jsx / .module.css
+    ├── Questoes.jsx / .module.css
+    ├── Simulado.jsx / .module.css
+    ├── Revisao.jsx / .module.css
+    ├── Perfil.jsx / .module.css
+    ├── Historico.jsx / .module.css
+    └── Admin.jsx / .module.css
 ```
 
----
+### Edge Functions do Supabase
 
-## 4. Variáveis de Ambiente
+Deploy remoto atual (`supabase functions list`):
 
-Configuradas no Vercel em **Settings > Environment Variables**.  
-Localmente, criar arquivo `.env` na raiz.
+| Função | Fonte no repo? | `verify_jwt` | Descrição |
+|---|---|---|---|
+| `explicacao` | ❌ **não** — só existe no projeto remoto, sem código versionado neste repositório | `true` | Chamada pelo frontend (`Questoes.jsx`, `Revisao.jsx`) para gerar a explicação de IA de uma questão; resultado é salvo em `explicacoes` para cache |
+| `pagamento` | ✅ `supabase/functions/pagamento/index.ts` | `false` | Recebe `{ email, nome, cpf, telefone }`, cria a cobrança PIX na AbacatePay, salva `acessos` com `status='pendente'`, retorna `{ url }` |
+| `webhook-pagamento` | ✅ `supabase/functions/webhook-pagamento/index.ts` | `false` | Recebe o webhook `checkout.completed` da AbacatePay, valida o secret, marca `acessos.status='pago'` e envia o email de ativação via Resend |
 
-| Variável | Descrição |
-|---|---|
-| `VITE_SUPABASE_URL` | `https://avtolxrbmvcqcvvfdcvv.supabase.co` |
-| `VITE_SUPABASE_ANON_KEY` | Chave anon do Supabase (Settings > API Keys > Legacy) |
-| `VITE_ANTHROPIC_API_KEY` | Chave da API Anthropic (console.anthropic.com) |
+> **Pendência:** o código-fonte da função `explicacao` não está neste repositório — só existe no Supabase remoto. Se precisar editá-la, baixe primeiro com `supabase functions download explicacao`.
 
-> ⚠️ **Segurança pendente:** a chave da Anthropic está exposta no frontend. Antes do lançamento, mover para uma Supabase Edge Function.
+### Tabelas do Supabase (schema atual, verificado no banco)
 
----
-
-## 5. Banco de Dados
-
-### Tabela: `respostas`
-Armazena todas as respostas dos usuários.
-
+**`acessos`** — controla quem pagou e o vínculo com a conta:
 ```sql
-CREATE TABLE respostas (
-  id            UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  user_id       UUID REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL,
-  question_id   INT NOT NULL,
-  area          TEXT NOT NULL,
-  assunto       TEXT NOT NULL,
-  prova         TEXT NOT NULL,
-  ano           INT NOT NULL,
-  correta       BOOLEAN NOT NULL,
-  resposta_dada TEXT NOT NULL,
-  created_at    TIMESTAMPTZ DEFAULT NOW()
-);
+id          uuid PRIMARY KEY DEFAULT gen_random_uuid()
+user_id     uuid REFERENCES auth.users(id) ON DELETE CASCADE  -- nullable (pode não existir conta ainda)
+email       text UNIQUE                                        -- chave de conciliação pagamento → conta
+status      text DEFAULT 'pendente'                            -- 'pendente' | 'pago'
+payment_id  text
+valor       numeric DEFAULT 39.90
+created_at  timestamptz DEFAULT now()
+paid_at     timestamptz
 ```
+RLS: usuário só enxerga sua própria linha (`user_id = auth.uid()` OU `email = auth.jwt() ->> 'email'`); só é permitido vincular `user_id` a uma linha que já esteja `status='pago'` e ainda sem `user_id` (sem essa restrição, qualquer client poderia forjar `status='pago'` sem pagar — só a `service_role`, usada nas Edge Functions, grava/atualiza livremente).
 
-### Tabela: `explicacoes`
-Cache de explicações geradas pela IA. Evita chamadas repetidas à API.
-
+**`respostas`** — histórico de tentativas de questões (usado por Questões, Simulado, Revisão, Perfil, Histórico):
 ```sql
-CREATE TABLE explicacoes (
-  question_id   INT PRIMARY KEY,
-  explicacao    TEXT NOT NULL,
-  created_at    TIMESTAMPTZ DEFAULT NOW()
-);
+id            uuid PRIMARY KEY DEFAULT gen_random_uuid()
+user_id       uuid REFERENCES auth.users(id) ON DELETE CASCADE NOT NULL
+question_id   int NOT NULL
+area          text NOT NULL
+assunto       text NOT NULL
+prova         text NOT NULL
+ano           int NOT NULL
+correta       boolean NOT NULL
+resposta_dada text NOT NULL
+created_at    timestamptz DEFAULT now()
 ```
+RLS: cada usuário só lê/insere as próprias respostas (`auth.uid() = user_id`).
 
-### Políticas RLS
-
-**respostas:** cada usuário só acessa suas próprias respostas.
-
-**explicacoes:** leitura e inserção liberadas para `anon` e `authenticated` — necessário para o script de pré-geração funcionar sem autenticação.
+**`explicacoes`** — cache das explicações de IA (evita gerar/pagar a mesma explicação duas vezes):
+```sql
+question_id int PRIMARY KEY
+explicacao  text NOT NULL
+created_at  timestamptz DEFAULT now()
+```
 
 ---
 
-## 6. Banco de Questões
+## 4. Fluxo de Pagamento Atual
 
-**Arquivo:** `src/lib/questions.js`  
-**Total:** 555 questões  
-**Fonte:** ENEM 2016, 2017, 2018 e 2019 (Dia 1 + Dia 2)  
-**Filtro aplicado:** questões com imagem/gráfico essencial foram removidas  
-**IDs:** 31 a 732 (IDs 1–30 eram questões de teste, não estão mais no banco)
+O usuário **paga antes de criar conta**:
 
-| Área | Quantidade |
+```
+Landing (/)
+   │  botão "Começar agora" / "Garantir meu acesso"
+   ▼
+/pagamento
+   │  formulário: email, nome completo, CPF, WhatsApp
+   │  valida CPF no frontend (dígitos verificadores) antes de enviar
+   │  POST /functions/v1/pagamento { email, nome, cpf, telefone }
+   ▼
+Edge Function "pagamento"
+   │  limpa CPF/telefone (só dígitos), cria cobrança PIX na AbacatePay
+   │  (v1/billing/create — exige customer.name, cellphone, email, taxId)
+   │  upsert acessos { email, status: 'pendente', payment_id }
+   │  retorna { url } → frontend redireciona pra lá
+   ▼
+Checkout da AbacatePay
+   ├─ pagamento concluído  → completionUrl: /ativar?email=...
+   └─ cancelado / erro     → returnUrl: /pagamento/erro
+   ▼
+Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
+   │  valida ?webhookSecret= na URL contra ABACATEPAY_WEBHOOK_SECRET (senão 401)
+   │  evento checkout.completed → upsert acessos { email, status: 'pago', paid_at }
+   │  envia email via Resend com link de ativação (não bloqueia a confirmação se falhar)
+   ▼
+/ativar?email=...
+   │  usuário define senha (+ confirmação)
+   │  supabase.auth.signUp({ email, password })
+   │  UPDATE acessos SET user_id = <novo user.id>
+   │    WHERE email = email AND status = 'pago' AND user_id IS NULL
+   ▼
+/app/questoes (login automático — confirmação de email está desativada no projeto)
+```
+
+**Guard de acesso** (`src/lib/usePagamentoGuard.js`, usado dentro do `PrivateRoute`):
+- A cada login/sessão, consulta `acessos` filtrando por `email` do usuário logado.
+- Se não existe linha, ou `status !== 'pago'` → redireciona para `/pagamento`.
+- Se existe e está `pago` mas `user_id` ainda é `null` (ex.: conta criada fora do fluxo `/ativar`) → autoconserta, gravando o `user_id`.
+
+**Nota importante:** `Login.jsx` ainda tem uma aba "Criar conta" que cria login **sem** exigir pagamento prévio. Isso não quebra a segurança (o guard acima barra o acesso de quem não pagou, redirecionando para `/pagamento` no primeiro login), mas é um caminho alternativo de cadastro que hoje convive com o fluxo `/pagamento → /ativar`.
+
+**Pontos de atenção conhecidos:**
+- A AbacatePay retornou `"API key version mismatch"` em testes anteriores ao usar `v1/billing/create` — resolvido preenchendo corretamente `customer.cellphone` e `customer.taxId`, mas vale reconfirmar periodicamente que a chave `ABACATEPAY_KEY` continua compatível com o endpoint v1, já que a documentação pública da AbacatePay hoje só cobre a API v2.
+- O email de confirmação usa `from: 'EstudaENEM <onboarding@resend.dev>'`, o domínio de teste compartilhado do Resend — **só entrega para o email dono da conta Resend**, não para clientes reais, até um domínio próprio ser verificado (ver seção 7).
+
+---
+
+## 5. Features Implementadas
+
+- **Banco de questões:** 555 questões reais do ENEM (2016–2019, dias 1 e 2), estáticas em `src/lib/questions.js` — Matemática (132), Ciências da Natureza (143), Ciências Humanas (146), Linguagens (134). Filtros de área e prova disponíveis na UI (`FUVEST`/`UNICAMP`/`UNESP` já existem como opção de filtro, mas ainda **sem nenhuma questão real cadastrada** dessas provas).
+- **Explicações por IA com cache:** ao responder, o frontend chama a Edge Function `explicacao`; o resultado é salvo em `explicacoes` (por `question_id`) e reaproveitado nas próximas vezes — sem custo repetido de API. Renderiza fórmulas matemáticas via KaTeX.
+- **Modo Simulado** (`/app/simulado`): escolha de área, prova, número de questões e tempo total; timer regressivo, navegador de questões (grade numerada), finalização manual ou automática ao zerar o tempo, tela de resultado com aproveitamento por área.
+- **Revisão de Erros** (`/app/revisao`): lista as questões cuja última tentativa do usuário foi errada e permite refazê-las uma a uma, com a mesma explicação de IA do modo Questões.
+- **Desempenho** (`/app/perfil`): estatísticas gerais (respondidas, acertos, erros, % de acerto) e detalhamento por área e por assunto.
+- **Histórico** (`/app/historico`): últimas 50 respostas do usuário, com resultado (acerto/erro) e metadados da questão.
+- **Dark mode roxo + toggle claro/escuro:** tema padrão dark, alternável via botão no `Layout`, persistido em `localStorage` (`ThemeContext.jsx`).
+- **Painel Admin** (`/app/admin`): restrito por email (`gustavoruir4@gmail.com`) no frontend — visão geral de usuários/respostas, stats por usuário, limpeza de histórico (próprio ou de terceiros) e limpeza do cache de explicações.
+- **Landing page** (`/`): hero, seção de recursos, áreas cobertas, "como funciona" e card de preço com CTA para `/pagamento`. **Não há demo interativa ao vivo implementada** — a landing é só conteúdo de marketing/estático hoje (se isso for um requisito, entra como pendência).
+
+---
+
+## 6. Planos de Preço
+
+### O que está implementado hoje
+Um único produto, cobrado uma vez: **R$39,90 — EstudaENEM Acesso Completo** (questões, simulado, revisão de erros, desempenho/histórico). Não existe segunda oferta nem upsell no código atual — `Pagamento.jsx` e a Edge Function `pagamento` só conhecem esse valor único (`price: 3990` centavos).
+
+### Estrutura planejada (ainda não implementada)
+| Plano | Preço | Inclui |
+|---|---|---|
+| **ProvAI** | R$39,90 único | Questões + simulado + revisão de erros + guia de redação |
+| **ProvAI+** | R$69,90 único | Tudo do ProvAI + correção de redação por IA + avaliação de discursivas de vestibular |
+
+Implementar essa divisão exige: dois produtos/preços na AbacatePay, uma coluna de "plano" em `acessos` (hoje só existe pago/não-pago, sem diferenciar nível), e as próprias features de redação/discursiva (ver seção 7).
+
+---
+
+## 7. Pendentes / Próximos Passos
+
+- [ ] Definir nome final do produto (candidatos: **ProvAI**, **Questa**) e migrar código/domínio/marca
+- [ ] Registrar domínio próprio (hoje só existe o subdomínio da Vercel)
+- [ ] Verificar domínio próprio no Resend, trocando `onboarding@resend.dev` por um remetente real — sem isso, clientes reais não recebem o email de ativação
+- [ ] Adicionar questões: ENEM 2020–2025, FUVEST, UNICAMP, UFU (os filtros de FUVEST/UNICAMP/UNESP já existem na UI, mas sem conteúdo real ainda)
+- [ ] Suporte a questões com imagem/gráfico (hoje essas questões são excluídas do banco) via Supabase Storage
+- [ ] Correção de redação por IA (feature do plano ProvAI+)
+- [ ] Avaliação de discursivas de vestibular por IA (feature do plano ProvAI+)
+- [ ] Reprocessar/melhorar explicações com um modelo mais forte conforme o banco de questões crescer
+- [ ] Versionar a Edge Function `explicacao` neste repositório (hoje só existe no Supabase remoto)
+- [ ] Decidir se o cadastro direto via `Login.jsx` (sem passar por `/pagamento`) deve continuar existindo, já que o produto é 100% pago
+
+---
+
+## 8. Variáveis de Ambiente
+
+### Frontend (`.env` na raiz — usadas em build/runtime pelo Vite, prefixo `VITE_`)
+| Variável | Uso |
 |---|---|
-| Ciências da Natureza | ~140 |
-| Ciências Humanas | ~140 |
-| Matemática | ~140 |
-| Linguagens | ~135 |
+| `VITE_SUPABASE_URL` | URL do projeto Supabase |
+| `VITE_SUPABASE_ANON_KEY` | Chave anônima do Supabase (client-side) |
+| `VITE_ANTHROPIC_API_KEY` | *(legado — a chamada de IA hoje passa pela Edge Function `explicacao`, não deveria mais ser necessária no frontend; revisar se ainda é usada em algum lugar)* |
+| `VITE_ABACATEPAY_KEY` | *(legado no `.env` local — a chamada real à AbacatePay acontece na Edge Function, que usa o secret `ABACATEPAY_KEY` do lado do Supabase, não essa variável `VITE_`)* |
 
-**Estrutura de cada questão:**
-```javascript
-{
-  id: 31,
-  ano: 2016,
-  prova: "ENEM",
-  area: "Ciências Humanas",
-  assunto: "Filosofia - Ética e Felicidade",
-  enunciado: "Texto da questão...",
-  opcoes: [
-    { letra: "A", texto: "..." },
-    { letra: "B", texto: "..." },
-    { letra: "C", texto: "..." },
-    { letra: "D", texto: "..." },
-    { letra: "E", texto: "..." },
-  ],
-  correta: "B",
-}
-```
-
-**Próximas provas a adicionar:** FUVEST, UNICAMP, UNESP, ENEM 2020–2024.  
-**IDs futuros:** começam em 733.
-
----
-
-## 7. Explicações por IA — Sistema de Cache
-
-**Objetivo:** cada questão tem uma explicação gerada pela IA salva no banco. Quando um aluno erra (ou acerta), a explicação vem do cache — sem custo de API.
-
-**Script:** `gerar_explicacoes.mjs`  
-**Como rodar:** `node gerar_explicacoes.mjs` (dentro da pasta do projeto com `.env` preenchido)  
-**Inteligência:** o script pula questões que já têm explicação — pode ser interrompido e retomado.
-
-**Status atual:** ~195/555 explicações geradas (em progresso).
-
-**Modelo usado:** `claude-sonnet-4-6`  
-**Custo estimado total (555 questões):** ~$4–6 USD
-
-**Prompt padrão:**
-```
-Você é um professor especialista em ENEM. A questão é:
-"[enunciado]"
-A alternativa correta é [letra]: "[texto]".
-Explique de forma didática e direta em 3 a 4 frases por que essa é a 
-resposta certa, qual o conceito envolvido e por que as outras alternativas 
-estão erradas. Responda em português brasileiro.
-```
-
----
-
-## 8. Autenticação
-
-- **Cadastro:** `supabase.auth.signUp({ email, password, options: { data: { nome } } })`
-- **Login:** `supabase.auth.signInWithPassword({ email, password })`
-- **Logout:** `supabase.auth.signOut()`
-- **Estado global:** `AuthContext.jsx`
-
-**Configuração importante no Supabase:**  
-`Authentication > URL Configuration > Site URL` deve ser:
-```
-https://estudaenem-sage.vercel.app
-```
-
----
-
-## 9. Funcionalidades Implementadas
-
-- ✅ Cadastro e login de usuários
-- ✅ Proteção de rotas (redireciona para /login se não autenticado)
-- ✅ 555 questões reais ENEM 2016–2019
-- ✅ Filtros por área e por prova
-- ✅ Embaralhamento Fisher-Yates (questões e sessão)
-- ✅ Correção automática com feedback visual
-- ✅ Explicação por IA para acertos e erros (cache no Supabase)
-- ✅ Deduplicação de sessão (não repete questão já respondida)
-- ✅ Barra de progresso da sessão
-- ✅ Tela de conclusão com estatísticas da rodada
-- ✅ Dashboard de desempenho por área e assunto (Perfil)
-- ✅ Histórico de respostas (últimas 50)
-- ✅ Painel Admin restrito ao email gustavoruir4@gmail.com
-- ✅ Admin: ver todos usuários, stats, limpar histórico, controle do cache
-- ✅ Responsivo para celular
-- ✅ Rotas SPA funcionando no celular (vercel.json)
-
----
-
-## 10. Painel Admin
-
-**URL:** `/admin`  
-**Acesso:** restrito ao email `gustavoruir4@gmail.com`  
-**Proteção:** verificação no frontend (AuthContext) — adicionar RLS no banco antes do lançamento.
-
-**Funcionalidades:**
-- Resumo geral: usuários ativos, total de respostas, taxa de acerto, cache
-- Limpar próprio histórico
-- Ver stats detalhadas de qualquer usuário
-- Limpar histórico de qualquer usuário
-- Limpar cache de explicações
-- Atualizar dados
-
----
-
-## 11. Deploy e CI/CD
-
-Vercel conectado ao GitHub. Commits na branch `main` disparam deploy automático.
-
-```
-Commit no GitHub → Vercel detecta → Build (~1-2 min) → Site atualizado
-```
-
----
-
-## 12. Pendências Antes do Lançamento
-
-- [ ] **SEGURANÇA:** mover chave Anthropic para Supabase Edge Function
-- [ ] **SEGURANÇA:** adicionar verificação RLS para o painel admin no banco
-- [ ] **PAGAMENTO:** integrar Stripe (R$25 acesso único até novembro)
-- [ ] **DESIGN:** novo front-end com Lovable
-- [ ] **LANDING PAGE:** página de vendas explicando o produto e preço
-- [ ] **FUNCIONALIDADES:** modo simulado com timer
-- [ ] **FUNCIONALIDADES:** modo revisão de erros
-- [ ] **QUESTÕES:** completar cache de explicações (555/555)
-- [ ] **QUESTÕES:** adicionar provas de outros vestibulares
-
----
-
-## 13. Decisões Técnicas
-
-| Decisão | Por quê |
+### Backend — Secrets das Edge Functions (Supabase, `supabase secrets set`)
+| Secret | Uso |
 |---|---|
-| Produto 100% pago | Sem versão gratuita — R$25 acesso único até o ENEM |
-| Questões em JS local | Estáticas, não precisam de banco, carregamento instantâneo |
-| Cache de explicações no Supabase | Zero custo de IA após pré-geração, escala com qualquer volume |
-| Chave Anthropic no frontend (temporário) | MVP rápido; migrar para Edge Function antes do lançamento |
-| RLS nas tabelas | Segurança: cada usuário só acessa seus próprios dados |
-| Fisher-Yates shuffle | Embaralhamento justo, sem repetição na sessão |
+| `SUPABASE_URL` | Usado dentro das próprias functions para instanciar o client admin |
+| `SUPABASE_SERVICE_ROLE_KEY` | Client admin (bypassa RLS) — grava em `acessos`, gera links de auth |
+| `ANTHROPIC_API_KEY` | Chamada à IA dentro da função `explicacao` |
+| `ABACATEPAY_KEY` | Autenticação com a API da AbacatePay (`pagamento`) |
+| `ABACATEPAY_WEBHOOK_SECRET` | Validado contra `?webhookSecret=` na URL do webhook |
+| `RESEND_API_KEY` | Envio do email de confirmação pós-pagamento |
+
+> As demais entradas que aparecem em `supabase secrets list` (`SUPABASE_ANON_KEY`, `SUPABASE_DB_URL`, `SUPABASE_JWKS`, `SUPABASE_PUBLISHABLE_KEYS`, `SUPABASE_SECRET_KEYS`) são injetadas automaticamente pela própria plataforma Supabase, não precisam ser configuradas manualmente.
 
 ---
 
-## 14. Como Retomar o Desenvolvimento
+## 9. Como Fazer Deploy de Edge Functions
 
-### Contexto para nova conversa comigo:
-> "Tenho um projeto chamado EstudaENEM em produção em estudaenem-sage.vercel.app. É 100% pago (R$25 até o ENEM). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel. GitHub: gustavoruir4/estudaenem. 555 questões ENEM 2016-2019. Cache de explicações na tabela 'explicacoes' do Supabase. Painel admin em /admin para gustavoruir4@gmail.com. Quero [descrever o que quer fazer]."
+```bash
+# Uma vez por máquina: linkar a CLI local ao projeto remoto
+supabase link --project-ref avtolxrbmvcqcvvfdcvv
+
+# Deploy de uma função específica após editar o código em supabase/functions/<nome>/
+supabase functions deploy nome-da-funcao
+
+# Ex.:
+supabase functions deploy pagamento
+supabase functions deploy webhook-pagamento
+```
+
+Para conferir o que está de fato publicado no projeto remoto (inclusive funções sem código local, como `explicacao`):
+```bash
+supabase functions list
+```
+
+Para checar/atualizar secrets:
+```bash
+supabase secrets list
+supabase secrets set NOME_DA_VARIAVEL=valor
+```
+
+Alterações de schema/RLS no banco são aplicadas com:
+```bash
+supabase db query --linked -f caminho/para/arquivo.sql
+```
+(usado, por exemplo, em `supabase/migrations/20260709000000_pagamento_antes_cadastro.sql`, que tornou `acessos.user_id` opcional e ajustou as políticas de RLS para o fluxo atual de pagamento antes do cadastro.)
+
+---
+
+## 10. Como Retomar o Desenvolvimento
+
+### Contexto para nova conversa:
+> "Tenho um projeto chamado EstudaENEM (em processo de renomeação pra ProvAI) em produção em estudaenem-sage.vercel.app. É 100% pago (R$39,90, pagar antes de criar conta). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel, AbacatePay v1 para pagamento, Resend para email. GitHub: gustavoruir4/estudaenem. 555 questões ENEM 2016–2019. Quero [descrever o que quer fazer]."
 
 ### Para rodar localmente:
 ```bash
 git clone https://github.com/gustavoruir4/estudaenem.git
 cd estudaenem
 npm install
-cp .env.example .env
-# Preencher .env com as chaves
+# Criar .env na raiz com as variáveis da seção 8
 npm run dev
 # Acessa http://localhost:5173
 ```
 
 ### Para adicionar questões:
-Editar `src/lib/questions.js`, IDs começando em 733. Commit → Vercel republica.
-
-### Para gerar explicações:
-```bash
-node gerar_explicacoes.mjs
-# Pula as já geradas, continua de onde parou
-```
+Editar `src/lib/questions.js`, novos IDs a partir de 733 (próximo livre). Commit → Vercel republica automaticamente.
