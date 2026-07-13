@@ -48,10 +48,6 @@
   box-shadow: 0 2px 12px var(--purple-glow);
 }
 
-.logoAccent {
-  color: var(--purple-bright);
-}
-
 /* ── Tabs ── */
 .tabs {
   display: flex;

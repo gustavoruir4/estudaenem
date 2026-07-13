@@ -49,7 +49,7 @@ export default function Landing() {
             <span className={styles.logoMark}>
               <i className="ti ti-school" aria-hidden="true"></i>
             </span>
-            Estuda<span className={styles.logoAccent}>ENEM</span>
+            <span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span>
           </div>
           <div className={styles.navActions}>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
@@ -166,7 +166,7 @@ export default function Landing() {
 
       <footer className={styles.footer}>
         <div className={styles.footerLogo}>
-          Estuda<span className={styles.logoAccent}>ENEM</span>
+          <span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span>
         </div>
         <p className={styles.footerText}>Estude com questões reais e feedback inteligente por IA.</p>
       </footer>

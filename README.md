@@ -1,4 +1,4 @@
-# EstudaENEM 🎓
+# AprovAI 🎓
 
 Plataforma de questões para revisão do ENEM com correção automática e explicação por IA.
 
@@ -9,7 +9,7 @@ Plataforma de questões para revisão do ENEM com correção automática e expli
 ### 1. Criar conta no GitHub
 1. Acesse https://github.com e crie uma conta gratuita
 2. Clique em **New repository**
-3. Nome: `estudaenem` — deixe público, clique em **Create repository**
+3. Nome: `aprovai` — deixe público, clique em **Create repository**
 4. Siga as instruções da tela para fazer upload dos arquivos (ou use GitHub Desktop: https://desktop.github.com)
 
 ---
@@ -40,14 +40,14 @@ Plataforma de questões para revisão do ENEM com correção automática e expli
 ### 4. Publicar no Vercel (hospedagem grátis)
 1. Acesse https://vercel.com e crie uma conta com seu GitHub
 2. Clique em **Add New > Project**
-3. Selecione o repositório `estudaenem`
+3. Selecione o repositório `aprovai`
 4. Em **Environment Variables**, adicione as três variáveis:
    ```
    VITE_SUPABASE_URL      = https://seuproject.supabase.co
    VITE_SUPABASE_ANON_KEY = eyJh...
    VITE_ANTHROPIC_API_KEY = sk-ant-...
    ```
-5. Clique em **Deploy** — pronto! O site vai ficar em `estudaenem.vercel.app`
+5. Clique em **Deploy** — pronto! O site vai ficar em `aprovai.vercel.app`
 
 ---
 
@@ -71,7 +71,7 @@ npm run dev
 ## Estrutura do projeto
 
 ```
-estudaenem/
+aprovai/
 ├── src/
 │   ├── lib/
 │   │   ├── supabase.js       # Conexão com o banco

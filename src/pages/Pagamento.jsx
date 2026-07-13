@@ -116,13 +116,13 @@ export default function Pagamento() {
           <div className={styles.logoMark}>
             <i className="ti ti-school" aria-hidden="true"></i>
           </div>
-          <h1 className={styles.title}>Estuda<span>ENEM</span></h1>
+          <h1 className={styles.title}><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span></h1>
           <p className={styles.subtitle}>Garanta seu acesso completo até o ENEM</p>
         </div>
 
         <div className={styles.resumo}>
           <div className={styles.resumoLinha}>
-            <span className={styles.resumoItem}>EstudaENEM — Acesso Completo</span>
+            <span className={styles.resumoItem}><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span> — Acesso Completo</span>
             <span className={styles.resumoPreco}>{PRECO}</span>
           </div>
           <p className={styles.resumoDesc}>Pagamento único, acesso completo à plataforma até o ENEM.</p>

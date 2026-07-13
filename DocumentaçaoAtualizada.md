@@ -1,4 +1,4 @@
-# EstudaENEM — Documentação Completa do Projeto
+# AprovAI — Documentação Completa do Projeto
 
 **Última atualização:** 11/07/2026
 **Desenvolvido por:** Gustavo + Claude (Anthropic)
@@ -10,11 +10,13 @@
 
 Plataforma web **100% paga** de revisão para o ENEM e vestibulares, com questões de provas reais, correção automática e explicação por IA, simulados cronometrados e revisão de erros.
 
-> **Renomeação em andamento:** o produto se chama **EstudaENEM** em todo o código, domínio e banco de dados hoje. Está em processo de renomeação para **ProvAI** (candidato alternativo: **Questa**) — nome final ainda não decidido, nenhuma mudança de código feita ainda. Ver seção 7.
+> **Renomeação em andamento:** o nome definitivo escolhido foi **AprovAI**. Todo o código (frontend, Edge Functions, configs, textos) já foi atualizado de EstudaENEM/estudaenem para AprovAI/aprovai. **Falta migrar os identificadores externos reais** — o domínio na Vercel e o repositório no GitHub ainda se chamam `estudaenem` na prática; as URLs no código já foram escritas assumindo `aprovai-sage.vercel.app` e `github.com/gustavoruir4/aprovai`, então isso só funciona de fato depois que o domínio/repo forem renomeados nessas plataformas. Ver seção 7.
 
 **Modelo de negócio atual:** pagamento único de **R$39,90**, acesso completo até o ENEM. O usuário paga **antes** de criar a conta (ver seção 4).
 
 ### URLs de Produção
+
+**Ainda ativas de fato hoje** (domínio/repo não foram renomeados nas plataformas ainda):
 | Serviço | URL |
 |---|---|
 | Site (Vercel) | https://estudaenem-sage.vercel.app |
@@ -22,6 +24,14 @@ Plataforma web **100% paga** de revisão para o ENEM e vestibulares, com questõ
 | Banco de dados (Supabase) | https://avtolxrbmvcqcvvfdcvv.supabase.co |
 | Dashboard Supabase | https://supabase.com/dashboard/project/avtolxrbmvcqcvvfdcvv |
 | Dashboard Vercel | https://vercel.com/gustavoruir4s-projects/estudaenem |
+
+**Assumidas pelo código após a renomeação** (`returnUrl`/`completionUrl` nas Edge Functions, links de email) — só vão funcionar depois que o domínio/repo forem de fato renomeados:
+| Serviço | URL |
+|---|---|
+| Site (Vercel) | https://aprovai-sage.vercel.app |
+| Repositório (GitHub) | https://github.com/gustavoruir4/aprovai |
+
+O banco de dados Supabase não muda de identificador — `avtolxrbmvcqcvvfdcvv` continua sendo o project-ref real independentemente do nome do produto.
 
 ---
 
@@ -192,7 +202,7 @@ Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
 
 **Pontos de atenção conhecidos:**
 - A AbacatePay retornou `"API key version mismatch"` em testes anteriores ao usar `v1/billing/create` — resolvido preenchendo corretamente `customer.cellphone` e `customer.taxId`, mas vale reconfirmar periodicamente que a chave `ABACATEPAY_KEY` continua compatível com o endpoint v1, já que a documentação pública da AbacatePay hoje só cobre a API v2.
-- O email de confirmação usa `from: 'EstudaENEM <onboarding@resend.dev>'`, o domínio de teste compartilhado do Resend — **só entrega para o email dono da conta Resend**, não para clientes reais, até um domínio próprio ser verificado (ver seção 7).
+- O email de confirmação usa `from: 'AprovAI <onboarding@resend.dev>'`, o domínio de teste compartilhado do Resend — **só entrega para o email dono da conta Resend**, não para clientes reais, até um domínio próprio ser verificado (ver seção 7).
 
 ---
 
@@ -213,13 +223,13 @@ Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
 ## 6. Planos de Preço
 
 ### O que está implementado hoje
-Um único produto, cobrado uma vez: **R$39,90 — EstudaENEM Acesso Completo** (questões, simulado, revisão de erros, desempenho/histórico). Não existe segunda oferta nem upsell no código atual — `Pagamento.jsx` e a Edge Function `pagamento` só conhecem esse valor único (`price: 3990` centavos).
+Um único produto, cobrado uma vez: **R$39,90 — AprovAI Acesso Completo** (questões, simulado, revisão de erros, desempenho/histórico). Não existe segunda oferta nem upsell no código atual — `Pagamento.jsx` e a Edge Function `pagamento` só conhecem esse valor único (`price: 3990` centavos).
 
 ### Estrutura planejada (ainda não implementada)
 | Plano | Preço | Inclui |
 |---|---|---|
-| **ProvAI** | R$39,90 único | Questões + simulado + revisão de erros + guia de redação |
-| **ProvAI+** | R$69,90 único | Tudo do ProvAI + correção de redação por IA + avaliação de discursivas de vestibular |
+| **AprovAI** | R$39,90 único | Questões + simulado + revisão de erros + guia de redação |
+| **AprovAI+** | R$69,90 único | Tudo do AprovAI + correção de redação por IA + avaliação de discursivas de vestibular |
 
 Implementar essa divisão exige: dois produtos/preços na AbacatePay, uma coluna de "plano" em `acessos` (hoje só existe pago/não-pago, sem diferenciar nível), e as próprias features de redação/discursiva (ver seção 7).
 
@@ -227,13 +237,14 @@ Implementar essa divisão exige: dois produtos/preços na AbacatePay, uma coluna
 
 ## 7. Pendentes / Próximos Passos
 
-- [ ] Definir nome final do produto (candidatos: **ProvAI**, **Questa**) e migrar código/domínio/marca
+- [x] Definir nome final do produto — **AprovAI**, já aplicado em todo o código
+- [ ] Renomear de fato o projeto na Vercel e o repositório no GitHub para `aprovai` (o código já assume `aprovai-sage.vercel.app` e `github.com/gustavoruir4/aprovai` — ver seção 1)
 - [ ] Registrar domínio próprio (hoje só existe o subdomínio da Vercel)
 - [ ] Verificar domínio próprio no Resend, trocando `onboarding@resend.dev` por um remetente real — sem isso, clientes reais não recebem o email de ativação
 - [ ] Adicionar questões: ENEM 2020–2025, FUVEST, UNICAMP, UFU (os filtros de FUVEST/UNICAMP/UNESP já existem na UI, mas sem conteúdo real ainda)
 - [ ] Suporte a questões com imagem/gráfico (hoje essas questões são excluídas do banco) via Supabase Storage
-- [ ] Correção de redação por IA (feature do plano ProvAI+)
-- [ ] Avaliação de discursivas de vestibular por IA (feature do plano ProvAI+)
+- [ ] Correção de redação por IA (feature do plano AprovAI+)
+- [ ] Avaliação de discursivas de vestibular por IA (feature do plano AprovAI+)
 - [ ] Reprocessar/melhorar explicações com um modelo mais forte conforme o banco de questões crescer
 - [ ] Versionar a Edge Function `explicacao` neste repositório (hoje só existe no Supabase remoto)
 - [ ] Decidir se o cadastro direto via `Login.jsx` (sem passar por `/pagamento`) deve continuar existindo, já que o produto é 100% pago
@@ -300,12 +311,12 @@ supabase db query --linked -f caminho/para/arquivo.sql
 ## 10. Como Retomar o Desenvolvimento
 
 ### Contexto para nova conversa:
-> "Tenho um projeto chamado EstudaENEM (em processo de renomeação pra ProvAI) em produção em estudaenem-sage.vercel.app. É 100% pago (R$39,90, pagar antes de criar conta). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel, AbacatePay v1 para pagamento, Resend para email. GitHub: gustavoruir4/estudaenem. 555 questões ENEM 2016–2019. Quero [descrever o que quer fazer]."
+> "Tenho um projeto chamado AprovAI (recém-renomeado de EstudaENEM — domínio/repo ainda não migrados, ver seção 1) em produção. É 100% pago (R$39,90, pagar antes de criar conta). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel, AbacatePay v1 para pagamento, Resend para email. GitHub: gustavoruir4/aprovai (ou gustavoruir4/estudaenem, se a renomeação ainda não tiver sido feita). 555 questões ENEM 2016–2019. Quero [descrever o que quer fazer]."
 
 ### Para rodar localmente:
 ```bash
-git clone https://github.com/gustavoruir4/estudaenem.git
-cd estudaenem
+git clone https://github.com/gustavoruir4/aprovai.git
+cd aprovai
 npm install
 # Criar .env na raiz com as variáveis da seção 8
 npm run dev

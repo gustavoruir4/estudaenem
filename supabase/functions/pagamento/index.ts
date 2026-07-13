@@ -36,14 +36,14 @@ serve(async (req) => {
         frequency: 'ONE_TIME',
         methods: ['PIX'],
         products: [{
-          externalId: 'acesso-estudaenem',
-          name: 'EstudaENEM — Acesso Completo',
+          externalId: 'acesso-aprovai',
+          name: 'AprovAI — Acesso Completo',
           description: 'Acesso completo à plataforma até o ENEM',
           quantity: 1,
           price: 3990,
         }],
-        returnUrl: 'https://estudaenem-sage.vercel.app/pagamento/erro',
-        completionUrl: `https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`,
+        returnUrl: 'https://aprovai-sage.vercel.app/pagamento/erro',
+        completionUrl: `https://aprovai-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`,
         customer: {
           name: nome,
           cellphone: telefoneLimpo,

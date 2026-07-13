@@ -57,7 +57,7 @@ serve(async (req) => {
     try {
       const resendKey = Deno.env.get('RESEND_API_KEY')
 
-      const linkAtivacao = `https://estudaenem-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`
+      const linkAtivacao = `https://aprovai-sage.vercel.app/ativar?email=${encodeURIComponent(email)}`
 
       await fetch('https://api.resend.com/emails', {
         method: 'POST',
@@ -66,9 +66,9 @@ serve(async (req) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'EstudaENEM <onboarding@resend.dev>',
+          from: 'AprovAI <onboarding@resend.dev>',
           to: email,
-          subject: 'Seu acesso ao EstudaENEM está pronto!',
+          subject: 'Seu acesso ao AprovAI está pronto!',
           html: `
             <div style="font-family: sans-serif; max-width: 500px; margin: 0 auto; padding: 32px;">
               <h1 style="color: #8B5CF6;">Pagamento confirmado! 🎉</h1>
@@ -79,7 +79,7 @@ serve(async (req) => {
               </a>
               <p style="color: #666; font-size: 14px;">Se o botão não funcionar, copie e cole este link no navegador:<br>${linkAtivacao}</p>
               <hr style="border: none; border-top: 1px solid #eee; margin: 24px 0;">
-              <p style="color: #999; font-size: 12px;">EstudaENEM — Questões reais com explicação por IA</p>
+              <p style="color: #999; font-size: 12px;">AprovAI — Questões reais com explicação por IA</p>
             </div>
           `
         })
