@@ -49,7 +49,7 @@ export default function Landing() {
             <span className={styles.logoMark}>
               <i className="ti ti-school" aria-hidden="true"></i>
             </span>
-            <span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span>
+            <span><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span></span>
           </div>
           <div className={styles.navActions}>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
@@ -64,11 +64,11 @@ export default function Landing() {
           <i className="ti ti-sparkles" aria-hidden="true"></i> Correção e explicação por IA em cada questão
         </span>
         <h1 className={styles.heroTitle}>
-          Estude para o ENEM com <span>questões reais</span> e feedback inteligente
+          Estude para o ENEM e os principais vestibulares com <span>questões reais</span> e feedback inteligente
         </h1>
         <p className={styles.heroSub}>
-          Pratique com questões de provas anteriores, monte simulados cronometrados e revise
-          seus erros até dominar cada assunto — tudo em um só lugar.
+          Pratique com questões reais do ENEM, FUVEST, UNICAMP e UNESP, monte simulados cronometrados
+          e revise seus erros até dominar cada assunto — tudo em um só lugar.
         </p>
         <div className={styles.heroActions}>
           <Link to="/pagamento" className={styles.btnPrimary}>
@@ -115,7 +115,7 @@ export default function Landing() {
 
       <section className={styles.section}>
         <div className={styles.sectionHead}>
-          <h2 className={styles.sectionTitle}>Todas as áreas do ENEM</h2>
+          <h2 className={styles.sectionTitle}>Todas as áreas do ENEM e dos vestibulares</h2>
           <p className={styles.sectionSub}>Questões organizadas por área e por assunto, prontas para você filtrar.</p>
         </div>
         <div className={styles.areasGrid}>

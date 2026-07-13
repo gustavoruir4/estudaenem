@@ -25,7 +25,7 @@ export default function Layout() {
             <span className={styles.logoMark}>
               <i className="ti ti-school" aria-hidden="true"></i>
             </span>
-            <span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span>
+            <span><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span></span>
           </div>
 
           <div className={styles.tabs}>
