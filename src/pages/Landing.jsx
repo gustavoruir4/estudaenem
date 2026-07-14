@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { QUESTIONS } from '../lib/questions'
 import styles from './Landing.module.css'
 
-/* ── Hook: revela elementos com .reveal quando entram na viewport ── */
+/* Hook: revela elementos com .reveal quando entram na viewport */
 function useScrollReveal() {
   useEffect(() => {
     const els = document.querySelectorAll(`.${styles.reveal}`)
@@ -27,7 +27,7 @@ const FEATURES = [
   {
     icon: 'ti-message-chatbot',
     title: 'A IA corrige o seu erro, não só a questão',
-    desc: 'Errou? Você recebe na hora uma explicação feita pro seu erro específico — entende onde travou o raciocínio, não decora a resposta certa.',
+    desc: 'Errou? Você recebe na hora uma explicação feita pro seu erro específico. Entende onde travou o raciocínio, sem decorar a resposta certa.',
   },
   {
     icon: 'ti-clock-play',
@@ -37,11 +37,11 @@ const FEATURES = [
   {
     icon: 'ti-refresh-dot',
     title: 'Seus erros viram um plano de estudo',
-    desc: 'Toda questão errada fica separada num modo de revisão. Você volta nelas até o assunto virar automático — sem adivinhar onde focar.',
+    desc: 'Toda questão errada fica separada num modo de revisão. Você volta nelas até o assunto virar automático, sem adivinhar onde focar.',
   },
   {
     icon: 'ti-chart-bar',
-    title: 'Saiba exatamente onde você está perdendo pontos',
+    title: 'Saiba onde você está perdendo pontos',
     desc: 'Sua taxa de acerto por área e por assunto, sempre à vista. Estude o que realmente vai puxar sua nota pra cima.',
   },
 ]
@@ -63,12 +63,12 @@ const OBJECOES = [
   {
     icon: 'ti-device-tv',
     pergunta: 'É melhor que assistir vídeo-aula?',
-    resposta: 'Vídeo-aula você assiste passivo e esquece na semana seguinte. Aqui você resolve, erra e a IA corrige o seu raciocínio na hora. Você aprende fazendo — que é como a prova cobra.',
+    resposta: 'Vídeo-aula você assiste passivo e esquece na semana seguinte. Aqui você resolve, erra e a IA corrige o seu raciocínio na hora. Você aprende fazendo, que é como a prova cobra.',
   },
   {
     icon: 'ti-target-arrow',
     pergunta: 'Funciona pro meu vestibular?',
-    resposta: 'Se você vai prestar ENEM, FUVEST, UNICAMP ou UFU, as questões são as mesmas que caem na sua prova — organizadas por área e assunto pra você filtrar o que importa.',
+    resposta: 'Se você vai prestar ENEM, FUVEST, UNICAMP ou UFU, as questões são as mesmas que caem na sua prova, organizadas por área e assunto pra você filtrar o que importa.',
   },
   {
     icon: 'ti-cash',
@@ -77,10 +77,29 @@ const OBJECOES = [
   },
 ]
 
-const FAQ = [
+const SOBRE = [
+  {
+    q: 'O que é a AprovAI?',
+    a: 'Uma plataforma de estudo para o ENEM e os principais vestibulares (FUVEST, UNICAMP, UFU). Você resolve questões reais e recebe explicações geradas por IA na hora, focadas no ponto que costuma confundir.',
+  },
+  {
+    q: 'O que a AprovAI oferece?',
+    a: 'Questões reais separadas por área e assunto, explicação por IA em cada questão, simulados cronometrados, revisão dos seus erros e acompanhamento do seu desempenho, tudo em um só lugar.',
+  },
+  {
+    q: 'A AprovAI é 100% online?',
+    a: 'Sim. Você estuda direto do navegador, no computador ou no celular, a qualquer hora. Não precisa instalar nada.',
+  },
   {
     q: 'Preciso pagar todo mês?',
-    a: 'Não. Você paga R$39,90 uma única vez e o acesso é seu até o ENEM. Sem mensalidade, sem renovação automática, sem surpresa na fatura.',
+    a: 'Não. Você paga uma única vez e o acesso é seu até o ENEM. Sem mensalidade, sem renovação automática, sem surpresa na fatura.',
+  },
+]
+
+const FAQ = [
+  {
+    q: 'Como funciona o teste grátis?',
+    a: 'Você libera 20 questões completas, com explicação por IA em cada uma, sem pagar nada e sem cadastrar cartão. É pra você sentir como o app funciona antes de decidir.',
   },
   {
     q: 'Como funciona a explicação por IA?',
@@ -103,8 +122,9 @@ export default function Landing() {
 
   return (
     <div className={styles.page}>
-      {/* Fundo gradiente animado que cobre a página inteira */}
       <div className={styles.animatedBg} aria-hidden="true"></div>
+      <div className={styles.glowOne} aria-hidden="true"></div>
+      <div className={styles.glowTwo} aria-hidden="true"></div>
 
       <nav className={styles.nav}>
         <div className={styles.navInner}>
@@ -117,12 +137,12 @@ export default function Landing() {
           <div className={styles.navActions}>
             <a href="#precos" className={styles.navLogin}>Preço</a>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
-            <Link to="/pagamento" className={styles.navCta}>Começar agora</Link>
+            <Link to="/pagamento" className={styles.navCta}>Testar grátis</Link>
           </div>
         </div>
       </nav>
 
-      {/* ── HERO ── */}
+      {/* HERO */}
       <header className={styles.hero}>
         <div className={styles.heroText}>
           <span className={styles.heroBadge}>ENEM · FUVEST · UNICAMP · UFU</span>
@@ -131,21 +151,70 @@ export default function Landing() {
             <span className={styles.heroTitleAccent}> Uma vez. Pra sempre.</span>
           </h1>
           <p className={styles.heroSub}>
-            Enquanto outras plataformas <strong>complicam</strong> sua vida com mensalidade e mil
-            recursos que você nunca usa, a gente te <span className={styles.heroApprove}>aprova</span> com
-            o essencial — uma única vez.
+            Enquanto outras plataformas <span className={styles.heroComplica}>complicam</span> sua vida
+            com mensalidade e mil recursos que você nunca usa, a gente te <span className={styles.heroApprove}>aprova</span> com
+            o essencial, uma única vez.
           </p>
           <div className={styles.heroActions}>
             <Link to="/pagamento" className={styles.btnPrimary}>
-              <i className="ti ti-rocket" aria-hidden="true"></i> Começar por R$39,90
+              <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
             </Link>
-            <span className={styles.heroNote}>acesso vitalício · PIX ou cartão</span>
+            <span className={styles.heroNote}>sem cartão, sem pegadinha</span>
+          </div>
+          <div className={styles.heroTrust}>
+            <span><i className="ti ti-check" aria-hidden="true"></i> {totalQuestoes}+ questões reais</span>
+            <span><i className="ti ti-check" aria-hidden="true"></i> Explicação por IA</span>
+            <span><i className="ti ti-check" aria-hidden="true"></i> Pagamento único</span>
           </div>
         </div>
 
-        {/* iPhone com a tela real do app */}
-        <div className={styles.heroPhone}>
-          <div className={styles.phone}>
+        {/* PC + celular na frente */}
+        <div className={styles.heroDevices}>
+          <div className={styles.laptop}>
+            <div className={styles.laptopScreen}>
+              <div className={styles.appTopbar}>
+                <span className={styles.appLogo}>Aprov<span>AI</span></span>
+                <div className={styles.appTabs}>
+                  <span className={styles.appTabActive}>Questões</span>
+                  <span>Simulado</span>
+                  <span>Revisão</span>
+                  <span>Desempenho</span>
+                </div>
+                <i className="ti ti-user-circle" aria-hidden="true"></i>
+              </div>
+              <div className={styles.laptopBody}>
+                <div className={styles.laptopCard}>
+                  <div className={styles.appBadges}>
+                    <span className={styles.appBadgeProva}>ENEM 2019</span>
+                    <span className={styles.appBadgeAreaBlue}>Matemática</span>
+                    <span className={styles.appBadgeAssunto}>Funções</span>
+                  </div>
+                  <p className={styles.laptopEnunciado}>
+                    Uma função quadrática modela a trajetória de um projétil lançado do solo. Qual a altura máxima atingida?
+                  </p>
+                  <div className={styles.appOptions}>
+                    <div className={styles.appOption}><span className={styles.appLetra}>A</span><span>12 metros</span></div>
+                    <div className={`${styles.appOption} ${styles.appOptionCorrect}`}><span className={styles.appLetraCorrect}>B</span><span>20 metros</span><i className="ti ti-check" aria-hidden="true"></i></div>
+                    <div className={styles.appOption}><span className={styles.appLetra}>C</span><span>25 metros</span></div>
+                    <div className={styles.appOption}><span className={styles.appLetra}>D</span><span>40 metros</span></div>
+                  </div>
+                </div>
+                <div className={styles.laptopExplain}>
+                  <div className={styles.appExplainHead}>
+                    <i className="ti ti-sparkles" aria-hidden="true"></i>
+                    <span>Explicação da IA</span>
+                    <span className={styles.appResultOk}><i className="ti ti-circle-check" aria-hidden="true"></i> Você acertou</span>
+                  </div>
+                  <p className={styles.appExplainText}>
+                    A altura máxima está no vértice da parábola. Como o coeficiente de t² é negativo, ela abre pra baixo. Use t = -b/2a para achar o instante do topo e substitua na função para obter 20 metros.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className={styles.laptopBase}></div>
+          </div>
+
+          <div className={styles.phoneFront}>
             <div className={styles.phoneNotch}></div>
             <div className={styles.phoneScreen}>
               <div className={styles.appHeader}>
@@ -159,44 +228,25 @@ export default function Landing() {
               <div className={styles.appCard}>
                 <div className={styles.appBadges}>
                   <span className={styles.appBadgeProva}>ENEM 2018</span>
-                  <span className={styles.appBadgeArea}>Ciências Humanas</span>
-                  <span className={styles.appBadgeAssunto}>História</span>
+                  <span className={styles.appBadgeArea}>Humanas</span>
                 </div>
                 <p className={styles.appEnunciado}>
-                  A Revolução Industrial, iniciada na Inglaterra no século XVIII, impactou
-                  diretamente a organização do trabalho ao:
+                  A Revolução Industrial impactou a organização do trabalho ao:
                 </p>
                 <div className={styles.appOptions}>
-                  <div className={styles.appOption}>
-                    <span className={styles.appLetra}>A</span>
-                    <span>reduzir a jornada de trabalho nas fábricas.</span>
-                  </div>
-                  <div className={`${styles.appOption} ${styles.appOptionCorrect}`}>
-                    <span className={styles.appLetraCorrect}>B</span>
-                    <span>substituir o trabalho artesanal pela produção mecanizada.</span>
-                    <i className="ti ti-check" aria-hidden="true"></i>
-                  </div>
-                  <div className={styles.appOption}>
-                    <span className={styles.appLetra}>C</span>
-                    <span>eliminar a divisão de tarefas na indústria.</span>
-                  </div>
+                  <div className={styles.appOption}><span className={styles.appLetra}>A</span><span>reduzir a jornada nas fábricas.</span></div>
+                  <div className={`${styles.appOption} ${styles.appOptionCorrect}`}><span className={styles.appLetraCorrect}>B</span><span>mecanizar a produção artesanal.</span><i className="ti ti-check" aria-hidden="true"></i></div>
                 </div>
               </div>
               <div className={styles.appExplain}>
                 <div className={styles.appExplainHead}>
                   <i className="ti ti-sparkles" aria-hidden="true"></i>
-                  <span>Explicação da IA</span>
-                  <span className={styles.appResultOk}><i className="ti ti-circle-check" aria-hidden="true"></i> Você acertou</span>
+                  <span>IA</span>
+                  <span className={styles.appResultOk}><i className="ti ti-circle-check" aria-hidden="true"></i> Acertou</span>
                 </div>
                 <p className={styles.appExplainText}>
-                  A Revolução Industrial marcou a transição da manufatura artesanal para a
-                  produção em fábricas com máquinas. O tear mecânico e a máquina a vapor
-                  substituíram o trabalho manual — por isso a alternativa B está correta.
+                  As máquinas substituíram o trabalho manual, por isso a alternativa B está correta.
                 </p>
-              </div>
-              <div className={styles.appFooter}>
-                <span className={styles.appNext}>Próxima questão <i className="ti ti-arrow-right" aria-hidden="true"></i></span>
-                <span className={styles.appCounter}>8 / 21</span>
               </div>
               <div className={styles.phoneHomeBar}></div>
             </div>
@@ -204,7 +254,25 @@ export default function Landing() {
         </div>
       </header>
 
-      {/* ── ANCORAGEM DE PREÇO ── */}
+      {/* TESTE GRÁTIS */}
+      <section className={`${styles.freeSection} ${styles.reveal}`}>
+        <div className={styles.freeCard}>
+          <div className={styles.freeIcon}><i className="ti ti-gift" aria-hidden="true"></i></div>
+          <div className={styles.freeContent}>
+            <h2 className={styles.freeTitle}>Experimente com 20 questões grátis</h2>
+            <p className={styles.freeDesc}>
+              Libere 20 questões completas, com explicação por IA em cada uma, totalmente de graça.
+              Sem cadastrar cartão, sem período de teste que vira cobrança, sem pegadinha. É só pra
+              você sentir como o app funciona antes de decidir.
+            </p>
+            <Link to="/pagamento" className={styles.btnPrimary}>
+              <i className="ti ti-player-play" aria-hidden="true"></i> Começar o teste grátis
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ANCORAGEM DE PREÇO */}
       <section className={`${styles.section} ${styles.reveal}`}>
         <div className={styles.sectionHead}>
           <span className={styles.eyebrow}>A conta que ninguém te mostra</span>
@@ -236,7 +304,7 @@ export default function Landing() {
         <p className={styles.compareFooter}>Mesmo número. Frequência bem diferente.</p>
       </section>
 
-      {/* ── FEATURES (benefícios) ── */}
+      {/* FEATURES */}
       <section className={styles.section}>
         <div className={`${styles.sectionHead} ${styles.reveal}`}>
           <span className={styles.eyebrow}>Por que funciona</span>
@@ -255,7 +323,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── ÁREAS ── */}
+      {/* ÁREAS + STATS */}
       <section className={styles.section}>
         <div className={`${styles.sectionHead} ${styles.reveal}`}>
           <span className={styles.eyebrow}>Cobertura</span>
@@ -288,7 +356,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── COMO FUNCIONA ── */}
+      {/* COMO FUNCIONA */}
       <section className={styles.section}>
         <div className={`${styles.sectionHead} ${styles.reveal}`}>
           <span className={styles.eyebrow}>Como funciona</span>
@@ -305,7 +373,7 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── OBJEÇÕES ── */}
+      {/* OBJEÇÕES */}
       <section className={styles.section}>
         <div className={`${styles.sectionHead} ${styles.reveal}`}>
           <span className={styles.eyebrow}>Antes de decidir</span>
@@ -322,14 +390,17 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── OFERTA / PREÇO ── */}
+      {/* OFERTA / PREÇO com promoção */}
       <section id="precos" className={`${styles.pricingSection} ${styles.reveal}`}>
         <div className={styles.pricingCard}>
-          <span className={styles.pricingBadge}>Pagamento único</span>
-          <div className={styles.pricingValue}>
-            <span className={styles.pricingCurrency}>R$</span>39,90
+          <span className={styles.promoBadge}><i className="ti ti-flame" aria-hidden="true"></i> Oferta de lançamento</span>
+          <div className={styles.pricingPromo}>
+            <span className={styles.pricingFrom}>de R$69,90 por</span>
+            <div className={styles.pricingValue}>
+              <span className={styles.pricingCurrency}>R$</span>39,90
+            </div>
           </div>
-          <p className={styles.pricingSub}>Acesso completo até o ENEM. Sem mensalidade.</p>
+          <p className={styles.pricingSub}>Preço promocional para os primeiros assinantes. Pagamento único, sem mensalidade.</p>
           <ul className={styles.pricingList}>
             <li><i className="ti ti-check" aria-hidden="true"></i> Todas as questões e áreas liberadas</li>
             <li><i className="ti ti-check" aria-hidden="true"></i> Explicações ilimitadas por IA</li>
@@ -344,7 +415,26 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── FAQ ── */}
+      {/* SOBRE / O QUE É */}
+      <section className={styles.section}>
+        <div className={`${styles.sectionHead} ${styles.reveal}`}>
+          <span className={styles.eyebrow}>Sobre a plataforma</span>
+          <h2 className={styles.sectionTitle}>Entenda o que é a AprovAI</h2>
+        </div>
+        <div className={styles.faqList}>
+          {SOBRE.map((item, i) => (
+            <details className={`${styles.faqItem} ${styles.reveal}`} key={i} style={{ transitionDelay: `${i * 60}ms` }}>
+              <summary className={styles.faqQuestion}>
+                {item.q}
+                <i className="ti ti-chevron-down" aria-hidden="true"></i>
+              </summary>
+              <p className={styles.faqAnswer}>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
       <section className={styles.section}>
         <div className={`${styles.sectionHead} ${styles.reveal}`}>
           <span className={styles.eyebrow}>Ainda em dúvida?</span>
@@ -363,12 +453,12 @@ export default function Landing() {
         </div>
       </section>
 
-      {/* ── CTA FINAL ── */}
+      {/* CTA FINAL */}
       <section className={`${styles.finalCta} ${styles.reveal}`}>
-        <h2 className={styles.finalTitle}>Um vestibular. Uma compra. Sem mensalidade.</h2>
-        <p className={styles.finalSub}>Comece agora e estude com a IA até o dia da prova.</p>
+        <h2 className={styles.finalTitle}>Comece grátis. Passe uma vez.</h2>
+        <p className={styles.finalSub}>Teste com 20 questões sem pagar nada. Se gostar, garanta o acesso vitalício por R$39,90.</p>
         <Link to="/pagamento" className={styles.btnPrimary}>
-          <i className="ti ti-rocket" aria-hidden="true"></i> Garantir meu acesso — R$39,90
+          <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
         </Link>
       </section>
 
