@@ -38,9 +38,9 @@ function useParallax() {
 
     function update() {
       const y = window.scrollY
-      // velocidades diferentes = sensação de profundidade
-      if (g1) g1.style.transform = `translate3d(0, ${y * 0.15}px, 0)`
-      if (g2) g2.style.transform = `translate3d(0, ${y * -0.08}px, 0)`
+      // velocidades diferentes = sensação de profundidade (bem visível)
+      if (g1) g1.style.transform = `translate3d(${y * 0.08}px, ${y * 0.45}px, 0)`
+      if (g2) g2.style.transform = `translate3d(${y * -0.1}px, ${y * -0.3}px, 0)`
       ticking = false
     }
 
