@@ -1,8 +1,6 @@
 .page {
   min-height: 100vh;
   overflow-x: hidden;
-  position: relative;
-  background: #0a0613;
 }
 
 /* Fundo dark quase preto */
