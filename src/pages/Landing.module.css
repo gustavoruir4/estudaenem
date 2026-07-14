@@ -130,9 +130,21 @@
   letter-spacing: -0.3px;
 }
 .heroApprove {
-  color: #b794ff;
   font-weight: 800;
   letter-spacing: -0.3px;
+  background: linear-gradient(90deg, #8B5CF6 0%, #8B5CF6 40%, #ffffff 50%, #8B5CF6 60%, #8B5CF6 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: aprovaShine 2.5s linear infinite;
+}
+@keyframes aprovaShine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .heroApprove { animation: none; -webkit-text-fill-color: #b794ff; }
 }
 .heroActions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
 .heroNote { font-size: 13px; color: #9a8bc4; }
