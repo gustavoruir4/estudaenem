@@ -137,7 +137,7 @@ export default function Landing() {
           <div className={styles.navActions}>
             <a href="#precos" className={styles.navLogin}>Preço</a>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
-            <Link to="/pagamento" className={styles.navCta}>Testar grátis</Link>
+            <Link to="/teste" className={styles.navCta}>Testar grátis</Link>
           </div>
         </div>
       </nav>
@@ -156,7 +156,7 @@ export default function Landing() {
             o essencial, uma única vez.
           </p>
           <div className={styles.heroActions}>
-            <Link to="/pagamento" className={styles.btnPrimary}>
+            <Link to="/teste" className={styles.btnPrimary}>
               <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
             </Link>
             <span className={styles.heroNote}>sem cartão, sem pegadinha</span>
@@ -227,7 +227,7 @@ export default function Landing() {
               Sem cadastrar cartão, sem período de teste que vira cobrança, sem pegadinha. É só pra
               você sentir como o app funciona antes de decidir.
             </p>
-            <Link to="/pagamento" className={styles.btnPrimary}>
+            <Link to="/teste" className={styles.btnPrimary}>
               <i className="ti ti-player-play" aria-hidden="true"></i> Começar o teste grátis
             </Link>
           </div>
@@ -419,7 +419,7 @@ export default function Landing() {
       <section className={`${styles.finalCta} ${styles.reveal}`}>
         <h2 className={styles.finalTitle}>Comece grátis. Passe uma vez.</h2>
         <p className={styles.finalSub}>Teste com 20 questões sem pagar nada. Se gostar, garanta o acesso vitalício por R$39,90.</p>
-        <Link to="/pagamento" className={styles.btnPrimary}>
+        <Link to="/teste" className={styles.btnPrimary}>
           <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
         </Link>
       </section>

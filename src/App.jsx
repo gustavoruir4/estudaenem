@@ -3,6 +3,7 @@ import { AuthProvider, useAuth } from './lib/AuthContext'
 import { usePagamentoGuard } from './lib/usePagamentoGuard'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
+import TesteGratis from './pages/TesteGratis'
 import Pagamento from './pages/Pagamento'
 import PagamentoErro from './pages/PagamentoErro'
 import Ativar from './pages/Ativar'
@@ -26,6 +27,7 @@ function AppRoutes() {
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/teste" element={<TesteGratis />} />
       <Route path="/pagamento" element={<Pagamento />} />
       <Route path="/pagamento/erro" element={<PagamentoErro />} />
       <Route path="/ativar" element={<Ativar />} />

@@ -1,5 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
+import { usePagamentoGuard } from '../lib/usePagamentoGuard'
 import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
 import styles from './Questoes.module.css'
@@ -128,6 +130,9 @@ const AREA_ICONS = {
 
 export default function Questoes() {
   const { user } = useAuth()
+  const { acesso } = usePagamentoGuard()
+  const isTrial = acesso.tipo === 'trial'
+
   const [areaFilter, setAreaFilter] = useState('Todas')
   const [provaFilter, setProvaFilter] = useState('Todas')
   const [qIndex, setQIndex] = useState(0)
@@ -138,6 +143,18 @@ export default function Questoes() {
   const [respondidas, setRespondidas] = useState(new Set())
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
+
+  // Trial: quantas questões já foram usadas no total (vem do Supabase)
+  const [trialUsadas, setTrialUsadas] = useState(acesso.usadas || 0)
+  const [trialEsgotado, setTrialEsgotado] = useState(false)
+
+  // Sincroniza o contador do trial quando o guard termina de checar
+  useEffect(() => {
+    if (acesso.tipo === 'trial') {
+      setTrialUsadas(acesso.usadas || 0)
+      if ((acesso.usadas || 0) >= 20) setTrialEsgotado(true)
+    }
+  }, [acesso.tipo, acesso.usadas])
 
   const filteredQs = useMemo(() => {
     const qs = QUESTIONS.filter(q =>
@@ -153,6 +170,25 @@ export default function Questoes() {
 
   async function handleAnswer() {
     if (!selected || !q) return
+
+    // Trial: registra o uso da questão de forma segura (RPC no servidor).
+    // Se já estava esgotado, nem deixa responder.
+    if (isTrial) {
+      if (trialEsgotado || trialUsadas >= 20) {
+        setTrialEsgotado(true)
+        return
+      }
+      const { data: novoTotal, error } = await supabase.rpc('usar_questao_trial')
+      if (!error && typeof novoTotal === 'number') {
+        setTrialUsadas(novoTotal)
+        if (novoTotal >= 20) {
+          // esta foi a 20ª: deixa responder e ver a explicação,
+          // mas marca que as próximas serão bloqueadas
+          setTrialEsgotado(true)
+        }
+      }
+    }
+
     const isCorrect = selected === q.correta
     setAnswered(true)
     setRespondidas(prev => new Set([...prev, q.id]))
@@ -185,6 +221,12 @@ export default function Questoes() {
   }
 
   function nextQuestion() {
+    // Trial esgotado: em vez da próxima questão, mostra a tela de upgrade
+    if (isTrial && trialUsadas >= 20) {
+      setTrialEsgotado(true)
+      return
+    }
+
     const novasRespondidas = new Set([...respondidas, q.id])
     const proxIndex = filteredQs.findIndex(x => !novasRespondidas.has(x.id))
 
@@ -218,6 +260,47 @@ export default function Questoes() {
   function handleFilterProva(p) {
     setProvaFilter(p)
     resetSession()
+  }
+
+  // ── Tela de trial esgotado ──
+  if (isTrial && trialEsgotado && !answered) {
+    return (
+      <div className={styles.finishWrap}>
+        <div className={styles.finishCard}>
+          <div className={styles.finishIcon}>
+            <i className="ti ti-lock" aria-hidden="true"></i>
+          </div>
+          <h2 className={styles.finishTitle}>Você usou suas 20 questões grátis!</h2>
+          <p className={styles.finishSub}>
+            Esperamos que tenha gostado. Para continuar estudando sem limites,
+            garanta o acesso vitalício.
+          </p>
+
+          <div className={styles.finishStats}>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>∞</div>
+              <div className={styles.finishStatLabel}>Questões</div>
+            </div>
+            <div className={styles.finishDivider}></div>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{ color: 'var(--green-text)' }}>R$39,90</div>
+              <div className={styles.finishStatLabel}>Uma vez só</div>
+            </div>
+            <div className={styles.finishDivider}></div>
+            <div className={styles.finishStat}>
+              <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>IA</div>
+              <div className={styles.finishStatLabel}>Ilimitada</div>
+            </div>
+          </div>
+
+          <p className={styles.finishMsg}>Acesso vitalício, sem mensalidade. Passou ou não passou, o app continua seu.</p>
+
+          <Link to="/pagamento" className={styles.btnPrimary}>
+            <i className="ti ti-rocket" aria-hidden="true"></i> Garantir acesso vitalício
+          </Link>
+        </div>
+      </div>
+    )
   }
 
   // ── Tela de conclusão ──
@@ -263,6 +346,17 @@ export default function Questoes() {
 
   return (
     <div className={styles.page}>
+      {/* Banner do trial: mostra quantas questões restam */}
+      {isTrial && (
+        <div className={styles.trialBanner}>
+          <i className="ti ti-gift" aria-hidden="true"></i>
+          <span>
+            Teste grátis: <strong>{Math.max(0, 20 - trialUsadas)}</strong> de 20 questões restantes
+          </span>
+          <Link to="/pagamento" className={styles.trialUpgrade}>Liberar tudo por R$39,90</Link>
+        </div>
+      )}
+
       {/* Filtros */}
       <div className={styles.filtersBlock}>
         <div className={styles.filterGroup}>
@@ -387,7 +481,11 @@ export default function Questoes() {
               </button>
             ) : (
               <button className={styles.btnPrimary} onClick={nextQuestion}>
-                Próxima questão <i className="ti ti-arrow-right" aria-hidden="true"></i>
+                {isTrial && trialUsadas >= 20 ? (
+                  <>Ver planos <i className="ti ti-arrow-right" aria-hidden="true"></i></>
+                ) : (
+                  <>Próxima questão <i className="ti ti-arrow-right" aria-hidden="true"></i></>
+                )}
               </button>
             )}
             <span className={styles.counter}>{feitas} / {total}</span>
