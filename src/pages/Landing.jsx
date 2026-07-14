@@ -23,6 +23,40 @@ function useScrollReveal() {
   }, [])
 }
 
+/* Parallax sutil: move os glows do fundo conforme o scroll.
+   Usa requestAnimationFrame para performance e respeita reduced-motion. */
+function useParallax() {
+  useEffect(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) return
+
+    const g1 = document.querySelector(`.${styles.glowOne}`)
+    const g2 = document.querySelector(`.${styles.glowTwo}`)
+    if (!g1 && !g2) return
+
+    let ticking = false
+
+    function update() {
+      const y = window.scrollY
+      // velocidades diferentes = sensação de profundidade
+      if (g1) g1.style.transform = `translate3d(0, ${y * 0.15}px, 0)`
+      if (g2) g2.style.transform = `translate3d(0, ${y * -0.08}px, 0)`
+      ticking = false
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(update)
+        ticking = true
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    update()
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+}
+
 const FEATURES = [
   {
     icon: 'ti-message-chatbot',
@@ -117,6 +151,7 @@ const FAQ = [
 
 export default function Landing() {
   useScrollReveal()
+  useParallax()
   const totalQuestoes = QUESTIONS.length
   const anoRef = useRef(new Date().getFullYear())
 
@@ -161,7 +196,6 @@ export default function Landing() {
             </Link>
             <span className={styles.heroNote}>sem cartão, sem pegadinha</span>
           </div>
-          <p className={styles.heroSubnote}>É o app completo, não uma versão de demonstração. Você resolve questões reais com a IA explicando cada uma.</p>
           <div className={styles.heroTrust}>
             <span><i className="ti ti-check" aria-hidden="true"></i> {totalQuestoes}+ questões reais</span>
             <span><i className="ti ti-check" aria-hidden="true"></i> Explicação por IA</span>
@@ -372,9 +406,9 @@ export default function Landing() {
             <li><i className="ti ti-check" aria-hidden="true"></i> Sem mensalidade, sem renovação</li>
           </ul>
           <Link to="/pagamento" className={styles.pricingCta}>
-            <i className="ti ti-rocket" aria-hidden="true"></i> Quero acesso vitalício por R$39,90
+            <i className="ti ti-rocket" aria-hidden="true"></i> Garantir meu acesso
           </Link>
-          <span className={styles.pricingSafe}>PIX aprovado na hora ou cartão · acesso liberado na hora</span>
+          <span className={styles.pricingSafe}>PIX aprovado na hora ou cartão de crédito</span>
         </div>
       </section>
 
@@ -418,8 +452,8 @@ export default function Landing() {
 
       {/* CTA FINAL */}
       <section className={`${styles.finalCta} ${styles.reveal}`}>
-        <h2 className={styles.finalTitle}>Quem leva a aprovação a sério, começa hoje.</h2>
-        <p className={styles.finalSub}>Teste com 20 questões sem pagar nada. Se gostar, o acesso vitalício sai por R$39,90, uma vez só.</p>
+        <h2 className={styles.finalTitle}>Comece grátis. Passe uma vez.</h2>
+        <p className={styles.finalSub}>Teste com 20 questões sem pagar nada. Se gostar, garanta o acesso vitalício por R$39,90.</p>
         <Link to="/teste" className={styles.btnPrimary}>
           <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
         </Link>

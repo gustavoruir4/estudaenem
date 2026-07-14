@@ -18,13 +18,14 @@
   position: fixed;
   top: -10%;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -450px;
   width: 900px;
   height: 700px;
   z-index: -2;
   background: radial-gradient(ellipse at center, rgba(139,92,246,0.28), transparent 60%);
   pointer-events: none;
   filter: blur(20px);
+  will-change: transform;
 }
 .glowTwo {
   position: fixed;
@@ -36,11 +37,7 @@
   background: radial-gradient(circle at center, rgba(109,63,196,0.18), transparent 62%);
   pointer-events: none;
   filter: blur(30px);
-  animation: floatGlow 14s ease-in-out infinite;
-}
-@keyframes floatGlow {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(-40px, 30px); }
+  will-change: transform;
 }
 
 /* Reveal no scroll */
