@@ -354,6 +354,72 @@
 .finalTitle { font-size: 32px; font-weight: 700; letter-spacing: -0.7px; color: #fff; margin-bottom: 12px; line-height: 1.2; text-wrap: balance; }
 .finalSub { font-size: 16px; color: #c4b5fd; margin-bottom: 28px; line-height: 1.5; }
 
+/* Trust strip / garantias */
+.trustStrip {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 24px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.trustItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 22px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+}
+.trustItem > i {
+  font-size: 26px;
+  color: #3ec99a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.trustItem strong {
+  display: block;
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.trustItem span {
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #b3a6d1;
+}
+
+/* Quem somos */
+.quemSomos {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 24px;
+}
+.quemSomosInner {
+  text-align: center;
+  padding: 40px 36px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 20px;
+}
+.quemSomosEyebrow {
+  display: inline-block;
+  color: #A78BFA;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+.quemSomosText {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #c4b5fd;
+  margin: 0;
+}
+
 /* Footer */
 .footer { text-align: center; padding: 50px 24px 60px; border-top: 1px solid rgba(255,255,255,0.08); }
 .footerLogo { font-size: 16px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 8px; }
@@ -367,6 +433,7 @@
   .heroActions, .heroTrust { justify-content: center; }
   .heroDevices { margin-top: 30px; min-height: 340px; }
   .objecoesGrid { grid-template-columns: 1fr; }
+  .trustStrip { grid-template-columns: 1fr; }
   .freeCard { flex-direction: column; text-align: center; }
 }
 @media (max-width: 760px) {

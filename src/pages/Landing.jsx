@@ -416,6 +416,31 @@ export default function Landing() {
         </div>
       </section>
 
+      {/* GARANTIAS / SEM PEGADINHA */}
+      <section className={`${styles.trustStrip} ${styles.reveal}`}>
+        <div className={styles.trustItem}>
+          <i className="ti ti-shield-check" aria-hidden="true"></i>
+          <div>
+            <strong>Pagamento único</strong>
+            <span>Sem assinatura, sem renovação automática. Você paga uma vez e pronto.</span>
+          </div>
+        </div>
+        <div className={styles.trustItem}>
+          <i className="ti ti-file-certificate" aria-hidden="true"></i>
+          <div>
+            <strong>Questões oficiais</strong>
+            <span>Questões reais das provas do ENEM e dos principais vestibulares.</span>
+          </div>
+        </div>
+        <div className={styles.trustItem}>
+          <i className="ti ti-gift" aria-hidden="true"></i>
+          <div>
+            <strong>Teste antes de pagar</strong>
+            <span>20 questões grátis, sem cartão. Você só paga se gostar.</span>
+          </div>
+        </div>
+      </section>
+
       {/* OFERTA / PREÇO com promoção */}
       <section id="precos" className={`${styles.pricingSection} ${styles.reveal}`}>
         <div className={styles.pricingCard}>
@@ -486,6 +511,19 @@ export default function Landing() {
         <Link to="/teste" className={styles.btnPrimary}>
           <i className="ti ti-gift" aria-hidden="true"></i> Testar grátis com 20 questões
         </Link>
+      </section>
+
+      {/* QUEM SOMOS */}
+      <section className={`${styles.quemSomos} ${styles.reveal}`}>
+        <div className={styles.quemSomosInner}>
+          <span className={styles.quemSomosEyebrow}>Quem faz a AprovAI</span>
+          <p className={styles.quemSomosText}>
+            A AprovAI nasceu na UFU, feita por quem passou (e ainda passa) pela pressão do
+            vestibular. A gente sabe como é estudar sem saber onde focar, então criou a
+            ferramenta que a gente gostaria de ter tido: direta, sem enrolação e sem
+            mensalidade pesando no bolso de estudante.
+          </p>
+        </div>
       </section>
 
       <footer className={styles.footer}>
