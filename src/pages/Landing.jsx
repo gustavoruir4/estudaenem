@@ -23,8 +23,8 @@ function useScrollReveal() {
   }, [])
 }
 
-/* Parallax sutil: move os glows do fundo conforme o scroll.
-   Usa requestAnimationFrame para performance e respeita reduced-motion. */
+/* Parallax de cursor: os glows do fundo seguem suavemente o mouse (desktop).
+   No celular (sem cursor) eles flutuam sozinhos. Respeita reduced-motion. */
 function useParallax() {
   useEffect(() => {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -34,26 +34,55 @@ function useParallax() {
     const g2 = document.querySelector(`.${styles.glowTwo}`)
     if (!g1 && !g2) return
 
-    let ticking = false
+    const hasMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches
 
-    function update() {
-      const y = window.scrollY
-      // velocidades diferentes = sensação de profundidade (bem visível)
-      if (g1) g1.style.transform = `translate3d(${y * 0.08}px, ${y * 0.45}px, 0)`
-      if (g2) g2.style.transform = `translate3d(${y * -0.1}px, ${y * -0.3}px, 0)`
-      ticking = false
+    // Alvos e posições atuais (para suavizar o movimento com easing)
+    let targetX = 0, targetY = 0
+    let curX1 = 0, curY1 = 0, curX2 = 0, curY2 = 0
+    let raf = null
+
+    function animate() {
+      // easing: aproxima suavemente a posição atual do alvo
+      curX1 += (targetX * 60 - curX1) * 0.06
+      curY1 += (targetY * 60 - curY1) * 0.06
+      curX2 += (targetX * -45 - curX2) * 0.06
+      curY2 += (targetY * -45 - curY2) * 0.06
+      if (g1) g1.style.transform = `translate3d(${curX1}px, ${curY1}px, 0)`
+      if (g2) g2.style.transform = `translate3d(${curX2}px, ${curY2}px, 0)`
+      raf = window.requestAnimationFrame(animate)
     }
 
-    function onScroll() {
-      if (!ticking) {
-        window.requestAnimationFrame(update)
-        ticking = true
+    function onMouseMove(e) {
+      // -0.5 a 0.5 relativo ao centro da tela
+      targetX = e.clientX / window.innerWidth - 0.5
+      targetY = e.clientY / window.innerHeight - 0.5
+    }
+
+    if (hasMouse) {
+      window.addEventListener('mousemove', onMouseMove, { passive: true })
+      animate()
+    } else {
+      // celular: flutuação automática suave em loop
+      let t = 0
+      function float() {
+        t += 0.008
+        targetX = Math.sin(t) * 0.5
+        targetY = Math.cos(t * 0.7) * 0.5
+        curX1 += (targetX * 40 - curX1) * 0.05
+        curY1 += (targetY * 40 - curY1) * 0.05
+        curX2 += (targetX * -30 - curX2) * 0.05
+        curY2 += (targetY * -30 - curY2) * 0.05
+        if (g1) g1.style.transform = `translate3d(${curX1}px, ${curY1}px, 0)`
+        if (g2) g2.style.transform = `translate3d(${curX2}px, ${curY2}px, 0)`
+        raf = window.requestAnimationFrame(float)
       }
+      float()
     }
 
-    window.addEventListener('scroll', onScroll, { passive: true })
-    update()
-    return () => window.removeEventListener('scroll', onScroll)
+    return () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      if (raf) window.cancelAnimationFrame(raf)
+    }
   }, [])
 }
 
