@@ -4,6 +4,7 @@ import { useAuth } from '../lib/AuthContext'
 import { usePagamentoGuard } from '../lib/usePagamentoGuard'
 import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
+import { derivarMateria, MATERIAS_POR_AREA } from '../lib/materias'
 import styles from './Questoes.module.css'
 
 // ── Shuffle determinístico (usa uma seed p/ manter a ordem estável na sessão) ──
@@ -145,8 +146,6 @@ const AREA_ICONS = {
   'Linguagens': 'ti-language',
 }
 
-// Seed de sessão: gerada uma vez, guardada no sessionStorage.
-// Sobrevive a F5 e troca de página, mas zera ao fechar a aba.
 function getSessionSeed() {
   const KEY = 'aprovai_quiz_seed'
   let seed = sessionStorage.getItem(KEY)
@@ -163,13 +162,27 @@ function novaSeed() {
   return seed
 }
 
+// Anos disponíveis, derivados das questões
+const ANOS_DISPONIVEIS = [...new Set(QUESTIONS.map(q => q.ano))].sort((a, b) => b - a)
+
+// Pré-computa a matéria de cada questão uma vez
+const QUESTOES_COM_MATERIA = QUESTIONS.map(q => ({
+  ...q,
+  materia: derivarMateria(q.assunto, q.area),
+}))
+
 export default function Questoes() {
   const { user } = useAuth()
   const { acesso } = usePagamentoGuard()
   const isTrial = acesso.tipo === 'trial'
 
-  const [areaFilter, setAreaFilter] = useState('Todas')
-  const [provaFilter, setProvaFilter] = useState('Todas')
+  // ── Filtros de múltipla seleção (arrays de valores selecionados; vazio = todos) ──
+  const [areasSel, setAreasSel] = useState([])       // ex: ['Matemática']
+  const [materiasSel, setMateriasSel] = useState([]) // ex: ['Física', 'Química']
+  const [anosSel, setAnosSel] = useState([])         // ex: [2022, 2021]
+  const [provasSel, setProvasSel] = useState([])     // ex: ['ENEM']
+  const [filtrosAbertos, setFiltrosAbertos] = useState(false)
+
   const [qIndex, setQIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [answered, setAnswered] = useState(false)
@@ -179,11 +192,10 @@ export default function Questoes() {
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
-  // ── Escolha 1: pular ou não as questões já respondidas (toggle contínuo) ──
   const [pularRespondidas, setPularRespondidas] = useState(
-    () => localStorage.getItem('aprovai_pular_respondidas') !== 'false' // padrão: ligado
+    () => localStorage.getItem('aprovai_pular_respondidas') !== 'false'
   )
-  const [historico, setHistorico] = useState(new Set()) // question_ids já respondidos (Supabase)
+  const [historico, setHistorico] = useState(new Set())
   const [histLoading, setHistLoading] = useState(true)
   const [seed, setSeed] = useState(() => getSessionSeed())
 
@@ -197,7 +209,6 @@ export default function Questoes() {
     }
   }, [acesso.tipo, acesso.usadas])
 
-  // Carrega o histórico de respostas do usuário (uma vez)
   useEffect(() => {
     let ativo = true
     async function carregarHistorico() {
@@ -215,42 +226,52 @@ export default function Questoes() {
     return () => { ativo = false }
   }, [user])
 
-  // Persiste a preferência de pular respondidas
   useEffect(() => {
     localStorage.setItem('aprovai_pular_respondidas', String(pularRespondidas))
   }, [pularRespondidas])
 
+  // Matérias disponíveis: se áreas estão selecionadas, mostra só as dessas áreas
+  const materiasDisponiveis = useMemo(() => {
+    const areasBase = areasSel.length > 0 ? areasSel : AREAS.filter(a => a !== 'Todas')
+    const lista = []
+    areasBase.forEach(a => {
+      (MATERIAS_POR_AREA[a] || []).forEach(m => {
+        if (!lista.includes(m)) lista.push(m)
+      })
+    })
+    return lista
+  }, [areasSel])
+
+  // Aplica todos os filtros (todos em modo múltipla seleção; vazio = sem restrição)
+  const baseFiltrada = useMemo(() => {
+    return QUESTOES_COM_MATERIA.filter(q => {
+      if (areasSel.length > 0 && !areasSel.includes(q.area)) return false
+      if (materiasSel.length > 0 && !materiasSel.includes(q.materia)) return false
+      if (anosSel.length > 0 && !anosSel.includes(q.ano)) return false
+      if (provasSel.length > 0 && !provasSel.includes(q.prova)) return false
+      return true
+    })
+  }, [areasSel, materiasSel, anosSel, provasSel])
+
   const filteredQs = useMemo(() => {
-    let qs = QUESTIONS.filter(q =>
-      (areaFilter === 'Todas' || q.area === areaFilter) &&
-      (provaFilter === 'Todas' || q.prova === provaFilter)
-    )
-    // Se a pessoa optou por pular, remove as já respondidas em sessões anteriores
+    let qs = baseFiltrada
     if (pularRespondidas) {
       qs = qs.filter(q => !historico.has(q.id))
     }
     return shuffleSeeded(qs, seed)
-  }, [areaFilter, provaFilter, pularRespondidas, historico, seed])
+  }, [baseFiltrada, pularRespondidas, historico, seed])
 
   const q = filteredQs[qIndex] || null
   const total = filteredQs.length
   const feitas = respondidas.size
 
-  // Total geral daquele filtro (ignorando histórico) — pra mostrar progresso real
-  const totalGeral = useMemo(() => {
-    return QUESTIONS.filter(q =>
-      (areaFilter === 'Todas' || q.area === areaFilter) &&
-      (provaFilter === 'Todas' || q.prova === provaFilter)
-    ).length
-  }, [areaFilter, provaFilter])
+  const totalGeral = baseFiltrada.length
+  const jaRespondidasGeral = useMemo(
+    () => baseFiltrada.filter(q => historico.has(q.id)).length,
+    [baseFiltrada, historico]
+  )
 
-  const jaRespondidasGeral = useMemo(() => {
-    return QUESTIONS.filter(q =>
-      (areaFilter === 'Todas' || q.area === areaFilter) &&
-      (provaFilter === 'Todas' || q.prova === provaFilter) &&
-      historico.has(q.id)
-    ).length
-  }, [areaFilter, provaFilter, historico])
+  const totalFiltrosAtivos = areasSel.length + materiasSel.length + anosSel.length + provasSel.length
 
   async function handleAnswer() {
     if (!selected || !q) return
@@ -263,9 +284,7 @@ export default function Questoes() {
       const { data: novoTotal, error } = await supabase.rpc('usar_questao_trial')
       if (!error && typeof novoTotal === 'number') {
         setTrialUsadas(novoTotal)
-        if (novoTotal >= 20) {
-          setTrialEsgotado(true)
-        }
+        if (novoTotal >= 20) setTrialEsgotado(true)
       }
     }
 
@@ -306,15 +325,12 @@ export default function Questoes() {
       setTrialEsgotado(true)
       return
     }
-
     const novasRespondidas = new Set([...respondidas, q.id])
     const proxIndex = filteredQs.findIndex(x => !novasRespondidas.has(x.id))
-
     setSelected(null)
     setAnswered(false)
     setAiText('')
     setAiLoading(false)
-
     if (proxIndex === -1) {
       setFinished(true)
       return
@@ -332,23 +348,39 @@ export default function Questoes() {
     setSessionStats({ acertos: 0, erros: 0 })
   }, [])
 
-  function handleFilterArea(a) {
-    setAreaFilter(a)
+  // Alterna um valor num array de seleção
+  function toggleSel(setter, valor) {
+    setter(prev => prev.includes(valor) ? prev.filter(v => v !== valor) : [...prev, valor])
     resetSession()
   }
 
-  function handleFilterProva(p) {
-    setProvaFilter(p)
+  // Ao mexer nas áreas, remove matérias que não pertencem mais
+  function toggleArea(a) {
+    setAreasSel(prev => {
+      const novo = prev.includes(a) ? prev.filter(v => v !== a) : [...prev, a]
+      // limpa matérias órfãs
+      const permitidas = new Set()
+      const base = novo.length > 0 ? novo : AREAS.filter(x => x !== 'Todas')
+      base.forEach(area => (MATERIAS_POR_AREA[area] || []).forEach(m => permitidas.add(m)))
+      setMateriasSel(ms => ms.filter(m => permitidas.has(m)))
+      return novo
+    })
     resetSession()
   }
 
-  // Escolha 1: liga/desliga pular respondidas (não apaga nada)
+  function limparFiltros() {
+    setAreasSel([])
+    setMateriasSel([])
+    setAnosSel([])
+    setProvasSel([])
+    resetSession()
+  }
+
   function togglePular() {
     setPularRespondidas(prev => !prev)
     resetSession()
   }
 
-  // Escolha 2: resetar o progresso — apaga o histórico de respostas do usuário
   async function resetarProgresso() {
     const ok = window.confirm(
       'Isso vai apagar todas as suas respostas salvas e liberar as questões de novo. Seu desempenho será zerado. Deseja continuar?'
@@ -366,15 +398,11 @@ export default function Questoes() {
     return (
       <div className={styles.finishWrap}>
         <div className={styles.finishCard}>
-          <div className={styles.finishIcon}>
-            <i className="ti ti-lock" aria-hidden="true"></i>
-          </div>
+          <div className={styles.finishIcon}><i className="ti ti-lock" aria-hidden="true"></i></div>
           <h2 className={styles.finishTitle}>Você usou suas 20 questões grátis!</h2>
           <p className={styles.finishSub}>
-            Esperamos que tenha gostado. Para continuar estudando sem limites,
-            garanta o acesso vitalício.
+            Esperamos que tenha gostado. Para continuar estudando sem limites, garanta o acesso vitalício.
           </p>
-
           <div className={styles.finishStats}>
             <div className={styles.finishStat}>
               <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>∞</div>
@@ -391,9 +419,7 @@ export default function Questoes() {
               <div className={styles.finishStatLabel}>Ilimitada</div>
             </div>
           </div>
-
           <p className={styles.finishMsg}>Acesso vitalício, sem mensalidade. Passou ou não passou, o app continua seu.</p>
-
           <Link to="/pagamento" className={styles.btnPrimary}>
             <i className="ti ti-rocket" aria-hidden="true"></i> Garantir acesso vitalício
           </Link>
@@ -409,9 +435,7 @@ export default function Questoes() {
     return (
       <div className={styles.finishWrap}>
         <div className={styles.finishCard}>
-          <div className={styles.finishIcon}>
-            <i className="ti ti-confetti" aria-hidden="true"></i>
-          </div>
+          <div className={styles.finishIcon}><i className="ti ti-confetti" aria-hidden="true"></i></div>
           <h2 className={styles.finishTitle}>
             {zerouTudo ? 'Você já respondeu todas as questões desse filtro!' : 'Você completou essa rodada!'}
           </h2>
@@ -420,7 +444,6 @@ export default function Questoes() {
               ? 'Troque os filtros, desligue "pular respondidas" ou resete o progresso para revisar.'
               : 'Veja seu desempenho nessa rodada'}
           </p>
-
           {!zerouTudo && (
             <div className={styles.finishStats}>
               <div className={styles.finishStat}>
@@ -439,11 +462,9 @@ export default function Questoes() {
               </div>
             </div>
           )}
-
           {!zerouTudo && pct >= 70 && <p className={styles.finishMsg}>Excelente desempenho! Continue assim 🚀</p>}
           {!zerouTudo && pct >= 50 && pct < 70 && <p className={styles.finishMsg}>Bom resultado! Revise os temas que errou 📚</p>}
           {!zerouTudo && pct < 50 && <p className={styles.finishMsg}>Não desanime! Revise os conteúdos e tente de novo 💪</p>}
-
           <div className={styles.finishActions}>
             <button className={styles.btnPrimary} onClick={() => { setSeed(novaSeed()); resetSession() }}>
               <i className="ti ti-refresh" aria-hidden="true"></i> Nova rodada
@@ -462,73 +483,112 @@ export default function Questoes() {
       {isTrial && (
         <div className={styles.trialBanner}>
           <i className="ti ti-gift" aria-hidden="true"></i>
-          <span>
-            Teste grátis: <strong>{Math.max(0, 20 - trialUsadas)}</strong> de 20 questões restantes
-          </span>
+          <span>Teste grátis: <strong>{Math.max(0, 20 - trialUsadas)}</strong> de 20 questões restantes</span>
           <Link to="/pagamento" className={styles.trialUpgrade}>Liberar tudo por R$39,90</Link>
         </div>
       )}
 
-      {/* Controles de sessão: duas escolhas independentes */}
       <div className={styles.sessionBar}>
         <label className={styles.switchWrap} title="Quando ligado, você não vê de novo as questões que já respondeu">
-          <input
-            type="checkbox"
-            className={styles.switchInput}
-            checked={pularRespondidas}
-            onChange={togglePular}
-          />
+          <input type="checkbox" className={styles.switchInput} checked={pularRespondidas} onChange={togglePular} />
           <span className={styles.switchTrack}><span className={styles.switchThumb}></span></span>
           <span className={styles.switchLabel}>Pular questões que já respondi</span>
         </label>
-
         <button className={styles.sessionAction} onClick={resetarProgresso} title="Apaga suas respostas salvas e libera todas de novo">
           <i className="ti ti-trash" aria-hidden="true"></i> Resetar progresso
         </button>
       </div>
 
-      <div className={styles.filtersBlock}>
-        <div className={styles.filterGroup}>
-          <span className={styles.filterLabel}>Área</span>
-          <div className={styles.pills}>
-            {AREAS.map(a => (
-              <button
-                key={a}
-                className={`${styles.pill} ${areaFilter === a ? styles.pillActive : ''}`}
-                onClick={() => handleFilterArea(a)}
-              >
-                {a}
+      {/* ── Filtros avançados ── */}
+      <div className={styles.filterPanel}>
+        <button className={styles.filterToggle} onClick={() => setFiltrosAbertos(o => !o)}>
+          <span className={styles.filterToggleLeft}>
+            <i className="ti ti-adjustments-horizontal" aria-hidden="true"></i>
+            Filtros
+            {totalFiltrosAtivos > 0 && <span className={styles.filterCount}>{totalFiltrosAtivos}</span>}
+          </span>
+          <i className={`ti ti-chevron-${filtrosAbertos ? 'up' : 'down'}`} aria-hidden="true"></i>
+        </button>
+
+        {filtrosAbertos && (
+          <div className={styles.filterBody}>
+            <div className={styles.filterGroup}>
+              <span className={styles.filterLabel}>Área</span>
+              <div className={styles.chips}>
+                {AREAS.filter(a => a !== 'Todas').map(a => (
+                  <button
+                    key={a}
+                    className={`${styles.chip} ${areasSel.includes(a) ? styles.chipActive : ''}`}
+                    onClick={() => toggleArea(a)}
+                  >
+                    <i className={`ti ${AREA_ICONS[a] || 'ti-book'}`} aria-hidden="true"></i> {a}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.filterGroup}>
+              <span className={styles.filterLabel}>Matéria</span>
+              <div className={styles.chips}>
+                {materiasDisponiveis.map(m => (
+                  <button
+                    key={m}
+                    className={`${styles.chip} ${materiasSel.includes(m) ? styles.chipActive : ''}`}
+                    onClick={() => toggleSel(setMateriasSel, m)}
+                  >
+                    {m}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className={styles.filterGroup}>
+              <span className={styles.filterLabel}>Ano</span>
+              <div className={styles.chips}>
+                {ANOS_DISPONIVEIS.map(ano => (
+                  <button
+                    key={ano}
+                    className={`${styles.chip} ${anosSel.includes(ano) ? styles.chipActive : ''}`}
+                    onClick={() => toggleSel(setAnosSel, ano)}
+                  >
+                    {ano}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {PROVAS.filter(p => p !== 'Todas').length > 1 && (
+              <div className={styles.filterGroup}>
+                <span className={styles.filterLabel}>Prova</span>
+                <div className={styles.chips}>
+                  {PROVAS.filter(p => p !== 'Todas').map(p => (
+                    <button
+                      key={p}
+                      className={`${styles.chip} ${provasSel.includes(p) ? styles.chipActive : ''}`}
+                      onClick={() => toggleSel(setProvasSel, p)}
+                    >
+                      {p}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {totalFiltrosAtivos > 0 && (
+              <button className={styles.filterClear} onClick={limparFiltros}>
+                <i className="ti ti-x" aria-hidden="true"></i> Limpar filtros
               </button>
-            ))}
+            )}
           </div>
-        </div>
-        <div className={styles.filterGroup}>
-          <span className={styles.filterLabel}>Prova</span>
-          <div className={styles.pills}>
-            {PROVAS.map(p => (
-              <button
-                key={p}
-                className={`${styles.pill} ${provaFilter === p ? styles.pillActive : ''}`}
-                onClick={() => handleFilterProva(p)}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        </div>
+        )}
       </div>
 
       {totalGeral > 0 && (
         <div className={styles.progressWrap}>
           <div className={styles.progressBar}>
-            <div
-              className={styles.progressFill}
-              style={{ width: `${(jaRespondidasGeral / totalGeral) * 100}%` }}
-            ></div>
+            <div className={styles.progressFill} style={{ width: `${(jaRespondidasGeral / totalGeral) * 100}%` }}></div>
           </div>
-          <span className={styles.progressText}>
-            <strong>{jaRespondidasGeral}</strong> de {totalGeral} concluídas
-          </span>
+          <span className={styles.progressText}><strong>{jaRespondidasGeral}</strong> de {totalGeral} concluídas</span>
         </div>
       )}
 
@@ -540,7 +600,7 @@ export default function Questoes() {
       ) : !q ? (
         <div className={styles.empty}>
           <i className="ti ti-mood-empty" aria-hidden="true"></i>
-          {pularRespondidas && jaRespondidasGeral > 0 ? (
+          {pularRespondidas && jaRespondidasGeral > 0 && totalGeral > 0 ? (
             <>
               <p>Você já respondeu todas as questões desse filtro!</p>
               <p className={styles.emptyHint}>Desligue "pular questões que já respondi" para revisar, ou resete o progresso.</p>
@@ -549,7 +609,14 @@ export default function Questoes() {
               </button>
             </>
           ) : (
-            <p>Nenhuma questão encontrada com esses filtros.</p>
+            <>
+              <p>Nenhuma questão encontrada com esses filtros.</p>
+              {totalFiltrosAtivos > 0 && (
+                <button className={styles.btnGhost} onClick={limparFiltros} style={{ marginTop: '0.75rem' }}>
+                  <i className="ti ti-x" aria-hidden="true"></i> Limpar filtros
+                </button>
+              )}
+            </>
           )}
         </div>
       ) : (
@@ -559,7 +626,7 @@ export default function Questoes() {
               <i className="ti ti-calendar" aria-hidden="true"></i> {q.prova} {q.ano}
             </span>
             <span className={styles.badgeArea} data-area={q.area}>
-              <i className={`ti ${AREA_ICONS[q.area] || 'ti-book'}`} aria-hidden="true"></i> {q.area}
+              <i className={`ti ${AREA_ICONS[q.area] || 'ti-book'}`} aria-hidden="true"></i> {q.materia}
             </span>
             <span className={styles.badgeAssunto}>{q.assunto}</span>
           </div>
@@ -611,9 +678,7 @@ export default function Questoes() {
                 )}
               </div>
               {aiLoading ? (
-                <div className={styles.dots}>
-                  Carregando explicação<span>.</span><span>.</span><span>.</span>
-                </div>
+                <div className={styles.dots}>Carregando explicação<span>.</span><span>.</span><span>.</span></div>
               ) : (
                 <ExplicacaoTexto texto={aiText} className={styles.aiText} />
               )}
@@ -622,9 +687,7 @@ export default function Questoes() {
 
           <div className={styles.actions}>
             {!answered ? (
-              <button className={styles.btnPrimary} onClick={handleAnswer} disabled={!selected}>
-                Confirmar resposta
-              </button>
+              <button className={styles.btnPrimary} onClick={handleAnswer} disabled={!selected}>Confirmar resposta</button>
             ) : (
               <button className={styles.btnPrimary} onClick={nextQuestion}>
                 {isTrial && trialUsadas >= 20 ? (
