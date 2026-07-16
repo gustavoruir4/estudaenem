@@ -179,10 +179,10 @@ export default function Questoes() {
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
-  // ── Modo de continuidade ──
-  // 'continuar' = pula questões já respondidas (histórico do Supabase)
-  // 'recomecar' = ignora histórico e mostra tudo
-  const [modo, setModo] = useState(() => localStorage.getItem('aprovai_modo_quiz') || 'continuar')
+  // ── Escolha 1: pular ou não as questões já respondidas (toggle contínuo) ──
+  const [pularRespondidas, setPularRespondidas] = useState(
+    () => localStorage.getItem('aprovai_pular_respondidas') !== 'false' // padrão: ligado
+  )
   const [historico, setHistorico] = useState(new Set()) // question_ids já respondidos (Supabase)
   const [histLoading, setHistLoading] = useState(true)
   const [seed, setSeed] = useState(() => getSessionSeed())
@@ -215,22 +215,22 @@ export default function Questoes() {
     return () => { ativo = false }
   }, [user])
 
-  // Persiste a preferência de modo
+  // Persiste a preferência de pular respondidas
   useEffect(() => {
-    localStorage.setItem('aprovai_modo_quiz', modo)
-  }, [modo])
+    localStorage.setItem('aprovai_pular_respondidas', String(pularRespondidas))
+  }, [pularRespondidas])
 
   const filteredQs = useMemo(() => {
     let qs = QUESTIONS.filter(q =>
       (areaFilter === 'Todas' || q.area === areaFilter) &&
       (provaFilter === 'Todas' || q.prova === provaFilter)
     )
-    // No modo "continuar", remove as questões já respondidas em sessões anteriores
-    if (modo === 'continuar') {
+    // Se a pessoa optou por pular, remove as já respondidas em sessões anteriores
+    if (pularRespondidas) {
       qs = qs.filter(q => !historico.has(q.id))
     }
     return shuffleSeeded(qs, seed)
-  }, [areaFilter, provaFilter, modo, historico, seed])
+  }, [areaFilter, provaFilter, pularRespondidas, historico, seed])
 
   const q = filteredQs[qIndex] || null
   const total = filteredQs.length
@@ -245,13 +245,12 @@ export default function Questoes() {
   }, [areaFilter, provaFilter])
 
   const jaRespondidasGeral = useMemo(() => {
-    if (modo !== 'continuar') return 0
     return QUESTIONS.filter(q =>
       (areaFilter === 'Todas' || q.area === areaFilter) &&
       (provaFilter === 'Todas' || q.prova === provaFilter) &&
       historico.has(q.id)
     ).length
-  }, [areaFilter, provaFilter, modo, historico])
+  }, [areaFilter, provaFilter, historico])
 
   async function handleAnswer() {
     if (!selected || !q) return
@@ -343,23 +342,16 @@ export default function Questoes() {
     resetSession()
   }
 
-  // Alterna entre "continuar" e "recomeçar"
-  function toggleModo() {
-    const novo = modo === 'continuar' ? 'recomecar' : 'continuar'
-    setModo(novo)
+  // Escolha 1: liga/desliga pular respondidas (não apaga nada)
+  function togglePular() {
+    setPularRespondidas(prev => !prev)
     resetSession()
   }
 
-  // Embaralha de novo (gera nova ordem, mantém o modo)
-  function reembaralhar() {
-    setSeed(novaSeed())
-    resetSession()
-  }
-
-  // "Recomeçar do zero de verdade": apaga o histórico de respostas do usuário
-  async function recomecarDoZero() {
+  // Escolha 2: resetar o progresso — apaga o histórico de respostas do usuário
+  async function resetarProgresso() {
     const ok = window.confirm(
-      'Isso vai apagar seu histórico de questões respondidas e liberar todas de novo. Seu desempenho salvo será zerado. Deseja continuar?'
+      'Isso vai apagar todas as suas respostas salvas e liberar as questões de novo. Seu desempenho será zerado. Deseja continuar?'
     )
     if (!ok) return
     if (user) {
@@ -411,8 +403,9 @@ export default function Questoes() {
   }
 
   if (finished) {
-    const pct = total > 0 ? Math.round((sessionStats.acertos / (sessionStats.acertos + sessionStats.erros || 1)) * 100) : 0
-    const zerouTudo = modo === 'continuar' && total === 0
+    const respTotal = sessionStats.acertos + sessionStats.erros
+    const pct = respTotal > 0 ? Math.round((sessionStats.acertos / respTotal) * 100) : 0
+    const zerouTudo = pularRespondidas && total === 0
     return (
       <div className={styles.finishWrap}>
         <div className={styles.finishCard}>
@@ -424,7 +417,7 @@ export default function Questoes() {
           </h2>
           <p className={styles.finishSub}>
             {zerouTudo
-              ? 'Troque os filtros ou recomece do zero para revisar.'
+              ? 'Troque os filtros, desligue "pular respondidas" ou resete o progresso para revisar.'
               : 'Veja seu desempenho nessa rodada'}
           </p>
 
@@ -452,11 +445,11 @@ export default function Questoes() {
           {!zerouTudo && pct < 50 && <p className={styles.finishMsg}>Não desanime! Revise os conteúdos e tente de novo 💪</p>}
 
           <div className={styles.finishActions}>
-            <button className={styles.btnPrimary} onClick={reembaralhar}>
+            <button className={styles.btnPrimary} onClick={() => { setSeed(novaSeed()); resetSession() }}>
               <i className="ti ti-refresh" aria-hidden="true"></i> Nova rodada
             </button>
-            <button className={styles.btnGhost} onClick={recomecarDoZero}>
-              <i className="ti ti-trash" aria-hidden="true"></i> Recomeçar do zero
+            <button className={styles.btnGhost} onClick={resetarProgresso}>
+              <i className="ti ti-trash" aria-hidden="true"></i> Resetar progresso
             </button>
           </div>
         </div>
@@ -476,29 +469,22 @@ export default function Questoes() {
         </div>
       )}
 
-      {/* Controles de sessão */}
+      {/* Controles de sessão: duas escolhas independentes */}
       <div className={styles.sessionBar}>
-        <div className={styles.modoToggle}>
-          <button
-            className={`${styles.modoBtn} ${modo === 'continuar' ? styles.modoBtnActive : ''}`}
-            onClick={() => modo !== 'continuar' && toggleModo()}
-            title="Pula as questões que você já respondeu"
-          >
-            <i className="ti ti-player-track-next" aria-hidden="true"></i> Continuar
-          </button>
-          <button
-            className={`${styles.modoBtn} ${modo === 'recomecar' ? styles.modoBtnActive : ''}`}
-            onClick={() => modo !== 'recomecar' && toggleModo()}
-            title="Mostra todas as questões, mesmo as já respondidas"
-          >
-            <i className="ti ti-infinity" aria-hidden="true"></i> Livre
-          </button>
-        </div>
-        <div className={styles.sessionActions}>
-          <button className={styles.sessionAction} onClick={reembaralhar} title="Embaralhar de novo">
-            <i className="ti ti-arrows-shuffle" aria-hidden="true"></i> Embaralhar
-          </button>
-        </div>
+        <label className={styles.switchWrap} title="Quando ligado, você não vê de novo as questões que já respondeu">
+          <input
+            type="checkbox"
+            className={styles.switchInput}
+            checked={pularRespondidas}
+            onChange={togglePular}
+          />
+          <span className={styles.switchTrack}><span className={styles.switchThumb}></span></span>
+          <span className={styles.switchLabel}>Pular questões que já respondi</span>
+        </label>
+
+        <button className={styles.sessionAction} onClick={resetarProgresso} title="Apaga suas respostas salvas e libera todas de novo">
+          <i className="ti ti-trash" aria-hidden="true"></i> Resetar progresso
+        </button>
       </div>
 
       <div className={styles.filtersBlock}>
@@ -537,15 +523,11 @@ export default function Questoes() {
           <div className={styles.progressBar}>
             <div
               className={styles.progressFill}
-              style={{ width: `${((jaRespondidasGeral + feitas) / totalGeral) * 100}%` }}
+              style={{ width: `${(jaRespondidasGeral / totalGeral) * 100}%` }}
             ></div>
           </div>
           <span className={styles.progressText}>
-            {modo === 'continuar' ? (
-              <><strong>{jaRespondidasGeral + feitas}</strong> de {totalGeral} concluídas</>
-            ) : (
-              <><strong>{feitas}</strong> de {total} nesta rodada</>
-            )}
+            <strong>{jaRespondidasGeral}</strong> de {totalGeral} concluídas
           </span>
         </div>
       )}
@@ -558,11 +540,12 @@ export default function Questoes() {
       ) : !q ? (
         <div className={styles.empty}>
           <i className="ti ti-mood-empty" aria-hidden="true"></i>
-          {modo === 'continuar' && jaRespondidasGeral > 0 ? (
+          {pularRespondidas && jaRespondidasGeral > 0 ? (
             <>
               <p>Você já respondeu todas as questões desse filtro!</p>
-              <button className={styles.btnGhost} onClick={recomecarDoZero} style={{ marginTop: '0.75rem' }}>
-                <i className="ti ti-trash" aria-hidden="true"></i> Recomeçar do zero
+              <p className={styles.emptyHint}>Desligue "pular questões que já respondi" para revisar, ou resete o progresso.</p>
+              <button className={styles.btnGhost} onClick={resetarProgresso} style={{ marginTop: '0.75rem' }}>
+                <i className="ti ti-trash" aria-hidden="true"></i> Resetar progresso
               </button>
             </>
           ) : (
