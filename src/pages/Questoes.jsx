@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useRef } from 'react'
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
 import { usePagamentoGuard } from '../lib/usePagamentoGuard'
@@ -6,10 +6,22 @@ import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
 import styles from './Questoes.module.css'
 
-function shuffle(arr) {
+// ── Shuffle determinístico (usa uma seed p/ manter a ordem estável na sessão) ──
+function mulberry32(seed) {
+  return function () {
+    seed |= 0
+    seed = (seed + 0x6d2b79f5) | 0
+    let t = Math.imul(seed ^ (seed >>> 15), 1 | seed)
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296
+  }
+}
+
+function shuffleSeeded(arr, seed) {
   const a = [...arr]
+  const rand = mulberry32(seed)
   for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = Math.floor(rand() * (i + 1));
     [a[i], a[j]] = [a[j], a[i]]
   }
   return a
@@ -133,6 +145,24 @@ const AREA_ICONS = {
   'Linguagens': 'ti-language',
 }
 
+// Seed de sessão: gerada uma vez, guardada no sessionStorage.
+// Sobrevive a F5 e troca de página, mas zera ao fechar a aba.
+function getSessionSeed() {
+  const KEY = 'aprovai_quiz_seed'
+  let seed = sessionStorage.getItem(KEY)
+  if (!seed) {
+    seed = String(Math.floor(Math.random() * 2 ** 31))
+    sessionStorage.setItem(KEY, seed)
+  }
+  return Number(seed)
+}
+
+function novaSeed() {
+  const seed = Math.floor(Math.random() * 2 ** 31)
+  sessionStorage.setItem('aprovai_quiz_seed', String(seed))
+  return seed
+}
+
 export default function Questoes() {
   const { user } = useAuth()
   const { acesso } = usePagamentoGuard()
@@ -149,6 +179,14 @@ export default function Questoes() {
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
+  // ── Modo de continuidade ──
+  // 'continuar' = pula questões já respondidas (histórico do Supabase)
+  // 'recomecar' = ignora histórico e mostra tudo
+  const [modo, setModo] = useState(() => localStorage.getItem('aprovai_modo_quiz') || 'continuar')
+  const [historico, setHistorico] = useState(new Set()) // question_ids já respondidos (Supabase)
+  const [histLoading, setHistLoading] = useState(true)
+  const [seed, setSeed] = useState(() => getSessionSeed())
+
   const [trialUsadas, setTrialUsadas] = useState(acesso.usadas || 0)
   const [trialEsgotado, setTrialEsgotado] = useState(false)
 
@@ -159,17 +197,61 @@ export default function Questoes() {
     }
   }, [acesso.tipo, acesso.usadas])
 
+  // Carrega o histórico de respostas do usuário (uma vez)
+  useEffect(() => {
+    let ativo = true
+    async function carregarHistorico() {
+      if (!user) { setHistLoading(false); return }
+      const { data } = await supabase
+        .from('respostas')
+        .select('question_id')
+        .eq('user_id', user.id)
+      if (ativo) {
+        setHistorico(new Set((data || []).map(r => r.question_id)))
+        setHistLoading(false)
+      }
+    }
+    carregarHistorico()
+    return () => { ativo = false }
+  }, [user])
+
+  // Persiste a preferência de modo
+  useEffect(() => {
+    localStorage.setItem('aprovai_modo_quiz', modo)
+  }, [modo])
+
   const filteredQs = useMemo(() => {
-    const qs = QUESTIONS.filter(q =>
+    let qs = QUESTIONS.filter(q =>
       (areaFilter === 'Todas' || q.area === areaFilter) &&
       (provaFilter === 'Todas' || q.prova === provaFilter)
     )
-    return shuffle(qs)
-  }, [areaFilter, provaFilter])
+    // No modo "continuar", remove as questões já respondidas em sessões anteriores
+    if (modo === 'continuar') {
+      qs = qs.filter(q => !historico.has(q.id))
+    }
+    return shuffleSeeded(qs, seed)
+  }, [areaFilter, provaFilter, modo, historico, seed])
 
   const q = filteredQs[qIndex] || null
   const total = filteredQs.length
   const feitas = respondidas.size
+
+  // Total geral daquele filtro (ignorando histórico) — pra mostrar progresso real
+  const totalGeral = useMemo(() => {
+    return QUESTIONS.filter(q =>
+      (areaFilter === 'Todas' || q.area === areaFilter) &&
+      (provaFilter === 'Todas' || q.prova === provaFilter)
+    ).length
+  }, [areaFilter, provaFilter])
+
+  const jaRespondidasGeral = useMemo(() => {
+    if (modo !== 'continuar') return 0
+    return QUESTIONS.filter(q =>
+      (areaFilter === 'Todas' || q.area === areaFilter) &&
+      (provaFilter === 'Todas' || q.prova === provaFilter) &&
+      historico.has(q.id)
+    ).length
+  }, [areaFilter, provaFilter, modo, historico])
 
   async function handleAnswer() {
     if (!selected || !q) return
@@ -191,6 +273,7 @@ export default function Questoes() {
     const isCorrect = selected === q.correta
     setAnswered(true)
     setRespondidas(prev => new Set([...prev, q.id]))
+    setHistorico(prev => new Set([...prev, q.id]))
     setSessionStats(prev => ({
       acertos: prev.acertos + (isCorrect ? 1 : 0),
       erros: prev.erros + (isCorrect ? 0 : 1),
@@ -240,7 +323,7 @@ export default function Questoes() {
     setQIndex(proxIndex)
   }
 
-  function resetSession() {
+  const resetSession = useCallback(() => {
     setRespondidas(new Set())
     setQIndex(0)
     setSelected(null)
@@ -248,7 +331,7 @@ export default function Questoes() {
     setAiText('')
     setFinished(false)
     setSessionStats({ acertos: 0, erros: 0 })
-  }
+  }, [])
 
   function handleFilterArea(a) {
     setAreaFilter(a)
@@ -257,6 +340,33 @@ export default function Questoes() {
 
   function handleFilterProva(p) {
     setProvaFilter(p)
+    resetSession()
+  }
+
+  // Alterna entre "continuar" e "recomeçar"
+  function toggleModo() {
+    const novo = modo === 'continuar' ? 'recomecar' : 'continuar'
+    setModo(novo)
+    resetSession()
+  }
+
+  // Embaralha de novo (gera nova ordem, mantém o modo)
+  function reembaralhar() {
+    setSeed(novaSeed())
+    resetSession()
+  }
+
+  // "Recomeçar do zero de verdade": apaga o histórico de respostas do usuário
+  async function recomecarDoZero() {
+    const ok = window.confirm(
+      'Isso vai apagar seu histórico de questões respondidas e liberar todas de novo. Seu desempenho salvo será zerado. Deseja continuar?'
+    )
+    if (!ok) return
+    if (user) {
+      await supabase.from('respostas').delete().eq('user_id', user.id)
+    }
+    setHistorico(new Set())
+    setSeed(novaSeed())
     resetSession()
   }
 
@@ -301,40 +411,54 @@ export default function Questoes() {
   }
 
   if (finished) {
-    const pct = total > 0 ? Math.round((sessionStats.acertos / total) * 100) : 0
+    const pct = total > 0 ? Math.round((sessionStats.acertos / (sessionStats.acertos + sessionStats.erros || 1)) * 100) : 0
+    const zerouTudo = modo === 'continuar' && total === 0
     return (
       <div className={styles.finishWrap}>
         <div className={styles.finishCard}>
           <div className={styles.finishIcon}>
             <i className="ti ti-confetti" aria-hidden="true"></i>
           </div>
-          <h2 className={styles.finishTitle}>Você completou todas as questões!</h2>
-          <p className={styles.finishSub}>Veja seu desempenho nessa rodada</p>
+          <h2 className={styles.finishTitle}>
+            {zerouTudo ? 'Você já respondeu todas as questões desse filtro!' : 'Você completou essa rodada!'}
+          </h2>
+          <p className={styles.finishSub}>
+            {zerouTudo
+              ? 'Troque os filtros ou recomece do zero para revisar.'
+              : 'Veja seu desempenho nessa rodada'}
+          </p>
 
-          <div className={styles.finishStats}>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--green-text)' }}>{sessionStats.acertos}</div>
-              <div className={styles.finishStatLabel}>Acertos</div>
+          {!zerouTudo && (
+            <div className={styles.finishStats}>
+              <div className={styles.finishStat}>
+                <div className={styles.finishStatValue} style={{ color: 'var(--green-text)' }}>{sessionStats.acertos}</div>
+                <div className={styles.finishStatLabel}>Acertos</div>
+              </div>
+              <div className={styles.finishDivider}></div>
+              <div className={styles.finishStat}>
+                <div className={styles.finishStatValue} style={{ color: 'var(--red-text)' }}>{sessionStats.erros}</div>
+                <div className={styles.finishStatLabel}>Erros</div>
+              </div>
+              <div className={styles.finishDivider}></div>
+              <div className={styles.finishStat}>
+                <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>{pct}%</div>
+                <div className={styles.finishStatLabel}>Aproveitamento</div>
+              </div>
             </div>
-            <div className={styles.finishDivider}></div>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--red-text)' }}>{sessionStats.erros}</div>
-              <div className={styles.finishStatLabel}>Erros</div>
-            </div>
-            <div className={styles.finishDivider}></div>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>{pct}%</div>
-              <div className={styles.finishStatLabel}>Aproveitamento</div>
-            </div>
+          )}
+
+          {!zerouTudo && pct >= 70 && <p className={styles.finishMsg}>Excelente desempenho! Continue assim 🚀</p>}
+          {!zerouTudo && pct >= 50 && pct < 70 && <p className={styles.finishMsg}>Bom resultado! Revise os temas que errou 📚</p>}
+          {!zerouTudo && pct < 50 && <p className={styles.finishMsg}>Não desanime! Revise os conteúdos e tente de novo 💪</p>}
+
+          <div className={styles.finishActions}>
+            <button className={styles.btnPrimary} onClick={reembaralhar}>
+              <i className="ti ti-refresh" aria-hidden="true"></i> Nova rodada
+            </button>
+            <button className={styles.btnGhost} onClick={recomecarDoZero}>
+              <i className="ti ti-trash" aria-hidden="true"></i> Recomeçar do zero
+            </button>
           </div>
-
-          {pct >= 70 && <p className={styles.finishMsg}>Excelente desempenho! Continue assim 🚀</p>}
-          {pct >= 50 && pct < 70 && <p className={styles.finishMsg}>Bom resultado! Revise os temas que errou 📚</p>}
-          {pct < 50 && <p className={styles.finishMsg}>Não desanime! Revise os conteúdos e tente de novo 💪</p>}
-
-          <button className={styles.btnPrimary} onClick={resetSession}>
-            <i className="ti ti-refresh" aria-hidden="true"></i> Reiniciar questões
-          </button>
         </div>
       </div>
     )
@@ -351,6 +475,31 @@ export default function Questoes() {
           <Link to="/pagamento" className={styles.trialUpgrade}>Liberar tudo por R$39,90</Link>
         </div>
       )}
+
+      {/* Controles de sessão */}
+      <div className={styles.sessionBar}>
+        <div className={styles.modoToggle}>
+          <button
+            className={`${styles.modoBtn} ${modo === 'continuar' ? styles.modoBtnActive : ''}`}
+            onClick={() => modo !== 'continuar' && toggleModo()}
+            title="Pula as questões que você já respondeu"
+          >
+            <i className="ti ti-player-track-next" aria-hidden="true"></i> Continuar
+          </button>
+          <button
+            className={`${styles.modoBtn} ${modo === 'recomecar' ? styles.modoBtnActive : ''}`}
+            onClick={() => modo !== 'recomecar' && toggleModo()}
+            title="Mostra todas as questões, mesmo as já respondidas"
+          >
+            <i className="ti ti-infinity" aria-hidden="true"></i> Livre
+          </button>
+        </div>
+        <div className={styles.sessionActions}>
+          <button className={styles.sessionAction} onClick={reembaralhar} title="Embaralhar de novo">
+            <i className="ti ti-arrows-shuffle" aria-hidden="true"></i> Embaralhar
+          </button>
+        </div>
+      </div>
 
       <div className={styles.filtersBlock}>
         <div className={styles.filterGroup}>
@@ -383,21 +532,42 @@ export default function Questoes() {
         </div>
       </div>
 
-      {total > 0 && (
+      {totalGeral > 0 && (
         <div className={styles.progressWrap}>
           <div className={styles.progressBar}>
-            <div className={styles.progressFill} style={{ width: `${(feitas / total) * 100}%` }}></div>
+            <div
+              className={styles.progressFill}
+              style={{ width: `${((jaRespondidasGeral + feitas) / totalGeral) * 100}%` }}
+            ></div>
           </div>
           <span className={styles.progressText}>
-            <strong>{feitas}</strong> de {total} respondidas
+            {modo === 'continuar' ? (
+              <><strong>{jaRespondidasGeral + feitas}</strong> de {totalGeral} concluídas</>
+            ) : (
+              <><strong>{feitas}</strong> de {total} nesta rodada</>
+            )}
           </span>
         </div>
       )}
 
-      {!q ? (
+      {histLoading ? (
+        <div className={styles.empty}>
+          <i className="ti ti-loader-2" aria-hidden="true"></i>
+          <p>Carregando seu progresso...</p>
+        </div>
+      ) : !q ? (
         <div className={styles.empty}>
           <i className="ti ti-mood-empty" aria-hidden="true"></i>
-          <p>Nenhuma questão encontrada com esses filtros.</p>
+          {modo === 'continuar' && jaRespondidasGeral > 0 ? (
+            <>
+              <p>Você já respondeu todas as questões desse filtro!</p>
+              <button className={styles.btnGhost} onClick={recomecarDoZero} style={{ marginTop: '0.75rem' }}>
+                <i className="ti ti-trash" aria-hidden="true"></i> Recomeçar do zero
+              </button>
+            </>
+          ) : (
+            <p>Nenhuma questão encontrada com esses filtros.</p>
+          )}
         </div>
       ) : (
         <div className={styles.card}>

@@ -469,3 +469,125 @@
   .trialBanner { flex-wrap: wrap; }
   .trialUpgrade { margin-left: 0; }
 }
+.sessionBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+ 
+.modoToggle {
+  display: inline-flex;
+  background: var(--card-bg, #1a1a24);
+  border: 1px solid var(--border, #2a2a38);
+  border-radius: 10px;
+  padding: 3px;
+  gap: 2px;
+}
+ 
+.modoBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border: none;
+  background: transparent;
+  color: var(--text-muted, #9a9ab0);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+ 
+.modoBtn:hover {
+  color: var(--text, #e8e8f0);
+}
+ 
+.modoBtnActive {
+  background: var(--purple-bright, #8B5CF6);
+  color: #fff;
+}
+ 
+.modoBtnActive:hover {
+  color: #fff;
+}
+ 
+.sessionActions {
+  display: inline-flex;
+  gap: 0.5rem;
+}
+ 
+.sessionAction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--border, #2a2a38);
+  background: var(--card-bg, #1a1a24);
+  color: var(--text-muted, #9a9ab0);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+ 
+.sessionAction:hover {
+  border-color: var(--purple-bright, #8B5CF6);
+  color: var(--text, #e8e8f0);
+}
+ 
+/* Botão secundário (fantasma) usado nas telas de conclusão/vazio */
+.btnGhost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--border, #2a2a38);
+  background: transparent;
+  color: var(--text-muted, #9a9ab0);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+ 
+.btnGhost:hover {
+  border-color: var(--red-text, #f87171);
+  color: var(--red-text, #f87171);
+}
+ 
+/* Agrupa os botões da tela de conclusão */
+.finishActions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ 
+/* Spinner do loading de progresso */
+.empty .ti-loader-2 {
+  animation: spin 0.8s linear infinite;
+}
+ 
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+ 
+@media (max-width: 560px) {
+  .sessionBar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .modoToggle {
+    justify-content: center;
+  }
+  .sessionActions {
+    justify-content: center;
+  }
+}
+ 
