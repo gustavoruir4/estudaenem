@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { QUESTIONS } from '../lib/questions'
+import { useTheme } from '../lib/ThemeContext'
 import styles from './Landing.module.css'
 
 /* Hook: revela elementos com .reveal quando entram na viewport */
@@ -86,13 +87,18 @@ function useParallax() {
   }, [])
 }
 
-// Data oficial do 1º dia de prova do ENEM 2026, conforme edital do INEP
-// (divulgado em 22/05/2026): aplicação em 08 e 15/11/2026.
-const ENEM_2026 = new Date('2026-11-08T00:00:00-03:00')
+// Datas oficiais do 1º dia de prova de cada vestibular. ENEM 2026 conforme
+// edital do INEP (divulgado em 22/05/2026): aplicação em 08 e 15/11/2026.
+const VESTIBULARES_DATAS = [
+  { nome: 'ENEM', artigo: 'o', data: new Date('2026-11-08T00:00:00-03:00') },
+  { nome: 'FUVEST', artigo: 'a', data: new Date('2026-11-01T00:00:00-03:00') },
+  { nome: 'UNICAMP', artigo: 'a', data: new Date('2026-10-18T00:00:00-03:00') },
+  { nome: 'UNESP', artigo: 'a', data: new Date('2026-11-22T00:00:00-03:00') },
+]
 
-function useDiasAteEnem() {
+function diasAte(data) {
   const hoje = new Date()
-  const diff = ENEM_2026.getTime() - hoje.getTime()
+  const diff = data.getTime() - hoje.getTime()
   return Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)))
 }
 
@@ -233,9 +239,9 @@ const SOBRE_E_FAQ = [
 export default function Landing() {
   useScrollReveal()
   useParallax()
+  const { theme, toggleTheme } = useTheme()
   const totalQuestoes = QUESTIONS.length
   const anoRef = useRef(new Date().getFullYear())
-  const diasAteEnem = useDiasAteEnem()
 
   return (
     <div className={styles.page}>
@@ -249,11 +255,19 @@ export default function Landing() {
             <span className={styles.logoMark}>
               <i className="ti ti-school" aria-hidden="true"></i>
             </span>
-            <span><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span></span>
+            <span><span className={styles.logoAprov}>Aprov</span><span className={styles.logoAI}>AI</span></span>
           </div>
           <div className={styles.navActions}>
             <a href="#precos" className={styles.navLogin}>Preço</a>
             <Link to="/login" className={styles.navLogin}>Entrar</Link>
+            <button
+              className={styles.themeToggle}
+              onClick={toggleTheme}
+              title={theme === 'dark' ? 'Modo claro' : 'Modo escuro'}
+              aria-label="Alternar tema"
+            >
+              <i className={theme === 'dark' ? 'ti ti-sun' : 'ti ti-moon'} aria-hidden="true"></i>
+            </button>
             <Link to="/teste" className={styles.navCta}>Testar grátis</Link>
           </div>
         </div>
@@ -281,11 +295,6 @@ export default function Landing() {
             <Link to="/teste" className={styles.btnPrimary}>
               <i className="ti ti-gift" aria-hidden="true"></i> Resolver minhas primeiras questões gratuitas
             </Link>
-          </div>
-          <div className={styles.heroTrust}>
-            <span><i className="ti ti-check" aria-hidden="true"></i> {totalQuestoes}+ questões reais</span>
-            <span><i className="ti ti-check" aria-hidden="true"></i> Explicação por IA</span>
-            <span><i className="ti ti-check" aria-hidden="true"></i> Pagamento único</span>
           </div>
         </div>
 
@@ -351,18 +360,16 @@ export default function Landing() {
           <div className={styles.statDivider}></div>
           <div className={styles.stat}>
             <div className={styles.statValue}>4</div>
-            <div className={styles.statLabel}>Vestibulares cobertos</div>
+            <div className={styles.statLabel}>Vestibulares cobertos até o momento</div>
           </div>
-          <div className={styles.statDivider}></div>
-          <div className={styles.stat}>
-            <div className={styles.statValue}>24/7</div>
-            <div className={styles.statLabel}>Explicações por IA</div>
-          </div>
-          <div className={styles.statDivider}></div>
-          <div className={styles.stat}>
-            <div className={`${styles.statValue} ${styles.statValueUrgent}`}>{diasAteEnem}</div>
-            <div className={styles.statLabel}>Dias até o ENEM 2026</div>
-          </div>
+        </div>
+
+        <div className={styles.countdownGrid}>
+          {VESTIBULARES_DATAS.map(v => (
+            <div key={v.nome} className={styles.countdownCard}>
+              <span className={`${styles.countdownValue} ${styles.statValueUrgent}`}>{diasAte(v.data)}</span> dias até {v.artigo} {v.nome}
+            </div>
+          ))}
         </div>
       </section>
 

@@ -3,12 +3,12 @@
   overflow-x: hidden;
 }
 
-/* Fundo dark quase preto */
+/* Fundo da página (dark quase preto; roxo bem claro no modo light) */
 .animatedBg {
   position: fixed;
   inset: 0;
   z-index: -3;
-  background: #0a0613;
+  background: var(--bg);
 }
 
 /* Glows roxos suaves que dão a estética dark bonita */
@@ -37,6 +37,10 @@
   filter: blur(30px);
   will-change: transform;
 }
+:global([data-theme="light"]) .glowOne,
+:global([data-theme="light"]) .glowTwo {
+  opacity: 0.5;
+}
 
 /* Reveal no scroll */
 .reveal {
@@ -61,6 +65,10 @@
   -webkit-backdrop-filter: blur(16px) saturate(140%);
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
+:global([data-theme="light"]) .nav {
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom-color: rgba(0, 0, 0, 0.07);
+}
 .navInner {
   max-width: 1140px;
   margin: 0 auto;
@@ -72,6 +80,8 @@
   gap: 16px;
 }
 .logo { display: flex; align-items: center; gap: 9px; font-size: 17px; font-weight: 700; letter-spacing: -0.4px; color: #fff; }
+.logoAprov { color: #fff; }
+.logoAI { color: #8B5CF6; }
 .logoMark {
   width: 30px; height: 30px; border-radius: 9px;
   background: linear-gradient(135deg, #6d3fc4, #8B5CF6);
@@ -82,6 +92,14 @@
 .navActions { display: flex; align-items: center; gap: 6px; }
 .navLogin { padding: 9px 14px; font-size: 14px; font-weight: 500; color: #c4b5fd; transition: color 0.15s ease; }
 .navLogin:hover { color: #fff; }
+.themeToggle {
+  display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; margin: 0 4px;
+  border: none; border-radius: 10px; background: transparent;
+  color: var(--text-secondary); font-size: 17px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.themeToggle:hover { color: var(--purple-bright); background: var(--purple-soft); }
 .navCta {
   display: inline-flex; align-items: center; gap: 7px;
   padding: 9px 18px; background: #8B5CF6; color: white;
@@ -167,9 +185,6 @@
 }
 
 .heroActions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
-.heroTrust { display: flex; gap: 20px; flex-wrap: wrap; }
-.heroTrust span { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #b3a6d1; }
-.heroTrust i { color: #3ec99a; font-size: 15px; }
 
 .btnPrimary {
   display: inline-flex; align-items: center; gap: 8px;
@@ -318,6 +333,25 @@
 .statValueUrgent { color: #ff8a5c; }
 .statLabel { font-size: 12px; color: #9a8bc4; margin-top: 4px; }
 .statDivider { width: 1px; height: 38px; background: rgba(255,255,255,0.12); }
+
+.countdownGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 800px;
+  margin: 12px auto 0;
+}
+.countdownCard {
+  text-align: center;
+  padding: 16px 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  font-size: 13px;
+  color: #9a8bc4;
+  line-height: 1.5;
+}
+.countdownValue { font-size: 20px; font-weight: 700; }
 
 /* Passos */
 .passosGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
@@ -475,11 +509,133 @@
 .footerText { font-size: 13px; color: #9a8bc4; margin-bottom: 6px; }
 .footerCopy { font-size: 12px; color: #6d5b9e; }
 
+/* ============================================================
+   MODO CLARO: só overrides pontuais (gatilho [data-theme="light"]
+   vindo do ThemeContext). O dark mode acima continua 100% igual.
+   O mockup do laptop (classes .laptop e .app) fica fixo escuro de propósito,
+   como um "print" da tela do app — não muda com o tema da página.
+   ============================================================ */
+
+/* Títulos e texto de alta ênfase (branco → texto escuro) */
+:global([data-theme="light"]) .logoAprov,
+:global([data-theme="light"]) .heroTitle,
+:global([data-theme="light"]) .sectionTitle,
+:global([data-theme="light"]) .featureTitle,
+:global([data-theme="light"]) .areaCard,
+:global([data-theme="light"]) .passoTitulo,
+:global([data-theme="light"]) .faqQuestion,
+:global([data-theme="light"]) .finalTitle,
+:global([data-theme="light"]) .trustItem strong,
+:global([data-theme="light"]) .depoimentoAutor strong,
+:global([data-theme="light"]) .objecaoPergunta,
+:global([data-theme="light"]) .pricingValue,
+:global([data-theme="light"]) .comparePriceOld,
+:global([data-theme="light"]) .freeTitle,
+:global([data-theme="light"]) .navLogin:hover {
+  color: var(--text-primary);
+}
+
+/* Texto secundário/parágrafos (lavanda claro → cinza-roxo escuro) */
+:global([data-theme="light"]) .navLogin,
+:global([data-theme="light"]) .heroSub,
+:global([data-theme="light"]) .finalSub,
+:global([data-theme="light"]) .sectionSub,
+:global([data-theme="light"]) .compareLabel,
+:global([data-theme="light"]) .compareList li,
+:global([data-theme="light"]) .compareFooter,
+:global([data-theme="light"]) .featureDesc,
+:global([data-theme="light"]) .passoDesc,
+:global([data-theme="light"]) .futuroCard p,
+:global([data-theme="light"]) .depoimentoTexto,
+:global([data-theme="light"]) .objecaoResposta,
+:global([data-theme="light"]) .pricingSub,
+:global([data-theme="light"]) .faqAnswer,
+:global([data-theme="light"]) .trustItem span,
+:global([data-theme="light"]) .quemSomosText,
+:global([data-theme="light"]) .freeDesc {
+  color: var(--text-secondary);
+}
+:global([data-theme="light"]) .pricingList li {
+  color: var(--text-primary);
+}
+
+/* Texto apagado/legendas (roxo acinzentado → cinza médio) */
+:global([data-theme="light"]) .statLabel,
+:global([data-theme="light"]) .countdownCard,
+:global([data-theme="light"]) .mecanismoArrow,
+:global([data-theme="light"]) .depoimentoAutor span,
+:global([data-theme="light"]) .pricingFrom,
+:global([data-theme="light"]) .pricingSafe,
+:global([data-theme="light"]) .footerText,
+:global([data-theme="light"]) .footerCopy {
+  color: var(--text-muted);
+}
+
+/* Acentos roxos (claros demais no branco → tom mais escuro/saturado) */
+:global([data-theme="light"]) .heroBadge,
+:global([data-theme="light"]) .heroPitch,
+:global([data-theme="light"]) .eyebrow,
+:global([data-theme="light"]) .comparePriceNew,
+:global([data-theme="light"]) .pricingCurrency,
+:global([data-theme="light"]) .futuroCard > i,
+:global([data-theme="light"]) .objecaoIcon,
+:global([data-theme="light"]) .featureIcon,
+:global([data-theme="light"]) .faqQuestion > i,
+:global([data-theme="light"]) .quemSomosEyebrow,
+:global([data-theme="light"]) .statValue {
+  color: var(--purple-deep);
+}
+
+/* Verde/laranja de destaque: versões mais escuras, legíveis no branco */
+:global([data-theme="light"]) .trustItem > i,
+:global([data-theme="light"]) .pricingList i,
+:global([data-theme="light"]) .compareYearGood,
+:global([data-theme="light"]) .compareCard .compareList li i.ti-check,
+:global([data-theme="light"]) .freeIcon {
+  color: var(--green-text);
+}
+:global([data-theme="light"]) .statValueUrgent,
+:global([data-theme="light"]) .promoBadge {
+  color: #c2540c;
+}
+:global([data-theme="light"]) .compareCard .compareList li i.ti-x {
+  color: var(--red-text);
+}
+
+/* Cartões: fundo translúcido branco (feito pro dark) → superfície clara */
+:global([data-theme="light"]) .compareCard,
+:global([data-theme="light"]) .featureCard,
+:global([data-theme="light"]) .areaCard,
+:global([data-theme="light"]) .statsBar,
+:global([data-theme="light"]) .countdownCard,
+:global([data-theme="light"]) .passoCard,
+:global([data-theme="light"]) .futuroCard,
+:global([data-theme="light"]) .depoimentoCard,
+:global([data-theme="light"]) .objecaoCard,
+:global([data-theme="light"]) .faqItem,
+:global([data-theme="light"]) .trustItem,
+:global([data-theme="light"]) .quemSomosInner {
+  background: var(--surface-2);
+  border-color: var(--border);
+}
+:global([data-theme="light"]) .pricingCard {
+  background: var(--surface);
+}
+:global([data-theme="light"]) .areaCard:hover {
+  background: var(--hover);
+}
+:global([data-theme="light"]) .statDivider {
+  background: var(--border);
+}
+:global([data-theme="light"]) .footer {
+  border-top-color: var(--border);
+}
+
 /* Responsivo */
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; text-align: center; padding: 44px 24px 56px; }
   .heroText { max-width: 100%; margin: 0 auto; }
-  .heroActions, .heroTrust { justify-content: center; }
+  .heroActions { justify-content: center; }
   .heroDevices { margin-top: 30px; min-height: 340px; }
   .objecoesGrid { grid-template-columns: 1fr; }
   .trustStrip { grid-template-columns: 1fr; }
@@ -500,6 +656,7 @@
   .faqQuestion { font-size: 16px; }
   .compareGrid { grid-template-columns: 1fr; }
   .statsBar { flex-wrap: wrap; gap: 20px; padding: 22px; }
+  .countdownGrid { grid-template-columns: repeat(2, 1fr); }
   .pricingValue { font-size: 48px; }
   .finalTitle { font-size: 26px; }
   .laptop { max-width: 400px; }
