@@ -1,105 +1,101 @@
 # AprovAI 🎓
 
-Plataforma de questões para revisão do ENEM com correção automática e explicação por IA.
+Plataforma de questões para revisão do ENEM, FUVEST, UNICAMP e UFU, com correção automática, teste grátis e acesso vitalício por pagamento único.
 
 ---
 
-## Passo a passo completo para publicar o site
+## Funcionalidades
 
-### 1. Criar conta no GitHub
-1. Acesse https://github.com e crie uma conta gratuita
-2. Clique em **New repository**
-3. Nome: `aprovai` — deixe público, clique em **Create repository**
-4. Siga as instruções da tela para fazer upload dos arquivos (ou use GitHub Desktop: https://desktop.github.com)
-
----
-
-### 2. Configurar o Supabase (banco de dados + login)
-1. Acesse https://supabase.com e crie uma conta gratuita
-2. Clique em **New project** — escolha um nome e uma senha forte
-3. Aguarde o projeto inicializar (~1 min)
-4. No menu lateral, clique em **SQL Editor**
-5. Cole todo o conteúdo do arquivo `supabase_setup.sql` e clique em **Run**
-6. Vá em **Project Settings > API**
-7. Copie:
-   - **Project URL** → é o `VITE_SUPABASE_URL`
-   - **anon / public key** → é o `VITE_SUPABASE_ANON_KEY`
+- ✅ Landing page com teste grátis (20 questões sem cadastro de cartão)
+- ✅ Cadastro e login de usuários (Supabase Auth)
+- ✅ Banco com **1.171 questões reais** (ENEM e FUVEST)
+- ✅ Filtros por área, matéria, ano e prova
+- ✅ Correção automática com feedback visual (acertou/errou, gabarito comentado)
+- ✅ Progresso do quiz persistido em sessionStorage (não reinicia ao trocar de aba)
+- ✅ Modo Simulado e modo Revisão
+- ✅ Dashboard de desempenho (Perfil) e histórico completo de respostas
+- ✅ Acesso vitalício via pagamento único (integração com AbacatePay)
+- ✅ Botão "Reportar questão" em cada card, salvando na tabela `reportes`
+- ✅ Painel administrativo básico (`/app/admin`)
+- ✅ Responsivo para celular
 
 ---
 
-### 3. Obter a chave da API Anthropic (IA de explicações)
-1. Acesse https://console.anthropic.com e crie uma conta
-2. Vá em **API Keys** e clique em **Create Key**
-3. Copie a chave → é o `VITE_ANTHROPIC_API_KEY`
-> ⚠️ A chave da Anthropic NÃO deve ficar exposta no código frontend em produção.
-> Para uso pessoal/teste, você pode configurar no Vercel como variável de ambiente.
-> Para produção real, crie uma Edge Function no Supabase que faz a chamada à API.
+## Stack
+
+- **Frontend:** React 18 + Vite + React Router
+- **Backend:** Supabase (Auth, Postgres, Edge Functions em Deno)
+- **Pagamento:** AbacatePay, via Edge Functions `pagamento` e `webhook-pagamento`
 
 ---
 
-### 4. Publicar no Vercel (hospedagem grátis)
-1. Acesse https://vercel.com e crie uma conta com seu GitHub
-2. Clique em **Add New > Project**
-3. Selecione o repositório `aprovai`
-4. Em **Environment Variables**, adicione as três variáveis:
-   ```
-   VITE_SUPABASE_URL      = https://seuproject.supabase.co
-   VITE_SUPABASE_ANON_KEY = eyJh...
-   VITE_ANTHROPIC_API_KEY = sk-ant-...
-   ```
-5. Clique em **Deploy** — pronto! O site vai ficar em `aprovai.vercel.app`
-
----
-
-## Rodar localmente (para testar antes de publicar)
+## Rodar localmente
 
 ```bash
 # 1. Instalar dependências
 npm install
 
-# 2. Criar o arquivo de variáveis de ambiente
-cp .env.example .env
-# Edite o .env e preencha com suas chaves reais
+# 2. Criar o arquivo de variáveis de ambiente na raiz (.env)
+VITE_SUPABASE_URL=https://seuproject.supabase.co
+VITE_SUPABASE_ANON_KEY=eyJh...
 
 # 3. Rodar
 npm run dev
 # Acesse http://localhost:5173
 ```
 
+### Build de produção
+
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## Configurar o Supabase
+
+1. Crie um projeto em https://supabase.com
+2. No **SQL Editor**, rode o conteúdo de `supabase_setup.sql`
+3. Aplique as migrations em `supabase/migrations/` (via `supabase db push --linked` com o Supabase CLI, ou colando o SQL de cada arquivo manualmente)
+4. Em **Project Settings > API**, copie a **Project URL** e a **anon/public key** para o `.env`
+5. Se for usar pagamento, publique as Edge Functions de `supabase/functions/` (`pagamento` e `webhook-pagamento`) e configure a variável `ABACATEPAY_KEY` nos secrets do projeto
+
 ---
 
 ## Estrutura do projeto
 
 ```
-aprovai/
+estudaenem/
 ├── src/
 │   ├── lib/
-│   │   ├── supabase.js       # Conexão com o banco
-│   │   ├── AuthContext.jsx   # Gerenciamento de login
-│   │   └── questions.js      # Banco de 30 questões
+│   │   ├── supabase.js               # Conexão com o banco
+│   │   ├── AuthContext.jsx           # Gerenciamento de login
+│   │   ├── ThemeContext.jsx          # Tema claro/escuro
+│   │   ├── usePagamentoGuard.js      # Guard de rotas privadas (login + pagamento)
+│   │   ├── materias.js               # Mapeamento de áreas/matérias
+│   │   ├── questions.js              # Banco de questões (ENEM/FUVEST)
+│   │   └── questoes-pendentes-imagem.js  # Questões que dependem de imagem (fora do pool ativo)
 │   ├── components/
-│   │   └── Layout.jsx        # Navbar e estrutura
+│   │   ├── Layout.jsx                # Navbar e estrutura do app logado
+│   │   └── ReportarQuestaoModal.jsx  # Modal de reporte de questão
 │   ├── pages/
-│   │   ├── Login.jsx         # Tela de login/cadastro
-│   │   ├── Questoes.jsx      # Página principal de questões
-│   │   ├── Perfil.jsx        # Dashboard de desempenho
-│   │   └── Historico.jsx     # Histórico de respostas
-│   ├── App.jsx               # Rotas
-│   └── main.jsx              # Entry point
-├── supabase_setup.sql        # SQL para criar o banco
-└── .env.example              # Modelo das variáveis de ambiente
+│   │   ├── Landing.jsx               # Página inicial pública
+│   │   ├── Login.jsx                 # Tela de login/cadastro
+│   │   ├── TesteGratis.jsx           # Fluxo de teste grátis (20 questões)
+│   │   ├── Pagamento.jsx             # Checkout de acesso vitalício
+│   │   ├── PagamentoErro.jsx         # Tela de erro no pagamento
+│   │   ├── Ativar.jsx                # Ativação de acesso após pagamento
+│   │   ├── Questoes.jsx              # Página principal de questões
+│   │   ├── Simulado.jsx              # Modo simulado
+│   │   ├── Revisao.jsx               # Modo revisão
+│   │   ├── Perfil.jsx                # Dashboard de desempenho
+│   │   ├── Historico.jsx             # Histórico de respostas
+│   │   └── Admin.jsx                 # Painel administrativo
+│   ├── App.jsx                       # Rotas
+│   └── main.jsx                      # Entry point
+├── supabase/
+│   ├── migrations/                   # Migrations SQL aplicadas ao banco
+│   └── functions/                    # Edge Functions (pagamento, webhook-pagamento)
+└── supabase_setup.sql                # SQL inicial de criação do banco
 ```
-
----
-
-## Funcionalidades
-
-- ✅ Cadastro e login de usuários (Supabase Auth)
-- ✅ 30 questões reais de ENEM/FUVEST
-- ✅ Filtros por área e por prova
-- ✅ Correção automática com feedback visual
-- ✅ Explicação gerada por IA quando o aluno erra
-- ✅ Dashboard com taxa de acerto por área e por assunto
-- ✅ Histórico completo de respostas
-- ✅ Dados salvos por usuário no banco de dados
-- ✅ Responsivo para celular
