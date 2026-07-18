@@ -1,6 +1,6 @@
 # AprovAI — Documentação Completa do Projeto
 
-**Última atualização:** 11/07/2026
+**Última atualização:** 18/07/2026
 **Desenvolvido por:** Gustavo + Claude (Anthropic)
 **Status:** Em desenvolvimento ativo — produto pago em operação
 
@@ -10,26 +10,33 @@
 
 Plataforma web **100% paga** de revisão para o ENEM e vestibulares, com questões de provas reais, correção automática e explicação por IA, simulados cronometrados e revisão de erros.
 
-> **Renomeação em andamento:** o nome definitivo escolhido foi **AprovAI**. Todo o código (frontend, Edge Functions, configs, textos) já foi atualizado de EstudaENEM/estudaenem para AprovAI/aprovai. **Falta migrar os identificadores externos reais** — o domínio na Vercel e o repositório no GitHub ainda se chamam `estudaenem` na prática; as URLs no código já foram escritas assumindo `aprovai-sage.vercel.app` e `github.com/gustavoruir4/aprovai`, então isso só funciona de fato depois que o domínio/repo forem renomeados nessas plataformas. Ver seção 7.
+> **Renomeação em andamento:** o nome definitivo escolhido foi **AprovAI**. Todo o código (frontend, Edge Functions, configs, textos) já foi atualizado de EstudaENEM/estudaenem para AprovAI/aprovai. **Atualização de 18/07/2026:** o repositório no GitHub já foi renomeado de fato (`github.com/gustavoruir4/AprovAI`); falta só o domínio na Vercel, que ainda se chama `estudaenem` na prática (`estudaenem-sage.vercel.app`) — a URL `aprovai-sage.vercel.app` já assumida pelo código (`returnUrl`/`completionUrl`, links de email) ainda dá 404. Ver seção 7.
 
 **Modelo de negócio atual:** pagamento único de **R$39,90**, acesso completo até o ENEM. O usuário paga **antes** de criar a conta (ver seção 4).
 
+> **Teste grátis (adicionado em 14/07/2026):** além do fluxo pago acima, existe hoje um cadastro direto em `/teste` que libera 20 questões grátis sem pagamento, como isca de topo de funil antes do upsell para o acesso vitalício. É um caminho paralelo, não uma substituição do fluxo pago — ver seção 4.1.
+
 ### URLs de Produção
 
-**Ainda ativas de fato hoje** (domínio/repo não foram renomeados nas plataformas ainda):
+**Atualização de 18/07/2026:** o repositório no GitHub **já foi renomeado de fato** para `github.com/gustavoruir4/AprovAI` (confirmado via `git remote -v` e um push real nesta data). O site na Vercel **ainda não** — `https://aprovai-sage.vercel.app` retorna 404, e `https://estudaenem-sage.vercel.app` continua sendo a URL de produção real (confirmado por fetch nesta mesma data), já servindo o conteúdo com a marca "AprovAI".
+
+**Ainda ativas de fato hoje** (domínio na Vercel não foi renomeado ainda):
 | Serviço | URL |
 |---|---|
 | Site (Vercel) | https://estudaenem-sage.vercel.app |
-| Repositório (GitHub) | https://github.com/gustavoruir4/estudaenem |
 | Banco de dados (Supabase) | https://avtolxrbmvcqcvvfdcvv.supabase.co |
 | Dashboard Supabase | https://supabase.com/dashboard/project/avtolxrbmvcqcvvfdcvv |
 | Dashboard Vercel | https://vercel.com/gustavoruir4s-projects/estudaenem |
 
-**Assumidas pelo código após a renomeação** (`returnUrl`/`completionUrl` nas Edge Functions, links de email) — só vão funcionar depois que o domínio/repo forem de fato renomeados:
+**Já renomeado:**
+| Serviço | URL |
+|---|---|
+| Repositório (GitHub) | https://github.com/gustavoruir4/AprovAI |
+
+**Assumida pelo código, ainda não real** (`returnUrl`/`completionUrl` nas Edge Functions, links de email) — só vai funcionar depois que o domínio for de fato renomeado na Vercel:
 | Serviço | URL |
 |---|---|
 | Site (Vercel) | https://aprovai-sage.vercel.app |
-| Repositório (GitHub) | https://github.com/gustavoruir4/aprovai |
 
 O banco de dados Supabase não muda de identificador — `avtolxrbmvcqcvvfdcvv` continua sendo o project-ref real independentemente do nome do produto.
 
@@ -61,20 +68,22 @@ O banco de dados Supabase não muda de identificador — `avtolxrbmvcqcvvfdcvv` 
 |---|---|---|
 | `/` | `Landing.jsx` | Pública |
 | `/login` | `Login.jsx` | Pública (login e criação de conta direta, sem pagamento — ver nota na seção 4) |
+| `/teste` | `TesteGratis.jsx` | Pública (cria conta direto e já libera trial de 20 questões grátis, sem pagamento — adicionada em 14/07/2026, ver seção 4.1) |
 | `/pagamento` | `Pagamento.jsx` | Pública |
 | `/pagamento/erro` | `PagamentoErro.jsx` | Pública |
 | `/ativar` | `Ativar.jsx` | Pública (espera `?email=` na query string) |
-| `/app` → redireciona para `/app/questoes` | `Layout.jsx` (shell) | **Protegida** (login + pagamento confirmado) |
+| `/app` → redireciona para `/app/questoes` | `Layout.jsx` (shell) | **Protegida** (login + pagamento OU trial válido — ver seção 4.1) |
 | `/app/questoes` | `Questoes.jsx` | Protegida |
 | `/app/simulado` | `Simulado.jsx` | Protegida |
 | `/app/revisao` | `Revisao.jsx` | Protegida |
 | `/app/perfil` | `Perfil.jsx` | Protegida |
 | `/app/historico` | `Historico.jsx` | Protegida |
 | `/app/admin` | `Admin.jsx` | Protegida + restrita a `gustavoruir4@gmail.com` |
+| `*` (qualquer rota não mapeada) | — | Pública, redireciona para `/` (catch-all adicionado em 18/07/2026 — antes rotas inválidas não caíam em lugar nenhum) |
 
 Todas as rotas `/app/*` passam pelo componente `PrivateRoute` (dentro de `App.jsx`), que:
 1. Bloqueia se não houver usuário logado (`useAuth`) → redireciona para `/login`.
-2. Roda o hook `usePagamentoGuard` (ver seção 4) → redireciona para `/pagamento` se o acesso não estiver pago.
+2. Roda o hook `usePagamentoGuard` (ver seção 4.1) → redireciona para `/pagamento` se o acesso não estiver pago **nem** em trial válido.
 
 ### Componentes e libs principais
 
@@ -87,13 +96,17 @@ src/
 │   ├── supabase.js               # Client do Supabase (anon key)
 │   ├── AuthContext.jsx           # signUp/signIn/signOut, estado global de user/loading
 │   ├── ThemeContext.jsx          # Tema dark/light, persistido em localStorage
-│   ├── usePagamentoGuard.js      # Hook: verifica acesso pago por email, autoconserta user_id
-│   └── questions.js              # Banco de questões estático (ver seção 5)
+│   ├── usePagamentoGuard.js      # Hook: verifica acesso pago OU trial válido por user_id (ver seção 4.1)
+│   ├── materias.js               # Mapeamento de matérias por área, usado nos filtros
+│   ├── questions.js              # Banco de questões estático (ver seção 5)
+│   └── questoes-pendentes-imagem.js  # Questões que dependem de imagem/gráfico, fora do pool ativo (ver seção 5)
 ├── components/
-│   └── Layout.jsx / .module.css  # Shell do app logado: nav, tabs, toggle de tema, logout
+│   ├── Layout.jsx / .module.css                # Shell do app logado: nav, tabs, toggle de tema, logout
+│   └── ReportarQuestaoModal.jsx / .module.css   # Modal de "Reportar questão" (adicionado em 18/07/2026)
 └── pages/
     ├── Landing.jsx / .module.css
     ├── Login.jsx / .module.css
+    ├── TesteGratis.jsx / .module.css  # Cadastro direto com trial de 20 questões grátis (adicionado em 14/07/2026)
     ├── Pagamento.jsx / .module.css
     ├── PagamentoErro.jsx / .module.css
     ├── Ativar.jsx / .module.css
@@ -154,6 +167,22 @@ explicacao  text NOT NULL
 created_at  timestamptz DEFAULT now()
 ```
 
+**`testes_gratis`** — controla o trial de 20 questões grátis (adicionada em 14/07/2026). ⚠️ **Não versionada**: não existe migration nem no repositório para ela — foi criada direto no projeto remoto (mesma situação da Edge Function `explicacao`, ver acima). Colunas inferidas pelo uso em `TesteGratis.jsx` e `usePagamentoGuard.js`:
+```sql
+user_id         uuid REFERENCES auth.users(id)  -- chave de busca do hook de acesso
+questoes_usadas int DEFAULT 0
+```
+RLS: o insert só é aceito com `questoes_usadas = 0` (comentário em `TesteGratis.jsx`); o mecanismo que **incrementa** `questoes_usadas` a cada questão respondida não está em nenhum arquivo deste repo — provavelmente um trigger ou lógica configurada direto no Supabase remoto (ver pendência na seção 7).
+
+**`reportes`** — reportes de problemas em questões, enviados pelo botão "Reportar questão" em cada card (adicionada em 18/07/2026, `supabase/migrations/20260718181550_create_reportes_table.sql`):
+```sql
+id          bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY
+questao_id  integer NOT NULL
+mensagem    text NOT NULL
+created_at  timestamptz NOT NULL DEFAULT now()
+```
+RLS: usuários autenticados podem inserir (`for insert to authenticated with check (true)`); não há policy de leitura para o client — hoje só é consultável via dashboard/service role.
+
 ---
 
 ## 4. Fluxo de Pagamento Atual
@@ -193,10 +222,35 @@ Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
 /app/questoes (login automático — confirmação de email está desativada no projeto)
 ```
 
-**Guard de acesso** (`src/lib/usePagamentoGuard.js`, usado dentro do `PrivateRoute`):
-- A cada login/sessão, consulta `acessos` filtrando por `email` do usuário logado.
-- Se não existe linha, ou `status !== 'pago'` → redireciona para `/pagamento`.
-- Se existe e está `pago` mas `user_id` ainda é `null` (ex.: conta criada fora do fluxo `/ativar`) → autoconserta, gravando o `user_id`.
+### 4.1 Fluxo de Teste Grátis (adicionado em 14/07/2026)
+
+Paralelo ao fluxo pago acima, existe uma porta de entrada sem pagamento:
+
+```
+Landing (/) ou link direto
+   │  botão "Resolver minhas primeiras questões gratuitas"
+   ▼
+/teste
+   │  formulário: nome, email, senha
+   │  supabase.auth.signUp({ email, password })
+   │  INSERT testes_gratis { user_id, questoes_usadas: 0 }
+   │  tenta login automático em seguida
+   ▼
+/app/questoes
+   │  usePagamentoGuard libera acesso tipo 'trial', 20 restantes
+   │  a cada questão respondida, questoes_usadas deveria subir no banco
+   │  (mecanismo exato não está neste repo — ver nota na tabela testes_gratis, seção 3)
+   │  ao atingir 20/20, Questoes.jsx mostra a tela de "trial esgotado" com CTA para /pagamento
+   ▼
+Se o usuário decide pagar: segue o fluxo de pagamento normal acima,
+já com a conta criada (não passa de novo por /ativar)
+```
+
+**Guard de acesso** (`src/lib/usePagamentoGuard.js`, usado dentro do `PrivateRoute`) — **atualizado em 14/07/2026** para reconhecer também o trial:
+- Consulta `acessos` filtrando por `user_id` do usuário logado com `status = 'pago'`. Se achar → acesso liberado, `tipo: 'pago'`, ilimitado.
+- Se não é pago, consulta `testes_gratis` por `user_id`. Se existir linha → acesso liberado, `tipo: 'trial'`, com `restantes = 20 - questoes_usadas` (o guard não bloqueia a entrada mesmo com `restantes = 0`; quem decide o que mostrar nesse caso é a própria `Questoes.jsx`).
+- Se não é pago nem tem trial → redireciona para `/pagamento`.
+- **Fix de 18/07/2026:** o efeito passou a depender só de `user?.id`, não do objeto `user` inteiro — o Supabase troca a referência de `user` a cada refresh de token (inclusive ao voltar de uma aba em segundo plano), o que antes reabria `checking` e desmontava toda a árvore de páginas privadas, zerando o estado local delas (ex.: progresso do quiz em `Questoes.jsx`).
 
 **Nota importante:** `Login.jsx` ainda tem uma aba "Criar conta" que cria login **sem** exigir pagamento prévio. Isso não quebra a segurança (o guard acima barra o acesso de quem não pagou, redirecionando para `/pagamento` no primeiro login), mas é um caminho alternativo de cadastro que hoje convive com o fluxo `/pagamento → /ativar`.
 
@@ -208,7 +262,10 @@ Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
 
 ## 5. Features Implementadas
 
-- **Banco de questões:** 555 questões reais do ENEM (2016–2019, dias 1 e 2), estáticas em `src/lib/questions.js` — Matemática (132), Ciências da Natureza (143), Ciências Humanas (146), Linguagens (134). Filtros de área e prova disponíveis na UI (`FUVEST`/`UNICAMP`/`UNESP` já existem como opção de filtro, mas ainda **sem nenhuma questão real cadastrada** dessas provas).
+- **Banco de questões:** 1.171 questões reais, estáticas em `src/lib/questions.js` — ENEM 2016–2022 (985 questões) e FUVEST 2016–2018 (185 questões, adicionadas em 17–18/07/2026, com textos-base das provas incluídos). Por área: Ciências Humanas (311), Linguagens (318), Ciências da Natureza (295), Matemática (247). Filtros de área e prova disponíveis na UI (`UNICAMP`/`UNESP`/`UFU` ainda existem só como opção de filtro, **sem questão real cadastrada**). Questões que dependem de imagem/gráfico não digitalizado ficam fora do pool ativo, separadas em `src/lib/questoes-pendentes-imagem.js` (5 questões hoje — ver seção 7).
+- **Teste grátis** (adicionado em 14/07/2026): `/teste` permite criar conta sem pagar e resolver 20 questões grátis (tabela `testes_gratis`), com upsell para o acesso vitalício em `Pagamento.jsx`. Detalhes na seção 4.1.
+- **Progresso persistido em Questões** (18/07/2026): questão atual, respostas já dadas e a ordem embaralhada ficam salvas em `sessionStorage`, então alt-tab/trocar de aba não reinicia mais a sessão; garantia de que uma questão já respondida na sessão não aparece de novo.
+- **Reportar questão** (18/07/2026): botão discreto em cada card de questão abre um modal (`ReportarQuestaoModal.jsx`) e salva o reporte na tabela `reportes` (ver seção 3).
 - **Explicações por IA com cache:** ao responder, o frontend chama a Edge Function `explicacao`; o resultado é salvo em `explicacoes` (por `question_id`) e reaproveitado nas próximas vezes — sem custo repetido de API. Renderiza fórmulas matemáticas via KaTeX.
 - **Modo Simulado** (`/app/simulado`): escolha de área, prova, número de questões e tempo total; timer regressivo, navegador de questões (grade numerada), finalização manual ou automática ao zerar o tempo, tela de resultado com aproveitamento por área.
 - **Revisão de Erros** (`/app/revisao`): lista as questões cuja última tentativa do usuário foi errada e permite refazê-las uma a uma, com a mesma explicação de IA do modo Questões.
@@ -216,7 +273,7 @@ Webhook "webhook-pagamento" (chamado pela AbacatePay, servidor a servidor)
 - **Histórico** (`/app/historico`): últimas 50 respostas do usuário, com resultado (acerto/erro) e metadados da questão.
 - **Dark mode roxo + toggle claro/escuro:** tema padrão dark, alternável via botão no `Layout`, persistido em `localStorage` (`ThemeContext.jsx`).
 - **Painel Admin** (`/app/admin`): restrito por email (`gustavoruir4@gmail.com`) no frontend — visão geral de usuários/respostas, stats por usuário, limpeza de histórico (próprio ou de terceiros) e limpeza do cache de explicações.
-- **Landing page** (`/`): hero, seção de recursos, áreas cobertas, "como funciona" e card de preço com CTA para `/pagamento`. **Não há demo interativa ao vivo implementada** — a landing é só conteúdo de marketing/estático hoje (se isso for um requisito, entra como pendência).
+- **Landing page** (`/`) — reescrita em 18/07/2026 com foco em CRO/UX: headline nomeando a dor central, subheadline explicando o mecanismo do produto, bloco de "por que o método tradicional falha", FOMO real com contagem regressiva até o ENEM 2026, seção de prova social (`DEPOIMENTOS`, hoje um array vazio de propósito, aguardando depoimentos reais — ver seção 7) e CTAs para `/teste` (teste grátis) e `/pagamento` (acesso vitalício). **Não há demo interativa ao vivo implementada** — a landing é conteúdo estático hoje.
 
 ---
 
@@ -238,16 +295,20 @@ Implementar essa divisão exige: dois produtos/preços na AbacatePay, uma coluna
 ## 7. Pendentes / Próximos Passos
 
 - [x] Definir nome final do produto — **AprovAI**, já aplicado em todo o código
-- [ ] Renomear de fato o projeto na Vercel e o repositório no GitHub para `aprovai` (o código já assume `aprovai-sage.vercel.app` e `github.com/gustavoruir4/aprovai` — ver seção 1)
+- [x] Renomear de fato o repositório no GitHub para `AprovAI` — feito, confirmado em 18/07/2026 (`github.com/gustavoruir4/AprovAI`)
+- [ ] Renomear de fato o projeto na Vercel (o código já assume `aprovai-sage.vercel.app`, mas hoje isso dá 404 — o site real continua em `estudaenem-sage.vercel.app`, confirmado em 18/07/2026 — ver seção 1)
 - [ ] Registrar domínio próprio (hoje só existe o subdomínio da Vercel)
 - [ ] Verificar domínio próprio no Resend, trocando `onboarding@resend.dev` por um remetente real — sem isso, clientes reais não recebem o email de ativação
-- [ ] Adicionar questões: ENEM 2020–2025, FUVEST, UNICAMP, UFU (os filtros de FUVEST/UNICAMP/UNESP já existem na UI, mas sem conteúdo real ainda)
-- [ ] Suporte a questões com imagem/gráfico (hoje essas questões são excluídas do banco) via Supabase Storage
+- [x] Adicionar questões FUVEST 2016–2018 (185 questões reais, com textos-base, adicionadas em 17–18/07/2026)
+- [ ] Adicionar questões: ENEM 2023–2025, FUVEST anos restantes, UNICAMP, UFU (ENEM hoje já cobre 2016–2022; UNICAMP/UNESP/UFU continuam só como filtro na UI, sem conteúdo real)
+- [ ] Suporte a questões com imagem/gráfico via Supabase Storage (hoje essas 5 questões ficam separadas em `src/lib/questoes-pendentes-imagem.js`, fora do pool ativo, aguardando a imagem ser digitalizada — ver seção 5)
 - [ ] Correção de redação por IA (feature do plano AprovAI+)
 - [ ] Avaliação de discursivas de vestibular por IA (feature do plano AprovAI+)
 - [ ] Reprocessar/melhorar explicações com um modelo mais forte conforme o banco de questões crescer
 - [ ] Versionar a Edge Function `explicacao` neste repositório (hoje só existe no Supabase remoto)
-- [ ] Decidir se o cadastro direto via `Login.jsx` (sem passar por `/pagamento`) deve continuar existindo, já que o produto é 100% pago
+- [ ] Versionar a tabela `testes_gratis` (migration) e descobrir/documentar o que incrementa `questoes_usadas` — hoje não está em nenhum arquivo do repo (ver seção 3)
+- [ ] Decidir se o cadastro direto via `Login.jsx` (sem passar por `/pagamento` nem por `/teste`) deve continuar existindo, já que agora há um fluxo de trial dedicado em `/teste`
+- [ ] Coletar depoimentos reais de usuários para a seção de prova social da landing (`DEPOIMENTOS` está vazio de propósito em `Landing.jsx`, ver seção 5)
 
 ---
 
@@ -311,12 +372,12 @@ supabase db query --linked -f caminho/para/arquivo.sql
 ## 10. Como Retomar o Desenvolvimento
 
 ### Contexto para nova conversa:
-> "Tenho um projeto chamado AprovAI (recém-renomeado de EstudaENEM — domínio/repo ainda não migrados, ver seção 1) em produção. É 100% pago (R$39,90, pagar antes de criar conta). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel, AbacatePay v1 para pagamento, Resend para email. GitHub: gustavoruir4/aprovai (ou gustavoruir4/estudaenem, se a renomeação ainda não tiver sido feita). 555 questões ENEM 2016–2019. Quero [descrever o que quer fazer]."
+> "Tenho um projeto chamado AprovAI (recém-renomeado de EstudaENEM — repo no GitHub já renomeado, domínio na Vercel ainda não, ver seção 1) em produção. Tem um fluxo pago (R$39,90, pagar antes de criar conta) e um fluxo de teste grátis em `/teste` (20 questões, sem pagar — ver seção 4.1). Stack: React + Vite, Supabase (projeto avtolxrbmvcqcvvfdcvv), Vercel, AbacatePay v1 para pagamento, Resend para email. GitHub: gustavoruir4/AprovAI. 1.171 questões (ENEM 2016–2022 + FUVEST 2016–2018). Quero [descrever o que quer fazer]."
 
 ### Para rodar localmente:
 ```bash
-git clone https://github.com/gustavoruir4/aprovai.git
-cd aprovai
+git clone https://github.com/gustavoruir4/AprovAI.git
+cd AprovAI
 npm install
 # Criar .env na raiz com as variáveis da seção 8
 npm run dev
@@ -324,4 +385,4 @@ npm run dev
 ```
 
 ### Para adicionar questões:
-Editar `src/lib/questions.js`, novos IDs a partir de 733 (próximo livre). Commit → Vercel republica automaticamente.
+Editar `src/lib/questions.js`, novos IDs a partir de 1418 (próximo livre, atualizado em 18/07/2026). Commit → Vercel republica automaticamente.
