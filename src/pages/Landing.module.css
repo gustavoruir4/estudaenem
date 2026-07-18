@@ -117,8 +117,19 @@
   margin-bottom: 26px;
   word-spacing: 2px;
 }
-.heroTitleAccent { color: #A78BFA; }
-.heroSub { font-size: 18px; line-height: 1.65; color: #c4b5fd; margin-bottom: 32px; }
+.heroTitleAccent { color: var(--purple-bright); }
+.heroSub { font-size: 18px; line-height: 1.65; color: #c4b5fd; margin-bottom: 18px; }
+.heroSubHighlight {
+  color: var(--purple-bright);
+  font-weight: 700;
+  text-shadow: 0 0 12px rgba(167, 139, 250, 0.75), 0 0 24px rgba(167, 139, 250, 0.4);
+  animation: heroSubGlow 2.4s ease-in-out infinite;
+}
+
+@keyframes heroSubGlow {
+  0%, 100% { text-shadow: 0 0 12px rgba(167, 139, 250, 0.75), 0 0 24px rgba(167, 139, 250, 0.4); }
+  50% { text-shadow: 0 0 18px rgba(167, 139, 250, 1), 0 0 34px rgba(167, 139, 250, 0.6); }
+}
 .heroComplica {
   color: #2ee6a0;
   font-weight: 800;
@@ -141,8 +152,21 @@
 @media (prefers-reduced-motion: reduce) {
   .heroApprove { animation: none; -webkit-text-fill-color: #b794ff; }
 }
+/* Linha de destaque abaixo da subheadline: menor que headline, mais forte que parágrafo */
+.heroPitch {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  color: #d8cbff;
+  background: rgba(139, 92, 246, 0.14);
+  border: 1px solid rgba(139, 92, 246, 0.4);
+  padding: 7px 16px;
+  border-radius: 99px;
+  margin-bottom: 26px;
+  letter-spacing: 0.1px;
+}
+
 .heroActions { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
-.heroNote { font-size: 13px; color: #9a8bc4; }
 .heroTrust { display: flex; gap: 20px; flex-wrap: wrap; }
 .heroTrust span { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #b3a6d1; }
 .heroTrust i { color: #3ec99a; font-size: 15px; }
@@ -286,9 +310,12 @@
 .areaCard[data-cor="lin"] i { color: #85b7eb; }
 
 /* Stats */
+.statsSection { max-width: 1140px; margin: 0 auto; padding: 0 24px 56px; }
 .statsBar { display: flex; align-items: center; justify-content: center; gap: 32px; padding: 24px 32px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; max-width: 620px; margin: 0 auto; }
+.statsBarWide { max-width: 800px; }
 .stat { text-align: center; }
 .statValue { font-size: 30px; font-weight: 700; letter-spacing: -0.5px; color: #A78BFA; }
+.statValueUrgent { color: #ff8a5c; }
 .statLabel { font-size: 12px; color: #9a8bc4; margin-top: 4px; }
 .statDivider { width: 1px; height: 38px; background: rgba(255,255,255,0.12); }
 
@@ -315,6 +342,28 @@
 }
 .passoTitulo { font-size: 20px; font-weight: 700; color: #fff; margin-bottom: 12px; letter-spacing: -0.3px; }
 .passoDesc { font-size: 15px; line-height: 1.65; color: #b3a6d1; }
+
+/* Mecanismo único: mesmos cartões numerados dos Passos, ligados por setas
+   para reforçar a ideia de processo/fluxo (responder → identificar → explicar) */
+.mecanismoSection { background: linear-gradient(180deg, transparent, rgba(139,92,246,0.05), transparent); }
+.mecanismoGrid { display: flex; align-items: center; justify-content: center; gap: 6px; max-width: 1100px; margin: 0 auto; flex-wrap: wrap; }
+.mecanismoStep { display: flex; align-items: center; gap: 6px; flex: 1 1 260px; min-width: 260px; }
+.mecanismoStep .passoCard { flex: 1; }
+.mecanismoArrow { font-size: 22px; color: #6d5b9e; flex-shrink: 0; }
+
+/* Visualização do futuro (future pacing) */
+.futuroGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1000px; margin: 0 auto; }
+.futuroCard { padding: 30px 26px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 18px; text-align: center; }
+.futuroCard > i { font-size: 30px; color: #A78BFA; margin-bottom: 14px; display: block; }
+.futuroCard p { font-size: 15px; line-height: 1.65; color: #c9bfe0; margin: 0; }
+
+/* Prova social (fica pronta, mas só renderiza com depoimentos reais) */
+.depoimentosGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.depoimentoCard { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 26px; }
+.depoimentoFoto { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; margin-bottom: 14px; }
+.depoimentoTexto { font-size: 14.5px; line-height: 1.65; color: #e5ddf5; margin-bottom: 16px; font-style: italic; }
+.depoimentoAutor strong { display: block; color: #fff; font-size: 14px; }
+.depoimentoAutor span { font-size: 12.5px; color: #9a8bc4; }
 
 /* Objeções */
 .objecoesGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -435,6 +484,10 @@
   .objecoesGrid { grid-template-columns: 1fr; }
   .trustStrip { grid-template-columns: 1fr; }
   .freeCard { flex-direction: column; text-align: center; }
+  .futuroGrid { grid-template-columns: 1fr; }
+  .depoimentosGrid { grid-template-columns: 1fr; }
+  .mecanismoStep { flex-direction: column; }
+  .mecanismoArrow { transform: rotate(90deg); }
 }
 @media (max-width: 760px) {
   .heroTitle { font-size: 40px; letter-spacing: -1.2px; }
