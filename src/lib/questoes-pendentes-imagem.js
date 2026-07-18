@@ -1,0 +1,105 @@
+// Questões FUVEST removidas do banco principal (src/lib/questions.js) por dependerem
+// de uma imagem (cartum, tabela ou gráfico do caderno de prova) que ainda não foi
+// digitalizada/anexada. Quando a imagem for adicionada, mover a questão de volta para
+// QUESTIONS em questions.js, preencher `imagem` com o caminho do arquivo e trocar
+// `temImagem` para true lá também.
+//
+// Fonte: PDFs em "C:\Users\gusta\OneDrive\Documentos\vestibulares que faltam\FUVEST\".
+
+export const QUESTOES_PENDENTES_IMAGEM = [
+  {
+    id: 1398,
+    ano: 2016,
+    prova: 'FUVEST',
+    area: 'Linguagens',
+    assunto: 'Interpretação de texto / Cartum',
+    imagemNecessaria: 'Cartum de Robert Mankoff (New Yorker/Veja): uma pessoa com vários bichos de estimação diz que "as crianças não passam de substitutos patéticos para as pessoas que não podem ter bichos". Fonte: FUVEST 2016 1a fase, questão 46.',
+    enunciado: `Para obter o efeito de humor presente no cartum com a legenda "As crianças não passam de substitutos patéticos para as pessoas que não podem ter bichos" (Robert Mankoff, New Yorker/Veja), o autor se vale, entre outros, do seguinte recurso:`,
+    opcoes: [
+      { letra: 'A', texto: `utilização paródica de um provérbio de uso corrente.` },
+      { letra: 'B', texto: `emprego de linguagem formal em circunstâncias informais.` },
+      { letra: 'C', texto: `representação inverossímil de um convívio pacífico de cães e gatos.` },
+      { letra: 'D', texto: `uso do grotesco na caracterização de seres humanos e de animais.` },
+      { letra: 'E', texto: `inversão do sentido de um pensamento bastante repetido.` },
+    ],
+    correta: 'E',
+    temImagem: true,
+    imagem: null,
+  },
+  {
+    id: 1399,
+    ano: 2016,
+    prova: 'FUVEST',
+    area: 'Linguagens',
+    assunto: 'Interpretação de texto / Cartum',
+    imagemNecessaria: 'Mesmo cartum da questão 1398 (Robert Mankoff, New Yorker/Veja). Fonte: FUVEST 2016 1a fase, questão 47.',
+    enunciado: `No contexto do cartum (em que uma personagem com numerosos animais de estimação diz que as crianças não passam de substitutos para quem não pode ter bichos), a presença de numerosos animais de estimação permite que o juízo emitido pela personagem seja considerado`,
+    opcoes: [
+      { letra: 'A', texto: `incoerente.` },
+      { letra: 'B', texto: `parcial.` },
+      { letra: 'C', texto: `anacrônico.` },
+      { letra: 'D', texto: `hipotético.` },
+      { letra: 'E', texto: `enigmático.` },
+    ],
+    correta: 'B',
+    temImagem: true,
+    imagem: null,
+  },
+  {
+    id: 1211,
+    ano: 2017,
+    prova: 'FUVEST',
+    area: 'Ciências Humanas',
+    assunto: 'Industrialização / Tabela per capita / Século XIX',
+    imagemNecessaria: 'Tabela com níveis de industrialização per capita (1750-1913) por país/região. Fonte: FUVEST 2017 1a fase, questão 80.',
+    enunciado: `Com base na tabela de níveis per capita de industrialização (1750-1913), é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `A industrialização acelerada da Alemanha e dos Estados Unidos ocorreu durante a Primeira Revolução Industrial, mantendo-se relativamente inalterada durante a Segunda Revolução Industrial.` },
+      { letra: 'B', texto: `Os países do Sul e do Leste da Europa apresentaram níveis de industrialização equivalentes aos dos países do Norte da Europa e dos Estados Unidos durante a Segunda Revolução Industrial.` },
+      { letra: 'C', texto: `A Primeira Revolução Industrial teve por epicentro o Reino Unido, acompanhado em menor grau pela Bélgica, ambos mantendo níveis elevados durante a Segunda Revolução Industrial.` },
+      { letra: 'D', texto: `Os níveis de industrialização verificados na Ásia em meados do século XVIII acompanharam o movimento geral de industrialização do Atlântico Norte ocorrido na segunda metade do século XIX.` },
+      { letra: 'E', texto: `O Japão se destacou como o país asiático de mais rápida industrialização no curso da Primeira Revolução Industrial, perdendo força durante a Segunda Revolução Industrial.` },
+    ],
+    correta: 'C',
+    temImagem: true,
+    imagem: null,
+  },
+  {
+    id: 1224,
+    ano: 2017,
+    prova: 'FUVEST',
+    area: 'Ciências Humanas',
+    assunto: 'Desmatamento / Amazônia / COP21',
+    imagemNecessaria: 'Gráfico/dados de desmatamento na Amazônia citados no enunciado original. Fonte: FUVEST 2017 1a fase, questão 84 (verificar PDF para confirmar se é gráfico ou mapa).',
+    enunciado: `Com base nos dados sobre desmatamento na Amazônia e em seus conhecimentos, aponte a afirmação correta:`,
+    opcoes: [
+      { letra: 'A', texto: `O desmatamento, apesar de atingir áreas de unidades de conservação, viabiliza a ampliação do número de assentamentos da reforma agrária.` },
+      { letra: 'B', texto: `As grandes obras privadas implantadas na Amazônia valorizam as terras, atraindo enorme contingente populacional, que por sua vez origina regiões metropolitanas que degradam a floresta.` },
+      { letra: 'C', texto: `A grilagem de terras em regiões de grandes projetos de infraestrutura, a extração ilegal de madeira e a construção de rodovias estão entre as causas do desmatamento na Amazônia.` },
+      { letra: 'D', texto: `A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.` },
+      { letra: 'E', texto: `Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária.` },
+    ],
+    correta: 'C',
+    temImagem: true,
+    imagem: null,
+  },
+  {
+    id: 1236,
+    ano: 2017,
+    prova: 'FUVEST',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia celular / DNA extranuclear / Organelas',
+    imagemNecessaria: 'Tabela relacionando organismo (planta/fungo/animal) e organela de origem do DNA extranuclear analisado. Poderia alternativamente ser reconstruída como texto, mas foi mantida à parte por segurança. Fonte: FUVEST 2017 1a fase, questão 96.',
+    enunciado: `O DNA extranuclear (ou seja, de organelas citoplasmáticas) foi obtido de células somáticas de três organismos: uma planta, um fungo e um animal. Na tabela, qual das alternativas cita corretamente a procedência do DNA extranuclear obtido desses organismos?`,
+    opcoes: [
+      { letra: 'A', texto: `Planta: plastos / Fungo: ribossomos / Animal: ribossomos e mitocôndrias` },
+      { letra: 'B', texto: `Planta: plastos e ribossomos / Fungo: plastos e ribossomos / Animal: ribossomos` },
+      { letra: 'C', texto: `Planta: mitocôndrias / Fungo: mitocôndrias e plastos / Animal: ribossomos e mitocôndrias` },
+      { letra: 'D', texto: `Planta: mitocôndrias e plastos / Fungo: mitocôndrias e plastos / Animal: mitocôndrias` },
+      { letra: 'E', texto: `Planta: mitocôndrias e plastos / Fungo: mitocôndrias / Animal: mitocôndrias` },
+    ],
+    correta: 'D',
+    temImagem: true,
+    imagem: null,
+  },
+]

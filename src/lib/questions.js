@@ -24963,7 +24963,7 @@ export const QUESTIONS = [
     imagem: null,
   },
   {
-    id: 1093,
+    id: 1363,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -24985,7 +24985,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1094,
+    id: 1364,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25003,7 +25003,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1095,
+    id: 1365,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25021,7 +25021,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1096,
+    id: 1366,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25039,7 +25039,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1097,
+    id: 1367,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25057,7 +25057,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1098,
+    id: 1368,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25075,7 +25075,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1099,
+    id: 1369,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25093,7 +25093,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1100,
+    id: 1370,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25111,7 +25111,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1101,
+    id: 1371,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25129,7 +25129,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1102,
+    id: 1372,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25147,7 +25147,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1103,
+    id: 1373,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25165,7 +25165,7 @@ Dados: Um conto equivalia a um milhão de réis. Um bilhão é igual a 10⁹ e u
     imagem: null,
   },
   {
-    id: 1105,
+    id: 1374,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25188,7 +25188,7 @@ Assinale a alternativa que apresenta substâncias que exemplificam, respectivame
     imagem: null,
   },
   {
-    id: 1106,
+    id: 1375,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25210,7 +25210,7 @@ Nos testes de solubilidade, a estudante observou a formação de sistema heterog
     imagem: null,
   },
   {
-    id: 1107,
+    id: 1376,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25230,7 +25230,7 @@ Note e adote: Volume molar nas condições de produção de biogás: 24 L/mol; e
     imagem: null,
   },
   {
-    id: 1109,
+    id: 1377,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25255,7 +25255,7 @@ Considerando as substâncias detectadas nesses cinco planetas, aquele em que há
     imagem: null,
   },
   {
-    id: 1110,
+    id: 1378,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25275,7 +25275,7 @@ Note e adote: Massa molar (g/mol): H₂O = 18, O₂ = 32, CO₂ = 44, C₈H₁�
     imagem: null,
   },
   {
-    id: 1112,
+    id: 1379,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25300,7 +25300,7 @@ Note e adote: Massa molar (g/mol): Mg = 24, Fe = 56, Sn = 119.`,
     imagem: null,
   },
   {
-    id: 1114,
+    id: 1380,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25325,7 +25325,7 @@ III. No grupo da tabela periódica ao qual pertence o fleróvio, há elementos q
     imagem: null,
   },
   {
-    id: 1115,
+    id: 1381,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Matemática',
@@ -25354,7 +25354,7 @@ III. Para uma mesma massa de lipídeo de origem vegetal e de carboidrato, a raz�
     imagem: null,
   },
   {
-    id: 1116,
+    id: 1382,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25372,7 +25372,7 @@ III. Para uma mesma massa de lipídeo de origem vegetal e de carboidrato, a raz�
     imagem: null,
   },
   {
-    id: 1118,
+    id: 1383,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25392,7 +25392,7 @@ Note e adote: A aceleração da gravidade é g. Ignore a massa do fio. O movimen
     imagem: null,
   },
   {
-    id: 1120,
+    id: 1384,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25412,7 +25412,7 @@ Note e adote: gT é a aceleração da gravidade na superfície da Terra. RT é o
     imagem: null,
   },
   {
-    id: 1121,
+    id: 1385,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25432,7 +25432,7 @@ Note e adote: 0°C = 273 K. Considere o ar da garrafa como um gás ideal.`,
     imagem: null,
   },
   {
-    id: 1122,
+    id: 1386,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25452,7 +25452,7 @@ Note e adote: Densidade da água = 1 g/cm³.`,
     imagem: null,
   },
   {
-    id: 1123,
+    id: 1387,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25472,7 +25472,7 @@ Note e adote: E = mc², massa do elétron = 9 × 10⁻³¹ kg, velocidade da luz
     imagem: null,
   },
   {
-    id: 1124,
+    id: 1388,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25492,7 +25492,7 @@ Note e adote: Índice de refração da água: 1,4. sen(20°) = cos(70°) = 0,35;
     imagem: null,
   },
   {
-    id: 1125,
+    id: 1389,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25510,7 +25510,7 @@ Note e adote: Índice de refração da água: 1,4. sen(20°) = cos(70°) = 0,35;
     imagem: null,
   },
   {
-    id: 1128,
+    id: 1390,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25530,7 +25530,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1129,
+    id: 1391,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25548,7 +25548,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1131,
+    id: 1392,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25566,7 +25566,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1132,
+    id: 1393,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25584,7 +25584,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1134,
+    id: 1394,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25602,7 +25602,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1135,
+    id: 1395,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25620,7 +25620,7 @@ Num indivíduo que possua alelos mutantes que levem à perda de função do gene
     imagem: null,
   },
   {
-    id: 1136,
+    id: 1396,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25643,7 +25643,7 @@ Está correto apenas o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1137,
+    id: 1397,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
@@ -25661,50 +25661,23 @@ Está correto apenas o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1138,
-    ano: 2016,
-    prova: 'FUVEST',
-    area: 'Linguagens',
-    assunto: 'Interpretação de texto / Cartum',
-    enunciado: `Para obter o efeito de humor presente no cartum com a legenda "As crianças não passam de substitutos patéticos para as pessoas que não podem ter bichos" (Robert Mankoff, New Yorker/Veja), o autor se vale, entre outros, do seguinte recurso:`,
-    opcoes: [
-      { letra: 'A', texto: `utilização paródica de um provérbio de uso corrente.` },
-      { letra: 'B', texto: `emprego de linguagem formal em circunstâncias informais.` },
-      { letra: 'C', texto: `representação inverossímil de um convívio pacífico de cães e gatos.` },
-      { letra: 'D', texto: `uso do grotesco na caracterização de seres humanos e de animais.` },
-      { letra: 'E', texto: `inversão do sentido de um pensamento bastante repetido.` },
-    ],
-    correta: 'E',
-    temImagem: false,
-    imagem: null,
-  },
-  {
-    id: 1139,
-    ano: 2016,
-    prova: 'FUVEST',
-    area: 'Linguagens',
-    assunto: 'Interpretação de texto / Cartum',
-    enunciado: `No contexto do cartum (em que uma personagem com numerosos animais de estimação diz que as crianças não passam de substitutos para quem não pode ter bichos), a presença de numerosos animais de estimação permite que o juízo emitido pela personagem seja considerado`,
-    opcoes: [
-      { letra: 'A', texto: `incoerente.` },
-      { letra: 'B', texto: `parcial.` },
-      { letra: 'C', texto: `anacrônico.` },
-      { letra: 'D', texto: `hipotético.` },
-      { letra: 'E', texto: `enigmático.` },
-    ],
-    correta: 'B',
-    temImagem: false,
-    imagem: null,
-  },
-  {
-    id: 1140,
+    id: 1400,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / História do Brasil',
-    enunciado: `Texto: "A Arma da Propaganda" (Boris Fausto, História do Brasil) — sobre o governo Médici, propaganda, TV Globo e Copa de 1970.
+    enunciado: `A ARMA DA PROPAGANDA
 
-A frase que expressa uma ideia contida no texto é:`,
+O governo Médici não se limitou à repressão. Distinguiu claramente entre um setor significativo mas minoritário da sociedade, adversário do regime, e a massa da população que vivia um dia a dia de alguma
+5 esperança nesses anos de prosperidade econômica. A repressão acabou com o primeiro setor, enquanto a propaganda encarregou-se de, pelo menos, neutralizar gradualmente o segundo. Para alcançar este último objetivo, o governo contou com o grande avanço das telecomunicações no país,
+10 após 1964. As facilidades de crédito pessoal permitiram a expansão do número de residências que possuíam televisão: em 1960, apenas 9,5% das residências urbanas tinham televisão; em 1970, a porcentagem chegava a 40%. Por essa época, beneficiada pelo apoio do governo, de quem se
+15 transformou em porta-voz, a TV Globo expandiu-se até se tornar rede nacional e alcançar praticamente o controle do setor. A propaganda governamental passou a ter um canal de expressão como nunca existira na história do país. A promoção do "Brasil grande potência" foi realizada a partir
+20 da Assessoria Especial de Relações Públicas (AERP), criada no governo Costa e Silva, mas que não chegou a ter importância nesse governo. Foi a época do "Ninguém segura este país", da marchinha Prá Frente, Brasil, que embalou a grande vitória brasileira na Copa do Mundo de
+25 1970.
+
+Boris Fausto, História do Brasil. Adaptado.
+
+A frase que expressa uma ideia contida no texto "A Arma da Propaganda" é:`,
     opcoes: [
       { letra: 'A', texto: `A marchinha "Prá Frente, Brasil" também contribuiu para o processo de neutralização da grande massa da população.` },
       { letra: 'B', texto: `A repressão no Governo Médici foi dirigida a um setor que, além de minoritário, era também irrelevante no conjunto da sociedade brasileira.` },
@@ -25717,12 +25690,23 @@ A frase que expressa uma ideia contida no texto é:`,
     imagem: null,
   },
   {
-    id: 1141,
+    id: 1401,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Política',
-    enunciado: `A estratégia de dominação empregada pelo governo Médici, tal como descrita no texto "A Arma da Propaganda", assemelha-se, sobretudo, à seguinte recomendação feita ao príncipe por um célebre pensador da política:`,
+    enunciado: `A ARMA DA PROPAGANDA
+
+O governo Médici não se limitou à repressão. Distinguiu claramente entre um setor significativo mas minoritário da sociedade, adversário do regime, e a massa da população que vivia um dia a dia de alguma
+5 esperança nesses anos de prosperidade econômica. A repressão acabou com o primeiro setor, enquanto a propaganda encarregou-se de, pelo menos, neutralizar gradualmente o segundo. Para alcançar este último objetivo, o governo contou com o grande avanço das telecomunicações no país,
+10 após 1964. As facilidades de crédito pessoal permitiram a expansão do número de residências que possuíam televisão: em 1960, apenas 9,5% das residências urbanas tinham televisão; em 1970, a porcentagem chegava a 40%. Por essa época, beneficiada pelo apoio do governo, de quem se
+15 transformou em porta-voz, a TV Globo expandiu-se até se tornar rede nacional e alcançar praticamente o controle do setor. A propaganda governamental passou a ter um canal de expressão como nunca existira na história do país. A promoção do "Brasil grande potência" foi realizada a partir
+20 da Assessoria Especial de Relações Públicas (AERP), criada no governo Costa e Silva, mas que não chegou a ter importância nesse governo. Foi a época do "Ninguém segura este país", da marchinha Prá Frente, Brasil, que embalou a grande vitória brasileira na Copa do Mundo de
+25 1970.
+
+Boris Fausto, História do Brasil. Adaptado.
+
+A estratégia de dominação empregada pelo governo Médici, tal como descrita no texto "A Arma da Propaganda", assemelha-se, sobretudo, à seguinte recomendação feita ao príncipe por um célebre pensador da política:`,
     opcoes: [
       { letra: 'A', texto: `"Deve o príncipe fazer-se temer, de maneira que, se não se fizer amado, pelo menos evite o ódio, pois é fácil ser ao mesmo tempo temido e não odiado".` },
       { letra: 'B', texto: `"O mal que se tiver que fazer, deve o príncipe fazê-lo de uma só vez; o bem, deve fazê-lo aos poucos".` },
@@ -25735,12 +25719,23 @@ A frase que expressa uma ideia contida no texto é:`,
     imagem: null,
   },
   {
-    id: 1142,
+    id: 1402,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Referência pronominal',
-    enunciado: `No texto "A Arma da Propaganda", nos trechos "acabou com o primeiro setor" (L. 6) e "alcançar praticamente o controle do setor" (L. 16-17), a palavra sublinhada "setor" refere-se, respectivamente, a`,
+    enunciado: `A ARMA DA PROPAGANDA
+
+O governo Médici não se limitou à repressão. Distinguiu claramente entre um setor significativo mas minoritário da sociedade, adversário do regime, e a massa da população que vivia um dia a dia de alguma
+5 esperança nesses anos de prosperidade econômica. A repressão acabou com o primeiro setor, enquanto a propaganda encarregou-se de, pelo menos, neutralizar gradualmente o segundo. Para alcançar este último objetivo, o governo contou com o grande avanço das telecomunicações no país,
+10 após 1964. As facilidades de crédito pessoal permitiram a expansão do número de residências que possuíam televisão: em 1960, apenas 9,5% das residências urbanas tinham televisão; em 1970, a porcentagem chegava a 40%. Por essa época, beneficiada pelo apoio do governo, de quem se
+15 transformou em porta-voz, a TV Globo expandiu-se até se tornar rede nacional e alcançar praticamente o controle do setor. A propaganda governamental passou a ter um canal de expressão como nunca existira na história do país. A promoção do "Brasil grande potência" foi realizada a partir
+20 da Assessoria Especial de Relações Públicas (AERP), criada no governo Costa e Silva, mas que não chegou a ter importância nesse governo. Foi a época do "Ninguém segura este país", da marchinha Prá Frente, Brasil, que embalou a grande vitória brasileira na Copa do Mundo de
+25 1970.
+
+Boris Fausto, História do Brasil. Adaptado.
+
+No texto "A Arma da Propaganda", nos trechos "acabou com o primeiro setor" (L. 6) e "alcançar praticamente o controle do setor" (L. 16-17), a palavra sublinhada "setor" refere-se, respectivamente, a`,
     opcoes: [
       { letra: 'A', texto: `aliados; população.` },
       { letra: 'B', texto: `adversários; telecomunicações.` },
@@ -25753,12 +25748,20 @@ A frase que expressa uma ideia contida no texto é:`,
     imagem: null,
   },
   {
-    id: 1143,
+    id: 1403,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Provérbios',
-    enunciado: `No texto de Paulo Rónai sobre provérbios, a função argumentativa do provérbio "Da vida nada se leva" é expressar uma filosofia de vida contrária à que está presente em "vintém poupado, vintém ganhado". Também é contrário a esse último provérbio o ensinamento expresso em:`,
+    enunciado: `Seria ingenuidade procurar nos provérbios de qualquer povo uma filosofia coerente, uma arte de viver. É coisa sabida que a cada provérbio, por assim dizer, responde outro, de sentido oposto. A quem preconiza o sábio limite das despesas, porque "vintém poupado, vintém ganhado", replicará o vizinho farrista, com razão igual: "Da vida nada se leva". (...)
+
+Mais aconselhável procurarmos nos anexins não a sabedoria de um povo, mas sim o espelho de seus costumes peculiares, os sinais de seu ambiente físico e de sua história. As diferenças na expressão de uma sentença observáveis de uma terra para outra podem divertir o curioso e, às vezes, até instruir o etnógrafo.
+
+Povo marítimo, o português assinala semelhança grande entre pai e filho, lembrando que "filho de peixe, peixinho é". Já os húngaros, ao formularem a mesma verdade, não pensavam nem em peixe, nem em mar; ao olhar para o seu quintal, notaram que a "maçã não cai longe da árvore".
+
+Paulo Rónai, Como aprendi o português e outras aventuras.
+
+No texto de Paulo Rónai sobre provérbios, a função argumentativa do provérbio "Da vida nada se leva" é expressar uma filosofia de vida contrária à que está presente em "vintém poupado, vintém ganhado". Também é contrário a esse último provérbio o ensinamento expresso em:`,
     opcoes: [
       { letra: 'A', texto: `Mais vale pão hoje do que galinha amanhã.` },
       { letra: 'B', texto: `A boa vida é mãe de todos os vícios.` },
@@ -25771,12 +25774,20 @@ A frase que expressa uma ideia contida no texto é:`,
     imagem: null,
   },
   {
-    id: 1144,
+    id: 1404,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Provérbios',
-    enunciado: `Sobre os dois provérbios citados no terceiro parágrafo do texto de Paulo Rónai ("filho de peixe, peixinho é" e "maçã não cai longe da árvore"):
+    enunciado: `Seria ingenuidade procurar nos provérbios de qualquer povo uma filosofia coerente, uma arte de viver. É coisa sabida que a cada provérbio, por assim dizer, responde outro, de sentido oposto. A quem preconiza o sábio limite das despesas, porque "vintém poupado, vintém ganhado", replicará o vizinho farrista, com razão igual: "Da vida nada se leva". (...)
+
+Mais aconselhável procurarmos nos anexins não a sabedoria de um povo, mas sim o espelho de seus costumes peculiares, os sinais de seu ambiente físico e de sua história. As diferenças na expressão de uma sentença observáveis de uma terra para outra podem divertir o curioso e, às vezes, até instruir o etnógrafo.
+
+Povo marítimo, o português assinala semelhança grande entre pai e filho, lembrando que "filho de peixe, peixinho é". Já os húngaros, ao formularem a mesma verdade, não pensavam nem em peixe, nem em mar; ao olhar para o seu quintal, notaram que a "maçã não cai longe da árvore".
+
+Paulo Rónai, Como aprendi o português e outras aventuras.
+
+Sobre os dois provérbios citados no terceiro parágrafo do texto de Paulo Rónai ("filho de peixe, peixinho é" e "maçã não cai longe da árvore"):
 I. A origem do primeiro, de acordo com o autor, está ligada à história do povo que o usa.
 II. Em seu sentido literal, o segundo expressa costumes peculiares dos húngaros.
 III. A observação das diferenças de expressão entre esses provérbios pode, segundo o pensamento do autor, ter interesse etnográfico.
@@ -25794,12 +25805,27 @@ Está correto apenas o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1145,
+    id: 1405,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Literatura / Capitães da Areia',
-    enunciado: `Sobre o texto de Jorge Amado (Capitães da Areia — trecho sobre Omolu e a bexiga):
+    enunciado: `Omolu espalhara a bexiga na cidade. Era uma vingança contra a cidade dos ricos. Mas os ricos tinham a vacina, que sabia Omolu de vacinas? Era um pobre deus das florestas d'África. Um deus dos negros pobres. Que podia saber de vacinas? Então a bexiga desceu e assolou o povo de Omolu. Tudo que Omolu pôde fazer foi transformar a bexiga de negra em alastrim, bexiga branca e tola. Assim mesmo morrera negro, morrera pobre. Mas Omolu dizia que não fora o alastrim que matara. Fora o lazareto*. Omolu só queria com o alastrim marcar seus filhinhos negros. O lazareto é que os matava. Mas as macumbas pediam que ele levasse a bexiga da cidade, levasse para os ricos latifundiários do sertão. Eles tinham dinheiro, léguas e léguas de terra, mas não sabiam tampouco da vacina. O Omolu diz que vai pro sertão. E os negros, os ogãs, as filhas e pais de santo cantam:
+
+Ele é mesmo nosso pai
+e é quem pode nos ajudar...
+
+Omolu promete ir. Mas para que seus filhos negros não o esqueçam avisa no seu cântico de despedida:
+
+Ora, adeus, ó meus filhinhos,
+Qu'eu vou e torno a vortá...
+
+E numa noite que os atabaques batiam nas macumbas, numa noite de mistério da Bahia, Omolu pulou na máquina da Leste Brasileira e foi para o sertão de Juazeiro. A bexiga foi com ele.
+
+Jorge Amado, Capitães da Areia.
+*lazareto: estabelecimento para isolamento sanitário de pessoas atingidas por determinadas doenças.
+
+Sobre o texto de Jorge Amado (Capitães da Areia — trecho sobre Omolu e a bexiga):
 I. Do ponto de vista do excerto, a religião de origem africana comporta um aspecto de resistência cultural e política.
 II. Fica pressuposta no texto a ideia de que, na época em que se passa a história, o Brasil ainda conservava formas de privação de direitos e de exclusão social advindas do período colonial.
 III. Os contrastes de natureza social, cultural e regional que o texto registra permitem concluir que o Brasil passou por processos de modernização descompassados e desiguais.
@@ -25817,12 +25843,27 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1146,
+    id: 1406,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura brasileira / Modernismo / Romance de 1930',
-    enunciado: `Costuma-se reconhecer que Capitães da Areia pertence ao assim chamado "romance de 1930". No excerto de Jorge Amado, constitui marca desse pertencimento`,
+    enunciado: `Omolu espalhara a bexiga na cidade. Era uma vingança contra a cidade dos ricos. Mas os ricos tinham a vacina, que sabia Omolu de vacinas? Era um pobre deus das florestas d'África. Um deus dos negros pobres. Que podia saber de vacinas? Então a bexiga desceu e assolou o povo de Omolu. Tudo que Omolu pôde fazer foi transformar a bexiga de negra em alastrim, bexiga branca e tola. Assim mesmo morrera negro, morrera pobre. Mas Omolu dizia que não fora o alastrim que matara. Fora o lazareto*. Omolu só queria com o alastrim marcar seus filhinhos negros. O lazareto é que os matava. Mas as macumbas pediam que ele levasse a bexiga da cidade, levasse para os ricos latifundiários do sertão. Eles tinham dinheiro, léguas e léguas de terra, mas não sabiam tampouco da vacina. O Omolu diz que vai pro sertão. E os negros, os ogãs, as filhas e pais de santo cantam:
+
+Ele é mesmo nosso pai
+e é quem pode nos ajudar...
+
+Omolu promete ir. Mas para que seus filhos negros não o esqueçam avisa no seu cântico de despedida:
+
+Ora, adeus, ó meus filhinhos,
+Qu'eu vou e torno a vortá...
+
+E numa noite que os atabaques batiam nas macumbas, numa noite de mistério da Bahia, Omolu pulou na máquina da Leste Brasileira e foi para o sertão de Juazeiro. A bexiga foi com ele.
+
+Jorge Amado, Capitães da Areia.
+*lazareto: estabelecimento para isolamento sanitário de pessoas atingidas por determinadas doenças.
+
+Costuma-se reconhecer que Capitães da Areia pertence ao assim chamado "romance de 1930". No excerto de Jorge Amado, constitui marca desse pertencimento`,
     opcoes: [
       { letra: 'A', texto: `o experimentalismo estético, de caráter vanguardista, visível no abundante emprego de neologismos.` },
       { letra: 'B', texto: `o tratamento preferencial de realidades bem determinadas, com foco nos problemas sociais nelas envolvidos.` },
@@ -25835,12 +25876,27 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1147,
+    id: 1407,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Biologia / Doenças',
-    enunciado: `As informações contidas no texto de Jorge Amado (sobre a bexiga/alastrim) permitem concluir que a doença de que nele se fala caracteriza-se como`,
+    enunciado: `Omolu espalhara a bexiga na cidade. Era uma vingança contra a cidade dos ricos. Mas os ricos tinham a vacina, que sabia Omolu de vacinas? Era um pobre deus das florestas d'África. Um deus dos negros pobres. Que podia saber de vacinas? Então a bexiga desceu e assolou o povo de Omolu. Tudo que Omolu pôde fazer foi transformar a bexiga de negra em alastrim, bexiga branca e tola. Assim mesmo morrera negro, morrera pobre. Mas Omolu dizia que não fora o alastrim que matara. Fora o lazareto*. Omolu só queria com o alastrim marcar seus filhinhos negros. O lazareto é que os matava. Mas as macumbas pediam que ele levasse a bexiga da cidade, levasse para os ricos latifundiários do sertão. Eles tinham dinheiro, léguas e léguas de terra, mas não sabiam tampouco da vacina. O Omolu diz que vai pro sertão. E os negros, os ogãs, as filhas e pais de santo cantam:
+
+Ele é mesmo nosso pai
+e é quem pode nos ajudar...
+
+Omolu promete ir. Mas para que seus filhos negros não o esqueçam avisa no seu cântico de despedida:
+
+Ora, adeus, ó meus filhinhos,
+Qu'eu vou e torno a vortá...
+
+E numa noite que os atabaques batiam nas macumbas, numa noite de mistério da Bahia, Omolu pulou na máquina da Leste Brasileira e foi para o sertão de Juazeiro. A bexiga foi com ele.
+
+Jorge Amado, Capitães da Areia.
+*lazareto: estabelecimento para isolamento sanitário de pessoas atingidas por determinadas doenças.
+
+As informações contidas no texto de Jorge Amado (sobre a bexiga/alastrim) permitem concluir que a doença de que nele se fala caracteriza-se como`,
     opcoes: [
       { letra: 'A', texto: `moléstia contagiosa, de caráter epidêmico, causada por vírus.` },
       { letra: 'B', texto: `endemia de zonas tropicais, causada por vírus, prevalente no período chuvoso do ano.` },
@@ -25853,12 +25909,27 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1148,
+    id: 1408,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Comparação de obras',
-    enunciado: `Um aspecto comum ao texto de Capitães da Areia (Jorge Amado) e Vidas secas (Graciliano Ramos) é`,
+    enunciado: `Omolu espalhara a bexiga na cidade. Era uma vingança contra a cidade dos ricos. Mas os ricos tinham a vacina, que sabia Omolu de vacinas? Era um pobre deus das florestas d'África. Um deus dos negros pobres. Que podia saber de vacinas? Então a bexiga desceu e assolou o povo de Omolu. Tudo que Omolu pôde fazer foi transformar a bexiga de negra em alastrim, bexiga branca e tola. Assim mesmo morrera negro, morrera pobre. Mas Omolu dizia que não fora o alastrim que matara. Fora o lazareto*. Omolu só queria com o alastrim marcar seus filhinhos negros. O lazareto é que os matava. Mas as macumbas pediam que ele levasse a bexiga da cidade, levasse para os ricos latifundiários do sertão. Eles tinham dinheiro, léguas e léguas de terra, mas não sabiam tampouco da vacina. O Omolu diz que vai pro sertão. E os negros, os ogãs, as filhas e pais de santo cantam:
+
+Ele é mesmo nosso pai
+e é quem pode nos ajudar...
+
+Omolu promete ir. Mas para que seus filhos negros não o esqueçam avisa no seu cântico de despedida:
+
+Ora, adeus, ó meus filhinhos,
+Qu'eu vou e torno a vortá...
+
+E numa noite que os atabaques batiam nas macumbas, numa noite de mistério da Bahia, Omolu pulou na máquina da Leste Brasileira e foi para o sertão de Juazeiro. A bexiga foi com ele.
+
+Jorge Amado, Capitães da Areia.
+*lazareto: estabelecimento para isolamento sanitário de pessoas atingidas por determinadas doenças.
+
+Apesar das diferenças notáveis que existem entre estas obras, um aspecto comum ao texto de Capitães da Areia (Jorge Amado) e Vidas secas (Graciliano Ramos) é`,
     opcoes: [
       { letra: 'A', texto: `a consideração conjunta e integrada de questões culturais e conflitos de classe.` },
       { letra: 'B', texto: `a reprodução fiel da variante oral-popular da linguagem, como recurso principal na caracterização das personagens.` },
@@ -25871,12 +25942,27 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1149,
+    id: 1409,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Gramática / Correção gramatical',
-    enunciado: `Das propostas de substituição para trechos do texto de Capitães da Areia, a única que faz, de maneira adequada, a correção de um erro gramatical presente no discurso do narrador é:`,
+    enunciado: `Omolu espalhara a bexiga na cidade. Era uma vingança contra a cidade dos ricos. Mas os ricos tinham a vacina, que sabia Omolu de vacinas? Era um pobre deus das florestas d'África. Um deus dos negros pobres. Que podia saber de vacinas? Então a bexiga desceu e assolou o povo de Omolu. Tudo que Omolu pôde fazer foi transformar a bexiga de negra em alastrim, bexiga branca e tola. Assim mesmo morrera negro, morrera pobre. Mas Omolu dizia que não fora o alastrim que matara. Fora o lazareto*. Omolu só queria com o alastrim marcar seus filhinhos negros. O lazareto é que os matava. Mas as macumbas pediam que ele levasse a bexiga da cidade, levasse para os ricos latifundiários do sertão. Eles tinham dinheiro, léguas e léguas de terra, mas não sabiam tampouco da vacina. O Omolu diz que vai pro sertão. E os negros, os ogãs, as filhas e pais de santo cantam:
+
+Ele é mesmo nosso pai
+e é quem pode nos ajudar...
+
+Omolu promete ir. Mas para que seus filhos negros não o esqueçam avisa no seu cântico de despedida:
+
+Ora, adeus, ó meus filhinhos,
+Qu'eu vou e torno a vortá...
+
+E numa noite que os atabaques batiam nas macumbas, numa noite de mistério da Bahia, Omolu pulou na máquina da Leste Brasileira e foi para o sertão de Juazeiro. A bexiga foi com ele.
+
+Jorge Amado, Capitães da Areia.
+*lazareto: estabelecimento para isolamento sanitário de pessoas atingidas por determinadas doenças.
+
+Das propostas de substituição para trechos do texto de Capitães da Areia, a única que faz, de maneira adequada, a correção de um erro gramatical presente no discurso do narrador é:`,
     opcoes: [
       { letra: 'A', texto: `"Assim mesmo morrera negro, morrera pobre.": havia morrido negro, havia morrido pobre.` },
       { letra: 'B', texto: `"Mas Omolu dizia que não fora o alastrim que matara.": Omolu dizia, no entanto, que não fora.` },
@@ -25889,7 +25975,7 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1150,
+    id: 1410,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
@@ -25909,12 +25995,21 @@ O livro a que se refere a autora é`,
     imagem: null,
   },
   {
-    id: 1151,
+    id: 1411,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / A cidade e as serras / Eça de Queirós',
-    enunciado: `No texto de Eça de Queirós (A cidade e as serras), em que Jacinto é descrito como uma árvore que "brotou", o teor das imagens empregadas para caracterizar a mudança pela qual passara Jacinto indica que a causa principal dessa transformação foi`,
+    enunciado: `— Pois, Grilo, agora realmente bem podemos dizer que o sr. D. Jacinto está firme.
+
+O Grilo arredou os óculos para a testa, e levantando para o ar os cinco dedos em curva como pétalas de uma tulipa:
+
+— Sua Excelência brotou! Profundo sempre o digno preto! Sim! Aquele ressequido galho da Cidade, plantado na Serra, pegara, chupara o húmus do torrão herdado, criara seiva, afundara raízes, engrossara de tronco, atirara ramos, rebentara em flores, forte, sereno, ditoso, benéfico, nobre, dando frutos, derramando sombra. E abrigados pela grande árvore, e por ela nutridos, cem casais* em redor o bendiziam.
+
+Eça de Queirós, A cidade e as serras.
+*casal: pequena propriedade rústica; pequeno povoado.
+
+No texto de Eça de Queirós (A cidade e as serras), em que Jacinto é descrito como uma árvore que "brotou", o teor das imagens empregadas para caracterizar a mudança pela qual passara Jacinto indica que a causa principal dessa transformação foi`,
     opcoes: [
       { letra: 'A', texto: `o retorno a sua terra natal.` },
       { letra: 'B', texto: `a conversão religiosa.` },
@@ -25927,12 +26022,21 @@ O livro a que se refere a autora é`,
     imagem: null,
   },
   {
-    id: 1152,
+    id: 1412,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Personagens / Contraste',
-    enunciado: `Tal como se encontra caracterizado no excerto de Eça de Queirós (A cidade e as serras), o destino alcançado pela personagem Jacinto contrasta de modo mais completo com a maneira pela qual culmina a trajetória de vida da personagem`,
+    enunciado: `— Pois, Grilo, agora realmente bem podemos dizer que o sr. D. Jacinto está firme.
+
+O Grilo arredou os óculos para a testa, e levantando para o ar os cinco dedos em curva como pétalas de uma tulipa:
+
+— Sua Excelência brotou! Profundo sempre o digno preto! Sim! Aquele ressequido galho da Cidade, plantado na Serra, pegara, chupara o húmus do torrão herdado, criara seiva, afundara raízes, engrossara de tronco, atirara ramos, rebentara em flores, forte, sereno, ditoso, benéfico, nobre, dando frutos, derramando sombra. E abrigados pela grande árvore, e por ela nutridos, cem casais* em redor o bendiziam.
+
+Eça de Queirós, A cidade e as serras.
+*casal: pequena propriedade rústica; pequeno povoado.
+
+Tal como se encontra caracterizado no excerto de Eça de Queirós (A cidade e as serras), o destino alcançado pela personagem Jacinto contrasta de modo mais completo com a maneira pela qual culmina a trajetória de vida da personagem`,
     opcoes: [
       { letra: 'A', texto: `Leonardo (filho), de Memórias de um sargento de milícias.` },
       { letra: 'B', texto: `Jão Fera, de Til.` },
@@ -25945,12 +26049,24 @@ O livro a que se refere a autora é`,
     imagem: null,
   },
   {
-    id: 1153,
+    id: 1413,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Poesia / Drummond / Confidência do Itabirano',
-    enunciado: `Sobre o poema "Confidência do Itabirano" de Carlos Drummond de Andrade:
+    enunciado: `Confidência do Itabirano
+
+Alguns anos vivi em Itabira. Principalmente nasci em Itabira. Por isso sou triste, orgulhoso: de ferro. Noventa por cento de ferro nas calçadas. Oitenta por cento de ferro nas almas. E esse alheamento do que na vida é porosidade e comunicação.
+
+A vontade de amar, que me paralisa o trabalho, vem de Itabira, de suas noites brancas, sem mulheres e sem horizontes. E o hábito de sofrer, que tanto me diverte, é doce herança itabirana.
+
+De Itabira trouxe prendas diversas que ora te ofereço: este São Benedito do velho santeiro Alfredo Duval; esta pedra de ferro, futuro aço do Brasil; este couro de anta, estendido no sofá da sala de visitas; este orgulho, esta cabeça baixa...
+
+Tive ouro, tive gado, tive fazendas. Hoje sou funcionário público. Itabira é apenas uma fotografia na parede. Mas como dói!
+
+Carlos Drummond de Andrade, Sentimento do mundo.
+
+Sobre o poema "Confidência do Itabirano" de Carlos Drummond de Andrade:
 I. O poeta é "de ferro" na medida em que é nativo de região caracterizada pela existência de importantes jazidas de minério de ferro, intensamente exploradas.
 II. O poeta revela conceber sua identidade como tributária não só de uma geografia, mas também de uma história, que é, igualmente, a da linhagem familiar a que pertence.
 III. A ausência de mulheres de que fala o poeta refere-se à ampla predominância de população masculina, na zona de mineração intensiva de que ele é originário.
@@ -25968,12 +26084,24 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1154,
+    id: 1414,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Poesia / Drummond / Eu lírico',
-    enunciado: `No texto de Drummond ("Confidência do Itabirano"), o eu lírico`,
+    enunciado: `Confidência do Itabirano
+
+Alguns anos vivi em Itabira. Principalmente nasci em Itabira. Por isso sou triste, orgulhoso: de ferro. Noventa por cento de ferro nas calçadas. Oitenta por cento de ferro nas almas. E esse alheamento do que na vida é porosidade e comunicação.
+
+A vontade de amar, que me paralisa o trabalho, vem de Itabira, de suas noites brancas, sem mulheres e sem horizontes. E o hábito de sofrer, que tanto me diverte, é doce herança itabirana.
+
+De Itabira trouxe prendas diversas que ora te ofereço: este São Benedito do velho santeiro Alfredo Duval; esta pedra de ferro, futuro aço do Brasil; este couro de anta, estendido no sofá da sala de visitas; este orgulho, esta cabeça baixa...
+
+Tive ouro, tive gado, tive fazendas. Hoje sou funcionário público. Itabira é apenas uma fotografia na parede. Mas como dói!
+
+Carlos Drummond de Andrade, Sentimento do mundo.
+
+No texto de Drummond ("Confidência do Itabirano"), o eu lírico`,
     opcoes: [
       { letra: 'A', texto: `considera sua origem itabirana como causadora de deficiências que ele almeja superar.` },
       { letra: 'B', texto: `revela-se incapaz de efetivamente comunicar-se, dado o caráter férreo de sua gente.` },
@@ -25986,12 +26114,24 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1155,
+    id: 1415,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Poesia / Gramática / Conjunção',
-    enunciado: `No poema "Confidência do Itabirano" de Drummond, na última estrofe, a expressão que justifica o uso da conjunção sublinhada no verso "Mas como dói!" é:`,
+    enunciado: `Confidência do Itabirano
+
+Alguns anos vivi em Itabira. Principalmente nasci em Itabira. Por isso sou triste, orgulhoso: de ferro. Noventa por cento de ferro nas calçadas. Oitenta por cento de ferro nas almas. E esse alheamento do que na vida é porosidade e comunicação.
+
+A vontade de amar, que me paralisa o trabalho, vem de Itabira, de suas noites brancas, sem mulheres e sem horizontes. E o hábito de sofrer, que tanto me diverte, é doce herança itabirana.
+
+De Itabira trouxe prendas diversas que ora te ofereço: este São Benedito do velho santeiro Alfredo Duval; esta pedra de ferro, futuro aço do Brasil; este couro de anta, estendido no sofá da sala de visitas; este orgulho, esta cabeça baixa...
+
+Tive ouro, tive gado, tive fazendas. Hoje sou funcionário público. Itabira é apenas uma fotografia na parede. Mas como dói!
+
+Carlos Drummond de Andrade, Sentimento do mundo.
+
+No poema "Confidência do Itabirano" de Drummond, na última estrofe, a expressão que justifica o uso da conjunção sublinhada no verso "Mas como dói!" é:`,
     opcoes: [
       { letra: 'A', texto: `"Hoje".` },
       { letra: 'B', texto: `"funcionário público".` },
@@ -26004,12 +26144,16 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1158,
+    id: 1416,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Divisão Internacional do Trabalho / América Latina',
-    enunciado: `Sobre o texto de Eduardo Galeano (As Veias Abertas da América Latina) e a atual Divisão Internacional do Trabalho (DIT), no que diz respeito à mineração na América Latina, é correto afirmar:`,
+    enunciado: `Há dois lados na divisão internacional do trabalho [DIT]: um em que alguns países especializam-se em ganhar, e outro em que se especializaram em perder. Nossa comarca do mundo, que hoje chamamos de América Latina, foi precoce: especializou-se em perder desde os remotos tempos em que os europeus do Renascimento se abalançaram pelo mar e fincaram os dentes em sua garganta. Passaram os séculos, e a América Latina aperfeiçoou suas funções. Este já não é o reino das maravilhas, onde a realidade derrotava a fábula e a imaginação era humilhada pelos troféus das conquistas, as jazidas de ouro e as montanhas de prata. Mas a região continua trabalhando como um serviçal. Continua existindo a serviço de necessidades alheias, como fonte e reserva de petróleo e ferro, cobre e carne, frutas e café, matérias-primas e alimentos, destinados aos países ricos que ganham, consumindo-os, muito mais do que a América Latina ganha produzindo-os.
+
+Eduardo Galeano. As Veias Abertas da América Latina. Rio de Janeiro: Paz e Terra, 1981. Adaptado.
+
+Sobre o texto de Eduardo Galeano (As Veias Abertas da América Latina) e a atual Divisão Internacional do Trabalho (DIT), no que diz respeito à mineração na América Latina, é correto afirmar:`,
     opcoes: [
       { letra: 'A', texto: `O México é o país com maior produção de carvão, cuja exportação é controlada por capital canadense, praticando o padrão de dominação Norte/Sul no mesmo continente.` },
       { letra: 'B', texto: `A Colômbia ocupa o primeiro lugar na produção mundial de manganês, por meio de empresas privatizadas nos dois últimos governos bolivarianos, rompendo a dominação Norte/Sul.` },
@@ -26022,7 +26166,7 @@ Está correto o que se afirma em`,
     imagem: null,
   },
   {
-    id: 1163,
+    id: 1417,
     ano: 2016,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
@@ -26045,7 +26189,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Urbanização / São Paulo / Periferização',
-    enunciado: `Sobre o processo de industrialização e metropolização de São Paulo (texto de Isabel Alvarez), é correto afirmar:`,
+    enunciado: `O processo de industrialização que se efetivou em São Paulo a partir do início do século XX foi o indutor do processo de metropolização. A partir do final dos anos 1950, a concentração da estrutura produtiva e a centralização do capital em São Paulo foram acompanhadas de uma urbanização contraditória que, ao mesmo tempo, absorvia as modernidades possíveis e expulsava para as periferias imensa quantidade de pessoas que, na impossibilidade de viver o urbano, contraditoriamente, potencializavam a sua expansão. Assim, de 1960 a 1980, a expansão da metrópole caracterizou-se também pela intensa expansão de sua área construída, marcadamente fragmentada e hierarquizada. Esse processo se constituiu em um ciclo da expansão capitalista em São Paulo marcada por sua periferização.
+
+Isabel Alvarez. Projetos Urbanos: alianças e conflitos na reprodução da metrópole. Adaptado.
+
+Sobre o processo de industrialização e metropolização de São Paulo (texto de Isabel Alvarez), é correto afirmar:`,
     opcoes: [
       { letra: 'A', texto: `O processo que levou à formação da metrópole paulistana foi dual, pois, ao trazer modernidade, trouxe também segregação social.` },
       { letra: 'B', texto: `A cidade de São Paulo, no período entre o final da Segunda Guerra Mundial e os anos de 1980, conheceu um processo intenso de desconcentração industrial.` },
@@ -26063,7 +26211,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'História Antiga / Pólis grega',
-    enunciado: `De acordo com o texto de Jean-Pierre Vernant (sobre o surgimento da pólis), na Antiguidade, uma das transformações provocadas pelo surgimento da pólis foi`,
+    enunciado: `O aparecimento da pólis constitui, na história do pensamento grego, um acontecimento decisivo. Certamente, no plano intelectual como no domínio das instituições, só no fim alcançará todas as suas consequências; a pólis conhecerá etapas múltiplas e formas variadas. Entretanto, desde seu advento, que se pode situar entre os séculos VIII e VII a.C., marca um começo, uma verdadeira invenção; por ela, a vida social e as relações entre os homens tomam uma forma nova, cuja originalidade será plenamente sentida pelos gregos.
+
+Jean-Pierre Vernant. As origens do pensamento grego. Rio de Janeiro: Difel, 1981. Adaptado.
+
+De acordo com o texto de Jean-Pierre Vernant (sobre o surgimento da pólis), na Antiguidade, uma das transformações provocadas pelo surgimento da pólis foi`,
     opcoes: [
       { letra: 'A', texto: `o declínio da oralidade, pois, em seu território, toda estratégia de comunicação era baseada na escrita e no uso de imagens.` },
       { letra: 'B', texto: `o isolamento progressivo de seus membros, que preferiam o convívio familiar às relações travadas nos espaços públicos.` },
@@ -26099,7 +26251,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Idade Média / Mercadores / Percepção do tempo',
-    enunciado: `O texto de Jacques Le Goff associa a mudança da percepção do tempo pelos mercadores medievais ao`,
+    enunciado: `Assim como o camponês, o mercador está a princípio submetido, na sua atividade profissional, ao tempo meteorológico, ao ciclo das estações, à imprevisibilidade das intempéries e dos cataclismos naturais. Como, durante muito tempo, não houve nesse domínio senão necessidade de submissão à ordem da natureza e de Deus, o mercador só teve como meio de ação as preces e as práticas supersticiosas. Mas, quando se organiza uma rede comercial, o tempo se torna objeto de medida. A duração de uma viagem por mar ou por terra, ou de um lugar para outro, o problema dos preços que, no curso de uma mesma operação comercial, mais ainda quando o circuito se complica, sobem ou descem — tudo isso se impõe cada vez mais à sua atenção. Mudança também importante: o mercador descobre o preço do tempo no mesmo momento em que ele explora o espaço, pois para ele a duração essencial é aquela de um trajeto.
+
+Jacques Le Goff. Para uma outra Idade Média. Petrópolis: Vozes, 2013. Adaptado.
+
+O texto de Jacques Le Goff associa a mudança da percepção do tempo pelos mercadores medievais ao`,
     opcoes: [
       { letra: 'A', texto: `respeito estrito aos princípios do livre-comércio, que determinavam a obediência às regras internacionais de circulação de mercadorias.` },
       { letra: 'B', texto: `crescimento das relações mercantis, que passaram a envolver territórios mais amplos e distâncias mais longas.` },
@@ -26153,7 +26309,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Pós-Guerra Fria / Ordem mundial',
-    enunciado: `O texto de Silvio Pons propõe uma interpretação do cenário internacional no princípio do século XXI e afirma a necessidade de se`,
+    enunciado: `O processo de expansão das características multilaterais do sistema ocidental nas diversas áreas do mundo conheceu crescente impasse a partir do início do novo século. A sustentabilidade de um sistema substancialmente unipolar mostrou-se cada vez mais crítica, precisamente em face das transformações estruturais, ligadas, antes de mais nada, ao crescimento econômico da Ásia, que pareciam complementar e sustentar a ordem mundial do pós-Guerra Fria. A ameaça do fundamentalismo islâmico e do terrorismo internacional dividiu o Ocidente. O papel de pilar dos Estados Unidos oscilou entre um unilateralismo imperial, tendendo a renegar as próprias características da hegemonia, e um novo multilateralismo, ainda a ser pensado e definido.
+
+Silvio Pons. A revolução global: história do comunismo internacional (1917-1991). Rio de Janeiro: Contraponto, 2014.
+
+O texto de Silvio Pons propõe uma interpretação do cenário internacional no princípio do século XXI e afirma a necessidade de se`,
     opcoes: [
       { letra: 'A', texto: `valorizar a liderança norte-americana sobre o Ocidente, pois apenas os Estados Unidos dispõem de recursos financeiros e militares para assegurar a nova ordem mundial.` },
       { letra: 'B', texto: `reconhecer a falência do modelo comunista, hegemônico durante a Guerra Fria, e aceitar a vitória do capitalismo e da lógica multilateral.` },
@@ -26171,7 +26331,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Brasil colonial / Jesuítas / Portugal',
-    enunciado: `O trecho da carta do padre jesuíta Diogo de Gouveia ao Rei de Portugal D. João III (17/02/1538) mostra`,
+    enunciado: `Eu por vezes tenho dito a V. A. aquilo que me parecia acerca dos negócios da França, e isto por ver por conjecturas e aparências grandes aquilo que podia suceder dos pontos mais aparentes, que consigo traziam muito prejuízo ao estado e aumento dos senhorios de V. A. E tudo se encerrava em vós, Senhor, trabalhardes com modos honestos de fazer que esta gente não houvesse de entrar nem possuir coisa de vossas navegações, pelo grandíssimo dano que daí se podia seguir.
+
+Serafim Leite. Cartas dos primeiros jesuítas do Brasil, 1954.
+
+O trecho acima foi extraído de uma carta dirigida pelo padre jesuíta Diogo de Gouveia ao Rei de Portugal D. João III, escrita em Paris, em 17/02/1538. Seu conteúdo mostra`,
     opcoes: [
       { letra: 'A', texto: `a persistência dos ataques franceses contra a América, que Portugal vinha tentando colonizar de modo efetivo desde a adoção do sistema de capitanias hereditárias.` },
       { letra: 'B', texto: `os primórdios da aliança que logo se estabeleceria entre as Coroas de Portugal e da França para combater as pretensões expansionistas da Espanha na América.` },
@@ -26189,7 +26353,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Belle Époque brasileira / Identidade nacional',
-    enunciado: `Entre as tentativas de responder, durante a Belle Époque brasileira, às dúvidas sobre a identidade nacional mencionadas no texto de Elias Thomé Saliba, é correto incluir`,
+    enunciado: `Na Belle Époque brasileira, que difusamente coincidiu com a transição para o regime republicano, surgiram aquelas perguntas cruciais, envoltas no oxigênio mental da época, muitas das quais, contudo, nos incomodam até hoje: como construir uma nação se não tínhamos uma população definida ou um tipo definido? Frente àquele amálgama de passado e futuro, alimentado e realimentado pela República, quem era o brasileiro? (...) Inúmeras tentativas de respostas a todas estas questões mobilizaram os intelectuais brasileiros durante várias décadas.
+
+Elias Thomé Saliba. Raízes do riso. São Paulo: Companhia das Letras, 2002.
+
+Entre as tentativas de responder, durante a Belle Époque brasileira, às dúvidas sobre a identidade nacional mencionadas no texto de Elias Thomé Saliba, é correto incluir`,
     opcoes: [
       { letra: 'A', texto: `as explicações positivistas e evolucionistas sobre o impacto da mistura de raças na formação do caráter nacional brasileiro.` },
       { letra: 'B', texto: `os projetos de valorização dos vínculos entre o caráter nacional brasileiro e os produtos da indústria cultural norte-americana.` },
@@ -26207,7 +26375,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Brasil / Transamazônica / Regime militar',
-    enunciado: `Segundo o texto da Revista Manchete (15 de abril de 1972), é correto afirmar que a Transamazônica, cuja construção se iniciou no regime militar (1964-1985), representou, inclusive,`,
+    enunciado: `Paralelamente à abertura da Transamazônica processa-se o trabalho da colonização, realizado pelo INCRA (Instituto Nacional de Colonização e Reforma Agrária). As pequenas agrovilas se sucedem de vinte em vinte quilômetros à margem da estrada, e nos cem hectares que cada colono recebeu são plantados milho, feijão e arroz. Já no próximo mês começará a plantação de cana-de-açúcar, cujas primeiras mudas, vindas dos canaviais de Sertãozinho, em São Paulo, acabaram de ser distribuídas. Jovens agrônomos, recém-saídos da universidade, orientam os colonos... No meio da selva começam a surgir as agrovilas. Vindos de diferentes regiões do país, os colonos povoam as margens da Transamazônica e espalham pelo chão virgem o verde disciplinado das culturas pioneiras. Os pastos da região são excelentes.
+
+Revista Manchete, 15 de abril de 1972.
+
+Segundo o texto da Revista Manchete (15 de abril de 1972), é correto afirmar que a Transamazônica, cuja construção se iniciou no regime militar (1964-1985), representou, inclusive,`,
     opcoes: [
       { letra: 'A', texto: `um projeto para eliminar o controle nacional e estatal dos recursos naturais da Amazônia, facilitando o avanço de interesses britânicos na região.` },
       { letra: 'B', texto: `um esforço de ampliar as áreas de ocupação na Amazônia e de construir a ideia de que se vivia um período de avanço, integração e crescimento nacional.` },
@@ -26225,7 +26397,15 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Dengue / Wolbachia',
-    enunciado: `De acordo com o texto do Scientific American (June 2015) sobre dengue, a infecção por dengue`,
+    enunciado: `About half of the world's population is at risk of contracting dengue, according to the World Health Organization. The mosquito is found in tropical and subtropical climates around the world; however, dengue does not naturally occur in these creatures: the mosquitoes get dengue from us.
+
+The mechanism of dengue infection is simple. Female mosquitoes bite humans because they need the protein found in our blood to produce eggs. (Male mosquitoes do not bite.) If the mosquito bites someone with dengue – and then, after the virus's roughly eight- to 12-day replication period, bites someone else – it passes dengue into its next victim's bloodstream.
+
+There is no vaccine against dengue, but infecting mosquitoes with a natural bacterium called Wolbachia blocks the insects' ability to pass the disease to humans. The microbe spreads among both male and female mosquitoes: infected females lay eggs that harbor the bacterium, and when Wolbachia-free females mate with infected males, their eggs simply do not hatch. Researchers are now releasing Wolbachia-infected females into the wild in Australia, Vietnam, Indonesia and Brazil.
+
+Scientific American, June 2015. Adaptado.
+
+De acordo com o texto do Scientific American (June 2015) sobre dengue, a infecção por dengue`,
     opcoes: [
       { letra: 'A', texto: `propaga-se quando mosquitos fêmeas picam seres humanos infectados e retransmitem a doença a outras pessoas.` },
       { letra: 'B', texto: `é provocada por mosquitos infectados depois do acasalamento.` },
@@ -26243,7 +26423,15 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Dengue / Wolbachia',
-    enunciado: `Segundo o texto do Scientific American, a bactéria Wolbachia, se inoculada nos mosquitos, bloqueia a transmissão da dengue porque`,
+    enunciado: `About half of the world's population is at risk of contracting dengue, according to the World Health Organization. The mosquito is found in tropical and subtropical climates around the world; however, dengue does not naturally occur in these creatures: the mosquitoes get dengue from us.
+
+The mechanism of dengue infection is simple. Female mosquitoes bite humans because they need the protein found in our blood to produce eggs. (Male mosquitoes do not bite.) If the mosquito bites someone with dengue – and then, after the virus's roughly eight- to 12-day replication period, bites someone else – it passes dengue into its next victim's bloodstream.
+
+There is no vaccine against dengue, but infecting mosquitoes with a natural bacterium called Wolbachia blocks the insects' ability to pass the disease to humans. The microbe spreads among both male and female mosquitoes: infected females lay eggs that harbor the bacterium, and when Wolbachia-free females mate with infected males, their eggs simply do not hatch. Researchers are now releasing Wolbachia-infected females into the wild in Australia, Vietnam, Indonesia and Brazil.
+
+Scientific American, June 2015. Adaptado.
+
+Segundo o texto do Scientific American, a bactéria Wolbachia, se inoculada nos mosquitos, bloqueia a transmissão da dengue porque`,
     opcoes: [
       { letra: 'A', texto: `torna os machos estéreis.` },
       { letra: 'B', texto: `interfere no período de acasalamento dos mosquitos.` },
@@ -26261,7 +26449,21 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Economia compartilhada',
-    enunciado: `Segundo o texto do SFChronicle.com (May 20, 2015) sobre empresas do tipo "on-demand", empresas do tipo "on-demand"`,
+    enunciado: `Working for on-demand startups like Uber and TaskRabbit is supposed to offer flexible hours and higher wages, but many workers have found the pay lower and the hours less flexible than they expected. Even more surprising: 8 percent of those chauffeuring passengers and 16 percent of those making deliveries said they lack personal auto insurance.
+
+Those are among the findings from a survey about the work life of independent contractors for on-demand startups, a booming sector of the tech industry, being released Wednesday.
+
+"We want to shed light on the industry as a whole," said Isaac Madan, a Stanford master's candidate in bioinformatics who worked with two other Stanford students and a recent alumnus on the survey of 1,330 workers. "People need to understand how this space will change and evolve and help the economy."
+
+On-demand, often called the sharing economy, refers to companies that let users summon workers via smartphone apps to handle all manner of services: rides, cleaning, chores, deliveries, car parking, waiting in lines. Almost uniformly, those workers are independent contractors rather than salaried employees.
+
+That status is the main point of contention in a recent rash of lawsuits in which workers are filing for employee status. While the survey did not directly ask contractors if they would prefer to be employees, it found that their top workplace desires were to have paid health insurance, retirement benefits and paid time off for holidays, vacation and sick days – all perks of full-time workers. Respondents also expressed interest in having more chances for advancement, education sponsorship, disability insurance and human-relations support.
+
+Because respondents were recruited rather than randomly selected, the survey does not claim to be representational but a conclusion one may come to is that flexibility of new jobs comes with a cost. Not all workers are prepared for that!
+
+SFChronicle.com and SFGate.com, May 20, 2015. Adaptado.
+
+Segundo o texto do SFChronicle.com (May 20, 2015) sobre empresas do tipo "on-demand", empresas do tipo "on-demand"`,
     opcoes: [
       { letra: 'A', texto: `têm pouco contato com seus prestadores de serviços, o que dificulta o estabelecimento de planos de carreira.` },
       { letra: 'B', texto: `são intermediárias entre usuários e prestadores de serviços acionados por meio de aplicativos.` },
@@ -26279,7 +26481,21 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Economia compartilhada',
-    enunciado: `Um dos resultados da pesquisa realizada com prestadores de serviços de empresas do tipo "on-demand" mostra que esses trabalhadores`,
+    enunciado: `Working for on-demand startups like Uber and TaskRabbit is supposed to offer flexible hours and higher wages, but many workers have found the pay lower and the hours less flexible than they expected. Even more surprising: 8 percent of those chauffeuring passengers and 16 percent of those making deliveries said they lack personal auto insurance.
+
+Those are among the findings from a survey about the work life of independent contractors for on-demand startups, a booming sector of the tech industry, being released Wednesday.
+
+"We want to shed light on the industry as a whole," said Isaac Madan, a Stanford master's candidate in bioinformatics who worked with two other Stanford students and a recent alumnus on the survey of 1,330 workers. "People need to understand how this space will change and evolve and help the economy."
+
+On-demand, often called the sharing economy, refers to companies that let users summon workers via smartphone apps to handle all manner of services: rides, cleaning, chores, deliveries, car parking, waiting in lines. Almost uniformly, those workers are independent contractors rather than salaried employees.
+
+That status is the main point of contention in a recent rash of lawsuits in which workers are filing for employee status. While the survey did not directly ask contractors if they would prefer to be employees, it found that their top workplace desires were to have paid health insurance, retirement benefits and paid time off for holidays, vacation and sick days – all perks of full-time workers. Respondents also expressed interest in having more chances for advancement, education sponsorship, disability insurance and human-relations support.
+
+Because respondents were recruited rather than randomly selected, the survey does not claim to be representational but a conclusion one may come to is that flexibility of new jobs comes with a cost. Not all workers are prepared for that!
+
+SFChronicle.com and SFGate.com, May 20, 2015. Adaptado.
+
+Um dos resultados da pesquisa realizada com prestadores de serviços de empresas do tipo "on-demand" mostra que esses trabalhadores`,
     opcoes: [
       { letra: 'A', texto: `consideram a flexibilidade do horário de trabalho o ponto alto de sua opção profissional.` },
       { letra: 'B', texto: `pagam seus próprios seguros-saúde e planos de aposentadoria.` },
@@ -26297,7 +26513,21 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Economia compartilhada',
-    enunciado: `Outro resultado da pesquisa sobre trabalhadores em empresas "on-demand" indica que`,
+    enunciado: `Working for on-demand startups like Uber and TaskRabbit is supposed to offer flexible hours and higher wages, but many workers have found the pay lower and the hours less flexible than they expected. Even more surprising: 8 percent of those chauffeuring passengers and 16 percent of those making deliveries said they lack personal auto insurance.
+
+Those are among the findings from a survey about the work life of independent contractors for on-demand startups, a booming sector of the tech industry, being released Wednesday.
+
+"We want to shed light on the industry as a whole," said Isaac Madan, a Stanford master's candidate in bioinformatics who worked with two other Stanford students and a recent alumnus on the survey of 1,330 workers. "People need to understand how this space will change and evolve and help the economy."
+
+On-demand, often called the sharing economy, refers to companies that let users summon workers via smartphone apps to handle all manner of services: rides, cleaning, chores, deliveries, car parking, waiting in lines. Almost uniformly, those workers are independent contractors rather than salaried employees.
+
+That status is the main point of contention in a recent rash of lawsuits in which workers are filing for employee status. While the survey did not directly ask contractors if they would prefer to be employees, it found that their top workplace desires were to have paid health insurance, retirement benefits and paid time off for holidays, vacation and sick days – all perks of full-time workers. Respondents also expressed interest in having more chances for advancement, education sponsorship, disability insurance and human-relations support.
+
+Because respondents were recruited rather than randomly selected, the survey does not claim to be representational but a conclusion one may come to is that flexibility of new jobs comes with a cost. Not all workers are prepared for that!
+
+SFChronicle.com and SFGate.com, May 20, 2015. Adaptado.
+
+Outro resultado da pesquisa sobre trabalhadores em empresas "on-demand" indica que`,
     opcoes: [
       { letra: 'A', texto: `grande parte dos trabalhadores em empresas "on-demand" não pensa em ter um registro formal de trabalho.` },
       { letra: 'B', texto: `nem todos os trabalhadores em empresas "on-demand" estão preparados para arcar com o custo de sua flexibilidade no trabalho.` },
@@ -26315,7 +26545,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Interpretação de texto / Relação espacial',
-    enunciado: `Texto de Carlos A. C. Lemos (Cozinhas, etc.) sobre a adoção do cardápio indígena nas moradias brasileiras, com alpendre, tipiti, prensa de mandioca, sítio no Ipiranga. Traduz corretamente uma relação espacial expressa no texto o que se encontra em:`,
+    enunciado: `A adoção do cardápio indígena introduziu nas cozinhas e zonas de serviço das moradas brasileiras equipamentos desconhecidos no Reino. Instalou nos alpendres roceiros a prensa de espremer mandioca ralada para farinha. Nos inventários paulistas é comum a menção de tal fato. No inventário de Pedro Nunes, por exemplo, efetuado em 1623, fala-se num sítio nas bandas do Ipiranga "com seu alpendre e duas camarinhas no dito alpendre com a prensa no dito sítio" que deveria comprimir nos tipitis toda a massa proveniente do mandiocal também inventariado. Mas a farinha não exigia somente a prensa – pedia, também, raladores, cochos de lavagem e forno ou fogão. Era normal, então, a casa de fazer farinha, no quintal, ao lado dos telheiros e próxima à cozinha.
+
+Carlos A. C. Lemos, Cozinhas, etc.
+
+Traduz corretamente uma relação espacial expressa no texto o que se encontra em:`,
     opcoes: [
       { letra: 'A', texto: `A prensa é paralela aos tipitis.` },
       { letra: 'B', texto: `A casa de fazer farinha é adjacente aos telheiros.` },
@@ -26333,7 +26567,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Vocabulário / Contribuição indígena ao português',
-    enunciado: `Além de "tipitis", constituem contribuição indígena para a língua portuguesa do Brasil as seguintes palavras empregadas no texto (Cozinhas, etc.):`,
+    enunciado: `A adoção do cardápio indígena introduziu nas cozinhas e zonas de serviço das moradas brasileiras equipamentos desconhecidos no Reino. Instalou nos alpendres roceiros a prensa de espremer mandioca ralada para farinha. Nos inventários paulistas é comum a menção de tal fato. No inventário de Pedro Nunes, por exemplo, efetuado em 1623, fala-se num sítio nas bandas do Ipiranga "com seu alpendre e duas camarinhas no dito alpendre com a prensa no dito sítio" que deveria comprimir nos tipitis toda a massa proveniente do mandiocal também inventariado. Mas a farinha não exigia somente a prensa – pedia, também, raladores, cochos de lavagem e forno ou fogão. Era normal, então, a casa de fazer farinha, no quintal, ao lado dos telheiros e próxima à cozinha.
+
+Carlos A. C. Lemos, Cozinhas, etc.
+
+Além de "tipitis", constituem contribuição indígena para a língua portuguesa do Brasil as seguintes palavras empregadas no texto:`,
     opcoes: [
       { letra: 'A', texto: `"cardápio" e "roceiros".` },
       { letra: 'B', texto: `"alpendre" e "fogão".` },
@@ -26351,7 +26589,11 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Iracema / José de Alencar',
-    enunciado: `Sobre o trecho de Iracema (José de Alencar), considerado no contexto dessa obra, é compatível o que se afirma em:
+    enunciado: `Nasceu o dia e expirou. Já brilha na cabana de Araquém o fogo, companheiro da noite. Correm lentas e silenciosas no azul do céu, as estrelas, filhas da lua, que esperam a volta da mãe ausente. Martim se embala docemente; e como a alva rede que vai e vem, sua vontade oscila de um a outro pensamento. Lá o espera a virgem loura dos castos afetos; aqui lhe sorri a virgem morena dos ardentes amores. Iracema recosta-se langue ao punho da rede; seus olhos negros e fúlgidos, ternos olhos de sabiá, buscam o estrangeiro, e lhe entram n'alma. O cristão sorri; a virgem palpita; como o saí, fascinado pela serpente, vai declinando o lascivo talhe, que se debruça enfim sobre o peito do guerreiro.
+
+José de Alencar, Iracema.
+
+É compatível com o trecho de Iracema aqui reproduzido, considerado no contexto dessa obra, o que se afirma em:
 I. "Nesta obra, assim como nos 'poemas americanos' dos nossos poetas, palpita um sentimento sincero de distância poética e exotismo, de coisa notável por estranha para nós, embora a rotulemos como nativa."
 II. "Mais do que diante de um relato, estamos diante de um poema, cujo conteúdo se concentra a cada passo na magia do ritmo e na graça da imagem."
 III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histórico, que reproduz o enredo típico das narrativas de capa e espada, oriundas da novela de cavalaria."`,
@@ -26372,7 +26614,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Iracema / Indianismo',
-    enunciado: `No texto de Iracema, corresponde a uma das convenções com que o Indianismo construía suas representações do indígena`,
+    enunciado: `Nasceu o dia e expirou. Já brilha na cabana de Araquém o fogo, companheiro da noite. Correm lentas e silenciosas no azul do céu, as estrelas, filhas da lua, que esperam a volta da mãe ausente. Martim se embala docemente; e como a alva rede que vai e vem, sua vontade oscila de um a outro pensamento. Lá o espera a virgem loura dos castos afetos; aqui lhe sorri a virgem morena dos ardentes amores. Iracema recosta-se langue ao punho da rede; seus olhos negros e fúlgidos, ternos olhos de sabiá, buscam o estrangeiro, e lhe entram n'alma. O cristão sorri; a virgem palpita; como o saí, fascinado pela serpente, vai declinando o lascivo talhe, que se debruça enfim sobre o peito do guerreiro.
+
+José de Alencar, Iracema.
+
+No texto de Iracema, corresponde a uma das convenções com que o Indianismo construía suas representações do indígena`,
     opcoes: [
       { letra: 'A', texto: `o emprego de sugestões de cunho mitológico compatíveis com o contexto.` },
       { letra: 'B', texto: `a caracterização da mulher como um ser dócil e desprovido de vontade própria.` },
@@ -26390,7 +26636,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Iracema / Narrador',
-    enunciado: `É correto afirmar que, no texto de Iracema, o narrador`,
+    enunciado: `Nasceu o dia e expirou. Já brilha na cabana de Araquém o fogo, companheiro da noite. Correm lentas e silenciosas no azul do céu, as estrelas, filhas da lua, que esperam a volta da mãe ausente. Martim se embala docemente; e como a alva rede que vai e vem, sua vontade oscila de um a outro pensamento. Lá o espera a virgem loura dos castos afetos; aqui lhe sorri a virgem morena dos ardentes amores. Iracema recosta-se langue ao punho da rede; seus olhos negros e fúlgidos, ternos olhos de sabiá, buscam o estrangeiro, e lhe entram n'alma. O cristão sorri; a virgem palpita; como o saí, fascinado pela serpente, vai declinando o lascivo talhe, que se debruça enfim sobre o peito do guerreiro.
+
+José de Alencar, Iracema.
+
+É correto afirmar que, no texto de Iracema, o narrador`,
     opcoes: [
       { letra: 'A', texto: `prioriza a ordem direta da frase, como se pode verificar nos dois primeiros parágrafos do texto.` },
       { letra: 'B', texto: `usa o verbo "correr" (2º parágrafo) com a mesma acepção que se verifica na frase "Travam das armas os rápidos guerreiros, e correm ao campo".` },
@@ -26408,7 +26658,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Tradução / Linguística',
-    enunciado: `De acordo com o texto de Boris Schnaiderman (Dostoiévski Prosa Poesia), a boa tradução precisa`,
+    enunciado: `Evidentemente, não se pode esperar que Dostoiévski seja traduzido por outro Dostoiévski, mas desde que o tradutor procure penetrar nas peculiaridades da linguagem primeira, aplique-se com afinco e faça com que sua criatividade orientada pelo original permita, paradoxalmente, afastar-se do texto para ficar mais próximo deste, um passo importante será dado. Deixando de lado a fidelidade mecânica, frase por frase, tratando o original como um conjunto de blocos a serem transpostos, e transgredindo sem receio, quando necessário, as normas do "escrever bem", o tradutor poderá trazê-lo com boa margem de fidelidade para a língua com a qual está trabalhando.
+
+Boris Schnaiderman, Dostoiévski Prosa Poesia.
+
+De acordo com o texto de Boris Schnaiderman (Dostoiévski Prosa Poesia), a boa tradução precisa`,
     opcoes: [
       { letra: 'A', texto: `evitar a transposição fiel dos conteúdos do texto original.` },
       { letra: 'B', texto: `desconsiderar as características da linguagem primeira para poder atingir a língua de chegada.` },
@@ -26426,7 +26680,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Vocabulário / Semântica',
-    enunciado: `Tendo em vista que algumas das recomendações do autor (Boris Schnaiderman), relativas à prática da tradução, fogem do senso comum, pode-se qualificá-las com o seguinte termo, de uso relativamente recente:`,
+    enunciado: `Evidentemente, não se pode esperar que Dostoiévski seja traduzido por outro Dostoiévski, mas desde que o tradutor procure penetrar nas peculiaridades da linguagem primeira, aplique-se com afinco e faça com que sua criatividade orientada pelo original permita, paradoxalmente, afastar-se do texto para ficar mais próximo deste, um passo importante será dado. Deixando de lado a fidelidade mecânica, frase por frase, tratando o original como um conjunto de blocos a serem transpostos, e transgredindo sem receio, quando necessário, as normas do "escrever bem", o tradutor poderá trazê-lo com boa margem de fidelidade para a língua com a qual está trabalhando.
+
+Boris Schnaiderman, Dostoiévski Prosa Poesia.
+
+Tendo em vista que algumas das recomendações do autor (Boris Schnaiderman), relativas à prática da tradução, fogem do senso comum, pode-se qualificá-las com o seguinte termo, de uso relativamente recente:`,
     opcoes: [
       { letra: 'A', texto: `dubitativas.` },
       { letra: 'B', texto: `contraintuitivas.` },
@@ -26444,7 +26702,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Gramática / Prefixo',
-    enunciado: `O prefixo presente na palavra "transpostos" (do texto sobre tradução) tem o mesmo sentido do prefixo que ocorre em`,
+    enunciado: `Evidentemente, não se pode esperar que Dostoiévski seja traduzido por outro Dostoiévski, mas desde que o tradutor procure penetrar nas peculiaridades da linguagem primeira, aplique-se com afinco e faça com que sua criatividade orientada pelo original permita, paradoxalmente, afastar-se do texto para ficar mais próximo deste, um passo importante será dado. Deixando de lado a fidelidade mecânica, frase por frase, tratando o original como um conjunto de blocos a serem transpostos, e transgredindo sem receio, quando necessário, as normas do "escrever bem", o tradutor poderá trazê-lo com boa margem de fidelidade para a língua com a qual está trabalhando.
+
+Boris Schnaiderman, Dostoiévski Prosa Poesia.
+
+O prefixo presente na palavra "transpostos" tem o mesmo sentido do prefixo que ocorre em`,
     opcoes: [
       { letra: 'A', texto: `ultrapassado.` },
       { letra: 'B', texto: `retrocedido.` },
@@ -26462,7 +26724,20 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Memórias Póstumas / Machado de Assis',
-    enunciado: `Considerado no contexto de Memórias póstumas de Brás Cubas, o "livro" dos amores de Brás Cubas e Virgília, apresentado no breve capítulo LIII, configura uma`,
+    enunciado: `CAPÍTULO LIII
+.......
+
+Virgília é que já se não lembrava da meia dobra; toda ela estava concentrada em mim, nos meus olhos, na minha vida, no meu pensamento; — era o que dizia, e era verdade.
+
+Há umas plantas que nascem e crescem depressa;
+5 outras são tardias e pecas. O nosso amor era daquelas; brotou com tal ímpeto e tanta seiva, que, dentro em pouco, era a mais vasta, folhuda e exuberante criatura dos bosques. Não lhes poderei dizer, ao certo, os dias que durou esse crescimento. Lembra-me, sim, que, em certa noite, abotoou-
+10 se a flor, ou o beijo, se assim lhe quiserem chamar, um beijo que ela me deu, trêmula, — coitadinha, — trêmula de medo, porque era ao portão da chácara. Uniu-nos esse beijo único, — breve como a ocasião, ardente como o amor, prólogo de uma vida de delícias, de terrores, de remorsos, de prazeres
+15 que rematavam em dor, de aflições que desabrochavam em alegria, — uma hipocrisia paciente e sistemática, único freio de uma paixão sem freio, — vida de agitações, de cóleras, de desesperos e de ciúmes, que uma hora pagava à farta e de sobra; mas outra hora vinha e engolia aquela, como tudo
+20 mais, para deixar à tona as agitações e o resto, e o resto do resto, que é o fastio e a saciedade: tal foi o livro daquele prólogo.
+
+Machado de Assis, Memórias póstumas de Brás Cubas.
+
+Considerado no contexto de Memórias póstumas de Brás Cubas, o "livro" dos amores de Brás Cubas e Virgília, apresentado no breve capítulo aqui reproduzido, configura uma`,
     opcoes: [
       { letra: 'A', texto: `demonstração da tese naturalista que postula o fundamento biológico das relações amorosas.` },
       { letra: 'B', texto: `versão mais intensa e prolongada da típica sequência de animação e enfado, característica da trajetória de Brás Cubas.` },
@@ -26480,7 +26755,20 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Memórias Póstumas / Ritmo',
-    enunciado: `No último período do capítulo LIII de Memórias póstumas de Brás Cubas, o ritmo que o narrador imprime ao relato de seus amores corresponde sobretudo ao que se encontra expresso em`,
+    enunciado: `CAPÍTULO LIII
+.......
+
+Virgília é que já se não lembrava da meia dobra; toda ela estava concentrada em mim, nos meus olhos, na minha vida, no meu pensamento; — era o que dizia, e era verdade.
+
+Há umas plantas que nascem e crescem depressa;
+5 outras são tardias e pecas. O nosso amor era daquelas; brotou com tal ímpeto e tanta seiva, que, dentro em pouco, era a mais vasta, folhuda e exuberante criatura dos bosques. Não lhes poderei dizer, ao certo, os dias que durou esse crescimento. Lembra-me, sim, que, em certa noite, abotoou-
+10 se a flor, ou o beijo, se assim lhe quiserem chamar, um beijo que ela me deu, trêmula, — coitadinha, — trêmula de medo, porque era ao portão da chácara. Uniu-nos esse beijo único, — breve como a ocasião, ardente como o amor, prólogo de uma vida de delícias, de terrores, de remorsos, de prazeres
+15 que rematavam em dor, de aflições que desabrochavam em alegria, — uma hipocrisia paciente e sistemática, único freio de uma paixão sem freio, — vida de agitações, de cóleras, de desesperos e de ciúmes, que uma hora pagava à farta e de sobra; mas outra hora vinha e engolia aquela, como tudo
+20 mais, para deixar à tona as agitações e o resto, e o resto do resto, que é o fastio e a saciedade: tal foi o livro daquele prólogo.
+
+Machado de Assis, Memórias póstumas de Brás Cubas.
+
+No último período do capítulo LIII de Memórias póstumas de Brás Cubas, o ritmo que o narrador imprime ao relato de seus amores corresponde sobretudo ao que se encontra expresso em`,
     opcoes: [
       { letra: 'A', texto: `"prólogo de uma vida de delícias".` },
       { letra: 'B', texto: `"prazeres que rematavam em dor".` },
@@ -26498,7 +26786,20 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Memórias Póstumas / Recursos expressivos',
-    enunciado: `Dentre os recursos expressivos empregados no texto do capítulo LIII de Memórias póstumas de Brás Cubas, tem papel preponderante a`,
+    enunciado: `CAPÍTULO LIII
+.......
+
+Virgília é que já se não lembrava da meia dobra; toda ela estava concentrada em mim, nos meus olhos, na minha vida, no meu pensamento; — era o que dizia, e era verdade.
+
+Há umas plantas que nascem e crescem depressa;
+5 outras são tardias e pecas. O nosso amor era daquelas; brotou com tal ímpeto e tanta seiva, que, dentro em pouco, era a mais vasta, folhuda e exuberante criatura dos bosques. Não lhes poderei dizer, ao certo, os dias que durou esse crescimento. Lembra-me, sim, que, em certa noite, abotoou-
+10 se a flor, ou o beijo, se assim lhe quiserem chamar, um beijo que ela me deu, trêmula, — coitadinha, — trêmula de medo, porque era ao portão da chácara. Uniu-nos esse beijo único, — breve como a ocasião, ardente como o amor, prólogo de uma vida de delícias, de terrores, de remorsos, de prazeres
+15 que rematavam em dor, de aflições que desabrochavam em alegria, — uma hipocrisia paciente e sistemática, único freio de uma paixão sem freio, — vida de agitações, de cóleras, de desesperos e de ciúmes, que uma hora pagava à farta e de sobra; mas outra hora vinha e engolia aquela, como tudo
+20 mais, para deixar à tona as agitações e o resto, e o resto do resto, que é o fastio e a saciedade: tal foi o livro daquele prólogo.
+
+Machado de Assis, Memórias póstumas de Brás Cubas.
+
+Dentre os recursos expressivos empregados no texto, tem papel preponderante a`,
     opcoes: [
       { letra: 'A', texto: `metonímia (uso de uma palavra fora do seu contexto semântico normal, com base na relação de contiguidade).` },
       { letra: 'B', texto: `hipérbole (ênfase expressiva resultante do exagero da significação linguística).` },
@@ -26516,7 +26817,12 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Vidas Secas / Graciliano Ramos',
-    enunciado: `Tendo em vista as causas que a provocam, a revolta de Fabiano (Vidas secas), apresentada no texto como ainda contida e genérica, encontrará foco e uma expressão coletiva militante e organizada, em época posterior à publicação de Vidas secas, no movimento`,
+    enunciado: `Se pudesse mudar-se, gritaria bem alto que o roubavam. Aparentemente resignado, sentia um ódio imenso a qualquer coisa que era ao mesmo tempo a campina seca, o patrão, os soldados e os agentes da prefeitura. Tudo na verdade era contra ele. Estava acostumado, tinha a casca muito grossa, mas às vezes se arreliava. Não havia paciência que suportasse tanta coisa.
+— Um dia um homem faz besteira e se desgraça.
+
+Graciliano Ramos, Vidas secas.
+
+Tendo em vista as causas que a provocam, a revolta que vem à consciência de Fabiano, apresentada no texto como ainda contida e genérica, encontrará foco e uma expressão coletiva militante e organizada, em época posterior à publicação de Vidas secas, no movimento`,
     opcoes: [
       { letra: 'A', texto: `carismático de Juazeiro do Norte, orientado pelo Padre Cícero Romão Batista.` },
       { letra: 'B', texto: `das Ligas Camponesas, sob a liderança de Francisco Julião.` },
@@ -26534,7 +26840,13 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Mayombe / Valores',
-    enunciado: `Consideradas no âmbito dos valores postos em jogo em Mayombe, as relações entre a árvore e a floresta, tal como concebidas no excerto, ensejam a valorização de uma conduta que corresponde à da personagem`,
+    enunciado: `O Comissário apertou-lhe mais a mão, querendo transmitir-lhe o sopro de vida. Mas a vida de Sem Medo esvaía-se para o solo do Mayombe, misturando-se às folhas em decomposição.
+
+[...] Mas o Comissário não ouviu o que o Comandante disse. Os lábios já mal se moviam. A amoreira gigante à sua frente. O tronco destaca-se do sincretismo da mata, mas se eu percorrer com os olhos o tronco para cima, a folhagem dele mistura-se à folhagem geral e é de novo o sincretismo. Só o tronco se destaca, se individualiza. Tal é o Mayombe, os gigantes só o são em parte, ao nível do tronco, o resto confunde-se na massa. Tal o homem. As impressões visuais são menos nítidas e a mancha verde predominante faz esbater progressivamente a claridade do tronco da amoreira gigante. As manchas verdes são cada vez mais sobrepostas, mas, num sobressalto, o tronco da amoreira ainda se afirma, debatendo-se. Tal é a vida. [...] Os olhos de Sem Medo ficaram abertos, contemplando o tronco já invisível do gigante que para sempre desaparecera no seu elemento verde.
+
+Pepetela, Mayombe.
+
+Consideradas no âmbito dos valores postos em jogo em Mayombe, as relações entre a árvore e a floresta, tal como concebidas no excerto, ensejam a valorização de uma conduta que corresponde à da personagem`,
     opcoes: [
       { letra: 'A', texto: `João Romão, de O cortiço, observadas as relações que estabelece com a comunidade dos encortiçados.` },
       { letra: 'B', texto: `Jacinto, de A cidade e as serras, tendo em vista suas práticas de beneficência junto aos pobres de Paris.` },
@@ -26570,7 +26882,24 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Literatura / Modernismo / Drummond',
-    enunciado: `Um aspecto do poema de Drummond ("II / São Francisco de Assis") em que se manifesta a persistência de um valor afirmado também no Modernismo da década de 1920 é o`,
+    enunciado: `II / São Francisco de Assis*
+
+Senhor, não mereço isto. Não creio em vós para vos amar. Trouxestes-me a São Francisco e me fazeis vosso escravo.
+
+Não entrarei, senhor, no templo, seu frontispício me basta. Vossas flores e querubins são matéria de muito amar.
+
+Dai-me, senhor, a só beleza destes ornatos. E não a alma. Pressente-se dor de homem, paralela à das cinco chagas.
+
+Mas entro e, senhor, me perco na rósea nave triunfal. Por que tanto baixar o céu? por que esta nova cilada?
+
+Senhor, os púlpitos mudos entretanto me sorriem. Mais que vossa igreja, esta sabe a voz de me embalar.
+
+Perdão, senhor, por não amar-vos.
+
+Carlos Drummond de Andrade
+*O texto faz parte do conjunto de poemas "Estampas de Vila Rica", que integra a edição crítica de Claro enigma. São Paulo: Cosac Naify, 2012.
+
+Um aspecto do poema de Drummond ("II / São Francisco de Assis") em que se manifesta a persistência de um valor afirmado também no Modernismo da década de 1920 é o`,
     opcoes: [
       { letra: 'A', texto: `destaque dado às características regionais.` },
       { letra: 'B', texto: `uso da variante oral-popular da linguagem.` },
@@ -26588,7 +26917,17 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Plantas / Tomada de decisão',
-    enunciado: `Segundo uma das conclusões dos experimentos relatados no texto do New York Times (sobre plantas de ervilha e nutrientes), as plantas de ervilha demonstraram`,
+    enunciado: `Plants not only remember when you touch them, but they can also make risky decisions that are as sophisticated as those made by humans, all without brains or complex nervous systems.
+
+Researchers showed that when faced with the choice between a pot containing constant levels of nutrients or one with unpredictable levels, a plant will pick the mystery pot when conditions are sufficiently poor.
+
+In a set of experiments, Dr. Shemesh, from Tel-Hai College in Israel, and Alex Kacelnik, from Oxford University, grew pea plants and split their roots between two pots. Both pots had the same amount of nutrients on average, but in one, the levels were constant; in the other, they varied over time. Then the researchers switched the conditions so that the average nutrients in both pots would be equally high or low, and asked: Which pot would a plant prefer?
+
+When nutrient levels were low, the plants laid more roots in the unpredictable pot. But when nutrients were abundant, they chose the one that always had the same amount.
+
+The New York Times, June 30, 2016. Adaptado.
+
+Segundo uma das conclusões dos experimentos relatados no texto, as plantas de ervilha demonstraram`,
     opcoes: [
       { letra: 'A', texto: `sensibilidade aos gestos humanos agressivos.` },
       { letra: 'B', texto: `ter sistemas nervosos complexos.` },
@@ -26606,7 +26945,17 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Plantas / Metodologia',
-    enunciado: `Conforme o texto sobre plantas de ervilha, um dos elementos da metodologia empregada nos experimentos foi`,
+    enunciado: `Plants not only remember when you touch them, but they can also make risky decisions that are as sophisticated as those made by humans, all without brains or complex nervous systems.
+
+Researchers showed that when faced with the choice between a pot containing constant levels of nutrients or one with unpredictable levels, a plant will pick the mystery pot when conditions are sufficiently poor.
+
+In a set of experiments, Dr. Shemesh, from Tel-Hai College in Israel, and Alex Kacelnik, from Oxford University, grew pea plants and split their roots between two pots. Both pots had the same amount of nutrients on average, but in one, the levels were constant; in the other, they varied over time. Then the researchers switched the conditions so that the average nutrients in both pots would be equally high or low, and asked: Which pot would a plant prefer?
+
+When nutrient levels were low, the plants laid more roots in the unpredictable pot. But when nutrients were abundant, they chose the one that always had the same amount.
+
+The New York Times, June 30, 2016. Adaptado.
+
+Conforme o texto, um dos elementos da metodologia empregada nos experimentos foi`,
     opcoes: [
       { letra: 'A', texto: `o número de mudas plantadas.` },
       { letra: 'B', texto: `a técnica de divisão de raízes.` },
@@ -26624,7 +26973,17 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Plantas / Nutrientes',
-    enunciado: `De acordo com os experimentos relatados no texto, em condições adversas, as plantas de ervilha priorizaram o crescimento de raízes nos vasos que apresentaram níveis de nutrientes`,
+    enunciado: `Plants not only remember when you touch them, but they can also make risky decisions that are as sophisticated as those made by humans, all without brains or complex nervous systems.
+
+Researchers showed that when faced with the choice between a pot containing constant levels of nutrients or one with unpredictable levels, a plant will pick the mystery pot when conditions are sufficiently poor.
+
+In a set of experiments, Dr. Shemesh, from Tel-Hai College in Israel, and Alex Kacelnik, from Oxford University, grew pea plants and split their roots between two pots. Both pots had the same amount of nutrients on average, but in one, the levels were constant; in the other, they varied over time. Then the researchers switched the conditions so that the average nutrients in both pots would be equally high or low, and asked: Which pot would a plant prefer?
+
+When nutrient levels were low, the plants laid more roots in the unpredictable pot. But when nutrients were abundant, they chose the one that always had the same amount.
+
+The New York Times, June 30, 2016. Adaptado.
+
+De acordo com os experimentos relatados no texto, em condições adversas, as plantas de ervilha priorizaram o crescimento de raízes nos vasos que apresentaram níveis de nutrientes`,
     opcoes: [
       { letra: 'A', texto: `abundantes.` },
       { letra: 'B', texto: `estáveis.` },
@@ -26642,7 +27001,15 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Instagram / Curtidas',
-    enunciado: `Segundo o texto do The Economist (sobre pesquisa com Instagram e adolescentes), como resultado parcial da pesquisa, observou-se que`,
+    enunciado: `A study carried out by Lauren Sherman of the University of California and her colleagues investigated how use of the "like" button in social media affects the brains of teenagers lying in body scanners.
+
+Thirty-two teens who had Instagram accounts were asked to lie down in a functional magnetic resonance imaging (fMRI) scanner. This let Dr. Sherman monitor their brain activity while they were perusing both their own Instagram photos and photos that they were told had been added by other teenagers in the experiment. In reality, Dr. Sherman had collected all the other photos, which included neutral images of food and friends as well as many depicting risky behaviours like drinking, smoking and drug use, from other peoples' Instagram accounts. The researchers told participants they were viewing photographs that 50 other teenagers had already seen and endorsed with a "like" in the laboratory.
+
+The participants were more likely themselves to "like" photos already depicted as having been "liked" a lot than they were photos depicted with fewer previous "likes". When she looked at the fMRI results, Dr. Sherman found that activity in the nucleus accumbens, a hub of reward circuitry in the brain, increased with the number of "likes" that a photo had.
+
+The Economist, June 13, 2016. Adaptado.
+
+Segundo o texto do The Economist (sobre pesquisa com Instagram e adolescentes), como resultado parcial da pesquisa, observou-se que`,
     opcoes: [
       { letra: 'A', texto: `fotos com imagens neutras provocaram menor impacto do que as que retratavam comportamento perigoso.` },
       { letra: 'B', texto: `os participantes mostraram tendência a "curtir" uma imagem que já havia recebido número considerável de "curtidas".` },
@@ -26660,7 +27027,15 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Linguagens',
     assunto: 'Leitura em inglês / Instagram / Cérebro',
-    enunciado: `Conforme o texto sobre Instagram e adolescentes, a região do cérebro que se mostrou mais ativa, quando da análise dos resultados da ressonância, corresponde a um sistema de`,
+    enunciado: `A study carried out by Lauren Sherman of the University of California and her colleagues investigated how use of the "like" button in social media affects the brains of teenagers lying in body scanners.
+
+Thirty-two teens who had Instagram accounts were asked to lie down in a functional magnetic resonance imaging (fMRI) scanner. This let Dr. Sherman monitor their brain activity while they were perusing both their own Instagram photos and photos that they were told had been added by other teenagers in the experiment. In reality, Dr. Sherman had collected all the other photos, which included neutral images of food and friends as well as many depicting risky behaviours like drinking, smoking and drug use, from other peoples' Instagram accounts. The researchers told participants they were viewing photographs that 50 other teenagers had already seen and endorsed with a "like" in the laboratory.
+
+The participants were more likely themselves to "like" photos already depicted as having been "liked" a lot than they were photos depicted with fewer previous "likes". When she looked at the fMRI results, Dr. Sherman found that activity in the nucleus accumbens, a hub of reward circuitry in the brain, increased with the number of "likes" that a photo had.
+
+The Economist, June 13, 2016. Adaptado.
+
+Conforme o texto sobre Instagram e adolescentes, a região do cérebro que se mostrou mais ativa, quando da análise dos resultados da ressonância, corresponde a um sistema de`,
     opcoes: [
       { letra: 'A', texto: `memória recente.` },
       { letra: 'B', texto: `defesa.` },
@@ -26727,24 +27102,6 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     imagem: null,
   },
   {
-    id: 1211,
-    ano: 2017,
-    prova: 'FUVEST',
-    area: 'Ciências Humanas',
-    assunto: 'Industrialização / Tabela per capita / Século XIX',
-    enunciado: `Com base na tabela de níveis per capita de industrialização (1750-1913), é correto afirmar:`,
-    opcoes: [
-      { letra: 'A', texto: `A industrialização acelerada da Alemanha e dos Estados Unidos ocorreu durante a Primeira Revolução Industrial, mantendo-se relativamente inalterada durante a Segunda Revolução Industrial.` },
-      { letra: 'B', texto: `Os países do Sul e do Leste da Europa apresentaram níveis de industrialização equivalentes aos dos países do Norte da Europa e dos Estados Unidos durante a Segunda Revolução Industrial.` },
-      { letra: 'C', texto: `A Primeira Revolução Industrial teve por epicentro o Reino Unido, acompanhado em menor grau pela Bélgica, ambos mantendo níveis elevados durante a Segunda Revolução Industrial.` },
-      { letra: 'D', texto: `Os níveis de industrialização verificados na Ásia em meados do século XVIII acompanharam o movimento geral de industrialização do Atlântico Norte ocorrido na segunda metade do século XIX.` },
-      { letra: 'E', texto: `O Japão se destacou como o país asiático de mais rápida industrialização no curso da Primeira Revolução Industrial, perdendo força durante a Segunda Revolução Industrial.` },
-    ],
-    correta: 'C',
-    temImagem: false,
-    imagem: null,
-  },
-  {
     id: 1212,
     ano: 2017,
     prova: 'FUVEST',
@@ -26768,7 +27125,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Brasil / Manifesto Regionalista / Gilberto Freyre',
-    enunciado: `De acordo com o texto de Gilberto Freyre (Manifesto regionalista, publicado em 1926),`,
+    enunciado: `Mas o pecado maior contra a Civilização e o Progresso, contra o Bom Senso e o Bom Gosto e até os Bons Costumes, que estaria sendo cometido pelo grupo de regionalistas a quem se deve a ideia ou a organização deste Congresso, estaria em procurar reanimar não só a arte arcaica dos quitutes finos e caros em que se esmeraram, nas velhas casas patriarcais, algumas senhoras das mais ilustres famílias da região, e que está sendo esquecida pelos doces dos confeiteiros franceses e italianos, como a arte — popular como a do barro, a do cesto, a da palha de Ouricuri, a de piaçava, a dos cachimbos e dos santos de pau, a das esteiras, a dos ex-votos, a das redes, a das rendas e bicos, a dos brinquedos de meninos feitos de sabugo de milho, de canudo de mamão, de lata de doce de goiaba, de quenga de coco, de cabaça — que é, no Nordeste, o preparado do doce, do bolo, do quitute de tabuleiro, feito por mãos negras e pardas com uma perícia que iguala, e às vezes excede, a das sinhás brancas.
+
+Gilberto Freyre. Manifesto regionalista (7ª ed.). Recife: FUNDAJ, Ed. Massangana, 1996.
+
+De acordo com o texto de Gilberto Freyre, o Manifesto regionalista, publicado em 1926,`,
     opcoes: [
       { letra: 'A', texto: `opunha-se ao cosmopolitismo dos modernistas, especialmente por refutar a alteração nos hábitos alimentares nordestinos.` },
       { letra: 'B', texto: `traduzia um projeto político centralizador e antidemocrático associado ao retorno de instituições monárquicas.` },
@@ -26786,7 +27147,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Brasil / Anistia / Regime militar / Abertura política',
-    enunciado: `O texto de Darcy Ribeiro ("Réquiem", 1979) remete à anistia e à reflexão sobre os impasses da abertura política no Brasil. Com base nessas referências, escolha a alternativa correta.`,
+    enunciado: `Não nos esqueçamos de que este é um tempo de abertura. Vivemos sob o signo da anistia que é esquecimento, ou devia ser. Tempo que pede contenção e paciência. Sofremos todo ímpeto agressivo. Adocemos os gestos. O tempo é de perdão. (...) Esqueçamos tudo isto, mas cuidado! Não nos esqueçamos de enfrentar, agora, a tarefa em que fracassamos ontem e que deu lugar a tudo isto. Não nos esqueçamos de organizar a defesa das instituições democráticas contra novos golpistas militares e civis para que em tempo algum do futuro ninguém tenha outra vez de enfrentar e sofrer, e depois esquecer os conspiradores, os torturadores, os censores e todos os culpados e coniventes que beberam nosso sangue e pedem nosso esquecimento.
+
+Darcy Ribeiro. "Réquiem", Ensaios insólitos. Porto Alegre: L&PM, 1979.
+
+O texto remete à anistia e à reflexão sobre os impasses da abertura política no Brasil, no período final do regime militar, implantado com o golpe de 1964. Com base nessas referências, escolha a alternativa correta.`,
     opcoes: [
       { letra: 'A', texto: `A presença de censores na redação dos jornais somente foi extinta em 1988, quando promulgada a nova Constituição.` },
       { letra: 'B', texto: `O projeto de lei pela anistia ampla, geral e irrestrita foi uma proposta defendida pelos militares como forma de apaziguar os atos de exceção.` },
@@ -26804,7 +27169,11 @@ III. "O tema do bom selvagem foi, neste caso, aproveitado para um romance histó
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
     assunto: 'Sistemas alimentares / Revolução Neolítica',
-    enunciado: `A respeito dos resultados das transformações nos sistemas alimentares descritas pelo autor (George J. Armelagos), é correto afirmar:`,
+    enunciado: `Um elemento essencial para a evolução da dieta humana foi a transição para a agricultura como o modo primordial de subsistência. A Revolução Neolítica estreitou dramaticamente o nicho alimentar ao diminuir a variedade de mantimentos disponíveis; com a virada para a agricultura intensiva, houve um claro declínio na nutrição humana. Por sua vez, a industrialização recente do sistema alimentar mundial resultou em uma outra transição nutricional, na qual as nações em desenvolvimento estão experimentando, simultaneamente, subnutrição e obesidade.
+
+George J. Armelagos, "Brain Evolution, the Determinates of Food Choice, and the Omnivore's Dilemma", Critical Reviews in Food Science and Nutrition, 2014. Adaptado.
+
+A respeito dos resultados das transformações nos sistemas alimentares descritas pelo autor, é correto afirmar:`,
     opcoes: [
       { letra: 'A', texto: `A quantidade absoluta de mantimentos disponíveis para as sociedades humanas diminuiu após a Revolução Neolítica.` },
       { letra: 'B', texto: `A invenção da agricultura, ao diversificar a cesta de mantimentos, melhorou o balanço nutricional das sociedades sedentárias.` },
@@ -26845,31 +27214,15 @@ Está correto o que se afirma em`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Petróleo / EUA / Xisto',
-    enunciado: `Sobre a fonte de energia petróleo (texto sobre EUA tornarem-se maior produtor mundial em 2015), é correto afirmar:`,
+    enunciado: `Em 2015, os Estados Unidos (EUA), país que não é membro da OPEP, tornaram-se o maior produtor mundial de petróleo, superando grandes produtores históricos mundiais, de acordo com a publicação Statistical Review of World Energy (BP) - 2015.
+
+Sobre essa fonte de energia, é correto afirmar:`,
     opcoes: [
       { letra: 'A', texto: `A queda da oferta de petróleo, em 2015, pelos países não membros da OPEP é resultado do uso de fontes de energia alternativas, como os biocombustíveis.` },
       { letra: 'B', texto: `O Brasil, país que não é membro da OPEP, destaca-se pela exploração de jazidas de petróleo em rochas vulcânicas do embasamento cristalino do pré-sal.` },
       { letra: 'C', texto: `O crescimento da produção de petróleo nos EUA, que levou esse país à condição de maior produtor mundial em 2015, deu-se pela exploração das jazidas de óleo de xisto.` },
       { letra: 'D', texto: `A elevação da produção de petróleo em países da OPEP, como Arábia Saudita, Rússia e China, é resultado da alta dos preços dessa commodity em 2015.` },
       { letra: 'E', texto: `A exploração das jazidas de óleo de xisto do subsolo oceânico foram fatores para a industrialização de países, como México, Japão e EUA.` },
-    ],
-    correta: 'C',
-    temImagem: false,
-    imagem: null,
-  },
-  {
-    id: 1224,
-    ano: 2017,
-    prova: 'FUVEST',
-    area: 'Ciências Humanas',
-    assunto: 'Desmatamento / Amazônia / COP21',
-    enunciado: `Com base nos dados sobre desmatamento na Amazônia e em seus conhecimentos, aponte a afirmação correta:`,
-    opcoes: [
-      { letra: 'A', texto: `O desmatamento, apesar de atingir áreas de unidades de conservação, viabiliza a ampliação do número de assentamentos da reforma agrária.` },
-      { letra: 'B', texto: `As grandes obras privadas implantadas na Amazônia valorizam as terras, atraindo enorme contingente populacional, que por sua vez origina regiões metropolitanas que degradam a floresta.` },
-      { letra: 'C', texto: `A grilagem de terras em regiões de grandes projetos de infraestrutura, a extração ilegal de madeira e a construção de rodovias estão entre as causas do desmatamento na Amazônia.` },
-      { letra: 'D', texto: `A extração ilegal de madeira na Amazônia vem sendo monitorada por países estrangeiros devido às exigências na COP 21, pois eles são os maiores beneficiários dos acordos da Conferência.` },
-      { letra: 'E', texto: `Os grandes projetos de infraestrutura causam degradação da floresta amazônica, com intensidade moderada e temporária, auxiliando a regularização fundiária.` },
     ],
     correta: 'C',
     temImagem: false,
@@ -27003,24 +27356,6 @@ Está correto o que se afirma em`,
       { letra: 'E', texto: `III, apenas.` },
     ],
     correta: 'B',
-    temImagem: false,
-    imagem: null,
-  },
-  {
-    id: 1236,
-    ano: 2017,
-    prova: 'FUVEST',
-    area: 'Ciências da Natureza',
-    assunto: 'Biologia celular / DNA extranuclear / Organelas',
-    enunciado: `O DNA extranuclear (ou seja, de organelas citoplasmáticas) foi obtido de células somáticas de três organismos: uma planta, um fungo e um animal. Na tabela, qual das alternativas cita corretamente a procedência do DNA extranuclear obtido desses organismos?`,
-    opcoes: [
-      { letra: 'A', texto: `Planta: plastos / Fungo: ribossomos / Animal: ribossomos e mitocôndrias` },
-      { letra: 'B', texto: `Planta: plastos e ribossomos / Fungo: plastos e ribossomos / Animal: ribossomos` },
-      { letra: 'C', texto: `Planta: mitocôndrias / Fungo: mitocôndrias e plastos / Animal: ribossomos e mitocôndrias` },
-      { letra: 'D', texto: `Planta: mitocôndrias e plastos / Fungo: mitocôndrias e plastos / Animal: mitocôndrias` },
-      { letra: 'E', texto: `Planta: mitocôndrias e plastos / Fungo: mitocôndrias / Animal: mitocôndrias` },
-    ],
-    correta: 'D',
     temImagem: false,
     imagem: null,
   },
@@ -27576,7 +27911,19 @@ Com base nessas informações, podemos afirmar que o valor de ΔH para a reaçã
     prova: 'FUVEST',
     area: 'Ciências da Natureza',
     assunto: 'Química / Radioatividade / Texto de Oliver Sacks',
-    enunciado: `No texto de Oliver Sacks (Tio Tungstênio: Memórias de uma infância química), de acordo com o autor,`,
+    enunciado: `Neste texto, o autor descreve o fascínio que as descobertas em Química exerciam sobre ele, durante sua infância.
+
+Eu adorava Química em parte por ela ser uma ciência de transformações, de inúmeros compostos baseados em algumas dúzias de elementos, eles próprios fixos, invariáveis e eternos. A noção de estabilidade e de invariabilidade dos elementos era
+5 psicologicamente crucial para mim, pois eu os via como pontos fixos, como âncoras em um mundo instável. Mas agora, com a radioatividade, chegavam transformações das mais incríveis.
+
+(...)
+A radioatividade não alterava as realidades da Química ou a noção de elementos; não abalava a ideia de sua
+10 estabilidade e identidade. O que ela fazia era aludir a duas esferas no átomo – uma esfera relativamente superficial e acessível, que governava a reatividade e a combinação química, e uma esfera mais profunda, inacessível a todos os agentes
+15 químicos e físicos usuais e suas energias relativamente pequenas, onde qualquer mudança produzia uma alteração fundamental de identidade.
+
+Oliver Sacks, Tio Tungstênio: Memórias de uma infância química.
+
+No texto de Oliver Sacks (Tio Tungstênio: Memórias de uma infância química), de acordo com o autor,`,
     opcoes: [
       { letra: 'A', texto: `o trecho "eles próprios fixos, invariáveis e eternos" remete à dificuldade para a quebra de ligações químicas, que são muito estáveis.` },
       { letra: 'B', texto: `"esfera relativamente superficial" e "esfera mais profunda" dizem respeito, respectivamente, à eletrosfera e ao núcleo dos átomos.` },
@@ -28206,7 +28553,11 @@ Nesse texto de Pablo Neruda ("Confesso que vivi. Memórias"), sobre o Chile,`,
     prova: 'FUVEST',
     area: 'Ciências Humanas',
     assunto: 'Holocausto / Tatuagem / Campos de concentração',
-    enunciado: `Sobre o texto de Primo Levi ("Os afogados e os sobreviventes", sobre a tatuagem nos campos de concentração nazistas), está de acordo com o texto a seguinte afirmação:`,
+    enunciado: `A operação era um pouco dolorosa e não durava mais que um minuto, mas era traumática. Seu significado simbólico estava claro para todos: este é um sinal indelével, daqui não sairão mais; esta é a marca que se imprime nos escravos e nos animais destinados ao matadouro, e vocês se tornaram isso. Vocês não têm mais nome: este é o seu nome. A violência da tatuagem era gratuita, um fim em si mesmo, pura ofensa: não bastavam os três números de pano costurados nas calças, no casaco e no agasalho de inverno?
+
+Primo Levi. Os afogados e os sobreviventes. Rio de Janeiro: Paz e Terra, 1990.
+
+Sobre o texto de Primo Levi ("Os afogados e os sobreviventes", sobre a tatuagem nos campos de concentração nazistas), está de acordo com o texto a seguinte afirmação:`,
     opcoes: [
       { letra: 'A', texto: `A tatuagem era uma forma de tortura e uma mensagem não verbal, que inscrevia a condenação no corpo do prisioneiro.` },
       { letra: 'B', texto: `O uso de tatuagens era perturbador apenas para ciganos e judeus ortodoxos, pois violava o código moral e as leis religiosas dessas comunidades.` },
