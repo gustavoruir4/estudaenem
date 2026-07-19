@@ -39630,6 +39630,1208 @@ De acordo com o texto, um dos riscos do prognóstico genético dos indivíduos d
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2020 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 2209,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Crueldade animal e violência doméstica',
+    enunciado: `There are approximately 70 million pet dogs and 74 million pet cats in the U.S., a country where 20 men and women are assaulted per minute. In one survey, 71 percent of domestic violence victims reported that their abuser also targeted pets. In one study of families under investigation for suspected child abuse, researchers found that pet abuse had occurred in 88 percent of these families.
+(Adaptado de https://www.humanesociety.org/resources/animal-cruelty-facts-and-stats. Acessado em 11/05/2019.)
+
+O objetivo do texto é destacar a relação entre`,
+    opcoes: [
+      { letra: 'A', texto: `aumento do número de animais domésticos e de casos de crueldade contra os animais.` },
+      { letra: 'B', texto: `violência doméstica e famílias investigadas por crueldade contra os animais.` },
+      { letra: 'C', texto: `condenações por abuso infantil e crueldade contra os animais.` },
+      { letra: 'D', texto: `casos de violência doméstica e crueldade contra os animais.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2211,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Urban Dictionary: "Doing the Brexit"',
+    enunciado: `O site "Urban Dictionary" apresenta definições de palavras e expressões que, apesar de serem usadas popularmente, ainda não foram oficialmente dicionarizadas. O exemplo abaixo faz alusão ao Brexit, isto é, à saída do Reino Unido da União Europeia.
+
+TOP DEFINITION
+Doing the Brexit
+Making others aware you're going to leave a party and ending up staying a lot longer than expected. The opposite of a french exit.
+A: Did Taylor say goodbye to you as well? I swear he was still around 3 hours later.
+B: Yeah. He was doing the brexit
+#brexit #leaving #party
+by J. Mentos March 29, 2019
+
+(Disponível em https://www.urbandictionary.com/define.php?term=Doing%20the%20Brexit. Acessado em 11/05/2019.)
+
+Com relação ao exemplo apresentado, entende-se que Taylor estava "fazendo o Brexit" porque`,
+    opcoes: [
+      { letra: 'A', texto: `se despediu, mas demorou a ir embora da festa.` },
+      { letra: 'B', texto: `saiu "à francesa" da festa, isto é, saiu discretamente.` },
+      { letra: 'C', texto: `se despediu, mas anunciou que demoraria a sair da festa.` },
+      { letra: 'D', texto: `saiu "à francesa" da festa, isto é, saiu depois de muito tempo.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2212,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Instagram e autoimagem irreal',
+    enunciado: `When 24-year-old fashion blogger Scarlett Dixon posted a picture of herself having breakfast, the internet turned nasty. "The best of days start with a smile and positive thoughts. And pancakes. And strawberries", Dixon wrote on her Instagram feed. The post was reposted on Twitter. "Instagram is a ridiculous lie factory made to make us all feel inadequate", wrote Nathan from Cardiff. His post, which has garnered more than 111,000 likes (22 times as many as Dixon's original) and almost 25,000 retweets, prompted a wave of criticism, with comments going like "Fakelife!".
+Instagram looks like the friendliest social network imaginable. But, for a growing number of users and mental health experts, the very positivity of Instagram is precisely the problem. The site encourages its users to present an upbeat, attractive image that others may find at best misleading and at worse harmful. Instagram makes you worry that everyone is perfect - except you.
+(Adaptado de https://www.theguardian.com/technology/2018/sep/17. Acessado em 19/04/2019).
+
+O texto anterior apresenta uma crítica`,
+    opcoes: [
+      { letra: 'A', texto: `a Scarlett Dixon, por propagar uma autoimagem excessivamente positiva e irreal.` },
+      { letra: 'B', texto: `ao Instagram, por propiciar postagens que veiculam uma autoimagem irreal das pessoas.` },
+      { letra: 'C', texto: `ao post de Scarlett Dixon, por gerar uma onda de comentários negativos em outras mídias sociais.` },
+      { letra: 'D', texto: `à exposição excessiva da vida íntima das pessoas no Instagram e em outras mídias sociais.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2213,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Cartaz sobre estigma da saúde mental',
+    enunciado: `A Associação Canadense de Saúde Mental é uma organização sem fins lucrativos que combate o estigma sobre a saúde mental, promovendo ações em favor de pessoas que sofrem com doenças dessa natureza. O cartaz abaixo, direcionado à população em geral, foi publicado no site dessa associação.
+
+Use STOP to recognize mental health stigma.
+Does the attitude or action:
+Stereotype people with mental health conditions?
+Trivialize people with mental health conditions and/or the condition itself?
+Offend people with mental health conditions?
+Patronize people with mental health conditions by treating them as if they were not as good as other people?
+Speak up against stigma.
+Canadian Mental Health Association
+Mental health for all
+
+(Disponível em https://ontario.cmha.ca/documents. Acessado em 22/08/2019.)
+
+O cartaz apresentado tem o intuito de`,
+    opcoes: [
+      { letra: 'A', texto: `motivar a população a parar de reconhecer os estereótipos negativos associados à saúde mental.` },
+      { letra: 'B', texto: `encorajar empresários a oferecer melhores condições de emprego a pessoas com doenças mentais.` },
+      { letra: 'C', texto: `estimular o combate aos estereótipos que atingem pessoas com doenças mentais.` },
+      { letra: 'D', texto: `incentivar um tratamento diferenciado a pessoas com doenças mentais.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2215,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - John Milton e liberdade de expressão',
+    enunciado: `John Milton and Freedom of Speech on Campus
+By Daniel F. Sullivan
+A few years ago, at a seminar meant to help college presidents think about the issues they face as campus leaders, I read John Milton's Areopagitica: A speech for the liberty of unlicensed printing to the parliament of England. Originally published in 1644, Areopagitica makes a powerful argument for freedom of speech and against censorship in publishing. After twenty years as a college president, having experienced and observed many calls to censor, I've come to believe that there is not much to know on the topic beyond what Milton wrote over 350 years ago.
+Areopagitica was published in response "to Parliament's ordinance for licensing the press of June 14, 1643." The effect of the ordinance against which Milton wrote "was to give Archbishop Laud, who was also Chancellor of the University of Oxford, control over every press in England, with power to stop publication of any book contrary to the Doctrine of the Church of England." This was disturbing to Milton, who wrote, "as good almost kill a man as kill a good book: [he] who kills a man kills a reasonable creature; but he who destroys a good book, kills reason itself."
+(Adaptado de https://www.questia.com/magazine/1P3-1048971311/milton-s-areopagitica-freedom-of-speech-on-campus. Acessado em 15/05/2019.)
+
+A relação entre o posicionamento do autor do texto e o de John Milton na publicação mencionada é de`,
+    opcoes: [
+      { letra: 'A', texto: `divergência, pois o autor julga que as ideias de Milton sobre liberdade de expressão parecem ultrapassadas em relação ao que ocorre hoje nas universidades.` },
+      { letra: 'B', texto: `divergência, pois diferentemente de Milton, o autor critica o fato de haver, nas universidades inglesas, apelos para que a censura seja exercida no campus.` },
+      { letra: 'C', texto: `concordância, pois o autor apoia a mesma linha de pensamento de Milton quanto às críticas ao controle da liberdade de imprensa.` },
+      { letra: 'D', texto: `concordância, pois o autor alinha-se a Milton quanto à ideia de que destruir um bom livro é o mesmo que destruir uma criatura racional.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2217,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Fusão nuclear e energia liberada',
+    enunciado: `Nuclear fusion is a reaction in which atomic nuclei merge to form the nucleus of a new atom. The mass of the new atom's nucleus is lower than the sum of the merging nuclei's masses, a difference that is released as energy. This is, for instance, the reaction that occurs in the Sun. The energy released during fusion can be calculated by the equation E = Δmc² where Δm is the difference between the initial and final masses in the reaction, and c is the speed of light. When calculating the aforementioned energy, nucleus mass can be conveniently quantified using the atomic mass unit (u), which is roughly equivalent to 900 MeV (1 u -> 900 MeV). Consider the hypothetical nuclear fusion reaction 222X + 4Y -> 221Z. Note that the masses of 222X, 4Y, and 221Z are 222 u, 4 u, and 221 u, respectively. The amount of energy released in this reaction is`,
+    opcoes: [
+      { letra: 'A', texto: `5 MeV.` },
+      { letra: 'B', texto: `450 MeV.` },
+      { letra: 'C', texto: `900 MeV.` },
+      { letra: 'D', texto: `4500 MeV.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2218,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Conjugação bacteriana e resistência a antibióticos',
+    enunciado: `Antibiotic resistance is possible because bacteria are able to exchange genetic material through a process known as bacterial conjugation. In one experiment, resistance to tetracycline (a commonly used antibiotic) was studied in Escherichia coli by introducing a tetracycline-resistant bacterium to a tetracycline-sensitive strain. The resistant bacterium's genome contained a protein called an "efflux pump", a polypeptide that localizes to the cell membrane and expels certain small molecules from the cell.
+Using fluorescent marking, researchers observed the DNA encoding one specific efflux pump in between a resistant bacterium and a sensitive bacterium. With live-cell microscopy, they tracked the fluorescence to see how the DNA migrated from one cell to another and how it was incorporated and expressed in the recipient bacterium.
+(Fonte: Sophie Nolivos e outros, Science, Washington, v. 364, n. 6442, p. 778-782, maio 2019.)
+
+Com base no texto e em seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A fusão transmembrana do genoma que confere resistência antibiótica é facilitada pela presença da tetraciclina.` },
+      { letra: 'B', texto: `A proteína envolvida na resistência antibiótica à tetraciclina é transferida diretamente por conjugação bacteriana.` },
+      { letra: 'C', texto: `O gene da proteína de resistência antibiótica é transferido através da fusão transmembrana na presença de tetraciclina.` },
+      { letra: 'D', texto: `O DNA codificador da proteína que confere resistência antibiótica à tetraciclina é transferido por conjugação bacteriana.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2219,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Poliomielite: transmissão e prevenção',
+    enunciado: `Graças às campanhas de vacinação, a poliomielite foi considerada erradicada no Brasil: o último caso foi registrado em 1989. Contudo, o Ministério da Saúde constatou cobertura vacinal alarmante (abaixo de 50%) em 312 municípios brasileiros em 2018. A vacinação é a única forma de prevenção da poliomielite; é uma questão de responsabilidade social contemplada no Programa Nacional de Imunizações do Ministério da Saúde.
+(Fonte: portalms.saude.gov.br/noticias/agencia-saude/43797-ministerio-da-saude-alerta-para-baixas-coberturas-vacinais-para-polio.)
+
+Assinale a alternativa que caracteriza corretamente a poliomielite.`,
+    opcoes: [
+      { letra: 'A', texto: `É uma doença viral contagiosa, que pode ser transmitida através da ingestão de água ou alimentos contaminados por fezes de doentes.` },
+      { letra: 'B', texto: `A transmissão do vírus ocorre por meio de vetores hematófagos que tenham picado uma pessoa contaminada na fase aguda da doença.` },
+      { letra: 'C', texto: `É uma doença bacteriana transmitida por gotículas de saliva ou de sangue de pessoas contaminadas, com alto risco de contágio.` },
+      { letra: 'D', texto: `A transmissão da bactéria ocorre por meio de vetores artrópodes que tenham picado uma pessoa contaminada na fase crônica da doença.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2221,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Tecidos vegetais e rebrota após incêndio',
+    enunciado: `Um grande incêndio consumiu uma floresta inteira e deixou apenas os troncos das árvores em pé. Algumas plantas conseguiram rebrotar e produzir uma folhagem exuberante após alguns meses. Considerando a relação entre estrutura e função dos tecidos vegetais, as plantas mencionadas tiveram um bom desempenho logo após a queimada por serem dotadas de`,
+    opcoes: [
+      { letra: 'A', texto: `tecido esclerenquimático desenvolvido, capaz de promover alta atividade fotossintética.` },
+      { letra: 'B', texto: `periderme pluriestratificada, capaz de isolar termicamente os feixes vasculares.` },
+      { letra: 'C', texto: `aerênquimas, capazes de promover a difusão interna de gases e o metabolismo das raízes.` },
+      { letra: 'D', texto: `epiderme foliar espessa, com cutícula rica em ceras capazes de reduzir a temperatura da planta.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2223,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - RNA de interferência (RNAi) e proteção agrícola',
+    enunciado: `A descoberta do processo celular de interferência por RNA (RNAi) rendeu aos cientistas Andrew Fire e Craig Mello o prêmio Nobel de Fisiologia ou Medicina em 2006. O RNAi intercepta e destrói as informações celulares conduzidas pelo RNA dentro da célula antes que sejam processadas em proteínas. Com os avanços da biotecnologia, foram desenvolvidas moléculas sintéticas de RNAi de aplicação tópica, que, pulverizadas nas lavouras, conferem proteção agrícola, reduzindo perdas.
+
+Assinale a alternativa que preenche corretamente as lacunas nas frases a seguir.
+O (i) ________ entra em contato com o RNAi pulverizado, que atua em seu processo celular, impedindo que o (ii) ________ o (iii) ________ seja traduzido como proteína. Como está associado a uma função essencial, ao ser silenciado, ocasiona a morte do organismo.`,
+    opcoes: [
+      { letra: 'A', texto: `(i) fungo; (ii) códon; (iii) RNAm.` },
+      { letra: 'B', texto: `(i) inseto; (ii) RNAt; (iii) DNA.` },
+      { letra: 'C', texto: `(i) inseto; (ii) RNAm; (iii) gene.` },
+      { letra: 'D', texto: `(i) fungo; (ii) RNAr; (iii) código genético.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2225,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Engenharia de tecidos com proteínas de seda',
+    enunciado: `Na construção de tecidos biológicos, as células se ancoram em uma rede de microfibras tridimensional (3D), em uma matriz extracelular. Interessados em recriar tecidos biológicos em laboratório utilizando técnicas de engenharia genética e de tecidos, cientistas confirmaram divisões e ligações celulares nas construções 3D obtidas a partir de proteínas de seda recombinantes. Ao observarem células interfásicas e em divisão, formação de actina filamentosa e pontos de adesão focal, os cientistas verificaram que o conjunto de células e matriz extracelular apresentou viabilidade e força biomecânica muito semelhantes às da parede arterial humana.
+(Fonte: https://phys.org/news/2019-04-ecm-like-fibers-bioactive-silk-d.html. Acessado em 20/05/2019.)
+
+Considerando as informações referentes ao estudo mencionado, e as relações entre célula e seu ambiente, é correto afirmar que as condições experimentais permitiram`,
+    opcoes: [
+      { letra: 'A', texto: `a respiração aeróbica e anaeróbica para conservar as trocas gasosas e as fases do ciclo celular durante a formação da parede arterial humana.` },
+      { letra: 'B', texto: `a síntese, o transporte e o armazenamento de macromoléculas no citoplasma para fortalecer a estrutura celular, como na parede arterial humana.` },
+      { letra: 'C', texto: `a presença de cromossomos alinhados na placa equatorial das células estacionadas na fase interfásica, tal como na parede arterial humana.` },
+      { letra: 'D', texto: `a adesão e a proliferação celular para sustentar o metabolismo e a funcionalidade semelhantes aos das artérias humanas.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2226,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Polinização animal e espécies cultivadas no Brasil',
+    enunciado: `Relatório publicado em 2019 alertou que um número crescente de espécies de animais polinizadores está ameaçado de extinção em todo o mundo em decorrência de fatores como desmatamento, uso indiscriminado de agrotóxicos e alterações climáticas. Importantes medidas devem ser adotadas para prevenir as consequências econômicas, a redução na produção de alimentos e o desequilíbrio dos ecossistemas. Entre as espécies cultivadas no Brasil que dependem de polinização animal, destacam-se o maracujá, a maçã, a acerola e a castanha-do-brasil.
+(Fonte: Marina Wolowski e outros, Relatório temático sobre polinização, polinizadores e produção de alimentos no Brasil. BPBES e REBIPP, 2019. Acessado em 23/05/2019.)
+
+Considerando as informações fornecidas no texto e os conhecimentos sobre botânica e ecologia, é correto afirmar que a polinização pode ser beneficiada`,
+    opcoes: [
+      { letra: 'A', texto: `por insetos que transportam o pólen da antera para o estigma nas eudicotiledôneas mencionadas.` },
+      { letra: 'B', texto: `por pequenos vertebrados que transferem pólen do estigma para o estame nas monocotiledôneas mencionadas.` },
+      { letra: 'C', texto: `por insetos que transferem pólen do estigma para o estame nas eudicotiledôneas mencionadas.` },
+      { letra: 'D', texto: `por pequenos mamíferos que transportam o pólen da antera para o estigma nas monocotiledôneas mencionadas.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2228,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Arsênio como aceptor na respiração celular',
+    enunciado: `As concentrações de arsênio no oceano se alteraram ao longo do tempo geológico. No período Pré-Cambriano, os oceanos receberam grandes quantidades de arsênio, em consequência do intemperismo de minerais continentais de sulfeto de arsênio. Recentemente foram identificados micro-organismos com expressão proteica das enzimas arsenito oxidase e arsenato redutase no Oceano Pacífico Norte Oriental, nas zonas deficientes de oxigênio em regiões pelágicas, sugerindo que a comunidade microbiológica é capaz de utilizar arsênio para respiração celular.
+(Fonte: Jaclyn Saunders e outros, PNAS, Washington, v. 116, n. 20, p. 9925-9930, maio 2019.)
+
+Assinale a alternativa que preenche corretamente as lacunas nas frases a seguir.
+Assim como as formas oxidadas de nitrogênio e enxofre, o arsênio pode ser utilizado como aceptor (i) ________ na respiração celular desses micro-organismos nas zonas deficientes de oxigênio. No período (ii) ________ surgiram as cianobactérias, os primeiros seres fotossintetizantes.`,
+    opcoes: [
+      { letra: 'A', texto: `(i) final de elétrons; (ii) arqueano.` },
+      { letra: 'B', texto: `(i) intermediário de elétrons; (ii) arqueano.` },
+      { letra: 'C', texto: `(i) final de elétrons; (ii) fanerozoico.` },
+      { letra: 'D', texto: `(i) intermediário de elétrons; (ii) fanerozoico.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2229,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Atualidades - Ciberguerra e Guerra Fria Digital',
+    enunciado: `No período da Guerra Fria, os conflitos geopolíticos implicavam riscos nucleares e ataques físicos a infraestruturas como estradas, redes elétricas ou gasodutos. Hoje, além dessas implicações, a Ciberguerra ou Guerra Fria Digital`,
+    opcoes: [
+      { letra: 'A', texto: `representa uma possibilidade real de interferência em sistemas informacionais nacionais, mas seu uso efetivo mantém-se apenas como uma ameaça.` },
+      { letra: 'B', texto: `baseia-se na capacidade integrada de sistemas computacionais espionarem governos antagônicos, com o objetivo de manipular informações de todo tipo.` },
+      { letra: 'C', texto: `envolve o uso de softwares (malwares) e programas robôs para invadir redes sociais e computadores, mas nunca interferiu em processos eleitorais.` },
+      { letra: 'D', texto: `visa ao controle da informação como uma forma de poder político, mas inexistem, no mundo, cibercomandos, ou seja, a quarta força armada.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2230,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Triângulo Norte da América Central e migração',
+    enunciado: `O chamado Triângulo Norte da América Central (TNAC) é uma das regiões mais violentas do planeta, equiparando-se às zonas de guerra. Grupos organizados praticam diariamente extorsão, perseguição, sequestros, assassinatos, abuso sexual, entre outros crimes. Em 2018, sob condições extremas de pobreza e violência, sem escolha, milhares de pessoas do TNAC abandonaram suas casas, deslocando-se por perigosas rotas em direção ao México e aos EUA.
+
+Considerando essa situação geográfica, indique os países que compõem a região do TNAC e a atual estratégia adotada pela população emigrante.`,
+    opcoes: [
+      { letra: 'A', texto: `Venezuela, Costa Rica, Nicarágua; pequenos grupos deslocam-se por trens para fugir da violência dos guias ilegais (coyotes).` },
+      { letra: 'B', texto: `El Salvador, Honduras, Guatemala; os emigrantes deslocam-se a pé em grandes caravanas por ser mais seguro e para se beneficiarem de apoio mútuo.` },
+      { letra: 'C', texto: `Cuba, Haiti, República Dominicana; pequenos grupos deslocam-se em barcos, por ser mais seguro e para diminuir os custos da travessia.` },
+      { letra: 'D', texto: `Belize, Nicarágua, Guatemala; os emigrantes deslocam-se a pé em grandes caravanas para diminuir os custos com os guias ilegais (coyotes).` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2231,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Ciclones tropicais em Moçambique',
+    enunciado: `Moçambique foi atingido por três ciclones tropicais entre março e abril de 2019. Ciclone tropical é um termo geral para grandes e complexas tempestades que giram em torno de uma área de baixa pressão formada em águas oceânicas tropicais ou subtropicais quentes. A formação de um ciclone tropical requer enormes quantidades de calor na superfície da água, que devem atingir no mínimo 26,5°C e ventos de pelo menos 119 km/h em algum ponto da tempestade.
+
+A partir do exposto, assinale a alternativa que explica a gênese dos ciclones tropicais na costa de Moçambique.`,
+    opcoes: [
+      { letra: 'A', texto: `A corrente marítima das Agulhas foi responsável pelo deslocamento das águas superficiais aquecidas para áreas de baixa pressão situadas no canal de Moçambique.` },
+      { letra: 'B', texto: `O clima semiárido e desértico no litoral de Moçambique faz com que as águas de sua costa estejam sempre aquecidas, favorecendo assim a formação dos ciclones.` },
+      { letra: 'C', texto: `Os ciclones que atingem o litoral de Moçambique têm origem no encontro das águas quentes do Oceano Atlântico com o Oceano Índico, no cabo da Boa Esperança.` },
+      { letra: 'D', texto: `A corrente marítima de Benguela foi responsável pelo deslocamento das águas aquecidas do Oceano Índico para o canal que separa Moçambique de Madagascar.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2232,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Sociedade em rede e organização geográfica',
+    enunciado: `A origem da sociedade em rede decorre do desenvolvimento dos meios de transporte, das comunicações e da transmissão de energia, característica essencial da organização espacial da sociedade moderna, uma sociedade umbilicalmente ligada à evolução da técnica, à aceleração das interligações e da movimentação das pessoas, de objetos e de capitais sobre os territórios. Nesse contexto, tem lugar a mudança, associada à rapidez do aumento da densidade e da escala da circulação.
+(Adaptado de Ruy Moreira, Da região à rede e ao lugar: a nova realidade e o novo olhar geográfico sobre o mundo. Terra Livre: espaço, tempo e crítica. n. 1(3), p. 57, 2007.)
+
+No mundo contemporâneo, as redes configuram uma nova forma de organização geográfica das sociedades porque`,
+    opcoes: [
+      { letra: 'A', texto: `colocam todos os lugares em conexão, garantem fluidez ao processo global de produção e homogeneizam os espaços.` },
+      { letra: 'B', texto: `anulam a importância dos territórios e fronteiras nacionais na articulação da geopolítica mundial, reconfigurando a geografia do poder.` },
+      { letra: 'C', texto: `constituem sistemas usados livremente pelas sociedades em busca de projetos emancipatórios, ampliando os conflitos e as disputas políticas.` },
+      { letra: 'D', texto: `sobrepõem-se, na escala mundo, às configurações regionais do passado, impondo um novo funcionamento reticular e hierárquico aos territórios.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2235,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Petróleo no Brasil',
+    enunciado: `O petróleo continua sendo a fonte de energia mais importante do mundo. A posse de reservas, o transporte e a capacidade de refino figuram como elementos de soberania nacional e estratégicos em um mundo extremamente competitivo. Em relação ao petróleo no Brasil, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `As descobertas das reservas nacionais ocorreram a partir dos anos 1980 e a Bacia de Campos (RJ) é hoje a principal produtora do país.` },
+      { letra: 'B', texto: `A extração nacional é cada dia maior, mas a inexistência de oleodutos exige que o transporte seja realizado por meio rodoviário.` },
+      { letra: 'C', texto: `A maior produção em terra provém do Estado do Rio Grande do Norte e, em mar, do pré-sal situado entre os Estados de São Paulo e Rio de Janeiro.` },
+      { letra: 'D', texto: `Apesar de possuir grandes reservas, especialmente com as descobertas do pré-sal, não há refino no país, por isso os derivados são importados.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2237,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Filosofia - O conceito de ideologia',
+    enunciado: `Da perspectiva do senso comum, dizer que uma ideia ou uma declaração é "ideológica" implica sugerir sua falsidade, o que logicamente leva à conclusão de que seu oposto é a verdade. Esse binarismo é uma forma de construir visões de mundo simplistas e manipuláveis, que ocultam interesses sociais.
+
+Sobre o conceito de ideologia, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `desde o seu nascimento, ele se mantém inalterado, e tem o mesmo significado para as diferentes classes sociais.` },
+      { letra: 'B', texto: `o aspecto útil do conceito é que ele permite associar ideias e produtos ao exercício do poder.` },
+      { letra: 'C', texto: `a neutralidade é a chave de sua definição, já que, entre o falso e o verdadeiro, está o posicionamento social neutro.` },
+      { letra: 'D', texto: `a tendência é o seu fim como instrumento de análise social, privilegiando a objetividade no tratamento da realidade.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2238,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - A figura de linguagem "mão invisível"',
+    enunciado: `Uma cidade viva não é obra de um gênio: é obra de trabalhadores simples e de suas constantes conversas consigo própria. Uma cidade é um tecido em contínua evolução, retocado e reparado para nosso uso, no qual a ordem emerge através de uma "mão invisível" proveniente do desejo das pessoas em se relacionar bem com seus vizinhos.
+(Adaptado de Roger Scruton, Confissões de um herético. Belo Horizonte: Ayiné, 2017, p. 133.)
+
+No trecho acima, a figura de linguagem "mão invisível"`,
+    opcoes: [
+      { letra: 'A', texto: `estabelece uma intertextualidade com a expressão "a mão invisível do mercado", de Adam Smith, sendo a cidade a expressão plena do planejamento.` },
+      { letra: 'B', texto: `sugere que a organização de uma cidade não se limita ao planejamento de um gestor, mas diz respeito às relações éticas construídas no cotidiano.` },
+      { letra: 'C', texto: `indica a submissão dos moradores de uma cidade aos interesses ocultos de uma administração que promove, no espaço urbano, a vida cotidiana.` },
+      { letra: 'D', texto: `associa-se à gestão pública, que é mantenedora da ordem e do bem-estar nas relações econômicas de uma cidade.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2239,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Coordenadas geográficas e cidades antípodas',
+    enunciado: `As coordenadas geográficas são um sistema de linhas imaginárias traçadas sobre o globo terrestre ou um mapa. Através da interseção de um meridiano com um paralelo, podemos localizar cada ponto da superfície da Terra. Como a Terra apresenta uma superfície quase esférica, é possível determinar dois pontos diametralmente opostos, denominados antípodas. Apenas algumas cidades brasileiras têm uma cidade antípoda, como Coari (AM) e Pontes e Lacerda (MT). Assinale a alternativa que indica duas cidades antípodas.`,
+    opcoes: [
+      { letra: 'A', texto: `Pontes e Lacerda (Brasil) -15° latitude S e 60° longitude W; Candelária (Filipinas) 15° latitude N e 60° longitude E.` },
+      { letra: 'B', texto: `Coari (Brasil) -4° latitude S e 63° longitude W; Temon (Malásia) -4° latitude N e 63° longitude E.` },
+      { letra: 'C', texto: `Coari (Brasil) - 4º latitude S e 63° longitude W; Temon (Malásia) - 4º latitude N e 117° longitude E.` },
+      { letra: 'D', texto: `Pontes e Lacerda (Brasil) -15° latitude S e 60° longitude W; Candelária (Filipinas) -75° latitude N e 120° longitude E.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2240,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Sistema de equações: irmãos e irmãs',
+    enunciado: `Em uma família, cada filha tem o mesmo número de irmãs e irmãos, e cada filho tem um número de irmãs igual ao dobro do número de irmãos. O número total de filhos e filhas dessa família é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `11.` },
+      { letra: 'B', texto: `9.` },
+      { letra: 'C', texto: `7.` },
+      { letra: 'D', texto: `5.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2241,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Permutação com restrição',
+    enunciado: `Cinco pessoas devem ficar em pé, uma ao lado da outra, para tirar uma fotografia, sendo que duas delas se recusam a ficar lado a lado. O número de posições distintas para as cinco pessoas serem fotografadas juntas é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `48.` },
+      { letra: 'B', texto: `72.` },
+      { letra: 'C', texto: `96.` },
+      { letra: 'D', texto: `120.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2242,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Probabilidade: torneio com três provas',
+    enunciado: `Um atleta participa de um torneio composto por três provas. Em cada prova, a probabilidade de ele ganhar é de 2/3 independentemente do resultado das outras provas. Para vencer o torneio, é preciso ganhar pelo menos duas provas. A probabilidade de o atleta vencer o torneio é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `2/3.` },
+      { letra: 'B', texto: `4/9.` },
+      { letra: 'C', texto: `20/27.` },
+      { letra: 'D', texto: `16/81.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2243,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Função afim: composição',
+    enunciado: `Sabendo que a é um número real, considere a função f(x) = ax + 2 definida para todo número real x. Se f(f(1)) = 1 então`,
+    opcoes: [
+      { letra: 'A', texto: `a = -1.` },
+      { letra: 'B', texto: `a = -1/2.` },
+      { letra: 'C', texto: `a = 1/2.` },
+      { letra: 'D', texto: `a = 1.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2244,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Equação quadrática com raízes inteiras',
+    enunciado: `Sabendo que a é um número real, considere a equação quadrática 2x² + ax + 10 = 0. Se as soluções dessa equação são números inteiros, o módulo da soma das soluções é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `3.` },
+      { letra: 'B', texto: `4.` },
+      { letra: 'C', texto: `5.` },
+      { letra: 'D', texto: `6.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2245,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Progressão aritmética',
+    enunciado: `Considere que (a, b, 3, c) é uma progressão aritmética de números reais, e que a soma de seus elementos é igual a 8. O produto dos elementos dessa progressão é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `30.` },
+      { letra: 'B', texto: `10.` },
+      { letra: 'C', texto: `-15.` },
+      { letra: 'D', texto: `-20.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2246,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Função exponencial',
+    enunciado: `Tendo em vista que a e b são números reais positivos, a ≠ 1 e b ≠ 1, considere a função f(x) = a · b^x definida para todo número real x. Logo, f(2) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `√(f(1)f(3)).` },
+      { letra: 'B', texto: `f(3)/f(0).` },
+      { letra: 'C', texto: `f(0)f(1).` },
+      { letra: 'D', texto: `f(0)³.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2247,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Matrizes: singularidade',
+    enunciado: `Sabendo que p é um número real, considere a matriz A = [[p, 2], [0, p]] e sua transposta A^T. Se A + A^T é singular (não invertível), então`,
+    opcoes: [
+      { letra: 'A', texto: `p = 0.` },
+      { letra: 'B', texto: `|p| = 1.` },
+      { letra: 'C', texto: `|p| = 2.` },
+      { letra: 'D', texto: `p = 3.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2251,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Circunferência: centro e raio',
+    enunciado: `Sabendo que c é um número real, considere, no plano cartesiano, a circunferência de equação x² + y² = 2cx. Se o centro dessa circunferência pertence à reta de equação x + 2y = 3, então seu raio é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `√2.` },
+      { letra: 'B', texto: `√3.` },
+      { letra: 'C', texto: `2.` },
+      { letra: 'D', texto: `3.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2252,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Tetraedro e cubo: razão de arestas',
+    enunciado: `Se um tetraedro regular e um cubo têm áreas de superfície iguais, a razão entre o comprimento das arestas do tetraedro e o comprimento das arestas do cubo é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `√2 · √3.` },
+      { letra: 'B', texto: `⁴√2 · √3.` },
+      { letra: 'C', texto: `√2 · ⁴√3.` },
+      { letra: 'D', texto: `⁴√2 · ⁴√3.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2257,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Balões de gás hélio e temperatura',
+    enunciado: `Balões de Mylar metalizados são bastante comuns em festas, sendo comercializados em lojas e parques. Ascendem na atmosfera quando preenchidos com gás hélio e só murcham definitivamente se apresentarem algum vazamento. Imagine que um cliente tenha comprado um desses balões e, após sair da loja, retorna para reclamar, dizendo: "não bastasse a noite fria que está lá fora, ainda tenho que voltar para trocar o balão com defeito". O vendedor da loja, depois de conversar um pouco com o cliente, sugere não trocá-lo e afirma que o balão está`,
+    opcoes: [
+      { letra: 'A', texto: `como saiu da loja; garante que estará normal na casa do cliente, pois as moléculas do gás irão aumentar de tamanho, voltando ao normal num ambiente mais quente.` },
+      { letra: 'B', texto: `como saiu da loja; garante que não há vazamento e que o balão estará normal na casa do cliente, considerando que o gás irá se expandir num ambiente mais quente.` },
+      { letra: 'C', texto: `murcho; propõe enchê-lo com ar, pois o balão é menos permeável ao ar, o que garantirá que ele não irá murchar lá fora e, na casa do cliente, irá se comportar como se estivesse cheio com hélio.` },
+      { letra: 'D', texto: `murcho; propõe enchê-lo novamente com hélio e garante que o balão não voltará a murchar quando for retirado da loja, mantendo o formato na casa do cliente.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2258,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia/Saúde - Dosagem máxima de medicamento pediátrico',
+    enunciado: `Um medicamento se apresenta na forma de comprimidos de 750 mg ou como suspensão oral na concentração de 100 mg/mL. A bula do remédio informa que o comprimido não pode ser partido, aberto ou mastigado e que, para crianças abaixo de 12 anos, a dosagem máxima é de 15 mg/kg/dose. Considerando apenas essas informações, conclui-se que uma criança de 11 anos, pesando 40 kg, poderia ingerir com segurança, no máximo,`,
+    opcoes: [
+      { letra: 'A', texto: `6,0 mL da suspensão oral em uma única dose.` },
+      { letra: 'B', texto: `7,5 mL da suspensão oral, ou um comprimido em uma única dose.` },
+      { letra: 'C', texto: `um comprimido em uma única dose.` },
+      { letra: 'D', texto: `4,0 mL da suspensão oral em uma única dose.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2261,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Calor específico e temperatura de ebulição',
+    enunciado: `"O sal faz a água ferver mais rápido?" Essa é uma pergunta frequente na internet, mas não tente responder com os argumentos lá apresentados. Seria muito difícil responder à pergunta tal como está formulada, pois isso exigiria o conhecimento de vários parâmetros termodinâmicos e cinéticos no aquecimento desses líquidos. Do ponto de vista termodinâmico, entre tais parâmetros, caberia analisar os valores de calor específico e de temperatura de ebulição da solução em comparação com a água pura. Considerando massas iguais (água pura e solução), se apenas esses parâmetros fossem levados em consideração, a solução ferveria mais rapidamente se o seu calor específico fosse`,
+    opcoes: [
+      { letra: 'A', texto: `menor que o da água pura, observando-se ainda que a temperatura de ebulição da solução é menor.` },
+      { letra: 'B', texto: `maior que o da água pura, observando-se ainda que a temperatura de ebulição da solução é menor.` },
+      { letra: 'C', texto: `menor que o da água pura, observando-se, no entanto, que a temperatura de ebulição da solução é maior.` },
+      { letra: 'D', texto: `maior que o da água pura, observando-se, no entanto, que a temperatura de ebulição da solução é maior.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2262,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Eletroquímica e densidade de metais para implante',
+    enunciado: `Para ser usado em um implante dentário, um metal ou liga precisa apresentar excelente compatibilidade com o organismo, alta resistência mecânica e boa flexibilidade, entre outros atributos. Imagine que dois metais, A e B, tenham sido testados quanto à sua aplicação em um implante, e o metal A foi considerado a melhor opção.
+
+| Metal | Formato em que o metal está disponível | Massa | E_red° |
+| A | Cubo com aresta de comprimento 5 cm. | 500 g | -1,63 V |
+| B | Esfera com diâmetro de comprimento 5 cm. | 500 g | -0,44 V |
+
+Esse resultado é compatível com o fato de que o metal A tem`,
+    opcoes: [
+      { letra: 'A', texto: `menor densidade, embora seja menos resistente à corrosão.` },
+      { letra: 'B', texto: `menor densidade e é mais resistente à corrosão.` },
+      { letra: 'C', texto: `maior densidade, embora seja menos resistente à corrosão.` },
+      { letra: 'D', texto: `maior densidade e é mais resistente à corrosão.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2263,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Catástrofe de Tchernóbil e URSS',
+    enunciado: `A catástrofe de Tchernóbil (1986) foi o mais grave desastre tecnológico do século XX. As explosões lançaram na atmosfera diversos elementos radioativos. Hoje, uma em cada cinco pessoas nas fronteiras da Bielorússia vive em território contaminado. Em consequência da ação constante de pequenas doses de radiação, a cada ano, cresce no país o número de doentes de câncer, de deficientes mentais, de pessoas com disfunções neuropsicológicas e com mutações genéticas.
+(Adaptado de Svetlana Aleksiévitch, Vozes de Tchernóbil. São Paulo: Companhia das Letras, 1997. p. 10.)
+
+A partir do documento acima e de seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A construção da Central Elétrica Atômica de Tchernóbil ocorreu em um momento de embate da URSS com o mundo ocidental capitalista. Tendo em vista que os elementos lançados ao ambiente têm tempos de meia-vida curtos, novas tecnologias químicas conseguiram sanar os danos ambientais e humanos gerados pelo acidente.` },
+      { letra: 'B', texto: `O acidente de Tchernóbil é um marco do desmantelamento da URSS. O acidente gerou danos ambientais e humanos que não foram solucionados até hoje, uma vez que os elementos lançados ao ambiente têm tempos de meia-vida longos.` },
+      { letra: 'C', texto: `O acidente de Tchernóbil é um marco do fortalecimento da URSS. Ele gerou danos ambientais e humanos que não foram solucionados até hoje, uma vez que os elementos lançados ao ambiente têm tempos de meia-vida longos.` },
+      { letra: 'D', texto: `A construção da Central Elétrica Atômica de Tchernóbil ocorreu em um contexto de expansão das relações da URSS com a Coreia do Norte e a China. Tendo em vista que os elementos lançados ao ambiente têm tempos de meia-vida curtos, novas tecnologias químicas conseguiram sanar os danos ambientais e humanos gerados pelo acidente.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2264,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Termoquímica: combustão do propano',
+    enunciado: `Numa fritadeira a ar com potência de 1400 W, um pedaço de carne ficou pronto para ser consumido após 18 minutos de funcionamento do equipamento. Um cozimento semelhante foi realizado em menor tempo em um fogão a gás. Nesse caso, foram consumidos 16 gramas de gás propano, cuja reação de combustão é dada por:
+C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(g); ΔH = -2046 kJ mol^-1
+
+Comparando os dois processos de cozimento, o consumo de energia foi maior empregando-se`,
+    opcoes: [
+      { letra: 'A', texto: `o fogão a gás, sendo cerca de 1,5 vezes maior que o consumo da fritadeira a ar.` },
+      { letra: 'B', texto: `o fogão a gás, sendo cerca de 12 vezes maior que o consumo da fritadeira a ar.` },
+      { letra: 'C', texto: `a fritadeira a ar, sendo cerca de 6 vezes maior que o consumo do fogão a gás.` },
+      { letra: 'D', texto: `a fritadeira a ar, sendo cerca de 2 vezes maior que o consumo do fogão a gás.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2265,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Antonio Vieira: verossímil e retórica',
+    enunciado: `"O que é então o verossímil? Para encurtar: tudo aquilo em que a confiança é presumida. Por exemplo, os juízes nem sempre são independentes, os médicos nem sempre capazes, os oradores nem sempre sinceros. Mas presume-se que o sejam; e, se alguém afirmar o contrário, cabe-lhe o ônus da prova. Sem esse tipo de presunção, a vida seria impossível; e é a própria vida que rejeita o ceticismo."
+(Olivier Reboul, Introdução à retórica. São Paulo: Martins Fontes, 1998, p. 97-98.)
+
+Considerando o segundo "Sermão da Quarta-feira de Cinza" (1673), de Antonio Vieira, é correto afirmar que a presunção de confiança por parte do auditório cristão do século XVII decorre da`,
+    opcoes: [
+      { letra: 'A', texto: `habilidade política do pregador.` },
+      { letra: 'B', texto: `atenção disciplinada dos ouvintes.` },
+      { letra: 'C', texto: `crença na salvação e na danação eternas.` },
+      { letra: 'D', texto: `defesa institucional da Igreja Católica feita pelo clero.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2266,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - José Saramago: História do Cerco de Lisboa',
+    enunciado: `Ao descrever a rotina do protagonista Raimundo Silva, o narrador da História do Cerco de Lisboa afirma que só restaram fragmentos dos sonhos noturnos, "imagens insensatas aonde a luz não chega, indevassáveis até para os narradores, que as pessoas mal informadas acreditam terem todos os direitos e disporem de todas as chaves."
+(José Saramago, História do Cerco de Lisboa. São Paulo: Companhia das Letras, 1989, p.122.)
+
+Com base nesse excerto e relacionando-o ao conjunto do romance, é correto afirmar que o narrador é`,
+    opcoes: [
+      { letra: 'A', texto: `polifônico, pois, ao considerar todos os pontos de vista das personagens, relativiza a visão de mundo e respeita a privacidade delas.` },
+      { letra: 'B', texto: `observador, pois dissimula sua avaliação política da realidade ao se mostrar empático ao mundo das personagens.` },
+      { letra: 'C', texto: `protagonista, pois, ao fazer parte da própria narrativa, assemelha-se às demais personagens e não pode duvidar dos protocolos necessários para contar a história de Portugal.` },
+      { letra: 'D', texto: `onisciente, pois simula ser tolerante com a pluralidade de vozes narrativas, mas é a singularidade de seu modo de narrar que produz a coesão e a autonomia da narração.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2268,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Machado de Assis: "O espelho"',
+    enunciado: `No conto "O espelho", de Machado de Assis, o esboço de uma nova teoria sobre a dupla natureza da alma humana é apresentado por Jacobina. A personagem narra a situação em que se viu sozinha na casa da tia Marcolina.
+"As horas batiam de século a século no velho relógio da sala, cuja pêndula, tic-tac, tic-tac, feria-me a alma interior como um piparote contínuo da eternidade."
+
+Considerando os indicadores da passagem do tempo na citação, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `o movimento oscilante do pêndulo do relógio expressa a duplicidade da alma interior.` },
+      { letra: 'B', texto: `o som do velho relógio da sala materializa acusticamente a longevidade da alma interior.` },
+      { letra: 'C', texto: `a sonoridade repetitiva do pêndulo intensifica as aflições da alma interior.` },
+      { letra: 'D', texto: `o contínuo batimento das horas sugere o vigor da alma interior.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2269,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Dias Gomes: O Bem-amado',
+    enunciado: `"Para inaugurar é preciso ter um defunto. Mas, por desgraça, nenhum turista se afoga, nenhuma calamidade se abate sobre a cidade e os moribundos têm o desplante de ressuscitarem. Na ordem estabelecida por Odorico, o bem vira mal e o mal, bem."
+(Anatol Rosenfeld, "A obra de Dias Gomes", em Teatro de Dias Gomes. Rio de Janeiro: Civilização Brasileira, 1972, p. xxvii.)
+
+A comicidade de O Bem-amado, de Dias Gomes, deriva em grande medida da inversão de valores que a peça encena. Considerando os propósitos satíricos da obra, assinale a alternativa que evidencia tal inversão.`,
+    opcoes: [
+      { letra: 'A', texto: `A destinação de recursos para a construção de um cemitério público confere dignidade aos mortos.` },
+      { letra: 'B', texto: `A hospitalidade dada aos doentes ilustra o uso do orçamento em prol do sistema público de saúde.` },
+      { letra: 'C', texto: `A promoção do pistoleiro a delegado de polícia visa à reinserção social do criminoso.` },
+      { letra: 'D', texto: `A inauguração do cemitério dá oportunidade a que se reverencie a memória do benfeitor da cidade.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2270,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Nelson Rodrigues: A cabra vadia',
+    enunciado: `No livro A cabra vadia: novas confissões, Nelson Rodrigues inicia a crônica "Os dois namorados" com a seguinte afirmação:
+"há coisas que um grã-fino só confessa num terreno baldio, à luz de archotes, e na presença apenas de uma cabra vadia."
+Na crônica "Terreno baldio" ele recorre ao mesmo animal para explicar a ideia que teve de criar "entrevistas imaginárias":
+"Não podia ser um gabinete, nem uma sala. Lembrei-me, então, do terreno baldio. Eu e o entrevistado e, no máximo, uma cabra vadia. Além do valor plástico da figura, a cabra não trai. Realmente, nunca se viu uma cabra sair por aí fazendo inconfidências."
+(Nelson Rodrigues, A cabra vadia: novas confissões. Rio de Janeiro: Nova Fronteira, 2016, p. 52 e 160.)
+
+O caráter confessional associado à figura da cabra nas crônicas tem relação com`,
+    opcoes: [
+      { letra: 'A', texto: `a veracidade dos depoimentos que o cronista testemunha nas entrevistas.` },
+      { letra: 'B', texto: `a impostura dos contemporâneos que são objeto dos comentários do cronista.` },
+      { letra: 'C', texto: `a antipatia do jornalista no que diz respeito à busca de identidade dos artistas entrevistados.` },
+      { letra: 'D', texto: `a sinceridade dos intelectuais que são objeto das crônicas dos jornalistas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2271,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Arnaldo Antunes: Psia',
+    enunciado: `O poema abaixo vem impresso na orelha do livro Psia, de Arnaldo Antunes.
+
+Psia é feminino
+de psiu;
+que serve para chamar a atenção
+de alguém, ou para pedir
+silêncio.
+Eu berro as palavras
+no microfone
+da mesma maneira com que
+as desenho, com cuidado,
+na página.
+Para transformá-las em coisas,
+em vez de substituírem
+as coisas.
+Calos na língua; de calar.
+Alguma coisa entre a piscina e a pia.
+Um hiato a menos.
+(Arnaldo Antunes, Psia. São Paulo: Iluminuras, 2012.)
+
+Na orelha do livro, Antunes apresenta ao leitor seu processo de criação poética. É correto dizer que o autor se propõe a`,
+    opcoes: [
+      { letra: 'A', texto: `revelar a primazia da comunicação oral sobre a escrita das palavras.` },
+      { letra: 'B', texto: `discutir a flexão de gênero, que torna a palavra "psia" um substantivo.` },
+      { letra: 'C', texto: `defender a conversão das palavras em coisas, mudando seu estatuto.` },
+      { letra: 'D', texto: `explorar o poder de representação da interjeição exclamativa "psiu!".` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2273,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Telejornalismo: conjunção adversativa e "a boa notícia é que"',
+    enunciado: `Considerando a matéria apresentada no jornal (do texto de apoio "O telejornalismo é um dos principais produtos televisivos..."), o uso da conjunção adversativa seguido da expressão "a boa notícia é que" permite ao jornalista`,
+    opcoes: [
+      { letra: 'A', texto: `apontar a gravidade da notícia e compensá-la.` },
+      { letra: 'B', texto: `expor a neutralidade da notícia e reforçá-la.` },
+      { letra: 'C', texto: `minimizar a relevância da notícia e acentuá-la.` },
+      { letra: 'D', texto: `revelar a importância da notícia e enfatizá-la.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2274,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Neologismo "infotenimento"',
+    enunciado: `Para se referir a matérias jornalísticas televisivas que informam e, ao mesmo tempo, entretêm os espectadores, o autor cria um neologismo ("infotenimento") por meio de`,
+    opcoes: [
+      { letra: 'A', texto: `derivação prefixal.` },
+      { letra: 'B', texto: `composição por justaposição.` },
+      { letra: 'C', texto: `composição por aglutinação.` },
+      { letra: 'D', texto: `derivação imprópria.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2276,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Preconceito linguístico: "se amostrar"',
+    enunciado: `Pela milionésima vez, por favor, "se amostrar" não existe. Não pega bem usar uma expressão incorreta como essa.
+Ora veja, incorreto para mim é o que não faz sentido, "se amostrar" faz sentido para boa parte do país.
+Por que você não usa um sinônimo mais simples da palavra? Que tal "exibido"? Todo mundo conhece.
+Não dá, porque quem se exibe é exibido, quem se amostra é amostrado. Por exemplo: quando os vendedores de shopping olham com desprezo para os meninos dos rolezinhos e moram no mesmo bairro deles, são exibidos. Eles acham que a roupa de vendedor faz deles seres superiores. Por outro lado, as meninas e os meninos dos rolezinhos vão para os shoppings para se amostrar uns para outros, e são, portanto, amostrados. Percebeu a sutileza da diferença?
+Entendo, mas está errado.
+Como é que está errado se você entende? Você não aceita a inventividade linguística do povo. "Amostrar" é verbo torto no manual das conjugações e "amostrado" é particípio de amostra grátis! Captou?
+(Adaptado de Cidinha da Silva, Absurdada. Disponível em http://notarodape.blogspot.com/search/label/Cotidiano. Acessado em 22/05/2019.)
+
+Considerando que a comparação entre modos de falar pode ser fonte de preconceito, o exemplo citado por uma das personagens da crônica`,
+    opcoes: [
+      { letra: 'A', texto: `reforça o preconceito em relação às turmas de jovens de um mesmo bairro, com base nos significados de "amostrado" e "exibido".` },
+      { letra: 'B', texto: `explicita o preconceito, valendo-se de "amostrado" e "exibido" para distinguir dois grupos de jovens do mesmo bairro.` },
+      { letra: 'C', texto: `dissimula o preconceito e reconhece que "se amostrar" é, de fato, um verbo que não está de acordo com as normas gramaticais.` },
+      { letra: 'D', texto: `refuta o preconceito e confirma o desconhecimento da regra de formação do particípio passado do verbo "se amostrar".` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2279,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Energia cinética da sonda DART',
+    enunciado: `A massa da sonda DART será de msonda = 300 kg, e ela deverá ter a velocidade vsonda = 6 km/s imediatamente antes de atingir Didymoon. Assim, a energia cinética da sonda antes da colisão será igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1,8 × 10³ J.` },
+      { letra: 'B', texto: `5,4 × 10³ J.` },
+      { letra: 'C', texto: `1,8 × 10⁶ J.` },
+      { letra: 'D', texto: `5,4 × 10⁹ J.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2280,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Colisão inelástica: sonda DART e asteroide',
+    enunciado: `Numa colisão inelástica da sonda DART com o asteroide Didymoon,`,
+    opcoes: [
+      { letra: 'A', texto: `a energia cinética do conjunto sonda + asteroide é conservada e o momento linear do conjunto também é conservado.` },
+      { letra: 'B', texto: `a energia cinética do conjunto sonda + asteroide não é conservada; já o momento linear do conjunto é conservado.` },
+      { letra: 'C', texto: `a energia cinética do conjunto sonda + asteroide é conservada; já o momento linear do conjunto não é conservado.` },
+      { letra: 'D', texto: `a energia cinética do conjunto sonda + asteroide não é conservada e o momento linear do conjunto também não é conservado.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2281,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Aceleração centrípeta do satélite Didymoon',
+    enunciado: `O asteroide satélite Didymoon descreve uma órbita circular em torno do asteroide principal Didymos. O raio da órbita é r = 1,6 km e o período é T = 12 h. A aceleração centrípeta do satélite vale`,
+    opcoes: [
+      { letra: 'A', texto: `8,0 × 10⁻¹ km/h².` },
+      { letra: 'B', texto: `4,0 × 10⁻¹ km/h².` },
+      { letra: 'C', texto: `3,125 × 10⁻¹ km/h².` },
+      { letra: 'D', texto: `6,667 × 10⁻² km/h².` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2283,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Gás carbônico em bebidas carbonatadas: número de mols',
+    enunciado: `O CO2 dissolvido em bebidas carbonatadas, como refrigerantes e cervejas, é o responsável pela formação da espuma nessas bebidas e pelo aumento da pressão interna das garrafas, tornando-a superior à pressão atmosférica. O volume de gás no "pescoço" de uma garrafa com uma bebida carbonatada a 7°C é igual a 24 mL, e a pressão no interior da garrafa é de 2,8 × 10⁵ Pa. Trate o gás do "pescoço" da garrafa como um gás perfeito. Considere que a constante universal dos gases é de aproximadamente 8 J/mol K e que as temperaturas nas escalas Kelvin e Celsius relacionam-se da forma T(K) = θ(°C) + 273. O número de moles de gás no "pescoço" da garrafa é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1,2 × 10⁵.` },
+      { letra: 'B', texto: `3,0 × 10³.` },
+      { letra: 'C', texto: `1,2 × 10⁻¹.` },
+      { letra: 'D', texto: `3,0 × 10⁻³.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2285,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Comprimento de onda: radiotelescópio e infravermelho',
+    enunciado: `Em 2019 foi divulgada a primeira imagem de um buraco negro, obtida pelo uso de vários radiotelescópios. Também recentemente, uma equipe da NASA propôs a utilização de telescópios de infravermelho para detectar antecipadamente asteroides que se aproximam da Terra. Considere que um radiotelescópio detecta ondas eletromagnéticas provenientes de objetos celestes distantes na frequência de fradio = 1,5 GHz e que um telescópio de infravermelho detecta ondas eletromagnéticas originadas em corpos do sistema solar na frequência de finfravermelho = 30 THz. Qual é a razão entre os correspondentes comprimentos de onda no vácuo, λradio / λinfravermelho?`,
+    opcoes: [
+      { letra: 'A', texto: `5,0 × 10⁻⁵` },
+      { letra: 'B', texto: `6,7 × 10⁻⁵` },
+      { letra: 'C', texto: `2,0 × 10⁴` },
+      { letra: 'D', texto: `6,0 × 10¹²` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2287,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Transpiração foliar: resistências e condutância',
+    enunciado: `Em analogia com um circuito elétrico, a transpiração foliar é regulada pelo conjunto de resistências (medidas em segundos/metro) existentes na rota do vapor d'água entre os sítios de evaporação próximos à parede celular no interior da folha e a atmosfera. Simplificadamente, há as resistências dos espaços intercelulares de ar (reia), as induzidas pela presença dos estômatos (rest) e da cutícula (rcut) e a promovida pela massa de ar próxima à superfície das folhas (rcl).
+A tabela a seguir apresenta os valores das resistências de duas espécies de plantas (espécie 1 e espécie 2).
+| Resistências (segundos/metro) | Espécie 1 | Espécie 2 |
+| reia | 10 | 30 |
+| rest | 30 | 10 |
+| rcut | 120 | 280 |
+| rcl | 50 | 15 |
+Tendo em vista os dados apresentados e considerando que a condutância é o inverso da resistência, assinale a alternativa que indica a espécie com menor transpiração e sua respectiva condutância total à difusão do vapor d'água entre os sítios de evaporação e a atmosfera.`,
+    opcoes: [
+      { letra: 'A', texto: `espécie 1; 48 × 10⁻⁴ m/s.` },
+      { letra: 'B', texto: `espécie 1; 125 × 10⁻⁴ m/s.` },
+      { letra: 'C', texto: `espécie 2; 30 × 10⁻⁴ m/s.` },
+      { letra: 'D', texto: `espécie 2; 200 × 10⁻⁴ m/s.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2288,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Polissemia do verbo "reduzir"',
+    enunciado: `"(...) as palavras tomam significados distintos daqueles utilizados no cotidiano. Por exemplo, utiliza-se, com frequência, nas aulas sobre frações, a frase reduzir ao mesmo denominador."
+(Edi Jussara Candido Lorensatti, Linguagem matemática e Língua Portuguesa: diálogo necessário na resolução de problemas matemáticos. Conjectura: Filosofia e Educação. Caxias do Sul, v. 14, n. 2, p. 91, maio/ago. 2009.)
+
+Cada ciência usa uma linguagem própria e com um grau de precisão terminológica necessário para o seu exercício. Tendo em vista os significados distintos que as palavras assumem nas situações concretas em que são empregadas, o verbo "reduzir", no uso cotidiano, significa`,
+    opcoes: [
+      { letra: 'A', texto: `limitar alguma coisa, ao passo que na linguagem matemática é sinônimo de restringir.` },
+      { letra: 'B', texto: `moderar alguma coisa, ao passo que na linguagem matemática implica aumentar as relações entre os números.` },
+      { letra: 'C', texto: `eliminar alguma coisa, ao passo que na linguagem matemática implica reverter as relações entre os números.` },
+      { letra: 'D', texto: `diminuir alguma coisa, ao passo que na linguagem matemática é sinônimo de converter.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2290,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Roma Antiga: imperadores do século II',
+    enunciado: `Os imperadores romanos que reinaram no século II administraram um vasto império. Eles se tornaram mais abertamente monárquicos e dinásticos, particularmente fora de Roma, onde não precisavam se preocupar com os humores do Senado. Emergiu uma corte itinerante que competia por influência. Comunidades provinciais enviavam um embaixador atrás do outro para acompanhar o imperador onde quer que ele pudesse estar. Poderiam encontrar Adriano às margens do Nilo ou supervisionando a construção da grande muralha que cruzava o norte da Britânia; ajudando a projetar seu templo de Vênus diante do Coliseu; fazendo um discurso para soldados na África. O império era governado de onde o imperador estivesse.
+(Adaptado de Greg Woolf, Roma. São Paulo: Cultrix, 2017, p. 204.)
+
+A partir da leitura do texto, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `O Senado, composto por notáveis, fazia oposição à centralização do poder do Imperador e garantia a centralidade do governo em Roma e a democratização das decisões governamentais.` },
+      { letra: 'B', texto: `O Império romano foi marcado pelas disputas de poder entre o Imperador e o Senado. Os conflitos entre eles acabaram por resultar na diminuição do poder do Senado no que diz respeito à administração pública.` },
+      { letra: 'C', texto: `O Senado, composto por notáveis, apoiava a centralização do poder nas mãos do Imperador. A nova estrutura política do Império permitia a mobilidade da administração pública representada pelo Imperador.` },
+      { letra: 'D', texto: `O Império, governado por militares, opunha-se às comunidades provinciais. Isso levou ao desaparecimento do Senado como instituição responsável pela administração pública.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2291,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Surgimento das universidades medievais',
+    enunciado: `O surgimento das primeiras universidades, nos séculos XII e XIII, marca um momento capital da história do Ocidente medieval. Em relação à época anterior, esse momento comportou elementos de continuidade e de ruptura. Os primeiros devem ser buscados na localização urbana das universidades, no conteúdo dos ensinamentos, no papel social dos homens de saber. Já os elementos de ruptura foram inicialmente de ordem institucional. No âmbito das instituições educativas, este sistema era novo e original. As comunidades autônomas dos mestres e dos estudantes eram protegidas pelas mais altas autoridades leigas e religiosas daquele tempo, permitindo tanto progressos no domínio dos métodos intelectuais e em sua difusão como uma inserção mais eficiente das pessoas de saber na sociedade da época.
+(Adaptado de J. Verger, Cultura, ensino e sociedade no ocidente nos séculos XII e XIII. Bauru: EDUSC, 2001, p. 189-190.)
+
+Considerando o texto e seus conhecimentos sobre o período medieval, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A Igreja Católica apoiava a estruturação das universidades medievais, que representavam o avanço das ciências e a superação de dogmas e das teorias teocêntricas.` },
+      { letra: 'B', texto: `A organização institucional diferencia as universidades medievais das corporações de ofícios, visto que seu método de estudo estava calcado na escolástica, caracterizando o atraso do mundo medieval.` },
+      { letra: 'C', texto: `Uma ruptura trazida pelas universidades medievais foi o início da atuação dos copistas nas bibliotecas, que copiavam sistematicamente a produção de autores latinos críticos aos dogmas religiosos.` },
+      { letra: 'D', texto: `A institucionalização das universidades medievais era um dado novo no período; essas instituições se caracterizavam pelo apoio das autoridades de dentro e de fora da Igreja, e pela maior autonomia e inserção social de seus membros.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2292,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Thomas Morus e a ideia de utopia',
+    enunciado: `Em 1516, Thomas Morus criou a ideia de utopia, ao descrever uma ilha imaginária. Surgia um gênero literário, associado à história, à filosofia e à política. A lógica dessa ideia levou à construção de critérios universalmente válidos para cada atividade, com normas e códigos. Surgiram assim os tratados sobre o perfeito cortesão, sobre o perfeito homem do mundo, sobre a cidade perfeita.
+(Adaptado de Carlos Eduardo O. Berriel, "Cidades Utópicas do Renascimento". Ciência e Cultura, São Paulo, v. 56, n. 2, abr./jun. 2004.)
+
+Considerando o texto acima e seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A obra de Morus, escrita na Inglaterra, baseou-se na experiência de soberanos da Itália e da Alemanha que construíram novas cidades no século XV, planejadas geometricamente.` },
+      { letra: 'B', texto: `Grão-chanceler da Inglaterra, Morus exerceu uma ação humanista em um mundo renascentista de crises e instabilidades contínuas. Neste contexto publicou sua obra Utopia.` },
+      { letra: 'C', texto: `A partir do princípio filosófico da utopia, foram escritos vários tratados renascentistas. O Príncipe, de Maquiavel, ilustra a melhor versão do cortesão atuante no mundo utópico.` },
+      { letra: 'D', texto: `A ilha da Utopia, perfeitamente racionalizada, marcou o urbanismo renascentista na Europa e no Novo Mundo. O esgotamento dessa ideia de utopia ocorreu com a ideia de distopia, no século XX.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2293,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Indígenas e europeus na América Portuguesa',
+    enunciado: `Na América Portuguesa do século XVI, a política europeia para os indígenas pressupunha também a existência de uma política indígena frente aos europeus, já que os Tamoios e os Tupiniquins tinham seus próprios motivos para se aliarem aos franceses ou aos portugueses.
+(Adaptado de Manuela Carneiro da Cunha, Introdução a uma história indígena. São Paulo: Companhia das Letras/Fapesp, 1992, p. 18.)
+
+Com base no excerto e nos seus conhecimentos sobre os primeiros contatos entre europeus e indígenas no Brasil, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A população ameríndia era heterogênea e os conflitos entre diferentes grupos étnicos ajudaram a definir, de acordo com suas próprias lógicas e interesses, a dinâmica dos seus contatos com os europeus.` },
+      { letra: 'B', texto: `O fato de Tamoios e Tupiniquins serem grupos aliados contribuiu para neutralizar as disputas entre franceses e portugueses pelo controle do Brasil, pelo papel mediador que os nativos exerciam.` },
+      { letra: 'C', texto: `Os indígenas, agentes de sua história, desde cedo souberam explorar as rivalidades entre os europeus e mantê-los afastados dos seus conflitos interétnicos, anulando o impacto da presença portuguesa.` },
+      { letra: 'D', texto: `As etnias indígenas viviam em harmonia umas com as outras e em equilíbrio com a natureza. Esse quadro foi alterado com a chegada dos europeus, que passaram a incentivar os conflitos interétnicos para estabelecer o domínio colonial.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2295,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Abolição e libertos antes da Lei Áurea',
+    enunciado: `Os números indicam que antes da abolição de 1888 restavam pouco mais de setecentos mil escravos no Brasil. Conforme estimativa do censo de 1872, elaborada pelo IBGE, a população total do país era de 9.930.478 habitantes. Isso indica que grande parte da população de cor (pretos e pardos) já havia adquirido a liberdade por seus próprios meios antes da Lei Áurea.
+(Adaptado de Wlamyra Albuquerque, A vala comum da 'raça emancipada': abolição e racialização no Brasil, breve comentário. História Social, Campinas, n. 19, p. 99, 2010.)
+
+Com base no excerto e nos conhecimentos sobre a história da liberdade no Brasil, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A maioria da população negra já era liberta antes de 1888, porque as províncias escravistas do Sudeste, almejando abrirem-se para a imigração italiana, vinham adotando medidas abolicionistas desde o fim do tráfico, em 1850.` },
+      { letra: 'B', texto: `Em termos globais, o grande percentual da população livre de cor reflete o peso demográfico da população liberta concentrada nas províncias pouco dependentes da escravidão, como Santa Catarina e Paraná.` },
+      { letra: 'C', texto: `A maioria da população africana e seus descendentes já era livre quando a Lei Áurea foi aprovada, porque vinha obtendo alforrias através de uma multiplicidade de estratégias, desde o período colonial.` },
+      { letra: 'D', texto: `O alto número de libertos antes de 1888 reflete o impacto da abolição dos escravos por parte do Imperador D. Pedro II, pois a família real era a maior proprietária de cativos durante o século XIX, na região do Vale do Paraíba.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2296,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Era da Catástrofe e crise de 1929',
+    enunciado: `Na Era da Catástrofe (1914-1945), com a Grande Depressão desencadeada pela crise de 1929, tornava-se cada vez mais claro que a paz, a estabilidade social, a economia, as instituições políticas e os valores intelectuais da sociedade liberal burguesa entraram em decadência ou colapso.
+(Adaptado de E. J. Hobsbawm, Era dos extremos: o breve século XX, 1914-1991. São Paulo: Companhia das Letras, 1995, p. 112)
+
+A partir do excerto acima e dos conhecimentos sobre o período histórico que vai de 1914 a 1945, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `A crise de 1929 e as guerras mundiais levaram ao colapso do liberalismo político e econômico na Europa e, ao mesmo tempo, à expansão das democracias liberais em países africanos e do Oriente Médio.` },
+      { letra: 'B', texto: `As soluções para a crise de 1929 centraram-se em um aprofundamento das políticas liberais do New Deal, que promoviam responsabilidade fiscal e diminuição do papel do Estado como motor de desenvolvimento.` },
+      { letra: 'C', texto: `São marcos da crise do liberalismo na Europa: o colapso das principais democracias, a ascensão de governos totalitários e autoritários e a descrença no livre-mercado após a crise de 1929.` },
+      { letra: 'D', texto: `Verificou-se nesse período o colapso das democracias liberais, com a ascensão do totalitarismo na Europa, e o aumento das liberdades econômicas, com a diminuição do papel do Estado como solução para a crise de 1929.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2297,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Pornochanchada e cultura brasileira (1960-1970)',
+    enunciado: `A partir da segunda metade da década de 1960, a produção de um gênero cinematográfico extravagante ganha força no Brasil: a pornochanchada. Num primeiro momento esta se mostrou como uma comédia leve, apesar de algumas cenas de nudez parcial, mas logo evoluiu para o que já era praticado pelo resto do mundo: a exploração do erotismo e da sensualidade no Cinema para atender a um crescente mercado de consumo.
+(Adaptado de Ildembergue Leite de Souza e André Luiz Maranhão de Souza Leão, A transposição de mitos na intertextualidade entre Cinema e Publicidade. Intercom, Revista Brasileira de Ciências da Comunicação, São Paulo, v. 37, n. 2, p. 242-262, dez. 2014.)
+
+Sobre a vida cultural no Brasil das décadas de 1960 e 1970, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O período ficou marcado pelo esvaziamento da cena cultural, com baixo dinamismo nos campos da produção teatral, musical e cinematográfica. Apenas os gêneros ligados ao erotismo se expandiram, por não serem considerados transgressores.` },
+      { letra: 'B', texto: `A pornochanchada foi financiada pelo capital estrangeiro no Brasil durante o regime militar, pois a indústria cinematográfica, em razão dos seus altos custos, passou a ser fomentada sobretudo por empresas norte-americanas.` },
+      { letra: 'C', texto: `O gênero pornochanchada pode ser considerado um movimento de contracultura por seu caráter de contestação política, através da linguagem chula, e por suas estreitas conexões com produtores culturais ligados à Tropicália.` },
+      { letra: 'D', texto: `A explosão dos filmes do ciclo da pornochanchada e seu sucesso de público ocorreram em um contexto marcado, de um lado, pela revolução sexual, e, de outro, pela censura ao conteúdo veiculado no cinema e na TV.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2298,
+    ano: 2020,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Geopolítica pós-Guerra Fria: novas unidades políticas',
+    enunciado: `Nas últimas três décadas, vimos o fim de velhas unidades políticas e a emergência de novas: as unificações da Alemanha e do Iêmen, a desintegração da Checoslováquia, da Iugoslávia e da União Soviética, a secessão de países como Eritreia, Timor-Leste e Kosovo. Vimos também a expansão de esforços de integração política e econômica, a absorção de antigos membros do Pacto de Varsóvia na Otan, o envolvimento de exércitos nacionais em esforços da ONU pela manutenção da paz e a mobilização de outros tantos exércitos na tentativa de conter e definir o terrorismo como fenômeno político.
+(Adaptado de Sebastião Nascimento, Vinte anos sem muro em Berlim: novas faces da violência política. Revista Brasileira de Ciências Sociais, São Paulo, v.26, n. 77, out. 2011.)
+
+Sobre esta nova condição histórica e geopolítica internacional, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `As décadas que nos separam da queda do Muro de Berlim e do fim da Guerra Fria representam um período de continuidade das formas e demandas políticas no plano internacional e de manutenção da cartografia mundial.` },
+      { letra: 'B', texto: `A reunificação alemã foi decisiva nesse processo global. Ela fez desaparecer o maior símbolo da Guerra Fria na Europa, a Alemanha dividida. A queda do Muro de Berlim em 1989 e o 11 de setembro de 2001 são marcos desse processo.` },
+      { letra: 'C', texto: `Após a descolonização nos anos de 1950 e 1960, a dessovietização do mundo nos anos de 1990 reforçou o imperialismo, compreendido como um sistema de Estados nacionais iguais sob o direito internacional.` },
+      { letra: 'D', texto: `Desde 1989, o Estado nacional democrático alcançou todo o globo com eleições livres, não apenas no Leste Europeu, mas também nos países orientais. Na retórica política comum, destaca-se o fenômeno do terrorismo atlântico.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
