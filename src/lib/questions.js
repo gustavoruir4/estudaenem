@@ -38442,6 +38442,1194 @@ Assinale a alternativa correta.`,
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2019 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 2120,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Palavras proparoxítonas (crônica humorística)',
+    enunciado: `Há dois tipos de palavras: as proparoxítonas e o resto.
+As proparoxítonas são o ápice da cadeia alimentar do léxico.
+As palavras mais pernósticas são sempre proparoxítonas.
+Para pronunciá-las, há que ter ânimo, falar com ímpeto - e, despóticas, ainda exigem acento na sílaba tônica!
+Sob qualquer ângulo, a proparoxítona tem mais crédito.
+É inequívoca a diferença entre o arruaceiro e o vândalo.
+Uma coisa é estar na ponta outra, no vértice.
+Ser artesão não é nada, perto de ser artífice.
+Legal ser eleito Papa, mas bom mesmo é ser Pontífice.
+(Adaptado de Eduardo Affonso, "Há dois tipos de palavras: as proparoxítonas e o resto". Disponível em www.facebook.com/eduardo22affonso/.)
+
+Segundo o texto, as proparoxítonas são palavras que`,
+    opcoes: [
+      { letra: 'A', texto: `garantem sua pronúncia thanks à exigência de uma sílaba tônica.` },
+      { letra: 'B', texto: `conferem nobreza ao léxico da língua graças à facilidade de sua pronúncia.` },
+      { letra: 'C', texto: `revelam mais prestígio em função de seu pouco uso e de sua dupla acentuação.` },
+      { letra: 'D', texto: `exibem sempre sua prepotência, além de imporem a obrigatoriedade da acentuação.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2121,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Propaganda institucional: slogans de governo',
+    enunciado: `Na década de 1950, quando iniciava seu governo, Juscelino Kubitschek prometeu "50 anos em 5". Na campanha do atual governo o slogan ficou assim: "O Brasil voltou, 20 anos em dois". A 'tradução' não tinha como dar certo; era como comparar vinho com água. E mais: havia uma vírgula no meio do caminho. Na propaganda, apenas uma vírgula impede que a leitura, ao invés de ser positiva e associada ao progressismo de Juscelino, se transforme numa mensagem de retrocesso: o Brasil de fato 'voltou' muito nesses últimos dois anos; para trás.
+(Adaptado de Lilia Schwarcz, Havia uma vírgula no meio do caminho. Nexo Jornal, 21/05/2018.)
+
+Considerando o gênero propaganda institucional e o paralelo histórico traçado pela autora, é correto afirmar que o slogan do atual governo fracassou porque`,
+    opcoes: [
+      { letra: 'A', texto: `o uso da vírgula provocou uma leitura negativa do trecho que alude ao slogan da década de 1950.` },
+      { letra: 'B', texto: `a mensagem projetada pelo slogan anterior era mais clara, direta, e não exigia o uso da vírgula.` },
+      { letra: 'C', texto: `a alusão ao slogan anterior afasta o público jovem e provoca a perda de seu poder persuasivo.` },
+      { letra: 'D', texto: `o duplo sentido do verbo "voltar" gerou uma mensagem que se afasta daquela projetada pelo slogan anterior.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2122,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Letramento racial e linguagem',
+    enunciado: `Alguns pesquisadores falam sobre a necessidade de um "letramento racial", para "reeducar o indivíduo em uma perspectiva antirracista", baseado em fundamentos como o reconhecimento de privilégios, do racismo como um problema social atual, não apenas legado histórico, e a capacidade de interpretar as práticas racializadas. Ouvir é sempre a primeira orientação dada por qualquer especialista ou ativista: uma escuta atenta, sincera e empática. Luciana Alves, educadora da Unifesp, afirma que "Uma das principais coisas é atenção à linguagem. A gente tem uma linguagem sexista, racista, homofóbica, que passa pelas piadas e pelo uso de termos que a gente já naturalizou. 'A coisa tá preta', 'denegrir', 'serviço de preto'... Só o fato de você prestar atenção na linguagem já anuncia uma postura de reconstrução. Se o outro diz que tem uma carga negativa e ofensiva, acredite".
+(Adaptado de Gente branca: o que os brancos de um país racista podem fazer pela igualdade além de não serem racistas, UOL, 21/05/2018)
+
+Segundo Luciana Alves, para combater o racismo e mudar de postura em relação a ele, é fundamental`,
+    opcoes: [
+      { letra: 'A', texto: `ouvir com atenção os discursos e orientações de especialistas e ativistas.` },
+      { letra: 'B', texto: `reconhecer expressões racistas existentes em práticas naturalizadas.` },
+      { letra: 'C', texto: `passar por um "letramento racial" que dispense o legado histórico.` },
+      { letra: 'D', texto: `prestar atenção às práticas históricas e às orientações da educadora.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2123,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Verbete ressignificado: \'estrela\' (Instagram)',
+    enunciado: `Leia o texto a seguir, publicado no Instagram e em um livro do @akapoeta João Doederlein.
+
+estrela (s.f.)
+é quem, feito catapora, se multiplicou no céu, diria Carpinejar. são as manchas que o universo não tem vergonha de mostrar. são as pintas nas suas costas e as sardas no seu rosto, são as memórias de quem já partiu. é onde escreve o destino.
+é o brilho particular que algumas pessoas carregam no olhar.
+(João Doederlein, O livro dos ressignificados. São Paulo: Paralela, 2017, p. 17.)
+
+A ressignificação de estrela ocorre porque o verbete apresenta`,
+    opcoes: [
+      { letra: 'A', texto: `diversas acepções dessa palavra de modo amplo, literal e descritivo.` },
+      { letra: 'B', texto: `cinco definições da palavra relativas à realidade e uma definição figurada.` },
+      { letra: 'C', texto: `vários contextos de uso que evidenciam o caráter expositivo do gênero verbete.` },
+      { letra: 'D', texto: `uma entrada formal de dicionário e acepções que expressam visões particulares.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2125,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português/Música - Caetano Veloso: \'Festa imodesta\' e a linguagem da fresta',
+    enunciado: `Para driblar a censura imposta pela ditadura militar, compositores de música popular brasileira (MPB) valiam-se do que Gilberto Vasconcelos chamou de "linguagem da fresta", expressão inspirada na canção "Festa imodesta", de Caetano Veloso.
+(...)
+Numa festa imodesta como esta
+Vamos homenagear
+Todo aquele que nos empresta sua testa
+Construindo coisas pra se cantar
+Tudo aquilo que o malandro pronuncia
+E que o otário silencia
+Toda festa que se dá ou não se dá
+Passa pela fresta da cesta e resta a vida.
+Acima do coração que sofre com razão
+A razão que volta do coração
+E acima da razão a rima
+E acima da rima a nota da canção
+Bemol natural sustenida no ar
+Viva aquele que se presta a esta ocupação
+Salve o compositor popular
+(Gilberto de Vasconcelos, Música popular de olho na fresta. Rio de Janeiro: Graal, 1977.)
+
+É correto afirmar que, na canção, essa "linguagem da fresta" transparece`,
+    opcoes: [
+      { letra: 'A', texto: `na contradição entre "festa" e "fresta", que funciona como crítica ao malandro.` },
+      { letra: 'B', texto: `na repetição de palavras com pronúncia semelhante para louvar a MPB.` },
+      { letra: 'C', texto: `na referência à "fresta" como forma de o compositor se pronunciar.` },
+      { letra: 'D', texto: `na incoerência da rima entre "festa" e "imodesta" para prestigiar o compositor.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2126,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Clarice Lispector: \'Amor\' (Laços de família)',
+    enunciado: `"Um cego me levou ao pior de mim mesma, pensou espantada. Sentia-se banida porque nenhum pobre beberia água nas suas mãos ardentes. Ah! era mais fácil ser um santo que uma pessoa! Por Deus, pois não fora verdadeira a piedade que sondara no seu coração as águas mais profundas? Mas era uma piedade de leão."
+(Clarice Lispector, "Amor", em Laços de família. 20ª ed. Rio de Janeiro: Francisco Alves, 1990, p. 39.)
+
+Ao funcionar a personagem Ana, a expressão "piedade de leão" reúne valores opostos, remetendo simultaneamente à compaixão e à ferocidade. É correto afirmar que, no conto "Amor", essa formulação`,
+    opcoes: [
+      { letra: 'A', texto: `revela um embate de natureza social, já que a pobreza do cego causa náuseas na personagem.` },
+      { letra: 'B', texto: `expressa o dilema cristão da alma pecadora diante de sua incapacidade de fazer o bem.` },
+      { letra: 'C', texto: `indica um conflito psicológico, uma vez que a personagem não se sente capaz de amar.` },
+      { letra: 'D', texto: `alude a um contraste moral e existencial que provoca na personagem um sentimento de angústia.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2127,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Carolina Maria de Jesus: Quarto de despejo',
+    enunciado: `"...Nas ruas e casas comerciais já se vê as faixas indicando os nomes dos futuros deputados. Alguns nomes já são conhecidos. São reincidentes que já foram preteridos nas urnas. Mas o povo não está interessado nas eleições, que é o cavalo de Troia que aparece de quatro em quatro anos."
+(Carolina Maria de Jesus, Quarto de despejo. São Paulo: Ática, 2014, p. 43.)
+
+O trecho anterior faz parte das considerações políticas que aparecem repetidamente em Quarto de despejo, de Carolina Maria de Jesus. Considerando o conjunto dessas observações, indique a alternativa que resume de modo adequado a posição da autora sobre a lógica política das eleições.`,
+    opcoes: [
+      { letra: 'A', texto: `Por meio das eleições, políticos de determinados partidos acabam se perpetuando no exercício do poder.` },
+      { letra: 'B', texto: `Os políticos se aproximam do povo e, depois das eleições, se esquecem dos compromissos assumidos.` },
+      { letra: 'C', texto: `Os políticos preteridos são aqueles que acabam vencendo as eleições, por força de sua persistência.` },
+      { letra: 'D', texto: `Graças ao desinteresse do povo, os políticos se apropriam do Estado, contrariando a própria democracia.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2128,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Ana Cristina Cesar: A teus pés',
+    enunciado: `(...)
+Eu tenho uma ideia.
+Eu não tenho a menor ideia.
+Uma frase em cada linha. Um golpe de exercício.
+Memórias de Copacabana. Santa Clara às três da tarde.
+Autobiografia. Não, biografia.
+Mulher.
+Papai Noel e os marcianos.
+Billy the Kid versus Drácula.
+Drácula versus Billy the Kid.
+Muito sentimental.
+Agora pouco sentimental.
+Pensa no seu amor de hoje que sempre dura menos que o amor de ontem.
+Gertrude: estas são ideias bem comuns.
+Apresenta a jazz-band.
+Não, toca blues com ela.
+Esta é a minha vida.
+Atravessa a ponte.
+(...)
+(Ana Cristina Cesar, A teus pés. São Paulo: Companhia das Letras, 2016, p. 9.)
+
+Esse trecho do poema de abertura de A teus pés, de Ana Cristina Cesar,`,
+    opcoes: [
+      { letra: 'A', texto: `expressa nostalgia do passado, visto que mobiliza referências à cultura pop dos anos 1970.` },
+      { letra: 'B', texto: `requisita a participação do leitor, já que as referências biográficas são fragmentárias.` },
+      { letra: 'C', texto: `exclui a dimensão biográfica, pois se refere a personagens imaginários e de ficção.` },
+      { letra: 'D', texto: `tematiza a descrença na poesia, uma vez que a poeta se contradiz continuamente.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2129,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura/Teatro - Dias Gomes: O bem-amado',
+    enunciado: `"DOROTÉA
+O senhor perdeu a cabeça?
+DULCINÉA
+Fazer de um cangaceiro um delegado!
+DOROTÉA
+Quando a oposição souber!
+DULCINÉA
+Que prato pra Neco Pedreira!
+ODORICO
+E tomara que Neco se sirva bem dele. Tomara que chame Zeca Diabo de cangaceiro, assassino, quanto mais xingar, melhor.
+DOROTÉA
+O senhor não acha que se excedeu?
+ODORICO
+Em política, dona Dorotéa, os finalmentes justificam os não obstantes."
+(Dias Gomes, O bem-amado. Rio de Janeiro: Bertrand Brasil, 2014. p. 69-70.)
+
+As personagens femininas do excerto anterior discordam da nomeação de Zeca Diabo feita por Odorico. Assinale a alternativa que indica a razão dessa discordância e a natureza da crítica às práticas políticas brasileiras presente na peça teatral de Dias Gomes.`,
+    opcoes: [
+      { letra: 'A', texto: `Segundo as personagens, Zeca Diabo não possui os atributos necessários para o cargo. Critica-se uma sociedade que desconsidera a meritocracia.` },
+      { letra: 'B', texto: `As práticas políticas são desconhecidas pelas personagens. A ingenuidade do cidadão e a astúcia necessária dos políticos são criticadas na fala delas e de Odorico.` },
+      { letra: 'C', texto: `Dulcinéa e Dorotéa não simpatizam com Zeca Diabo, o que indica que a peça faz uma crítica às relações sociais presididas por afetos e interesses privados.` },
+      { letra: 'D', texto: `Dulcinéa e Dorotéa não admitem que alguém fora da lei possa cuidar da ordem da cidade. Criticam-se os atos de um poder executivo que se orienta por um projeto pessoal de poder.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2130,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Padre Antônio Vieira: Sermões de quarta-feira de cinza',
+    enunciado: `Sobre as representações históricas da morte no Ocidente, Philippe Ariès e Alcir Pécora comentam:
+"O moribundo está deitado, cercado por seus amigos e familiares. Está prestes a executar os ritos que bem conhecemos. (...) Seres sobrenaturais invadiram o quarto e se comprimem na cabeceira do 'jacente'. A grande reunião que nos séculos XII e XIII tinha lugar no final dos tempos se faz, então, a partir do século XV, no quarto do enfermo."
+(Philippe Ariès, História da morte no Ocidente: da Idade Média aos nossos dias. Rio de Janeiro: Nova Fronteira, 2012, p. 53.)
+"...essa espécie de arte de morrer de Vieira se opõe à tradição das artes moriendi fundadas na preparação para a 'última prova' que acontece apenas no quarto do moribundo. Não é mais lá que se decide a salvação ou a condenação do cristão, mas no exato momento de suas escolhas e ações ao longo da vida, vale dizer, na resolução adequada a ser tomada hic et nunc (aqui e agora)."
+(Alcir Pécora, A arte de morrer, segundo Vieira, em Antonio Vieira, Sermões de quarta-feira de cinza. Campinas, SP: Editora da Unicamp, 2016. p.51.)
+
+Com base nos excertos anteriores e na leitura dos três Sermões de Quarta-feira de Cinza, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Em Ariès, a salvação ou danação ocorre no quarto do moribundo, mas nos sermões de Vieira é a atenção ao momento presente e a decisão correta que importam para o cristão.` },
+      { letra: 'B', texto: `A afirmação de Alcir Pécora é válida somente para o primeiro sermão, pois os dois últimos sermões retomam o tema do fim dos tempos e da agonia do moribundo para a fé cristã.` },
+      { letra: 'C', texto: `Segundo Ariès, o drama da salvação se dá na imagem do quarto do moribundo. Essa imagem é decisiva para a compreensão do terceiro sermão.` },
+      { letra: 'D', texto: `Para Alcir Pécora, o que distingue os sermões de Vieira dos discursos sobre a morte nesse período é a ênfase do padre jesuíta na ação futura.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2131,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Portuguesa - Camilo Castelo Branco: Coração, cabeça e estômago',
+    enunciado: `"Picado pelo ciúme, abriu o ourives seu peito à órfã, ofereceu-lhe a mão, e uma pulseira de brilhantes nela, com a condição de me esquecer. Leontina disse que sim, cuidando que mentia; mas passados oito dias admirou-se de ter dito a verdade. Nunca mais soube de mim, nem eu dela; até que, um ano depois, a criada, que a servia, me contou que a menina casara com o padrinho e que as enteadas, coagidas pelo pai, se tinham ido para o recolhimento do Grilo com uma pequena mesada e a esperança de ficarem pobres. Não sei mais nada a respeito da primeira das sete mulheres que amei, em Lisboa."
+(Camilo Castelo Branco, Coração, cabeça e estômago, p. 4. Disponível em www.dominiopublico.gov.br. Acessado em 20/05/2018.)
+
+O excerto anterior apresenta uma síntese acerca do primeiro dos setes amores da personagem Silvestre da Silva. Considere essa experiência amorosa no contexto da primeira parte da narrativa e assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A mulher é idealizada em cada caso relatado, não havendo espaço para uma ótica realista.` },
+      { letra: 'B', texto: `A experiência amorosa recebe tratamento solene e sublime por parte das personagens.` },
+      { letra: 'C', texto: `A personagem masculina se caracteriza pelo interesse sexual; a feminina, pela devoção ao marido.` },
+      { letra: 'D', texto: `O protagonista da narrativa se frustra em sua crença amorosa a cada vez que se apaixona.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2132,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Metáfora/analogia: \'programa genético\' (Edgar Morin)',
+    enunciado: `"A noção de programa genético (...) desempenhou um papel importante no lançamento do Projeto Genoma Humano, fazendo com que se acreditasse que a decifração de um genoma, à maneira de um livro com instruções de um longo programa, permitiria decifrar ou compreender toda a natureza humana ou, no mínimo, o essencial dos mecanismos de ocorrência das doenças. Em suma, a fisiopatologia poderia ser reduzida à genética, já que toda doença seria reduzida a um ou diversos erros de programação, isto é, à alteração de um ou diversos genes".
+(Edgar Morin, A religação dos saberes: o desafio do século XXI. Jornadas temáticas idealizadas e dirigidas por Edgar Morin. Rio de Janeiro: Bertrand Brasil Ltda, 2012, p. 157.)
+
+A expressão programa genético, mencionada no trecho anterior, é`,
+    opcoes: [
+      { letra: 'A', texto: `uma alegoria, pois sintetiza os mecanismos moleculares subjacentes ao funcionamento dos genes e dos cromossomos no contexto ficcional de um programa de computador.` },
+      { letra: 'B', texto: `uma analogia, pois diferencia os mecanismos moleculares subjacentes ao código genético e ao funcionamento dos cromossomos dos códigos de um programa de computador.` },
+      { letra: 'C', texto: `uma metáfora, pois iguala toda a informação genética e os mecanismos moleculares subjacentes ao funcionamento e expressão dos genes com as instruções e os comandos de um programa.` },
+      { letra: 'D', texto: `uma analogia, pois contrasta os mecanismos moleculares dos genes nos cromossomos e das doenças causadas por eles com as linhas de comando de um programa de computador.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2133,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português/Física - Linguagem da física na literatura (Klaus Mecke, O Pêndulo de Foucault)',
+    enunciado: `Na opinião de Klaus R. Mecke, professor no Instituto de Física Teórica da Universidade de Stuttgart, Alemanha, o uso da linguagem da física na literatura obedeceria ao seguinte propósito:
+Uma função literária central da fórmula seria simbolizar a violência. A fórmula torna-se metáfora para a violência, para o calculismo desumano, para a morte e para a fria mecânica para o golpe de força. Recorde-se também O Pêndulo de Foucault, de Umberto Eco, em que a fórmula do pêndulo caracteriza o estrangulamento de um ser humano. Passo a citar: "O período de oscilação, T, é independente da massa do corpo suspenso (igualdade de todos os homens perante Deus)...". Também aqui a fórmula constitui uma referência irônica à marginalização do sujeito, reduzido à "massa inerte" suspensa.
+(Adaptado de Klaus R. Mecke, A imagem da Física na Literatura, Gazeta de Física, 2004, p. 6-7.)
+
+Segundo Mecke, a função literária de algumas noções da Física, presentes em determinados romances, expressa`,
+    opcoes: [
+      { letra: 'A', texto: `a falta de liberdade do sujeito nas relações sociais, mas o uso da independência do período do pêndulo simples com a massa do corpo suspenso, feito por Umberto Eco, está incorreto.` },
+      { letra: 'B', texto: `a revogação parcial das leis da natureza, e o uso da independência do período do pêndulo simples com a massa do corpo suspenso, feito por Umberto Eco, está correto.` },
+      { letra: 'C', texto: `a concordância quanto ao modo como representamos a natureza, mas o uso da independência do período do pêndulo simples com a massa do corpo suspenso, feito por Umberto Eco, está incorreto.` },
+      { letra: 'D', texto: `a privação da liberdade do ser humano, e o uso da independência do período do pêndulo simples com a massa do corpo suspenso, feito por Umberto Eco, está correto.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2134,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português/Poesia - António Gedeão: \'Lágrima de Preta\'',
+    enunciado: `Em 1961, o poeta António Gedeão publica o livro Máquina de Fogo. Um dos poemas é "Lágrima de Preta". Musicado por José Niza, foi gravado por Adriano Correia de Oliveira, em 1970, e incluído no seu álbum "Cantaremos". A canção foi censurada pelo governo português.
+
+Lágrima de preta
+Encontrei uma preta
+que estava a chorar,
+pedi-lhe uma lágrima
+para a analisar.
+Recolhi a lágrima
+com todo o cuidado
+num tubo de ensaio
+bem esterilizado.
+Olhei-a de um lado,
+do outro e de frente:
+tinha um ar de gota
+muito transparente.
+Mandei vir os ácidos,
+as bases e os sais,
+as drogas usadas
+em casos que tais.
+Ensaiei a frio,
+experimentei ao lume,
+de todas as vezes
+deu-me o que é costume:
+Nem sinais de negro,
+nem vestígios de ódio.
+Água (quase tudo)
+e cloreto de sódio.
+(António Gedeão, Máquina de fogo. Coimbra: Tipografia da Atlântida, 1961, p. 187.)
+
+Os versos anteriores articulam as linguagens literária e científica com questões de ordem ética e política. Considerando o contexto de produção e recepção de "Lágrima de Preta" (anos 1960 e 1970, em Portugal), o propósito artístico desse poema é`,
+    opcoes: [
+      { letra: 'A', texto: `inadequado quanto à análise social, ao refutar que haja racismo e preconceito na sociedade, e incorreto no aspecto científico, ao descrever as propriedades químicas de uma lágrima.` },
+      { letra: 'B', texto: `inadequado quanto à análise social, ao refutar a existência de racismo e preconceito na sociedade, mas correto no aspecto científico, ao descrever as propriedades químicas de uma lágrima.` },
+      { letra: 'C', texto: `pertinente quanto à análise social, ao registrar o racismo e o preconceito na sociedade, e correto no aspecto científico, ao descrever as propriedades químicas de uma lágrima.` },
+      { letra: 'D', texto: `pertinente quanto à análise social, ao registrar o preconceito e o racismo na sociedade, mas incorreto no aspecto científico, ao descrever as propriedades químicas de uma lágrima.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2136,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Toxicologia da cafeína: DL50',
+    enunciado: `Dois estudantes, de massa corporal em torno de 75 kg, da Universidade de Northumbria, no Reino Unido, quase morreram ao participar de um experimento científico no qual seriam submetidos a determinada dose de cafeína e a um teste físico posterior. Por um erro técnico, ambos receberam uma dose de cafeína 100 vezes maior que a dose planejada. A dose planejada era de 0,3 g de cafeína, equivalente a três xícaras de café. Sabe-se que a União Europeia, onde o teste ocorreu, classifica a toxicidade de uma dada substância conforme tabela a seguir.
+
+| Categoria | DL50 (mg/kg de massa corporal) |
+| muito tóxica | menor que 25 |
+| tóxica | de 25 a 200 |
+| nociva | de 200 a 2000 |
+
+Considerando que a DL50 - dose necessária de uma dada substância para matar 50% de uma população - da cafeína é de 192 mg/kg, no teste realizado a dose aplicada foi cerca de`,
+    opcoes: [
+      { letra: 'A', texto: `100 vezes maior que a DL50 da cafeína, substância que deve ser classificada como nociva.` },
+      { letra: 'B', texto: `duas vezes maior que a DL50 da cafeína, substância que deve ser classificada como tóxica.` },
+      { letra: 'C', texto: `100 vezes maior que a DL50 da cafeína, substância que deve ser classificada como tóxica.` },
+      { letra: 'D', texto: `duas vezes maior que a DL50 da cafeína, substância que deve ser classificada como nociva.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2137,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Glutamato monossódico: porcentagem de sódio',
+    enunciado: `Fake News ou não? Hoje em dia, a disponibilidade de informações é muito grande, mas precisamos saber interpretá-las corretamente. Um artigo na internet tem o seguinte título: "Glutamato monossódico, o sabor que mata!". Em determinado ponto do texto, afirma-se:
+"Só para você ter ideia dos riscos, organizações internacionais de saúde indicam que a ingestão diária de sódio para cada pessoa seja de 2,3 gramas. O glutamato é composto por 21% de sódio e, com certeza, não será o único tempero a ser acrescentado ao seu almoço ou jantar. Além disso, o realçador (glutamato) só conta um terço do nutriente que é encontrado no sal de cozinha."
+Dados de massas molares em g/mol: sódio = 23, cloreto = 35.5, glutamato monossódico = 169.
+
+Para tornar a argumentação do artigo mais consistente do ponto de vista químico, você sugeriria a seguinte reescrita dos trechos destacados:`,
+    opcoes: [
+      { letra: 'A', texto: `"A porcentagem em massa de sódio no realçador (glutamato) é de 13,6%."; "Por outro lado, o realçador só conta com cerca de um terço do nutriente que é encontrado no sal de cozinha.".` },
+      { letra: 'B', texto: `"A porcentagem em massa de sódio no realçador (glutamato) é de 39,3%."; "Além disso, o realçador contém cerca de três vezes mais nutriente do que o encontrado no sal de cozinha.".` },
+      { letra: 'C', texto: `"A porcentagem em massa de sódio no realçador (glutamato) é de 11,2%."; "Por outro lado, o realçador conta com cerca de um terço do nutriente que é encontrado no sal de cozinha.".` },
+      { letra: 'D', texto: `"A porcentagem em massa de sódio no realçador (glutamato) é de 21,0%."; "Além disso, o realçador contém cerca de três vezes mais nutriente do que o encontrado no sal de cozinha.".` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2138,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Cinética química: degradação do sarin por hipoclorito',
+    enunciado: `De tempos em tempos, o mundo se choca com notícias sobre o uso de armas químicas em conflitos. O sarin é um composto organofosforado líquido, insípido, incolor e inodoro, altamente volátil, que se transforma em gás quando exposto ao ar, sendo um dos principais alvos dessas notícias. Em 1955, um projeto confidencial do exército americano estudou a eficiência de hipoclorito na eliminação de sarin em ambientes contaminados. A tabela a seguir mostra alguns resultados obtidos nesse estudo.
+
+| pH | [ClO^-] (milimol/L) | t_1/2 (min) |
+| 5 | 2.8 | 96 |
+| 6 | 2.8 | 11 |
+| 7 | 0.4 | 13 |
+| 8 | 0.04 | 33 |
+| 9 | 0.04 | 18 |
+
+Sendo t_1/2 o tempo para a configuração do sarin cair à metade, de acordo com a tabela a reação é mais rápida em`,
+    opcoes: [
+      { letra: 'A', texto: `maiores concentrações de hipoclorito, mas não há elementos suficientes para analisar a influência da acidez do meio reacional.` },
+      { letra: 'B', texto: `menores concentrações de hipoclorito, mas não há elementos suficientes para analisar a influência da acidez do meio reacional.` },
+      { letra: 'C', texto: `meios mais ácidos, mas não há elementos suficientes para analisar a influência da concentração do hipoclorito.` },
+      { letra: 'D', texto: `meios menos ácidos, mas não há elementos suficientes para analisar a influência da concentração do hipoclorito.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2139,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Biodiesel: fórmula mínima do diesel',
+    enunciado: `A adição de biodiesel ao diesel tradicional é uma medida voltada para a diminuição das emissões de gases poluentes. Segundo um estudo da FIPE, graças a um aumento no uso de biodiesel no Brasil, entre 2008 e 2011, evitou-se a emissão de 11 milhões de toneladas de CO2 (gás carbônico).
+(Adaptado de Guilherme Profeta, "Da cozinha para o seu carro: cúrcuma utilizada como aditivo de biodiesel". Cruzeiro do Sul, 10/04/2018.)
+Dados de massas molares em g/mol: H = 1, C = 12, O = 16.
+
+Considerando as informações dadas e levando em conta que o diesel pode ser caracterizado pela fórmula mínima (C_n H_2n), é correto afirmar que entre 2008 e 2011 o biodiesel substituiu aproximadamente`,
+    opcoes: [
+      { letra: 'A', texto: `3,5 milhões de toneladas de diesel.` },
+      { letra: 'B', texto: `11 milhões de toneladas de diesel.` },
+      { letra: 'C', texto: `22 milhões de toneladas de diesel.` },
+      { letra: 'D', texto: `35 milhões de toneladas de diesel.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2150,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Fusos horários: Copa do Mundo 2018',
+    enunciado: `Dois amigos planejaram assistir à abertura da Copa do Mundo em Moscou. Eles partiram no dia 10 de junho de 2018 do Aeroporto Presidente Juscelino Kubitschek (Brasília), situado a 45° de longitude Oeste, às 16 horas, com destino ao Aeroporto de Heathrow (Londres), situado a 0° de longitude. O voo teve duração de 10 horas. Os dois amigos esperaram por três horas para partirem em direção ao Aeroporto Internacional Domodedovo (Moscou), situado a 60° de longitude Leste, e o segundo voo durou quatro horas.
+
+Com base nessas informações e considerando que o continente europeu adota, neste período do ano, o horário de verão, que adianta os relógios em uma hora, indique o dia e a hora em que os dois amigos chegaram ao Aeroporto Internacional Domodedovo em Moscou.`,
+    opcoes: [
+      { letra: 'A', texto: `11 de junho, às 13 horas.` },
+      { letra: 'B', texto: `11 de junho, às 16 horas.` },
+      { letra: 'C', texto: `11 de junho, às 17 horas.` },
+      { letra: 'D', texto: `10 de junho, às 16 horas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2152,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Boaventura de Sousa Santos: fascismo social',
+    enunciado: `Como regime social, o fascismo social pode coexistir com a democracia política liberal. Em vez de sacrificar a democracia às exigências do capitalismo global, trivializa a democracia até o ponto de não ser necessário sacrificá-la para promover o capitalismo. Trata-se, pois, de um fascismo pluralista e, por isso, de uma forma de fascismo que nunca existiu. Podemos estar entrando num período em que as sociedades são politicamente democráticas e socialmente fascistas.
+(Adaptado de Boaventura de Sousa Santos, Epistemologias do Sul. São Paulo: Cortez, 2010, p. 47.)
+
+De acordo com o texto e os conhecimentos sobre o assunto, a coexistência entre fascismo e democracia é`,
+    opcoes: [
+      { letra: 'A', texto: `facilitada por processos eleitorais que dão continuidade a fascismos que sempre existiram.` },
+      { letra: 'B', texto: `promovida pela aceitação social que banaliza a democracia em favor do capitalismo global.` },
+      { letra: 'C', texto: `dificultada por processos eleitorais que renovam a democracia, inviabilizando os fascismos.` },
+      { letra: 'D', texto: `possibilitada pela aceitação social de sociedades politicamente fascistas e socialmente democráticas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2153,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Indígenas em favelas do Brasil',
+    enunciado: `Indigenous people in Brazil seek out cities, end up in slums
+RIO DE JANEIRO – The dancers shake seed-filled maracas and raise their voices in song, conjuring an ancient spirit that vibrates above the traffic roaring from a nearby expressway and the beat of funk music blasting from a neighbor's loudspeaker.
+In this Brazilian favela, the indigenous people are struggling to keep some of their traditions alive that, besides providing a sense of community, helps them endure the discrimination they face in the city. Forced out of their native lands by deforestation, miners and farmers, nearly one in four Brazilian Indians nowadays live in urban areas and an estimated 22,000 of them now call the crowded favelas their home.
+Life in the slums, despite its difficulties, has its advantages. "The slums are the one place in the city where you have the kind of solidarity we Indians have in the villages," said a Pataxó woman who lives in Rio de Janeiro's Maré Complex.
+(Adaptado de Associated Press, Indigenous people in Brazil seek out cities, end up in slums, Dailymail, 16/09/2014.)
+
+Assinale a alternativa que indica corretamente os fenômenos geográficos mencionados no texto a respeito das populações indígenas.`,
+    opcoes: [
+      { letra: 'A', texto: `Migração urbano-rural, segregação socioespacial urbana, preservação socioambiental.` },
+      { letra: 'B', texto: `Segregação socioespacial urbana, migração rural-urbana, impacto socioambiental.` },
+      { letra: 'C', texto: `Inclusão socioespacial urbana, impacto socioambiental, migração urbano-rural.` },
+      { letra: 'D', texto: `Preservação socioambiental, inclusão socioespacial urbana, migração rural-urbana.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2156,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Velocidade da luz e distância em anos-luz',
+    enunciado: `O físico inglês Stephen Hawking (1942-2018), além de suas contribuições importantes para a cosmologia, a física teórica e sobre a origem do universo, nos últimos anos de sua vida passou a sugerir estratégias para salvar a raça humana de uma possível extinção, entre elas, a mudança para outro planeta. Em abril de 2018, uma empresa americana, em colaboração com a Nasa, lançou o satélite TESS, que analisará cerca de vinte mil planetas fora do sistema solar. Esses planetas orbitam estrelas situadas a menos de trezentos anos-luz da Terra, sendo que um ano-luz é a distância que a luz percorre no vácuo em um ano. Considere um ônibus espacial atual que viaja a uma velocidade média v = 2,0×10^4 km/s. O tempo que esse ônibus levaria para chegar a um planeta a uma distância de 100 anos-luz é igual a
+(Dado: A velocidade da luz no vácuo é igual a c = 3,0×10^8 m/s.)`,
+    opcoes: [
+      { letra: 'A', texto: `66 anos.` },
+      { letra: 'B', texto: `100 anos.` },
+      { letra: 'C', texto: `600 anos.` },
+      { letra: 'D', texto: `1500 anos.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2158,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Corrente elétrica: bateria de drone',
+    enunciado: `Considere um drone que utiliza uma bateria com carga total q = 900 mAh. Se o drone operar por um intervalo de tempo igual a Δt = 90 min, a corrente média fornecida pela bateria nesse intervalo de tempo será igual a`,
+    opcoes: [
+      { letra: 'A', texto: `10 mA.` },
+      { letra: 'B', texto: `600 mA.` },
+      { letra: 'C', texto: `1350 mA.` },
+      { letra: 'D', texto: `81000 mA.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2161,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Intensidade luminosa e energia: depilação a laser',
+    enunciado: `Uma sessão de depilação a laser utiliza pulsos de alta potência e curta duração. O tempo total da sessão depende da área tratada. Considere certa situação em que a luz do laser incide perpendicularmente em uma área A = 2 mm² com uma intensidade média igual a I = 2,0×10^4 W/m². A energia luminosa que incide nessa área durante um intervalo de tempo Δt = 3 ms é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1,2×10^-1 J.` },
+      { letra: 'B', texto: `1,2×10^-4 J.` },
+      { letra: 'C', texto: `3,0×10^7 J.` },
+      { letra: 'D', texto: `3,0×10^-13 J.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2162,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Calor específico: aquecimento da raiz do pelo',
+    enunciado: `Na depilação, o laser age no interior da pele, produzindo uma lesão térmica que queima a raiz do pelo. Considere uma raiz de pelo de massa m = 2,0×10^-10 kg inicialmente a uma temperatura Ti = 36°C que é aquecida pelo laser a uma temperatura final Tf = 46°C. Se o calor específico da raiz é igual a c = 3000 J/(kg°C), o calor absorvido pela raiz do pelo durante o aquecimento é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `6,0×10^-6 J.` },
+      { letra: 'B', texto: `6,0×10^-8 J.` },
+      { letra: 'C', texto: `1,2×10^-12 J.` },
+      { letra: 'D', texto: `6,0×10^-13 J.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2163,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Comprimento de onda e frequência: lasers de depilação',
+    enunciado: `Três tipos de laser comumente utilizados para depilação têm comprimentos de onda λ1 ≈ 760 nm, λ2 ≈ 800 nm e λ3 ≈ 1060 nm, respectivamente. Se a velocidade da luz vale c = 3,0×10^8 m/s, o laser de maior frequência tem uma frequência de aproximadamente`,
+    opcoes: [
+      { letra: 'A', texto: `3,9×10^14 Hz.` },
+      { letra: 'B', texto: `2,8×10^5 Hz.` },
+      { letra: 'C', texto: `2,5×10^15 Hz.` },
+      { letra: 'D', texto: `3,7×10^12 Hz.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2164,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Óptica: cirurgia corretiva de miopia',
+    enunciado: `As cirurgias corretivas a laser para a visão estão cada vez mais eficientes. A técnica corretiva mais moderna é baseada na extração de um pequeno filamento da córnea, modificando a sua curvatura. No caso de uma cirurgia para correção de miopia, o procedimento é feito para deixar a córnea mais plana. Assinale a alternativa que explica corretamente o processo de correção da miopia.`,
+    opcoes: [
+      { letra: 'A', texto: `Na miopia, a imagem do ponto remoto se forma antes da retina e a cirurgia visa a aumentar a distância focal da lente efetiva do olho.` },
+      { letra: 'B', texto: `Na miopia, a imagem do ponto remoto se forma depois da retina e a cirurgia visa a aumentar a distância focal da lente efetiva do olho.` },
+      { letra: 'C', texto: `Na miopia, a imagem do ponto remoto se forma depois da retina e a cirurgia visa a diminuir a distância focal da lente efetiva do olho.` },
+      { letra: 'D', texto: `Na miopia, a imagem do ponto remoto se forma antes da retina e a cirurgia visa a diminuir a distância focal da lente efetiva do olho.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2166,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Terapia gênica: atrofia muscular espinhal',
+    enunciado: `A prestigiada revista Science elegeu como um dos principais avanços científicos de 2017 um caso de terapia gênica em crianças portadoras de atrofia muscular espinhal do tipo 1, uma doença genética caracterizada pela atrofia progressiva dos músculos esqueléticos e morte precoce antes dos 2 anos de idade. A doença é causada por um gene defeituoso, que deixa de codificar uma proteína essencial para o funcionamento dos neurônios. No estudo, vírus não patogênicos que continham uma cópia normal do gene em questão foram injetados em quinze crianças doentes. As crianças tratadas sobreviveram além dos 2 anos e apresentaram melhoras na capacidade de movimento.
+(Disponível em https://vis.sciencemag.org/.)
+
+Assinale a alternativa que preenche corretamente as lacunas na frase a seguir.
+Os vírus injetados nas crianças foram capazes de (i) ________, restaurando a produção (ii) ________, que passaram, então, a controlar adequadamente (iii) ________.`,
+    opcoes: [
+      { letra: 'A', texto: `(i) atingir a medula óssea e introduzir nas células-tronco a cópia normal do gene; (ii) de neurônios no cérebro; (iii) a medula espinhal e, portanto, os músculos.` },
+      { letra: 'B', texto: `(i) atingir a medula espinhal e remover dos neurônios a cópia defeituosa do gene; (ii) de hormônios; (iii) a geração de impulsos elétricos e os músculos.` },
+      { letra: 'C', texto: `(i) atingir a medula espinhal e introduzir nos neurônios a cópia normal do gene; (ii) da proteína essencial à função dos neurônios da medula; (iii) os músculos.` },
+      { letra: 'D', texto: `(i) atingir a medula óssea e induzir a produção de linfócitos do sangue; (ii) de anticorpos contra o vírus; (iii) a infecção, restaurando os movimentos das crianças.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2169,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Ecologia: fauna e flora em Chernobyl',
+    enunciado: `O acidente radioativo na usina de Chernobyl, na Ucrânia, em 1986, exigiu a evacuação de mais de 100 mil pessoas em um raio de 30 km. Até hoje, a região é isolada e o acesso público, restrito. Pouco tempo após o acidente, muitos estudos indicaram que vários organismos, entre os quais aranhas e insetos, haviam sofrido efeitos negativos da radiação. Porém, estudos recentes, utilizando armadilhas fotográficas e imagens aéreas, mostraram que a cidade-fantasma foi ocupada por diversas espécies de plantas e animais, cuja abundância tem aumentado na região.
+(Roland Oliphant, 30 years after Chernobyl disaster, wildlife is flourishing in radioactive wasteland, The Telegraph, 24/04/2016.)
+
+Assinale a alternativa que fornece uma explicação correta para o fenômeno descrito no texto anterior.`,
+    opcoes: [
+      { letra: 'A', texto: `A radiação diminui a taxa fotossintética de plantas, porém a ação de descontaminação do ambiente pelo homem permite o retorno de populações de plantas e, portanto, dos organismos que delas se alimentam.` },
+      { letra: 'B', texto: `A radiação aumenta a taxa de mutação e acelera o metabolismo de plantas, favorecendo sua taxa reprodutiva, o que leva a aumento de suas populações e, consequentemente, das populações de herbívoros.` },
+      { letra: 'C', texto: `A radiação reduz os tumores de animais e plantas, aumentando a taxa de sobrevivência desses seres vivos e, consequentemente, o tamanho de suas populações e das de seus consumidores.` },
+      { letra: 'D', texto: `A radiação tem impactos negativos sobre animais e plantas, porém a ausência de atividade humana no ambiente contaminado por radiação favorece o crescimento das populações desses organismos.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2170,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Fisiologia renal: furosemida e doping',
+    enunciado: `Recentemente, inúmeros casos de doping esportivo foram noticiados, como, por exemplo, aqueles envolvendo a delegação russa nos Jogos Olímpicos do Rio de Janeiro em 2016. Um dos métodos mais utilizados no exame antidoping é a coleta e análise da urina de atletas, para verificação da presença de medicamentos proibidos. O composto furosemida foi banido pela Agência Mundial Antidoping. Sua principal ação é reduzir a reabsorção de sódio e cloro a partir da alça do néfron (alça de Henle) em direção aos vasos sanguíneos adjacentes.
+
+Considerando essas informações e os conhecimentos sobre a fisiologia renal e a excreção em seres humanos, é correto afirmar que a furosemida`,
+    opcoes: [
+      { letra: 'A', texto: `diminui a produção de urina, impedindo que medicamentos proibidos sejam eliminados nas amostras a serem analisadas nos testes antidoping.` },
+      { letra: 'B', texto: `diminui a produção de amônia, mas aumenta a eliminação de medicamentos pelo rim, resultando em diluição das amostras analisadas nos testes antidoping.` },
+      { letra: 'C', texto: `aumenta a produção de urina, resultando na diminuição da concentração de medicamentos nas amostras, o que dificulta sua detecção nos testes antidoping.` },
+      { letra: 'D', texto: `aumenta a produção de ureia, o que resulta na diluição das amostras a serem analisadas nos testes antidoping e na diminuição da concentração dos medicamentos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2172,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Ciclo do Plasmodium: mecanismo antimalárico',
+    enunciado: `A malária representa um dos principais problemas de saúde pública no mundo. Embora a dimensão geográfica da transmissão esteja encolhendo no Brasil, o país ainda registra 42% dos casos da doença nas Américas. A Fundação Oswaldo Cruz, do Rio de Janeiro, recentemente desenvolveu um preparado com alta eficácia antimalárica, agora em fase de ensaios clínicos.
+(Fontes: "Desafios para eliminação da malária", Agência Fapesp, 2017; MAÍRA Menezes, "Malária: ensaio clínico aponta alta eficácia e ausência de resistência a medicamento", Portal Fiocruz, 2016.)
+
+Levando em conta seus conhecimentos sobre o ciclo de vida do Plasmodium, assinale a alternativa que indica um possível mecanismo de ação do preparado antimalárico.`,
+    opcoes: [
+      { letra: 'A', texto: `Alterar a morfologia das hemácias dos mosquitos, diminuindo a taxa de infecção pelo parasita.` },
+      { letra: 'B', texto: `Impedir a entrada de parasitas nos linfócitos, reduzindo a carga de gametócitos circulantes.` },
+      { letra: 'C', texto: `Promover a multiplicação de esporozoítos no fígado, reduzindo o número de gametócitos.` },
+      { letra: 'D', texto: `Inibir a multiplicação de merozoítos nos eritrócitos, diminuindo a carga de parasitas circulantes.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2174,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Charles Keeling: CO2 e Revolução Industrial',
+    enunciado: `Raros são os cientistas que se dedicam a medir um único fenômeno. Mais raro ainda são aqueles que alteram o comportamento da humanidade com suas medições. O norte-americano Charles D. Keeling passou a vida medindo a quantidade de CO2 existente na atmosfera, demonstrando que a quantidade desse gás está aumentando. Em 1958, muito antes do surgimento dos movimentos ecológicos, Keeling desconfiou de que esse efeito era devido à queima de combustíveis fósseis. Na última década, a hipótese de Keeling foi testada pela análise de bolhas de ar retidas no gelo polar, revelando que a concentração de CO2 permaneceu inalterada por milênios, aumentando a partir do século XIX.
+(Adaptado de Fernando Reinach, A longa marcha dos grilos canibais. São Paulo: Companhia das Letras, 2010, p. 41-42.)
+
+Os experimentos com as bolhas de ar do gelo polar indicam que a elevação das emissões de CO2`,
+    opcoes: [
+      { letra: 'A', texto: `é diretamente proporcional à utilização crescente de petróleo (plantas fossilizadas) nos Estados Unidos e na China no século XIX, o que propiciou o desenvolvimento de novos equipamentos, tecnologias e organizações no mundo do trabalho.` },
+      { letra: 'B', texto: `está correlacionada com a utilização crescente de carvão mineral (plantas fossilizadas) durante a Revolução Industrial, que propiciou o uso da energia a vapor e o desenvolvimento de máquinas, levando à produção em larga escala.` },
+      { letra: 'C', texto: `está associada à utilização crescente de petróleo (micro-organismos fossilizados) desde os primórdios da Revolução Industrial, caracterizada pelo uso de máquinas para a produção em larga escala e novas organizações trabalhistas.` },
+      { letra: 'D', texto: `é diretamente proporcional à utilização decrescente de biodiesel (micro-organismos fossilizados) na Inglaterra durante a Revolução Industrial, quando esse país adotou uma matriz energética baseada no consumo de petróleo para fomentar sua economia protecionista.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2175,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História/Filosofia - Relação entre Matemática e Filosofia (interdisciplinar)',
+    enunciado: `A inclusão de Filosofia e Sociologia como disciplinas obrigatórias no Ensino Médio em 2009 prejudicou a aprendizagem de matemática dos jovens brasileiros, principalmente os de baixa renda. A conclusão é de um estudo inédito que será publicado pelo IPEA. Segundo ele, a mudança levou as notas de jovens residentes em municípios com muito baixo Índice de Desenvolvimento Humano (IDH), que engloba aspectos da renda, escolaridade e saúde, a cair 11,8%, 8,8% e 7,7% em redação, matemática e linguagens (que inclui português, língua estrangeira e outras linguagens), respectivamente.
+(Adaptado de Érica Fraga, "Filosofia e Sociologia obrigatórias derrubam notas em Matemática", em Folha de São Paulo, 16/04/2018.)
+
+A partir das relações históricas entre as disciplinas mencionadas na reportagem e de uma análise crítica da conclusão da pesquisa, marque a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Desde as diferentes civilizações da Antiguidade até o presente, os conhecimentos matemáticos e filosóficos têm se demonstrado incompatíveis, corroborando as conclusões do texto. Pitágoras, por exemplo, considerava que o cosmo, descrito de forma filosófica, era regido por relações matemáticas.` },
+      { letra: 'B', texto: `A Filosofia e a Matemática constituem campos de saber distintos, sendo a lógica uma das possibilidades de interface entre as duas ciências, distinção que valida as conclusões do texto. Pascal, por exemplo, estabeleceu as bases da análise combinatória a partir de argumentos filosóficos.` },
+      { letra: 'C', texto: `A Filosofia e a Matemática, campos de saber distintos, dialogam para produzir conhecimento científico, o que não respalda as conclusões do texto. Descartes, por exemplo, desenvolveu o plano de coordenadas para representar as relações entre as coisas do mundo e suas proporções matemáticas.` },
+      { letra: 'D', texto: `Desde as diferentes civilizações da Antiguidade até o presente, os conhecimentos matemáticos rivalizam com os conhecimentos filosóficos, como demonstra o texto. Na Academia de Platão, por exemplo, essa disputa era representada pela frase "Quem não é geômetra, não entre".` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2176,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Genética de populações: frequência alélica (interdisciplinar com Matemática)',
+    enunciado: `Uma população de certa espécie é constituída apenas por três tipos de indivíduos diploides, que diferem quanto ao genótipo em um loco. No total, há um número NAA de indivíduos com genótipo AA, NAa de indivíduos com genótipo Aa, e Naa de indivíduos com genótipo aa.
+Considerando apenas o loco exposto no enunciado, a frequência do alelo A nessa população é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `NAA / (NAA + NAa)` },
+      { letra: 'B', texto: `(NAA + NAa) / (NAA + NAa + Naa)` },
+      { letra: 'C', texto: `NAA + NAa` },
+      { letra: 'D', texto: `(2NAA + NAa) / (2(NAA + NAa + Naa))` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2177,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Porcentagem: impostos e gorjeta',
+    enunciado: `Os preços que aparecem no cardápio de um restaurante já incluem um acréscimo de 10% referente ao total de impostos. Na conta, o valor a ser pago contém o acréscimo de 10% relativo aos serviços (gorjeta). Se o valor total da conta for p reais, o cliente estará desembolsando pelo custo original da refeição, em reais, a quantia de`,
+    opcoes: [
+      { letra: 'A', texto: `p/1,20.` },
+      { letra: 'B', texto: `p/1,21.` },
+      { letra: 'C', texto: `p × 0,80.` },
+      { letra: 'D', texto: `p × 0,81.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2179,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Representação decimal: soma e produto de algarismos',
+    enunciado: `A representação decimal de certo número inteiro positivo tem dois algarismos. Se o triplo da soma desses algarismos é igual ao próprio número, então o produto dos algarismos é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `10.` },
+      { letra: 'B', texto: `12.` },
+      { letra: 'C', texto: `14.` },
+      { letra: 'D', texto: `16.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2180,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Probabilidade: união de eventos independentes',
+    enunciado: `O sistema de segurança de um aeroporto consiste de duas inspeções. Na primeira delas, a probabilidade de um passageiro ser inspecionado é de 3/5. Na segunda, a probabilidade se reduz para 1/4. A probabilidade de um passageiro ser inspecionado pelo menos uma vez é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `17/20.` },
+      { letra: 'B', texto: `7/10.` },
+      { letra: 'C', texto: `3/10.` },
+      { letra: 'D', texto: `3/20.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2181,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Função quadrática: gráfico da parábola',
+    enunciado: `Sejam a e b números reais positivos. Considere a função quadrática f(x) = x(ax + b), definida para todo número real x. No plano cartesiano, qual figura corresponde ao gráfico de y = f(x)?
+[Nota do transcritor: as quatro alternativas são gráficos. O gráfico correto (b) é uma parábola com concavidade voltada para cima, passando pela origem (0,0) e com a outra raiz em x = -b/a, no eixo negativo.]`,
+    opcoes: [
+      { letra: 'A', texto: `Parábola com concavidade voltada para cima; raízes em x = 0 e x positivo.` },
+      { letra: 'B', texto: `Parábola com concavidade voltada para cima; raízes em x = 0 e x = -b/a (negativo).` },
+      { letra: 'C', texto: `Parábola com concavidade voltada para baixo; raízes em x = 0 e x positivo.` },
+      { letra: 'D', texto: `Parábola com concavidade voltada para baixo; raízes em x = 0 e x = -b/a (negativo).` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2182,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Equação quadrática e relações trigonométricas',
+    enunciado: `Sejam k e θ números reais tais que sen θ e cos θ são soluções da equação quadrática 2x² + x + k = 0. Então, k é um número`,
+    opcoes: [
+      { letra: 'A', texto: `irracional.` },
+      { letra: 'B', texto: `racional não inteiro.` },
+      { letra: 'C', texto: `inteiro positivo.` },
+      { letra: 'D', texto: `inteiro negativo.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2186,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Matrizes: determinante',
+    enunciado: `Sabendo que a e b são números reais, considere a matriz quadrada de ordem 3,
+A = [[1, a, 1], [b, 1, a], [2, b, 2]].
+Se a soma dos elementos em cada linha da matriz A tem sempre o mesmo valor, então o determinante de A é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `0.` },
+      { letra: 'B', texto: `2.` },
+      { letra: 'C', texto: `5.` },
+      { letra: 'D', texto: `10.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2187,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Geometria analítica: interseção de circunferência e parábola',
+    enunciado: `No plano cartesiano, considere a circunferência de equação x² + y² - 4y + 3 = 0 e a parábola de equação 3x² - y + 1 = 0. Essas duas curvas se interceptam em`,
+    opcoes: [
+      { letra: 'A', texto: `um ponto.` },
+      { letra: 'B', texto: `dois pontos.` },
+      { letra: 'C', texto: `três pontos.` },
+      { letra: 'D', texto: `quatro pontos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2188,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Polinômios: relações de Girard',
+    enunciado: `Sabendo que a e b são números reais, considere o polinômio cúbico p(x) = x³ + ax² + x + b. Se a soma e o produto de duas de suas raízes são iguais a -1, então p(1) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `0.` },
+      { letra: 'B', texto: `1.` },
+      { letra: 'C', texto: `2.` },
+      { letra: 'D', texto: `3.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2190,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Ciência no Islã Medieval',
+    enunciado: `Os estudiosos muçulmanos adaptaram a herança recebida dos povos arabizados. Entre os domínios conquistados pelos muçulmanos estavam a Mesopotâmia e o antigo Egito, civilizações que desde cedo observaram os fenômenos astronômicos. O estudo dos fenômenos naturais no Crescente Fértil possibilitou a agricultura e perdurou por milênios. Nas costas do Mar Egeu, na região da Jônia, surgiram no século VI a.C. as primeiras explicações dos fenômenos naturais desvinculadas dos desígnios divinos. E as conquistas de Alexandre permitiram o início do intercâmbio entre o conhecimento grego, de um lado, e o dos antigos impérios egípcio, babilônico e persa, de outro. Além disso, houve trocas científicas e culturais com os indianos. O império árabe-islâmico foi, a partir do século VII, o herdeiro desse legado científico multicultural, ao qual os estudiosos muçulmanos deram seus aportes ao longo da Idade Média.
+(Adaptado de Beatriz Bissio, O mundo falava árabe. Rio de Janeiro: Civilização Brasileira, 2012, p. 200-201.)
+
+Considerando o texto acima sobre o Islã Medieval e seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A extensão do território sob domínio islâmico e a liberdade religiosa e cultural implementada nessas áreas aceleraram a construção de novos conhecimentos pautados na cosmologia ocidental.` },
+      { letra: 'B', texto: `A partir do século VII, o avanço dos exércitos islâmicos garantiu a expansão do império de forma ditatorial sobre antigos núcleos culturais da Índia até as terras gregas do Império Bizantino, chegando à Espanha.` },
+      { letra: 'C', texto: `Os conhecimentos sobre os fenômenos naturais construídos pelos mesopotâmicos, egípcios, macedônicos, babilônicos, persas, entre outros povos, foram ignorados pelo Islã Medieval, marcado pelo fundamentalismo religioso.` },
+      { letra: 'D', texto: `A difusão de saberes multiculturais foi uma das marcas do Império árabe-islâmico, sendo ele a via de transmissão do sistema numérico indiano para o Ocidente e de obras da filosofia greco-romana para o Oriente.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2192,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Juan Garrido: negros na conquista da América espanhola',
+    enunciado: `A seguir, leia um trecho da petição ao rei de Espanha escrita por Juan Garrido, conquistador residente na cidade do México, em 27 de Setembro de 1538.
+Eu, Juan Garrido, de cor negra, membro desta comunidade [vecino], e residente nesta cidade, trago um relato de como servi à Vossa Majestade na conquista e pacificação desta Nova Espanha. Desde quando Cortés entrou nela, estive presente em todas as invasões, conquistas e pacificações realizadas no sul do Pacífico, nas ilhas de Porto Rico e de Cuba. Fiz tudo às minhas custas, sem receber nem salário nem repartimiento de índios ou qualquer outra coisa. De todas estas formas, durante trinta anos, servi e continuo a servir à Vossa Majestade.
+(Traduzido e adaptado de Matthew Restall, Probanza of Juan Garrido. Black Conquistadors: Armed Africans in Early Spanish America. The Americas, Cambridge, v. 57, n. 2, out. 2000, p. 171.)
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A presença de negros nos processos de conquista e colonização das Américas limitou-se à atuação como mão de obra escravizada em plantações, em serviços domésticos ou como trabalhadores sem especialização em núcleos urbanos.` },
+      { letra: 'B', texto: `A presença de afrodescendentes na América espanhola pode ser distribuída nas categorias: escravos, fugitivos ou forros, em meio rural e urbano, auxiliares nos processos de conquista e ainda como conquistadores, proprietários e vecinos.` },
+      { letra: 'C', texto: `A presença de negros nos exércitos de Cortez é um exemplo da ausência de critérios discriminatórios de limpeza de sangue no processo de conquista da América espanhola, diferentemente do que ocorria nas Américas portuguesa e inglesa.` },
+      { letra: 'D', texto: `A presença de afrodescendentes no mundo espanhol foi tardia e concentrou-se no espaço caribenho, onde atuaram como parte da mão de obra escravizada, mas também atuaram como conquistadores e vecinos cidadãos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2193,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Nheengatu: língua geral amazônica',
+    enunciado: `Entre os séculos XVII e XVIII, o nheengatu se tornou a língua de comunicação interétnica falada por diversos povos da Amazônia. Em 1722, a Coroa exortou os carmelitas e os franciscanos a capacitarem seus missionários a falarem esta língua geral amazônica tão fluentemente como os jesuítas, já que em 1689 havia determinado seu ensino aos filhos de colonos.
+(Adaptado de José Bessa Freire, Da "fala boa" ao português na Amazônia brasileira. Amerindia, Paris, n. 8, 1983, p. 25.)
+
+Com base na passagem acima, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Os jesuítas criaram um dicionário baseado em línguas indígenas entre os séculos XVI e XIX, que foi amplamente usado na correspondência e na administração colonial nos dois lados do Atlântico.` },
+      { letra: 'B', texto: `O texto permite compreender a necessidade de o colonizador português conhecer e dominar a língua para poder disciplinar os índios em toda a Amazônia durante o período pombalino e no século XIX.` },
+      { letra: 'C', texto: `O aprendizado dessa língua associava-se aos projetos de colonização, visando ao controle da mão de obra indígena pelos agentes coloniais, como missionários, colonos e autoridades.` },
+      { letra: 'D', texto: `A experiência do nheengatu desapareceu no processo de exploração da mão de obra indígena na Amazônia e em função da interferência da Coroa, que defendia o uso da língua portuguesa.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2194,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Mineração em Minas Gerais no século XVIII',
+    enunciado: `Tanto que se viu a abundância do ouro que se tirava e a largueza com que se pagava tudo o que lá ia, logo se fizeram estalagens e logo começaram os mercadores a mandar às Minas Gerais o melhor que chega nos navios do Reino e de outras partes. De todas as partes do Brasil, se começou a enviar tudo o que dá a terra, com lucro não somente grande, mas excessivo. Daqui se seguiu, mandarem-se às Minas Gerais as boiadas de Paranaguá, e às do rio das Velhas, as boiadas dos campos da Bahia, e tudo o mais que os moradores imaginaram poderia apetecer-se de qualquer gênero de cousas naturais e industriais, adventícias e próprias.
+(Adaptado de André Antonil, Cultura e Opulência do Brasil. Belo Horizonte: Itatiaia-Edusp, 1982, p. 169-171.)
+
+Sobre os efeitos da descoberta das grandes jazidas de metais e pedras preciosas no interior da América portuguesa na formação histórica do centro-sul do Brasil, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A demanda do mercado consumidor criado na zona mineradora permitiu a conexão entre diferentes partes da Colônia que até então eram pouco integradas.` },
+      { letra: 'B', texto: `A partir da criação de rotas de comércio entre os campos do sul da Colônia e a região mineradora, Sorocaba e suas feiras perderam a relevância econômica adquirida no século XVII.` },
+      { letra: 'C', texto: `O desenvolvimento socioeconômico da região das minas e do centro-sul levou a Coroa a deslocar a capital da Colônia de Salvador para Ouro Preto em 1763.` },
+      { letra: 'D', texto: `Como o solo da região mineradora era infértil, durante todo o século XVIII sua população importava os produtos alimentares de Portugal ou de outras capitanias.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2195,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História/Antropologia - O conceito de \'tribo\' na África colonial',
+    enunciado: `Os viajantes, missionários, administradores coloniais e etnógrafos europeus, no passado, tenderam a fundir múltiplas identidades em um único conceito de tribo. O uso da palavra tribo para descrever as sociedades africanas surgiu de um desejo de enaltecer o Estado-nação, ao mesmo tempo em que sugeria a inferioridade inerente de outros. Em resumo, conotava políticas primitivas que eram menos desenvolvidas do que as políticas dos Estados-nação.
+(Adaptado de John Parker e Richard Rathbone, "A ideia de África", em História da África. Lisboa: Quimera, 2016, p. 56-58.)
+
+Baseado no texto acima e em seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A formação e a difusão do conceito de tribo no pensamento europeu acompanharam os avanços do colonialismo na África no século XIX, legitimando o domínio de seus povos por agentes oriundos de nações que se consideravam civilizadas e superiores.` },
+      { letra: 'B', texto: `O conceito de tribo ganhou força no pensamento ocidental, porque na África não havia formações políticas que cobriam grandes extensões territoriais como na Europa. Ou seja, os europeus não encontraram estruturas políticas acima das unidades tribais.` },
+      { letra: 'C', texto: `As sociedades africanas eram organizadas a partir de pequenas tribos lideradas por chefes guerreiros, o que gerava fragmentação política e guerras, inviabilizando nesse continente a formação de unidades políticas complexas nos moldes europeus.` },
+      { letra: 'D', texto: `Em razão das tradições milenares e do respeito aos ancestrais, as tribos eram unidades sociais e políticas estáticas assentadas em uma identidade homogênea. Os europeus comumente desrespeitavam todas essas características na colonização.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2198,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Crise econômica e Nova República (anos 1980)',
+    enunciado: `A crise levaria o último governo da ditadura, chefiado pelo general João Figueiredo (1979-85), a tomar medidas drásticas. O objetivo inicial era deter a depreciação da moeda nacional, incentivar as exportações e fazer frente ao aumento do deficit em conta corrente. Assim, a moeda foi desvalorizada em 30% no final de 1979. A medida acentuou a desaceleração econômica, o descontrole inflacionário e o desarranjo nas contas públicas. Em 1980, a inflação batia a simbólica marca de 100% ao ano e em 1981 o país entrava em uma recessão.
+(Adaptado de Gilberto Marangoni, Anos 1980, década perdida ou ganha? Revista Desafios do Desenvolvimento, São Paulo, Ano 9, Edição 72, 2012.)
+
+A partir do texto acima e de seus conhecimentos sobre a Nova República no Brasil, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A concentração de renda gerada pelo milagre econômico, as bolhas especulativas no mercado financeiro brasileiro, as flutuações no preço do petróleo e a alta internacional dos juros ao longo da década de 1970 foram elementos decisivos para a superação da crise econômica dos anos de 1980.` },
+      { letra: 'B', texto: `No Brasil dos anos de 1980, a desaceleração econômica, o descontrole inflacionário e o desarranjo nas contas públicas foram acompanhados pelo silenciamento dos movimentos pelas Diretas Já e dos direitos civis, sendo essa década conhecida como a "década perdida".` },
+      { letra: 'C', texto: `A crise econômica que se instalou no Brasil a partir de meados dos anos de 1970 gerou pressão sobre o governo militar do General Figueiredo, que, em resposta, aprovou a Lei da Anistia e a Lei Orgânica dos Partidos, incentivou o movimento grevista e garantiu a realização de eleições de forma lenta, gradual e segura.` },
+      { letra: 'D', texto: `A chamada década perdida no Brasil foi marcada por grave crise econômica, pela transição para o regime democrático, pela gradual normalização das instituições políticas próprias da democracia, pelo fortalecimento dos movimentos sociais e civis e pela efervescência cultural.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2199,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia/História da Ciência - Kepler e a Revolução Científica',
+    enunciado: `Antes de Copérnico, Kepler e Galileu, os cosmólogos elaboravam sistemas que representavam os corpos celestes por meio de esferas encaixadas umas nas outras, propostas e desenvolvidas por Eudoxo e Aristóteles, de modo a distinguir os mundos celeste e terrestre. É nesse contexto, caracterizado pela tese de que o cosmo é composto de dois mundos distintos (céu e Terra), e pelo axioma platônico, que deve ser entendido o conteúdo da carta de Kepler (1604). Ele apresenta uma etapa do processo de rompimento com essa distinção e com o axioma platônico. Na carta, Kepler apresenta os procedimentos para obter as duas primeiras leis dos movimentos planetários. A importância disso é tão grande que a segunda lei aparece antes da primeira, e a lei das áreas só se torna operante numa órbita elíptica, não podendo ser aplicada às órbitas circulares sem produzir discrepâncias com relação aos dados observacionais de Tycho Brahe.
+(Adaptado de Claudemir Roque Tossato, Os primórdios da primeira lei dos movimentos planetários na carta de 14 de dezembro de 1604 de Kepler a Mästlin. Scientiae Studia, São Paulo, v. 1, n. 2, p. 199-201, jun. 2003.)
+
+Considerando o contexto histórico descrito e as leis físicas apresentadas por Kepler, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Copérnico, Kepler e Galileu fazem parte da chamada Revolução Científica que rompe com leituras especulativas do Universo, baseadas em premissas aristotélicas e tomistas, e propõe análises empiristas do mundo natural. O conceito de órbitas circulares para o movimento dos planetas em torno do Sol, em que a distância entre o planeta e o Sol permanece constante durante o movimento, foi abandonado por Kepler.` },
+      { letra: 'B', texto: `A Revolução Científica da época Moderna propõe a ruptura com o ideal divino, sendo, por isso, combatida pela Igreja Católica, que defendia a orquestração divina sobre o mundo humano e natural. O conceito de órbitas circulares para o movimento dos planetas em torno do Sol, em que a distância entre o planeta e o Sol é variável durante o movimento, foi abandonado por Kepler.` },
+      { letra: 'C', texto: `Copérnico, Kepler e Galileu foram perseguidos pela Igreja Católica do período Moderno, por representarem o questionamento dos ideais medievais sobre a organização do céu e da Terra e sobre a onipresença divina. O conceito de órbitas circulares para o movimento dos planetas em torno do Sol, para as quais a distância entre o planeta e o Sol é variável durante o movimento, foi abandonado por Kepler.` },
+      { letra: 'D', texto: `A Revolução Científica da época Moderna, incentivada pela Igreja Católica, propõe a manutenção do antropocentrismo medieval, associado aos conhecimentos empíricos para a leitura e representação do mundo natural. O conceito de órbitas circulares para o movimento dos planetas em torno do Sol, para as quais a distância entre o planeta e o Sol permanece constante durante o movimento, foi abandonado por Kepler.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2201,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática/Inglês - Números primos de Mersenne (interdisciplinar)',
+    enunciado: `Largest prime number discovered: with more than 23m digits
+Known simply as M77232917, the figure is arrived at by calculating two to the power of 77,232,917 and subtracting one, leaving a gargantuan string of 23,249,425 digits. The result is nearly one million digits longer than the previous record holder discovered in January 2016. The number belongs to a rare group of so-called Mersenne prime numbers, named after the 17th century French monk Marin Mersenne. Like any prime number, a Mersenne prime is divisible only by itself and one, but is derived by multiplying twos together over and over before taking away one. The previous record-holding number was the 49th Mersenne prime ever found, making the new one the 50th.
+(Adaptado de Ian Sample, "Largest prime number discovered: with more than 23m digits". The Guardian, 04/01/2018.)
+
+Considerando as informações contidas no excerto anterior, qual dos números a seguir é um primo de Mersenne?`,
+    opcoes: [
+      { letra: 'A', texto: `23.` },
+      { letra: 'B', texto: `29.` },
+      { letra: 'C', texto: `31.` },
+      { letra: 'D', texto: `37.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2202,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Globalização e imigração (post de rede social)',
+    enunciado: `Immigration...
+Your Car is German. Your Vodka is Russian. Your Pizza is Italian. Your Democracy is Greek. Your Coffee is Brazilian. Your Movies are American. Your Shirt is Indian. Your Oil is Saudi Arabian. Your Electronics are Chinese. Your Numbers Arabic, your Letters Latin. And YOU complain that YOUR Neighbor is an Immigrant?
+(Adaptado de https://br.pinterest.com. Acessado em 10/06/2018.)
+
+O post anterior aponta`,
+    opcoes: [
+      { letra: 'A', texto: `as vantagens da globalização para o consumidor e os problemas causados pela imigração.` },
+      { letra: 'B', texto: `o impacto negativo dos processos migratórios no modo como as culturas vêm sendo globalizadas.` },
+      { letra: 'C', texto: `os efeitos da globalização no nosso cotidiano e o preconceito contra imigrantes.` },
+      { letra: 'D', texto: `o consumo excessivo de produtos estrangeiros no mundo capitalista contemporâneo.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2204,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Chimamanda Adichie: \'We should all be feminists\'',
+    enunciado: `We raise girls to cater to the fragile egos of men. We teach girls do shrink themselves, to make themselves smaller. We tell girls 'You can have ambition, but not too much'. 'You should aim to be successful, but not too successful, otherwise you will threaten the man'. (...) We teach girls shame – 'Close your legs, cover yourself!'. We make them feel as though by being born female, they're already guilty of something. And so, girls grow up to be women who cannot see they have desire. They grow up to be women who silence themselves. They grow up to be women who cannot say what they truly think. And they grow up – and this is the worst thing we do to girls – to be women who turn pretense into an art form.
+(Adaptado da palestra "We should all be feminists", 15/07/2009. Disponível em https://www.youtube.com/watch?v=hg3umXU_qWc&t=797s. Acessado em 14/05/2018.)
+
+O texto anterior reproduz trechos de uma palestra proferida pela escritora nigeriana Chimamanda Adichie em 2009. Segundo a autora, o fato de serem criadas para agradar aos homens faz com que as mulheres`,
+    opcoes: [
+      { letra: 'A', texto: `valorizem sua sexualidade ao longo de suas vidas.` },
+      { letra: 'B', texto: `cresçam vendo a dissimulação como algo normal.` },
+      { letra: 'C', texto: `sejam ameaçadas, caso se tornem bem-sucedidas.` },
+      { letra: 'D', texto: `tenham suas vozes silenciadas pelos homens.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2206,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Elena Ferrante: identidade nacional italiana',
+    enunciado: `'Yes, I'm Italian - but I'm not loud, I don't gesticulate and I'm not good with pizza'
+Elena Ferrante
+I love my country, but I have no patriotic spirit and no national pride. What's more, I digest pizza poorly, I eat very little spaghetti, I don't speak in a loud voice, I don't gesticulate, I hate all mafias, I don't exclaim "Mamma mia!" National characteristics are simplifications that should be contested. Being Italian, for me, begins and ends with the fact that I speak and write in the Italian language. Put that way it doesn't seem like much, but really it's a lot. A language is a compendium of the history, geography, material and spiritual life, the vices and virtues, not only of those who speak it, but also of those who have spoken it through the centuries. When I say that I'm Italian because I write in Italian, I mean that I'm fully Italian in the only way that I'm willing to attribute to myself a nationality. I don't like the other ways, especially when they become nationalism, chauvinism, and imperialism.
+(Adaptado de Elena Ferrante, "Yes, I'm Italian – but I'm not loud, I don't gesticulate and I'm not good with pizza', The Guardian, 24/02/2018.)
+
+Transcrevem-se, a seguir, versos de canções brasileiras e de um poema de Vinícius de Moraes. Assinale a alternativa que melhor exemplifica as afirmações de Elena Ferrante.`,
+    opcoes: [
+      { letra: 'A', texto: `"Eu me sinto um estrangeiro." (Engenheiros do Hawaii, "A revolta dos dândis".)` },
+      { letra: 'B', texto: `"Pátria Amada, é pra você esta canção/Desesperada, canção de desilusão." (Inocentes, "Pátria amada".)` },
+      { letra: 'C', texto: `"Minha pátria é minha língua." (Caetano Veloso, "Língua".)` },
+      { letra: 'D', texto: `"Se me perguntarem o que é a minha pátria, direi:/ Não sei. De fato, não sei (...)." (Vinícius de Moraes, "Pátria minha".)` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2207,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Poema: \'Love is not all\' (Edna St. Vincent Millay)',
+    enunciado: `Love is not all
+By Edna St. Vincent Millay
+Love is not all: It is not meat nor drink
+Nor slumber nor a roof against the rain;
+Nor yet a floating spar to men that sink
+And rise and sink and rise and sink again;
+Love cannot fill the thickened lung with breath,
+Nor clean the blood, nor set the fractured bone;
+Yet many a man is making friends with death
+Even as I speak, for lack of love alone.
+It well may be that in a difficult hour,
+Pinned down by need and moaning for release,
+Or nagged by want past resolution's power,
+I might be driven to sell your love for peace,
+Or trade the memory of this night for food.
+It may well be. I do not think I would.
+(Disponível em https://www.poemhunter.com/. Acessado em 28/05/2018.)
+
+De acordo com o poema,`,
+    opcoes: [
+      { letra: 'A', texto: `por falta de amor, somos derrotados pelas dificuldades da vida.` },
+      { letra: 'B', texto: `há quem busque a companhia da morte por falta de amor.` },
+      { letra: 'C', texto: `a rotina diária a que somos submetidos é capaz de pôr fim ao amor.` },
+      { letra: 'D', texto: `é melhor trocar as incertezas do amor por paz de espírito.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2208,
+    ano: 2019,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Prognóstico genético: riscos do DNA report card',
+    enunciado: `Genetic Fortune-Telling
+One day, babies will get DNA report cards at birth. These reports will offer predictions about their chances of suffering a heart attack or cancer, of getting hooked on tobacco, and of being smarter than average.
+Though the new DNA tests offer probabilities, not diagnoses, they could greatly benefit medicine. For example, if women at high risk for breast cancer got more mammograms and those at low risk got fewer, those exams might catch more real cancers and set off fewer false alarms. The trouble is, the predictions are far from perfect. What if someone with a low risk score for cancer puts off being screened, and then develops cancer anyway?
+Polygenic scores are also controversial because they can predict any trait, not only diseases. For instance, they can now forecast about 10 percent of a person's performance on IQ tests. But how will parents and educators use that information?
+(Adaptado de Derek Brahney, Genetic Fortune-Telling. MIT Technology Review, Março/Abril 2018)
+
+De acordo com o texto, um dos riscos do prognóstico genético dos indivíduos desde o nascimento seria o de`,
+    opcoes: [
+      { letra: 'A', texto: `empresas usarem as informações para não contratar pessoas que teriam predisposição a certas doenças ou vícios.` },
+      { letra: 'B', texto: `algumas mulheres descuidarem da prevenção de problemas de saúde para os quais pareciam não estar predispostas.` },
+      { letra: 'C', texto: `governos usarem as informações genéticas para negar a certos cidadãos o acesso a serviços de saúde pública.` },
+      { letra: 'D', texto: `pais e educadores passarem a desconsiderar dados sobre o coeficiente de inteligência de seus filhos ou alunos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
