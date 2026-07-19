@@ -34728,6 +34728,1372 @@ Ao longo do discurso, Sojourner Truth repete a mesma pergunta com a finalidade d
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2016 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 1850,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Probabilidade: lançamento de moedas',
+    enunciado: `Uma moeda balanceada é lançada quatro vezes, obtendo-se cara exatamente três vezes. A probabilidade de que as caras tenham saído consecutivamente é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1/4.` },
+      { letra: 'B', texto: `3/8.` },
+      { letra: 'C', texto: `1/2.` },
+      { letra: 'D', texto: `3/4.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1851,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Matrizes: elementos internos',
+    enunciado: `Em uma matriz, chamam-se elementos internos aqueles que não pertencem à primeira nem à última linha ou coluna. O número de elementos internos em uma matriz com 5 linhas e 6 colunas é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `12.` },
+      { letra: 'B', texto: `15.` },
+      { letra: 'C', texto: `16.` },
+      { letra: 'D', texto: `20.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1853,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Função afim',
+    enunciado: `Considere a função afim f(x) = ax + b definida para todo número real x, onde a e b são números reais. Sabendo que f(4) = 2, podemos afirmar que f(f(3) + f(5)) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `5.` },
+      { letra: 'B', texto: `4.` },
+      { letra: 'C', texto: `3.` },
+      { letra: 'D', texto: `2.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1854,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Equação logarítmica',
+    enunciado: `A solução da equação na variável real x, log_x(x + 6) = 2 é um número`,
+    opcoes: [
+      { letra: 'A', texto: `primo.` },
+      { letra: 'B', texto: `par.` },
+      { letra: 'C', texto: `negativo.` },
+      { letra: 'D', texto: `irracional.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1855,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Progressão geométrica',
+    enunciado: `Seja (a, b, c) uma progressão geométrica de números reais com a ≠ 0. Definindo s = a + b + c, o menor valor possível para s/a é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1/2.` },
+      { letra: 'B', texto: `2/3.` },
+      { letra: 'C', texto: `3/4.` },
+      { letra: 'D', texto: `4/5.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1856,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Sistema linear com quatro variáveis',
+    enunciado: `Considere o sistema linear nas variáveis reais x, y, z e w:
+{ x - y = 1
+{ y + z = 2
+{ w - z = 3
+Logo, a soma x + y + z + w é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `-2.` },
+      { letra: 'B', texto: `0.` },
+      { letra: 'C', texto: `6.` },
+      { letra: 'D', texto: `8.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1857,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Matriz e invertibilidade',
+    enunciado: `Considere a matriz quadrada de ordem 3, A = [[cos x, 0, -sen x], [0, 1, 0], [sen x, 0, cos x]], onde x é um número real. Podemos afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `A não é invertível para nenhum valor de x.` },
+      { letra: 'B', texto: `A é invertível para um único valor de x.` },
+      { letra: 'C', texto: `A é invertível para exatamente dois valores de x.` },
+      { letra: 'D', texto: `A é invertível para todos os valores de x.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1858,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Círculo e eixos coordenados',
+    enunciado: `Considere o círculo de equação cartesiana x² + y² = ax + by, onde a e b são números reais não nulos. O número de pontos em que esse círculo intercepta os eixos coordenados é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `2.` },
+      { letra: 'C', texto: `3.` },
+      { letra: 'D', texto: `4.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1860,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Cilindro inscrito em esfera',
+    enunciado: `Um cilindro circular reto, cuja altura é igual ao diâmetro da base, está inscrito numa esfera. A razão entre os volumes da esfera e do cilindro é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `4√2/3.` },
+      { letra: 'B', texto: `4/3.` },
+      { letra: 'C', texto: `3√2/4.` },
+      { letra: 'D', texto: `√2.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1861,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Polinômio cúbico e raízes',
+    enunciado: `Considere o polinômio cúbico p(x) = x³ + x² - ax - 3, onde a é um número real. Sabendo que r e -r são raízes reais de p(x), podemos afirmar que p(1) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `3.` },
+      { letra: 'B', texto: `1.` },
+      { letra: 'C', texto: `-2.` },
+      { letra: 'D', texto: `-4.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1862,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Matemática',
+    assunto: 'Matemática - Números complexos',
+    enunciado: `Considere o número complexo z = (1 + ai)/(a - i), onde a é um número real e i é a unidade imaginária, isto é, i² = -1. O valor de z^2016 é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `a^2016.` },
+      { letra: 'B', texto: `1.` },
+      { letra: 'C', texto: `1 + 2016i.` },
+      { letra: 'D', texto: `i.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1864,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Maquiavel: O Príncipe',
+    enunciado: `Quanto seja louvável a um príncipe manter a fé, aparentar virtudes e viver com integridade, não com astúcia, todos o compreendem; contudo, observa-se, pela experiência, em nossos tempos, que houve príncipes que fizeram grandes coisas, mas em pouca conta tiveram a palavra dada, e souberam, pela astúcia, transtornar a cabeça dos homens, superando, enfim, os que foram leais (...). Um príncipe prudente não pode nem deve guardar a palavra dada quando isso se lhe torne prejudicial e quando as causas que o determinaram cessem de existir.
+(Nicolau Maquiavel, O Príncipe. São Paulo: Nova Cultural, 1997, p. 73-85.)
+
+A partir desse excerto da obra, publicada em 1513, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O jogo das aparências e a lógica da força são algumas das principais artimanhas da política moderna explicitadas por Maquiavel.` },
+      { letra: 'B', texto: `A prudência, para ser vista como uma virtude, não depende dos resultados, mas de estar de acordo com os princípios da fé.` },
+      { letra: 'C', texto: `Os princípios e não os resultados é que definem o julgamento que as pessoas fazem do governante, por isso é louvável a integridade do príncipe.` },
+      { letra: 'D', texto: `A questão da manutenção do poder é o principal desafio ao príncipe e, por isso, ele não precisa cumprir a palavra dada, desde que autorizado pela Igreja.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1865,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Ética no pensamento contemporâneo',
+    enunciado: `Por que a ética voltou a ser um dos temas mais trabalhados do pensamento filosófico contemporâneo? Nos anos 1960 a política ocupava esse lugar e muitos cometeram o exagero de afirmar que tudo era político.
+(José Arthur Gianotti, "Moralidade Pública e Moralidade Privada", em Adauto Novaes, Ética. São Paulo: Companhia das Letras, 1992, p. 239.)
+
+A partir desse fragmento sobre a ética e o pensamento filosófico, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O tema foi relevante na obra de Aristóteles e apenas recentemente voltou a ocupar um espaço central na produção filosófica.` },
+      { letra: 'B', texto: `Os impasses morais e éticos das sociedades contemporâneas reposicionaram o tema da ética como um dos campos mais relevantes para a Filosofia.` },
+      { letra: 'C', texto: `O pensamento filosófico abandonou sua postura política após o desencanto com os sistemas ideológicos que eram vigentes nos anos 1960.` },
+      { letra: 'D', texto: `Na atualidade, a ética é uma pauta conservadora, pois nas sociedades atuais, não há demandas éticas rígidas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1866,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Cristianismo medieval: sermão de Cesário de Arles',
+    enunciado: `Reproduz-se, abaixo, trecho de um sermão do bispo Cesário de Arles (470-542), dirigido a uma paróquia rural.
+"Vede, irmãos, como quem recorre à Igreja em sua doença obtém a saúde do corpo e a remissão dos pecados. Se é possível, pois, encontrar este duplo benefício na Igreja, por que há infelizes que se empenham em causar mal a si mesmos, procurando os mais variados sortilégios: recorrendo a encantadores, a feitiçarias em fontes e árvores, amuletos, charlatães, videntes e adivinhos?"
+(Fonte: São Césario de Arles, Sermão 13.)
+
+A partir desse sermão, escrito no sul da atual França, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A Igreja Católica assumia funções espirituais e deixava à nobreza o cuidado da saúde dos camponeses, através de ordens religiosas e militares.` },
+      { letra: 'B', texto: `O cristianismo tinha penetrado em todas as categorias sociais e era interpretado da mesma forma através da autoridade dos bispos.` },
+      { letra: 'C', texto: `Práticas consideradas menos ortodoxas por Cesário de Arles ainda encontravam espaço em setores da sociedade e a elite da Igreja tentava se afirmar como o único acesso ao sagrado.` },
+      { letra: 'D', texto: `O avanço do materialismo estava afastando da Igreja os camponeses, que, com isto, deixavam de pagar os dízimos eclesiásticos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1867,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Trabalho escravo nas cidades italianas renascentistas',
+    enunciado: `"Uma categoria inferior de servidores que coexiste nas grandes casas com os domésticos livres são os escravos. Um recenseamento enumera em Gênova, em 1458, mais de 2 mil. As mulheres estão em uma proporção esmagadora (97,5%) e 40% não têm ainda 23 anos. São totalmente desamparadas; todos na casa a repreendem, todos batem nela (patrão, mãe, filhos crescidos) e os testemunhos de processos em que elas comparecem mostram-nas vivendo, frequentemente no temor de pancadas. Em Gênova e Veneza, a escrava-criada é essencial no prestígio das nobres e ricas matronas."
+(Adaptado de Charles De la Roncière, "A vida privada dos notáveis toscanos no limiar da Renascença".)
+
+Sobre o trabalho nas cidades italianas do período em questão, podemos afirmar corretamente que:`,
+    opcoes: [
+      { letra: 'A', texto: `O declínio da escravidão está ligado ao novo conceito antropocêntrico do ser humano e a uma nova dignidade da condição feminina no final da Idade Média.` },
+      { letra: 'B', texto: `O trabalho servil era predominantemente feminino e concorria com o trabalho escravo. A escravidão diminuiu com essa concorrência, desdobrando-se no trabalho livre.` },
+      { letra: 'C', texto: `Conviviam inúmeras formas de trabalho livre, semilivre e escravo no universo europeu e a sobreposição não era, em si, contraditória.` },
+      { letra: 'D', texto: `O uso do castigo corporal igualava as escravas a outros trabalhadores e foi o motivo das rebeliões camponesas do período (jacqueries) e agitações urbanas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1868,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Pacto colonial: Portugal e Brasil',
+    enunciado: `Os estudos históricos por muito tempo explicaram as relações entre Portugal e Brasil por meio da noção de pacto colonial ou exclusivo comercial. Sobre esse conceito, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `Trata-se de uma característica central do sistema colonial moderno e um elemento constitutivo das práticas mercantilistas do Antigo Regime, que considera fundamental a dinâmica interna da economia colonial.` },
+      { letra: 'B', texto: `Definia-se por um sistema baseado em dois polos: um centro de decisão, a metrópole, e outro subordinado, a colônia. Esta submetia-se à primeira através de uma série de mecanismos político-institucionais.` },
+      { letra: 'C', texto: `Em mais de uma ocasião, os colonos reclamaram e foram insubordinados diante do pacto colonial, ao exigirem sua presença e atuação nas Cortes dos reis ou ao pedirem a presença do Marquês de Pombal na colônia.` },
+      { letra: 'D', texto: `A noção de pacto colonial é um projeto embrionário de Estado que acomodava as tensões surgidas entre os interesses metropolitanos e coloniais, ao privilegiar as experiências do "viver em colônia".` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1869,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Independências na América hispânica',
+    enunciado: `As revoluções de independência na América hispânica foram, ao mesmo tempo, um conflito militar, um processo de mudança política e uma rebelião popular.
+(Rafael Rojas, Las repúblicas de aire. Buenos Aires: Taurus, 2010, p. 11.)
+
+São características dos processos de independência nas ex-colônias espanholas na América:`,
+    opcoes: [
+      { letra: 'A', texto: `o descontentamento com o domínio colonial e a agregação de grupos que expressavam a heterogeneidade étnica, regional, econômica e cultural do continente.` },
+      { letra: 'B', texto: `o caudilhismo, sob a liderança política criolla, e o discurso revolucionário de uma nova ordem política, que assegurou profundas transformações econômicas na América.` },
+      { letra: 'C', texto: `o uso dos princípios liberais de organização política republicana e a criação imediata de exércitos nacionais que lutaram contra as forças espanholas.` },
+      { letra: 'D', texto: `a participação de indígenas e camponeses, determinante para a consolidação do processo de independência em regiões como o México, e sua ausência nas ações comandadas por Bolívar.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1870,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Belle Époque no Rio de Janeiro',
+    enunciado: `"O Rio civiliza-se!" eis a exclamação que irrompe de todos os peitos cariocas. Temos a Avenida Central, a Avenida Beira Mar (os nossos Campos Elíseos), estátuas em toda a parte, cafés e confeitarias (...), um assassinato por dia, um escândalo por semana, cartomantes, médiuns, automóveis, autobus, autores dramáticos, grandmonde, demi-monde, enfim todos os apetrechos das grandes capitais.
+("O Chat Noir", em Fon-Fon! N° 41, 1907.)
+
+A partir do excerto, que se refere ao período da Belle Époque no Brasil, no início do século XX, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O Rio de Janeiro procurava apagar aspectos da época do Império e impulsionar a cultura francesa, renegada por D. Pedro II.` },
+      { letra: 'B', texto: `A cidade expressava as contradições de um processo de transformações urbanas, sociais e políticas nas primeiras décadas da República.` },
+      { letra: 'C', texto: `Os costumes franceses eram elements incorporados pela sociedade carioca como sinônimo da modernização republicana obtida pelo tenentismo.` },
+      { letra: 'D', texto: `A modernização representou um processo de exclusão social e cultural, patrocinado pelo governo francês, que financiava obras públicas e impunha os produtos franceses à população brasileira.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1871,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Populismo na América Latina',
+    enunciado: `Muitos intelectuais, boa parte da imprensa e dos meios de comunicação, e a sociedade em geral usam o termo populismo para caracterizar uma prática política contemporânea que relaciona as massas e o governante. Sobre o populismo, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A figura do líder é fundamental no populismo, a exemplo de Getúlio Vargas e Jânio Quadros, sendo muito forte no Brasil entre 1930 e 1964. Tal prática requer carisma do líder, a fim de diminuir a participação das massas e impedir o nacional-desenvolvimentismo.` },
+      { letra: 'B', texto: `As massas, em suas expectativas, alinham-se às camadas médias, que são ressentidas por não se tornarem classes dominantes. Surgem, nesse processo, líderes vindos das camadas médias que manipulam as massas, destituídas de vontade política.` },
+      { letra: 'C', texto: `Ocorre uma associação entre as massas urbanas e o dirigente político carismático que exerce o papel de liderança. É um fenômeno de participação política das classes populares urbanas pouco atingidas pelo desenvolvimento industrial e pelas migrações.` },
+      { letra: 'D', texto: `O termo é muito usado para nomear um fenômeno político comum na América Latina entre as décadas de 1930 e 1960, sendo associado aos processos de industrialização, urbanização e à emergência de líderes carismáticos.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1872,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Messianismo político pós-Guerra Fria',
+    enunciado: `Desde a queda do império comunista na Europa, nos anos 1989-1991, assiste-se a uma nova forma de messianismo político que consiste em impor o regime democrático e os direitos humanos pela força.
+(Adaptado de Tzvetan Todorov, Os inimigos íntimos da democracia. São Paulo: Companhia das Letras, 2012, p. 55.)
+
+O quadro descrito pelo texto pode ser analisado`,
+    opcoes: [
+      { letra: 'A', texto: `como herança das lutas anticoloniais exemplificada na organização em torno do Estado multiétnico, como ocorreu na África do Sul.` },
+      { letra: 'B', texto: `como parte da nova ordem mundial sob a liderança dos EUA e seu poder bélico em regiões como a Síria e o Afeganistão.` },
+      { letra: 'C', texto: `como o estabelecimento de um princípio que desestabiliza as lógicas internas de organização, como ocorreu no Iraque e na ex-Iugoslávia.` },
+      { letra: 'D', texto: `como herança da Guerra Fria e como utilização da lógica militar que inviabiliza a adoção da democracia em regiões como a Ucrânia.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1875,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Independência de Moçambique',
+    enunciado: `País da África Austral que se tornou independente em 1975 após século de colonialismo europeu. No período posterior à independência, a terra passou a ser propriedade do Estado, com predomínio de uso pela população camponesa e com forte participação das mulheres na produção agrícola familiar. De 1976-1992 vivenciou intensos conflitos produzidos pela guerra civil envolvendo dois dos principais grupos armados do país.
+O texto acima faz referência ao seguinte país:`,
+    opcoes: [
+      { letra: 'A', texto: `Congo.` },
+      { letra: 'B', texto: `África do Sul.` },
+      { letra: 'C', texto: `Moçambique.` },
+      { letra: 'D', texto: `Nigéria.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1876,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Metropolização contemporânea',
+    enunciado: `O processo contemporâneo de metropolização do espaço e a grande metamorfose que vem ocorrendo em algumas metrópoles têm significado mudanças territoriais expressivas. Há intensificação e multiplicidade de fluxos de pessoas, mercadorias e informações, bem como crescimento do número de cidades conurbadas, onde não se distingue muito bem, na continuidade da imensa área construída, o limite municipal de cada uma delas. Tanto em São Paulo, por exemplo, como na Cidade do México, em Buenos Aires ou em Santiago, vamos encontrar a manifestação desse momento mais avançado da urbanização.
+(Adaptado de Sandra Lencioni, A metamorfose de São Paulo...)
+
+Tendo em vista a metrópole contemporânea, é correto afirmar que se trata de uma`,
+    opcoes: [
+      { letra: 'A', texto: `única aglomeração, mas dispersa e fragmentada, onde fluxos imateriais regem um conjunto diferenciado de lugares.` },
+      { letra: 'B', texto: `única aglomeração, pois é compacta e coesa, onde fluxos imateriais regem um conjunto diferenciado de lugares.` },
+      { letra: 'C', texto: `metrópole compacta e coesa, organizada exclusivamente por uma estrutura hierárquica de fluxos imateriais.` },
+      { letra: 'D', texto: `metrópole dispersa e fragmentada, organizada exclusivamente por uma estrutura hierárquica de fluxos materiais.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1878,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - População indígena brasileira',
+    enunciado: `Considerando as atuais características demográficas da população indígena brasileira, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Ainda existem etnias indígenas isoladas no interior da Amazônia, vivendo em grandes aldeias, com predominância de idosos, e desenvolvendo roças para o autoconsumo.` },
+      { letra: 'B', texto: `A atual população indígena brasileira supera, em contingente e em etnias, os habitantes nativos encontrados no início da colonização no século XVI.` },
+      { letra: 'C', texto: `Enquanto a população indígena do centro-sul obteve crescimento demográfico, a população habitante da Amazônica apresentou forte redução de contingente.` },
+      { letra: 'D', texto: `Verifica-se a tendência de reversão da curva demográfica, tendo em vista o crescimento atual da população indígena no país, sendo que a maior parcela desse contingente vive em áreas rurais.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1879,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Direito - Constituição Federal: competências da União',
+    enunciado: `A Constituição Federal promulgada em 1988 define que a República Federativa Brasileira compreende a União, os Estados Federados, o Distrito Federal e os municípios, todos autônomos.
+Das alternativas abaixo, aponte aquela que apresenta corretamente atribuições que são de competência exclusiva da União.`,
+    opcoes: [
+      { letra: 'A', texto: `Promover o adequado ordenamento territorial, mediante planejamento e controle do uso, do parcelamento e da ocupação do solo urbano.` },
+      { letra: 'B', texto: `Explorar os serviços e instalações nucleares e exercer monopólio estatal sobre a pesquisa, a lavra e o enriquecimento de minérios nucleares.` },
+      { letra: 'C', texto: `Instituir as regiões metropolitanas, as aglomerações urbanas e as microrregiões administrativas constituídas por agrupamentos de municípios limítrofes.` },
+      { letra: 'D', texto: `Organizar e prestar, diretamente ou sob regime de concessão ou permissão, serviços públicos de interesse local, incluído o transporte coletivo.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1885,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Luiz Eduardo Soares: valorização da malandragem',
+    enunciado: `Em sua versão benigna, a valorização da malandragem corresponde ao elogio da criatividade adaptativa e da predominância da especificidade das circunstâncias e das relações pessoais sobre a frieza reducionista e generalizante da lei. Em sua versão maximalista e maligna, porém, a valorização da malandragem equivale à negação dos princípios elementares de justiça, como a igualdade perante a lei, e ao descrédito das instituições democráticas.
+(Adaptado de Luiz Eduardo Soares, Uma interpretação do Brasil para contextualizar a violência.)
+
+Considerando as posições expressas no texto em relação à valorização da malandragem, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O verbo "equivale" relaciona a valorização da malandragem à negação da justiça, da igualdade perante a lei e das instituições democráticas.` },
+      { letra: 'B', texto: `Entre os pares de termos "benigna/maligna" e "maximalista/reducionista" estabelece-se no texto uma relação semântica de frequência e equivalência.` },
+      { letra: 'C', texto: `O elogio da malandragem reside na valorização da criatividade adaptativa e da sensibilidade em contraposição à fria aplicação da lei.` },
+      { letra: 'D', texto: `O articulador discursivo "porém" introduz um argumento que se contrapõe à proposta de valorização da malandragem.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1886,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Texto de Nina Lemos e "Poema em Linha Reta"',
+    enunciado: `É possível fazer educação de qualidade sem escola
+É possível fazer educação embaixo de um pé de manga? Não só é, como já acontece em 20 cidades brasileiras e em Angola, Guiné-Bissau e Moçambique.
+Decepcionado com o processo de "ensinagem", o antropólogo Tião Rocha pediu demissão do cargo de professor da UFOP (Universidade Federal de Ouro Preto) e criou em 1984 o CPCD (Centro Popular de Cultura e Desenvolvimento).
+Curvelo, no Sertão mineiro, foi o laboratório da "escola" que abandonou mesa, cadeira, lousa e giz, fez das ruas a sala de aula e envolveu crianças e familiares na pedagogia da roda. "A roda é um lugar da ação e da reflexão, do ouvir e do aprender com o outro. Todos são educadores, porque estão preocupados com a aprendizagem. É uma construção coletiva", explica.
+O educador diz que a roda constrói consensos. "Porque todo processo eletivo é um processo de exclusão, e tudo que exclui não é educativo. Uma escola que seleciona não educa, porque excluiu alguns. A melhor pedagogia é aquela que leva todos os meninos a aprenderem. E todos podem aprender, só que cada um no seu ritmo, não podemos uniformizar."
+Nesses 30 anos, o educador foi engrossando seu dicionário de terminologias educacionais, todas calcadas no saber popular: surgiu a pedagogia do abraço, a pedagogia do brinquedo, a pedagogia do sabão e até oficinas de cafuné. Esta última foi provocada depois que um garoto perguntou: "Tião, como faço para conquistar uma moleca?" Foi a deixa para ele colocar questões de sexualidade na roda.
+Para resolver a falência da educação, Tião inventou uma UTI educacional, em que "mães cuidadoras" fazem "biscoito escrevido" e "folia do livro" (biblioteca em forma de festa) para ajudar na alfabetização. E ainda colocou em uso termos como "empodimento", após várias vezes ser questionado pelas comunidades: "Pode [fazer tal coisa], Tião?" Seguida da resposta certeira: "Pode, pode tudo".
+Aos 66 anos, Tião diz estar convicto de que a escola do futuro não existirá e que ela será substituída por espaços de aprendizagem com todas as ferramentas possíveis e necessárias para os estudantes aprenderem.
+"Educação se faz com bons educadores, e o modelo escolar arcaico aprisiona e há décadas dá sinais de falência. Não precisamos de sala, precisamos de gente. Não precisamos de prédio, precisamos de espaços de aprendizado. Não precisamos de livros, precisamos ter todos os instrumentos possíveis que levem o menino a aprender."
+Sem pressa, seguindo a Carta da Terra e citando Ariano Suassuna para dizer que "terceira idade é para fruta: verde, madura e podre", Tião diz se sentir "privilegiado" de viver o que já viveu e acreditar na utopia de não haver mais nenhuma criança analfabeta no Brasil. "Isso não é uma política de governo, nem de terceiro setor, é uma questão ética", pontua.
+(Qsocial, 09/12/2014.)
+
+Considerando os recursos linguísticos e discursivos presentes na configuração do texto ("Nunca conheci quem tivesse sido tão feliz como nas redes sociais..."), é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `"Nunca conheci quem tivesse sido tão feliz como nas redes sociais / Eu tenho inveja de mim no Instagram" é um enunciado que se espelha nos versos "Nunca conheci quem tivesse levado porrada / Todos os meus conhecidos têm sido campeões em tudo", do Poema em Linha Reta, de Fernando Pessoa, por meio do recurso ao paralelismo de estruturas sintáticas.` },
+      { letra: 'B', texto: `No texto de Nina Lemos, alguns recursos linguísticos e discursivos são mobilizados de modo a promover um tipo particular de interação entre o produtor do texto e seus leitores por meio de diálogos entre personagens, pontuação com funções estilisticamente diversas, um léxico de natureza coloquial e perguntas retóricas.` },
+      { letra: 'C', texto: `Baseado no Poema em Linha Reta de Fernando Pessoa, o texto de Nina Lemos apresenta argumentos para convencer seus leitores de que ela tem uma vida difícil em relação à de outras pessoas felizes que conhece pelo Instagram, e de que é possível mostrar a essas pessoas que a vida não é tão boa quanto parece.` },
+      { letra: 'D', texto: `O texto de Nina Lemos apresenta uma organização textual e sintática típica da esfera jornalística, que se caracteriza pelo uso de marcas de oralidade como o recurso a sequências de diálogos ("Quem estamos querendo enganar? A gente."), o uso de marcadores discursivos ("bem", "sério") e de enunciados inseridos ("quem nunca?").` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1888,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Expressões nominais no texto sobre Tião Rocha',
+    enunciado: `É possível fazer educação de qualidade sem escola
+É possível fazer educação embaixo de um pé de manga? Não só é, como já acontece em 20 cidades brasileiras e em Angola, Guiné-Bissau e Moçambique.
+Decepcionado com o processo de "ensinagem", o antropólogo Tião Rocha pediu demissão do cargo de professor da UFOP (Universidade Federal de Ouro Preto) e criou em 1984 o CPCD (Centro Popular de Cultura e Desenvolvimento).
+Curvelo, no Sertão mineiro, foi o laboratório da "escola" que abandonou mesa, cadeira, lousa e giz, fez das ruas a sala de aula e envolveu crianças e familiares na pedagogia da roda. "A roda é um lugar da ação e da reflexão, do ouvir e do aprender com o outro. Todos são educadores, porque estão preocupados com a aprendizagem. É uma construção coletiva", explica.
+O educador diz que a roda constrói consensos. "Porque todo processo eletivo é um processo de exclusão, e tudo que exclui não é educativo. Uma escola que seleciona não educa, porque excluiu alguns. A melhor pedagogia é aquela que leva todos os meninos a aprenderem. E todos podem aprender, só que cada um no seu ritmo, não podemos uniformizar."
+Nesses 30 anos, o educador foi engrossando seu dicionário de terminologias educacionais, todas calcadas no saber popular: surgiu a pedagogia do abraço, a pedagogia do brinquedo, a pedagogia do sabão e até oficinas de cafuné. Esta última foi provocada depois que um garoto perguntou: "Tião, como faço para conquistar uma moleca?" Foi a deixa para ele colocar questões de sexualidade na roda.
+Para resolver a falência da educação, Tião inventou uma UTI educacional, em que "mães cuidadoras" fazem "biscoito escrevido" e "folia do livro" (biblioteca em forma de festa) para ajudar na alfabetização. E ainda colocou em uso termos como "empodimento", após várias vezes ser questionado pelas comunidades: "Pode [fazer tal coisa], Tião?" Seguida da resposta certeira: "Pode, pode tudo".
+Aos 66 anos, Tião diz estar convicto de que a escola do futuro não existirá e que ela será substituída por espaços de aprendizagem com todas as ferramentas possíveis e necessárias para os estudantes aprenderem.
+"Educação se faz com bons educadores, e o modelo escolar arcaico aprisiona e há décadas dá sinais de falência. Não precisamos de sala, precisamos de gente. Não precisamos de prédio, precisamos de espaços de aprendizado. Não precisamos de livros, precisamos ter todos os instrumentos possíveis que levem o menino a aprender."
+Sem pressa, seguindo a Carta da Terra e citando Ariano Suassuna para dizer que "terceira idade é para fruta: verde, madura e podre", Tião diz se sentir "privilegiado" de viver o que já viveu e acreditar na utopia de não haver mais nenhuma criança analfabeta no Brasil. "Isso não é uma política de governo, nem de terceiro setor, é uma questão ética", pontua.
+(Qsocial, 09/12/2014.)
+
+A partir da identificação de várias expressões nominais ao longo do texto, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `As expressões "pedagogia do abraço", "pedagogia da roda", "pedagogia do sabão", "pedagogia do brinquedo", "oficinas de cafuné" são referências a terminologias educacionais de caráter técnico.` },
+      { letra: 'B', texto: `As expressões "biscoito escrevido", "processo de ensinagem" e "folia do livro" são neologismos criados por meio da manipulação de processos de formação de palavras.` },
+      { letra: 'C', texto: `A expressão "escola" está entre aspas porque se refere aos espaços de aprendizagem diferentes da escola tradicional de hoje e que não serão encontrados no futuro.` },
+      { letra: 'D', texto: `A expressão "processo eletivo", compreendida no texto como exclusão social, pressupõe a existência de um projeto educacional que tem por objetivo a uniformização da aprendizagem.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1889,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Neologismo "empodimento" e discurso direto',
+    enunciado: `Em relação ao trecho "E ainda colocou em uso termos como 'empodimento', após várias vezes ser questionado pelas comunidades: 'Pode [fazer tal coisa], Tião?' Seguida da resposta certeira: 'Pode, pode tudo'", é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `A expressão "Seguida da resposta certeira" indica a elipse de uma outra expressão.` },
+      { letra: 'B', texto: `A criação da palavra "empodimento" é resultado de um processo: sufixação.` },
+      { letra: 'C', texto: `A repetição do verbo no enunciado "Pode, pode tudo" exemplifica o estilo reiterativo do texto.` },
+      { letra: 'D', texto: `O discurso direto presente no trecho tem a função de dar voz às comunidades.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1890,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Fernando Pessoa: Mar Português',
+    enunciado: `Leia o poema "Mar Português", de Fernando Pessoa.
+
+Ó mar salgado, quanto do teu sal
+São lágrimas de Portugal!
+Quantos filhos em vão rezaram!
+Quantas noivas ficaram por casar
+Por te cruzarmos, quantas mães choraram,
+Para que fosses nosso, ó mar!
+Valeu a pena? Tudo vale a pena
+Se a alma não é pequena.
+Quem quer passar além do Bojador
+Tem que passar além da dor.
+Deus ao mar o perigo e o abismo deu,
+Mas nele é que espelhou o céu.
+(Disponível em http://www.jornaldepoesia.jor.br/fpesso03.html.)
+
+No poema, a apóstrofe, uma figura de linguagem, indica que o enunciador`,
+    opcoes: [
+      { letra: 'A', texto: `convoca o mar a refletir sobre a história das navegações portuguesas.` },
+      { letra: 'B', texto: `apresenta o mar como responsável pelo sofrimento do povo português.` },
+      { letra: 'C', texto: `revela ao mar sua crítica às ações portuguesas no período das navegações.` },
+      { letra: 'D', texto: `projeta no mar sua tristeza com as consequências das conquistas de Portugal.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1891,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - José Paulo Paes: Cem anos depois',
+    enunciado: `Cem anos depois
+Vamos passear na floresta
+Enquanto D. Pedro não vem.
+D. Pedro é um rei filósofo,
+Que não faz mal a ninguém.
+Vamos sair a cavalo,
+Pacíficos, desarmados:
+A ordem acima de tudo,
+Como convém a um soldado.
+Vamos fazer a República,
+Sem barulho, sem litígio,
+Sem nenhuma guilhotina,
+Sem qualquer barrete frígio.
+Vamos, com farda de gala,
+Proclamar os tempos novos,
+Mas cautelosos, furtivos,
+Para não acordar o povo.
+(José Paulo Paes, O melhor poeta da minha rua.)
+
+O tom irônico do poema em relação à história do Brasil põe em evidência`,
+    opcoes: [
+      { letra: 'A', texto: `o modo como a democracia surge no Brasil por interferência do Imperador.` },
+      { letra: 'B', texto: `a maneira despótica como os republicanos trataram os símbolos nacionais.` },
+      { letra: 'C', texto: `a postura inconsequente que sempre caracterizou os governantes do Brasil.` },
+      { letra: 'D', texto: `a forma astuciosa como ocorreram os movimentos políticos no Brasil.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1892,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Clarice Lispector: Amor',
+    enunciado: `No conto "Amor", de Clarice Lispector, a percepção da personagem Ana, em relação ao seu mundo, é alterada de forma significativa pelo seguinte acontecimento:`,
+    opcoes: [
+      { letra: 'A', texto: `os ovos quebrados no embrulho do jornal, que simbolizam a mudança psicológica da protagonista no relato ficcional.` },
+      { letra: 'B', texto: `o cego parado no ponto do bonde, que modifica a visão da protagonista em relação aos vínculos familiares.` },
+      { letra: 'C', texto: `o estouro do fogão da cozinha, que significa, no percurso narrativo, a ruptura psíquica da protagonista com a opressão da vida matrimonial.` },
+      { letra: 'D', texto: `a aparição súbita do gato no Jardim Botânico, que deflagra uma reviravolta afetiva de Ana com o seu amante.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1893,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura/Teatro - Lisbela e o prisioneiro',
+    enunciado: `Considere que uma das funções da comédia é corrigir os costumes ou criticar os valores de uma sociedade em um período histórico. O cômico em Lisbela e o prisioneiro é`,
+    opcoes: [
+      { letra: 'A', texto: `progressista, porque as ações dramáticas das personagens afrontam a ordem policial e familiar e revelam a inconsistência moral dessa ordem.` },
+      { letra: 'B', texto: `liberal, porque visa a restaurar a ordem hierárquica das personagens de classe social superior em um mundo marcado por corrupção moral e religiosa.` },
+      { letra: 'C', texto: `radical, porque Citonho e Lisbela planejam a fuga dos presos, rompendo com o pacto da autoridade policial e com a norma do casamento monogâmico.` },
+      { letra: 'D', texto: `revolucionário, porque Frederico Evandro encarna a figura do justiceiro que desmoraliza a autoridade corrupta e os falsos sentimentos.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1894,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Machado de Assis: Memórias póstumas de Brás Cubas',
+    enunciado: `(...) pediu-me desculpa da alegria, dizendo que era alegria de pobre que não via, desde muitos anos, uma nota de cinco mil réis.
+Pois está em suas mãos ver outras muitas, disse eu.
+Sim? acudiu ele, dando um bote pra mim.
+Trabalhando, concluí eu. Fez um gesto de desdém; calou-se alguns instantes, depois disse-me positivamente que não queria trabalhar.
+(Machado de Assis, Memórias póstumas de Brás Cubas. São Paulo: Ateliê Editorial, 2001, p.158.)
+
+O trecho citado diz respeito ao encontro entre Brás Cubas e Quincas Borba, no capítulo 49, e, mais precisamente, apanha o momento em que Brás dá uma esmola ao amigo. Considerando o conjunto do romance, é correto afirmar que essa passagem`,
+    opcoes: [
+      { letra: 'A', texto: `explicita a desigualdade das classes sociais na primeira metade do século XIX e propõe a categoria de trabalho como fator fundamental para a emancipação do pobre.` },
+      { letra: 'B', texto: `indica o ponto de vista da personagem Brás Cubas e propõe a meritocracia como dispositivo pedagógico e moral para a promoção do ser humano no século XIX.` },
+      { letra: 'C', texto: `elabora, por meio do narrador, o preconceito da classe social a que pertence Brás Cubas em relação à classe média do século XIX, na qual se insere Quincas Borba.` },
+      { letra: 'D', texto: `sugere as posições de classe social das personagens machadianas, mediante um narrador que valoriza o trabalho, embora ele mesmo, sendo rico, não trabalhe.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1895,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Portuguesa - Almeida Garrett: Viagens na minha terra',
+    enunciado: `(...) plantai batatas, ó geração de vapor e de pó de pedra, *macadamizai estradas, fazei caminhos de ferro, construí passarolas de Ícaro, para andar a qual mais depressa, estas horas contadas de uma vida toda material, maçuda e grossa como tendes feito esta que Deus nos deu tão diferente do que a que hoje vivemos. Andai, ganha-pães, andai: reduzi tudo a cifras, todas as considerações deste mundo a equações de interesse corporal, comprai, vendei, agiotai. No fim de tudo isto, o que lucrou a espécie humana? Que há mais umas poucas dúzias de homens ricos. E eu pergunto aos economistas políticos, aos moralistas, se já calcularam o número de indivíduos que é forçoso condenar à miséria, ao trabalho desproporcionado, à desmoralização, à infâmia, à ignorância crapulosa, à desgraça invencível, à penúria absoluta, para produzir um rico?
+*Macadamizar: pavimentar.
+(Almeida Garrett, Viagens na minha terra. São Paulo: Ateliê Editorial, 2012, p.77.)
+Formou Deus o homem, e o pôs num paraíso de delícias; tornou a formá-lo a sociedade, e o pôs num inferno de tolices.
+(Almeida Garrett, Viagens na minha terra. São Paulo: Ateliê Editorial, 2012, p.190.)
+
+Vários discursos organizam a estrutura narrativa do romance Viagens na minha terra, de Almeida Garrett. Isso permite afirmar que a visão de mundo dessa narrativa`,
+    opcoes: [
+      { letra: 'A', texto: `compartilha exclusivamente dos valores éticos dos ricos e é demagógica com a miséria social, marca inconfundível do romance de Garrett.` },
+      { letra: 'B', texto: `relativiza posições dogmáticas sobre a vida social, cultural e política, permitindo vários ângulos de observação.` },
+      { letra: 'C', texto: `denuncia as condições sociais injustas dos pobres da sociedade, o que indica o caráter panfletário do romance de Garrett.` },
+      { letra: 'D', texto: `divide o mundo entre ricos e pobres e não leva em consideração que uma vida justa depende da riqueza produzida na sociedade.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1896,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Monteiro Lobato: Negrinha',
+    enunciado: `Quanto ao conto Negrinha, de Monteiro Lobato, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O narrador adere à perspectiva de dona Inácia, fazendo com que o leitor enxergue a história guiado pela ótica dessa personagem e se torne cúmplice dos valores éticos apresentados no conto.` },
+      { letra: 'B', texto: `O modo como o narrador caracteriza o contexto histórico no conto permite concluir que Negrinha é escrava de dona Inácia e, portanto, está fadada a uma vida de humilhações.` },
+      { letra: 'C', texto: `A maneira como o narrador comenta as características atribuídas às personagens contrasta com as falas e as ações realizadas por elas, o que caracteriza um modo irônico de apresentação.` },
+      { letra: 'D', texto: `O narrador apresenta as falas e pensamentos das personagens de modo objetivo; assim, o leitor fica dispensado de elaborar um juízo crítico sobre as relações de poder entre as personagens.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1897,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Carlos Drummond de Andrade: Morro da Babilônia',
+    enunciado: `Morro da Babilônia
+À noite, do morro
+descem vozes que criam o terror
+(terror urbano, cinquenta por cento de cinema,
+e o resto que veio de Luanda ou se perdeu na língua Geral).
+Quando houve revolução, os soldados
+espalharam no morro,
+o quartel pegou fogo, eles não voltaram.
+Alguns, chumbados, morreram.
+O morro ficou mais encantado.
+Mas as vozes do morro
+não são propriamente lúgubres.
+Há mesmo um cavaquinho bem afinado
+que domina os ruídos da pedra e da folhagem
+e desce até nós, modesto e recreativo,
+como uma gentileza do morro.
+(Carlos Drummond de Andrade, Sentimento do mundo. São Paulo: Companhia das Letras, 2012, p.19.)
+
+No poema "Morro da Babilônia", de Carlos Drummond de Andrade,`,
+    opcoes: [
+      { letra: 'A', texto: `a menção à cidade do Rio de Janeiro é feita de modo indireto, metonimicamente, pela referência ao Morro da Babilônia.` },
+      { letra: 'B', texto: `o sentimento do mundo é representado pela percepção particular sobre a cidade do Rio de Janeiro, aludida pela metáfora do Morro da Babilônia.` },
+      { letra: 'C', texto: `o tratamento dado ao Morro da Babilônia assemelha-se ao que é dado a uma pessoa, o que caracteriza a figura de estilo denominada paronomásia.` },
+      { letra: 'D', texto: `a referência ao Morro da Babilônia produz, no percurso figurativo do poema, um oxímoro: a relação entre terror e gentileza no espaço urbano.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1898,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Africana - Mia Couto: Terra Sonâmbula',
+    enunciado: `Leia o seguinte trecho da obra Terra Sonâmbula, de Mia Couto, extraído do Sexto caderno de Kindzu, subintitulado O regresso a Matimati.
+Lembrei meu pai, sua palavra sempre azeda: agora, somos um povo de mendigos, nem temos onde cair vivos. Era como se ainda escutasse:
+- Mas você, meu filho, não se meta a mudar os destinos.
+Afinal, eu contrariava suas mandanças. Fossem os naparamas, fosse o filho de Farida: eu não estava a deixar o tempo quieto. Talvez, quem sabe, cumprisse o que sempre fora: sonhador de lembranças, inventor de verdades. Um sonâmbulo passeando entre o fogo. Um sonâmbulo como a terra em que nascera. Ou como aquelas fogueiras por entre as quais eu abria caminho no areal.
+(Mia Couto, Terra Sonâmbula. São Paulo: Companhia de Bolso, 2015, p. 104.)
+
+Na passagem citada, a personagem Kindzu recorda os ensinamentos de seu pai diante do estado desolador em que se encontrava sua terra, assolada pela guerra, e reflete sobre a coerência de suas ações em relação a tais ensinamentos. Levando em consideração o contexto da narrativa do romance de Mia Couto, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A demanda realizada por Kindzu e que é relatada em seus cadernos funciona como uma forma de fuga para a personagem Muidinga, que se aliena da realidade da guerra pela leitura dos cadernos, indicando de modo inequívoco a função social da literatura.` },
+      { letra: 'B', texto: `A narrativa contida nos cadernos de Kindzu, lida por Muidinga e Tuahir, representa o universo onírico e se contrapõe à realidade objetiva das duas personagens, razão pela qual ambas as narrativas aparecem no livro de modo intercalado, sem, necessariamente, haver uma interseção entre elas.` },
+      { letra: 'C', texto: `Segundo a personagem Kindzu, a sua terra, sonâmbula como ele, seria um lugar da sobreposição entre sonho e realidade, tal como ocorre na narrativa que registra em seus cadernos, em que é impossível o estabelecimento de uma delimitação entre o onírico e o real.` },
+      { letra: 'D', texto: `O sonho, sugerido pelo termo "sonâmbulo", contrapõe-se à realidade da guerra, sugerida pela palavra "fogo"; terra sonâmbula seria, pois, um lugar em que os limites entre realidade e sonho aparecem bem delimitados e no qual as personagens estão condicionadas definitivamente à miséria da guerra.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1899,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Velocidade média de um drone',
+    enunciado: `Drones são veículos voadores não tripulados, controlados remotamente e guiados por GPS. Uma de suas potenciais aplicações é reduzir o tempo da prestação de primeiros socorros, levando pequenos equipamentos e instruções ao local do socorro, para que qualquer pessoa administre os primeiros cuidados até a chegada de uma ambulância. Considere um caso em que o drone ambulância se deslocou 9 km em 5 minutos. Nesse caso, o módulo de sua velocidade média é de aproximadamente`,
+    opcoes: [
+      { letra: 'A', texto: `1,4 m/s.` },
+      { letra: 'B', texto: `30 m/s.` },
+      { letra: 'C', texto: `45 m/s.` },
+      { letra: 'D', texto: `140 m/s.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1900,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Aceleração de trem de alta velocidade',
+    enunciado: `A demanda por trens de alta velocidade tem crescido em todo o mundo. Uma preocupação importante no projeto desses trens é o conforto dos passageiros durante a aceleração. Sendo assim, considere que, em uma viagem de trem de alta velocidade, a aceleração experimentada pelos passageiros foi limitada a a_max = 0,09g, onde g = 10 m/s² é a aceleração da gravidade. Se o trem acelera a partir do repouso com aceleração constante igual a a_max, a distância mínima percorrida pelo trem para atingir uma velocidade de 1080 km/h corresponde a`,
+    opcoes: [
+      { letra: 'A', texto: `10 km.` },
+      { letra: 'B', texto: `20 km.` },
+      { letra: 'C', texto: `50 km.` },
+      { letra: 'D', texto: `100 km.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1901,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Processos de troca de calor',
+    enunciado: `Um isolamento térmico eficiente é um constante desafio a ser superado para que o homem possa viver em condições extremas de temperatura. Para isso, o entendimento completo dos mecanismos de troca de calor é imprescindível.
+Em cada uma das situações descritas a seguir, você deve reconhecer o processo de troca de calor envolvido.
+I. As prateleiras de uma geladeira doméstica são grades vazadas, para facilitar o fluxo de energia térmica até o congelador por [...].
+II. O único processo de troca de calor que pode ocorrer no vácuo é por [...].
+III. Em uma garrafa térmica, é mantido vácuo entre as paredes duas de vidro para evitar que o calor saia ou entre por [...].
+Na ordem, os processos de troca de calor utilizados para preencher as lacunas corretamente são:`,
+    opcoes: [
+      { letra: 'A', texto: `condução, convecção e radiação.` },
+      { letra: 'B', texto: `condução, radiação e convecção.` },
+      { letra: 'C', texto: `convecção, condução e radiação.` },
+      { letra: 'D', texto: `convecção, radiação e condução.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1902,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Trabalho realizado por músculo artificial',
+    enunciado: `Músculos artificiais feitos de nanotubos de carbono embebidos em cera de parafina podem suportar até duzentas vezes mais peso que um músculo natural do mesmo tamanho. Considere uma fibra de músculo artificial de 1 mm de comprimento, suspensa verticalmente por uma de suas extremidades e com uma massa de 50 gramas pendurada, em repouso, em sua outra extremidade. O trabalho realizado pela fibra sobre a massa, ao se contrair 10%, erguendo a massa até uma nova posição de repouso, é:
+Se necessário, utilize g = 10 m/s².`,
+    opcoes: [
+      { letra: 'A', texto: `5 × 10^-3 J.` },
+      { letra: 'B', texto: `5 × 10^-4 J.` },
+      { letra: 'C', texto: `5 × 10^-5 J.` },
+      { letra: 'D', texto: `5 × 10^-6 J.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1903,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Luz negra e coloração de objetos',
+    enunciado: `O Teatro de Luz Negra, típico da República Tcheca, é um tipo de representação cênica caracterizada pelo uso do cenário escuro com uma iluminação estratégica dos objetos exibidos. No entanto, o termo Luz Negra é fisicamente incoerente, pois a coloração negra é justamente a ausência de luz. A luz branca é a composição de luz com vários comprimentos de onda e a cor de um corpo é dada pelo comprimento de onda da luz que ele predominantemente reflete. Assim, um quadro que apresente as cores azul e branca quando iluminado pela luz solar, ao ser iluminado por uma luz monocromática de comprimento de onda correspondente à cor amarela, apresentará, respectivamente, uma coloração`,
+    opcoes: [
+      { letra: 'A', texto: `amarela e branca.` },
+      { letra: 'B', texto: `negra e amarela.` },
+      { letra: 'C', texto: `azul e negra.` },
+      { letra: 'D', texto: `totalmente negra.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1904,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Colisão entre partículas solares e satélite',
+    enunciado: `Tempestades solares são causadas por um fluxo intenso de partículas de altas energias ejetadas pelo Sol durante erupções solares. Esses jatos de partículas podem transportar bilhões de toneladas de gás eletrizado em altas velocidades, que podem trazer riscos de danos aos satélites em torno da Terra.
+Considere que, em uma erupção solar em particular, um conjunto de partículas de massa total mp = 5 kg, deslocando-se com velocidade de módulo vp = 2 × 10^5 m/s choca-se com um satélite de massa Ms = 95 kg que se desloca com velocidade de módulo igual a Vs = 4 × 10^3 m/s na mesma direção e em sentido contrário ao das partículas. Se a massa de partículas adere ao satélite após a colisão, o módulo da velocidade final do conjunto será de`,
+    opcoes: [
+      { letra: 'A', texto: `102.000 m/s.` },
+      { letra: 'B', texto: `14.000 m/s.` },
+      { letra: 'C', texto: `6.200 m/s.` },
+      { letra: 'D', texto: `3.900 m/s.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1907,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Anemômetro e frequência de rotação',
+    enunciado: `Anemômetros são instrumentos usados para medir a velocidade do vento. A sua construção mais conhecida é a proposta por Robinson em 1846, que consiste em um rotor com quatro conchas hemisféricas presas por hastes. Um anemômetro em que a distância entre as conchas e o centro de rotação é r = 25 cm, em um dia cuja velocidade do vento é v = 18 km/h, teria uma frequência de rotação de
+Se necessário, considere π ≈ 3.`,
+    opcoes: [
+      { letra: 'A', texto: `3 rpm.` },
+      { letra: 'B', texto: `200 rpm.` },
+      { letra: 'C', texto: `720 rpm.` },
+      { letra: 'D', texto: `1200 rpm.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1908,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Impulso e força média no beisebol',
+    enunciado: `Beisebol é um esporte que envolve o arremesso, com a mão, de uma bola de 140 g de massa na direção de outro jogador que irá rebatê-la com um taco sólido. Considere que, em um arremesso, o módulo da velocidade da bola chegou a 162 km/h, imediatamente após deixar a mão do arremessador. Sabendo que o tempo de contato entre a bola e a mão do jogador foi de 0,07 s, o módulo da força média aplicada na bola foi de`,
+    opcoes: [
+      { letra: 'A', texto: `324,0 N.` },
+      { letra: 'B', texto: `90,0 N.` },
+      { letra: 'C', texto: `6,3 N.` },
+      { letra: 'D', texto: `11,3 N.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1910,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Cladograma das plantas',
+    enunciado: `De acordo com o cladograma geral representativo das plantas que compreende as características de: clorofila A e B -> embrião -> vasos condutores -> sementes -> flor e fruto, dispostas nessa sequência evolutiva para os clados A, B, C, D e E, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A é Briófita, B é Pteridófita e C é Espermatófita.` },
+      { letra: 'B', texto: `C é Espermatófita, D é traqueófita e E é Angiosperma.` },
+      { letra: 'C', texto: `C possui sementes, D é Espermatófita e E é Angiosperma.` },
+      { letra: 'D', texto: `B é Briófita, D é traqueófita e E possui sementes.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1912,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Pirâmides de energia',
+    enunciado: `Em uma pirâmide de energia, as plantas têm importante papel na captação e transformação da energia luminosa e são responsáveis pela produtividade primária líquida. Nessa pirâmide, aparecem ainda os herbívoros e os carnívoros, que acumulam energia e determinam assim a produtividade secundária líquida. Sobre as pirâmides de energia, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a energia é conservada entre os níveis tróficos.` },
+      { letra: 'B', texto: `a respiração dos autótrofos é uma fonte de energia para os heterótrofos.` },
+      { letra: 'C', texto: `a produtividade primária líquida é representada na base da pirâmide.` },
+      { letra: 'D', texto: `a excreção é uma fonte de energia para os níveis tróficos superiores.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1914,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Formas de excreção nos animais',
+    enunciado: `Em relação à forma predominante de excreção dos animais, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `peixes são animais amoniotélicos, aves e répteis são ureotélicos e mamíferos são uricotélicos.` },
+      { letra: 'B', texto: `a ureia é altamente tóxica e insolúvel em água, sendo a principal excreta das aves.` },
+      { letra: 'C', texto: `peixes, exceto os condrictes, são amoniotélicos e aves e répteis adultos são ureotélicos.` },
+      { letra: 'D', texto: `a amônia é altamente tóxica e necessita de um grande volume de água para ser eliminada.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1916,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Doenças raras e endogamia em Monte Santo (BA)',
+    enunciado: `A cidade de Monte Santo, na Bahia, que entrou para a história por ter sido acampamento para as tropas do governo que lutaram na guerra de Canudos, tem sido palco de outras batalhas: a identificação, o tratamento e a prevenção de doenças raras como hipotireoidismo congênito, fenilcetonúria, osteogênese imperfeita, síndrome de Treacher Collins e mucopolissacaridose tipo 6.
+(Adaptado de Carlos Fioravante, "O caminho de pedras das doenças raras". Revista Pesquisa Fapesp, São Paulo, 222, agosto 2014.)
+
+A incidência em grandes proporções das doenças citadas acima pode ter sido favorecida por fatores`,
+    opcoes: [
+      { letra: 'A', texto: `migratórios, relacionados à miscigenação da população.` },
+      { letra: 'B', texto: `ambientais, por contaminações do solo e da água.` },
+      { letra: 'C', texto: `genéticos, pela alta frequência de casamentos entre parentes.` },
+      { letra: 'D', texto: `comportamentais, relacionados a atividades físicas extenuantes decorrentes da guerra.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1918,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Origem da vida e experimentos de Pasteur',
+    enunciado: `Na antiguidade, alguns cientistas e pensadores famosos tinham um conceito curioso sobre a origem da vida e em alguns casos existiam até receitas para reproduzir esse processo. Os experimentos de Pasteur foram importantes para a mudança dos conceitos e hipóteses alternativas para o surgimento da vida. Evidências sobre a origem da vida sugerem que`,
+    opcoes: [
+      { letra: 'A', texto: `a composição química da atmosfera influenciou o surgimento da vida.` },
+      { letra: 'B', texto: `os coacervados deram origem às moléculas orgânicas.` },
+      { letra: 'C', texto: `a teoria da abiogênese foi provada pelos experimentos de Pasteur.` },
+      { letra: 'D', texto: `o vitalismo é uma das bases da biogênese.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1919,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Sarampo: transmissão',
+    enunciado: `O sarampo é uma doença infectocontagiosa provocada pelo Morbilivirus. Em 2015 apareceram vários casos dessa doença em diversas cidades do Brasil e do mundo. O que faz com que esta doença seja extremamente contagiosa e muito comum na infância?`,
+    opcoes: [
+      { letra: 'A', texto: `O fato de ser transmitida por um vírus para o qual não existe vacina.` },
+      { letra: 'B', texto: `O fato de ser frequentemente transmitida por secreções das vias respiratórias, como gotículas eliminadas pelo espirro ou pela tosse.` },
+      { letra: 'C', texto: `O fato de ser transmitida apenas por meio de insetos vetores.` },
+      { letra: 'D', texto: `O fato de ser extremamente contagiosa apenas em crianças desnutridas, recém-nascidos e crianças portadoras de imunodeficiências.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1920,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Compostos atraentes de insetos: ácido x básico',
+    enunciado: `Com a crescente crise mundial de dengue, as pesquisas pela busca tanto de vacinas quanto de repelentes de insetos têm se intensificado. Nesse contexto, os compostos I e II abaixo descritos têm propriedades muito distintas: enquanto um deles tem caráter ácido e atrai os insetos, o outro tem caráter básico e não os atrai.
+- Composto I: Possui um anel aromático e hidroxilas fenólicas livres em carbonos adjacentes (orto-difenol).
+- Composto II: Possui estrutura amínica em cadeia saturada sem hidroxilas livres.
+
+Baseado nessas informações, pode-se afirmar corretamente que o composto`,
+    opcoes: [
+      { letra: 'A', texto: `I não atrai os insetos e tem caráter básico.` },
+      { letra: 'B', texto: `II atrai os insetos e tem caráter ácido.` },
+      { letra: 'C', texto: `II não atrai os insetos e tem caráter básico.` },
+      { letra: 'D', texto: `I não atrai os insetos e tem caráter ácido e básico.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1921,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Cozinha e Química: extração, carboidrato, proteína',
+    enunciado: `Em seu livro Como se faz Química, o Professor Aécio Chagas afirma que "quem transforma a matéria, sem pensar sobre ela, não é, e jamais será um químico". Considere alguns produtos que um cozinheiro reconhece nas linhas 1-4 do quadro a seguir, e aqueles que um químico reconhece nas linhas 5-8.
+- Linha 1: carne | Linha 5: extração
+- Linha 2: açúcar | Linha 6: carboidrato
+- Linha 3: chá | Linha 7: hidrocarboneto aromático
+- Linha 4: óleo | Linha 8: proteína
+
+Um químico, familiarizado com as atividades culinárias, relacionaria as linhas`,
+    opcoes: [
+      { letra: 'A', texto: `1 e 7, porque o aroma da carne se deve, principalmente, aos hidrocarbonetos aromáticos.` },
+      { letra: 'B', texto: `3 e 5, porque a infusão facilita a extração de componentes importantes do chá.` },
+      { letra: 'C', texto: `4 e 6, porque os carboidratos são constituintes importantes do óleo comestível.` },
+      { letra: 'D', texto: `2 e 8, porque a proteína é um tipo especial de açúcar.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1922,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Tetracloroetileno: polaridade e volatilidade',
+    enunciado: `O trecho seguinte foi extraído de uma revista de divulgação do conhecimento químico, e trata de alguns aspectos da lavagem a seco de tecidos. "Tratando-se do desempenho para lavar, o tetracloroetileno é um solvente efetivo para limpeza das roupas, pois evita o encolhimento dos tecidos, já que evapora facilmente, dada sua baixa pressão de vapor (0,017 atm., 20°C), e dissolve manchas lipofílicas, como óleos, ceras e gorduras em geral..." A leitura desse trecho sugere que o tetracloroetileno é um líquido apolar e sua alta volatilidade se deve ao seu baixo valor de pressão de vapor. Levando em conta o conhecimento químico, pode-se`,
+    opcoes: [
+      { letra: 'A', texto: `concordar parcialmente com a sugerão, pois há argumentos que justificam a polaridade, mas não há argumentos que justifiquem a volatilidade.` },
+      { letra: 'B', texto: `concordar totalmente com a sugestão, pois os argumentos referentes à polaridade e à volatilidade apresentados no trecho justificam ambas.` },
+      { letra: 'C', texto: `concordar parcialmente, pois não há argumentos que justifiquem a polaridade, mas há argumentos que justificam a volatilidade.` },
+      { letra: 'D', texto: `discordar totalmente, pois não há argumentos que justifiquem a polaridade nem a volatilidade.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1923,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Tatuagens químicas: dopamina e isomeria',
+    enunciado: `Atualmente, parece que a Química vem seduzindo as pessoas e tem-se observado um número cada vez maior de pessoas portando tatuagens que remetem ao conhecimento químico. Considere duas estruturas comuns representadas em tatuagens: uma molécula de dopamina (catecolamina neurotransmissora estrutural com cadeia lateral aminoetílica ligada ao anel benzênico di-hidroxilado) e uma isomérica incorretamente desenhada por imperícia do tatuador.
+
+As imagens representam duas fórmulas estruturais, que correspondem a dois`,
+    opcoes: [
+      { letra: 'A', texto: `compostos que são isômeros estruturais de posição entre si.` },
+      { letra: 'B', texto: `modos idênticos de representar o mesmo composto.` },
+      { letra: 'C', texto: `compostos que não são isômeros por apresentarem fórmulas moleculares diferentes.` },
+      { letra: 'D', texto: `compostos que diferem unicamente nas posições das ligações duplas do anel.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1924,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Arla 32: redução de gases NOx',
+    enunciado: `A preocupação com a emissão de gases poluentes no meio ambiente está muito presente na indústria automobilística. Recentemente, uma das soluções encontradas para contornar esse problema nos veículos movidos a Diesel foi o desenvolvimento do Arla 32, uma solução de ureia em água, que atua nos sistemas de exaustão, de acordo com as equações químicas abaixo:
+CO(NH2)2 + H2O -> 2 NH3 + CO2
+4 NH3 + 4 NO + O2 -> 4 N2 + 6 H2O
+4 NH3 + 2 NO2 + O2 -> 3 N2 + 6 H2O
+
+Com base nessas informações, pode-se afirmar corretamente que a ação do Arla 32 leva a uma redução`,
+    opcoes: [
+      { letra: 'A', texto: `da emissão das espécies NOx, e não contribui para a poluição atmosférica.` },
+      { letra: 'B', texto: `completa do NO e apenas da metade do NO2 emitido, mas contribui para a poluição atmosférica.` },
+      { letra: 'C', texto: `completa do NO, mas somente reduz a emissão de NO2 depois que acabar o NO, e não contribui para a poluição atmosférica.` },
+      { letra: 'D', texto: `da emissão das espécies NOx, mas contribui para a poluição atmosférica.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1925,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Oxidação de gorduras e açúcares no organismo',
+    enunciado: `Podemos obter energia no organismo pela oxidação de diferentes fontes. Entre essas fontes destacam-se a gordura e o açúcar. A gordura pode ser representada por uma fórmula mínima (CH2)_n, enquanto um açúcar pode ser representado por (CH2O)_n. Considerando essas duas fontes de energia, podemos afirmar corretamente que, na oxidação total de 1 grama de ambas as fontes em nosso organismo, os produtos formados são`,
+    opcoes: [
+      { letra: 'A', texto: `os mesmos, mas as quantidades de energia liberadas são diferentes.` },
+      { letra: 'B', texto: `diferentes, mas as quantidades de energia liberadas são iguais.` },
+      { letra: 'C', texto: `os mesmos, assim como as quantidades de energia liberadas.` },
+      { letra: 'D', texto: `diferentes, assim como as quantidades de energia liberadas.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1926,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Concentração de sais na água do mar',
+    enunciado: `Alguns trabalhos científicos correlacionam as mudanças nas concentrações dos sais dissolvidos na água do mar com as mudanças climáticas. Entre os fatores que poderiam alterar a concentração de sais na água do mar podemos citar: evaporação e congelamento da água do mar, chuva e neve, além do derretimento das geleiras. De acordo com o conhecimento químico, podemos afirmar corretamente que a concentração de sais na água do mar`,
+    opcoes: [
+      { letra: 'A', texto: `aumenta com o derretimento das geleiras e diminui com o congelamento da água do mar.` },
+      { letra: 'B', texto: `diminui com o congelamento e com a evaporação da água do mar.` },
+      { letra: 'C', texto: `aumenta com a evaporação e o congelamento da água do mar e diminui com a chuva ou neve.` },
+      { letra: 'D', texto: `diminui com a evaporação da água do mar e aumenta com o derretimento das geleiras.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1927,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Proporções isotópicas: água terrestre e cometa',
+    enunciado: `A comparação entre as proporções isotópicas de amostras de um mesmo material, que têm a mesma idade, encontradas em diferentes regiões, pode ser utilizada para revelar se elas têm ou não a mesma origem. Se as proporções são iguais, então é possível que tenham a mesma origem, mas se forem diferentes, é certeza que não têm a mesma origem. A tabela a seguir apresenta os dados de algumas amostras de água, incluindo a de um cometa no qual uma sonda pousou recentemente.
+
+| Amostra | Ponto de ebulição (°C) | Ponto de fusão (°C) | Porcentagem de deutério |
+| H2O (Terra) | 100 | 0 | 0,017 |
+| HDO | 100,7 | 2,04 | 50 |
+| D2O | 101,4 | 3,82 | 100 |
+| H2O (cometa) | nd* | nd* | 0,053 |
+*nd - não disponível
+
+Com base nesses dados, pode-se afirmar corretamente que a água de nosso planeta`,
+    opcoes: [
+      { letra: 'A', texto: `é proveniente dos cometas e a água da Terra e a do cometa têm propriedades físicas muito parecidas.` },
+      { letra: 'B', texto: `não é proveniente dos cometas, apesar de a água da Terra e a do cometa terem propriedades físicas muito parecidas.` },
+      { letra: 'C', texto: `não é proveniente dos cometas, porque a água da Terra e a do cometa apresentam propriedades moleculares físicas muito diferentes.` },
+      { letra: 'D', texto: `é proveniente dos cometas e a água da Terra e a do cometa têm as mesmas propriedades físicas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1928,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Teste de firmeza das cores em tecidos',
+    enunciado: `As empresas que fabricam produtos de limpeza têm se preocupado cada vez mais com a satisfação do consumidor e a preservação dos materiais que estão sujeitos ao processo de limpeza. No caso do vestuário, é muito comum encontrarmos a recomendação para fazer o teste da firmeza das cores para garantir que a roupa não será danificada no processo de lavagem. Esse teste consiste em molhar uma pequena parte da roupa e colocá-la sobre uma superfície plana; em seguida, coloca-se um pano branco de algodão sobre sua superfície e passa-se com um ferro bem quente. Se o pano branco ficar manchado, sugere-se que essa roupa deve ser lavada separadamente, pois durante esse teste ocorreu um processo de`,
+    opcoes: [
+      { letra: 'A', texto: `fusão do corante, e o ferro quente é utilizado para aumentar a pressão sobre o tecido.` },
+      { letra: 'B', texto: `liquefação do corante, e o ferro quente é utilizado para acelerar o processo.` },
+      { letra: 'C', texto: `condensação do corante, e o ferro quente é utilizado para ajudar a sua transferência para o pano branco.` },
+      { letra: 'D', texto: `dissolução do corante, e o ferro quente é utilizado para acelerar o processo.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1929,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Agentes de combate a incêndio',
+    enunciado: `Os compostos (NH4)H2PO4 e NaHCO3 são usados em extintores como agentes de combate ao fogo. Quando lançados sobre uma chama, ocorrem as seguintes transformações:
+(NH4)H2PO4 -> NH3 + H3PO4
+H3PO4 -> polifosfato (viscoso)
+NaHCO3 -> CO2 + H2O + Na2CO3 (particulado).
+No combate a todos os tipos de incêndio, a nuvem formada de gás é importante, mas naqueles envolvendo materiais sólidos, o depósito do material oriundo da transformação do agente de combate sobre o combustível tem papel decisivo. Assim, o agente (NH4)H2PO4 pode substituir o NaHCO3 em qualquer situação, mas o contrário não é verdade. Isso permite concluir que no combate ao incêndio que envolve`,
+    opcoes: [
+      { letra: 'A', texto: `líquidos inflamáveis, os dois agentes formam uma nuvem de gás, mas com sólidos em combustão, somente o material viscoso é capaz de inibir completamente o contato combustível/comburente.` },
+      { letra: 'B', texto: `líquidos inflamáveis, os dois agentes formam uma nuvem de gás, mas com sólidos em combustão, somente o material particulado é capaz de inibir completamente o contato combustível/comburente.` },
+      { letra: 'C', texto: `materiais sólidos em combustão, os dois agentes inibem completamente o contato combustível/comburente, mas com líquidos em combustão, somente o NaHCO3 é capaz de inibir este contato.` },
+      { letra: 'D', texto: `materiais sólidos em combustão, os dois agentes inibem completamente o contato combustível/comburente, mas com líquidos em combustão, somente o (NH4)H2PO4 é capaz de inibir este contato.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1931,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Noam Chomsky: liberdade de expressão',
+    enunciado: `"If you believe in freedom of speech, you believe in freedom of speech for views you don't like. Goebbels was in favor of freedom of speech for views he liked. So was Stalin. If you're in favor of freedom of speech, that means you're in favor of freedom of speech precisely for views you despise."
+(Noam Chomsky)
+
+O autor do texto`,
+    opcoes: [
+      { letra: 'A', texto: `despreza os que restringem a liberdade de expressão.` },
+      { letra: 'B', texto: `critica os excessos da liberdade de expressão.` },
+      { letra: 'C', texto: `critica a falta de liberdade de expressão.` },
+      { letra: 'D', texto: `defende a liberdade de expressão sem restrições.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1933,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - The Future of Food: curso de cenários futuros',
+    enunciado: `The Future of Food
+SCENARIO PLANNING TRAINING
+In 2030... What will we eat? Where will our food come from? Will we all have enough?
+Using the global system as a backdrop, expert scenario practitioners will help you apply the methodology that systematically imagines multiple futures and their risks and opportunities.
+START ONLINE, THEN COME TO STANFORD UNIVERSITY
+Application deadline AUGUST 3, 2015
+Online content opens August 10, 2015
+Onsite Immersion at Stanford Sept.28-Oct. 1, 2015
+Apply now at WORLDVIEW.STANFORD.EDU
+SPACE LIMITED TO 32 PARTICIPANTS
+(Adaptado de Stanford Magazine, July/August 2015, p.3.)
+
+O texto anuncia um`,
+    opcoes: [
+      { letra: 'A', texto: `curso on-line e presencial que oferece uma metodologia para ajudar a definir quais alimentos deverão ser consumidos no futuro.` },
+      { letra: 'B', texto: `curso on-line que oferece uma metodologia para minimizar riscos no consumo de alimentos no futuro.` },
+      { letra: 'C', texto: `curso on-line e presencial que oferece uma metodologia para construção de cenários futuros sobre consumo de alimentos.` },
+      { letra: 'D', texto: `curso presencial que oferece uma metodologia para ajudar as pessoas a comerem melhor no futuro.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1934,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Advice for new students: primeiro dia de faculdade',
+    enunciado: `Advice for new students from those who know (old students)
+The first day of college I was a ball of nerves. I remember walking into my first class and running to the first seat I found, thinking everyone would be staring at me. But nobody seemed to notice and then it hit me: The fact that nobody knew me meant nobody would judge, which, upon reflection, was what I was scared of the most. I told myself to let go. All along the year, I forced myself into situations that were uncomfortable for me – for example, auditioning for a dance piece. Believe it or not, that performance was a highlight of my freshman year. My advice: challenge yourself to try something new, something you couldn't have done in high school. Ria Jagasia, Vanderbilt University, '18.
+
+No primeiro dia de faculdade, Ria ficou muito nervosa`,
+    opcoes: [
+      { letra: 'A', texto: `por não conhecer ninguém.` },
+      { letra: 'B', texto: `por achar que seria julgada pelos colegas.` },
+      { letra: 'C', texto: `porque ninguém olhou para ela.` },
+      { letra: 'D', texto: `porque não sabia dançar.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1935,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Advice for new students: estratégia adotada',
+    enunciado: `Advice for new students from those who know (old students)
+The first day of college I was a ball of nerves. I remember walking into my first class and running to the first seat I found, thinking everyone would be staring at me. But nobody seemed to notice and then it hit me: The fact that nobody knew me meant nobody would judge, which, upon reflection, was what I was scared of the most. I told myself to let go. All along the year, I forced myself into situations that were uncomfortable for me – for example, auditioning for a dance piece. Believe it or not, that performance was a highlight of my freshman year. My advice: challenge yourself to try something new, something you couldn't have done in high school. Ria Jagasia, Vanderbilt University, '18.
+
+Para lidar com a situação, a estratégia adotada foi deixar de se preocupar e`,
+    opcoes: [
+      { letra: 'A', texto: `fazer coisas que nunca fez antes.` },
+      { letra: 'B', texto: `fazer novos amigos.` },
+      { letra: 'C', texto: `fazer um curso de dança como ouvinte.` },
+      { letra: 'D', texto: `abandonar o curso.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1936,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - If apes go extinct, so could entire forests',
+    enunciado: `If apes go extinct, so could entire forests
+Bonobos eat a lot of fruit, and fruit contains seeds. Those seeds travel through a bonobo's digestive system while bonobo itself travels around the forest. A few hours later, the seeds end up being deposited far from where the fruits were plucked. And that is where the new trees come from.
+According to a paper recently published, if the bonobos disappeared, the plants would also likely go extinct, for many trees and plants species in Congo rely almost exclusively on bonobos for seed dispersal.
+The bonobo has two major functions here. First of all, many seeds will not germinate well unless they have been "handled" by another species. Stomach acids and intestinal processes make the seed more able to absorb water and later sprout.
+Secondly, many seeds will not succeed if they remain too close to their parental trees. The seeds that fell to the ground near their parents did not survive because they were choked off by the nearby plants. The bonobos eat about 3,5 hours every day and travel a mean of 1.2 kilometers from meal sites before defecating.
+(Adaptado de http://blogs.scientificamerican.com/extinction-countdown/if-apes-go-extinct-so-could-entire-forests/.)
+
+Qual é a explicação para o título?`,
+    opcoes: [
+      { letra: 'A', texto: `Os bonobos se alimentam de plantas e suas fezes ajudam a adubar florestas. Como andam grandes distâncias, espalham esse adubo pela floresta.` },
+      { letra: 'B', texto: `Os bonobos vivem em árvores e suas fezes, que contêm fungicidas naturais, protegem as árvores dos fungos. Como andam grandes distâncias, podem proteger florestas inteiras.` },
+      { letra: 'C', texto: `Os bonobos se alimentam de frutas com sementes. Seu sistema digestivo prepara as sementes para a germinação. Como andam grandes distâncias, suas fezes ajudam a espalhar as sementes pela floresta.` },
+      { letra: 'D', texto: `Os bonobos vivem em árvores e se alimentam de folhas, que se transformam em fungicidas naturais aos serem digeridas. Quando liberados pelas fezes, esses fungicidas protegem as florestas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1937,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - We\'ve modified our behavior so we can text and walk',
+    enunciado: `We've modified our behavior so we can text and walk
+Texting or checking social media or reading/responding to mail or reading the news or checking the weather or watching a video while walking is a pretty common phenomenon. It's so common that most people who own a mobile device have become texting walkers.
+Research suggests that these texters adopt protective measures to minimize the risk of accidents when walking. They're less likely to trip because they shorten their step length, reduce step frequency, lengthen the time during which both feet are in contact with the ground, and increase obstacle clearance height. Taken together this creates an exaggerated image of walking, but it apparently slows the walker enough so that he registers some of what is happening around him and can compensate for it.
+(Adaptado de http://blogs.scientificamerican.com/anthropology-in-practice/we-ve-modified-our-behavior-so-we-can-text-and-walk/.)
+
+Segundo o texto, "Texting walkers" são pessoas que`,
+    opcoes: [
+      { letra: 'A', texto: `caminham longas distâncias e usam o celular para registrar essas distâncias.` },
+      { letra: 'B', texto: `escrevem ou leem mensagens, ou veem vídeos no celular enquanto caminham.` },
+      { letra: 'C', texto: `testam o celular como dispositivo para caminhadas longas.` },
+      { letra: 'D', texto: `tropeçam e caem quando usam o celular enquanto caminham.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1938,
+    ano: 2016,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - We\'ve modified our behavior so we can text and walk (mudanças de comportamento)',
+    enunciado: `We've modified our behavior so we can text and walk
+Texting or checking social media or reading/responding to mail or reading the news or checking the weather or watching a video while walking is a pretty common phenomenon. It's so common that most people who own a mobile device have become texting walkers.
+Research suggests that these texters adopt protective measures to minimize the risk of accidents when walking. They're less likely to trip because they shorten their step length, reduce step frequency, lengthen the time during which both feet are in contact with the ground, and increase obstacle clearance height. Taken together this creates an exaggerated image of walking, but it apparently slows the walker enough so that he registers some of what is happening around him and can compensate for it.
+(Adaptado de http://blogs.scientificamerican.com/anthropology-in-practice/we-ve-modified-our-behavior-so-we-can-text-and-walk/.)
+
+Que mudanças no comportamento dessas pessoas são decorrentes da adaptação à tecnologia apresentada no texto?`,
+    opcoes: [
+      { letra: 'A', texto: `Elas diminuem a extensão e a frequência dos passos, aumentando o tempo em que os dois pés ficam em contato com o chão; calculam melhor a altura dos obstáculos no percurso.` },
+      { letra: 'B', texto: `Elas aumentam a extensão dos passos e diminuem sua frequência, para que os dois pés fiquem mais tempo em contato com o chão.` },
+      { letra: 'C', texto: `Antes de iniciar a caminhada, elas registram, no celular, a extensão do trajeto, a frequência dos passos e o tempo em que os dois pés ficam em contato com o chão.` },
+      { letra: 'D', texto: `Antes de iniciar a caminhada, elas registram, no celular, a extensão e a altura dos obstáculos do percurso, a frequência dos passos e o tempo em que os dois pés ficam em contato com o chão.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
