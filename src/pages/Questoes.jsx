@@ -6,6 +6,7 @@ import { supabase } from '../lib/supabase'
 import { QUESTIONS, AREAS, PROVAS, isQuestaoValida } from '../lib/questions'
 import { derivarMateria, MATERIAS_POR_AREA } from '../lib/materias'
 import ReportarQuestaoModal from '../components/ReportarQuestaoModal'
+import TrialFinalizado from '../components/TrialFinalizado'
 import styles from './Questoes.module.css'
 
 // ── Shuffle determinístico (usa uma seed p/ manter a ordem estável na sessão) ──
@@ -225,6 +226,9 @@ export default function Questoes() {
   const [respondidas, setRespondidas] = useState(() => new Set(quizPersistido?.respondidas || []))
   const [finished, setFinished] = useState(false)
   const [sessionStats, setSessionStats] = useState(() => quizPersistido?.sessionStats || { acertos: 0, erros: 0 })
+  // Acertos/erros por área nesta sessão — usado na tela pós-trial pra apontar
+  // a área com pior desempenho. Ex.: { 'Linguagens': { acertos: 3, erros: 1 } }
+  const [areaStats, setAreaStats] = useState(() => quizPersistido?.areaStats || {})
   const [reportando, setReportando] = useState(false)
 
   const [pularRespondidas, setPularRespondidas] = useState(
@@ -280,8 +284,9 @@ export default function Questoes() {
       qIndex,
       respondidas: [...respondidas],
       sessionStats,
+      areaStats,
     })
-  }, [areasSel, materiasSel, anosSel, provasSel, qIndex, respondidas, sessionStats])
+  }, [areasSel, materiasSel, anosSel, provasSel, qIndex, respondidas, sessionStats, areaStats])
 
   // Matérias disponíveis: se áreas estão selecionadas, mostra só as dessas áreas
   const materiasDisponiveis = useMemo(() => {
@@ -378,6 +383,16 @@ export default function Questoes() {
       acertos: prev.acertos + (isCorrect ? 1 : 0),
       erros: prev.erros + (isCorrect ? 0 : 1),
     }))
+    setAreaStats(prev => {
+      const atual = prev[q.area] || { acertos: 0, erros: 0 }
+      return {
+        ...prev,
+        [q.area]: {
+          acertos: atual.acertos + (isCorrect ? 1 : 0),
+          erros: atual.erros + (isCorrect ? 0 : 1),
+        },
+      }
+    })
 
     if (user) {
       await supabase.from('respostas').insert({
@@ -428,6 +443,7 @@ export default function Questoes() {
     setAiText('')
     setFinished(false)
     setSessionStats({ acertos: 0, erros: 0 })
+    setAreaStats({})
   }, [])
 
   // Alterna um valor num array de seleção
@@ -477,37 +493,7 @@ export default function Questoes() {
   }
 
   if (isTrial && trialEsgotado && !answered) {
-    return (
-      <div className={styles.finishWrap}>
-        <div className={styles.finishCard}>
-          <div className={styles.finishIcon}><i className="ti ti-lock" aria-hidden="true"></i></div>
-          <h2 className={styles.finishTitle}>Você usou suas 20 questões grátis!</h2>
-          <p className={styles.finishSub}>
-            Esperamos que tenha gostado. Para continuar estudando sem limites, garanta o acesso vitalício.
-          </p>
-          <div className={styles.finishStats}>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>∞</div>
-              <div className={styles.finishStatLabel}>Questões</div>
-            </div>
-            <div className={styles.finishDivider}></div>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--green-text)' }}>R$39,90</div>
-              <div className={styles.finishStatLabel}>Uma vez só</div>
-            </div>
-            <div className={styles.finishDivider}></div>
-            <div className={styles.finishStat}>
-              <div className={styles.finishStatValue} style={{ color: 'var(--purple-bright)' }}>IA</div>
-              <div className={styles.finishStatLabel}>Ilimitada</div>
-            </div>
-          </div>
-          <p className={styles.finishMsg}>Acesso vitalício, sem mensalidade. Passou ou não passou, o app continua seu.</p>
-          <Link to="/pagamento" className={styles.btnPrimary}>
-            <i className="ti ti-rocket" aria-hidden="true"></i> Garantir acesso vitalício
-          </Link>
-        </div>
-      </div>
-    )
+    return <TrialFinalizado sessionStats={sessionStats} areaStats={areaStats} />
   }
 
   if (finished) {
