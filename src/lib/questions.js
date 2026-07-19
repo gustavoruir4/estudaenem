@@ -22605,24 +22605,6 @@ export const QUESTIONS = [
     correta: 'B'
   },
   {
-    id: 1033,
-    ano: 2021,
-    prova: 'Ciências da Natureza',
-    area: 'Ciências da Natureza',
-    assunto: 'Física - Haltere em campo magnético uniforme',
-    enunciado: '[QUESTÃO COM IMAGEM — Diagrama vetorial tridimensional de um haltere imerso em campo magnético uniforme]\n\n[IMAGEM: Q121 — Diagrama vetorial 3D de haltere (dipolo magnético) em campo magnético uniforme, com forças e torques]',
-    temImagem: true,
-    imagem: null,
-    opcoes: [
-      { letra: 'A', texto: 'Opção A' },
-      { letra: 'B', texto: 'Opção B' },
-      { letra: 'C', texto: 'Opção C' },
-      { letra: 'D', texto: 'Opção D' },
-      { letra: 'E', texto: 'Opção E' }
-    ],
-    correta: 'D'
-  },
-  {
     id: 1034,
     ano: 2021,
     prova: 'ENEM',
