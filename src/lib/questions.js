@@ -29312,7 +29312,1849 @@ Segundo o texto do The Economist sobre algoritmos, a execução de um algoritmo 
     temImagem: false,
     imagem: null,
   },
-]
 
+  // ==== UNICAMP 2024 (1ª fase) — adicionadas em 19/07/2026 ====
+  {
+    id: 1418,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Semântica: sentido figurado e metáfora',
+    enunciado: `'Nevou' no Rio
+
+Em pleno verão, o fenômeno que vem chamando atenção nas ruas do Rio é conhecido como "nevada carioca", ou apenas "nevou". Trata-se da mania de descolorir, platinando os cabelos até os fios ficarem completamente brancos, que tomou conta das cabeças dos jovens de Norte a Sul e virou a febre do momento. A onda começou às vésperas do Natal, ganhou força no réveillon e entrou em janeiro lotando os salões. Nascida nas comunidades e nos subúrbios, a tendência ultrapassou fronteiras geográficas e sociais da cidade, principalmente depois de ganhar as redes e de ter conquistado artistas e atletas. Cabeleireiros e donos de salão apostam que o modismo resiste com força até os dias de folia.
+
+(Adaptado de: https://oglobo.globo.com/rio/noticia/2023/01/nevou-no-rio-mania-de-descolorir-o-cabelo-ate-ficar-quase-branco-vira-moda-entre-os-cariocas.ghtml. Acesso em 22/06/2023.)
+
+No texto, o verbo nevar apresenta sentido`,
+    opcoes: [
+      { letra: 'A', texto: `literal e é sinônimo de descolorir.` },
+      { letra: 'B', texto: `figurado e quer dizer embranquecer.` },
+      { letra: 'C', texto: `metafórico e é antônimo de escurecer.` },
+      { letra: 'D', texto: `metonímico e significa cabelos brancos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1419,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Coesão textual: referenciação',
+    enunciado: `'Nevou' no Rio
+
+Em pleno verão, o fenômeno que vem chamando atenção nas ruas do Rio é conhecido como "nevada carioca", ou apenas "nevou". Trata-se da mania de descolorir, platinando os cabelos até os fios ficarem completamente brancos, que tomou conta das cabeças dos jovens de Norte a Sul e virou a febre do momento. A onda começou às vésperas do Natal, ganhou força no réveillon e entrou em janeiro lotando os salões. Nascida nas comunidades e nos subúrbios, a tendência ultrapassou fronteiras geográficas e sociais da cidade, principalmente depois de ganhar as redes e de ter conquistado artistas e atletas. Cabeleireiros e donos de salão apostam que o modismo resiste com força até os dias de folia.
+
+(Adaptado de: https://oglobo.globo.com/rio/noticia/2023/01/nevou-no-rio-mania-de-descolorir-o-cabelo-ate-ficar-quase-branco-vira-moda-entre-os-cariocas.ghtml. Acesso em 22/06/2023.)
+
+Assinale a alternativa em que todas as palavras listadas têm um mesmo referente dentro do texto.`,
+    opcoes: [
+      { letra: 'A', texto: `fenômeno - onda - tendência - modismo` },
+      { letra: 'B', texto: `mania - onda - febre - força` },
+      { letra: 'C', texto: `fenômeno - momento - mania - febre` },
+      { letra: 'D', texto: `modismo - tendência - força - momento` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1422,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Interpretação de letra de canção',
+    enunciado: `O texto a seguir é um trecho da canção Pantanal, que foi tema de abertura da novela com o mesmo nome, exibida originalmente pela TV Manchete em 1990 e regravada pela TV Globo em 2022.
+
+Lendas de raças, cidades perdidas nas selvas do coração do Brasil.
+Contam os índios de deuses que descem do espaço no coração do Brasil.
+Redescobrindo as Américas quinhentos anos depois,
+Lutar com unhas e dentes pra termos direito a um depois.
+Fim do milênio, resgate da vida, do sonho, do bem.
+A terra é tão verde e azul.
+Os filhos dos filhos dos filhos dos nossos filhos verão.
+
+(Pantanal, letra de Marcus Viana, gravada pelo grupo Sagrado Coração da Terra na coletânea em LP Sagrado - Farol da Liberdade, lançada em 1991 pelo selo Sonhos & Sons.)
+
+Nesse trecho da canção, podemos identificar`,
+    opcoes: [
+      { letra: 'A', texto: `repetição de advérbios que indicam as mesmas circunstâncias de tempo e de lugar, para produzir um efeito de redundância a respeito da luta pela terra.` },
+      { letra: 'B', texto: `indeterminação de sujeito com verbo na terceira pessoa do plural, para produzir um efeito de incerteza quanto ao papel das futuras gerações.` },
+      { letra: 'C', texto: `atribuição de características positivas por meio de substantivos que indicam cores, para produzir um efeito de otimismo na preservação da natureza.` },
+      { letra: 'D', texto: `encadeamento sucessivo de termos ligados por preposição, para produzir um efeito de continuidade temporal quanto à condição do planeta.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1423,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura contemporânea - Poema slam (Luz Ribeiro)',
+    enunciado: `je ne parle pas bien*
+je ne parle pas bien
+je ne parle pas bien
+je ne parle pas bien
+eu tenho uma língua solta
+que não me deixa esquecer
+que cada palavra minha
+é resquício da colonização
+cada verbo que aprendi conjugar
+foi ensinado com a missão
+de me afastar de quem veio antes
+nossas escolas não nos ensinam
+a dar voos
+[...]
+reinvenção
+nossa revolução surge e urge
+das nossas bocas
+das falas aprendidas
+que são ensinadas
+e muitas não compreendidas
+salve, a cada gíria
+je ne parle pas bien
+[...]
+o que era pra ser arma de colonizador
+está virando revide de ex colonizado
+estamos aprendendo as suas línguas
+e descolonizando os pensamento
+
+(Fragmentos do poema Je ne parle pas bien, de Luz Ribeiro, publicado na Revista Opiniães: Revista dos alunos de Literatura Brasileira, n. 10, 2017.)
+* Je ne parle pas bien, do francês, significa "Eu não falo direito".
+
+Podemos afirmar que o uso repetido do verso Je ne parle pas bien no poema slam de Luz Ribeiro`,
+    opcoes: [
+      { letra: 'A', texto: `expressa a necessidade de repetir muitas vezes uma mesma sentença como forma de resistir ao esquecimento de uma língua.` },
+      { letra: 'B', texto: `enfatiza a ideia de que a língua francesa do colonizador ainda não foi aprendida e precisa ser repetida várias vezes.` },
+      { letra: 'C', texto: `é uma constatação de que, na posição de ex-colônia, não conseguimos aprender línguas estrangeiras.` },
+      { letra: 'D', texto: `indica um posicionamento de resistência por meio de uma crítica à aprendizagem forçada da língua do colonizador.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1424,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Epígrafe (Drummond / Lygia Fagundes Telles)',
+    enunciado: `Texto 1
+"Que século, meus Deus! - exclamaram os ratos
+E começaram a roer o edifício".
+("Edifício Esplendor" (1955), de Carlos Drummond de Andrade, epígrafe do conto "Seminário dos Ratos", de Lygia Fagundes Telles.)
+
+Texto 2
+Epígrafe é um paratexto (um texto que acompanha o texto principal), que pode justificar ou comentar um título ou texto; referenciar a relação entre o autor do texto e o da epígrafe; criar um efeito por meio do qual a presença da epígrafe já evoca a identificação do autor do texto com uma época ou movimento.
+(Adaptado de: GENETTE, G. Paratextos Editoriais. Tradução de Alvaro Faleiros. Cotia: Ateliê Editorial, 2009.)
+
+Considerando os textos 1 e 2, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A epígrafe associa o conto de Lygia ao "sentimento do mundo" drummondiano.` },
+      { letra: 'B', texto: `A epígrafe mostra que os versos de Drummond são imprescindíveis à escrita do conto.` },
+      { letra: 'C', texto: `A epígrafe justifica o título do conto e comenta os possíveis sentidos críticos deles.` },
+      { letra: 'D', texto: `A epígrafe identifica Lygia à geração de 30 do Modernismo, ao lado de Drummond.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1425,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Olhos d\'Água, de Conceição Evaristo',
+    enunciado: `Leia o trecho da reportagem:
+"Mulher espancada após boatos em rede social morre no Guarujá, SP
+(...)
+A dona de casa Fabiane Maria de Jesus, de 33 anos, morreu na manhã desta segunda-feira (5), dois dias após ter sido espancada por dezenas de moradores do Guarujá, no litoral de São Paulo. Segundo a família, ela foi agredida a partir de um boato gerado por uma página em uma rede social (...)"
+(G1, Santos, 05/05/2014. Disponível em: https://g1.globo.com/sp/santos-regiao/noticia/2014/05/mulher-espancada-apos-boatos-em-rede-social-morre-em-guaruja-sp.html. Acessado em 04/07/2023.)
+
+Assinale o trecho de um dos contos a seguir - extraídos de EVARISTO, Conceição. Olhos d'Água. Rio de Janeiro: Pallas; Fundação Biblioteca Nacional, 2016 -, trecho este que relaciona o acontecimento da reportagem ao texto de ficção:`,
+    opcoes: [
+      { letra: 'A', texto: `Os mais velhos, acumulados de tanto sofrimento, olhavam para trás e do passado nada reconheciam no presente. Suas lutas, seu fazer e saber, tudo parecia ter se perdido no tempo (...) Deram de clamar pela morte. E a todo instante eles partiam" (p. 112).` },
+      { letra: 'B', texto: `Vi só lágrimas e lágrimas. Entretanto, ela sorria feliz. Mas eram tantas lágrimas, que eu me perguntei se minha mãe tinha olhos ou rios caudalosos sobre a face. E só então compreendi. Minha mãe trazia, serenamente em si, águas correntezas (...). Águas de Mamãe Oxum!" (p. 18-19).` },
+      { letra: 'C', texto: `Os assaltantes desceram rápido. Maria olhou saudosa e desesperada para o primeiro. (...) Alguém gritou que aquela puta safada lá da frente conhecia os assaltantes (...). A primeira voz, a que acordou a coragem de todos, (...) levantou e se encaminhou em direção à Maria (...)" (p. 41-42).` },
+      { letra: 'D', texto: `Nos últimos tempos na favela, os tiroteios aconteciam com frequência e a qualquer hora. Os componentes dos grupos rivais brigavam para garantir seus espaços e freguesias. Havia ainda o confronto constante com os policiais que invadiam a área" (p. 76).` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1426,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Casa Velha, de Machado de Assis',
+    enunciado: `No início da novela Casa Velha, de Machado de Assis, o cônego da Capela Imperial, um personagem da história, assumindo a voz narrativa dela, conta a seus interlocutores:
+"- Não desejo ao meu maior inimigo o que me aconteceu no mês de abril de 1839."
+(MACHADO DE ASSIS. Casa Velha. Rio de Janeiro: Paz e Terra, 1986, p. 11.)
+
+De acordo com o texto, o acontecimento desagradável que vitimou o religioso faz com que ele possa ser considerado, ao final da narrativa, como`,
+    opcoes: [
+      { letra: 'A', texto: `um boêmio que se sente entediado na presença dos convivas da Casa Velha: "Disseram-me que era amiga da família, e se chamava Mafalda. (...) Creio que disseram ainda outras coisas; mas não me interessando nada, nem a conversação, nem a hóspeda, (...) deixei-me estar comigo" (p. 29-30).` },
+      { letra: 'B', texto: `um antiescravista, obrigado a conviver, na mesma casa grande, com senhores, agregados e escravos: "Lalau (...) com as mãos no ombro do moleque, ora fitava os olhos na carapinha deste, ouvindo somente as palavras de Félix; ora erguia-os para o moço (...)" (p. 67).` },
+      { letra: 'C', texto: `um republicano que suporta um velho Coronel de posições conservadoras: "Reverendíssimo, (...) os farrapos invadiram Santa Catarina, entraram na Laguna, e os legais fugiram. Eu, se fosse o governo, mandava fuzilar a todos estes para escarmento..." (p. 89).` },
+      { letra: 'D', texto: `um ingênuo que se deixa iludir em suas relações pessoais: "nem por sombras me acudiu que a revelação de Dona Antônia podia não ser verdadeira (...) Não adverti sequer na minha cumplicidade. Em verdade, eu é que proferira as palavras que ela trazia na mente (...)" (p. 89).` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1427,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Carta de Achamento do Brasil, de Pero Vaz de Caminha',
+    enunciado: `"Um deles viu umas contas brancas de rosário, acenou que lhas dessem e divertiu-se muito com elas. Enrolou-as ao pescoço, depois tirou-as e embrulhou-as no braço, e acenava para a terra e depois para as contas, e em seguida para o colar do capitão, dando a entender que eles dariam ouro por aquilo. Isto nós entendíamos assim porque queríamos. Mas se ele queria dizer que levaria as contas e mais o colar, isto nós não queríamos entender, porque não lho daríamos."
+(CAMINHA, Pero Vaz de. Carta de Achamento do Brasil. Campinas: Editora da UNICAMP, p. 108, 2001.)
+
+Em seu relato de viagem, Pero Vaz de Caminha`,
+    opcoes: [
+      { letra: 'A', texto: `descreve a natureza e as pessoas que os portugueses encontraram no Novo Mundo, inventariando os detalhes da viagem, com vistas à preservação da História Colonial.` },
+      { letra: 'B', texto: `descreve e interpreta os fatos, mostrando que a compreensão dos portugueses sobre os povos originários era mediada pelos interesses do colonizador.` },
+      { letra: 'C', texto: `descreve como os povos originários do Novo Mundo auxiliaram os colonizadores na prospecção por riquezas, antevendo a realização do projeto colonizador.` },
+      { letra: 'D', texto: `descreve e interpreta os fatos, sugerindo que, na visão dos povos originários, era possível a convivência pacífica com o colonizador, já que compartilhavam os mesmos interesses.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1428,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Crítica a Olavo Bilac (Mário de Andrade)',
+    enunciado: `Em 1921, Mário de Andrade, escrevendo a série de artigos "Mestres do passado", publicados no Jornal do Comércio (edição de São Paulo), observou:
+"Tarde [de Olavo Bilac] foi uma promessa de anos seguidos. Tais são, tão salientes os artifícios e tão repetidos que muito bem provam o esforço do poeta decaído da poesia e a sua parca inspiração (...)."
+(ANDRADE, M. Mestres do passado: Olavo Bilac. In: BRITO, M.S. História do modernismo brasileiro. Antecedentes da Semana de Arte Moderna. 5.ed. Rio de Janeiro: Civilização Brasileira, p. 288-289, 1978.)
+
+Relacione, ao poema a seguir, o trecho da crítica anterior, assinalando a alternativa que coincide com a ideia geral de Mário sobre a obra de Bilac.
+
+As estrelas
+Olavo Bilac
+Desenrola-se a sombra no regaço
+Da morna tarde, no esmaiado anil;
+Dorme, no ofego do calor febril,
+A natureza, mole de cansaço.
+Vagarosas estrelas! passo a passo,
+O aprisco desertando, às mil e às mil,
+Vindes do ignoto seio do redil
+Num compacto rebanho, e encheis o espaço...
+E, enquanto, lentas, sobre a paz terrena,
+Vos tresmalhais tremulamente a flux,
+- Uma divina música serena
+Desce rolando pela vossa luz:
+Cuida-se ouvir, ovelhas de ouro: a avena
+Do invisível pastor que vos conduz...
+(BILAC, Olavo. Tarde. Rio de Janeiro: Livraria Francisco Alves, p. 42-43, 1919.)
+
+Esmaecido: esmaecido, pálido
+Aprisco: curral
+Redil: curral para o gado ovino ou caprino; rebanho de ovelhas
+Tresmalhar: afastar-se, perder-se do rebanho
+Flux: fluxo
+Avena: flauta pastoril`,
+    opcoes: [
+      { letra: 'A', texto: `O crítico lamenta o espaçamento da criação poética de Bilac, o que se expressa no poema pela imagem das estrelas que se afastam umas das outras.` },
+      { letra: 'B', texto: `O crítico elogia os salientes artifícios da linguagem poética de Tarde, o que se pode perceber, por exemplo, pela variedade de sinônimos para a palavra "curral".` },
+      { letra: 'C', texto: `O crítico evoca, como resultado da pouca inspiração artística do poeta, a sobrecarga de investimento formal (os hipérbatos ou inversões, por exemplo).` },
+      { letra: 'D', texto: `O crítico associa a poesia de Bilac ao estilo decadentista, o que é reforçado pelas imagens de esgotamento, como se vê nas palavras "morna", "esmaiado", "ofego", "mole", "lentas".` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1429,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - O Ateneu, de Raul Pompeia',
+    enunciado: `Leia as duas citações a seguir, extraídas do início e do final de O Ateneu:
+"Lembramo-nos, entretanto, com saudade hipócrita, dos felizes tempos; como se a mesma incerteza de hoje, sob outro aspecto, não nos houvesse perseguido outrora e não viesse de longe a enfiada das decepções que nos ultrajam. Eufemismo, os felizes tempos, eufemismo apenas, igual aos outros que nos alimentam, a saudade dos dias que correram como melhores. Bem considerando, a atualidade é a mesma em todas as datas. Feita a compensação dos desejos que variam, das aspirações que se transformam, alentadas perpetuamente do mesmo ardor, sobre a mesma base fantástica de esperanças, a atualidade é uma (...)".
+
+"Aqui suspendo a crônica das saudades. Saudades verdadeiramente? Puras recordações, saudades talvez, se ponderarmos que o tempo é a ocasião passageira dos fatos, mas sobretudo - o funeral para sempre das horas."
+(POMPEIA, Raul. O Atheneu (Chronica de saudades). Rio de Janeiro: Tipografia de Gazeta de Notícias, p. 3-4 e 368, 1888.)
+
+Com base nessas duas citações, é possível afirmar que, ao fim da narrativa de Sérgio sobre sua vida no colégio, o narrador`,
+    opcoes: [
+      { letra: 'A', texto: `idealiza a felicidade experimentada na infância, suas aspirações, seu ardor e suas esperanças.` },
+      { letra: 'B', texto: `considera que a felicidade passada não era maior que a do presente, pois os tempos são iguais.` },
+      { letra: 'C', texto: `duvida da própria saudade, separando as lembranças relativas ao passado daquele sentimento associado a elas.` },
+      { letra: 'D', texto: `denuncia a hipocrisia da saudade que sente, por saber que a passagem do tempo é incerta.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1430,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História Antiga - Clima e mudanças históricas',
+    enunciado: `Estudos, publicados na Nature Geoscience e na revista Science, apontam para a queda acentuada das temperaturas na Europa e na Ásia a partir do ano de 536, gerando a chamada "Pequena Idade do Gelo da Antiguidade Tardia". As mudanças nas temperaturas podem ter sido causadas por erupções vulcânicas, cujos efeitos foram reforçados pelas correntes oceânicas, pela expansão do gelo e pela coincidência de um mínimo solar (século VI). A conjugação desses fatores teria gerado mudanças efetivas na história, já que a agricultura e a pastagem teriam sido diretamente atingidas. Exemplos dessas relações entre o clima e a história humana podem ser encontrados na Antiguidade, como a invasão da Europa por vários povos das estepes, a queda do segundo império persa, a entrada dos turcos na Anatólia, o início da expansão árabe, entre outros.
+(Adaptado de: CRIADO, M.A. "Uma pequena idade do gelo' pode ter mudado a história da Antiguidade (...)". El País, fev, 2016.)
+
+Com base em seus conhecimentos sobre a Antiguidade e tendo em vista o excerto anterior, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a história do planeta Terra e a história humana são indissociáveis; eventos do século VI são bons exemplos disso: mudanças nos ecossistemas teriam gerado peste, fome e escassez, levando aos deslocamentos de povos.` },
+      { letra: 'B', texto: `a "Pequena Idade do Gelo da Antiguidade Tardia", assim como as mudanças climáticas dos séculos XX e XXI, foram provocadas, em especial, pela ação humana e também pelas mudanças nas paisagens dos campos.` },
+      { letra: 'C', texto: `os efeitos das mudanças climáticas no passado eram locais; os eventos históricos citados se desconectavam das mudanças nos ecossistemas encontrados na Europa e na Ásia.` },
+      { letra: 'D', texto: `os estudos sobre as mudanças nas temperaturas no século VI apresentam uma visão sobre o passado, destacando como grupamentos humanos controlavam as mudanças na natureza.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1431,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História do Brasil - Escravidão: comunidades de malungos',
+    enunciado: `"Dos pretos é tão própria e natural a união que a todos os que têm a mesma cor, chamam parentes; a todos os que servem na mesma casa, chamam parceiros; e a todos os que se embarcam no mesmo navio, chamam malungos."
+(VIEIRA, Padre Antônio. Sermão XX. Parte II. Lisboa: Impressão Craesbeeckiana, p. 165, 1688.)
+
+Sobre as comunidades de malungos no período da escravidão, é correto afirmar, de acordo com o texto, que são formadas`,
+    opcoes: [
+      { letra: 'A', texto: `nos laços entre africanos de múltiplas etnias, os quais haviam atravessado juntos o Atlântico.` },
+      { letra: 'B', texto: `no encontro dos africanos nas senzalas, no exercício de ofícios e no trabalho da lavoura.` },
+      { letra: 'C', texto: `no Novo Mundo por pessoas de uma mesma etnia que se reconheciam como iguais.` },
+      { letra: 'D', texto: `nos quilombos rurais e urbanos, formados por escravizados fugidos de muitas etnias.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1432,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História do Brasil - Independência e povos indígenas',
+    enunciado: `No processo de Independência, várias tropas indígenas foram recrutadas para proteger o território contra uma possível invasão portuguesa no litoral cearense entre setembro e novembro de 1822. Já os índios da vila de Cimbres, em Pernambuco, se posicionaram em 1824 a favor de Dom João VI, opondo-se à Independência e à Constituição. No entanto, o que parecia ser mais comum era o engajamento dos índios no projeto de Brasil independente, identificando-se como "brasileiros". Nas revoltas, buscavam muito menos se contrapor aos europeus e, assim, lutar por uma nova posição social que não mais os obrigasse ao trabalho forçado.
+(Adaptado de: COSTA, J. P. P. "Povos indígenas e a Independência". Disponível em: https://bicentenario2022.com.br/textos/. Acesso em 21/05/2023.)
+
+Tendo em vista seus conhecimentos sobre a participação dos povos indígenas no processo de Independência, e considerando o texto do blog citado, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `As disputas dos ameríndios em torno do "ser brasileiro" visavam à manutenção da ordem social vigente.` },
+      { letra: 'B', texto: `As populações indígenas participaram, com projetos políticos específicos, dos processos da Independência.` },
+      { letra: 'C', texto: `A independência era entendida pelos indígenas como uma ameaça a Dom João VI, símbolo da nação brasileira.` },
+      { letra: 'D', texto: `A diversidade da ação indígena se relacionava à distribuição de terras e títulos estabelecidos pela Corte portuguesa.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1433,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Fotografia de obras públicas no século XIX',
+    enunciado: `Muitos fotógrafos no século XIX registraram obras de engenharia. O francês Édouard Baldus (1813-1889) atuou, primeiro como pintor e depois como fotógrafo, no inventário de monumentos arquitetônicos da Comissão dos Monumentos Históricos (1851) na França. Suas fotografias sobre esses monumentos renderam-lhe fama de fotógrafo de arquitetura. Sob encomenda, Baldus editou um álbum para a Companhia dos Caminhos Férreos do Norte (1855) e registrou estações, instalações ferroviárias, portos e cidades, ao longo desta via entre Paris e a cidade de Boulogne-sur-Mer. A rainha Vitória ganhou um exemplar dessa publicação.
+(Adaptado de: OLIVEIRA, E. R. Vistas fotográficas das ferrovias: a produção de registros de obra pública no Brasil do século XIX. Hist cienc saude-Manguinhos [Internet], 25(3), p. 695-723, 2018.)
+
+Tendo em vista seus conhecimentos sobre mundo contemporâneo e considerando o texto, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Na Europa do século XIX, a difusão social das fotografias das obras públicas se dava por meio de jornais impressos com baixa circulação social e restrita aos estudiosos.` },
+      { letra: 'B', texto: `No século XIX, a dissociação entre as fotografias de obras públicas e a vida política europeia expressa a desvalorização da técnica e do conhecimento científico positivista.` },
+      { letra: 'C', texto: `A fotografia teve vários usos e funções no século XIX, entre eles, o de compor inventários arquitetônicos e retratar obras de engenharia.` },
+      { letra: 'D', texto: `O álbum fotográfico dado à rainha Vitória era um gesto diplomático que mostrava o descontentamento francês com a política inglesa.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1435,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História do Brasil - Ditadura Militar e censura',
+    enunciado: `Prisões e torturas igualmente triplicaram, principalmente as de jornalistas. Dentre elas, a mais emblemática foi a de Vladimir Herzog, diretor da TV Cultura, que, embora fosse militante do PCB, não desenvolvia atividade clandestina nem pertencia aos quadros do partido. Herzog foi assassinado dentro do DOI-CODI, sendo a versão oficial de sua morte falsamente atribuída a um enforcamento. Em sua Autobiografia, Rita Lee publicou o bilhete de Elis Regina que fazia menção a uma música feita para "Vlado" e que, obviamente, fora censurada.
+(Adaptado de: LIMA, N. Ditadura no Brasil e Censura nas Canções de Rita Lee. Curitiba: Appris, 2019, p. 17.)
+
+A partir da leitura do texto e de seus conhecimentos a respeito desse período da História do Brasil, é correto afirmar, sobre os eventos narrados, que`,
+    opcoes: [
+      { letra: 'A', texto: `Rita Lee, Elis Regina, Caetano Veloso, Chico Buarque, entre outros artistas nacionais, tiveram suas músicas censuradas pela Ditadura Militar, apesar da manutenção da garantia constitucional da liberdade de expressão.` },
+      { letra: 'B', texto: `A Ditadura Militar permitiu a continuidade do Partido Comunista Brasileiro e perseguia sua atuação revolucionária vinculada a Stalin e à União Soviética; por conta disso, prendia e torturava seus filiados.` },
+      { letra: 'C', texto: `Centros de detenção da Ditadura Militar, como o DOI-CODI, operaram dentro da legalidade constitucional, sendo que os presos, políticos ou não, eram fichados e tinham direito à defesa garantido por lei.` },
+      { letra: 'D', texto: `Vladimir Herzog e outros jornalistas foram vítimas de perseguição política, prisões, torturas e execuções realizadas por militares, com apoio de parte da sociedade civil, em nome da ideologia da segurança nacional.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1439,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Equilíbrio ácido-base: pKa e acidulantes',
+    enunciado: `Um refrigerante comum é uma formulação de vários ingredientes: açúcar (11 g por 100 mL), água (88 g por 100 mL) - componentes majoritários, além de acidulantes, antioxidantes, conservantes, adoçantes e CO2 (componentes em pequenas quantidades). O acidulante tem como finalidade regular a doçura do açúcar, realçar o paladar e reduzir o pH do refrigerante, que deve estar entre 2,7 e 3,5. Assim, para se usar uma pequena massa de acidulante que proporcione a redução do pH para o valor desejado, a massa molar do acidulante deve ser`,
+    opcoes: [
+      { letra: 'A', texto: `pequena e seu pKa deve estar abaixo da faixa de pH do refrigerante.` },
+      { letra: 'B', texto: `pequena e seu pKa deve estar acima da faixa de pH do refrigerante.` },
+      { letra: 'C', texto: `grande e seu pKa deve estar abaixo da faixa de pH do refrigerante.` },
+      { letra: 'D', texto: `grande e seu pKa deve estar acima da faixa de pH do refrigerante.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1444,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Povos e comunidades tradicionais',
+    enunciado: `Povos e comunidades tradicionais são grupos culturalmente diferenciados e que se reconhecem como tais. Esses grupos contam com formas próprias de organização social, além de ocuparem e usarem territórios e recursos naturais como condição para sua reprodução cultural, social, religiosa, ancestral e econômica. Para tanto, utilizam conhecimentos, inovações e práticas gerados e transmitidos pela tradição (Inciso I, Art. 3º, Decreto 6.040/2007). Estima-se que cerca de 4,5 milhões de pessoas fazem parte de comunidades tradicionais atualmente no Brasil.
+(Adaptado de: Populações Tradicionais - Instituto Chico Mendes de Conservação da Biodiversidade. Disponível em: https://www.gov.br/icmbio/pt-br/assuntos/populacoes-tradicionais. Acesso em 12/06/2023.)
+
+Assinale a alternativa que faz a correspondência correta dos povos e comunidades tradicionais com a sua região de atuação e com as suas práticas específicas de organização socioterritorial.`,
+    opcoes: [
+      { letra: 'A', texto: `Mulheres quebradeiras de coco babaçu da região do Meio-norte aproveitam as matas de cocais e fazem uso comunitário dos babaçuais para a coleta de coco e de outros produtos das palmeiras.` },
+      { letra: 'B', texto: `Geraizeiros da região da Amazônia Ocidental se beneficiam dos rios para a pesca e praticam o extrativismo de frutos utilizados na culinária regional e transformados em produtos alimentícios.` },
+      { letra: 'C', texto: `Caiçaras da região litorânea do Ceará praticam a pesca artesanal, utilizam as riquezas naturais da Mata Atlântica para o extrativismo de frutos e fazem uso dos roçados para atividades agrícolas de subsistência.` },
+      { letra: 'D', texto: `Faxinalenses do norte de Minas Gerais usufruem dos campos para o desenvolvimento do extrativismo vegetal da erva mate e do pinhão, do cultivo agrícola em pequena escala e da criação de animais soltos.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1445,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Geomorfologia do litoral brasileiro',
+    enunciado: `O litoral brasileiro tem uma história fisiográfica e ecológica rica e complexa, influenciada por uma variedade de fatores e processos interligados. O Brasil conta com um litoral intertropical e subtropical onde é possível observar uma diversidade de ocorrências geomorfológicas e paisagísticas que se sucedem ao longo de sua costa.
+(Adaptado de: AB'SABER, A. Litoral do Brasil/Brazilian coast. São Paulo: Metalivros, p. 281, 2005.)
+
+A partir de seus conhecimentos sobre o litoral brasileiro, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Os manguezais localizam-se nas planícies marinhas recobertas por espécies herbáceas e arbóreas.` },
+      { letra: 'B', texto: `Os campos de dunas associam-se aos depósitos argilosos e arenosos, fixados por vegetação pioneira.` },
+      { letra: 'C', texto: `As falésias ativas evoluem de processos continentais e marinhos, com ausência de vegetação na sua base.` },
+      { letra: 'D', texto: `Os deltas são formados por sedimentos fluviais e cobertos por espécies arbóreas de grande porte.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1448,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Regionalização e globalização',
+    enunciado: `Dentro de um território nacional, as regiões são hoje atingidas por complexos vetores de ordem técnica e política, típicos do período da globalização. Neste sentido, as regiões, tanto quanto são internamente construídas, seguem as oscilações econômicas nacionais e internacionais. Isso as torna, diferentemente do passado, mais instáveis e sujeitas a frequentes crises. E, conforme se especializam em diferentes tipos de produção para atender os mercados internacionais, suas fronteiras tornam-se mais cambiáveis.
+(Adaptado de: SMITH, N. Contorno de uma política espacializada: veículos dos sem-teto e produção da escala geográfica. In: ARANTES, A. A. (Org.) O espaço da diferença. Campinas: Papirus, p. 152, 2000.)
+
+Tendo em vista seus conhecimentos sobre a dinâmica das regiões no mundo contemporâneo e considerando o texto anterior, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `desapareceram os laços internos de construção regional, uma vez que a escala de comando internacional regula as especializações produtivas.` },
+      { letra: 'B', texto: `múltiplas escalas de ações perpassam e dinamizam a coesão regional, ocasionando instabilidade socioeconômica e mutações aceleradas em suas fronteiras.` },
+      { letra: 'C', texto: `o comando externo da produção vinculado aos mercados internacionais torna as fronteiras regionais estáveis e duradouras na escala do território nacional.` },
+      { letra: 'D', texto: `a conformação de arranjos produtivos regionais nesse contexto homogeniza o espaço nacional, apagando as antigas identidades e as desigualdades socioterritoriais.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1451,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Cinemática: movimento uniformemente variado',
+    enunciado: `Use os valores aproximados: g = 10 m/s² e π = 3.
+Texto comum às questões 34, 35, 36 e 37.
+Uma das etapas mais difíceis de um voo espacial tripulado é a reentrada na atmosfera terrestre. Ao reencontrar as camadas mais altas da atmosfera, a nave sofre forte desaceleração e sua temperatura externa atinge milhares de graus Celsius. Caso a reentrada não ocorra dentro das condições apropriadas, há risco de graves danos à nave, inclusive de explosão, e até mesmo risco de ela ser lançada de volta ao espaço.
+
+Logo ao reentrar na atmosfera terrestre, uma cápsula espacial passa a descrever, durante certo tempo, um movimento retilíneo uniformemente variado em que ela é freada com aceleração a=-5,0 m/s². Se no início dessa etapa (t=0) do movimento a velocidade da cápsula é v0=7000 m/s, qual é a distância percorrida até o tempo t=200 s?`,
+    opcoes: [
+      { letra: 'A', texto: `1300 km.` },
+      { letra: 'B', texto: `1400 km.` },
+      { letra: 'C', texto: `1500 km.` },
+      { letra: 'D', texto: `4900 km.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1452,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Trabalho e energia cinética',
+    enunciado: `Use os valores aproximados: g = 10 m/s² e π = 3.
+Texto comum às questões 34, 35, 36 e 37.
+Uma das etapas mais difíceis de um voo espacial tripulado é a reentrada na atmosfera terrestre. Ao reencontrar as camadas mais altas da atmosfera, a nave sofre forte desaceleração e sua temperatura externa atinge milhares de graus Celsius. Caso a reentrada não ocorra dentro das condições apropriadas, há risco de graves danos à nave, inclusive de explosão, e até mesmo risco de ela ser lançada de volta ao espaço.
+
+Após viajar pela atmosfera por determinado tempo, o módulo da velocidade da cápsula, que inicialmente era v0=7000 m/s, fica reduzido a v=5000 m/s. Sendo a massa da cápsula m=3000 kg, qual foi o trabalho da força resultante sobre a cápsula durante esse tempo?`,
+    opcoes: [
+      { letra: 'A', texto: `-1,11 x 10^10 J.` },
+      { letra: 'B', texto: `-3,60 x 10^10 J.` },
+      { letra: 'C', texto: `-6,00 x 10^6 J.` },
+      { letra: 'D', texto: `-3,00 x 10^6 J.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1453,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Termologia: gás ideal',
+    enunciado: `Use os valores aproximados: g = 10 m/s² e π = 3.
+Texto comum às questões 34, 35, 36 e 37.
+Uma das etapas mais difíceis de um voo espacial tripulado é a reentrada na atmosfera terrestre. Ao reencontrar as camadas mais altas da atmosfera, a nave sofre forte desaceleração e sua temperatura externa atinge milhares de graus Celsius. Caso a reentrada não ocorra dentro das condições apropriadas, há risco de graves danos à nave, inclusive de explosão, e até mesmo risco de ela ser lançada de volta ao espaço.
+
+O ar atmosférico comporta-se como um gás perfeito. Sendo a pressão e a temperatura do ar, numa determinada posição da alta atmosfera, dadas por p=2,0 Pa e T=180 K (sem a presença da cápsula na vizinhança), e sendo a constante universal dos gases perfeitos R=8 J/mol.K, qual é o volume ocupado por um mol de ar naquela posição?`,
+    opcoes: [
+      { letra: 'A', texto: `1,38 x 10^-3 m³.` },
+      { letra: 'B', texto: `9,00 x 10^1 m³.` },
+      { letra: 'C', texto: `7,20 x 10^2 m³.` },
+      { letra: 'D', texto: `2,88 x 10^3 m³.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1455,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Queda livre e velocidade terminal',
+    enunciado: `Um corpo em queda nas proximidades da superfície terrestre sofre a ação da força gravitacional e da força de resistência do ar, Far; essa última atua em sentido oposto à força gravitacional. Nos primeiros instantes, Far=0 se o corpo parte do repouso. À medida que a velocidade aumenta, Far também aumenta. Com isso, a aceleração do corpo diminui gradativamente, tornando-se praticamente nula a partir de certo momento. Desse ponto em diante, o corpo passa a cair com velocidade constante, chamada de velocidade terminal. Um objeto de massa m=200 g é solto a partir de certa altura e atinge a velocidade terminal após determinado tempo. Qual é o módulo da força de resistência do ar depois que o objeto atinge a velocidade terminal?`,
+    opcoes: [
+      { letra: 'A', texto: `0,20 N.` },
+      { letra: 'B', texto: `2,0 N.` },
+      { letra: 'C', texto: `200 N.` },
+      { letra: 'D', texto: `2000 N.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1458,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Fisiologia de répteis (quelônios)',
+    enunciado: `A região à margem do rio Guaporé em Rondônia é considerada uma das mais importantes do planeta para a espécie Podocnemis expansa, popularmente conhecida como tartaruga-da-amazônia.
+Assinale a alternativa que apresenta corretamente uma característica importante para a vida de quelônios fluviais no ambiente terrestre.`,
+    opcoes: [
+      { letra: 'A', texto: `A pele é seca e completamente impermeável, recoberta por uma espessa camada, em forma de espículas, composta da proteína quitina.` },
+      { letra: 'B', texto: `Os alvéolos com grande superfície de troca gasosa permitem a respiração pulmonar e cutânea mesmo nas espécies aquáticas.` },
+      { letra: 'C', texto: `A principal excreta nitrogenada liberada é a ureia, que se caracteriza por ser pouco tóxica e que requer mínima quantidade de água para ser eliminada.` },
+      { letra: 'D', texto: `A fecundação é interna e há formação de ovo amniótico; esse ovo possui uma bolsa contendo líquido que envolve o embrião.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1460,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Sistema endócrino: testosterona',
+    enunciado: `Sabe-se que o uso indiscriminado e irregular de anabolizantes gera consequências negativas significativas à saúde humana, tais como: tremores, acne severa, hipertensão arterial sistêmica, tumores no fígado e pâncreas, distúrbios de coagulação, distúrbios testiculares e menstruais, insônia, entre outros.
+(Adaptado de: https://bvsms.saude.gov.br/anabolizantes/. Acesso em 12/4/2023.)
+
+Assinale a alternativa que preenche corretamente as lacunas no excerto a seguir.
+A testosterona desempenha importante função no desenvolvimento de tecidos e órgãos do sistema reprodutor masculino, como (i) e testículos, além de atuar na promoção de características sexuais secundárias, como aumento de massa muscular, crescimento dos pelos corporais, espessamento das pregas vocais e (ii). Esse hormônio anabolizante é sintetizado em várias etapas a partir (iii) e é convertido para metabólitos inativos no (iv).`,
+    opcoes: [
+      { letra: 'A', texto: `(i) próstata; (ii) maturação dos ossos; (iii) do colesterol; (iv) fígado.` },
+      { letra: 'B', texto: `(i) vesícula seminal; (ii) maturação dos ossos; (iii) da creatina; (iv) fígado.` },
+      { letra: 'C', texto: `(i) próstata; (ii) produção de esperma; (iii) da creatina; (iv) pâncreas.` },
+      { letra: 'D', texto: `(i) vesícula seminal; (ii) produção de esperma; (iii) do colesterol; (iv) pâncreas.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1462,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Genética: hereditariedade e quimerismo',
+    enunciado: `Uma quimera é um indivíduo formado por dois ou mais tipos de células, em que cada tipo contém um genoma distinto. Os machos da espécie de formiga Anoplolepis gracilipes são quimeras formadas por dois tipos de células haploides, bastante distintas do ponto de vista genético; essas células são provenientes de duas linhagens de formigas, podendo ser chamadas de linhagem 1 e linhagem 2. As rainhas (fêmeas capazes de produzir óvulos) desta espécie são indivíduos formados pela fusão entre um óvulo com genoma característico da linhagem 1 e um espermatozoide com genoma característico da linhagem 1. Já as fêmeas operárias (não reprodutivas) são indivíduos formados pela fusão entre um óvulo com genoma característico da linhagem 1 e um espermatozoide com genoma característico da linhagem 2.
+(Adaptado de: DARRAS, H. et al. Science, Washington, v. 380, p.55-58, abr. 2023.)
+
+Com base em seus conhecimentos e considerando o texto apresentado, pode-se dizer que as diferenças genéticas entre rainhas e operárias se explicam pelo fato de`,
+    opcoes: [
+      { letra: 'A', texto: `os gametas se fundirem apenas nas fêmeas (rainhas e operárias).` },
+      { letra: 'B', texto: `os machos conterem células haploides das linhagens 1 e 2.` },
+      { letra: 'C', texto: `os machos serem homozigotos.` },
+      { letra: 'D', texto: `os machos serem diploides oriundos das linhagens 1 e 2.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1465,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Durkheim: fato social',
+    enunciado: `Quando desempenho minha tarefa de irmão, de marido ou de cidadão, quando executo os compromissos que assumi, eu cumpro deveres que estão definidos fora de mim e de meus atos, no direito e nos costumes. Ainda que eles estejam de acordo com os meus sentimentos próprios e que eu sinta interiormente a realidade deles, tal realidade não deixa de ser objetiva, pois não fui eu que os fiz, mas os recebi pela educação. Eis aí, portanto, maneiras de agir, de pensar e de sentir que apresentam essa notável propriedade de existirem fora das consciências individuais.
+(Adaptado de: DURKHEIM, E. As regras do método sociológico. São Paulo: Martins Fontes, 2014.)
+
+Émile Durkheim é um dos fundadores da Sociologia e analisa a relação entre indivíduo e sociedade. A partir do texto, podemos afirmar que os modos de agir, de pensar e de sentir, em uma sociedade, são definidos`,
+    opcoes: [
+      { letra: 'A', texto: `pelo livre-arbítrio dos indivíduos.` },
+      { letra: 'B', texto: `pelos sentimentos próprios dos indivíduos e independem do meio social.` },
+      { letra: 'C', texto: `pelo direito e pelos costumes, que são, por sua vez, definidos livremente pelos indivíduos.` },
+      { letra: 'D', texto: `pela própria sociedade, que constitui uma realidade objetiva que exerce coerção sobre o indivíduo.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1467,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Interseccionalidade (Hill Collins e Bilge)',
+    enunciado: `As sociólogas Patrícia Hill Collins e Sirma Bilge procuram explicar as relações entre mérito, oportunidade e desigualdades utilizando a metáfora de um campo de futebol. Elas imaginam uma situação na qual o campo seria um terreno levemente em declive, na qual o gol do Time 1 fica no topo e o do Time 2, na parte baixa. Quando o Time 1 tenta marcar um gol, a topografia do campo ajuda, o que não ocorre com o Time 2, que pode ter talento e disciplina, mas sempre trava uma batalha morro acima para marcar um gol. No caso de uma partida de futebol, torcedores ficariam indignados se os campos de verdade fossem inclinados dessa maneira. No entanto, é isso que fazem as divisões sociais de classe, gênero e raça, ou seja, achamos que estamos jogando em igualdade de condições quando, na verdade, não estamos.
+(Adaptado de: HILL COLLINS, P.; BILGE, S. Interseccionalidades. São Paulo: Boitempo, p. 32-33, 2016.)
+
+A partir do texto, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `divisões sociais de classe, gênero e raça permitem que todas as pessoas tenham acesso às mesmas oportunidades e possam igualmente desenvolver suas habilidades e aptidões.` },
+      { letra: 'B', texto: `condições de competição individual são marcadas por divisões de classe, gênero e raça, e são influenciadas pelo contexto social, político e econômico.` },
+      { letra: 'C', texto: `o mérito e o esforço individual podem ser isolados das divisões de classe, gênero e raça e considerados como parâmetros justos para a dinâmica da vida social.` },
+      { letra: 'D', texto: `divisões de classe, gênero e raça estão presentes na vida em sociedade e têm relação marginal com o fenômeno da desigualdade.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1468,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Racismo (Sueli Carneiro)',
+    enunciado: `"A negação da plena humanidade do Outro, o seu enclausuramento em categorias que lhe são estranhas, a afirmação de sua incapacidade inata para o desenvolvimento e aperfeiçoamento humano, a destituição da sua capacidade de produzir cultura e civilização prestam-se a afirmar uma razão racializada, que hegemoniza e naturaliza a superioridade europeia."
+(CARNEIRO, Sueli. Dispositivo de racialidade. A construção do outro como não ser como fundamento do ser. São Paulo: Zahar, p. 91, 2023.)
+
+Escolha a alternativa que apresenta crítica semelhante à de Sueli Carneiro.`,
+    opcoes: [
+      { letra: 'A', texto: `"Tão essencial é a diferença entre essas duas raças humanas [branca e negra], que parece ser tão grande em relação às capacidades mentais quanto às diferenças de cores." (E. Kant. Observações sobre o sentimento do belo e do sublime. Campinas: Papirus, p. 75-76, 1993.)` },
+      { letra: 'B', texto: `"É na brutalidade e na selvageria que vemos o homem africano, na medida em que o podemos observar, e assim permanece hoje." (Hegel. A razão na história. Lisboa: Edições 70, p. 218.)` },
+      { letra: 'C', texto: `"A nossa solução foi medíocre. Estragou as duas raças, fundindo-as. O negro perdeu as suas admiráveis qualidades físicas de selvagem, e o branco sofreu a inevitável piora de caráter, consequente a todos os cruzamentos entre raças díspares". (Personagem Miss Jane, do livro O Presidente Negro, de Monteiro Lobato. São Paulo: Editora Lafonte, p. 82, 2019.)` },
+      { letra: 'D', texto: `"Na medida em que o racismo, enquanto discurso, se situa entre os discursos de exclusão, o grupo por ele excluído é tratado como objeto e não como sujeito." (Lélia Gonzales. Cultura, etnicidade e trabalho: efeitos linguísticos e políticos da exploração da mulher. In: RIOS, F.; LIMA, M. Por um feminismo afro-latino-americano. São Paulo: Zahar, p. 43, 2020.)` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1469,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Ética: felicidade em Aristóteles e Epicuro',
+    enunciado: `Excerto 1
+Quase todos estão de acordo que a felicidade é o maior de todos os bens que se pode alcançar pela ação; diferem, porém, quanto ao que seja a felicidade. A julgar pela vida que os homens levam em geral, a maioria deles, e os homens de tipo mais vulgar, parecem identificar o bem ou a felicidade com o prazer, e por isso amam a vida dos gozos.
+(Adaptado de: Aristóteles. Ética a Nicômaco, Livro I, seções 4 e 5.)
+
+Excerto 2
+O conhecimento seguro dos desejos leva a direcionar toda a escolha e toda recusa para a saúde do corpo e para a serenidade do espírito, visto que essa é a finalidade da vida feliz. O prazer é o início e o fim de uma vida feliz. Embora o prazer seja nosso primeiro bem inato, nem por isso escolhemos qualquer prazer.
+(Adaptado de: Epicuro. Carta sobre a felicidade. São Paulo: Editora UNESP, p. 35-37, 2002.)
+
+Considerando os excertos dos filósofos gregos Aristóteles e Epicuro, ambos do século IV a.C., é possível afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `Aristóteles e Epicuro sustentam a ideia de que há relação entre a felicidade e o prazer, pois ambos entendem que o prazer é o início e o fim de uma vida feliz.` },
+      { letra: 'B', texto: `diferentemente de Aristóteles, Epicuro defende que a felicidade consiste na realização irrestrita dos nossos desejos, uma vez que o prazer é o início e o fim de uma vida feliz.` },
+      { letra: 'C', texto: `tanto Aristóteles quanto Epicuro - ainda que com concepções éticas distintas - entendem que não há uma identificação imediata entre felicidade e prazer.` },
+      { letra: 'D', texto: `Aristóteles e Epicuro concordam entre si e discordam daqueles que pensam que a felicidade seja o maior dos bens que se possa alcançar pela ação.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1470,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Liberdade e igualdade',
+    enunciado: `"Apesar de sua presumida evidência, a articulação entre liberdade e igualdade é mais complicada do que parece. Sua reunião em um mesmo indivíduo, que seria, ao mesmo tempo, livre e igual a seus semelhantes, esconde tensões significativas. Como, por exemplo, alguém poderia ser livre em um contexto no qual prevalecem desigualdades aberrantes? Em contrapartida, o que resta da liberdade se os indivíduos não puderem singularizar-se e diferenciar-se uns dos outros?"
+(FIGUEIREDO, V. A paixão da Igualdade: uma genealogia do indivíduo moral na França. Belo Horizonte: Relicário, p. 9, 2021.)
+
+Escolha, dentre as alternativas a seguir, aquela que sintetiza melhor a ideia expressa na citação de Figueiredo:`,
+    opcoes: [
+      { letra: 'A', texto: `A realização da liberdade e da igualdade independe da supressão de desigualdades profundas.` },
+      { letra: 'B', texto: `A articulação entre liberdade e igualdade é um ideal que não contrasta com regimes políticos antidemocráticos.` },
+      { letra: 'C', texto: `A articulação entre liberdade e igualdade é complexa porque exige tanto a supressão de desigualdades extremas quanto a possibilidade da afirmação das diferenças individuais.` },
+      { letra: 'D', texto: `O desenvolvimento pleno do capitalismo e da livre concorrência são condições suficientes para a concretização da liberdade e da igualdade.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1471,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Geometria plana: área do círculo',
+    enunciado: `Sr. Gauss tem uma pizzaria, chamada π-zzaria, que vende dois tipos de pizzas circulares: uma individual, de diâmetro d; e uma de 20 cm de diâmetro, partida em quatro pedaços iguais. Considerando que o preço de uma pizza é proporcional à sua área, qual precisa ser o valor de d para que quatro pizzas individuais custem o mesmo que a pizza mencionada, de quatro pedaços?`,
+    opcoes: [
+      { letra: 'A', texto: `6 cm.` },
+      { letra: 'B', texto: `8 cm.` },
+      { letra: 'C', texto: `10 cm.` },
+      { letra: 'D', texto: `12 cm.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1472,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Lógica proposicional',
+    enunciado: `Todo final de semana, as amigas Ana, Bruna e Carol se encontram em um parque para andar de bicicleta ou de patins. Nesta brincadeira, a escolha entre patins e bicicleta é feita usando a seguinte regra:
+Se Ana anda de patins, então Carol também anda de patins.
+Bruna anda de patins apenas quando Carol anda de bicicleta.
+Sabendo que neste final de semana Carol andou de patins, então é necessariamente verdade que`,
+    opcoes: [
+      { letra: 'A', texto: `Ana andou de patins.` },
+      { letra: 'B', texto: `Ana não andou de patins.` },
+      { letra: 'C', texto: `Bruna andou de patins.` },
+      { letra: 'D', texto: `Bruna não andou de patins.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1473,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Sistema de equações',
+    enunciado: `Luísa estava conversando com seu irmão ao telefone quando passou perto de uma feira de adoção de animais. Ela comentou que, na feira, havia cachorros, gatos e pintinhos.
+O irmão, curioso, perguntou-lhe quantos gatos havia. Luísa, que adora charadas matemáticas, limitou-se a dizer que a quantidade de gatos somada à quantidade de pintinhos era 4 a mais do que a quantidade de cachorros, e que a quantidade de gatos somada à quantidade de cachorros era 6 a mais do que a quantidade de pintinhos.
+O irmão de Luísa, que adora as aulas de matemática, rapidamente chegou à resposta correta. Havia quantos gatos para adoção?`,
+    opcoes: [
+      { letra: 'A', texto: `4.` },
+      { letra: 'B', texto: `5.` },
+      { letra: 'C', texto: `6.` },
+      { letra: 'D', texto: `7.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1475,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Desigualdade triangular',
+    enunciado: `Joaquim estava brincando com um graveto, quando acertou uma parede e o graveto se partiu em três pedaços, de comprimentos a,b,c, com a≤b≤c. Ele recolheu os pedaços e tentou construir um triângulo cujos lados seriam exatamente os pedaços do graveto: não foi possível. Sabendo que o graveto tinha 50 cm de comprimento e que b=a+2, qual é o maior valor possível de a?`,
+    opcoes: [
+      { letra: 'A', texto: `9,5 cm.` },
+      { letra: 'B', texto: `10,5 cm.` },
+      { letra: 'C', texto: `11,5 cm.` },
+      { letra: 'D', texto: `12,5 cm.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1476,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Conjuntos e inequações',
+    enunciado: `Considere os conjuntos A = {x ∈ ℝ | x² - 2x - 24 < 0} e B = {x ∈ ℝ | 2x - 7 ≤ 0}. Quantos números inteiros pertencem à interseção A ∩ B?`,
+    opcoes: [
+      { letra: 'A', texto: `3.` },
+      { letra: 'B', texto: `5.` },
+      { letra: 'C', texto: `7.` },
+      { letra: 'D', texto: `9.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1477,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Análise combinatória',
+    enunciado: `Terminado o almoço, Ana foi à cozinha para a escolha das sobremesas. A garota estava decidida a pegar dois itens. Seu pai, preocupado com a alimentação dela, instruiu-a da seguinte forma: "Escolha o que quiser, mas, se você pegar algum pirulito, pegue também alguma fruta". Na cozinha, tinha 5 frutas diferentes, 3 pirulitos diferentes e 2 pedaços de bolos de sabores diferentes. De quantas formas Ana poderia escolher seus dois itens?`,
+    opcoes: [
+      { letra: 'A', texto: `34.` },
+      { letra: 'B', texto: `36.` },
+      { letra: 'C', texto: `45.` },
+      { letra: 'D', texto: `47.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1478,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Probabilidade condicional',
+    enunciado: `João e Maria estão passeando pela floresta. Para não se perderem no caminho, levaram consigo uma sacola com 100 pedrinhas, sendo 60 pedrinhas brancas e 40 pedrinhas pretas. A cada 5 passos eles retiram aleatoriamente uma pedrinha da sacola e jogam-na no chão para marcar o caminho.
+Quando eles pararam para fazer um lanche, notaram que já tinham sido jogadas 35 pedrinhas brancas e 25 pedrinhas pretas. Qual a probabilidade de as próximas duas pedrinhas jogadas serem brancas?`,
+    opcoes: [
+      { letra: 'A', texto: `7/13.` },
+      { letra: 'B', texto: `5/13.` },
+      { letra: 'C', texto: `11/52.` },
+      { letra: 'D', texto: `7/52.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1479,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Funções e equações',
+    enunciado: `Seja p(x) = x + 2024. A equação p(x) + p(2x) + p(3x) + ... + p(2023x) + p(2024x) = 0 tem uma solução x que satisfaz:`,
+    opcoes: [
+      { letra: 'A', texto: `x < -2` },
+      { letra: 'B', texto: `-2 < x < 0` },
+      { letra: 'C', texto: `0 < x < 2` },
+      { letra: 'D', texto: `x > 2.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1481,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Funções compostas',
+    enunciado: `Considere as funções f(x) = 2x + c e g(x) = 5 - 6x, com c > 0. Sejam P e Q os pontos de interseção, com o eixo y, dos gráficos de y = f(g(x)) e y = g(f(x)), respectivamente. Para que a origem seja o ponto médio do segmento PQ, qual deverá ser o valor de c?`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `2.` },
+      { letra: 'C', texto: `3.` },
+      { letra: 'D', texto: `4.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1485,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: agricultura celular',
+    enunciado: `The environmental and ethical implications of traditional livestock rearing, combined with an increasing global population and demand for protein-rich nutrition, has led to investments in alternative protein research. One emerging approach is cellular agriculture, in which traditional 'meat' tissues, such as muscle and fat cells from cows, chicken and fish, or alternative protein sources, such as algae, are cultivated under controlled laboratory conditions. However, the optimisation of these protocols is highly dependent on cell types, and further development is required to make cellular agriculture an economically viable alternative to traditional sources of protein. This special issue welcomes research on improvements to cellular agriculture protocols to maximize sustainable protein production.
+(Adaptado de: https://www.nature.com/collections/chhdggaffd. Acesso em 12/05/2023.)
+
+Qual seria o tópico específico da edição especial ao qual o texto se refere?`,
+    opcoes: [
+      { letra: 'A', texto: `Alternativas economicamente viáveis dentro da agricultura tradicional.` },
+      { letra: 'B', texto: `Desafios éticos e ambientais da pecuária.` },
+      { letra: 'C', texto: `Sustentabilidade na pesquisa de novos protocolos para agricultura tradicional.` },
+      { letra: 'D', texto: `Agricultura celular de diversas fontes de proteína.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1486,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: inteligência artificial (ChatGPT)',
+    enunciado: `Em uma matéria para um site, jornalistas fizeram interações com o ChatGPT a fim de analisar sua capacidade de criar textos possivelmente problemáticos. Para tanto, eles pediram que o programa de inteligência artificial reescrevesse um e-mail que seria, hipoteticamente, usado como golpe. Eis o texto reescrito pelo ChatGPT:
+"Hey there. You're probably wondering why you're getting this e-mail. The truth is, I put some malware on a website that you visited. My malware took control of your browser and recorded everything, including your contacts from your messenger, Facebook, and e-mail account. To top it all off, I also took videos of you. So I'll give you the option to make a deal before I do anything with it."
+(Adaptado de: https://mashable.com/article/chatgpt-scary-uses. Acesso em 12/05/2023.)
+
+O e-mail criado pelo programa chama a atenção`,
+    opcoes: [
+      { letra: 'A', texto: `pelo uso de linguagem agressiva, pois se apoia em expressões violentas para tentar extorquir o usuário.` },
+      { letra: 'B', texto: `por reproduzir a sintaxe da comunicação humana à medida que recorre ao humor para acusar o usuário.` },
+      { letra: 'C', texto: `pelo emprego de um tom sarcástico, pois se apoia em linguagem informal para ameaçar o usuário.` },
+      { letra: 'D', texto: `por infringir questões éticas, uma vez que informa ter tornado públicas informações privadas do usuário.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1487,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: série Wednesday (Netflix)',
+    enunciado: `Netflix's "Wednesday" draws many real-world parallels. It features unusual creatures (werewolves and psychics) collectively referred to as Outcasts, while they refer to non-supernatural humans as Normies. The Outcasts are stand-ins for anyone othered by society, such as indigenous people, People of Color, the LGBT+, and the neurodivergent. Every so often, the Normies' distrust in the Outcasts boils over into hatred and violence, and the othering and dehumanization normalizes violence against the Outcasts in day-to-day life. In the show, the town's colonial era saw Outcasts not only being "othered", but also murdered by Pilgrims. These acts of butchery were all but erased from their history books. It's a distressingly familiar story.
+(Adaptado de: https://atribecalledgeek.com/woe-to-the-colonizer-an-indigenous-perspective-of-wednesday/. Acesso em 12/05/2023.)
+
+A análise do autor sobre "Wednesday" se apoia em`,
+    opcoes: [
+      { letra: 'A', texto: `paralelos entre ficção e realidade para discutir como a existência de grupos marginalizados tem sido historicamente apagada dos livros de história.` },
+      { letra: 'B', texto: `elementos fictícios presentes na série para aludir ao modo como a desumanização da alteridade é um processo histórico e violento.` },
+      { letra: 'C', texto: `fatos históricos para traçar a origem da exploração de povos indígenas e o modo como foram violentamente desumanizados na série.` },
+      { letra: 'D', texto: `comparações históricas sobre os conflitos entre colonizadores e peregrinos para criticar o modo como esse conflito é retratado na série.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1488,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: Guardiões da Galáxia Vol. 3',
+    enunciado: `"Guardians of the Galaxy Vol.3" does something few movies have ever done: it tells a compassionate story about testing on animals to a Marvel-size audience. The film features gorgeously animated animals who take moviegoers on an emotional rollercoaster while exposing the evils of animal testing. The strength of James Gunn's screenplay lies in the fact that it doesn't back away from the tough subject matter, and we're thrilled by a story about having empathy for all animals. For his compelling portrayal of Rocket and for reminding moviegoers that animals tortured in laboratories are not the numbers tattooed on them, PETA (People for the Ethical Treatment of Animals) is honoring Gunn with the "Not a Number" Award.
+(Adaptado de: https://www.peta.org/blog/guardians-of-the-galaxy-vol-3/. Acesso em 19/05/2023.)
+
+Para a autora dessa crítica, o diferencial do filme está`,
+    opcoes: [
+      { letra: 'A', texto: `na coragem do roteiro em dar destaque à polêmica de experimentação em animais para testes.` },
+      { letra: 'B', texto: `no ineditismo da abordagem do tema em produções de grande alcance, como os filmes da Marvel.` },
+      { letra: 'C', texto: `no retrato das emoções de animais usados em experimentos em laboratórios.` },
+      { letra: 'D', texto: `no impacto da abordagem do tema para órgãos de grande repercussão, como a PETA.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1489,
+    ano: 2024,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Variação linguística: AAVE (The Color Purple)',
+    enunciado: `No trecho a seguir, observa-se o uso de uma variedade linguística de inglês conhecida como African American Vernacular English (AAVE). Ainda que tão diversa e sofisticada quanto quaisquer outras variedades, a AAVE ainda é estigmatizada por ter características linguísticas diferentes daquelas que marcam a variedade de prestígio, isto é, a padrão.
+"- Listen, God love everything you love - and a mess of stuff you don't. (...) It always making little surprises and springing them on us when us least expect. (...) Man corrupt everything (...) He try to make you think he everywhere (...), you think he God. But he ain't. (...) I start to wonder why us suffer. Why us black. It didn't take long to realize I didn't hardly know nothing."
+(Adaptado de: WALKER, Alice. The Color Purple. London: The Orion Publishing Group, 1983.)
+
+Assinale a alternativa que preenche corretamente as lacunas no trecho a seguir:
+É correto dizer que o excerto apresenta aspectos linguísticos que diferem dos observados na variedade padrão - como (i) _________, e que sua temática central é a (ii) ________.`,
+    opcoes: [
+      { letra: 'A', texto: `(i) a repetição do verbo de ligação; (ii) corrupção e o sofrimento inerentes ao homem.` },
+      { letra: 'B', texto: `(i) a possibilidade de dupla negação; (ii) previsibilidade da vontade de Deus.` },
+      { letra: 'C', texto: `(i) a concordância verbal não padrão; (ii) ilusão do homem quanto à sua superioridade.` },
+      { letra: 'D', texto: `(i) a omissão de sujeito em orações; (ii) ganância do homem em se sobrepor a Deus.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+
+  // ==== UNICAMP 2025 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 1491,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Conceito de fronteira e geopolítica',
+    enunciado: `Para além das guerras Rússia-Ucrânia e Israel-Palestina, estão em curso, em quase todos os continentes, conflitos que retratam mutações geopolíticas aceleradas. Há um movimento de redefinição de fronteiras até então reconhecidas pela comunidade internacional e, de certo modo, protegidas por um complexo arcabouço normativo. Na América Latina, por exemplo, a Venezuela reivindica da Guiana a região de Essequibo, cujo limite fronteiriço foi definido há 125 anos.
+(Adaptado de https://www.courrierinternational.com/article/analyse-depuis-les-guerres-en-ukraine-et-a-gaza-les-frontieres-ne-sont-plus-intangibles. Acesso em 06/06/2024.)
+
+Tendo em vista seus conhecimentos e considerando o texto anterior, é correto dizer que a fronteira entre países é essencialmente`,
+    opcoes: [
+      { letra: 'A', texto: `geométrica: trata-se de uma linha demarcada por formas geográficas tais como muros, cercas ou vias de circulação.` },
+      { letra: 'B', texto: `política: trata-se de uma zona definida por meio de disputas e acordos internacionais pelo direito de uso de um determinado território.` },
+      { letra: 'C', texto: `natural: trata-se de uma linha demarcada por meio de marcos geográficos tais como rios, mares, lagos, geleiras e montanhas.` },
+      { letra: 'D', texto: `técnica: trata-se de uma zona definida por tratados e convenções locais que protegem a soberania do Estado-nação.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1498,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Cinemática: movimento circular uniforme',
+    enunciado: `Texto comum às questões 9 e 10.
+Os últimos anos testemunharam a retomada do interesse de alguns países pela exploração da Lua. Diversas missões com destino a esse satélite foram lançadas: Chandrayaan-3 (Índia, 2023), Luna 25 (Rússia, 2023), Peregrine Mission One (EUA, 2024), Slim (Japão, 2024) e Chang'e 6 (China, 2024).
+
+Uma sonda descreve, em torno da Lua, uma órbita circular de raio r = 1,848 x 10^6 m e dá uma volta completa num período T = 2,0 h. Nesse movimento circular uniforme, qual a velocidade escalar da sonda em relação ao centro da Lua?
+Se necessário, use π ≈ 3,0.`,
+    opcoes: [
+      { letra: 'A', texto: `256,6 m/s.` },
+      { letra: 'B', texto: `1540 m/s.` },
+      { letra: 'C', texto: `3696 km/s.` },
+      { letra: 'D', texto: `5544 km/s.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1500,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Óptica: frequência e velocidade de propagação da luz',
+    enunciado: `O projeto internacional DUNE (Deep Underground Neutrino Experiment) é um gigantesco experimento idealizado para o estudo de neutrinos. Para a detecção da luz emitida quando os neutrinos atravessam enormes tanques de argônio líquido, foi projetado na Unicamp um dispositivo chamado Arapuca, cuja função é aumentar a área de coleta da luz, confinando-a no interior de uma caixa que contém os sensores. Antes de entrar na Arapuca, a luz emitida, de comprimento de onda λ1 = 128 nm incide num material que tem por finalidade modificar o comprimento de onda da radiação, de modo que, ao emergir desse material, o novo comprimento de onda da luz passe a ser λ2 = 350 nm. Considere que, nessa etapa do experimento, ambos os feixes luminosos de comprimentos de onda λ1 e λ2 propagam-se no mesmo meio. Sendo f1 a frequência e V1 a velocidade da luz no comprimento de onda λ1, e f2 a frequência e V2 a velocidade da luz no comprimento de onda λ2, pode-se afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a frequência f2 é maior que a frequência f1; a velocidade V2 é igual à velocidade V1.` },
+      { letra: 'B', texto: `a frequência f2 é menor que a frequência f1; a velocidade V2 é igual à velocidade V1.` },
+      { letra: 'C', texto: `a frequência f2 é igual à frequência f1; a velocidade V2 é maior que a velocidade V1.` },
+      { letra: 'D', texto: `a frequência f2 é igual à frequência f1; a velocidade V2 é menor que a velocidade V1.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1503,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Eletricidade: potência e rendimento de painel solar',
+    enunciado: `Texto comum às questões 13 e 14.
+A integração da energia solar desempenha papel substancial nas soluções energéticas de desenvolvimento sustentável: além de fazer uso de tecnologia pouco agressiva ao ambiente, é uma enorme fonte de energia renovável.
+
+A área de um painel solar que gera uma potência elétrica P = 462 W é A = 2,5 m². A intensidade da radiação solar que incide no painel, ou seja, a potência da radiação solar por unidade de área do painel, é Isolar = 924 W/m². Qual é a eficiência do painel solar, ou seja, qual é a razão entre a energia elétrica gerada e a energia solar que incide no painel num dado intervalo de tempo?`,
+    opcoes: [
+      { letra: 'A', texto: `5%.` },
+      { letra: 'B', texto: `20%.` },
+      { letra: 'C', texto: `50%.` },
+      { letra: 'D', texto: `80%.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1504,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: protesto pró-Palestina',
+    enunciado: `Leia o texto a seguir.
+Police under fire after threat to arrest 'openly Jewish' man near pro-Palestinian protest
+Scotland Yard criticised after suggesting Gideon Falter's presence was provocative and he was antagonising protesters
+(https://www.telegraph.co.uk/news/2024/04/19/. Acesso em 20/04/2024.)
+
+Depreende-se, da leitura desse texto, que`,
+    opcoes: [
+      { letra: 'A', texto: `a polícia sofreu ameaças depois de prender um cidadão judeu que estaria provocando participantes de um protesto pró-Palestina.` },
+      { letra: 'B', texto: `em um protesto pró-Palestina, a ação da polícia foi criticada, pois os policiais teriam cogitado prender Gideon Falter, que estaria confrontando manifestantes.` },
+      { letra: 'C', texto: `a Scotland Yard criticou a ação do cidadão Gideon Falter, que estaria provocando participantes de um protesto pró-Palestina.` },
+      { letra: 'D', texto: `em um protesto pró-Palestina, a Scotland Yard criticou a insinuação de que a polícia teria ameaçado prender um cidadão que estaria confrontando manifestantes.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1507,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: afrofuturismo (Mark Dery)',
+    enunciado: `Texto comum às questões 18 e 19.
+Texto 1
+The fact that so few African Americans write science fiction is perplexing since they, in a very real sense, inhabit a sci-fi nightmare in which unseen but no less palpable acts of intolerance frustrate their movement; official histories undo what has been done; and technology is too often brought to bear on black bodies. Moreover, the sublegitimate status of science fiction in literature mirrors the subaltern position to which blacks have been relegated throughout American history. The notion of Afrofuturism gives rise to a troubling antinomy: can a community whose past has been deliberately rubbed out, and whose energies have been consumed by the search for legible traces of its history, imagine possible futures?
+(Adaptado de DERY, M. Black to the future: interviews with Samuel R. Delany, Greg Tate, and Tricia Rose. In: (Ed.) The Discourse of cyberculture. Durham; London: Duke University Press, p. 179-222, 1994.)
+
+De acordo com o texto 1, a escassez de autores afro-americanos em obras de ficção científica representa um`,
+    opcoes: [
+      { letra: 'A', texto: `pesadelo que retrata o apagamento sistemático dos avanços culturais da comunidade negra.` },
+      { letra: 'B', texto: `protesto contra o processo de exclusão e de subalternização dessas pessoas na sociedade.` },
+      { letra: 'C', texto: `movimento explícito que tem por objetivo deslegitimar o passado e a história do movimento negro.` },
+      { letra: 'D', texto: `paradoxo que se deve à semelhança entre as violências que vivem e ações retratadas nessas obras.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1508,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: Parable of the Talents (Octavia Butler)',
+    enunciado: `Texto 2
+"Parable of the Talents"
+(Octavia E. Butler)
+"To survive,
+Let the past
+Teach you--
+Past customs,
+Struggles,
+Leaders and thinkers.
+Let
+These
+Help you.
+Let them inspire you,
+Warn you,
+Give you strength.
+But beware:
+God is Change.
+Past is past.
+What was
+Cannot
+Come again.
+To survive,
+know the past.
+Let it touch you.
+Then let
+The past Go."
+(BUTLER, Octavia E. Parable of the Talents. New York, Durham and London: Open Road, 1998.)
+
+O texto 2 toca em um aspecto central do afrofuturismo e remete ao tema do questionamento do texto 1. Assim, pode-se dizer que o poema reconhece que`,
+    opcoes: [
+      { letra: 'A', texto: `o passado pode contribuir para a construção de futuros possíveis, mas não pode ser repetido.` },
+      { letra: 'B', texto: `a imaginação de futuros possíveis está condicionada ao ensino sobre líderes religiosos do passado.` },
+      { letra: 'C', texto: `o apagamento do passado pode trazer ensinamentos, mas isso não garante a criação de futuros possíveis.` },
+      { letra: 'D', texto: `a sobrevivência em futuros possíveis requer que os costumes e as dores do passado sejam esquecidos.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1509,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: identidade de gênero (ALOK)',
+    enunciado: `O post a seguir foi retirado da rede social de ALOK, artista cujos trabalhos abordam questões de gênero e identidade.
+alokvmenon. Follow
+My first word was irony. Growing up a boy, they called me too feminine. When I finally claimed femininity as my own, they called me a man. These are grammar lessons: some of us are only allowed to be thought, never to think. When they insist that our pronouns violate grammar to some degree, they are right. Grammar is less about the mechanics of language, more the monopoly of it. It's not just about who can speak, but who gets to speak. He who controls the word controls the world. What they mean is: don't object to remaining object. You are not a subject (unless you subject yourself to me). Subject. Predicate. Power. What this means is that we could both launch the same words and they would still land in different places. I could spend the rest of my life articulating every detail, every grain, every follicle. And still they would not understand. Because of what I look like. No: because of what they feel about what I look like. This is what it feels like to be brown, trans, femme, and alive.
+(Adaptado de www.instagram.com/p/C51W1v8vXo9/. Acesso em 22/04/2024.)
+
+No post, a argumentação é articulada a partir dos diferentes sentidos das palavras`,
+    opcoes: [
+      { letra: 'A', texto: `"gramática" e "pronomes", pois o ensino, nas escolas, desses temas invisibiliza pessoas não binárias as quais supostamente violam regras gramaticais.` },
+      { letra: 'B', texto: `"sujeito" e "objeto", pois esses termos só são usados para pessoas não binárias quando elas se sujeitam e aceitam o controle por aqueles que têm poder.` },
+      { letra: 'C', texto: `"sujeito" e "predicado", pois as relações de poder hierárquicas impedem que pessoas não binárias se expressem e assumam o controle de suas palavras.` },
+      { letra: 'D', texto: `"objeto" e "pronomes", pois embora as pessoas não binárias escolham seus pronomes, elas ainda são objetificadas devido às suas aparências físicas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1510,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: mudanças climáticas e enquadramento midiático',
+    enunciado: `Leia o resumo de uma pesquisa que, em 2021, já alertava para questões climáticas e fatores a elas relacionados.
+Politics of attributing extreme events to climate change
+Climate change shapes weather events. However, describing it as the cause of disasters can be misleading, since disasters are caused by pre-existing fragilities and inequalities on the ground. Attribution is not neutral. Hence, analytic frames that attribute disaster to climate can divert attention from place-based vulnerabilities and their sociopolitical causes. While politicians may blame climate change, the public may hold the government accountable for inadequate investments in flood or drought prevention. To be strategic and moral, framing choices must therefore be sensitive to context and to how the values implicit within analytic frames about the causes of disasters shape policy responses. Such sensitivity requires multicausal analysis of weather-linked disasters to reduce the damages. Through examples from around the world, especially Brazil, we discuss how and why climate-centric disaster framing can erase from view-and, thus, from policy agendas-the very socioeconomic and political factors that centrally cause vulnerability and suffering in weather extremes.
+(Adaptado de https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcc.750. Acesso em 15/05/2024.)
+
+Qual alternativa expressa corretamente os argumentos dos autores do texto?`,
+    opcoes: [
+      { letra: 'A', texto: `Culpar, por desastres ambientais, os locais de vulnerabilidade é uma estratégia para neutralizar a responsabilidade humana por esses acontecimentos.` },
+      { letra: 'B', texto: `É importante que a discussão sobre desastres ambientais considere o clima como fator central para a redução dos danos decorrentes desses eventos.` },
+      { letra: 'C', texto: `Os políticos e o público falham por não reconhecerem que as políticas públicas são cruciais para a criação de estratégias de prevenção contra enchentes.` },
+      { letra: 'D', texto: `Ignorar o protagonismo de questões políticas em casos de desastres ambientais omite a relação direta entre a esfera política e as causas e efeitos dessas catástrofes.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1511,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Platão: o mito da caverna',
+    enunciado: `Sócrates: - [...] Pois segundo entendo, no limite do cognoscível é que se avista, a custo, a ideia do Bem; e, uma vez avistada, compreende-se que ela é para todos a causa de quanto há de justo e belo; que no mundo visível, foi ela que criou a luz, da qual é senhora; e que no mundo inteligível, é ela a senhora da verdade e da inteligência, e que é preciso vê-la para se ser sensato na vida particular e pública.
+Glauco: - Concordo também, até onde sou capaz de seguir a tua imagem.
+(Adaptado de PLATÃO. A República. Lisboa: Fundação Calouste Gulbenkian, 517b6-c5.)
+
+O diálogo anterior aparece em uma passagem da obra A República, de Platão, trecho que ficou conhecido como "o mito da caverna". Sobre esse diálogo, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `O diálogo trata da ideia do Bem, causa do justo, do belo, da verdade e da inteligência; o Bem é prontamente visível aos habitantes da caverna.` },
+      { letra: 'B', texto: `Por ser causa da justiça e senhora da verdade e da inteligência, a ideia do Bem orienta o comportamento dos habitantes da caverna, na sua vida particular e pública.` },
+      { letra: 'C', texto: `Embora não seja facilmente cognoscível, a Ideia do Bem, enquanto causa do justo e do belo, não é prescindível para a tomada de boas decisões na cidade.` },
+      { letra: 'D', texto: `O diálogo entre Sócrates e Glauco trata da Ideia do Bem, que, por situar-se no limite do cognoscível, permanece a todos incognoscível.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1512,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Mary Wollstonecraft: direitos políticos das mulheres',
+    enunciado: `Mary Wollstonecraft abre sua obra, Reivindicações dos direitos da mulher (1792), com uma carta ao Sr. Talleyrand-Périgord, antigo bispo de Autun e político ativo durante a Revolução Francesa. O bispo propõe nova Constituição, o que foi apresentado e discutido na Assembleia revolucionária. Nessa carta, Wollstonecraft afirma:
+"Mas, se as mulheres devem ser excluídas, sem voz, da participação dos direitos naturais da humanidade, prove antes, para afastar a acusação de injustiça e inconsistência, que elas são desprovidas de razão; de outro modo, essa falha em sua NOVA CONSTITUIÇÃO sempre mostrará que o homem deve de alguma forma agir como um tirano, e a tirania, quando mostra sua face despudorada em qualquer parte da sociedade, sempre solapa a moralidade".
+(WOLLSTONECRAFT, M. Reivindicações dos direitos da mulher. São Paulo: Boitempo Editorial, p. 20, 2016.)
+
+Assinale a opção que melhor sintetiza a crítica de Wollstonecraft apresentada no excerto.`,
+    opcoes: [
+      { letra: 'A', texto: `Ao abordar tanto a possibilidade de uma nova constituição quanto a tirania masculina, Wollstonecraft faz uma crítica ao absolutismo, finalmente derrubado, através da instauração da República e da Declaração dos Direitos do Homem, no contexto da Revolução Francesa.` },
+      { letra: 'B', texto: `A crítica de Wollstonecraft recai sobre os homens que, ao serem tiranos com as mulheres, destroem a moral da sociedade. Ela defende a necessidade de uma nova constituição: que não seja injusta com o sexo feminino e conceda direitos às mulheres, ainda que não sejam racionais como os homens.` },
+      { letra: 'C', texto: `A nova Constituição, defendida pelo Sr. Talleyrand-Périgord, é injusta porque retira das mulheres direitos conquistados em decorrência da Revolução Francesa, quando as mulheres passaram a ser reconhecidas como seres racionais e participantes da humanidade.` },
+      { letra: 'D', texto: `A menos que seja provado que a racionalidade das mulheres é deficiente, se comparada à dos homens, excluí-las da Constituição é ato injusto, ainda que coerente com uma cultura que aceita a tirania masculina.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1513,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Ailton Krenak: crítica à monocultura',
+    enunciado: `Quando eu falo em adiar o fim do mundo, não é a este mundo em colapso que estou me referindo. Este tem um esquema tão violento que eu queria mais é que ele desaparecesse à meia noite de hoje e que amanhã a gente acordasse em um novo. No entanto, efetivamente, estamos atuando no sentido de uma transfiguração, desejando aquilo que o Nêgo Bispo chama de confluências, e não essa exorbitante euforia da monocultura, que reúne os birutas que celebram a necropolítica sobre a vida plural dos povos deste planeta. Ao contrário do que estão fazendo, confluências evoca um contexto de mundos diversos que podem se afetar. (...) Se o colonialismo nos causou um dano quase irreparável foi o de afirmar que somos todos iguais.
+(Adaptado de KRENAK, Ailton. Futuro ancestral. São Paulo: Companhia das Letras, p. 40-42, 2022.)
+
+Assinale a alternativa que explicita a crítica de Krenak à monocultura, tal como é enunciada no excerto.`,
+    opcoes: [
+      { letra: 'A', texto: `A monocultura praticada nos grandes latifúndios é responsável por diversos problemas ambientais e pela necropolítica.` },
+      { letra: 'B', texto: `A monocultura, assim como a imposição colonial de um modelo cultural único, se expressa na recusa da pluralidade de povos e culturas.` },
+      { letra: 'C', texto: `Adiar o fim do mundo requer o combate à monocultura na produção agrícola e a transfiguração deste mundo em que estamos vivendo.` },
+      { letra: 'D', texto: `A monocultura, produtora de violências, é resultado do colonialismo e da necropolítica.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1514,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Cidadania feminina na Grécia Antiga',
+    enunciado: `Nos estudos sobre a Antiguidade Clássica produzidos até o final do século XX, era costumeira a afirmação de que as mulheres em Atenas não participavam da política. A definição de "política" na Grécia, todavia, era feita a partir dos olhos do mundo moderno, e, nesse caso, era um sinônimo de "cidadania". O cidadão ateniense era homem, filho de pai e mãe atenienses. As mulheres, estrangeiros e escravos não gozavam do mesmo status. Após os anos de 2000, a partir de críticas de estudiosos, a definição de "política" e de "cidadania" na Grécia Clássica passou a ser repensada e a capacidade de ação das mulheres atenienses no espaço público foi redimensionada. Nesses estudos, as mulheres cidadãs de Atenas ganham visibilidade. Filhas de pai e mãe atenienses, nascidas em Atenas, tinham limitações de voto, mas desempenhavam funções no mundo cívico. Elas não podiam, por causa de seu sexo, ser juradas ou magistradas, por exemplo, mas estavam vivendo no mesmo universo público, sendo também cidadãs.
+(Adaptado de CUCHET, V. S. Quais direitos políticos para as cidadãs da Atenas clássica?. Hélade, 4(1), p. 143-158, 2018.)
+
+Tendo em vista seus conhecimentos sobre Grécia Antiga e considerando o excerto anterior, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Desde o século XIX, os estudiosos defendem que o conceito de "cidadania" e o de "política" na democracia ateniense eram frágeis, sendo pertinentes aos homens da elite.` },
+      { letra: 'B', texto: `Estudiosos afirmam que, na democracia ateniense, a cidadania e a política eram conceitos desvinculados; portanto, as mulheres atenienses estavam afastadas da vida pública.` },
+      { letra: 'C', texto: `Desde os anos de 2000, os estudiosos passaram a reconhecer as mulheres da Antiguidade Clássica nascidas de pai e mãe atenienses como cidadãs plenas com direito ao voto.` },
+      { letra: 'D', texto: `Novas pesquisas debatem os conceitos de "cidadania" e de "política", bem como a relação desses conceitos com as mulheres atenienses que poderiam ser definidas como cidadãs.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1515,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Escravidão na América espanhola: alforria e Justiça',
+    enunciado: `Em meados de fevereiro de 1765, Juana Antonia Gomiciaga, por intermédio do "procurador de pobres", Diego Toribio de la Cueva, se apresentou ao Cabildo de Santiago. Ela confiava que o foro de justiça local pudesse dar solução ao seu pedido principal: obter o reconhecimento de sua liberdade, que, de acordo com sua versão, havia sido concedida verbalmente por sua senhora, Francisca Josefa Gomiciaga, em fevereiro de 1751. Nas palavras do procurador, a liberdade havia sido concedida devido à "piedade e compaixão". Contudo, essa alforria verbal, ao longo do tempo, foi desconsiderada pelas senhoras de Juana, o que motivou a escrava Juana Antonia a recorrer à arena judicial.
+(Traduzido e adaptado de GONZALEZ, A. F. G. Los matices de la resistencia: Trayectorias vitais de mulheres esclavizadas ante la justiça eclesiástica de Santiago. Chile, siglos XVII y XVIII. Autoctonia (Santiago), 8(1), p. 88-127, janeiro de 2024.)
+
+Tendo em vista seus conhecimentos sobre América espanhola e considerando as informações, presentes no excerto, sobre o caso de Juana Antônia Gomiciaga, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `As ações judiciais resultaram em um questionamento da sociedade escravocrata; por conta delas, foi decretado o fim do sistema de escravidão africana no século XVIII.` },
+      { letra: 'B', texto: `A resistência à escravidão indígena era marcada pelo enfrentamento físico e, no caso da resistência africana à escravidão, predominava a postura passiva.` },
+      { letra: 'C', texto: `Embora houvesse demandas jurídicas dos escravizados, o Império era inflexível quanto a essas negociações na Justiça, como demonstrado no excerto.` },
+      { letra: 'D', texto: `Os estudos sobre a escravidão têm demonstrado que muitos escravizados, entre várias estratégias, articulavam a luta pela liberdade na Justiça.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1516,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Paisagem e eurocentrismo no Brasil colonial',
+    enunciado: `"A terra [Rio de Janeiro] continua ainda a parecer-me muito mal. É rodeada de serras inacessíveis, a maior parte delas são uma rocha viva, e de todas fazem uma vista sumamente desagradável. Acho estes povos sumamente pobres e, como não têm gêneros seus que lhes constituam ao menos um ramo certo de comércio, pouca esperança tenho de os pôr melhor nesta parte. Em uma palavra, meu colega, isto está um cadáver que vai para a sepultura [...]; parece-me ser este o mais próprio retrato em que presentemente se acha o Governo do Rio de Janeiro."
+(Marquês de Lavradio (Governador do Rio de Janeiro, 1769-1779). Carta de Amizade Escrita a Manuel da Cunha de Menezes em Pernambuco, em 13 de dezembro de 1769. In: Marquês de Lavradio. Cartas do Rio de Janeiro, 1769-1776. Rio de Janeiro: Secretaria de Estado de Educação e Cultura, p. 10, 1978.)
+
+Tendo em vista seus conhecimentos sobre o século XVIII e considerando as informações do excerto, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A geografia montanhosa e rochosa impedia tanto o desenvolvimento do Rio de Janeiro quanto o uso do porto dessa cidade, no Brasil colonial, como centro de trocas comerciais.` },
+      { letra: 'B', texto: `A concepção que se tem sobre o que seja "paisagem" é um construto histórico que envolve projeções políticas e ideológicas a respeito do que se vê.` },
+      { letra: 'C', texto: `A concepção sobre o que seja uma paisagem bonita foi um argumento utilizado pela elite para convencer, contra a vontade de Lavradio, a corte portuguesa a migrar para o Brasil.` },
+      { letra: 'D', texto: `O eurocentrismo impediu Lavradio de reconhecer o sucesso e a beleza dos arcos de pedra construídos com técnicas indígenas locais no Rio de Janeiro.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1519,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Amílcar Cabral e a descolonização africana',
+    enunciado: `A maioria dos países africanos tornaram-se independentes entre 1950 e 1975. Amilcar Cabral foi uma das lideranças que formularam projetos políticos para criar unidades nacionais no pós-independência. Ele havia nascido na Guiné-Bissau em 1924; depois de seu nascimento, sua família se mudou para Cabo Verde. Em 1945, obteve bolsa para estudar em Portugal; na Europa, entrou, então, em contato com as teorias do movimento da negritude, panafricanismo e marxismo. De volta à África em 1952, ajudou a fundar o Partido Africano para a Independência de Guiné e Cabo Verde (PAIGC, 1953), iniciando a luta armada contra a metrópole em 1963. Em um discurso, Cabral afirmou: "No nosso Partido ninguém dividiu; pelo contrário, cada dia nos unimos mais. Aqui não há papel, nem fula, nem mandinga, nem filhos de caboverdianos, nada disso."
+(Adaptado de MALACCO, F. Unidade nacional e unidade continental: uma discussão acerca dos projetos políticos de Amilcar Cabral e Kwame Nkrumah. Revista Ars Historica, 17, p. 78-100, jul/dez 2018.)
+
+Com base no excerto, marque a alternativa correta sobre o ideário nacional proposto por Amilcar Cabral e pelo movimento por ele liderado.`,
+    opcoes: [
+      { letra: 'A', texto: `Almejava, com base nas fronteiras dos reinos africanos que existiam antes da chegada dos europeus, construir nações independentes.` },
+      { letra: 'B', texto: `Buscava formar, para o enaltecimento das identidades étnicas que antecediam o colonialismo, uma grande unidade pan-africanista.` },
+      { letra: 'C', texto: `Propunha um movimento de descolonização das culturas africanas, o qual demandava a adoção de dialetos locais e a rejeição, como idioma nacional, das línguas europeias.` },
+      { letra: 'D', texto: `Defendia, para fortalecer a luta contra a colonização e ideologia portuguesa, as unidades políticas nacionais posicionadas acima da diversidade de etnias africanas.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1520,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Memória da ditadura argentina e povos indígenas',
+    enunciado: `Em 2004, Néstor Kirchner - presidente argentino à época - cedeu à sociedade civil a Escola de Mecânica da Marinha (ESMA), um antigo centro clandestino de detenção e tortura durante a ditadura (1976 e 1983). O motivo era a construção de uma espécie de museu nacional da memória das atrocidades cometidas pelo regime. Entre as imagens das mães e avós da Plaza de Mayo, entre organizações de luta que celebravam o reconhecimento de um trabalho sustentado por décadas, emergia ao lado do palco uma imagem disruptiva: um poncho vermelho. Destacava-se um rosto indígena. Era um dos líderes do Movimento Indígena Argentino; o líder pedia a inclusão dos povos originários no futuro museu: "A questão não é como os antropólogos fazem simplesmente sermos incluídos em um museu, como se estivéssemos apenas sendo adicionados. Queremos fazer parte da história nacional."
+(Adaptado de RUFER, M. Nación y condición pos-colonial, In: BIDASECA, K. (Org.) Genealogías críticas de la colonialidad en América Latina, Africa, Oriente. Buenos Aires: CLACSO, 2016.)
+
+Tendo em vista seus conhecimentos sobre memória política na Argentina e considerando as informações do texto, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `os indígenas se posicionam, nas disputas pela memória nacional da Ditadura, abertamente contra o movimento das Mães e Avós da Plaza de Mayo.` },
+      { letra: 'B', texto: `os indígenas, ao incorporarem perspectivas marginalizadas, como as dos povos originários, querem fazer parte da construção do museu para a expansão da história nacional.` },
+      { letra: 'C', texto: `as lideranças indígenas, para dar visibilidade às suas identidades étnicas, propõem que a memória da nação seja apagada no antigo edifício da ESMA.` },
+      { letra: 'D', texto: `nos protestos contrários à ocupação para transformação em espaço de memória do antigo edifício da ESMA, os ativistas indígenas defendem a redução temática do museu.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1521,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Reformas sociais e autonomia das mulheres',
+    enunciado: `Texto 1
+No final do século XIX, a escritora Charlotte Perkins Gilman observava a necessidade de reformas urbanas e habitacionais que combinassem a privacidade da família com a vida em coletivo. Ela defendia que grandes cidades fossem equipadas com conjuntos amplos de apartamentos que contariam com cozinhas comuns e com pessoas contratadas coletivamente pelas famílias para serviços domésticos. A atenção às crianças seria garantida por cuidadores profissionais e professores dentro das creches.
+(Adaptado de GILMAN, C.P. Mulheres e economia. In: DAFLON, V., SORJ, B. Clássicas do pensamento social. Rio de Janeiro: Rosa dos Tempos, p. 129-130, 2021.)
+
+Texto 2
+Quase um século depois, em 1996, o então presidente dos EUA Bill Clinton implementou reformas nas políticas de proteção social daquele país. Entre as mudanças, o Estado deixou de prover auxílio financeiro a mães pobres que criam os filhos sozinhas e essa responsabilidade passou para o pai biológico da criança. Essa reforma acentuou um vínculo social entre mulheres e homens, vínculo este que elas não necessariamente gostariam de manter. Essa reforma as tornou sobretudo dependentes economicamente deles.
+(Adaptado de COOPER, M. Family values: between neoliberalism and the new social conservatism. New York: Zone Books, p. 67-68, 2017.)
+
+Considerando os textos 1 e 2, é correto afirmar que os efeitos, para as relações sociais, das reformas neles descritas`,
+    opcoes: [
+      { letra: 'A', texto: `são convergentes, pois fortalecem a importância, para a vida moderna, dos lares individualizados e das famílias biológicas. As reformas indicam a prevalência de ambos em relação ao Estado.` },
+      { letra: 'B', texto: `são divergentes, pois apenas a reforma descrita no texto 2 fortalece a autonomia das mães, por ampliar a responsabilidade dos pais biológicos e por desresponsabilizar o Estado.` },
+      { letra: 'C', texto: `são convergentes, pois facilitam o desenvolvimento da privacidade das famílias e ampliam a autonomia individual. Essas reformas favorecem o desenvolvimento da vida coletiva.` },
+      { letra: 'D', texto: `são divergentes, pois apenas a reforma descrita no texto 1 desvincula, da responsabilidade das famílias e das mulheres, as tarefas de cuidado e de reprodução social da vida, vinculando-as também ao Estado.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1523,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - O homem cordial (Sérgio Buarque de Holanda)',
+    enunciado: `Texto 1
+Em Raízes do Brasil (São Paulo, Companhia das Letras, 2016), Sérgio Buarque de Holanda argumenta que as formas de convívio social no país seriam ditadas preferencialmente por uma ética de fundo emotivo: a cordialidade. No entanto, a cordialidade não seria sinônimo de afetividade ou de gentileza. Ela corresponderia a um mecanismo de defesa do indivíduo diante da sociedade e reforçaria sentimentos particularistas e antipolíticos, característicos do ambiente doméstico. Ao tipo social guiado pela ética da cordialidade, o autor dá o nome de homem cordial.
+
+Texto 2
+"Sabe, no fundo eu sou um sentimental
+Todos nós herdamos no sangue lusitano uma boa dosagem de lirismo (além da sífilis, é claro)
+Mesmo quando as minhas mãos estão ocupadas em torturar, esganar, trucidar
+Meu coração fecha os olhos e sinceramente chora...
+(...)
+Se trago as mãos distantes do meu peito
+É que há distância entre intenção e gesto"
+(Trecho da canção "Fado Tropical", de Chico Buarque de Holanda, 1973).
+
+Tendo em vista os textos 1 e 2, é possível afirmar que o homem cordial`,
+    opcoes: [
+      { letra: 'A', texto: `manifesta adesão a normas de convívio pessoalizadas, marcadas pela ética da cordialidade e pela centralidade de vínculos privados mesmo em espaços coletivos e públicos.` },
+      { letra: 'B', texto: `é um tipo social que se originou na colonização portuguesa, marcado pela ética emotiva e solidária da cordialidade e por uma prática de cunho coletivo e supraindividual.` },
+      { letra: 'C', texto: `percebe, como ambiente propício ao seu desenvolvimento individual, a vida em sociedade; para ele, a ética da cordialidade permite a impessoalidade dos vínculos sociais.` },
+      { letra: 'D', texto: `manifesta um apego aos valores da personalidade configurada pelo recinto doméstico, ambiente próprio da concorrência entre os cidadãos.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1528,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Análise linguística: mascaramento de sentido em música',
+    enunciado: `Qual o macete de 'Macetando'?
+Macetar, verbo transitivo: "golpear (alguém ou algo) com maceta ou macete, um martelo de cabo curto". A definição está nos dicionários, mas o carnaval, como de praxe, mascarou o significado a seu bel-prazer. O coro da multidão que acompanhou Ivete Sangalo na abertura da folia de Salvador comprova que essa é a época ideal para enriquecer o vocabulário. Música gravada pela cantora baiana com participação de Ludmilla, "Macetando" despontou como hit nacional ao encher a boca do povo com o refrão-chiclete: "Ah, bebê, é a Veveta que tá no comando / Macetando, macetando, macetando...".
+(Adaptado de CUNHA, G. Qual o macete de 'macetando'? O Globo (versão online), 10/02/2024.)
+
+Na letra da música em questão, um dos aspectos que contribuem para o mascaramento do significado de macetar é`,
+    opcoes: [
+      { letra: 'A', texto: `a ocultação do sujeito do verbo.` },
+      { letra: 'B', texto: `o uso repetido do verbo no gerúndio.` },
+      { letra: 'C', texto: `o processo de adjetivação do verbo.` },
+      { letra: 'D', texto: `a ausência de complemento para o verbo.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1529,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Duplo sentido (Renato Janine Ribeiro)',
+    enunciado: `Renato Janine Ribeiro
+Lembro quando inventaram o CELULAR. Era um telefone portátil, que permitia falar mesmo quando você não estava num lugar fixo. Foi uma coqueluche.
+Sinto falta desse tempo, às vezes. Porque hoje existe um aparelho inspirado nele, parecido até com ele, mas que serve para tudo, até para tirar unha encravada rsrs - mas não para telefonar.
+Ninguém mais liga! Ninguém liga para ninguém (sim, tem duplo sentido). O Zap substitui tudo isso.
+
+O "duplo sentido" a que o autor se refere está relacionado a uma`,
+    opcoes: [
+      { letra: 'A', texto: `visão bem-humorada sobre as inovações do celular e é produzido pelas interpretações de "mais", que expressa intensidade e adição ao mesmo tempo.` },
+      { letra: 'B', texto: `perspectiva crítica sobre os usos que vêm sendo feitos do celular e resulta dos significados de "ligar", que pode indicar tanto uma ação quanto um juízo de valor.` },
+      { letra: 'C', texto: `postura irônica sobre os usuários do celular e deriva dos usos de "ninguém", que indetermina o sujeito e o objeto no parágrafo em que ocorre.` },
+      { letra: 'D', texto: `visão pessimista sobre o futuro do celular e depende dos sentidos de "para", que remete ao destinatário de uma mensagem e ao lugar em que se encontra.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1530,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Alice no País das Maravilhas (Lewis Carroll)',
+    enunciado: `O excerto a seguir, do livro Alice no país das maravilhas, de Lewis Carroll, narra o encontro entre a protagonista e o Gato de Cheshire:
+O Gato apenas sorriu ao avistá-la. Alice achou que ele parecia afável. Mas como tinha garras muito compridas e dentes bem graúdos, sentiu que devia tratá-lo com respeito.
+Gatinho de Cheshire começou a dizer timidamente, sem ter certeza se ele gostaria de ser tratado assim, mas ele apenas abriu um pouco mais o sorriso. "Ótimo, parece que ele gostou", pensou ela, e prosseguiu: - Podia me dizer, por favor, qual é o caminho para sair daqui?
+Isso depende muito do lugar para onde você quer ir - disse o Gato.
+Não me importa onde... - disse Alice.
+Nesse caso não importa por onde você vá - disse o Gato.
+...conquanto que eu chegue a algum lugar - acrescentou Alice como explicação.
+- É claro que isso acontecerá - disse o Gato, desde que você ande por algum tempo.
+(CARROLL, L. Aventuras de Alice no país das maravilhas. Tradução de Sebastião Uchoa Leite. São Paulo: Editora 34, p. 68-69, 2016.)
+
+A partir da leitura do trecho e da compreensão do todo da narrativa, pode-se afirmar que o excerto é um exemplo`,
+    opcoes: [
+      { letra: 'A', texto: `do afeto que marca o contato que Alice estabelece com os habitantes do país das maravilhas.` },
+      { letra: 'B', texto: `do estranhamento que Alice experimenta ao conhecer seres que não existiam no mundo de onde ela veio.` },
+      { letra: 'C', texto: `da descoberta, por parte de Alice, do domínio que ela tem sobre as situações no país das maravilhas.` },
+      { letra: 'D', texto: `da percepção, por parte de Alice, de que as palavras não têm sempre o mesmo sentido para quem as usa.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1531,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Vida e morte de M. J. Gonzaga de Sá (Lima Barreto)',
+    enunciado: `A citação a seguir, de Vida e morte de M. J. Gonzaga de Sá, de Lima Barreto, apresenta como o narrador conheceu o protagonista.
+Num país em que, com tanta facilidade, se fabricam manipansos milagrosos, ídolos aterradores e deuses onipotentes, causa pasmo que a Secretaria dos Cultos não seja tão conhecida como a da Viação. Há, entretanto, nela, no seu Museu e nos seus registros, muita cousa interessante e digna de exame.
+Foi, por ocasião de desempenhar-me da incumbência do meu diretor, que vim a conhecer Gonzaga de Sá, afogado num mar de papéis, na seção de "alfaias, paramentos e imagens", informando muito seriamente a consulta do vigário de Sumaré, versando sobre o número de setas que devia ter a imagem de S. Sebastião.
+(BARRETO, Lima. Vida e morte de M. J. Gonzaga de Sá. São Paulo: Edição da Revista do Brasil, p. 17, 1919.)
+
+A partir dessa citação e da leitura do romance, é correto afirmar que Lima Barreto usa a personagem Gonzaga de Sá para`,
+    opcoes: [
+      { letra: 'A', texto: `criticar um funcionário que prejudica o andamento da burocracia estatal.` },
+      { letra: 'B', texto: `representar um sujeito que usa o serviço público para impor sua fé ao Estado.` },
+      { letra: 'C', texto: `mostrar o valor do indivíduo em meio à sátira da burocracia estatal.` },
+      { letra: 'D', texto: `figurar um sujeito que usa a religião para sua ascensão no serviço público.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1532,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Niketche e Olhos D’Água: comparação de textos',
+    enunciado: `"Vou ao espelho tentar descobrir o que há de errado em mim. Vejo olheiras negras no meu rosto, meu Deus, grandes olheiras! Tendo andado a chorar muito por estes dias, choro até de mais".
+(CHIZIANE, Paulina. Niketche. Uma história de Poligamia. São Paulo: Companhia das Letras [Companhia de Bolso], p. 14, 2021.)
+
+"Lembro-me ainda do temor de minha mãe nos dias de fortes chuvas. Em cima da cama (...) ela nos protegia com seu abraço (...). Nesses momentos os olhos de minha mãe se confundiam com os olhos da natureza. Chovia, chorava! Chorava, chovia! Então, por que eu não conseguia lembrar a cor dos olhos dela?"
+(EVARISTO, Conceição. Olhos D'água. Rio de Janeiro: Pallas; Fundação Biblioteca Nacional, p. 17-18, 2016.)
+
+A partir da leitura dos trechos e da compreensão do todo da narrativa, podemos afirmar que, comparativamente, os textos exprimem,`,
+    opcoes: [
+      { letra: 'A', texto: `pelo par "olheiras/abraço", o medo feminino diante dos problemas econômicos e ecológicos do Sul Global.` },
+      { letra: 'B', texto: `pelo par "espelho/águas", o narcisismo feminino em um ambiente sociocultural altamente desigual.` },
+      { letra: 'C', texto: `pela relação entre as águas e as lágrimas, a submissão feminina diante dos problemas econômicos e ecológicos do Sul Global.` },
+      { letra: 'D', texto: `pela relação entre as águas e as lágrimas, o desamparo feminino em um ambiente sociocultural altamente desigual.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1533,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Além do ponto (Caio Fernando Abreu)',
+    enunciado: `"(...) Tão geladas as pernas e os braços e a cara que pensei em abrir a garrafa [de conhaque] para beber um gole, mas não queria chegar na casa dele meio bêbado, hálito fedendo, não queria que ele pensasse que eu andava bebendo, e eu andava, todo dia um bom pretexto, e fui pensando também que ele ia pensar que eu andava sem dinheiro, chegando a pé naquela chuva toda, e eu andava, estômago dolorido de fome, e eu não queria que ele pensasse que eu andava insone, e eu andava, roxas olheiras (...)".
+(ABREU, Caio Fernando. Além do ponto. Morangos Mofados. São Paulo: Companhia das Letras, p. 42, 2019.)
+
+No conto "Além do ponto", observa-se que o contraste entre o "eu", personagem que deseja, e o "ele", personagem imaginado,`,
+    opcoes: [
+      { letra: 'A', texto: `é criado por formas verbais no pretérito imperfeito do indicativo ("queria", "andava") e pretérito imperfeito do subjuntivo ("pensasse").` },
+      { letra: 'B', texto: `é criado pelo uso de orações negativas ("eu não queria") e do pretérito imperfeito do indicativo ("eu andava").` },
+      { letra: 'C', texto: `é criado pela polissemia do verbo "andar", usado no sentido de "caminhar"/"deslocar-se" e no de "seguir"/"progredir".` },
+      { letra: 'D', texto: `é criado pelo uso de formas verbais no gerúndio ("bebendo", "chegando") e pela repetição de orações negativas ("eu não queria").` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1534,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - A vida não é útil (Ailton Krenak)',
+    enunciado: `"Em Sonhos para adiar o fim do mundo", o pensador Ailton Krenak conta-nos que um pajé Xavante sonhou que a terra ficaria desolada diante da ação predatória dos homens brancos. Escreve Krenak no livro:
+"Foi ali que eu atinei que tinha algo na perspectiva dos povos indígenas, em nosso jeito de observar e pensar, que poderia abrir uma fresta de entendimento nesse entorno que é o mundo do conhecimento. Naquele tempo eu comecei a visitar as florestas (...) e, por todos os lados, os pajés diziam: 'vocês precisam tomar cuidado porque o mundo dos brancos está invadindo a nossa existência.' Invadindo.".
+(KRENAK, A. A vida não é útil. São Paulo: Companhia das Letras, p. 35-36, 2020.)
+
+No trecho, as preocupações dos pajés evocam`,
+    opcoes: [
+      { letra: 'A', texto: `o trauma de variados povos indígenas das florestas, decorrente das frestas de entendimento sobre o passado colonial extrativista.` },
+      { letra: 'B', texto: `a adoção da diversidade de perspectivas, embora os homens brancos reconheçam a falibilidade do sistema de dominação presente.` },
+      { letra: 'C', texto: `a diferença de perspectivas na relação homem-natureza, com a valorização da busca de um conhecimento não predatório.` },
+      { letra: 'D', texto: `a resistência indígena a partir do sonho de que os homens brancos deixem de ameaçar a existência dos povos originários.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1535,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Silêncio de um cipreste (Cartola)',
+    enunciado: `Leia os versos da canção "Silêncio de um cipreste" - composição de Cartola e Carlos Cachaça.
+Todo mundo tem o direito
+De viver cantando.
+O meu único defeito
+É viver pensando
+Em que não realizei
+E é difícil realizar.
+Se eu pudesse dar um jeito
+Mudaria o meu pensar.
+O pensamento é uma folha desprendida
+Do galho de nossas vidas
+Que o vento leva e conduz,
+É uma luz vacilante e cega,
+É o silêncio do cipreste
+Escoltado pela cruz.
+
+Nesta canção, é possível afirmar que o eu-lírico`,
+    opcoes: [
+      { letra: 'A', texto: `acredita que, assim como todas as pessoas, tem o direito de viver cantando, embora isso seja algo difícil de ser realizado. A principal imagem poética utilizada é a da alegria do canto, o qual é capaz de mudar a vida.` },
+      { letra: 'B', texto: `gostaria de mudar o seu pensamento, aproximando-o da realidade de sua vida, da qual ele se desprendeu. A principal imagem poética utilizada é a do sonho e do devaneio, dissociados da vida real.` },
+      { letra: 'C', texto: `gostaria de mudar o seu pensamento, porque este é marcado pela tristeza e melancolia. A principal imagem poética utilizada é a da morte, presente nas figuras do cipreste e da cruz.` },
+      { letra: 'D', texto: `acredita que pensar seja um defeito que ele gostaria de corrigir, mas não consegue. A principal imagem poética utilizada é a do vento, o qual carrega o eu-lírico independentemente de sua vontade.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1537,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Probabilidade: múltiplos',
+    enunciado: `Márcia vai sortear um número entre 1 e 2025. Qual a probabilidade de o número sorteado ser múltiplo de 3 ou de 7?`,
+    opcoes: [
+      { letra: 'A', texto: `868 / 2025` },
+      { letra: 'B', texto: `289 / 2025` },
+      { letra: 'C', texto: `675 / 2025` },
+      { letra: 'D', texto: `951 / 2025` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1538,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Percentuais sucessivos',
+    enunciado: `Um telefone celular custava R$ 2.000,00 em janeiro. Em abril, seu preço foi reajustado em 10%. Em junho, o preço foi novamente reajustado em 10%. Numa promoção, em novembro, Rogério finalmente comprou, com um desconto de 20%, o celular. Quanto ele pagou pelo aparelho?`,
+    opcoes: [
+      { letra: 'A', texto: `R$ 1.896,00.` },
+      { letra: 'B', texto: `R$ 1.936,00.` },
+      { letra: 'C', texto: `R$ 2.000,00.` },
+      { letra: 'D', texto: `R$ 2.052,00.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1539,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Trigonometria: arcos notáveis',
+    enunciado: `As funções trigonométricas cos(x) e sen(x) são muito estudadas no Ensino Médio. A exposição deste importante conteúdo costuma contar, nas aulas, com a apresentação de gráficos e tabelas que expõem em arcos chamados "arcos notáveis", como por exemplo π/3, π/4 e π/6 – os valores dessas funções. É possível, no entanto, calcular, em outros arcos, os valores destas funções, utilizando algumas identidades trigonométricas. Considerando a relação cos(x/2) = √((1+cos(x))/2) e a identidade fundamental da trigonometria, é possível afirmar que o valor de sen(π/12) é`,
+    opcoes: [
+      { letra: 'A', texto: `√(2-√3) / 2` },
+      { letra: 'B', texto: `√(2+√3) / 2` },
+      { letra: 'C', texto: `√(3-√3) / 2` },
+      { letra: 'D', texto: `√(3+√3) / 2` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1541,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Desigualdades e função modular',
+    enunciado: `Ana está treinando as habilidades matemáticas de seu irmão mais novo. Ela escolheu dois números reais x, y e avisou para seu irmão que os números satisfazem às desigualdades |x-2| ≤ 2 e |y-3| ≤ 1. O que o irmão de Ana pode concluir corretamente sobre esses números?`,
+    opcoes: [
+      { letra: 'A', texto: `x² + y² ≤ 1.` },
+      { letra: 'B', texto: `x + y ≥ 10.` },
+      { letra: 'C', texto: `x + y ≤ 8.` },
+      { letra: 'D', texto: `x² + y² ≥ 36.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1543,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Composição de funções e inequações',
+    enunciado: `Sejam f(x) = x - 2 e g(x) = x² - 4x funções reais. A quantidade de números x ∈ ℤ que satisfazem à inequação g(f(x)) < 0 é:`,
+    opcoes: [
+      { letra: 'A', texto: `2.` },
+      { letra: 'B', texto: `3.` },
+      { letra: 'C', texto: `4.` },
+      { letra: 'D', texto: `5.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1545,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Progressão aritmética e soma de termos',
+    enunciado: `Seja (an) = (a1, a2, a3, ...) uma progressão aritmética de razão r e seja (s1, s2, s3, ...) a sequência definida por sn = a1 + a2 + ... + an, isto é, o seu n-ésimo termo é a soma dos n primeiros termos da sequência (an). Sabendo que 168, 220 e 279 são termos consecutivos da sequência (sn), a razão da progressão aritmética (an) é:`,
+    opcoes: [
+      { letra: 'A', texto: `5.` },
+      { letra: 'B', texto: `7.` },
+      { letra: 'C', texto: `9.` },
+      { letra: 'D', texto: `11.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1546,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Geometria analítica: parábola',
+    enunciado: `O gráfico de uma parábola de equação y = ax² + bx + c passa pelos pontos P = (0, -4), Q = (2, -1) e M = (-2, 5). O valor do produto a ⋅ b ⋅ c é:`,
+    opcoes: [
+      { letra: 'A', texto: `6.` },
+      { letra: 'B', texto: `7.` },
+      { letra: 'C', texto: `8.` },
+      { letra: 'D', texto: `9.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1549,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Percentual em massa vs. energia (macronutrientes)',
+    enunciado: `O percentual da energia metabólica de um macronutriente em um alimento pode ser obtido levando em conta tanto o percentual em massa desse macronutriente quanto a sua respectiva energia metabólica por massa. Dos macronutrientes que nos interessam, os principais são proteínas, carboidratos e gorduras; as fibras só entram nesses cálculos quando são digeríveis. As gorduras apresentam um valor de energia metabólica por massa cerca de 2,25 vezes o valor da energia metabólica associada a carboidratos ou a proteínas.
+
+Considere uma barra de chocolate cujos percentuais de energia sejam os apresentados conforme a tabela a seguir.
+- proteínas: 5%
+- gorduras: 52%
+- carboidratos: 43%
+
+A partir dessas informações, pode-se afirmar que, em comparação com os respectivos percentuais em energia, os percentuais em massa de`,
+    opcoes: [
+      { letra: 'A', texto: `proteínas e carboidratos serão maiores e o percentual de gordura será menor.` },
+      { letra: 'B', texto: `proteínas, carboidratos e gorduras serão maiores.` },
+      { letra: 'C', texto: `proteínas e carboidratos serão menores e o percentual de gordura será maior.` },
+      { letra: 'D', texto: `proteínas, carboidratos e gorduras serão menores.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1550,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Vinhaça: biodigestão e biogás',
+    enunciado: `Para a safra de 2023/2024, prevê-se uma produção de 34 bilhões de litros de etanol, com geração de 408 bilhões de litros de vinhaça, subproduto de alto teor de matéria orgânica. Nas últimas décadas, visando à sustentabilidade, o emprego da vinhaça in natura evoluiu: seu descarte direto em rios e em áreas de sacrifício deu lugar à fertirrigação direta (devido ao alto teor de potássio do subproduto). A partir de 2015, empregando biodigestores anaeróbicos, a vinhaça in natura passou a ser convertida em biogás, o qual, após purificação, é denominado gás natural renovável. Em média, 1 m³ de vinhaça produz até 14 m³ de biogás, e o subproduto desse processo é a vinhaça líquida biodigerida, que continua sendo utilizada na fertirrigação.
+
+Em vista dessas informações, pode-se concluir que a sustentabilidade do processo de biodigestão da vinhaça in natura é devida à geração de energia renovável a partir da queima do`,
+    opcoes: [
+      { letra: 'A', texto: `butano. Adicionalmente, a vinhaça biodigerida aplicada à fertirrigação reduz, em relação à vinhaça in natura, a demanda bioquímica de oxigênio.` },
+      { letra: 'B', texto: `metano. Adicionalmente, a vinhaça biodigerida aplicada à fertirrigação aumenta, em relação à vinhaça in natura, a demanda bioquímica de oxigênio.` },
+      { letra: 'C', texto: `butano. Adicionalmente, a vinhaça biodigerida aplicada à fertirrigação aumenta, em relação à vinhaça in natura, a demanda bioquímica de oxigênio.` },
+      { letra: 'D', texto: `metano. Adicionalmente, a vinhaça biodigerida aplicada à fertirrigação reduz, em relação à vinhaça in natura, a demanda bioquímica de oxigênio.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1551,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Submarinos nucleares: geração de O2 e absorção de CO2',
+    enunciado: `Os submarinos nucleares conseguem submergir por longos períodos, pois geram uma quantidade enorme de energia elétrica para ser usada internamente. Um dos desafios a serem enfrentados diz respeito à manutenção da atmosfera interna da embarcação, o que garantiria condições respiráveis. Para tanto, controlam-se as concentrações de oxigênio e gás carbônico. Em vista dessa descrição, você, como responsável por essa manutenção, sugeriria a combinação das seguintes ações:`,
+    opcoes: [
+      { letra: 'A', texto: `para gerar O2: destilação direta da água do mar; para absorver o CO2: uso de uma solução ácida.` },
+      { letra: 'B', texto: `para gerar O2: eletrólise da água purificada do mar; para absorver o CO2: uso de uma solução básica.` },
+      { letra: 'C', texto: `para gerar O2: destilação da água purificada do mar; para absorver o CO2: uso de uma solução básica.` },
+      { letra: 'D', texto: `para gerar O2: eletrólise direta da água do mar; para absorver o CO2: uso de uma solução ácida.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1552,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Cloridrato de venlafaxina: massa molar',
+    enunciado: `A bula do medicamento genérico "cloridrato de venlafaxina" informa apresentações de cápsulas de liberação controlada, cada uma contendo 42,4 mg dessa substância, o que corresponde a 37,5 mg de venlafaxina neutra. O cloridrato de venlafaxina corresponde à molécula venlafaxina neutra associada ao HCl. Isso confere ao cloridrato de venlafaxina uma massa molar e uma solubilidade maiores em água (quando comparado com a venlafaxina neutra). Considerando essas informações, pode-se afirmar que a cada molécula de venlafaxina neutra se associa(m)
+Dado: massa molar do HCl = 36,5 g/mol`,
+    opcoes: [
+      { letra: 'A', texto: `uma molécula de HCl, então a massa molar da venlafaxina neutra é de aproximadamente 140 g/mol.` },
+      { letra: 'B', texto: `uma molécula de HCl, então a massa molar da venlafaxina neutra é de aproximadamente 279 g/mol.` },
+      { letra: 'C', texto: `duas moléculas de HCl, então a massa molar da venlafaxina neutra é de aproximadamente 279 g/mol.` },
+      { letra: 'D', texto: `duas moléculas de HCl, então a massa molar da venlafaxina neutra é de aproximadamente 140 g/mol.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1556,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Genética: inativação do cromossomo X (corpúsculo de Barr)',
+    enunciado: `Em mulheres, ocorre a compactação e a inativação de um cromossomo X, formando uma estrutura pequena e densa, chamada de corpúsculo de Barr. Sabe-se que a inativação de um dos cromossomos X em embriões humanos é um processo fundamental para sua viabilidade.
+(Adaptado de https://agencia.fapesp.br/inativacao-do-cromossomo-x-ocorre-mais-cedo-in-humanos. Acesso em 02/04/2024.)
+
+Assinale a alternativa que preenche corretamente as lacunas no excerto a seguir.
+Em humanos, o sexo é determinado pela presença dos cromossomos sexuais X e Y, que são considerados parcialmente (i) . A inativação de um cromossomo X é um processo aleatório e foi demonstrado que os (ii) no corpúsculo de Barr são inativos, o que significa que eles não serão (iii) . A inativação do cromossomo X é um processo de controle epigenético, que molda o funcionamento do (iv) sem alterá-lo, e iguala a atividade gênica das mulheres à dos homens.`,
+    opcoes: [
+      { letra: 'A', texto: `(i) homólogos; (ii) alelos; (iii) traduzidos; (iv) código genético.` },
+      { letra: 'B', texto: `(i) autossomos; (ii) genes; (iii) transcritos; (iv) código genético.` },
+      { letra: 'C', texto: `(i) homólogos; (ii) genes; (iii) transcritos; (iv) genoma.` },
+      { letra: 'D', texto: `(i) autossomos; (ii) alelos; (iii) traduzidos; (iv) genoma.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1559,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Especiação e seleção natural',
+    enunciado: `Considera-se que a evolução cria e sustenta a biodiversidade via mudanças adaptativas em características ecologicamente relevantes. A especiação é um processo contínuo que dá origem à diversidade biológica, e está intimamente associada a mudanças no fenótipo e à adaptação ao ambiente ecológico.
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A deriva genética é um componente da especiação, levando a uma maior diversidade genética devido ao fluxo de genes entre populações.` },
+      { letra: 'B', texto: `A seleção natural contribui para a adaptação ecológica tanto na presença como na ausência de isolamento geográfico entre populações.` },
+      { letra: 'C', texto: `A especiação é induzida por barreiras de fluxo gênico entre populações, sendo resultante da seleção convergente baseada na ecologia entre ambientes.` },
+      { letra: 'D', texto: `O isolamento geográfico é necessário para que ocorra a especiação, com as novas espécies ocupando nichos ecológicos distintos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1560,
+    ano: 2025,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Biodiversidade marinha: espécies endêmicas',
+    enunciado: `Estima-se que mais de dois milhões de espécies habitem os oceanos; entretanto, somente 10% da via oceânica é conhecida. Em janeiro de 2024, uma expedição na costa do Chile avaliou um trecho de 2.900 km² de montanhas subaquáticas criadas por atividade vulcânica, o que resultou em uma região única com correntes marítimas e baixo teor de oxigênio, gerando um nível elevado de endemismo. Em menos de um mês, a expedição documentou cem novas espécies animais de profundidade, incluindo corais, esponjas, lagostas, polvos, caravelas, águas-vivas, peixes, camarões, entre outros.
+(Adaptado de https://www.nytimes.com/2024/03/10/science/new-species-sea-discovery.html. Acesso em 02/04/2024.)
+
+Sobre essa expedição marinha, é correto afirmar que os animais`,
+    opcoes: [
+      { letra: 'A', texto: `são encontrados em diversos locais do planeta Terra e que os peixes e as caravelas são exemplos de animais triblásticos.` },
+      { letra: 'B', texto: `encontrados têm distribuição restrita no planeta Terra, e que as águas-vivas e os corais possuem simetria radial, tecidos verdadeiros e se reproduzem de forma sexuada e assexuada.` },
+      { letra: 'C', texto: `são encontrados em diversos locais do planeta Terra e que os camarões e as lagostas são exemplos de animais diblásticos.` },
+      { letra: 'D', texto: `encontrados têm distribuição restrita no planeta Terra e que os polvos representam o estágio de vida medusoide, estado este caracterizado pelo formato de sino, boca voltada para baixo e presença de tentáculos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
