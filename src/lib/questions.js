@@ -33760,6 +33760,974 @@ Assinale a alternativa que apresenta corretamente a relação entre o princípio
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2023 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 1778,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Podcast Papo Preto: transfeminismo',
+    enunciado: `Papo Preto: Vamos falar sobre transfeminismo?
+Neste episódio do podcast Papo Preto, o apresentador Yago Rodrigues e a cinegrafista Débora Oliveira recebem Jarda Maria, que se tornou símbolo da luta pelos direitos das transexuais em Recife após ingressar na Universidade Federal de Pernambuco. Ela fala sobre os desafios de ocupar e se manter no ambiente acadêmico e da importância de compreender o que é o transfeminismo.
+Jarda explica que o conceito de transfeminismo ou feminismo trans surge nos EUA quando foi percebido que as pautas discutidas no feminismo não abarcavam a situação das mulheres trans e travestis. Ela diz que há muita cobrança em cima da comunidade de transexuais e travestis sobre os motivos e as causas da violência que sofrem todos os dias, mas as respostas devem partir da sociedade, que deve praticar a não violência e dar exemplos.
+"Nós já estamos preocupadas em pensar esses meios de sobrevivência, que as pessoas que movimentam a transfobia pensem os movimentos de enfrentamento. A transfobia e a travestifobia são problemáticas cisgêneras e não nossa. Nós somos vítimas desse processo", afirma Jarda.
+(PAPO PRETO 69: Vamos falar sobre transfeminismo? Ecoa Produções, 09/03/2020.)
+
+Sobre as ocorrências do item trans no texto, podemos afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `introduzem termos como transfeminismo e transfobia, que servem para conceituar tipos de violência contra mulheres trans.` },
+      { letra: 'B', texto: `o seu emprego em transfeminismo indica que a pauta feminista já se estende às mulheres trans, mas ainda exclui as travestis.` },
+      { letra: 'C', texto: `é empregado como antônimo do prefixo cis- para indicar que a transfobia e a travestifobia devem preocupar apenas as pessoas cisgêneras.` },
+      { letra: 'D', texto: `remete a transexuais e travestis no termo feminismo trans, que é sinônimo de transfeminismo e abrange grupos não incluídos na pauta feminista.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1779,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Reportagem sobre Stella do Patrocínio',
+    enunciado: `Quebrando o silêncio dos hospícios
+Stella do Patrocínio, apesar de ser reconhecida postumamente como poeta, nunca se definiu assim e não escreveu nenhuma das linhas que estão no livro Reino dos bichos e dos animais é o meu nome, pelo qual ficou conhecida. A potência de suas palavras se encontra no seu falatório (como chamava suas falas), que foi preservado em fitas de áudio pela artista plástica Carla Guagliardi. As conversas entre as duas foram gravadas durante oficinas de arte para pacientes psiquiátricos, entre 1986 e 1988, e o livro, publicado muitos anos depois da morte de Patrocínio, é um recorte de frases dela, transcritas desses diálogos.
+As falas de Patrocínio são de uma mulher negra e pobre que foi levada à força pela polícia e internada, no Centro Pedro 2º e depois na Colônia Juliano Moreira, no Rio de Janeiro, onde ficou por trinta anos, quando morreu, foi enterrada como indigente. A história de Patrocínio é a história de milhares de vítimas que foram encarceradas nos hospícios brasileiros por serem consideradas "desajustadas". Em sua maioria negras. Ali, elas sofreram abusos, violências e torturas, além de serem abandonadas pelo Estado.
+(Adaptado de: Quebrando o silêncio dos hospícios. Quatro cinco um, 05/2022, p. 27.)
+
+Examinando a relação do título com o corpo do excerto da reportagem de revista, o que representa a quebra do "silêncio dos hospícios"?`,
+    opcoes: [
+      { letra: 'A', texto: `A morte esquecida de Stella do Patrocínio em uma instituição para reclusão de pessoas com transtornos mentais (ou assim consideradas).` },
+      { letra: 'B', texto: `As oficinas de arte que permitiram a Stella do Patrocínio tornar pública a sua voz e as histórias de mulheres encarceradas em instituições manicomiais.` },
+      { letra: 'C', texto: `O livro de Stella do Patrocínio que narra as histórias de mulheres vítimas de violência manicomial, abandonadas pelo Estado.` },
+      { letra: 'D', texto: `As falas gravadas de Stella do Patrocínio que expressam tanto o seu percurso individual quanto a história de outras mulheres.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1780,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - "Falatório" de Stella do Patrocínio',
+    enunciado: `Quebrando o silêncio dos hospícios
+Stella do Patrocínio, apesar de ser reconhecida postumamente como poeta, nunca se definiu assim e não escreveu nenhuma das linhas que estão no livro Reino dos bichos e dos animais é o meu nome, pelo qual ficou conhecida. A potência de suas palavras se encontra no seu falatório (como chamava suas falas), que foi preservado em fitas de áudio pela artista plástica Carla Guagliardi.
+(Adaptado de: Quebrando o silêncio dos hospícios. Quatro cinco um, 05/2022, p. 27.)
+
+Com base ainda no texto, "falatório" pode ser considerado como`,
+    opcoes: [
+      { letra: 'A', texto: `a modalidade declamada dos poemas de Stella do Patrocínio.` },
+      { letra: 'B', texto: `uma prática discursiva oral nomeada por Stella do Patrocínio.` },
+      { letra: 'C', texto: `a denominação, usada no manicômio, para conversas terapêuticas.` },
+      { letra: 'D', texto: `um gênero de poesia transcrita produzida por Stella do Patrocínio.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1782,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Sufixo frustrativo em kotiria',
+    enunciado: `Você provavelmente já encontrou pelas redes sociais o famigerado #sqn, aquele jeito telegráfico de dizer que tal coisa é muito legal, "só que não". Agora, imagine uma língua diferente do português que tenha incorporado um conceito parecido na própria estrutura das palavras, criando o que foi apelidado de "sufixo frustrativo". Bom, é assim no kotiria, um idioma da família linguística tukano falado por indígenas do Alto Rio Negro, na fronteira do Brasil com a Colômbia. Para exprimir a função "frustrativa", o kotiria usa um sufixo com a forma -ma. Você quer dizer que foi até um lugar sem conseguir o que queria indo até lá? Basta pegar o verbo ir, que é wa'a em kotiria, e acrescentar o sufixo: wa'ama, "ir em vão".
+(Adaptado de: LOPES, R. J. L. A sofisticação das línguas indígenas. Superinteressante, 18/11/2021.)
+
+O excerto, retirado de uma revista de jornalismo científico, exemplifica um processo de formação de palavras na língua indígena kotiria e o compara com o uso da hashtag #sqn. É correto afirmar que essa comparação`,
+    opcoes: [
+      { letra: 'A', texto: `cria uma falsa equivalência, pois os processos morfológicos em kotiria e em português são diferentes.` },
+      { letra: 'B', texto: `enfatiza a construção de efeitos de sentido parecidos por meio de processos distintos em kotiria e no português de internet.` },
+      { letra: 'C', texto: `permite compreender processos idênticos de formação de palavras nas línguas portuguesa e kotiria.` },
+      { letra: 'D', texto: `ressalta as diferenças no uso dos sufixos -ma, em kotiria, e #sqn, no português usado na internet.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1783,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Machado de Assis: Bons dias! (curandeirismo)',
+    enunciado: `Na última crônica da série "Bons dias!", de 29 de agosto de 1889, série na qual um tema são as questões gerais em torno do curandeirismo, o narrador enuncia:
+"Hão de fazer-me esta justiça, ainda os meus mais ferrenhos inimigos; é que não sou curandeiro, eu não tenho parente curandeiro, não conheço curandeiro, e nunca vi cara, fotografia ou relíquia, sequer, de curandeiro. Quando adoeço, não é de espinhela caída*, coisa que podia aconselhar-me a curanderia; é sempre de moléstias latinas ou gregas. Estou na regra; pago impostos, sou jurado, não me podem arguir a menor quebra de dever público."
+(ASSIS, Machado de. Bons dias! Campinas: Editora da UNICAMP, p. 295, 2008.)
+*espinhela caída: designação popular para doenças caracterizadas por dores pelo corpo (peito, costas e pernas), além de cansaço físico.
+
+Na "profissão de fé", feita pelo narrador da crônica no parágrafo citado, percebe-se`,
+    opcoes: [
+      { letra: 'A', texto: `a distinção do narrador como uma figura avessa ao curandeirismo, por crença na ciência dos filósofos e pensadores gregos e latinos, o que marca o tom crítico da série.` },
+      { letra: 'B', texto: `a caracterização do narrador como uma figura superior à população em geral, o que ecoa o tom analítico das crônicas dessa série.` },
+      { letra: 'C', texto: `a repetição exagerada da palavra "curandeiro" (e "curanderia") no trecho, como marca estilística da simplicidade linguística das crônicas dessa série.` },
+      { letra: 'D', texto: `a personificação gerada por "quando adoeço (...) é sempre de moléstias latinas ou gregas", como marca do estilo empolado do narrador nessa série de crônicas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1784,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura africana - Paulina Chiziane: Niketche',
+    enunciado: `Conheço um povo sem poligamia: o povo macua. Este povo deixou as suas raízes e apoligamou-se por influência da religião. Islamizou-se. (...) Conheço um povo de tradição poligâmica: o meu, do sul do meu país. Inspirado no papa, nos padres e nos santos, disse não à poligamia. Cristianizou-se. Jurou deixar os costumes bárbaros de casar com muitas mulheres para tornar-se monógamo ou celibatário. (...) Um dia dizem não aos costumes, sim ao cristianismo e à lei. No momento seguinte, dizem não onde disseram sim, ou sim onde disseram não.
+(CHIZIANE, Paulina. Niketche. Uma história de poligamia. São Paulo: Companhia das Letras, 2004, p. 92.)
+
+Baseando-se no excerto e na leitura da obra, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a organização familiar é fruto da vida religiosa dos povos, cabendo assim a monogamia aos povos cristãos e a poligamia aos povos islâmicos.` },
+      { letra: 'B', texto: `os costumes culturais no modo de organizar os arranjos familiares são colocados em xeque por novas estruturas de poder, as quais transmitem outros valores.` },
+      { letra: 'C', texto: `a monogamia aparece como evolução natural aos costumes supostamente bárbaros de os homens se casarem com muitas mulheres em determinadas culturas africanas.` },
+      { letra: 'D', texto: `o povo macua tornou-se monogâmico depois de abraçar a fé cristã trazida pelo papa e padres, o que pode ser considerado um aprimoramento social.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1785,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Caminha e José Bonifácio: os povos originários',
+    enunciado: `Texto 1
+"Parece-me gente de tal inocência que, se nós os entendêssemos e eles a nós, seriam logo cristãos porque eles não têm nem conhecem nenhuma crença. (...) esta gente é boa e de boa simplicidade, e imprimir-se-á ligeiramente neles qualquer cunho que lhes quiserem dar."
+(CAMINHA, Pero Vaz de. Carta de Achamento do Brasil. Campinas: Editora da UNICAMP, 2001, p. 108.)
+
+Texto 2
+"As molas do homem primitivo podem ser postas em ação pelo exemplo, educação e benefícios (...). Newton, se houvesse nascido entre os guaranis, seria mais um bípede, que pisara sobre a superfície da Terra; mas um guarani criado por Newton talvez ocupasse o seu lugar."
+(ANDRADA E SILVA, José Bonifácio de. Projetos para o Brasil. São Paulo: Companhia das Letras, 2000, p. 50.)
+
+A partir dos dois textos, escritos em momentos emblemáticos da história do Brasil (o "achamento" em 1500 e o debate de ideias para a criação de uma constituição em 1823), seria correto afirmar que os povos originários são`,
+    opcoes: [
+      { letra: 'A', texto: `definidos como díspares entre si, pois Caminha os vê como ingênuos, crédulos, enquanto Bonifácio alerta para o perigo dos indígenas bravos.` },
+      { letra: 'B', texto: `considerados uma página em branco e maleáveis, tanto no texto do cronista quinhentista quanto naquele do publicista oitocentista.` },
+      { letra: 'C', texto: `apontados como benignos, com a intenção de preservar os indígenas distantes da degradação dos costumes europeus.` },
+      { letra: 'D', texto: `tributários de uma imutabilidade cultural, tanto na crônica de Caminha quanto no discurso de José Bonifácio.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1786,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Fernando Pessoa e Sérgio Buarque de Holanda',
+    enunciado: `Texto 1
+"Desde que, naufragado, se salvara, o marinheiro vivia ali... Como ele não tinha meio de voltar à pátria, e cada vez que se lembrava dela sofria, pôs-se a sonhar uma pátria que nunca tivesse tido: pôs-se a fazer ter sido sua uma outra pátria, uma outra espécie de país com outras espécies de paisagens (...)"
+(PESSOA, Fernando. O Marinheiro. Campinas: Editora da UNICAMP, p. 59, 2020.)
+
+Texto 2
+"Na capacidade para amoldar-se a todos os meios, em prejuízo, muitas vezes de suas próprias características raciais e culturais, revelou o português melhores aptidões de colonizador do que os demais povos (...). Os portugueses precisaram anular-se durante o longo tempo para afinal vencerem."
+(HOLANDA, Sérgio Buarque de. Raízes do Brasil. São Paulo: Companhia das Letras, p. 224, 2016.)
+
+Levando em conta os textos 1 e 2, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `O marinheiro e o colonizador português são capazes de criar valores e paisagens, reinventando-se, a ponto de forjarem outra realidade e outra memória do passado.` },
+      { letra: 'B', texto: `O marinheiro e o colonizador português constroem novos mundos e valores no além-mar, mas são incapazes de anular sua identidade original.` },
+      { letra: 'C', texto: `O marinheiro e o colonizador português, apesar do esforço de construção cultural, limitam-se a transpor integralmente o que aprenderam no passado para as configurações do futuro.` },
+      { letra: 'D', texto: `O marinheiro e o colonizador português acabam anulando suas identidades originais, representando, assim, figuras inquestionáveis de niilismo.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1787,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Olavo Bilac: Ciclo',
+    enunciado: `Ciclo
+Manhã. Sangue em delírio, verde gomo,
+Promessa ardente, berço e liminar:
+A árvore pulsa, no primeiro assomo
+Da vida, inchando a seiva ao sol... Sonhar!
+Dia. A flor, o noivado e o beijo, como
+Em perfumes um tálamo e um altar:
+A árvore abre-se em riso, espera o pomo,
+E canta à voz dos pássaros... Amar!
+Tarde. Messe e esplendor, glória e tributo;
+A árvore maternal levanta o fruto,
+A hóstia da ideia em perfeição... Pensar!
+Noite. Oh! saudade!...A dolorosa rama
+Da árvore a aflita pelo chão derrama
+As folhas, como lágrimas... Lembrar!
+(BILAC, Olavo, Tarde, 1.ed. Rio de Janeiro; São Paulo; Belo Horizonte: Livraria Francisco Alves, p. 12-13, 1919.)
+
+No soneto "Ciclo",`,
+    opcoes: [
+      { letra: 'A', texto: `a reiteração de um mesmo tipo de frase no final de cada estrofe acentua o idealismo e a rememoração.` },
+      { letra: 'B', texto: `a metáfora da árvore faz uso de um vocabulário botânico, que evoca o cientificismo da época.` },
+      { letra: 'C', texto: `as frases nominais do início das estrofes contradizem os sentidos de cada estrofe anterior.` },
+      { letra: 'D', texto: `o paralelismo estrutural entre as estrofes de "Ciclo" evoca o desgaste dos recursos do poeta.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1788,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura/Música - Racionais MC\'s: Gênesis',
+    enunciado: `"Deus fez o mar, as árvore, as criança, o amor
+O homem me deu a favela, o crack, a trairagem, as arma, as bebida, as puta
+Eu?! Eu tenho uma Bíblia velha, uma pistola automática e um sentimento de revolta
+Eu tô tentando sobreviver no inferno".
+(RACIONAIS MC'S. Gênesis. In: Sobrevivendo no inferno. São Paulo: Companhia das Letras, p. 45, 2018.)
+
+A palavra "Gênesis" dá nome ao primeiro livro da Bíblia. Considerando a obra, na íntegra, dos Racionais MC's e o excerto acima dela reproduzido, pode-se dizer que, em relação a esse trecho, "gênesis" seria uma alusão`,
+    opcoes: [
+      { letra: 'A', texto: `à influência do cristianismo na dinâmica das comunidades periféricas.` },
+      { letra: 'B', texto: `ao colapso planetário entrevisto já na origem do mundo natural.` },
+      { letra: 'C', texto: `à origem divina do mundo contraposta aos problemas criados pelo homem.` },
+      { letra: 'D', texto: `à origem religiosa dos conflitos armados e da violência social no Brasil.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1789,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Reator fotocatalítico e degradação de hormônios',
+    enunciado: `Um artigo científico relata a construção e a eficiência de um reator fotocatalítico de fluxo contínuo para a degradação de hormônios presentes em águas tratadas para consumo humano. Num trecho desse estudo, os autores afirmam: "é interessante notar que 80% de estrogênio foram removidos numa alimentação a 200 ng/L, 25 mW/cm² e 300 L/(m²h), enquanto que as remoções de progesterona e testosterona ficaram em 44% e 33%, respectivamente".
+
+De acordo com essas informações, pode-se inferir que o reator é capaz de degradar`,
+    opcoes: [
+      { letra: 'A', texto: `dois hormônios femininos e um masculino, sendo que degrada melhor um feminino.` },
+      { letra: 'B', texto: `dois hormônios femininos e um masculino, sendo que degrada melhor o masculino.` },
+      { letra: 'C', texto: `somente hormônios masculinos, sendo que degrada melhor o estrogênio.` },
+      { letra: 'D', texto: `somente hormônios femininos, sendo que degrada melhor o estrogênio.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1794,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Caiação: cal virgem e cal hidratada',
+    enunciado: `A caiação ou pintura com cal hidratada (Ca(OH)2) é uma das formas mais antigas para o revestimento da fachada de edifícios. A cal virgem (CaO) - produzida a partir do aquecimento do calcário (CaCO3) - ao ser colocada em água, forma a cal hidratada que, uma vez aplicada à parede e em contato com o CO2 do ar atmosférico, vai se transformando em seu precursor, o carbonato de cálcio. Dessa forma, o carbonato de cálcio fica aderido à parede, protegendo-a, conservando-a e embelezando-a.
+
+Considere as equações a seguir:
+i) CaCO3 -> CaO + CO2; ΔH = 178 kJ/mol
+ii) CaO + H2O -> Ca(OH)2; ΔH = -109 kJ/mol
+iii) Ca(OH)2 + CO2 -> CaCO3 + H2O; ΔH = ?
+
+Levando em conta apenas as equações do processo de transformação e produção do carbonato de cálcio (equações i a iii), pode-se afirmar que o processo`,
+    opcoes: [
+      { letra: 'A', texto: `pode ser considerado carbono neutro e que a última equação representa uma reação que levaria ao aquecimento da parede onde a cal foi aplicada.` },
+      { letra: 'B', texto: `pode ser considerado carbono neutro e que a última equação representa uma reação que levaria ao resfriamento da parede onde a cal foi aplicada.` },
+      { letra: 'C', texto: `não pode ser considerado carbono neutro e que a última equação representa uma reação que levaria ao aquecimento da parede onde a cal foi aplicada.` },
+      { letra: 'D', texto: `não pode ser considerado carbono neutro e que a última equação representa uma reação que levaria ao resfriamento da parede onde a cal foi aplicada.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1797,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia/Geopolítica - Conflito na Etiópia',
+    enunciado: `No ano de 2020, iniciou-se um conflito interno na Etiópia, com complexas implicações humanitárias, econômicas e geopolíticas, adicionando novas tensões à frágil estabilidade política na região do Chifre da África.
+
+As causas do atual conflito na Etiópia resultam`,
+    opcoes: [
+      { letra: 'A', texto: `da instabilidade das instituições estatais gerada pelo processo de colonização europeia no século XVIII.` },
+      { letra: 'B', texto: `do conflito bélico com a Eritreia em razão da disputa pela saída para o Mar Médio.` },
+      { letra: 'C', texto: `da tentativa de secessão da região do Tigré em função dos conflitos étnico-religiosos e políticos.` },
+      { letra: 'D', texto: `da participação de interesses estrangeiros na gestão dos recursos naturais etíopes, a exemplo do petróleo.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1798,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Geografia - Data centers e geopolítica digital',
+    enunciado: `Tem se tornado lugar comum dizer que o gigantesco volume de dados extraídos de nossa vida cotidiana está armazenado "na nuvem". É quase como dizer: estão por toda a parte e em lugar nenhum. Flutuam. Se damos, contudo, um passo para além das metáforas, nos depararemos com a robusta infraestrutura do capitalismo digital, que está ancorada em territórios concretos e se inscreve numa geografia do poder. É assim que, segundo a UNCTAD (2021), de um total de 4.714 data centers existentes no mundo, quase 80% estão em países desenvolvidos, principalmente nos EUA e países da Europa ocidental.
+
+Sobre os data centers e sua distribuição, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `são infraestruturas concentradas no Norte Global que, por serem públicas, controladas pelo Estado, têm seu impacto minimizado em questões geopolíticas que perpassam essa parte do mundo.` },
+      { letra: 'B', texto: `o processo de desenvolvimento geograficamente desigual pouco atua na distribuição da infraestrutura digital e na coleta, armazenagem e tratamento de dados entre as regiões do mundo.` },
+      { letra: 'C', texto: `sua rarefação no Sul-Global indica que a coleta, a armazenagem e o tratamento dos dados levanta grave problema relativo à soberania dos Estados nacionais dessa parte do mundo.` },
+      { letra: 'D', texto: `à medida em que se ampliam a coleta e o tratamento massivo de dados das sociedades, países de todos os continentes estão adotando robustas políticas de infraestrutura digital.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1801,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Imigração no Sul do Brasil',
+    enunciado: `Alguns municípios do Sul do Brasil receberam, nos últimos 10 anos, importantes fluxos de imigrantes e refugiados, sobretudo de haitianos, congoleses, senegaleses e venezuelanos. A presença desses imigrantes e refugiados em regiões de elevada especialização produtiva tem sido motivada pela busca de trabalho; todavia, crescem registros de denúncias das precárias condições de vida e situações de xenofobia enfrentadas por essas populações nos municípios onde se instalam.
+
+Assinale a alternativa que indique: (1) a região de especialização produtiva que mais tem absorvido essa força de trabalho imigrante; e (2) a atividade econômica envolvida:`,
+    opcoes: [
+      { letra: 'A', texto: `(1) Oeste catarinense; (2) indústria frigorífica.` },
+      { letra: 'B', texto: `(1) Vale dos Sinos (RS); (2) indústria de laticínios.` },
+      { letra: 'C', texto: `(1) Oeste paranaense; (2) indústria de confecção.` },
+      { letra: 'D', texto: `(1) Vale do Itajaí (SC); (2) indústria carbonífera.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1802,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Emissão de CO2 nos municípios brasileiros',
+    enunciado: `A tabela a seguir destaca, para o ano de 2019, os 11 municípios brasileiros que mais emitiram gases do efeito estufa causadores do aquecimento global, conforme o total emitido de CO2 em toneladas.
+
+| Município | Emissão de CO2 (em toneladas) | Área territorial (em km²) | Densidade Demográfica (pop/área) |
+| Altamira (PA) | 35,2 | 159.533,31 | 0,72 |
+| Apuí (AM) | 12,5 | 54.240,55 | 0,41 |
+| Colniza (MT) | 13,5 | 27.960,24 | 1,38 |
+| Lábrea (AM) | 23,2 | 68.262,68 | 0,67 |
+| Novo Progresso (AM) | 14,9 | 38.162,00 | 0,68 |
+| Novo Repartimento (PA) | 11,9 | 15.398,72 | 4,93 |
+| Pacajá (PA) | 16,2 | 11.832,32 | 4,03 |
+| Porto Velho (RO) | 23,3 | 34.090,95 | 15,53 |
+| Rio de Janeiro (RJ) | 13,8 | 1.200,33 | 5.597,55 |
+| São Félix do Xingu (PA) | 28,9 | 84.212,90 | 1,53 |
+| São Paulo (SP) | 16,6 | 1.521,20 | 8.054,17 |
+(Fonte: seeg.eco.br; IBGE Cidades.)
+
+A partir da análise dos dados anteriores e de seu conhecimento, é correto afirmar que os municípios com`,
+    opcoes: [
+      { letra: 'A', texto: `menor extensão territorial e alta densidade demográfica foram responsáveis pela maior emissão de CO2 decorrente da decomposição dos resíduos sólidos em aterros sanitários.` },
+      { letra: 'B', texto: `grande extensão territorial e baixa densidade demográfica foram responsáveis pela maior emissão de CO2, o que se correlaciona com o avanço da mineração e a construção de hidrelétricas.` },
+      { letra: 'C', texto: `menor extensão territorial e alta densidade demográfica foram responsáveis pela maior emissão de CO2 decorrente da instalação de novas indústrias de bens de capital.` },
+      { letra: 'D', texto: `grande extensão territorial e baixa densidade demográfica foram responsáveis pela maior emissão de CO2, o que se correlaciona com o avanço do desmatamento e incêndio florestal.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1803,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Reservas Extrativistas (RESEX) na Amazônia',
+    enunciado: `A Amazônia brasileira ganhou destaque nos últimos anos nos noticiários da mídia nacional e estrangeira, face ao avanço de graves problemas socioambientais. Nesse contexto, as unidades de conservação, como as Reservas Extrativistas (RESEX), introduzidas pela Lei 9.985 em 18/07/2000, cumprem um papel importante na preservação ambiental e na proteção social.
+
+Sobre as RESEX no bioma amazônico, é correto afirmar que são áreas`,
+    opcoes: [
+      { letra: 'A', texto: `coletivas, demarcadas para populações indígenas, podendo ser usadas economicamente por meio de pequenas atividades de extrativismo vegetal, mineral e animal. Crescem dentro das RESEX a exploração turística e as atividades garimpeiras.` },
+      { letra: 'B', texto: `públicas, destinadas ao usufruto das populações tradicionais ribeirinhas para moradia e atividades econômicas de baixo impacto ambiental. Aumentam no entorno das RESEX a exploração de madeira e o desmatamento para a implantação de atividades pecuárias.` },
+      { letra: 'C', texto: `coletivas, concedidas para uso misto das populações indígenas e quilombolas, que exploram comercialmente as riquezas existentes com atividades extrativistas e agropecuária. Aumentam no entorno das RESEX núcleos urbanos e atividades de exploração madeireira.` },
+      { letra: 'D', texto: `públicas, destinadas às populações tradicionais para residência e extrativismo sustentável; quando autorizado pelo Estado, grandes empresas podem explorar recursos naturais em larga escala. Crescem dentro das RESEX os impactos ambientais e a expulsão de população.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1804,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia/Sociologia - Foucault: biopolítica',
+    enunciado: `De que se trata essa biopolítica, esse biopoder? A nova tecnologia do poder que se instala se dirige à multiplicidade dos homens, não na medida em que eles se resumem em corpos, mas na medida em que ela forma, ao contrário, uma massa global, afetada por processos de conjunto que são próprios da vida, que são processos como o nascimento, a morte, a produção, a doença etc. É com o nascimento da biopolítica que se lança mão da medição estatística desses fenômenos para fins de regulamentação e de intervenção. Um novo tipo de poder que consiste em fazer viver e em deixar morrer.
+(Adaptado de FOUCAULT, Michel. Em defesa da sociedade. São Paulo: WMF Martins Fontes, 2010, p. 204.)
+
+Como tecnologia de poder, a biopolítica se inscreve no corpo`,
+    opcoes: [
+      { letra: 'A', texto: `do indivíduo como problema existencial.` },
+      { letra: 'B', texto: `da família como problema reprodutivo.` },
+      { letra: 'C', texto: `da escola como problema disciplinar.` },
+      { letra: 'D', texto: `da população como problema político.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1806,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Balonismo: movimento uniformemente variado',
+    enunciado: `O balonismo, um esporte aeronáutico com adeptos em todo o mundo, oferece um belo espetáculo para os observadores no solo. Um maçarico é usado para aquecer o ar no interior do balão, o que faz variar a densidade do ar, permitindo o controle do movimento de subida e descida do balão.
+Use os valores aproximados: g = 10 m/s² e π = 3
+
+Um balão, inicialmente em repouso no solo, decola e sobe em movimento uniformemente variado. Se o balão atinge a altura h = 80 m após um tempo t = 40 s, conclui-se que a aceleração vertical do balão nesse movimento é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `2,0 m/s².` },
+      { letra: 'B', texto: `4,0 m/s².` },
+      { letra: 'C', texto: `0,05 m/s².` },
+      { letra: 'D', texto: `0,1 m/s².` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1807,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Trabalho da força peso no balão',
+    enunciado: `O balonismo, um esporte aeronáutico com adeptos em todo o mundo, oferece um belo espetáculo para os observadores no solo. Um maçarico é usado para aquecer o ar no interior do balão, o que faz variar a densidade do ar, permitindo o controle do movimento de subida e descida do balão.
+Use os valores aproximados: g = 10 m/s² e π = 3
+
+A massa total de um balão em um movimento de descida, desde a altura inicial h = 80 m até o solo, é m = 2000 kg. Qual é o trabalho da força peso sobre o balão durante a descida?`,
+    opcoes: [
+      { letra: 'A', texto: `2,0×10^4 J` },
+      { letra: 'B', texto: `1,6×10^5 J` },
+      { letra: 'C', texto: `2,0×10^5 J` },
+      { letra: 'D', texto: `1,6×10^6 J` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1808,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Gás ideal: número de mols no balão',
+    enunciado: `O balonismo, um esporte aeronáutico com adeptos em todo o mundo, oferece um belo espetáculo para os observadores no solo. Um maçarico é usado para aquecer o ar no interior do balão, o que faz variar a densidade do ar, permitindo o controle do movimento de subida e descida do balão.
+Use os valores aproximados: g = 10 m/s² e π = 3
+
+Um balão tem um volume V = 1,6×10^3 m³ de ar quente no seu interior na temperatura T = 400 K e na pressão atmosférica p0 = 1,0 atm = 1,0×10^5 Pa. Sabendo-se que o ar quente se comporta como um gás ideal e que a constante universal dos gases é R = 8 J/mol.K, quantos mols de ar n há no interior do balão?`,
+    opcoes: [
+      { letra: 'A', texto: `5,0×10^-1 mol.` },
+      { letra: 'B', texto: `4,0×10^0 mol.` },
+      { letra: 'C', texto: `5,0×10^4 mol.` },
+      { letra: 'D', texto: `4,0×10^5 mol.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1810,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - 3ª Lei de Kepler: órbita de Ceres',
+    enunciado: `O planeta anão Ceres foi descoberto em 1801 por Giuseppe Piazzi. Resultados científicos recentes indicam que Ceres teria sido formado nas zonas mais afastadas do Sistema Solar e posteriormente lançado para a região onde se encontra atualmente, entre as órbitas de Marte e Júpiter. A tabela abaixo apresenta o período de translação T, a distância média ao Sol R, bem como T², R³ e a razão (T²/R³) para alguns planetas do Sistema Solar. De acordo com a 3ª Lei de Kepler, a razão (T²/R³) é constante. A partir dos dados da tabela, pode-se concluir que o período orbital de Ceres, TCeres, é aproximadamente igual a
+
+| Planeta | T (anos)* | R (u.a.)** | T² (anos²) | R³ (u.a.³) | (T²/R³) |
+| Vênus | 0,615 | 0,723 | 0,378 | 0,378 | 1,0 |
+| Terra | 1,00 | 1,00 | 1,0 | 1,0 | 1,0 |
+| Marte | 1,88 | 1,52 | 3,53 | 3,51 | 1,0 |
+| Ceres | ? | 2,77 | ? | 21,3 | ? |
+| Júpiter | 11,9 | 5,20 | 142 | 141 | 1,0 |
+| Saturno | 29,5 | 9,55 | 870 | 871 | 1,0 |
+*anos terrestres **1 unidade astronômica (1,0 u.a.) = distância média da Terra ao Sol`,
+    opcoes: [
+      { letra: 'A', texto: `1,00 ano.` },
+      { letra: 'B', texto: `2,77 anos.` },
+      { letra: 'C', texto: `4,62 anos.` },
+      { letra: 'D', texto: `21,3 anos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1813,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - HPV: transmissão e vacinação',
+    enunciado: `O papilomavirus humano (HPV) é um grupo de vírus muito comum no mundo. Existem muitos tipos de HPV e a maioria deles não causa problemas ao organismo humano. Porém, os tipos de HPV 16 e 18 estão associados com 70% dos casos de cânceres de colo do útero e lesões genitais pré-cancerosas.
+(Adaptado de paho.org, tópicos hpv-e-cancer-do-colo-do-utero.)
+
+É correto afirmar que o HPV é transmitido`,
+    opcoes: [
+      { letra: 'A', texto: `principalmente por contato sexual; o uso de preservativo elimina a possibilidade de infecção pelos HPV 16 e 18, sendo indicado quando existe exposição ao vírus.` },
+      { letra: 'B', texto: `por contato direto com a pele ou mucosa infectada, sobretudo durante a relação sexual; a vacinação pode tratar a infecção e as doenças associadas aos diversos tipos de HPV.` },
+      { letra: 'C', texto: `principalmente por contato sexual; o controle da infecção inclui a prevenção pela vacinação contra os HPV 16 e 18, sendo indicada antes da exposição ao vírus.` },
+      { letra: 'D', texto: `por contato direto com a pele ou mucosa infectada, sobretudo durante a relação sexual; o uso de preservativo impede o desenvolvimento das doenças associadas ao HPV.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1814,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Fotossíntese: cadeia transportadora de elétrons',
+    enunciado: `Na transformação de energia luminosa em energia química pelas plantas, há uma série de reações de redução e oxidação. Para que a cadeia transportadora de elétrons nos cloroplastos ocorra, os elementos que a compõem estão arranjados nas membranas dos tilacóides, de acordo com o seu potencial redox. Na atividade fotoquímica, o oxigênio é produzido, assim como moléculas essenciais para a manutenção do metabolismo celular, como o ATP e o NADPH.
+
+O doador primário e o aceptor final de elétrons são, respectivamente,`,
+    opcoes: [
+      { letra: 'A', texto: `oxigênio e NADPH.` },
+      { letra: 'B', texto: `gás carbônico e ATP.` },
+      { letra: 'C', texto: `água e NADPH.` },
+      { letra: 'D', texto: `glicose e ATP.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1815,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - GFP: distribuição filogenética',
+    enunciado: `A proteína verde fluorescente, do inglês green fluorescence protein (GFP) observada pela primeira vez na água-viva (Aequorea victoria), tornou-se uma das ferramentas mais importantes usadas na biociência contemporânea. Evolutivamente, a distribuição filogenética dos genes homólogos de GFP foi encontrada apenas nos filos Cnidaria, Arthropoda e Chordata.
+(Adaptado de MACEL, Marie-Lyne et al. Zoological Letters, 2020.)
+
+Considerando a distribuição filogenética do gene GFP, é correto afirmar a hipótese de origem em`,
+    opcoes: [
+      { letra: 'A', texto: `ancestral metazoário comum e eventos independentes de perda do gene em vários clados.` },
+      { letra: 'B', texto: `ancestrais metazoários distintos e manutenção do gene em todos os metazoários marinhos.` },
+      { letra: 'C', texto: `ancestral metazoário comum e manutenção do gene em todos os metazoários marinhos.` },
+      { letra: 'D', texto: `ancestrais metazoários distintos e eventos independentes de perda do gene em vários clados.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1817,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Síndrome de Pitt-Hopkins: genética',
+    enunciado: `Cientistas desvendaram o mecanismo causador da síndrome de Pitt-Hopkins, uma disfunção neuropsiquiátrica que tem características do transtorno do espectro autista. A síndrome de Pitt-Hopkins tem como origem uma mutação no gene TCF4 e causa déficit cognitivo, atraso motor profundo, ausência de fala funcional e anormalidades respiratórias. O genoma humano tem duas cópias de cada gene. A síndrome de Pitt-Hopkins ocorre quando uma das cópias do TCF4 não funciona.
+(Adaptado de agencia.fapesp.br.)
+
+Considerando as informações apresentadas e seus conhecimentos, é correto afirmar que a síndrome é causada em`,
+    opcoes: [
+      { letra: 'A', texto: `heterozigose, quando um dos alelos do gene TCF4 não produz proteína funcional devido às alterações de bases nitrogenadas que modificam a proteína traduzida.` },
+      { letra: 'B', texto: `homozigose, quando os dois alelos do gene TCF4 não produzem proteína funcional devido à mutação da cromatina que modifica a proteína traduzida.` },
+      { letra: 'C', texto: `heterozigose, quando uma das cromátides do gene TCF4 não produz proteína funcional devido à mutação da cromatina que modifica a proteína traduzida.` },
+      { letra: 'D', texto: `homozigose, quando as duas cromátides do gene TCF4 não produzem proteína funcional devido às alterações das bases nitrogenadas que modificam a proteína traduzida.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1819,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Disbiose intestinal e doença de Parkinson',
+    enunciado: `Estudos revelaram como a disbiose - desequilíbrio da microbiota intestinal - pode influenciar no desenvolvimento de distúrbios neurodegenerativos como a doença de Parkinson. As pessoas acometidas por essa doença apresentam alterações significativas nos centros motores do cérebro.
+
+Assinale a alternativa que preenche corretamente as lacunas no excerto a seguir.
+A agregação da proteína α-sinucleína nos (i) ________ está relacionada com a doença de Parkinson. Foi demonstrado que células específicas do tecido (ii) ________ da mucosa intestinal podem expressar essa proteína. A disbiose pode levar ao aumento de espécies de (iii) ________ que, eventualmente, contribuem para agregação da α-sinucleína no intestino, e essa proteína pode migrar para o (iv) ________ configurando um possível mecanismo de surgimento da doença de Parkinson esporádica.
+(Adaptado de agencia.fapesp.br.)`,
+    opcoes: [
+      { letra: 'A', texto: `(i) neurônios; (ii) epitelial; (iii) bactérias; (iv) sistema nervoso central.` },
+      { letra: 'B', texto: `(i) linfonodos; (ii) conjuntivo; (iii) bactérias; (iv) sistema nervoso autônomo.` },
+      { letra: 'C', texto: `(i) linfonodos; (ii) epitelial; (iii) vírus; (iv) sistema nervoso central.` },
+      { letra: 'D', texto: `(i) neurônios; (ii) conjuntivo; (iii) vírus; (iv) sistema nervoso autônomo.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1821,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Mistura de soluções: álcool e água',
+    enunciado: `Um recipiente de 30 litros contém uma solução de 14 partes de álcool e 1 parte de água. Quantos litros de água devem ser adicionados para que se tenha uma solução com 70% de álcool?`,
+    opcoes: [
+      { letra: 'A', texto: `8 litros.` },
+      { letra: 'B', texto: `10 litros.` },
+      { letra: 'C', texto: `12 litros.` },
+      { letra: 'D', texto: `14 litros.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1824,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Progressão aritmética: produto de três números',
+    enunciado: `Três números reais distintos a, b, c são tais que a, b, c e ab, bc, ca formam, nessas ordens, duas progressões aritméticas de mesma razão. O valor do produto abc é`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `1/8.` },
+      { letra: 'C', texto: `-1.` },
+      { letra: 'D', texto: `6.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1825,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Função funcional f(xy)=f(x)+f(y)',
+    enunciado: `Suponha que uma função f(x) satisfaça à propriedade f(x · y) = f(x) + f(y).
+Sabendo que f(7) = 2 e f(17) = 3, o valor de f(2023) é`,
+    opcoes: [
+      { letra: 'A', texto: `7.` },
+      { letra: 'B', texto: `8.` },
+      { letra: 'C', texto: `17.` },
+      { letra: 'D', texto: `18.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1827,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Transformação de Möbius: função inversa',
+    enunciado: `Considere a função y = f(x) = (x + 1)/(x - 1), definida para x ∈ ℝ, x ≠ 1, que é uma versão simplificada de uma transformação de Möbius.
+
+Sobre a função inversa de f(x), é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `f⁻¹(x) = f(x), para x ≠ 1.` },
+      { letra: 'B', texto: `f⁻¹(x) = 1/f(x), para x ≠ ±1.` },
+      { letra: 'C', texto: `f⁻¹(x) = -f(x), para x ≠ 1.` },
+      { letra: 'D', texto: `f⁻¹(x) = f(-x), para x ≠ 1.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1828,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Sequência recursiva definida por f(x)',
+    enunciado: `Considere a sequência x1, x2, ... definida por x1 = 6, e para cada n ≥ 1, temos xn+1 = f(xn), ou seja,
+x1 = 6
+x2 = f(x1) = 7/5
+x3 = f(x2), e assim sucessivamente. Então, a soma dos 100 primeiros termos desta sequência vale`,
+    opcoes: [
+      { letra: 'A', texto: `140.` },
+      { letra: 'B', texto: `370.` },
+      { letra: 'C', texto: `600.` },
+      { letra: 'D', texto: `740.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1829,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Sistema linear com infinitas soluções',
+    enunciado: `Para qual valor de a o sistema de equações lineares
+{ ax - y = |a|
+{ (4 - 5a²)x + ay = 1
+admite infinitas soluções?`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `2.` },
+      { letra: 'C', texto: `-1.` },
+      { letra: 'D', texto: `-2.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1831,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Combinatória: cartelas numeradas',
+    enunciado: `Em um sorteio com cartelas numeradas de 0001 a 2000, João decidiu comprar todas as cartelas em que a numeração exibisse os números 2 e 5, e nenhuma a mais. Por exemplo, João comprou as cartelas 1205 e 0025, mas não comprou as cartelas 0514 e 2000.
+
+Considere as afirmações:
+I) João comprou 108 cartelas.
+II) Se ao invés das cartelas com 2 e 5, João tivesse comprado as cartelas com 1 e 5, ele teria comprado menos cartelas.
+III) João comprou 18 cartelas que possuem o número 3.
+
+Assinale a alternativa correta:`,
+    opcoes: [
+      { letra: 'A', texto: `Todas as afirmações são verdadeiras.` },
+      { letra: 'B', texto: `Apenas a afirmação I é verdadeira.` },
+      { letra: 'C', texto: `Apenas a afirmação II é verdadeira.` },
+      { letra: 'D', texto: `Apenas as afirmações I e III são verdadeiras.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1834,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Quilombo dos Palmares: organização territorial',
+    enunciado: `As estimativas sobre a população de Palmares no século XVII oscilam entre 5 e 20 mil pessoas. A crônica abaixo, de 1678, descreve o território palmarino:
+Reconhecem-se todos obedientes a um que se chama "o Ganga Zumba", que quer dizer "Senhor Grande". A este tem por seu rei e senhor todos os mais, assim naturais dos Palmares como vindos de fora. Habita na sua cidade real que chamam o Macaco. (...) Ocupa esta cidade dilatado espaço, forma-se mais de 1500 casas. A segunda cidade chama-se Sirbupira; nesta habita o irmão do rei que se chama "o Zona". É fortificada toda de madeira e pedras, compreende mais de oitocentas casas.
+(Adaptado de: ANTT, Manuscrito da Livraria, cod. 1185. In: LARA, Silvia; FACHIN, Phablo (org.). Guerra contra Palmares: o manuscrito de 1678.)
+
+Sobre a organização do espaço palmarino, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `os negros que fugiram para Palmares ocuparam os espaços urbanos das vilas coloniais na Serra da Barriga; essas vilas tinham sido abandonadas por Portugal durante as guerras de expulsão, de Pernambuco, dos holandeses.` },
+      { letra: 'B', texto: `o que se convencionou chamar de quilombo de Palmares era uma rede de povoações fortificadas, formadas por centenas de casas e interligadas por meio de um sistema político influenciado por lógicas culturais africanas.` },
+      { letra: 'C', texto: `as povoações que constituíam Palmares se originaram da estrutura urbanística construída por Nassau nas serras de Pernambuco e Alagoas, a partir da racionalidade holandesa na época da luta pelo domínio do açúcar.` },
+      { letra: 'D', texto: `a maioria da população negra que vivia nos mocambos de Palmares no século XVII era crioula, ou seja, nascida no Brasil, e combinava a influência da organização política de Angola e das redes urbanas litorâneas e europeias de Pernambuco.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1835,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Lynn Hunt: a invenção dos direitos humanos',
+    enunciado: `No livro "A invenção dos direitos humanos", a historiadora Lynn Hunt nomeou dois mecanismos de transformação na França de fins do século XVIII. O primeiro seria a popularização dos chamados romances epistolares. As cartas enviadas pelas protagonistas discorrem sobre as emoções humanas para os leitores. (...) Outro mecanismo de transformação social foi a campanha contra a tortura, marcada por uma nova visão de corpo. Para Hunt, ler relatos de tortura e romances epistolares ajudou a moldar o foro íntimo de cada um, o que teve repercussão na política.
+
+Considerando o texto acima e o contexto histórico comentado, assinale a alternativa correta sobre os direitos humanos.`,
+    opcoes: [
+      { letra: 'A', texto: `O nascimento dos direitos humanos ligou-se ao aparecimento do sentimento de empatia entre diferentes sujeitos sociais, independentemente de sua condição social, como se podia ver nos romances epistolares. Isso influenciou os preceitos de liberdade individual e de igualdade social.` },
+      { letra: 'B', texto: `Conhecidas através dos romances policiais editados pela imprensa revolucionária francesa, as personagens literárias femininas subalternas ganharam importância ao se oporem à tortura, defendida pelo Terceiro Estado nos debates sobre direitos humanos.` },
+      { letra: 'C', texto: `O nascimento dos direitos humanos envolveu a contestação, pela imprensa francesa, da tortura como prática de obtenção de testemunho ou como castigo. Isso se devia ao fato de que a tortura feria a concepção cristã de corpo, defendida pela Declaração dos Direitos do Homem e do Cidadão.` },
+      { letra: 'D', texto: `Ao afirmar que todos são iguais perante a lei e que todos gozam dos mesmos direitos, independentemente de sua origem social ou nascimento, a Declaração dos Direitos do Homem e do Cidadão defendia o cidadão passivo, indiferente à violência e à humilhação na convivência cotidiana.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1837,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Greve de 1917 em São Paulo',
+    enunciado: `Na Greve de 1917 em São Paulo, os conflitos propagaram-se a partir do Cotonifício* Crespi, com cerca de 2 mil trabalhadores; em pouco tempo, congregaram 50 mil pessoas numa cidade de 400 mil habitantes. Entre sociedades de classes, as quais eram combativas, políticas e de identidade étnica, havia sido organizado em março daquele ano, pouco antes da eclosão da greve, o Comitê Popular de Agitação contra a exploração das crianças. (...) Nas notícias de jornais, era comum encontrar casos como o de José, de 12 anos, que teve o braço esmagado por uma máquina amassadeira da fábrica de biscoitos "A Fidelidade", e Henrique Guido, de 8 anos, que teve os dedos decepados numa oficina da Barra Funda.
+(Adaptado de FRACCARO, Glaucia. Mulheres, sindicato e organização política nas greves de 1917 em São Paulo. Revista Brasileira de História, 2017.)
+*Cotonifício: algodoaria.
+
+Com base no excerto e em seus conhecimentos sobre a história do trabalho no Brasil, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `as mobilizações da greve de 1917 tinham por objetivo implementar a Consolidação das Leis Trabalhistas (CLT), base legal da igualdade salarial entre homens, mulheres e crianças, reconhecida nos anos de 1990.` },
+      { letra: 'B', texto: `em resposta à greve de 1917, o presidente Venceslau Brás institui, no ano seguinte, para a indústria brasileira, a igualdade de salário entre homens e mulheres e torna ilegal o trabalho infantil no setor têxtil de todo o país.` },
+      { letra: 'C', texto: `a greve de 1917 foi impulsionada, entre outros fatores, pelos baixos salários (não obstante o cenário de alta inflação), multas contra os trabalhadores, acidentes, jornadas extenuantes, e falta de regulamentação do trabalho de menores.` },
+      { letra: 'D', texto: `na época da greve de 1917, o trabalho das crianças nas fábricas era considerado ilegal; o trabalho infantil foi regulamentado posteriormente por Getúlio Vargas por meio das leis trabalhistas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1838,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Movimento do Custo de Vida (1978)',
+    enunciado: `"Como pode um povo vivo / Viver nesta carestia / Como poderei viver / Como poderei viver / Dia e noite, noite e dia / Com a barriga vazia / Como pode um operário / Viver com esse salário / Como pode a criançada / Estudar sem comer nada"
+("Programa oficial do lançamento geral do abaixo-assinado" do Movimento do Custo de Vida, 12/03/1978. Citado em: MONTEIRO, Thiago Nunes. Como pode um povo vivo viver nesta carestia: Movimento do Custo de Vida em São Paulo (1973-1982).)
+
+A letra acima foi utilizada pela campanha coordenada pelo Movimento Custo de Vida, iniciado por mulheres das periferias da cidade de São Paulo, em 1978. Sobre as lutas por melhores condições de vida durante a década de 1970 na ditadura militar (1964-85), é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `o Movimento do Custo de Vida foi organizado para protestar contra as políticas econômicas e sociais da ditadura militar que provocavam o arrocho salarial e a inflação.` },
+      { letra: 'B', texto: `diante da impossibilidade de fazer protestos de rua, o Movimento do Custo de Vida teve atuação por meio de letras de músicas de duplo sentido (para driblar a censura), veiculadas no rádio.` },
+      { letra: 'C', texto: `após reunir cerca de 200 mil pessoas na Praça da Sé em São Paulo em 1978, o Movimento do Custo de Vida migrou para a luta armada como resposta à repressão.` },
+      { letra: 'D', texto: `as Comunidades Eclesiais de Base, instaladas nas periferias das grandes cidades e onde começou o Movimento do Custo de Vida, foram desmanteladas em 1979.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1839,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Mercosul e políticas de memória',
+    enunciado: `Sobre os debates entre os Governos do Mercosul, é importante destacar que existem instâncias de construção de memórias regionais. Estas experiências acompanham os processos de verdade e justiça que estão em andamento nos países para revisar, investigar e julgar os crimes de lesa-humanidade cometidos, no passado, pelo Estado. Nesta linha, os lugares de Memória são instâncias que buscam transformar certas marcas a fim de evocar memórias e torná-las inteligíveis ao situá-las no contexto de um relato mais amplo.
+(Adaptado de: MERCOSUL. Instituto de Políticas Públicas em Direitos Humanos do MERCOSUL (IPPDH). Princípios fundamentais para as políticas públicas sobre lugares de memória. Buenos Aires: Mercosul, p. 5, 2012.)
+
+A partir do excerto e de seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Embora o Mercosul seja definido pela integração econômica, seus países membros também partilham experiências de ditaduras militares no passado, experiências essas que constituem uma memória regional comum.` },
+      { letra: 'B', texto: `A escolha de lugares de memória comuns ao passado dos países membros do Mercosul pauta a agenda econômica de sua integração e baliza a construção de patrimônios edificados.` },
+      { letra: 'C', texto: `A reparação dos crimes cometidos pelas ditaduras militares dos estados membros do Mercosul se tornou possível com a criação de instâncias jurídicas supranacionais que julgam violações contra a humanidade.` },
+      { letra: 'D', texto: `Ainda que novas, nota-se que o objetivo das políticas públicas de memória do Mercosul acerca dos traumas das ditaduras é eleger um conjunto de patrimônios edificados para pacificar o passado.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1840,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia/Geografia - Antropoceno',
+    enunciado: `A palavra Antropoceno aparece hoje no título de centenas de livros e artigos científicos, em milhares de citações, e seu uso continua a crescer nos meios de comunicação. Referindo-se à época em que as ações humanas começaram a provocar alterações biofísicas em escala planetária, o termo foi criado nos anos de 1980 e popularizado na década de 2000. Grupos de especialistas constataram que essas alterações afetavam o Sistema Terra do relativo equilíbrio observado desde o início do Holoceno, há 11.700 anos. Para marcar o início dessa nova era, tais grupos escolheram simbolicamente o ano de 1784, momento do aperfeiçoamento da máquina a vapor e sua popularização.
+(Adaptado de LÉNA, Philippe; ISSBERNER, Liz-Rejane. Antropoceno: os desafios essenciais de um debate científico. Correio da Unesco, 2018.)
+
+Com base na leitura do texto acima e em seus conhecimentos, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A partir do século XVIII, com o Iluminismo, a crença da superioridade humana sobre a natureza foi amplamente questionada, o que diminuiu os impactos das ações humanas sobre o Planeta em todo o século XX e XXI.` },
+      { letra: 'B', texto: `A Microsoft escolheu o termo antropocenismo a partir da Era Moderna, o antropocentrismo pautou a crença na superioridade humana sobre a natureza; essa ideia foi consolidada em 1784, mantendo-se nas ciências até o presente com o nome de Antropoceno.` },
+      { letra: 'C', texto: `Mudança climática, alteração da cobertura vegetal e perda de biodiversidade em grande escala são marcas da humanidade no Planeta desde as expansões marítimas do século XVI, sendo pouco preocupantes para as ciências.` },
+      { letra: 'D', texto: `Com a popularização do estilo de vida norte-americano, houve uma aceleração das mudanças causadas pela ação humana sobre o Planeta Terra, mudanças essas que vinham ocorrendo desde 1784, com a Revolução Industrial.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1841,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Uvalde shooting e controle de armas no Canadá',
+    enunciado: `Os textos A e B são postagens no perfil do The New York Times na rede social Instagram.
+
+Texto A:
+nytimes — Uvalde — BREAKING
+At Least 16 Dead in Shooting at Texas Elementary School
+A gunman killed 14 children and a teacher at Robb Elementary School in Uvalde, Texas. The 18-year-old suspect was also killed.
+
+Texto B:
+nytimes — Ottawa
+Canada Plans to Ban Handgun Sales and Possession of Assault Weapons
+"We have a responsibility to act to prevent more tragedies. We need only look south of the border to know that if we do not take action, firmly and rapidly, it gets worse and worse and more difficult to counter," Prime Minister Justin Trudeau said as he proposed tightening the country's already stringent control of firearms.
+
+Qual a relação que se estabelece entre os textos A e B?`,
+    opcoes: [
+      { letra: 'A', texto: `A serve de exemplo e justificativa para o que B noticia.` },
+      { letra: 'B', texto: `B serve de exemplo e justificativa para o que A noticia.` },
+      { letra: 'C', texto: `A e B são, ambos, notícias sobre mudanças na política de porte de armas.` },
+      { letra: 'D', texto: `A e B são, ambos, notícias sobre a ausência de leis para porte de armas.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1842,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - The Handmaid\'s Tale (Margaret Atwood)',
+    enunciado: `Leia um trecho de um romance publicado em 1985.
+But if you happen to be a man sometime in the future, and you've made it this far, please remember you will never be subject to the temptation or feeling you must forgive, a man, as a woman. But remember that forgiveness too is a power. To beg for it is a power, and to withhold or bestow it is a power, perhaps the greatest. Maybe none of this is about control. (...) Maybe it's about who can do what to whom and be forgiven for it. Never tell me it amounts to the same thing.
+(Adaptado de ATWOOD, Margaret. The Handmaid's Tale. New York: HMH, p. 134, 1985.)
+
+No depoimento, a personagem explicita a relação entre`,
+    opcoes: [
+      { letra: 'A', texto: `poder e tentação.` },
+      { letra: 'B', texto: `feminismo e violência.` },
+      { letra: 'C', texto: `poder e perdão.` },
+      { letra: 'D', texto: `perdão e feminismo.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1843,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - "Audism" (ouvintismo)',
+    enunciado: `O texto a seguir focaliza o termo "audism", que pode ser traduzido para o português como "ouvintismo".
+Audism is an attitude based on thinking that results in a negative stigma toward anyone who does not hear. Like racism or sexism, audism judges, labels, and limits individuals based on whether a person hears and speaks. Audism reflects the medical view of deafness as a disability that must be fixed. It is rooted in the historical belief that deaf people were savages without language. Because many deaf people grew up in hearing families who did not learn to sign, audism may be ingrained.
+Audism occurs when one:
+- Asks a deaf person to read your lips or write when s/he has indicated this isn't preferred.
+- Asks a deaf person to "tone down" their facial expressions because they make others uncomfortable.
+- Devotes a significant amount of instructional time for a deaf child to lipreading and speech therapy, rather than educational subjects.
+(Adaptado de vawnet.org/sc/audism-oppression-lives-deaf-individuals.)
+
+É correto afirmar que o texto`,
+    opcoes: [
+      { letra: 'A', texto: `argumenta que o ouvintismo é um conceito médico e lista modos de ser menos ouvintista.` },
+      { letra: 'B', texto: `apresenta o conceito de ouvintismo e traz exemplos de atitudes consideradas ouvintistas.` },
+      { letra: 'C', texto: `compara o ouvintismo a outros preconceitos e lista ações a serem tomadas ao lidar com pessoas surdas.` },
+      { letra: 'D', texto: `explica o que é ouvintismo e exalta a capacidade das crianças surdas de ler os lábios.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1846,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Perda de olfato pós-COVID',
+    enunciado: `COVID AND SMELL LOSS: SOME ANSWERS EMERGE
+Researchers are making headway in understanding how coronavirus causes loss of smell. Several potential treatments to tackle the condition are undergoing clinical trials, including steroids and blood plasma. Recently, a study surveyed 616,318 people in the United States who have had COVID-19. It found that, compared with those who had been infected with the original virus, people who had contracted the Alpha variant were 50% as likely to have chemosensory disruption. This probability fell to 44% for the Delta variant, and to 17% for Omicron. However, a significant portion of people infected early in the pandemic still experience chemosensory effects. A 2021 study followed 100 people who had had mild cases of COVID-19 and 100 people who repeatedly tested negative. More than a year after their infections, 46% of those who had had COVID-19 still had smell problems; by contrast, just 10% of the control group had developed some smell loss, but for other reasons. Furthermore, 7% of those who had been infected still had total smell loss, or 'anosmia', at the end of the year. Given that more than 500 million cases of COVID-19 have been confirmed worldwide, tens of millions of people probably have lingering smell problems.
+(Adaptado de nature.com/articles/d41586-022-01589-z.)
+
+Segundo o texto,`,
+    opcoes: [
+      { letra: 'A', texto: `o percentual de pessoas infectadas pelo coronavírus a apresentarem problemas de olfato vem aumentando à medida que o vírus evolui.` },
+      { letra: 'B', texto: `esteroides e plasma sanguíneo são tipos de tratamentos eficazes contra a perda de olfato após infecção por coronavírus.` },
+      { letra: 'C', texto: `a perda total de olfato, chamada de "anosmia", ainda estava presente, em 2021, em 7% das pessoas infectadas por coronavírus no começo da pandemia.` },
+      { letra: 'D', texto: `problemas olfativos provavelmente persistem em 500 milhões de pessoas que foram infectadas pelo coronavírus.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1847,
+    ano: 2023,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Discurso de Sojourner Truth',
+    enunciado: `Leia, a seguir, parte de um discurso da abolicionista estadunidense Sojourner Truth, feito em 1851.
+"I think that 'twixt the negroes of the South and the women at the North, all talking about rights, the white men will be in a fix pretty soon. But what's all this here talking about? That man over there says that women need to be helped into carriages, and lifted over ditches, and to have the best place everywhere. Nobody ever helps me into carriages, or over mud-puddles, or gives me any best place! And ain't I a woman? Look at me! Look at my arm! I have ploughed and planted, and gathered into barns, and no man could head me! And ain't I a woman? I could work as much and eat as much as a man when I could get it and bear the lash as well! And ain't I a woman? I have borne thirteen children, and seen most all sold off to slavery, and when I cried out with my mother's grief, none but Jesus heard me! And ain't I a woman? (...)"
+(Disponível em: nps.gov/articles/sojourner-truth.htm.)
+
+Ao longo do discurso, Sojourner Truth repete a mesma pergunta com a finalidade de`,
+    opcoes: [
+      { letra: 'A', texto: `ilustrar atitudes sexistas vivenciadas por mulheres negras e brancas.` },
+      { letra: 'B', texto: `problematizar a diferença de tratamento dispensado a mulheres negras e brancas.` },
+      { letra: 'C', texto: `advogar pela igualdade de direitos entre homens e mulheres.` },
+      { letra: 'D', texto: `criticar a separação entre brancos e negros de diferentes classes sociais.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
