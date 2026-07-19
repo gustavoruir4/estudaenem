@@ -31980,3 +31980,14 @@ Considerando que água e etanol formam uma mistura ideal, para preencher correta
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
+
+const OPCAO_GENERICA = /^Opção [A-E]$/
+
+// Questões incompletas que não devem ser exibidas ao usuário: dependem de
+// imagem que nunca foi cadastrada (temImagem true + imagem null), ou têm
+// opções placeholder ("Opção A", "Opção B"...) nunca preenchidas de verdade.
+export function isQuestaoValida(q) {
+  if (q.temImagem === true && q.imagem === null) return false
+  if (q.opcoes.some(o => OPCAO_GENERICA.test(o.texto))) return false
+  return true
+}

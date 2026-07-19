@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { QUESTIONS } from '../lib/questions'
+import { QUESTIONS, isQuestaoValida } from '../lib/questions'
 import { useTheme } from '../lib/ThemeContext'
 import styles from './Landing.module.css'
 
@@ -240,7 +240,7 @@ export default function Landing() {
   useScrollReveal()
   useParallax()
   const { theme, toggleTheme } = useTheme()
-  const totalQuestoes = QUESTIONS.length
+  const totalQuestoes = QUESTIONS.filter(isQuestaoValida).length
   const anoRef = useRef(new Date().getFullYear())
 
   return (

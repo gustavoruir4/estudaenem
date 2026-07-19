@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo, useRef } from 'react'
 import { useAuth } from '../lib/AuthContext'
 import { supabase } from '../lib/supabase'
-import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
+import { QUESTIONS, AREAS, PROVAS, isQuestaoValida } from '../lib/questions'
 import styles from './Simulado.module.css'
 
 const NUM_OPCOES = [10, 20, 45, 90]
@@ -56,6 +56,7 @@ export default function Simulado() {
 
   function startSimulado() {
     const pool = QUESTIONS.filter(q =>
+      isQuestaoValida(q) &&
       (areaFilter === 'Todas' || q.area === areaFilter) &&
       (provaFilter === 'Todas' || q.prova === provaFilter)
     )

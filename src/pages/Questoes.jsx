@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext'
 import { usePagamentoGuard } from '../lib/usePagamentoGuard'
 import { supabase } from '../lib/supabase'
-import { QUESTIONS, AREAS, PROVAS } from '../lib/questions'
+import { QUESTIONS, AREAS, PROVAS, isQuestaoValida } from '../lib/questions'
 import { derivarMateria, MATERIAS_POR_AREA } from '../lib/materias'
 import ReportarQuestaoModal from '../components/ReportarQuestaoModal'
 import styles from './Questoes.module.css'
@@ -186,11 +186,14 @@ function saveQuizState(state) {
   }
 }
 
+// Só questões completas (exclui stubs sem imagem/opções genéricas) chegam ao pool
+const QUESTOES_VALIDAS = QUESTIONS.filter(isQuestaoValida)
+
 // Anos disponíveis, derivados das questões
-const ANOS_DISPONIVEIS = [...new Set(QUESTIONS.map(q => q.ano))].sort((a, b) => b - a)
+const ANOS_DISPONIVEIS = [...new Set(QUESTOES_VALIDAS.map(q => q.ano))].sort((a, b) => b - a)
 
 // Pré-computa a matéria de cada questão uma vez
-const QUESTOES_COM_MATERIA = QUESTIONS.map(q => ({
+const QUESTOES_COM_MATERIA = QUESTOES_VALIDAS.map(q => ({
   ...q,
   materia: derivarMateria(q.assunto, q.area),
 }))

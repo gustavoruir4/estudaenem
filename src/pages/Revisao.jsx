@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react'
 import { useAuth } from '../lib/AuthContext'
 import { supabase } from '../lib/supabase'
-import { QUESTIONS } from '../lib/questions'
+import { QUESTIONS, isQuestaoValida } from '../lib/questions'
 import styles from './Revisao.module.css'
 
 function limparTexto(texto) {
@@ -129,7 +129,10 @@ export default function Revisao() {
   const [aiLoading, setAiLoading] = useState(false)
   const [sessionStats, setSessionStats] = useState({ acertos: 0, erros: 0 })
 
-  const questionsById = useMemo(() => new Map(QUESTIONS.map(q => [q.id, q])), [])
+  // Questões inválidas (stub sem imagem/opções genéricas) ficam de fora do
+  // Map: se alguém tiver uma resposta salva pra uma delas, o lookup abaixo
+  // retorna undefined e o .filter(Boolean) a descarta da lista de erros.
+  const questionsById = useMemo(() => new Map(QUESTIONS.filter(isQuestaoValida).map(q => [q.id, q])), [])
 
   useEffect(() => {
     if (!user) return
