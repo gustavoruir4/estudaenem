@@ -51,7 +51,7 @@ export default function Layout() {
       <aside className={`${styles.sidebar} ${mobileOpen ? styles.sidebarOpen : ''}`}>
         <Link to="/app/questoes" className={styles.logo} onClick={() => setMobileOpen(false)}>
           <span className={styles.logoMark}>
-            <i className="ti ti-school" aria-hidden="true"></i>
+            <img src="/icons/icon-192.png" alt="" className={styles.logoImg} />
           </span>
           <span className={styles.logoText}>
             <span className={styles.logoAprov}>Aprov</span><span className={styles.logoAI}>AI</span>

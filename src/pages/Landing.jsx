@@ -253,7 +253,7 @@ export default function Landing() {
         <div className={styles.navInner}>
           <div className={styles.logo}>
             <span className={styles.logoMark}>
-              <i className="ti ti-school" aria-hidden="true"></i>
+              <img src="/icons/icon-192.png" alt="" className={styles.logoImg} />
             </span>
             <span><span className={styles.logoAprov}>Aprov</span><span className={styles.logoAI}>AI</span></span>
           </div>

@@ -68,7 +68,7 @@ export default function Ativar() {
       <div className={styles.card}>
         <div className={styles.header}>
           <div className={styles.logoMark}>
-            <i className="ti ti-school" aria-hidden="true"></i>
+            <img src="/icons/icon-192.png" alt="" className={styles.logoImg} />
           </div>
           <h1 className={styles.title}>Ative sua conta</h1>
           <p className={styles.subtitle}>Pagamento confirmado! Crie sua senha para acessar.</p>

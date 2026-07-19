@@ -114,7 +114,7 @@ export default function Pagamento() {
       <div className={styles.card}>
         <div className={styles.header}>
           <div className={styles.logoMark}>
-            <i className="ti ti-school" aria-hidden="true"></i>
+            <img src="/icons/icon-192.png" alt="" className={styles.logoImg} />
           </div>
           <h1 className={styles.title}><span style={{ color: '#FFFFFF' }}>Aprov</span><span style={{ color: '#8B5CF6' }}>AI</span></h1>
           <p className={styles.subtitle}>Garanta seu acesso completo até o ENEM</p>
