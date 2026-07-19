@@ -31155,6 +31155,828 @@ Sobre essa expedição marinha, é correto afirmar que os animais`,
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2026 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 1565,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: inflação e tarifas nos EUA',
+    enunciado: `U.S. Inflation Mild Ahead of Expected Jump From Tariffs
+Economists and policymakers are bracing for inflation to reaccelerate as companies adapt to the trade war.
+(Adaptado de https://www.nytimes.com/2025/05/13/business/inflation-prices-tariffs.html. Acesso em 15/05/2025.)
+
+Segundo o texto,`,
+    opcoes: [
+      { letra: 'A', texto: `o governo dos EUA está se preparando para um salto na inflação diante da guerra comercial de tarifas.` },
+      { letra: 'B', texto: `a inflação nos EUA se mantém moderada, mas economistas e legisladores estão se preparando diante da expectativa de alta das tarifas.` },
+      { letra: 'C', texto: `a inflação nos EUA deve se manter moderada, pois as empresas estão se adaptando ao aumento das tarifas.` },
+      { letra: 'D', texto: `as empresas dos EUA estão se adaptando à aceleração da inflação diante da guerra de tarifas estabelecida pelo governo.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1567,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: comunidade "Incel" e masculinidade',
+    enunciado: `Leia o resumo de um artigo científico.
+Incels: Masculinity in the Transition to Adulthood
+Incels are men who are members of an online community that experiences an unmet desire for sex and blame women for their struggle. Since 2019 there have been several mass murder attacks committed by Incels motivated by Incel ideology creating a threat of future violence. While the vast majority of Incels do not commit such attacks, researchers have begun to study Incels to prevent violence and uncover the true nature of this community. The study of Incels is incipient, therefore, more knowledge about interventions to address the struggles of involuntary celibacy is needed. This paper emphasizes the masculinity strain experienced by Incels who attempt to perform hegemonic masculinity as part of the transition to adulthood but fall short because of their lack of sexual activity. This work proposes the creation and implementation of Incel-specific, online therapeutic interventions and continued research directly with the Incel community to uncover the complexities of Incel experiences.
+(Adaptado de https://link.springer.com/article/10.1007/s12119-024-10201-7. Acesso em 16/05/2025.)
+
+De acordo com o resumo, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `"Incel" é uma comunidade majoritariamente constituída por homens que culpam mulheres por questionarem sua masculinidade.` },
+      { letra: 'B', texto: `as pesquisas sobre a comunidade "Incel" ainda são escassas, por isso há a necessidade de mais estudos que definam teoricamente a abstinência sexual.` },
+      { letra: 'C', texto: `homens "Incel", muitas vezes, tentam exercer uma masculinidade dominante que resulta em expectativas frustradas devido à inatividade sexual.` },
+      { letra: 'D', texto: `a pesquisa propõe práticas terapêuticas que integrem homens "Incel" a outros grupos sociais para melhor compreender as complexidades da masculinidade.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1568,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Leitura: carta do presidente de Harvard',
+    enunciado: `Leia a carta a seguir.
+Dear Members of the Harvard Community,
+For years, the federal government's grants to Harvard have helped lead to groundbreaking innovations. Recently, the federal government has threatened its partnerships over accusations of antisemitism on our campuses. A list of demands was issued, warning that Harvard must comply if we intend to "maintain our financial relationship with the government." Most of these demands are unprecedented and represent direct governmental regulation of the "intellectual conditions" at Harvard. They include requirements to audit the viewpoints of our students and faculty, and to "reduce their power" for their ideological views. We will not accept that. The University will not surrender its independence or relinquish its constitutional rights. No government should dictate what universities can teach and which areas of inquiry they can pursue.
+We do not take our moral duties lightly and we have taken many steps to address and fight antisemitism on campus. However, this will not be achieved by assertions of power, unmoored from the law, to dictate how we operate.
+Sincerely,
+Alan M. Garber
+(President of Harvard University)
+(Adaptado de https://www.harvard.edu/president/news/2025/the-promise-of-american--higher-education/. Acesso em 07/05/2025.)
+
+Assinale a alternativa correta em relação ao posicionamento do presidente de Harvard em sua carta.`,
+    opcoes: [
+      { letra: 'A', texto: `As acusações de antissemitismo feitas à universidade são inconstitucionais, por isso Garber se recusa a aceitar as demandas propostas pelo governo.` },
+      { letra: 'B', texto: `As comparações entre as ideologias de professores e de alunos são sem precedentes, por isso Garber se nega a abrir mão da liberdade de expressão da comunidade.` },
+      { letra: 'C', texto: `As justificativas do governo para interromper o financiamento são falhas, por isso Garber se nega a tomar medidas para resolver os problemas apontados.` },
+      { letra: 'D', texto: `As demandas do governo são uma tentativa de controle da autonomia das universidades, por isso Garber se recusa a acatar as exigências impostas.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1569,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Mecanismos de transferência de calor',
+    enunciado: `A uniformidade da temperatura em um ambiente refrigerado depende, além do bom funcionamento do aparelho de ar condicionado, de uma instalação adequada, visando a uma transferência de calor eficiente. Isso pode ser verificado pelo instalador utilizando um termômetro de infravermelho para inspecionar diferentes áreas do recinto. Analise as afirmativas 1, 2, 3 e 4 sobre os mecanismos de transferência de calor: condução, convecção e radiação.
+1) A transferência de calor por condução térmica pode ocorrer tanto no vácuo quanto em um meio material.
+2) A taxa de condução de calor em uma barra não depende da diferença entre as temperaturas de suas extremidades.
+3) A convecção consiste no transporte de energia térmica de uma região para outra por meio do deslocamento de uma massa de fluido.
+4) A transferência de calor por radiação térmica pode ocorrer tanto no vácuo quanto em um meio material.
+As afirmativas corretas são:`,
+    opcoes: [
+      { letra: 'A', texto: `1 e 2.` },
+      { letra: 'B', texto: `1 e 4.` },
+      { letra: 'C', texto: `2 e 3.` },
+      { letra: 'D', texto: `3 e 4.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1570,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Eletricidade: carga elétrica em bateria',
+    enunciado: `Texto para as questões 9, 10 e 11.
+As baterias são fundamentais no mundo moderno, sendo a fonte de energia portátil que alimenta dispositivos como celulares e laptops, veículos elétricos e sistemas de armazenamento de energia renovável. Duas grandezas que caracterizam uma bateria é a sua capacidade de carga elétrica, expressa em miliampère-hora (mAh) e a energia que ela armazena, usualmente dada em watts-hora (Wh).
+
+Uma bateria inicialmente carregada fornece uma corrente constante de i = 4000 mA durante o tempo Δt = 1 hora, ficando descarregada no final desse processo. A carga elétrica Q, que circula por essa bateria nesse intervalo de tempo é`,
+    opcoes: [
+      { letra: 'A', texto: `4 C.` },
+      { letra: 'B', texto: `4000 C.` },
+      { letra: 'C', texto: `14400 C.` },
+      { letra: 'D', texto: `14400000 C.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1572,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Energia: bateria e energia potencial gravitacional',
+    enunciado: `Texto para as questões 9, 10 e 11.
+As baterias são fundamentais no mundo moderno, sendo a fonte de energia portátil que alimenta dispositivos como celulares e laptops, veículos elétricos e sistemas de armazenamento de energia renovável. Duas grandezas que caracterizam uma bateria é a sua capacidade de carga elétrica, expressa em miliampère-hora (mAh) e a energia que ela armazena, usualmente dada em watts-hora (Wh).
+
+Outra bateria totalmente carregada armazena uma energia Eb = 15 Wh. Devemos elevar uma massa m = 45 kg até a altura y, em relação ao solo, para que a variação da energia potencial gravitacional Eg desse sistema mecânico seja igual à energia armazenada nessa bateria. A altura y deve ser
+Dado: g = 10 m/s².`,
+    opcoes: [
+      { letra: 'A', texto: `0,03 m.` },
+      { letra: 'B', texto: `3 m.` },
+      { letra: 'C', texto: `120 m.` },
+      { letra: 'D', texto: `1200 m.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1573,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Óptica: lentes delgadas e formação de imagem',
+    enunciado: `O Centro de Tecnologia da Informação (CTI) Renato Archer, em Campinas (SP), possui equipamentos avançados de manufatura 3D, incluindo uma impressora capaz de produzir uma miniatura do Cristo Redentor, com pouco mais de 100 μm. Menor que um grão de areia, a peça só é visível com microscópio óptico, baseado em arranjo de um conjunto de lentes. Se uma lente delgada, de distância focal f, é usada para investigar um objeto de altura o, de forma que a imagem seja direita com altura i maior que a do objeto (i > o), é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a lente é convergente e a distância entre objeto e lente é menor que a distância focal.` },
+      { letra: 'B', texto: `a lente é divergente e a distância entre objeto e lente é menor que a distância focal.` },
+      { letra: 'C', texto: `a lente é convergente e a distância entre objeto e lente é maior que a distância focal.` },
+      { letra: 'D', texto: `a lente é divergente e a distância entre objeto e lente é maior que a distância focal.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1575,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Dinâmica: força resultante em desaceleração',
+    enunciado: `Texto para as questões 13 e 14.
+Recentemente, grandes cidades iniciaram a implantação de faixas exclusivas para motocicletas como, por exemplo, a faixa azul na cidade de São Paulo. Um motociclista adentra, em t = 0, um percurso retilíneo de uma faixa azul com velocidade constante v0 = 36 km/h e mantém essa velocidade até o tempo t = 30 s (trecho I). Em seguida, continua o percurso com desaceleração constante (a < 0) até parar completamente diante de um semáforo em t = 50 s (trecho II). Após mais 30 s, ele retoma o movimento e mantém uma aceleração constante e positiva a = 0,8 m/s² desde t = 80 s até t = 95 s (trecho III). Posteriormente, o motociclista segue com velocidade constante até t = 120 s (trecho IV).
+
+A massa do conjunto motociclista + motocicleta é dada por m = 180 kg. Para o trecho entre os tempos t = 30 s e t = 50 s, em que o movimento tem desaceleração constante, é correto afirmar que o módulo da força resultante que age nesse conjunto é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `36 N.` },
+      { letra: 'B', texto: `90 N.` },
+      { letra: 'C', texto: `324 N.` },
+      { letra: 'D', texto: `1800 N.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1576,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Globalização dos sistemas alimentares',
+    enunciado: `"O ato de comer é construído culturalmente, e mediado por práticas, crenças, comportamentos, tabus, que formam os hábitos alimentares, que, por sua vez, relacionam-se a aspectos culturais, socioeconômicos e psicológicos que envolvem o ambiente alimentar de cada indivíduo. Os hábitos alimentares são dinâmicos e sensíveis às mudanças que ocorrem nas sociedades, fundamentalmente, nos sistemas alimentares. Com o sistema alimentar que predomina hoje, a humanidade vem substituindo a comida que carrega significados culturais e tradições ancestrais por produtos alimentares ultraprocessados globalizados, que viajam quilômetros até chegar ao prato, causando a homogeneização dos hábitos alimentares de forma global. O problema é que os ultraprocessados têm acarretado sérios problemas à saúde da população [...]".
+(Disponível em https://obha.fiocruz.br/?p=1413. Acesso em 06/08/25.)
+
+A partir do texto, é correto afirmar que a produção e o consumo de alimentos no mundo contemporâneo possuem`,
+    opcoes: [
+      { letra: 'A', texto: `menor vínculo com o lugar, visto que a indústria de processamento de alimentos e a produção agropecuária estão cada vez mais especializadas. Assim, produtos circulam com maior velocidade e eficiência entre a área de produção e o mercado consumidor, reduzindo o acesso da população a alimentos in natura e à diversidade produtiva regional.` },
+      { letra: 'B', texto: `maior interdependência com o lugar, visto que a indústria de processamento precisa manter a proximidade com as áreas da produção agropecuária, aproveitando a modernização do sistema de circulação para atingir o mercado consumidor mais distante. Isso fortalece o acesso da população a produtos da agricultura familiar e à diversidade produtiva regional.` },
+      { letra: 'C', texto: `maior conexão com o lugar, visto que a indústria de processamento de alimentos pode estar distante da área de produção agropecuária. O sistema de circulação permite interligar, com menor custo, a área de produção ao mercado consumidor, restringindo o acesso da população à produção da pequena indústria local e à diversidade alimentar regional.` },
+      { letra: 'D', texto: `menor correlação com o lugar, visto que a indústria de processamento e a produção agropecuária possuem pouca vinculação entre si, tornando-se independentes, mas com estreitamento promovido pelo sistema de circulação entre a área de produção e o mercado consumidor. Isso favorece o acesso da população aos alimentos da culinária local e à diversidade alimentar regional.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1584,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Krenak e Stengers: natureza e sociedade',
+    enunciado: `Leia os textos 1 e 2.
+Texto 1
+Muitos povos, de diferentes matrizes culturais, têm a compreensão de que nós e a Terra somos uma mesma entidade. Até o começo do século XX, o mundo do trabalho e da produção se dava com ferramentas e meios que não tinham a potência de exaurir os recursos da Terra como hoje. Desse tempo para cá, sobraram poucas humanidades espalhadas pelo planeta.
+(Adaptado de KRENAK, A. A vida não é útil. São Paulo, Companhia das Letras, p. 38, 2020.)
+
+Texto 2
+A Terra é um denso conjunto de relações que articula seres vivos, oceanos, atmosfera, clima e solos. Ela é dotada de uma história e de um regime de atividades próprio, resultado da articulação de múltiplos processos. Hoje, já não estamos lidando com uma natureza selvagem e ameaçadora, nem com uma natureza frágil, que deve ser protegida, nem com uma natureza que pode ser explorada à vontade. A hipótese é nova. A Terra não está ameaçada, diferentemente das inúmeras espécies vivas que serão varridas pelas mudanças de seu meio, com uma rapidez sem precedente.
+(Adaptado de STENGERS, I. No tempo das catástrofes. São Paulo: Cosac & Naify, p. 23, 2015.)
+
+A partir da leitura dos textos é correto afirmar que natureza e sociedade`,
+    opcoes: [
+      { letra: 'A', texto: `passaram a se influenciar por meio do desenvolvimento das forças produtivas e do trabalho ao longo da história, o que coloca a natureza em risco.` },
+      { letra: 'B', texto: `estão articuladas por múltiplos processos que envolvem agentes humanos e não humanos (oceanos, atmosfera, clima, solo, etc.), o que coloca a natureza em risco.` },
+      { letra: 'C', texto: `possuem uma história comum e articulada, fato percebido por povos de diferentes matrizes culturais, o que coloca a sociedade em risco.` },
+      { letra: 'D', texto: `possuem um regime de atividades próprio, que envolve agentes humanos e não humanos (oceanos, atmosfera, clima, solo, etc.), o que coloca tais agentes em risco.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1585,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia - Connell: gênero e adolescência',
+    enunciado: `Leia os textos 1 e 2.
+Texto 1
+A adolescência é uma questão de corporificação do social. Mudanças físicas, como hormônios em ebulição, são importantes, mas elas não determinam como se experimenta a adolescência. Essa é uma questão de como as práticas sociais se relacionam com as mudanças físicas, dando significados sociais a eventos biológicos. A adolescência é um processo de se tornar participante do mundo adulto. Ela é um período em que corpos em desenvolvimento enfrentam desafios, e às vezes são danificados. Instituições, incluindo a escola, e os poderes do mundo adulto são confrontados e negociados. Isso forma uma arena de prazer, humor, curiosidade, mas também de ansiedade e violência.
+(Adaptado de CONNELL, R. Crescer como masculino. In: Gênero em termos reais. São Paulo: nVersos, p. 139-141, 2016.)
+
+Texto 2
+Ordens de gênero são centrais para a vida dos adolescentes. Quando insistem na diferença absoluta entre masculinidade e feminilidade criam um dilema e fazem com que os meninos exagerem na performance da masculinidade, procurando se aproximarem da posição social dos homens adultos. Práticas corporais, como a sexualidade e o esporte, se tornam importantes meios de diferenciação e espaços de produção das masculinidades hegemônicas e subordinadas. Aquelas que produzem maior status e prestígio masculino são as com os efeitos mais tóxicos sobre os corpos dos adolescentes, como por exemplo o hábito de fumar e praticar a violência física, etc.
+(Adaptado de CONNELL, R. Crescer como masculino. In: Gênero em termos reais. São Paulo: nVersos, p. 139-151, 2016.)
+
+A partir da leitura dos textos é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `a adolescência, como processo de participar do mundo adulto, desafia padrões previamente estabelecidos, promovendo riscos e violência que poderiam ser evitados caso tais padrões fossem mantidos.` },
+      { letra: 'B', texto: `masculinidades hegemônicas e subordinadas são produzidas biológica e socialmente, por meio de práticas corporais como a sexualidade e o esporte e em confronto com instituições, como a escola.` },
+      { letra: 'C', texto: `eventos biológicos associados às mudanças corporais da adolescência são significados socialmente, o que torna a ordem de gênero em que tais mudanças ocorrem importante para compreendermos masculinidades e feminilidades.` },
+      { letra: 'D', texto: `a precocidade na busca de status de adultos e do prestígio masculino por meninos adolescentes os torna ansiosos, fazendo das masculinidades juvenis contemporâneas um todo homogêneo e violento.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1586,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Paul Preciado: crítica à taxonomia binária de gênero',
+    enunciado: `A OMS, e não uma associação trans-gay-lésbica-anarcofeminista, afirma hoje que "o gênero tipicamente descrito como masculino e feminino é uma construção social que varia segundo as culturas e épocas". A partir desse princípio, a OMS reconhece a dimensão arbitrária e inatural da taxonomia binária com a qual as instituições sociais e políticas trabalham no Ocidente e abre a porta para uma revisão mais profunda do paradigma da diferença sexual. Nos próximos anos, deveremos elaborar coletivamente uma epistemologia capaz de dar conta da multiplicidade radical dos seres vivos, que não reduza o corpo à sua força reprodutiva heterossexual, que não legitime a violência heteropatriarcal e colonial. Quando falo de uma nova epistemologia me refiro também a um processo de ampliação radical do horizonte democrático para reconhecer como sujeito político todo corpo vivo sem que a designação sexual ou de gênero seja a condição desse reconhecimento social e político.
+(Adaptado de PRECIADO, P. Eu sou o monstro que vos fala. Zahar Editora, p. 78-84, 2022.)
+
+Considerando o texto assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A diferença sexual entre homem e mulher é informada pela biologia e indiferente a variações culturais, a despeito do que dizem a OMS e as associações feministas, gays, lésbicas e trans.` },
+      { letra: 'B', texto: `Embora seja inevitável admitir que haja pessoas que não se enquadram na taxonomia binária, é necessário elaborar coletivamente caminhos para ajudá-las a uma reconciliação com a própria natureza.` },
+      { letra: 'C', texto: `As instituições sociais e políticas operam normalmente com uma taxonomia binária violenta e excludente da multiplicidade de seres humanos, que precisa ser revista em nome da ampliação do nosso horizonte democrático.` },
+      { letra: 'D', texto: `Gênero e sexualidade são categorias identitárias inadequadas ao processo de ampliação do horizonte democrático com vistas ao reconhecimento social e político de todos os indivíduos em função do seu próprio mérito.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1587,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Rosa Luxemburgo: socialismo democrático',
+    enunciado: `Leia os textos 1 e 2.
+Texto 1
+"Para Rosa Luxemburgo, uma sociedade socialista terá necessariamente que ser democrática (e vice-versa), o que significa que só poderá resultar da participação efetiva das massas populares. [...] ela rejeita premonitoriamente a estratégia dos partidos de esquerda que chegarão ao poder no decorrer do século XX: primeiro toma-se o poder, depois muda-se o mundo. Para ela, a tomada do poder e a instituição da democracia (equivalente aqui à mudança do mundo) não são duas etapas separadas no tempo, mas duas faces da mesma moeda".
+(Comentário de Isabel Loureiro "A Revolução Russa (1918)" de Rosa Luxemburgo. LUXEMBURGO, R. Textos Escolhidos. Editora Expressão Popular, p. 101-2, 2009. Org. Isabel Loureiro.)
+
+Texto 2
+"Sem eleições gerais, sem liberdade ilimitada de imprensa e de reunião, sem livre debate de opiniões, a vida se definha em qualquer instituição pública, torna-se uma vida aparente em que só a burocracia subsiste como o único elemento ativo. [...] Somente massas esclarecidas, autônomas, politicamente formadas poderão exercer o poder nos novos organismos de base, os conselhos; em outras palavras, realizar o socialismo democrático".
+(LUXEMBURGO, R. Textos Escolhidos. A Revolução Russa (1918). Editora Expressão Popular, Org. Isabel Loureiro, p. 114-131, 2009.)
+
+Considerando os textos, assinale a alternativa que corresponde ao pensamento de Rosa Luxemburgo.`,
+    opcoes: [
+      { letra: 'A', texto: `Para afastar o socialismo da ameaça da burocracia, às vezes é necessário restringir a liberdade de imprensa, o debate público e as eleições gerais.` },
+      { letra: 'B', texto: `A instituição da democracia é uma etapa posterior à tomada do poder político e equivale à mudança do mundo.` },
+      { letra: 'C', texto: `A democracia socialista não difere da democracia representativa: ambas se baseiam na soberania popular dos conselhos, mas tendem à burocracia partidária.` },
+      { letra: 'D', texto: `Democracia e socialismo são sinônimos, pois os conselhos populares deveriam possibilitar a participação ativa das massas na condução do poder político e econômico.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1588,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Cícero: justiça e utilidade',
+    enunciado: `Os textos 1 e 2 apresentam a compreensão de Marco Túlio Cícero (106-43 a.C), magistrado e Cônsul da República Romana, sobre o tema da justiça.
+Texto 1
+"Convém recorrer aos fundamentos da justiça que propus no começo: primeiro, a ninguém prejudicar, depois, servir à utilidade comum".
+(CICERO, Marco Túlio. Dos deveres. UFJF, p. 1-31, 2021.)
+
+Texto 2
+"Único, com efeito, é o direito a partir do qual a sociedade dos homens foi congregada, e uma a lei que o constituiu, lei que é a reta razão ao obrigar e proibir. Quem a ignora é injusto, esteja ela escrita em algum lugar ou em nenhum. Se a justiça é obediência às leis escritas e às instituições dos povos, e se (como dizem aqueles mesmos aos quais me referi) todas as coisas devem ser medidas pela utilidade, negligenciará as leis e as destruirá, se o puder, aquele que assim julgá-lo vantajoso para si; do que se segue que absolutamente não há justiça, se esta não é fundada na natureza, e a que se constitui por causa da utilidade é deteriorada por essa utilidade".
+(CICERO, Marco Túlio. Sobre as leis. UFJF, p. 1-46, 2021.)
+
+Considerando os textos, escolha a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A justiça consiste na obediência às leis escritas e às instituições dos povos: deve servir à utilidade comum e não à utilidade daquilo que é vantajoso para si.` },
+      { letra: 'B', texto: `A utilidade comum é o fundamento da justiça de uma República e, para serem justos, os cidadãos devem agir conforme a reta razão, com a qual a natureza lhes dotou.` },
+      { letra: 'C', texto: `A reta razão, enquanto lei natural, é a base da justiça. A injustiça ocorre quando a utilidade deixa de ser a medida de todas as coisas.` },
+      { letra: 'D', texto: `Se a justiça é agir conforme a reta razão e a utilidade é um dos fundamentos da justiça, agir com vistas aquilo que é vantajoso para si é justo.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1589,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Tráfico negreiro entre Buenos Aires e o Brasil colonial',
+    enunciado: `Os dados da alfândega de Buenos Aires fixam em 18.100 o número de africanos oficialmente importados no porto entre 1597 e 1645. Durante alguns anos, a zona platense esteve aberta ao contrato de fornecimento de pessoas escravizadas (Asiento), com os navios negreiros saindo diretamente de Luanda para Buenos Aires. Nos anos de proibição, o contrabando ocorreu por meio do Rio de Janeiro. Barcos ligavam os dois portos. No retorno, traziam prata lavrada e por lavrar e ouro, não só para o Rio de Janeiro, mas também para a Bahia e o Recife. Em torno das trocas de africanos pela prata do Peru (Potosi), esses interesses foram consolidados no Rio de Janeiro. Desse episódio resultou uma tradição religiosa conhecida: o culto a Nossa Senhora de Copacabana no Rio de Janeiro, oriundo do Baixo Peru em 1637. Nos anos seguintes, uma capela dedicada à santa foi erigida na praia que recebeu o seu nome.
+(Adaptado de ALENCASTRO, L. F. O Trato dos Viventes, São Paulo: Companhia das Letras, 2000. p. 110.)
+
+Com base no excerto, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `A extração de prata em Buenos Aires conectou o Brasil ao comércio internacional de metais que passava por Copacabana.` },
+      { letra: 'B', texto: `O tráfico de pedras preciosas de Buenos Aires complementava o fornecimento de mão de obra trazida de Luanda para o Porto de Copacabana.` },
+      { letra: 'C', texto: `Copacabana remete ao passado em que as Américas portuguesa e espanhola se conectavam por redes comerciais e culturais.` },
+      { letra: 'D', texto: `Copacabana preserva a memória do desembarque de escravizados que, dali, eram levados para Buenos Aires e Peru.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1591,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Mariano Moreno e a tradução de Rousseau',
+    enunciado: `Entre várias obras que devem formar este precioso presente que ofereço aos meus concidadãos, dei o primeiro lugar ao Contrato Social, escrito pelo cidadão de Genebra, Jean-Jacques Rousseau. Este homem imortal, que obteve a admiração de seu século e será o assombro de todas as idades, [... ensinou que] os povos aprenderam a procurar no pacto social a raiz e a única origem da obediência, não reconhecendo os seus chefes como emissários da divindade, enquanto não mostrassem as patentes do céu na qual eram destinados a imperar sobre seus semelhantes. [...] Como o autor teve a desgraça de delirar em matérias religiosas, suprimo o capítulo e as passagens principais onde delas tratou.
+(MORENO, M. Prólogo de O Contrato Social ou Princípios do direito político, de Jean-Jacques Rousseau, Buenos Aires, 1810 apud MYERS, J. A revolução de independência no Rio da Prata e as origens da nacionalidade argentina (1806-1825) In: PAMPLONA, M; MÄDER, M. (org.). Revoluções de independências e nacionalismos nas Américas: região do Prata e Chile. São Paulo: Paz e Terra, p. 107 e 109, 2007.)
+
+Mariano Moreno, tradutor de Rousseau para o espanhol, foi secretário do primeiro governo da Argentina entre os anos 1810 e 1811. No texto acima, ele`,
+    opcoes: [
+      { letra: 'A', texto: `critica a defesa que Rousseau faz da Igreja e dos governos absolutistas na obra O Contrato Social.` },
+      { letra: 'B', texto: `interfere na tradução e edição da obra de Rousseau conforme seus ideários políticos e ideológicos.` },
+      { letra: 'C', texto: `justifica a tradução da obra para difundir a ideia de obediência cívica ligada à religião católica e ao rei.` },
+      { letra: 'D', texto: `demonstra seu caráter conservador e a resistência ao pensamento liberal e iluminista na Argentina.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1592,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Repercussão internacional do Estado Novo',
+    enunciado: `Em 1937, um golpe de Estado instaurou o Estado Novo no Brasil, um regime autoritário. Diferentes leituras do golpe de Vargas foram publicadas no jornal The New York Times, ilustrando o impacto difuso daquele evento na imprensa. De um lado, escrevendo da Argentina, o chefe dos correspondentes na América Latina, John White, afirmou o caráter "pseudo-fascista" do movimento, registrando a atuação dos censores sobre o trabalho dos correspondentes internacionais que atuavam no Brasil. White destacava o apoio alemão ao novo regime brasileiro e os desafios de centralizar o poder nas mãos de Getúlio Vargas. De outro lado, Frank Garcia, correspondente do The New York Times, que atuava então no Brasil, comentou:
+Eu posso dizer que, embora tenha havido censura, eu não tive dificuldades em enviar matérias ao The New York Times. Elas foram telegrafadas sem nenhum problema. Essa nova Constituição configura o Estado um tanto fascista, mas não inteiramente. É mais democrático que fascista. Na verdade, é nacionalista.
+(Adaptado de LINS, L.F.T de S. Notícias de falsos vendavais: o golpe do Estado Novo de 1937 e o discurso de junho de 1940 nos jornais estadunidenses. História: Debates e Tendências, vol. 19, n. 2, p. 332-351, 2019.)
+
+Sobre a repercussão internacional do Golpe do Estado Novo no exterior, podemos afirmar que havia`,
+    opcoes: [
+      { letra: 'A', texto: `percepção unânime do pleno alinhamento ideológico do Brasil com governos fascistas.` },
+      { letra: 'B', texto: `condenação ao fascismo e sugestão de sanções econômicas em razão do apoio alemão a Vargas.` },
+      { letra: 'C', texto: `controvérsias e ambiguidades na caracterização ideológica do novo governo Vargas.` },
+      { letra: 'D', texto: `estratégias de resistência à censura imposta aos jornalistas que atuavam no Brasil.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1593,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Entrada da China na OMC',
+    enunciado: `"A OMC não será uma organização mundial de comércio até que a China seja um país-membro", afirmou Mike Moore, diretor-geral da OMC. A assinatura de um acordo bilateral de comércio entre os Estados Unidos e a China teve uma repercussão positiva no mercado internacional, apesar da desconfiança de que a China poderá ter dificuldades para cumprir o prometido. "A China deu um passo grande em direção à OMC", disse o presidente dos Estados Unidos, Bill Clinton. A União Europeia aprovou a assinatura do acordo. A adesão da China à OMC permitirá incluir no sistema comercial internacional a décima potência do planeta, que cresceu em média 9,6% ao ano desde 1980. O acordo será um teste importante para verificar se a economia chinesa aguentaria o impacto de sua incorporação à OMC e se continuaria com seu crescimento. Desde 1986, o país asiático busca ser aceito em um organismo de comércio internacional. Segundo nota chinesa, "ambas as partes estreitarão sua cooperação no seio da OMC para garantir no futuro o aumento de suas relações bilaterais e a prosperidade da economia mundial".
+(De agências internacionais, Sem a China, OMC não é mundial. Folha de S. Paulo, ano 79, n. 25.794, 16 de novembro de 1999. Disponível em https://www1.folha.uol.com.br/fsp/dinheiro/fi1611199903.htm. Acesso em 05/08/2025.)
+
+Comparando as expectativas sobre o ingresso da China na Organização Mundial de Comércio (OMC) expressas no texto com o contexto atual, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `havia um otimismo em relação à expansão da globalização da economia mundial entre as décadas de 1990 e 2000.` },
+      { letra: 'B', texto: `a entrada da China na OMC interrompeu o deslocamento das indústrias norte-americana e europeia para a Ásia.` },
+      { letra: 'C', texto: `a guerra tarifária contemporânea revela o fracasso do modelo de desenvolvimento chinês dos anos 2000.` },
+      { letra: 'D', texto: `os compromissos assumidos pela China na entrada na OMC permitiram a consolidação dos direitos humanos no país.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1597,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Anelamento e transporte no floema',
+    enunciado: `Um agricultor realizou a remoção de um anel da casca de ramos caulinares, prática conhecida como anelamento, para aumentar o tamanho dos frutos em seu pomar. Ele observou dois grupos de plantas após algumas semanas. As plantas do grupo 1 tinham uma região claramente anelada nos ramos e seus frutos eram maiores, se comparadas às plantas do grupo 2. Já as plantas do grupo 2 perderam as folhas e foram claramente prejudicadas pelo anelamento. Ao retornar no ano seguinte, o anelamento era quase imperceptível nas plantas do grupo 1.
+Considerando as informações apresentadas e os seus conhecimentos em biologia vegetal, é correto afirmar que o anelamento eliminou os vasos do`,
+    opcoes: [
+      { letra: 'A', texto: `xilema e limitou o transporte de água para as folhas, comprometendo a atividade do câmbio vascular nas plantas do grupo 1.` },
+      { letra: 'B', texto: `floema e restringiu o transporte dos produtos da fotossíntese para as folhas, sem comprometer a atividade do câmbio vascular nas plantas do grupo 2.` },
+      { letra: 'C', texto: `xilema e limitou o transporte de água para as raízes, comprometendo a atividade do câmbio vascular nas plantas do grupo 2.` },
+      { letra: 'D', texto: `floema e restringiu o transporte dos produtos da fotossíntese para as raízes, sem comprometer a atividade do câmbio vascular nas plantas do grupo 1.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1604,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Percentual simples vs. composto',
+    enunciado: `Rogério é funcionário de uma fábrica de automóveis. Em dezembro de 2024, seu gestor fez duas propostas de aumento salarial:
+- a proposta 1 consistia em um aumento de 50% do seu salário, a partir do salário a ser recebido em janeiro de 2025, mas sem nenhum tipo de reajuste nos próximos três anos, ou seja, até dezembro de 2027;
+- a proposta 2 consistia em um aumento de 20% a cada ano; o reajuste ocorreria no salário de janeiro de cada um dos próximos três anos, a partir de 2025.
+Para decidir a qual proposta aderir, Rogério calculou o montante total que receberia ao longo dos três anos em cada proposta, isto é, de janeiro de 2025 a dezembro de 2027. Ele concluiu que o total a ser recebido na proposta 1 é, aproximadamente,`,
+    opcoes: [
+      { letra: 'A', texto: `3% maior que o total a ser recebido na proposta 2.` },
+      { letra: 'B', texto: `1% maior que o total a ser recebido na proposta 2.` },
+      { letra: 'C', texto: `3% menor que o total a ser recebido na proposta 2.` },
+      { letra: 'D', texto: `1% menor que o total a ser recebido na proposta 2.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1606,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Grau de polinômios',
+    enunciado: `Sobre dois polinômios p(x) e q(x) de coeficientes reais sabe-se que:
+- p(x) + q(x) tem grau igual a 3.
+- p(x) ⋅ q(x) tem grau igual a 8.
+É correto afirmar que o grau de p(x) - q(x) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `5.` },
+      { letra: 'B', texto: `4.` },
+      { letra: 'C', texto: `3.` },
+      { letra: 'D', texto: `2.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1610,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Probabilidade: permutação de brinquedos',
+    enunciado: `Em uma creche se realiza o "dia da troca do brinquedo". Cada criança leva um brinquedo para a escola e o guarda na Caixa Divertida. Ao final do dia, cada criança retira um brinquedo da Caixa Divertida sem olhar, e o leva para brincar em casa.
+Em uma sala com cinco crianças, qual é a probabilidade de exatamente duas crianças retirarem da Caixa Divertida seus próprios brinquedos?`,
+    opcoes: [
+      { letra: 'A', texto: `1/5.` },
+      { letra: 'B', texto: `1/6.` },
+      { letra: 'C', texto: `1/25.` },
+      { letra: 'D', texto: `1/30.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1612,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Conjuntos e números primos',
+    enunciado: `Considere A = {x ∈ ℕ : |x - 5| ≥ 2 e |x - 11| ≤ 9}. Quantos números primos pertencem ao conjunto A?`,
+    opcoes: [
+      { letra: 'A', texto: `5.` },
+      { letra: 'B', texto: `6.` },
+      { letra: 'C', texto: `7.` },
+      { letra: 'D', texto: `8.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1613,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Sistema linear: pontuações de tropa',
+    enunciado: `Em um jogo de videogame sobre guerra, cada jogador deve montar sua tropa escolhendo 100 combatentes. Ele tem à sua disposição dois tipos de combatentes, soldados e estrategistas, que possuem duas habilidades, astúcia e força, com as seguintes pontuações:
+- o soldado tem 30 pontos de astúcia e 70 pontos de força.
+- o estrategista tem 80 pontos de astúcia e 20 pontos de força.
+A força total da tropa é a soma das pontuações de força de cada um dos combatentes, e a astúcia total da tropa é a soma das pontuações de astúcia de cada um dos combatentes.
+Para montar uma tropa de modo a obter as mesmas pontuações de força total e de astúcia total, quantos soldados e quantos estrategistas devem ser escolhidos?`,
+    opcoes: [
+      { letra: 'A', texto: `70 soldados e 30 estrategistas.` },
+      { letra: 'B', texto: `60 soldados e 40 estrategistas.` },
+      { letra: 'C', texto: `50 soldados e 50 estrategistas.` },
+      { letra: 'D', texto: `40 soldados e 60 estrategistas.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1615,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Preconceito linguístico: pronúncia de "advogado"',
+    enunciado: `É advogado com d mudo, estúpida!
+Mirian Goldenberg
+Antropóloga e professora da Universidade Federal do Rio de Janeiro, é autora de "A Invenção de uma Bela Velhice"
+
+Fiz um vídeo para o Instagram sobre a minha coluna intitulada No dia 1º de abril, quase caí no golpe do 'falso advogado'. No vídeo, confessei que quase morri de vergonha por quase ter caído em um golpe no Dia da Mentira.
+Fiquei triste quando li alguns dos comentários sobre o vídeo: "AdEvogado?"; "Não é adevogado que fala"; "A desinformada que fala adevogado aprendeu o que é golpe de verdade kkkk"; "Adevogado? Pode isso? Uma 'intelequitual brasileira da linha de frente falando assim?"; "Um currículo e tanto e falando adevogado?"; "Chamou de adEvogado. Então não foi difícil entender por que caiu em golpe... Eu teria é vergonha de falar adEvogado"; "A palavra 'advogado' se pronuncia 'advogado', com o 'd' mudo. A pronúncia adevogado é um erro de ortoépia"; "É advogado com 'd' mudo, estúpida!".
+Perguntei ao meu marido, que editou o vídeo, por que ele não me falou nada. Ele respondeu: "Porque eu acho bonitinho. Você é filha de advogado e tem dois irmãos advogados. Desde menina aprendeu a falar assim. Não é fácil falar 'advogado' com o 'd' mudo. Eu falo advogado com 'i': adivogado. Será que alguém consegue falar advogado com o 'd' mudo?"
+Da próxima vez que fizer uma denúncia importante, vou tentar falar advogado com o "d" mudo. Será que vou conseguir?
+(Adaptado de GOLDENBERG, M. É advogado com d mudo, estúpida! Folha de São Paulo, 16/04/2025, B6. Acesso em 29/07/2025.)
+
+Considerando que consoantes mudas não são seguidas de uma vogal, e levando em conta as duas pronúncias para advogado mencionadas no texto, as críticas reproduzidas no segundo parágrafo revelam`,
+    opcoes: [
+      { letra: 'A', texto: `preconceito linguístico, já que os comentários negativos foram motivados pelo fato de a autora ter um baixo nível de escolaridade.` },
+      { letra: 'B', texto: `desconhecimento linguístico, uma vez que a palavra advogado não é pronunciada com "d" mudo no português brasileiro.` },
+      { letra: 'C', texto: `negacionismo linguístico, pois os críticos não reconhecem que a pronúncia adevogado é a mais comum na norma culta.` },
+      { letra: 'D', texto: `correção linguística, porque só uma das duas pronúncias ocorre no português, enquanto a outra é um desvio fonético.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1616,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Variedade linguística: "nóix" (Pretuguês)',
+    enunciado: `Texto para as questões 55 e 56.
+A rua é nóix! Sempre com letra minúscula, porque não é o Nós da totalidade, uma vez que não sabemos exatamente quem ou quantos somos, quem faz parte ou não, quem está dentro ou fora. Mas, se pegar para um, vai pegar pra geral. O nóix é sempre mais que um. Mesmo sozinho, na missão, existe algo para além da presença física do eu e do outro. Assumindo nossas ancestralidades, convivemos com os espíritos daqueles que já se foram. O nóix opera pela lógica dos bondes de galera, do lado A ou lado B. Quem é amigo fecha com a gente, quem é alemão rala. Porque o fechamento é o fundamento ético das ruas. Recebe-se quem chega de boa, na paz, mas, se vacila, vai. Com i e x, o nóix demarca um sotaque, um registro local, um lugar, o Pretuguês de Lélia Gonzalez. Desobedecendo à instituída norma culta, o nóix escrito ou falado revela sua potência operando à margem da obediência à linguagem fonética dominante. O nóix é a potência da contaminação diferencial das diversidades de um povo em tempos e espaços múltiplos, que se repete numa atmosfera espectral que ultrapassa a lógica temporal predominante.
+(Adaptado de MORAES, M. J. D. A rua é nóix, Revista Cult, ed. 271, 1 jul. de 2021.)
+
+Sobre a diferença que o texto estabelece entre Nós e nóix, podemos afirmar que está relacionada a uma distinção`,
+    opcoes: [
+      { letra: 'A', texto: `sociocultural, pois esses termos se referem a grupos demarcados distintamente: enquanto Nós é bem delimitado, nóix diz respeito a uma coletividade difusa, mas marcada por compartilhar vivências específicas.` },
+      { letra: 'B', texto: `gramatical, pois esses termos não pertencem à mesma classe de palavras: enquanto Nós é um pronome típico da norma culta, nóix é um substantivo popular que serve à expressão da diversidade.` },
+      { letra: 'C', texto: `histórica, pois esses termos caracterizam os indivíduos em função do seu passado: enquanto Nós abrange aqueles sem ancestralidade, nóix reúne os que assumem os ancestrais como parte de sua história.` },
+      { letra: 'D', texto: `política, pois esses termos revelam uma polarização na forma de se relacionar com o poder: enquanto Nós simboliza o apoio à opressão social, nóix caracteriza uma rejeição aos poderes instituídos.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1617,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Pretuguês e africanização da língua (Lélia Gonzalez)',
+    enunciado: `A partir das análises de Lélia Gonzalez - intelectual, professora universitária, mulher, negra e feminista - conseguimos compreender quão extensa é a introdução de palavras e termos de origens africanas na nossa língua. O Pretuguês é, então, parte da africanização da língua portuguesa brasileira. As pessoas negras escravizadas resistiam de inúmeras formas, lutando, fugindo, se organizando, mas também através da fala, no jeito de agir e na forma de viver que se enraizou na maneira de ser de todo o Brasil. E isso vem da ancestralidade, é o passar do conhecimento através do tempo e das relações de respeito pelo que veio antes, através do cântico antigo, da reza falada, da contação de história que os entrelaços linguísticos vão formando. Muitos vocábulos estão tão acomodados no nosso idioma que sequer paramos para pensar sua origem e seu significado. Mas são de origem africana, como dengo, quitanda, cafuné, muvuca, caçula e axé.
+(Adaptado de texto publicado no perfil de Instagram de Mari Canuto em 28/09/2022. Disponível em https://www.instagram.com/mari_canuto/reel/CjD8ALkPw9o/. Acesso em 30/07/2025.)
+
+Considerando esse texto, a menção ao "Pretuguês de Lélia Gonzalez" no artigo de Marcelo José Derzi Moraes, apresentado na questão anterior, ocorre pelo fato de nóix ser`,
+    opcoes: [
+      { letra: 'A', texto: `um vocábulo introduzido no Brasil pelos africanos escravizados, da mesma forma que outras palavras de origem africana acomodadas na língua.` },
+      { letra: 'B', texto: `uma expressão identitária que serve para demarcar os negros brasileiros e segregá-los dos demais grupos étnico-raciais que compõem o país.` },
+      { letra: 'C', texto: `uma marca linguística associada a um grupo cujos ancestrais reúnem aqueles que contribuíram para a africanização do português brasileiro.` },
+      { letra: 'D', texto: `um traço dialetal característico dos sotaques urbanos brasileiros que são fortemente marcados pela presença de palavras africanas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1618,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - A Luta (Santarosa Barreto): valores da conjunção "que"',
+    enunciado: `O texto a seguir é um trabalho da artista Santarosa Barreto apresentado na exposição Histórias das mulheres: artistas depois de 2000, realizada no MASP em 2019.
+LUTE A LUTA COMO VOCÊ ACHA QUE DEVE LUTAR E NÃO COMO EXIGEM QUE VOCÊ LUTE QUE VÃO DIZER QUE VOCÊ NÃO SABE O QUE É UMA LUTA QUE VÃO DIZER QUE VOCÊ NÃO TEM FORÇA PARA LUTAR QUE VÃO DIZER QUE ELES É QUE SABEM LUTAR QUE VÃO DIZER QUE ELES LUTAM HÁ MAIS TEMPO DO QUE VOCÊ LUTA QUE VÃO DIZER QUE É MELHOR VOCÊ DESISTIR DA LUTA QUE VÃO DIZER QUE NÃO É ASSIM QUE SE LUTA QUE VÃO DIZER QUE VOCÊ NÃO SABE LUTAR QUE VÃO DIZER QUE VOCÊ NUNCA LUTOU QUE VÃO DIZER QUE VOCÊ NÃO ESTÁ LUTANDO A MESMA LUTA QUE ELES ESTÃO LUTANDO OS SUPOSTOS DONOS DA LUTA.
+(BARRETO, S. A luta. Ikrek Edições, 2019 (reimpressão 2024).)
+
+Nesse texto, observamos ocorrências de "que" com diferentes valores, entre eles o`,
+    opcoes: [
+      { letra: 'A', texto: `explicativo, com o objetivo de listar justificativas que tentam suprimir, em favor de outros, uma dimensão pessoal da luta.` },
+      { letra: 'B', texto: `comparativo, com o objetivo de equiparar a luta motivada por convicções próprias e a luta instigada por quem está no poder.` },
+      { letra: 'C', texto: `condicional, com o objetivo de caracterizar a luta como uma condição para combater aqueles que a querem controlar.` },
+      { letra: 'D', texto: `causal, com o objetivo de reiterar as situações que levam alguém a desistir de promover a luta como forma de resistência individual.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1621,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Krenak, Drummond e a colonização do espaço',
+    enunciado: `Em seu ensaio "A vida não é útil", Ailton Krenak elege Carlos Drummond de Andrade como um de seus "escudos". Ele cita a última estrofe de "O Homem; as Viagens", poema publicado em As impurezas do Branco (1973). Reproduzimos, a seguir, a primeira e a segunda estrofe desse poema:
+"O Homem; as Viagens
+O homem, bicho da Terra tão pequeno
+chateia-se na Terra
+lugar de muita miséria e pouca diversão,
+faz um foguete, uma cápsula, um módulo
+toca para a Lua
+desce cauteloso na Lua
+pisa na Lua
+planta bandeirola na Lua
+experimenta a Lua
+coloniza a Lua
+civiliza a Lua
+humaniza a Lua.
+Lua humanizada: tão igual à Terra.
+O homem chateia-se na Lua.
+Vamos para Marte - ordena a suas máquinas.
+Elas obedecem, o homem desce em Marte
+pisa em Marte
+experimenta
+coloniza
+civiliza
+humaniza Marte com engenho e arte.
+Marte humanizado, que lugar quadrado.
+(...)".
+(ANDRADE, C. D. O Homem; As viagens, As impurezas do Branco. In: Poesia Completa. Rio de Janeiro, Editora Nova Aguilar, p. 718, 2002.)
+(KRENAK, A. A vida não é útil. Pesquisa e organização de Rita Carelli. São Paulo: Companhia das Letras, 2020.)
+
+Em relação às reflexões de Ailton Krenak, é correto afirmar que esse trecho do poema`,
+    opcoes: [
+      { letra: 'A', texto: `responsabiliza a ciência e tecnologia, desgastadas em seus valores, pela corrosão das relações nas sociedades contemporâneas.` },
+      { letra: 'B', texto: `mostra que os Homens, guiados pela ideia de progresso, não adotam uma postura consciente em relação ao seu espaço.` },
+      { letra: 'C', texto: `evidencia que a Terra, desgastada em seus valores, foi superada pelos elementos da conquista espacial.` },
+      { letra: 'D', texto: `identifica a aniquilação das sociedades contemporâneas nos programas de governos persuadidos pelo progresso.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1622,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Aos óculos (José Paulo Paes) e o gênero ode',
+    enunciado: `Leia os textos 1 e 2.
+Texto 1
+Aos óculos
+Só fingem que põem
+o mundo ao alcance
+dos meus olhos míopes.
+Na verdade, me exilam
+dele com filtrar-lhe
+a menor imagem.
+Já não vejo as coisas
+como são: vejo-as como eles querem
+que as veja.
+Logo, são eles que veem,
+não eu que, mesmo cônscio
+do logro, lhes sou grato
+por anteciparem em mim
+o Édipo curioso
+de suas próprias trevas.
+(PAES, J. P. Prosas seguidas de Odes mínimas. São Paulo: Companhia das Letras, p. 63, 1992.)
+
+Texto 2
+"Do grego odé e do latim õde (ou õda), a ode era, na antiguidade clássica, um poema destinado a ser cantado, ou um canto alegre, triste ou lírico. Era um poema de alguma extensão, de elevado assunto ou nobre, expressando sentimentos ilustres, em homenagem a algo ou a alguém. Apresentava também a elaboração estrófica, bem como estilo formal nobre e cerimonioso".
+(Adaptado do verbete "Ode", elaborado por Ana Ladeira. In: CEIA, C. E-Dicionário de termos literários (projeto abrigado pela Universidade Nova de Lisboa). Disponível em https://edtl.fcsh.unl.pt/encyclopedia/ode. Acesso em 31/05/2025.)
+
+É correto afirmar que a ode mínima de José Paulo Paes reelabora a definição clássica de "ode" ao`,
+    opcoes: [
+      { letra: 'A', texto: `respeitar a elevação do assunto, a nobreza do tom e os sentimentos ilustres.` },
+      { letra: 'B', texto: `utilizar-se de um tom elevado e cerimonioso para a homenagem.` },
+      { letra: 'C', texto: `dirigir-se a um objeto, vinculando-se ao gênero canção popular.` },
+      { letra: 'D', texto: `celebrar um objeto fundamental, os óculos, e não algo/alguém ilustre.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1623,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Réplica, de Chimamanda Ngozi Adichie',
+    enunciado: `No conto "Réplica", que integra a coletânea No seu pescoço, de Chimamanda Adichie, a protagonista vive
+(ADICHIE, C. N. No seu pescoço. Tradução: Júlia Romeu. São Paulo: Companhia das Letras, 2017.)`,
+    opcoes: [
+      { letra: 'A', texto: `o choque cultural, consequente das diásporas africanas contemporâneas, reelaborado pelas observações de Nkem.` },
+      { letra: 'B', texto: `as contradições culturais, consequentes do processo de recolonização da Nigéria, expressas pelos negócios ilícitos de Obiora.` },
+      { letra: 'C', texto: `a opressão feminina, consequente da falência do modelo africano de sororidade, como no relato de Ijemamaka.` },
+      { letra: 'D', texto: `o sentimento de nacionalismo, consequente das saudades de práticas culturais, como no estranhamento dos vizinhos brancos (povo oyibo).` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1624,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Pera, uva ou maçã? (Caio Fernando Abreu)',
+    enunciado: `Leia a citação a seguir, extraída do conto "Pera, uva ou maçã?", publicado no livro Morangos mofados, de Caio Fernando Abreu, e assinale a alternativa correta sobre o excerto.
+Foi então que vi aquelas ameixas e achei tão bonitas e tão vermelhas que pedi um quilo e era minha última grana certo porque meus pais não me dão nada e daí eu pensei assim se comprar essas ameixas agora vou ter que voltar a pé para casa mas que importa volto a pé mesmo pode ser até que acorde um pouco e aquela coisa lá longe volte pra perto de mim e então eu vinha caminhando devagarinho as ameixas eu não conseguia parar de comer sabe já tinha comido acho que umas seis estava toda melada quando dobrei a esquina aqui da rua e ia saindo um caixão de defunto do sobrado amarelo na esquina certo acho que era um caixão cheio quer dizer com defunto dentro porque ia saindo e não entrando certo e foi bem na hora que eu dobrei não deu tempo de parar nem de desviar daí então eu tropecei no caixão e as ameixas todas caíram assim paf! na calçada e foi aí que eu reparei naquelas pessoas todas de preto e óculos escuros e lenços no nariz e uma porrada de coroas de flores devia ser um defunto muito rico certo e aquele carro fúnebre ali parado e só aí eu entendi que era um velório.
+(ABREU, C. F. Morangos Mofados. 9ª. ed. São Paulo: Companhia das Letras, p. 105-106, 2015.)`,
+    opcoes: [
+      { letra: 'A', texto: `A presença de orações como "foi então que vi", "foi aí que eu reparei" e "só aí eu entendi" cria um efeito de retardamento da narrativa, o que reflete o estado psicológico de apatia da personagem que fala.` },
+      { letra: 'B', texto: `A ausência de pontuação cria um efeito de aceleração da narrativa, o que reflete o estado psicológico de ansiedade da personagem que fala.` },
+      { letra: 'C', texto: `A presença de orações como "foi então que vi", "foi aí que eu reparei" e "só aí eu entendi" rompe a sequência temporal da narrativa, prejudicando o seu desenvolvimento lógico.` },
+      { letra: 'D', texto: `A ausência de pontuação desorganiza a sequência das ações da personagem, o que reflete sua confusão e causa uma ambiguidade de sentido em sua narrativa.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1625,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Casa Velha, de Machado de Assis: o sineiro',
+    enunciado: `O sineiro era um preto velho e doido. Não fazia mais que tocar o sino da capela, para a missa, aos domingos. O resto do tempo vivia calado ou resmungando. Ninguém lhe falava, embora fosse manso. [...] Com a razão, perdera a convivência dos mais. Vivia entregue aos pensamentos solitários, mergulhado na inconsciência e na solidão. A moça representava aos olhos dele alguma coisa mais do que uma simples criatura, era a sociedade humana, e uma sombra de sombra da consciência antiga.
+(ASSIS, M. de. Casa Velha. Apresentação e notas de Paulo Franchetti. Campinas, SP: Editora da UNICAMP, p. 85-86, 2023.)
+
+No enredo de Casa Velha, é possível afirmar que a cena em que aparece a figura do sineiro cumpre o papel de`,
+    opcoes: [
+      { letra: 'A', texto: `mostrar a solidariedade de classe desenvolvida por Lalau que, sendo uma agregada, identifica seus interesses com os do velho sineiro.` },
+      { letra: 'B', texto: `exibir o caráter caridoso de Dona Antônia, que mantém o escravizado sob seus cuidados mesmo após deixar de ser útil como trabalhador.` },
+      { letra: 'C', texto: `expor a Dona Antônia o sentimento existente entre Lalau e seu filho, enquanto ele observa a compaixão da moça pelo sineiro.` },
+      { letra: 'D', texto: `sugerir a complexidade da organização social característica da Casa Velha, na qual se via representada toda a sociedade humana.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1626,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura - Alvorada, de Cartola',
+    enunciado: `Leia os versos da canção abaixo e assinale a alternativa correta.
+ALVORADA
+Alvorada lá no morro, que beleza,
+Ninguém chora, não há tristeza,
+Ninguém sente dissabor.
+O sol colorindo é tão lindo, é tão lindo.
+E a natureza sorrindo, tingindo, tingindo.
+Você também me lembra a alvorada
+Quando chega iluminando
+Meus caminhos tão sem vida.
+E o que me resta
+é bem pouco, quase nada,
+do que ir assim vagando
+numa estrada perdida.
+(CARTOLA. Alvorada. In: Cartola. Rio de Janeiro: Marcus Pereira Discos, 1974.)`,
+    opcoes: [
+      { letra: 'A', texto: `O eu-lírico enfatiza a harmonia entre a cena idílica do morro no momento da alvorada e a alegria de sua vida junto à pessoa amada.` },
+      { letra: 'B', texto: `O eu-lírico enfatiza um contraste entre a alegria da alvorada no morro e a pobreza das pessoas que habitam aquele espaço.` },
+      { letra: 'C', texto: `A alvorada no morro é, para o eu-lírico, como a imagem da pessoa amada, que lhe traz alegria, apesar de sua desilusão e desesperança.` },
+      { letra: 'D', texto: `A alvorada no morro funciona, no poema, como imagem do futuro que pode ser transformado pelo amor, apesar das condições de vida difíceis.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1629,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Hidrogênio vs. querosene como combustível de aviação',
+    enunciado: `Aviões são os únicos meios de transporte que cruzam continentes em um dia. Apesar dos avanços em eficiência energética, as aeronaves contribuem com 3,5% do aquecimento global. Por isso, existe o interesse em substituir o querosene usado por essas aeronaves por hidrogênio, com destaque para o uso do hidrogênio líquido combustível. A tabela a seguir apresenta dados desses dois tipos de combustíveis na aviação.
+
+Combustível | Energia combustão (kJ⋅mol⁻¹) | Densidade do líquido (g⋅cm⁻³) | Massa molar (g⋅mol⁻¹)
+Querosene*  | 6745                           | 0,804                           | 153
+Hidrogênio  | 240                            | 0,071                           | 2
+* valores médios e aproximados.
+
+Características como massa e volume da aeronave são fatores importantes para seu desempenho. Levando em conta essa informação, para uma mesma quantidade de energia gerada pelo combustível, é correto afirmar que o hidrogênio é melhor que o querosene, pois`,
+    opcoes: [
+      { letra: 'A', texto: `sua razão energia por volume é maior.` },
+      { letra: 'B', texto: `o volume utilizado será menor.` },
+      { letra: 'C', texto: `sua razão energia por massa é maior.` },
+      { letra: 'D', texto: `a massa utilizada será maior.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1632,
+    ano: 2026,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Etanol combustível: densidade e teor alcoólico (ANP)',
+    enunciado: `A Agência Nacional do Petróleo (ANP) é responsável por implementar a política nacional de combustíveis e proteger os interesses dos consumidores quanto a preço, qualidade e oferta de produtos, além de especificar a qualidade dos derivados de petróleo, do gás natural e de seus derivados e dos biocombustíveis. Nesse sentido, a resolução ANP 907, de 2022, especifica algumas características do Etanol Anidro Combustível (EAC), do Etanol Hidratado Combustível (EHC) e do Etanol Hidratado Combustível Premium (EHCP). Algumas dessas características estão na tabela a seguir e nas alternativas.
+
+Combustível | Massa Específica (kg/m³) | Teor Alcoólico (% massa)
+EAC         | 791,5 (a)                | 99,3 (b)
+EHC         | (c)                      | entre 92,5 e 94,6
+EHCP        | (d)                      | entre 95,5 e 96,5
+(Adaptado da Resolução ANP nº 907 de 18/11/2022.)
+
+Considerando que água e etanol formam uma mistura ideal, para preencher corretamente essa tabela, as letras a, b, c e d devem corresponder, respectivamente, a`,
+    opcoes: [
+      { letra: 'A', texto: `máximo; mínimo; entre 805 e 811 e entre 800 e 803.` },
+      { letra: 'B', texto: `mínimo; máximo; entre 805 e 811 e entre 800 e 803.` },
+      { letra: 'C', texto: `máximo; mínimo; entre 800 e 803 e entre 805 e 811.` },
+      { letra: 'D', texto: `mínimo; máximo; entre 800 e 803 e entre 805 e 811.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
