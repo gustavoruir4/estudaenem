@@ -36094,6 +36094,1244 @@ Que mudanças no comportamento dessas pessoas são decorrentes da adaptação à
     temImagem: false,
     imagem: null,
   },
+
+  // ==== UNICAMP 2017 (1a fase) - adicionadas em 19/07/2026 ====
+  {
+    id: 1939,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Monteiro Lobato: Dom Quixote e Dona Benta',
+    enunciado: `Além de escrever Dom Quixote das crianças, Monteiro Lobato também leva o "cavaleiro errante" para o Sítio do Pica-Pau Amarelo.
+Lá na varanda Dom Quixote conversava com Dona Benta sobre as aventuras, e muito admirado ficou de saber que sua história andava a correr mundo; escrita por um tal de Cervantes. Nem quis acreditar; foi preciso que Narizinho lhe trouxesse a edição de luxo ilustrada por Gustavo Doré. O fidalgo folheou o livro muito atento às gravuras, que achou ótimas, porém falsas.
+– Isso não passa duma mistificação! - protestou ele. - Esta cena aqui, por exemplo. Está errada. Eu não espetei este frade, como o desenhista pintou - espetei aquele lá.
+– Isto é inevitável – disse Dona Benta. Os historiadores costumam arranjar os fatos do modo mais cômodo para eles; por isto a História não passa de histórias.
+(Adaptado de Monteiro Lobato, O Picapau Amarelo. São Paulo: Brasiliense, 2004, p. 18.)
+
+Na cena narrada,`,
+    opcoes: [
+      { letra: 'A', texto: `Dona Benta mostra a Dom Quixote que a história dele não é, de forma alguma, uma mistificação.` },
+      { letra: 'B', texto: `Dona Benta convence Dom Quixote de que as gravuras não refletem a História dos fatos.` },
+      { letra: 'C', texto: `Dona Benta concorda com Dom Quixote e critica o fato de a História ser fruto de interesses.` },
+      { letra: 'D', texto: `Dona Benta opõe-se a Dom Quixote e critica a forma como a história dele é narrada nos livros.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1941,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Paulo Freire: educação e Reforma Agrária',
+    enunciado: `Em depoimento, Paulo Freire fala da necessidade de uma tarefa educativa: "trabalhar no sentido de ajudar os homens e as mulheres brasileiras a exercer o direito de poder estar de pé no chão, cavando o chão, fazendo com que o chão produza melhor é um direito e um dever nosso. A educação é uma das chaves para abrir essas portas. Eu nunca me esqueço de uma frase linda que eu ouvi de um educador, camponês de um grupo de Sem Terra: pela força do nosso trabalho, pela nossa luta, cortamos o arame farpado do latifúndio e entramos nele, mas quando nele chegamos, vimos que havia outros arames farpados, como o arame da nossa ignorância. Então eu percebi que quanto mais inocentes, tanto melhor somos para os donos do mundo. (...) Eu acho que essa é uma tarefa que não é só política, mas também pedagógica. Não há Reforma Agrária sem isso."
+(Adaptado de Roseli Salete Caldart, Pedagogia do Movimento Sem Terra: escola é mais que escola. São Paulo: Expressão Popular, 2008, p. 172.)
+
+No excerto adaptado que você leu, há menção a outros arames farpados, como "o arame da nossa ignorância". Trata-se de uma figura de linguagem para`,
+    opcoes: [
+      { letra: 'A', texto: `a conquista do direito às terras e à educação que são negadas a todos os trabalhadores.` },
+      { letra: 'B', texto: `a obtenção da chave que abre as portas da educação a todos os brasileiros que não têm terras.` },
+      { letra: 'C', texto: `a promoção de uma conquista da educação que tenha como base a propriedade fundiária.` },
+      { letra: 'D', texto: `a descoberta de que a luta pela posse da terra pressupõe também a conquista da educação.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1944,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Crítica linguística: "Que horas ela volta?"',
+    enunciado: `No dia 21 de setembro de 2015, Sérgio Rodrigues, crítico literário, comentou que apontar no título do filme Que horas ela volta? um erro de português "revela visão curta sobre como a língua funciona". E justifica:
+"O título do filme, tirado da fala de um personagem, está em registro coloquial. Que ano você nasceu? Que série você estuda? e frases do gênero são familiares a todos os brasileiros, mesmo com alto grau de escolaridade. Será preciso reafirmar a esta altura do século 21 que obras de arte têm liberdade para transgressões muito maiores? Pretender que uma obra de ficção tenha o mesmo grau de formalidade de um editorial de jornal ou relatório de firma revela um jeito autoritário de compreender o funcionamento não só da língua, mas da arte também."
+(Adaptado do blog Melhor Dizendo. Post completo disponível em http://www.melhordizendo.com/a-que-horas-ela-volta-em-que-ano-estamos-mesmo/. Acessado em 08/06/2016.)
+
+Entre os excertos de estudiosos da linguagem reproduzidos a seguir, assinale aquele que corrobora os comentários do post.`,
+    opcoes: [
+      { letra: 'A', texto: `Numa sociedade estruturada de maneira complexa a linguagem de um dado grupo social reflete-o tão bem como suas outras formas de comportamento. (Mattoso Câmara Jr., 1975, p. 10.)` },
+      { letra: 'B', texto: `A linguagem exigida, especialmente nas aulas de língua portuguesa, corresponde a um modelo próprio das classes dominantes e das categorias sociais a elas vinculadas. (Camacho, 1985, p. 4.)` },
+      { letra: 'C', texto: `Não existe nenhuma justificativa ética, política, pedagógica ou científica para continuar condenando como erros os usos linguísticos que estão firmados no português brasileiro. (Bagno, 2007, p. 161.)` },
+      { letra: 'D', texto: `Aquele que aprendeu a refletir sobre a linguagem é capaz de compreender uma gramática que nada mais é do que o resultado de uma (longa) reflexão sobre a língua. (Geraldi, 1996, p. 64.)` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1945,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Arnaldo Antunes: Caligrafia',
+    enunciado: `Caligrafia (Arnaldo Antunes)
+Arte do desenho manual das letras e palavras. Território híbrido entre os códigos verbal e visual. A caligrafia está para a escrita como a voz está para a fala. A cor, o comprimento e espessura das linhas, a disposição espacial, a velocidade dos traços da escrita correspondem a timbre, ritmo, tom, cadência, melodia do discurso falado. Entonação gráfica. Assim como a voz apresenta a efetivação física do discurso (o ar nos pulmões, a vibração das cordas vocais, os movimentos da língua), a caligrafia também está intimamente ligada ao corpo, pois carrega em si os sinais de maior força ou delicadeza, rapidez ou lentidão, brutalidade ou leveza do momento de sua feitura.
+(Adaptado de https://www.arnaldoantunes.com.br. Acessado em 12/07/2016.)
+
+Em Caligrafia, o autor`,
+    opcoes: [
+      { letra: 'A', texto: `estabelece uma relação de causa e efeito entre caligrafia e voz.` },
+      { letra: 'B', texto: `sugere uma relação de oposição entre caligrafia e voz.` },
+      { letra: 'C', texto: `projeta uma relação de gradação entre caligrafia e voz.` },
+      { letra: 'D', texto: `apreende uma relação de analogia entre caligrafia e voz.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1946,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Osman Lins: Lisbela e o Prisioneiro',
+    enunciado: `"Uma peripécia, uma reviravolta nas circunstâncias, de uma hora para outra transforma uma sequência rotineira de acontecimentos numa história."
+(Jerome Bruner, Fabricando histórias. Direito, literatura, vida. São Paulo: Letra e Voz, 2014, p.15.)
+
+Levando-se em conta a noção acima proposta por Jerome Bruner, qual é a peripécia que ocorre no terceiro ato da peça Lisbela e o prisioneiro?`,
+    opcoes: [
+      { letra: 'A', texto: `O disparo de arma de fogo em direção a Frederico Evandro, realizado por Lisbela, e a descoberta posterior de que as balas do revólver eram de festim.` },
+      { letra: 'B', texto: `O encontro furtivo de Lisbela e Leléu na prisão, que torna possível a fuga do casal de amantes e produz o desenlace do drama.` },
+      { letra: 'C', texto: `A fuga de Leléu da prisão, que somente foi possível devido às artimanhas de Lisbela ao pedir que seu pai desse uma corda para o prisioneiro.` },
+      { letra: 'D', texto: `O retorno heroico de Frederico Evandro à prisão, com o intuito de salvar Leléu e assassinar o Tenente Guedes.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1947,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Machado de Assis: Memórias Póstumas de Brás Cubas',
+    enunciado: `O romance Memórias póstumas de Brás Cubas é considerado um divisor de águas tanto na obra de Machado de Assis quanto na literatura brasileira do século XIX. Indique a alternativa em que todas as características mencionadas podem ser adequadamente atribuídas ao romance em questão.`,
+    opcoes: [
+      { letra: 'A', texto: `Rejeição dos valores românticos, narrativa linear e fluente de um defunto autor, visão pessimista em relação aos problemas sociais.` },
+      { letra: 'B', texto: `Distanciamento do determinismo científico, cultivo do humor e digressões sobre banalidades, visão reformadora das mazelas sociais.` },
+      { letra: 'C', texto: `Abandono das idealizações românticas, uso de técnicas pouco usuais de narrativa, sugestão implícita de contradições sociais.` },
+      { letra: 'D', texto: `Crítica do realismo literário, narração iniciada com a morte do narrador-personagem, tematização de conflitos sociais.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1948,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Clarice Lispector: "Amor" (Laços de Família)',
+    enunciado: `No conto "Amor", de Clarice Lispector, após ver um cego mascando chicletes, a personagem passa por uma situação que, segundo o narrador, ela própria chama de "crise":
+"O que chamava de crise viera afinal. E sua marca era o prazer intenso com que olhava agora as coisas, sofrendo espantada. O calor se tornara mais abafado, tudo tinha ganho uma força e vozes mais altas."
+(Clarice Lispector, Laços de Família. Rio de Janeiro: Rocco, 2009, p.23.)
+
+Essa crise, que transforma a relação da personagem com o mundo e com a família,`,
+    opcoes: [
+      { letra: 'A', texto: `nasce do colapso da vontade de viver da personagem, em razão do doloroso prazer com que passou a ver as coisas.` },
+      { letra: 'B', texto: `revela o conflito vivido pela personagem entre o tipo de vida que havia escolhido e as coisas que passou a desejar.` },
+      { letra: 'C', texto: `constitui, para a personagem, uma alteração no modo de vida que antes a fazia sofrer e do qual agora havia se libertado.` },
+      { letra: 'D', texto: `remete à excitação da personagem por ter conseguido harmonizar sua antiga vida com os novos desejos e sensações.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1949,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Jorge de Lima: "Essa negra Fulô" e "História"',
+    enunciado: `"O Sinhô foi açoitar / sozinho a negra Fulô. / A negra tirou a saia / e tirou o cabeção, / de dentro dêle pulou / nuinha a negra Fulô. / Essa negra Fulô! / Essa negra Fulô! / Ó Fulô! Ó Fulô! / Cadê, cadê teu Sinhô / que Nosso Senhor me mandou? / Ah! Foi você que roubou, / foi você, negra Fulô? / Essa negra Fulô!"
+(Jorge de Lima, Poesias Completas, v. 1. Rio de Janeiro/Brasília: J. Aguilar e INL, 1974, p. 121.)
+"A Sinhá mandou arrebentar-lhe os dentes: / Fute, Cafute, Pé-de-pato, Não-sei-que-diga, / avança na branca e me vinga. / Exu escangalha ela, amofina ela, / amuxila ela que eu não tenho defesa de homem, / sou só uma mulher perdida neste mundão. / Neste mundão. / Louvado seja Oxalá. / Para sempre seja louvado."
+(Idem, p.164.)
+
+Essas duas cenas de ciúmes concluem dois textos diferentes de Jorge de Lima. A primeira pertence ao conhecido poema modernista "Essa negra Fulô"; a segunda, ao poema "História", de Poemas Negros (1947). Em relação a "Essa negra Fulô", o poema "História", especificamente, representa`,
+    opcoes: [
+      { letra: 'A', texto: `a reiteração da denúncia das relações de poder, muito arraigadas no sistema escravocrata, que colocam no mesmo plano violências raciais e sexuais.` },
+      { letra: 'B', texto: `a passagem de uma caracterização da mulher negra como sedutora para uma postura solidária em relação à escrava, que explicita as estratégias compensatórias de que se vale para sobreviver.` },
+      { letra: 'C', texto: `a permanência de uma visão pitoresca sobre a situação da mulher negra nos engenhos de açúcar, que oculta os mecanismos de poder que garantiam sua exploração.` },
+      { letra: 'D', texto: `a superação da visão idílica da vida na senzala, graças a uma postura realista e social, que revela a violência das relações entre senhores e escravos.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1950,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Brasileira - Erico Verissimo: Caminhos Cruzados',
+    enunciado: `"São Francisco botava o dedo nas feridas dos leprosos. Mas é que ele era um santo, fazia milagres, e ela é simplesmente Doralice Leitão Leiria, um ser humano como qualquer outro."
+(Erico Veríssimo, Caminhos cruzados. São Paulo: Companhia de Bolso, 2016, p.77.)
+"Queres seguir a política? Então? Procura imitar Bismarck! Haverá padrão melhor?"
+(Idem, p. 290.)
+
+Os fragmentos acima captam um dos traços principais de Caminhos cruzados no que diz respeito à identidade narrativa das personagens. Considerando o conjunto do romance, tal traço consiste em uma`,
+    opcoes: [
+      { letra: 'A', texto: `percepção de que a necessidade de status na vida social e a produção de desejos políticos e religiosos nascem da cópia de um modelo consagrado.` },
+      { letra: 'B', texto: `afirmação, por meio do narrador, da necessidade de protagonistas bem construídos para o êxito da narrativa ficcional.` },
+      { letra: 'C', texto: `recusa dos modelos bem sucedidos na vida social, pois eles constrangem a imaginação artística e moral dos romancistas.` },
+      { letra: 'D', texto: `representação literária da condição humana, que não necessita de figuras imaginárias para atribuir sentido à vida religiosa e política.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1951,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Literatura Portuguesa - Camilo Castelo Branco: Coração, cabeça e estômago',
+    enunciado: `Sabe-se que Coração, cabeça e estômago é uma obra atípica na produção ficcional de Camilo Castelo Branco. Em relação a essa obra, assinale a alternativa que indica o conjunto correto de características estruturais e de tom da obra.`,
+    opcoes: [
+      { letra: 'A', texto: `Inclusão da edição do livro como parte do jogo patrimonial e narrativo; sátira da poesia e das motivações espirituais; caracterização do herói como alguém incapaz de amar.` },
+      { letra: 'B', texto: `Paródia da vida romântica e natural; espiritualização das necessidades do corpo; transformação do herói ao longo da narrativa.` },
+      { letra: 'C', texto: `Descrição da formação do indivíduo; caricatura dos valores e sentimentos românticos; impossibilidade de adaptação do herói à vida social.` },
+      { letra: 'D', texto: `Caricatura das questões relacionadas ao espírito e à posição social; elogio irônico das motivações fisiológicas; ridicularização do herói.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1952,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Conjuntos: livros lidos por um grupo de pessoas',
+    enunciado: `Sabe-se que, em um grupo de 10 pessoas, o livro A foi lido por 5 pessoas e o livro B foi lido por 4 pessoas. Podemos afirmar corretamente que, nesse grupo,`,
+    opcoes: [
+      { letra: 'A', texto: `pelo menos uma pessoa leu os dois livros.` },
+      { letra: 'B', texto: `nenhuma pessoa leu os dois livros.` },
+      { letra: 'C', texto: `pelo menos uma pessoa não leu nenhum dos dois livros.` },
+      { letra: 'D', texto: `todas as pessoas leram pelo menos um dos dois livros.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1953,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Probabilidade: lançamento de dois dados',
+    enunciado: `Um dado não tendencioso de seis faces será lançado duas vezes. A probabilidade de que o maior valor obtido nos lançamentos seja menor do que 3 é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1/3.` },
+      { letra: 'B', texto: `1/5.` },
+      { letra: 'C', texto: `1/7.` },
+      { letra: 'D', texto: `1/9.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1954,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Função definida por recorrência',
+    enunciado: `Seja f(x) uma função tal que para todo número real x temos que x · f(x-1) = (x-3)f(x) + 3. Então, f(1) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `0.` },
+      { letra: 'B', texto: `1.` },
+      { letra: 'C', texto: `2.` },
+      { letra: 'D', texto: `3.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1955,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Funções exponencial e cúbica',
+    enunciado: `Considere as funções f(x) = 3^x e g(x) = x^3, definidas para todo número real x. O número de soluções da equação f(g(x)) = g(f(x)) é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `2.` },
+      { letra: 'C', texto: `3.` },
+      { letra: 'D', texto: `4.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1957,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Geometria analítica: circunferência',
+    enunciado: `Considere a circunferência de equação cartesiana x² + y² = x - y. Qual das equações a seguir representa uma reta que divide essa circunferência em duas partes iguais?`,
+    opcoes: [
+      { letra: 'A', texto: `x + y = -1.` },
+      { letra: 'B', texto: `x - y = -1.` },
+      { letra: 'C', texto: `x - y = 1.` },
+      { letra: 'D', texto: `x + y = 1.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1958,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Matrizes: potência de matriz',
+    enunciado: `Sendo a um número real, considere a matriz A = [[1, a], [0, -1]]. Então, A^2017 é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `[[1, 0], [0, 1]].` },
+      { letra: 'B', texto: `[[1, a], [0, -1]].` },
+      { letra: 'C', texto: `[[1, 1], [1, 1]].` },
+      { letra: 'D', texto: `[[1, a^2017], [0, -1]].` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1959,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Sistemas lineares com solução em comum',
+    enunciado: `Sejam a e b números reais. Considere, então, os dois sistemas lineares abaixo, nas variáveis x, y e z:
+{ x - y = a e { z - y = 1
+{ y + z = b
+Sabendo que esses dois sistemas possuem uma solução em comum, podemos afirmar corretamente que`,
+    opcoes: [
+      { letra: 'A', texto: `a - b = 0.` },
+      { letra: 'B', texto: `a + b = 1.` },
+      { letra: 'C', texto: `a - b = 2.` },
+      { letra: 'D', texto: `a + b = 3.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1960,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Polinômios: resto da divisão',
+    enunciado: `Considere o polinômio p(x) = x^n + x^m + 1, em que n > m ≥ 1. Se o resto da divisão de p(x) por x + 1 é igual a 3, então`,
+    opcoes: [
+      { letra: 'A', texto: `n é par e m é par.` },
+      { letra: 'B', texto: `n é ímpar e m é ímpar.` },
+      { letra: 'C', texto: `n é par e m é ímpar.` },
+      { letra: 'D', texto: `n é ímpar e m é par.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1961,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Números complexos: lugar geométrico',
+    enunciado: `Seja i a unidade imaginária, isto é, i² = -1. O lugar geométrico dos pontos do plano cartesiano com coordenadas reais (x,y) tais que (2x + yi)(y + 2xi) = i é uma`,
+    opcoes: [
+      { letra: 'A', texto: `elipse.` },
+      { letra: 'B', texto: `hipérbole.` },
+      { letra: 'C', texto: `parábola.` },
+      { letra: 'D', texto: `reta.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1962,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Geometria espacial: paralelepípedo',
+    enunciado: `Um paralelepípedo retângulo tem faces de áreas 2 cm², 3 cm² e 4 cm². O volume desse paralelepípedo é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `2√3 cm³.` },
+      { letra: 'B', texto: `2√6 cm³.` },
+      { letra: 'C', texto: `24 cm³.` },
+      { letra: 'D', texto: `12 cm³.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1963,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Matemática - Trigonometria: progressão aritmética',
+    enunciado: `Seja x um número real, 0 < x < π/2 tal que a sequência (tan x, sec x, 2) é uma progressão aritmética (PA). Então, a razão dessa PA é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1.` },
+      { letra: 'B', texto: `5/4.` },
+      { letra: 'C', texto: `4/3.` },
+      { letra: 'D', texto: `1/3.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1965,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - DNA: proporção de nucleotídeos',
+    enunciado: `Em certa espécie animal a proporção de nucleotídeos Timina na molécula de DNA é igual a t > 0. Então, a proporção de nucleotídeos Citosina nesse mesmo DNA é igual a`,
+    opcoes: [
+      { letra: 'A', texto: `1 - t.` },
+      { letra: 'B', texto: `t/2.` },
+      { letra: 'C', texto: `1 - t/2.` },
+      { letra: 'D', texto: `1/2 - t.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1967,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Equação química e constante de equilíbrio',
+    enunciado: `Uma equação química é uma equação matemática no sentido de representar uma igualdade: todos os átomos e suas quantidades que aparecem nos reagentes também devem constar nos produtos. Considerando uma equação química e sua correspondente constante de equilíbrio, pode-se afirmar corretamente que, multiplicando-se todos os seus coeficientes por 2, a constante de equilíbrio associada a esta nova equação será`,
+    opcoes: [
+      { letra: 'A', texto: `o dobro da constante da primeira equação química, o que está de acordo com um produtório.` },
+      { letra: 'B', texto: `o quadrado da constante da primeira equação, o que está de acordo com um produtório.` },
+      { letra: 'C', texto: `igual à da primeira equação, pois ela é uma constante, o que está de acordo com um somatório.` },
+      { letra: 'D', texto: `a constante da primeira equação multiplicada por ln 2, o que está de acordo com um somatório.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1968,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Estrada de Ferro Madeira-Mamoré',
+    enunciado: `"Rios caudalosos, florestas impenetráveis, tribos indígenas desconhecidas e histórias de animais gigantes que se alimentam de seres humanos. Um cenário assustador para a maioria, mas perfeito para aventureiros em busca de fama e riqueza no final do século XIX e início do XX. Foi nessa época que a Amazônia recebeu milhares de trabalhadores para a indústria de extração da borracha e para a construção de uma ferrovia de quase 400 quilômetros, que escoaria essa produção cortando os rios Madeira e Mamoré, a oeste do atual estado de Rondônia."
+(Cristina Romanelli, "A ferro e sangue". Disponível em http://www.revistadehistoria.com.br/secao/artigos-revista/a-ferro-e-sangue. Acessado em 05/08/2016.)
+
+A construção da Estrada de Ferro Madeira-Mamoré`,
+    opcoes: [
+      { letra: 'A', texto: `era um símbolo de progresso que contrastava com um surto de febre amarela, pois a floresta, com suas características físicas, era um habitat propício para o mosquito do gênero Aedes.` },
+      { letra: 'B', texto: `era um evidente desperdício de recursos, pois as condições sanitárias da região eram precárias, e contribuiu para um grande surto de cólera, comprometendo o plano de ocupar a fronteira territorial com a Bolívia.` },
+      { letra: 'C', texto: `era uma propaganda da pujança brasileira em contraponto aos vizinhos bolivianos e um surto de dengue ocorreu pela presença de imigrantes que não tinham imunidade contra o mosquito do gênero Aedes.` },
+      { letra: 'D', texto: `foi bem sucedida, apesar de um surto de malária trazido pelos imigrantes oriundos do Nordeste e que dizimou a população indígena da região.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1969,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia/Geologia - Fósseis de moluscos em montanhas',
+    enunciado: `"Um poeta chamado Zhu Xi escreveu o seguinte há cerca de 1200 anos: 'No topo das altas montanhas vejo conchas que me dizem que antigos lugares de baixa altitude se elevaram para os céus e moram agora nos mais elevados picos. Estas conchas dizem-me também que materiais vivos de animais se converteram nas mais duras e inertes rochas.' Essas palavras foram durante séculos lidas como se fossem versos. Mas Zhu Xi não era apenas um poeta: era um cientista, aquilo que, até há pouco se chamava um naturalista."
+(Mia Couto, "Rios, Cobras e Camisas de Dormir", em E se Obama fosse africano? E outras intervenções. 2.ed. Lisboa: Editorial Caminho, 2009, p.58.)
+
+O poema citado por Mia Couto faz referência`,
+    opcoes: [
+      { letra: 'A', texto: `ao processo de migração de moluscos marinhos para topos de montanhas e a sua posterior fossilização.` },
+      { letra: 'B', texto: `ao processo de decomposição de materiais vivos que ocorre nas rochas duras e inertes presentes nos topos das montanhas.` },
+      { letra: 'C', texto: `à presença de fósseis de moluscos em montanhas que se formaram em regiões antes cobertas por água.` },
+      { letra: 'D', texto: `à existência de fósseis de moluscos que habitavam topos de montanhas e hoje estão extintos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1970,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Bombardeio de Hiroshima',
+    enunciado: `Era o dia 6 de agosto de 1945. O avião B-29, Enola Gay, comandado pelo coronel Paul Tibbets, sobrevoou Hiroshima a 9.448 metros de altitude e, quando os ponteiros do relógio indicaram 8h16, bombardeou-a com uma bomba de fissão nuclear de urânio, com 3 m de comprimento e 71,1 centímetros de diâmetro e 4,4 toneladas de peso. A bomba foi detonada a 576 metros do solo. Um colossal cogumelo de fumaça envolveu a região. Corpos carbonizados jaziam por toda parte. Atônitos, sobreviventes vagavam pelos escombros à procura de comida, água e abrigo. Seus corpos estavam dilacerados, queimados, mutilados. Cerca de 40 minutos após a explosão, caiu uma chuva radioativa. Muitos se banharam e beberam dessa água. Seus destinos foram selados.
+(Adaptado de Sidnei J. Munhoz, "O pior dos fins". Revista de História da Biblioteca Nacional, maio 2015.)
+
+A explosão da bomba mencionada no texto`,
+    opcoes: [
+      { letra: 'A', texto: `ocorre a partir da desintegração espontânea do núcleo de urânio enriquecido em núcleos mais leves, liberando uma enorme quantidade de energia. Esse bombardeio significou o início da corrida armamentista entre EUA e União Soviética.` },
+      { letra: 'B', texto: `ocorre devido à desintegração do núcleo de urânio em núcleos mais leves, a partir do bombardeamento com nêutrons, liberando uma enorme quantidade de energia. Esse ataque é considerado um símbolo do final da II Guerra Mundial.` },
+      { letra: 'C', texto: `ocorre a partir da combinação de núcleos de urânio enriquecido com nêutrons, formando núcleos mais pesados e liberando uma enorme quantidade de energia. Esse bombardeio foi uma resposta aos ataques do Japão a Pearl Harbor.` },
+      { letra: 'D', texto: `ocorre devido à desintegração do núcleo de urânio em núcleos mais leves, a partir do bombardeamento com nêutrons, liberando uma enorme quantidade de energia. Esse ataque causou perplexidade por ser desferido contra um país que havia permanecido neutro na II Guerra Mundial.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1971,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Rudyard Kipling: The White Man\'s Burden',
+    enunciado: `Leia os versos iniciais do poema The White Man's Burden (O fardo do homem branco).
+
+Take up the White Man's burden
+Send forth the best ye breed -
+Go send your sons to exile
+To serve your captives' need
+To wait in heavy harness
+On fluttered folk and wild-
+Your new-caught, sullen peoples,
+Half devil and half child (...).
+(Rudyard Kipling, Rudyard Kipling's Verse. Disponível em http://kiplingsociety.co.uk/poems_burden.htm. Acessado em 17/10/2016.)
+
+O poema de Rudyard Kipling foi escrito em Londres, em 1898, após a estadia do autor nos EUA. Considerando-se o contexto do imperialismo do século XIX, o poeta expressa`,
+    opcoes: [
+      { letra: 'A', texto: `a defesa do expansionismo norte-americano, justificado como um dever moral explicitado no título "The White Man's Burden".` },
+      { letra: 'B', texto: `o olhar caridoso em relação aos povos dominados no contexto do imperialismo do século XIX, como se observa no verso "half devil and half child".` },
+      { letra: 'C', texto: `uma crítica à visão da superioridade branca vigente durante a corrida imperialista do século XIX, ao enaltecer as características "folk and wild".` },
+      { letra: 'D', texto: `a visão de que as famílias americanas não devem ser punidas pela política expansionista dos EUA, como se observa na recomendação "Go send your sons to exile".` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1972,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Survey of geopolitics',
+    enunciado: `Survey of geopolitics
+Geopolitics is a product of its time, and its definitions have evolved accordingly. Rudolph Kjellén, who coined the term in 1899, described geopolitics as "the theory of the state as a geographical organism or phenomenon in space." For Karl Haushofer, the father of German geopolotik, "Geopolitics is the new national science of the state, (...) a doctrine on the spatial determinism of all political processes, based on the broad foundations of geography, especially of political geography". On the eve of World War II, Derwent Whittlesey, the American political geographer, considered geopolitics "a dogma*... the faith that the state is inherently entitled to its place in the sun". Richard Hartshorne defined it as "geography utilized for particular purposes that lie beyond the pursuit of scientific knowledge".
+(Adaptado de Saul Bernard Cohen, Geopolitics of the world system. Boston: Rowman & Littlefield Publishers, 2003. p.11.)
+*Dogma: a belief or set of beliefs held by a group or organization, which others are expected to accept without argument.
+
+Conforme o texto,`,
+    opcoes: [
+      { letra: 'A', texto: `Kjellén e Haushofer possuem visão semelhante quanto à geopolítica, pois concordam que ela faz referência ao Estado.` },
+      { letra: 'B', texto: `Whittlesey concorda com seus antecessores ao afirmar que a geopolítica havia se transformado em um dogma.` },
+      { letra: 'C', texto: `Hartshorne concorda com Kjellén ao afirmar que a geopolítica mantém-se dentro dos parâmetros estritos de uma ciência.` },
+      { letra: 'D', texto: `apesar dos posicionamentos distintos, os autores mencionados estão de acordo quanto aos fundamentos da geopolítica.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1973,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Empuxo e densidade: "O mistério de Maria Rogêt" (Poe)',
+    enunciado: `No conto "O mistério de Maria Rogêt", de Edgar Alan Poe, ao procurar esclarecer a verdadeira identidade de um cadáver jogado na água, o detetive Dupin, mediante a análise dos fatos e das informações da imprensa, faz uso do seguinte raciocínio científico:
+"(...) a gravidade específica do corpo humano, em sua condição natural, é quase igual à massa de água doce que ele desloca. (...) É evidente, contudo, que as gravidades do corpo e da massa de água deslocada são muito delicadamente equilibradas, e que uma ninharia pode fazer com que uma delas predomine. Um braço, por exemplo, erguido fora d'água e assim privado de seu equivalente é um peso adicional suficiente para imergir toda a cabeça, ao passo que a ajuda casual do menor pedaço de madeira habilitar-nos-á a elevar a cabeça, para olhar em derredor".
+(Edgar Alan Poe, apud João Zanetic, Física e Literatura: construindo uma ponte entre as duas culturas. 2006, p 61.)
+
+A partir do raciocínio científico presente no excerto acima, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A densidade de massa de um corpo humano é aproximadamente igual à da água, e retirar o braço para fora da água reduziria a força de empuxo, contrária ao peso do corpo, contribuindo para seu afundamento.` },
+      { letra: 'B', texto: `O corpo humano está submetido a uma aceleração gravitacional aproximadamente igual à que atua na porção de água de mesma massa que o corpo, e retirar o braço para fora da água reduziria a força de empuxo, contrária ao peso do corpo, contribuindo para seu afundamento.` },
+      { letra: 'C', texto: `A densidade de massa de um corpo humano é aproximadamente igual à da água, e retirar o braço para fora da água aumentaria a força de empuxo, contrária ao peso do corpo, contribuindo para seu afundamento.` },
+      { letra: 'D', texto: `O corpo humano está submetido a uma aceleração gravitacional aproximadamente igual à que atua na porção de água de mesma massa que o corpo, e retirar o braço para fora da água aumentaria a força de empuxo, contrária ao peso do corpo, contribuindo para seu afundamento.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1974,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Português - Poema "Ironia ao natural"',
+    enunciado: `Ironia ao natural
+É natural,
+é bom
+e quanto mais melhor,
+como os cogumelos vermelhos,
+as rãs azuis
+ou o suco de serpente...
+É químico,
+processado,
+é mau,
+como a aspirina,
+um perfume
+ou o plástico da válvula cardíaca
+de um coração...
+(João Paiva, quase poesia quase química. Sociedade Portuguesa de Química, 2012, p.15.)
+
+Nesse poema, há`,
+    opcoes: [
+      { letra: 'A', texto: `inversão dos atributos do que seria bom na natureza e do que seria ruim nos processados, de modo a, ironicamente, ressaltar a importância da química.` },
+      { letra: 'B', texto: `comparação entre o lado bom dos produtos naturais e o lado ruim dos produtos processados, de modo a ressaltar, efusivamente, o perigo da química.` },
+      { letra: 'C', texto: `demonstração do lado bom dos produtos naturais e o lado ruim dos produtos processados, sem, contudo, realizar uma crítica em relação à química.` },
+      { letra: 'D', texto: `elogio aos produtos naturais, reforçando-se a ideia de consumirmos mais desses produtos em detrimento de produtos processados com o auxílio da química.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1975,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia/Química - Desastre de Mariana: sedimentos e relevo',
+    enunciado: `Diferentes sedimentos podem ser misturados à água e, dependendo de sua natureza, podem formar soluções, emulsões, ou mesmo uma lama. No caso do mais recente desastre ambiental, ocorrido em uma barragem em Mariana, no interior de Minas Gerais, o que vazou para o ambiente foi uma lama que percorreu cerca de 600 km até chegar ao mar, no litoral do Espírito Santo. Mesmo misturando-se à agua do Rio Doce e depois à agua do mar, os sedimentos não se separaram da água para se depositar no solo, provavelmente porque interagem com a água. Com base no conhecimento de Química e considerando a região onde se originou o acidente, pode-se afirmar corretamente que os sedimentos são provenientes de uma região marcada por`,
+    opcoes: [
+      { letra: 'A', texto: `serras e cristas do complexo Gnáissico-Magmático e a lama contém majoritariamente areia e óxidos metálicos.` },
+      { letra: 'B', texto: `planícies quaternárias com a presença de falésias vivas e a lama contém majoritariamente argila e óxidos metálicos.` },
+      { letra: 'C', texto: `serras e cristas do complexo Gnáissico-Magmático e a lama contém majoritariamente argila e óxidos metálicos.` },
+      { letra: 'D', texto: `planícies quaternárias com a presença de falésias vivas e a lama contém majoritariamente areia e óxidos metálicos.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1976,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física/Geografia - Energia eólica: potência e velocidade do vento',
+    enunciado: `Denomina-se energia eólica a energia cinética contida no vento. Seu aproveitamento ocorre por meio da conversão da energia cinética de translação em energia cinética de rotação e, com o emprego de turbinas eólicas, também denominadas aerogeradores, é gerada energia elétrica. Existem atualmente, na região que mais produz energia eólica no Brasil, 306 usinas em operação, com o potencial de geração elétrica de aproximadamente 7.800 MWh (dados do Banco de Informações de Geração da ANEEL, 2016). Se nessa região, por razões naturais, a velocidade do vento fosse reduzida, mantendo-se a densidade do ar constante, teríamos uma redução de produção de energia elétrica.
+
+Indique a região em questão e qual seria a quantidade de energia elétrica produzida, se houvesse a redução da velocidade do vento pela metade.`,
+    opcoes: [
+      { letra: 'A', texto: `Região Sul; 3.900 MWh.` },
+      { letra: 'B', texto: `Região Nordeste; 1.950 MWh.` },
+      { letra: 'C', texto: `Região Nordeste; 3.900 MWh.` },
+      { letra: 'D', texto: `Região Sul; 1.950 MWh.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1977,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Polinizadores e produtividade agrícola',
+    enunciado: `Pesquisadores analisaram o número de polinizadores, a biodiversidade e o rendimento de cultivos dependentes de polinizadores (maçã, pepino, caju, café, feijão, algodão e canola, entre outros) em propriedades da África, Ásia e América do Sul. Nos países analisados, o rendimento agrícola cresceu de acordo com a densidade de polinizadores, indicando que a redução na população de abelhas e outros insetos poderia ser parcialmente responsável pela queda de produtividade.
+(Adaptado de http://revistapesquisa.fapesp.br/2016/01/21/insetos-elevam-produtividade-agricola/)
+
+Os resultados obtidos com a pesquisa relatada acima sugerem que:`,
+    opcoes: [
+      { letra: 'A', texto: `A presença de insetos nas lavouras pode ser uma das causas da queda de produtividade e biodiversidade.` },
+      { letra: 'B', texto: `Práticas agrícolas convencionais, com uso de pesticidas, favorecem os polinizadores e aumentam a produtividade.` },
+      { letra: 'C', texto: `A adoção de medidas que ofereçam condições de vida mais favoráveis a polinizadores pode resultar em aumento de produtividade do feijão.` },
+      { letra: 'D', texto: `A biodiversidade observada na África, Ásia e América do Sul demanda uso intenso de defensivos agrícolas.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1980,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - HPV: vírus, câncer e latência',
+    enunciado: `O HPV faz parte do grupo dos caudovírus. As verrugas genitais causadas pela infecção do vírus foram estudadas desde a Antiguidade, porém o vírus só foi descoberto 40 anos atrás. Pode-se afirmar corretamente que:`,
+    opcoes: [
+      { letra: 'A', texto: `A principal forma de se adquirir o HPV é através da ingestão de alimentos contaminados.` },
+      { letra: 'B', texto: `O câncer de colo de útero não pode ser causado pelo vírus HPV.` },
+      { letra: 'C', texto: `O vírus HPV pode permanecer latente por vários anos.` },
+      { letra: 'D', texto: `Não há tratamento nem vacina para o HPV.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1983,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Filogenia: comparação de sequências de DNA',
+    enunciado: `A figura a seguir ilustra fragmentos de um gene presente em 4 espécies identificadas com os números de 1 a 4 entre parênteses.
+- CACTTGTAAAACCAGTATAGACCCTAG (1)
+- CACTTGTAAAACCAGGATAGACGCTAG (2)
+- CACTTGTAAAACCAGTATAGACGCTAG (3)
+- CATTTTTAACACCAGGATAGACGCTAT (4)
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `As espécies 1 e 4 são mais próximas entre si do que as espécies 1 e 3.` },
+      { letra: 'B', texto: `As espécies 2 e 3 são mais próximas entre si do que as espécies 1 e 3.` },
+      { letra: 'C', texto: `As espécies 1 e 3 são mais próximas entre si do que as espécies 3 e 4.` },
+      { letra: 'D', texto: `As espécies 2 e 4 são mais próximas entre si do que as espécies 1 e 2.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1984,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Tecido adiposo branco e marrom',
+    enunciado: `O corpo humano é composto por pelo menos dois tipos de gordura. A mais comum é o tecido adiposo branco, um tipo perigoso que se acumula ao redor das vísceras e debaixo da pele, podendo causar obesidade e desencadear complicações metabólicas, como o diabetes tipo 2. A outra é o tecido adiposo marrom, que regula a produção de calor e, consequentemente, a temperatura corporal.
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `O tecido adiposo branco produz mais energia que o tecido adiposo marrom.` },
+      { letra: 'B', texto: `O tecido adiposo marrom não produz ATP, mas produz calor.` },
+      { letra: 'C', texto: `O tecido adiposo branco não produz ATP, mas produz calor.` },
+      { letra: 'D', texto: `O tecido adiposo branco Cardiovascular produz ATP e calor.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1985,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Biologia - Organela celular: identificação por estrutura',
+    enunciado: `Ao observar uma célula, um pesquisador visualizou uma estrutura delimitada por uma dupla camada de membrana fosfolipídica, contendo um sistema complexo de endomembranas repleto de proteínas integrais e periféricas. Verificou também que, além de conter seu próprio material genético, essa estrutura ocorria em abundância em todas as regiões meristemáticas de plantas. Qual seria essa estrutura celular?`,
+    opcoes: [
+      { letra: 'A', texto: `Cloroplasto.` },
+      { letra: 'B', texto: `Mitocôndria.` },
+      { letra: 'C', texto: `Núcleo.` },
+      { letra: 'D', texto: `Retículo endoplasmático.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1987,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Documento sobre a tomada de Palmares (1694)',
+    enunciado: `O documento abaixo foi redigido pelo governador de Pernambuco, Caetano de Melo e Castro, em 18 de agosto de 1694, para comunicar ao Rei de Portugal a tomada da Serra da Barriga.
+"(...) Não me parece dilatar a Vossa Majestade da gloriosa restauração dos Palmares, cuja feliz vitória senão avalia por menos que a expulsão dos holandeses, e assim foi festejada por todos estes povos com seis dias de luminárias. (...) Os negros se achando de modo poderosos que esperavam o nosso exército metidos na serra (....), fiando-se na aspereza do sítio, na multidão dos defensores. (...) Temeu-se muito a ruína destas Capitanias quando à vista de tamanho exército e repetidos socorros como haviam ido para aquela campanha deixassem de ser vencidos aqueles rebeldes pois imbativelmente se lhes unir-se os escravos todos destes moradores (....)".
+(Décio Freitas, República de Palmares: pesquisa e comentários em documentos históricos do século XVII. Maceió: UFAL, 2004, p. 129.)
+
+Sobre o documento acima e seus significados atuais, é correto afirmar que`,
+    opcoes: [
+      { letra: 'A', texto: `foi escrito por uma autoridade da Coroa na colônia e tem como principal conteúdo a comemoração da morte de Zumbi dos Palmares. A data de 20 de novembro, como referência ao líder do quilombo, tem uma conotação simbólica para a população negra em contraponto à visão oficial do 13 de maio de 1888.` },
+      { letra: 'B', texto: `o feito da tomada de Palmares, em 1694, pelos exércitos da Coroa, é entendido como menos glorioso quando comparado à expulsão dos holandeses de Pernambuco, em 1654. Os dois eventos históricos não têm o mesmo apelo para a formação da sociedade brasileira na atualidade.` },
+      { letra: 'C', texto: `o texto de Caetano de Melo e Castro indica que Palmares não gerou temor às estruturas coloniais da Capitania de Pernambuco. A comemoração oficial do Dia da Consciência Negra é uma invenção política do período recente.` },
+      { letra: 'D', texto: `o Quilombo de Palmares representou uma ameaça aos poderes coloniais, já que muitos eram os rebeldes que se organizavam ou se aliavam ao quilombo. A data é celebrada, na atualidade, como símbolo da resistência pelos movimentos negros.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1988,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - A mulher das classes populares urbanas no século XIX',
+    enunciado: `A dona de casa entre as classes populares urbanas é uma personagem maior e majoritária. A dona de casa não tem muitas papas na língua. Muitas vezes é uma rebelde, tanto na vida privada quanto na vida pública. E não raro paga um alto preço por isso, como alvo principal de violências que podem chegar ao crime "passional".
+(Adaptado de Michelle Perrot, "Figuras e papéis", em Philippe Ariès (org.), História da vida privada. São Paulo: Companhia das Letras, 1991. v. 4, p. 146.)
+
+A mulher das classes populares nas sociedades urbanas do século XIX na Europa`,
+    opcoes: [
+      { letra: 'A', texto: `tinha múltiplas funções, como educar os filhos, cuidar da casa e administrar as finanças, mas vivia restrita ao espaço doméstico e por isso sua rebeldia era punida com violência.` },
+      { letra: 'B', texto: `era responsável pelo trabalho doméstico e muitas vezes tinha uma jornada dupla, pelo trabalho externo que realizava em fábricas, pequenos comércios e outros serviços.` },
+      { letra: 'C', texto: `sofreu estigma e violência por revolucionar os costumes e liderar o movimento de conquista do voto feminino.` },
+      { letra: 'D', texto: `contrariava o senso comum de ser cordata e obediente, pois sua condição social indicava que não tinha referencial de uma boa educação.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1989,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - José de Alencar e o Golpe da Maioridade',
+    enunciado: `O escritor José de Alencar relata como ocorriam as reuniões do Clube da Maioridade, realizadas na casa de seu pai em 1840. Discutia-se nessas ocasiões a antecipação da maioridade do imperador D. Pedro II, então com apenas 14 anos, para que ele pudesse assumir o trono antes do tempo determinado pela Constituição. No fim da vida, José de Alencar rememora os episódios de sua infância e chega a uma surpreendente conclusão: os políticos que frequentavam sua casa na ocasião iam lá não porque estavam pensando no futuro do país, mas apenas para devorar tabletes e bombons de chocolate. Conforme o relato do escritor, os membros do Clube da Maioridade, discutindo altos assuntos na sala de sua casa, pareciam realmente gente séria e preocupada com os destinos do Brasil, até que chegava a hora do chocolate. Para Alencar, a discussão política no Brasil se resumia a um "devorar de chocolate", isto é, cada um defendia apenas seus interesses particulares e nada mais.
+(Adaptado de Daniel Pinha Silva, "O império do chocolate", em Revista de História.)
+
+Sobre o Golpe da Maioridade e a visão de José de Alencar a esse respeito, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `O golpe foi uma manobra das elites políticas, que criaram uma forma de alterar a Constituição e contemplar os seus interesses durante o período regencial, fato criticado por Alencar ao fazer uma anedota com o chocolate.` },
+      { letra: 'B', texto: `Ao entregar o poder a um jovem de 14 anos, alegando ser maior de 18, os políticos do Império manifestavam uma ousada visão política para evitar a influência da Inglaterra nos assuntos brasileiros, preservando seus interesses como donos de escravos.` },
+      { letra: 'C', texto: `O golpe foi uma resposta dos conservadores às propostas liberais que pretendiam estabelecer a República no país, e Alencar apontou uma prática política dos parlamentares que é recorrente na história do país.` },
+      { letra: 'D', texto: `José de Alencar expressou sua decepção com os políticos e, ao registrar sua visão sobre o Clube da Maioridade, o escritor contribuiu para inibir procedimentos semelhantes durante o Império, assegurando uma transição pacífica e legal para a República, em 1889.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1990,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - A propaganda no nazismo',
+    enunciado: `"Hitler considerava que a propaganda sempre deveria ser popular, dirigida às massas, desenvolvida de modo a levar em conta um nível de compreensão dos mais baixos. (...) O essencial da propaganda era atingir o coração das grandes massas, compreender seu mundo maniqueísta, representar seus sentimentos."
+(Alcir Lenharo, Nazismo: o triunfo da vontade. São Paulo: Ática, 1986, p. 47-48.)
+
+Sobre a propaganda no nazismo, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `o nível elementar da propaganda era contraposto às óperas e desfiles suntuosos que o regime nazista promovia.` },
+      { letra: 'B', texto: `a propaganda deveria restringir-se a poucos pontos, como o enaltecimento da superioridade racial e a defesa da democracia.` },
+      { letra: 'C', texto: `a propaganda deveria estimular o ódio das massas contra grupos específicos, como os judeus, negros, homossexuais e ciganos.` },
+      { letra: 'D', texto: `o cinema e a produção artística foram as áreas que resistiram ao sistema de propaganda do nazismo na Alemanha do final da década de 1930.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1992,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'História - Tropicalismo no contexto cultural brasileiro',
+    enunciado: `"O tropicalismo buscava revolucionar a linguagem e o comportamento na vida cotidiana, incorporando-se simultaneamente à sociedade de massa e aos mecanismos do mercado de produção cultural. Criticava ao mesmo tempo a ditadura e uma estética de esquerda acusada de menosprezar a forma artística. Articulava aspectos modernos e arcaicos, buscava retomar criticamente a tradição brasileira e absorver influências estrangeiras de modo 'antropofágico'."
+(Marcelo Ridenti, "Cultura", em Daniel Aarão Reis (org.), Modernização, ditadura e democracia: 1964-2010. Rio de Janeiro: Objetiva, 2014, p. 256.)
+
+O tropicalismo, no contexto cultural brasileiro dos anos 1960 e 1970,`,
+    opcoes: [
+      { letra: 'A', texto: `foi influenciado pelo manifesto antropofágico e propunha digerir aspectos da cultura mundial como a guitarra elétrica e a televisão para difundir o ideal de uma sociedade alinhada com os interesses da modernização econômica da ditadura.` },
+      { letra: 'B', texto: `era um movimento que criticava a ditadura, associada à Jovem Guarda, e a esquerda, identificada com a Bossa Nova, propondo uma leitura imparcial para a cultura, como se observa na música popular e na dramaturgia do Teatro Oficina.` },
+      { letra: 'C', texto: `criticava o Cinema Novo e a glamorização da "estética da fome", preferindo abrir-se para os movimentos internacionais, como fizeram o modernismo em relação ao futurismo e a vanguarda do grupo do Teatro Opinião.` },
+      { letra: 'D', texto: `usava referências eruditas e populares, incorporava aspectos da música pop mesclada a aspectos regionais e expressava críticas à ditadura e ao patrulhamento praticado por alguns fãs das canções de protesto.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1993,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia/Sociologia - Edward Said: civilizações não isoladas',
+    enunciado: `"Não existem culturas ou civilizações ilhadas. (...) Quanto mais insistirmos na separação de culturas e civilizações, mais imprecisos seremos sobre nós mesmos e os outros. No meu modo de pensar, a noção de uma civilização isolada é impossível. A verdadeira questão é se queremos trabalhar para civilizações separadas ou se devemos tomar o caminho mais integrador, mas talvez mais difícil, que é tentar vê-las como um imenso todo cujos contornos exatos uma pessoa sozinha não consegue captar, mas cuja existência certa podemos intuir e sentir."
+(Edward Said, Reflexões sobre o exílio e outros ensaios. São Paulo: Companhia das Letras, 2002, p. 317.)
+
+Sobre o conceito em questão e os contextos referidos pelo autor, é correto afirmar:`,
+    opcoes: [
+      { letra: 'A', texto: `o processo de globalização provocou a destruição da cultura dos povos não ocidentais e, por isso, aumentou práticas como o terrorismo a partir de 2001.` },
+      { letra: 'B', texto: `a ideia de civilização, como imaginada no século XIX, produziu a emancipação das Américas e o fim da disputa colonial no mundo.` },
+      { letra: 'C', texto: `o conceito de civilização foi estabelecido na Grécia Antiga e aperfeiçoado pelas práticas integradoras do imperialismo do século XIX ocorridas na África.` },
+      { letra: 'D', texto: `a lógica de integração de culturas é negada por grupos radicais e pelos defensores do princípio de que vivemos em um choque de civilizações.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1994,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Filosofia - Karl Jaspers: filosofia e políticos',
+    enunciado: `"Muitos políticos veem facilitado seu nefasto trabalho pela ausência da filosofia. Massas e funcionários são mais fáceis de manipular quando não pensam, mas tão somente usam de uma inteligência de rebanho. É preciso impedir que os homens se tornem sensatos. Mais vale, portanto, que a filosofia seja vista como algo entediante."
+(Karl Jaspers, Introdução ao pensamento filosófico. São Paulo: Cultrix, 1976, p.140.)
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `O filósofo lembra que a filosofia tem um potencial crítico que pode desagradar a políticos, poderosos e ao senso comum, tal como ocorreu na Grécia em relação a Sócrates.` },
+      { letra: 'B', texto: `A filosofia precisa ser entediante para estimular o pensamento crítico, rigoroso e formar pessoas sensatas, a partir do ensino de lógica, retórica e ética.` },
+      { letra: 'C', texto: `A ditadura militar no Brasil retirou a disciplina de filosofia das escolas por considerá-la subversiva, mas atenuou a medida estimulando os Centros Populares de Cultura (CPC), ligados a entidades estudantis.` },
+      { letra: 'D', texto: `Os políticos e a estrutura escolar não são o verdadeiro obstáculo ao ensino de filosofia, mas a concepção de que ela é difícil e tediosa, considerando-se que existem mecanismos para aproximá-la do senso comum.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1995,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Velocidade escalar média: Solar Impulse 2',
+    enunciado: `Em 2016 foi batido o recorde de voo ininterrupto mais longo da história. O avião Solar Impulse 2, movido a energia solar, percorreu quase 6480 km em aproximadamente 5 dias, partindo de Nagoya no Japão até o Havaí nos Estados Unidos da América. A velocidade escalar média desenvolvida pelo avião foi de aproximadamente`,
+    opcoes: [
+      { letra: 'A', texto: `54 km/h.` },
+      { letra: 'B', texto: `15 km/h.` },
+      { letra: 'C', texto: `1296 km/h.` },
+      { letra: 'D', texto: `198 km/h.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 1998,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Estrela de nêutrons: potência irradiada por um Pulsar',
+    enunciado: `Uma estrela de nêutrons é o objeto astrofísico mais denso que conhecemos, em que uma massa maior que a massa do Sol ocupa uma região do espaço de apenas alguns quilômetros de raio. Essas estrelas realizam um movimento de rotação, emitindo uma grande quantidade de radiação eletromagnética a uma frequência bem definida. Quando detectamos uma estrela de nêutrons através desse feixe de radiação, damos o nome a esse objeto de Pulsar. Considere que um Pulsar foi detectado, e que o total de energia cinética relacionada com seu movimento de rotação equivale a 2 x 10^42 J. Notou-se que, após um ano, o Pulsar perdeu 0,1% de sua energia cinética, principalmente em forma de radiação eletromagnética. A potência irradiada pelo Pulsar vale
+(Se necessário, utilize a aproximação 1 ano = 3,6 x 10^7 s.)`,
+    opcoes: [
+      { letra: 'A', texto: `7,2 x 10^46 W.` },
+      { letra: 'B', texto: `2,0 x 10^39 W.` },
+      { letra: 'C', texto: `5,6 x 10^31 W.` },
+      { letra: 'D', texto: `1,8 x 10^42 W.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2000,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Microfluídica: equação de continuidade',
+    enunciado: `A microfluídica é uma área de pesquisa que trabalha com a manipulação precisa de líquidos em canais com dimensões submilimétricas, chamados de microcanais, possibilitando o desenvolvimento de sistemas miniaturizados de análises químicas e biológicas. Considere que uma seringa com êmbolo cilíndrico de diâmetro D = 4 mm seja usada para injetar um líquido em um microcanal cilíndrico com diâmetro de d = 500 μm. Se o êmbolo for movido com uma velocidade de V = 4 mm/s, a velocidade v do líquido no microcanal será de`,
+    opcoes: [
+      { letra: 'A', texto: `256,0 mm/s.` },
+      { letra: 'B', texto: `32,0 mm/s.` },
+      { letra: 'C', texto: `62,5 μm/s.` },
+      { letra: 'D', texto: `500,0 μm/s.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2004,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Deslocamentos forçados e refugiados (ONU/ACNUR)',
+    enunciado: `De acordo com a Organização das Nações Unidas, a população global submetida a deslocamentos forçados cresceu substancialmente durante os últimos decênios, passando de 37,3 milhões para 65,3 milhões em 2015. Desse total, os refugiados representam 16,1 milhões de pessoas, 1,7 milhão a mais que o total registrado 12 meses antes. Mais da metade dos atuais refugiados do mundo (54%) procede de três países afetados por conflitos armados.
+(Adaptado de Agência da ONU para Refugiados - ACNUR - Documento Tendencias Globales, 2015.)
+
+Indique quais são esses três países.`,
+    opcoes: [
+      { letra: 'A', texto: `Myanmar, Síria, Somália.` },
+      { letra: 'B', texto: `Afeganistão, Síria, Somália.` },
+      { letra: 'C', texto: `Afeganistão, Grécia, Macedônia.` },
+      { letra: 'D', texto: `Grécia, Macedônia, Myanmar.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2006,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Manguezais: ecossistema costeiro',
+    enunciado: `A zona costeira brasileira abriga diversos ecossistemas de elevada relevância ambiental. Destacam-se, entre muitos outros, os manguezais. A respeito desse ecossistema costeiro, é correto afirmar que são`,
+    opcoes: [
+      { letra: 'A', texto: `áreas de extensões aquáticas dispostas em paralelo ao litoral e isoladas por cordões litorâneos; mantêm comunicação por canais com as águas fluviais e marinhas, possibilitando a deposição e circulação de sedimentos originados dos dois ambientes e dos ventos.` },
+      { letra: 'B', texto: `unidades geomorfológicas arenosas formadas pela ação permanente dos ventos, apresentando pouca ou nenhuma cobertura vegetal e variação de acúmulo de sedimentos; podem contribuir para a recarga dos lençóis freáticos.` },
+      { letra: 'C', texto: `áreas de planície arenosa de origem marinha de grande fragilidade ambiental; apresentam variação de cobertura vegetal em diferentes estágios sucessionais e variação de topografia do terreno; contêm zonas inundáveis e não inundáveis.` },
+      { letra: 'D', texto: `ambientes de transição, ecótonos, entre áreas marinhas e terrestres, ricos em sedimentos constituídos de matéria orgânica e nutrientes; predomina vegetação arbustiva, que sobrevive em ambientes de permanente inundação.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2007,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Ressacas: fenômeno costeiro em Santos',
+    enunciado: `Conforme foi noticiado na mídia, no dia 21 de agosto de 2016, a cidade de Santos (SP) foi atingida por uma ressaca que paralisou por 30 horas o principal porto do país, inundou vias e causou transtornos para a mobilidade urbana, o funcionamento de empresas e do comércio.
+
+As ressacas resultam`,
+    opcoes: [
+      { letra: 'A', texto: `das dinâmicas das massas de ar formadas nas áreas oceânicas, sempre no verão; são causadas por diferença de pressão atmosférica de áreas de baixa pressão nos oceanos para áreas de alta pressão nos continentes.` },
+      { letra: 'B', texto: `do contato de massas de ar com características termodinâmicas semelhantes, formando sistemas de circulação frontais; quanto menor a umidade do sistema, maior é a instabilidade atmosférica.` },
+      { letra: 'C', texto: `da ação dos sistemas de ciclones extratropicais, especialmente no inverno; o deslocamento de grandes volumes de água decorre da diferença de pressão atmosférica, que produz ventos intensos.` },
+      { letra: 'D', texto: `da ação de ciclones tropicais formados no Atlântico Sul, sempre nos meses de inverno; nesta estação do ano são menores as diferenças de temperatura entre o polo sul e o equador.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2008,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Movimento pendular na Região Metropolitana de São Paulo',
+    enunciado: `O estudo Arranjos Populacionais e Concentrações Urbanas do Brasil (IBGE, 2015) identificou 294 arranjos populacionais no País, de diferentes escalas e naturezas. O Arranjo Populacional da Região Metropolitana de São Paulo (SP) é caracterizado pela extensão e intensidade de seus fluxos: aproximadamente 1.750.000 pessoas deslocam-se cotidianamente entre os municípios que compõem o Arranjo para estudar e trabalhar.
+
+Essa dinâmica espacial é melhor explicada pelo conceito de`,
+    opcoes: [
+      { letra: 'A', texto: `migração interna.` },
+      { letra: 'B', texto: `movimento pendular.` },
+      { letra: 'C', texto: `migração urbano-urbano.` },
+      { letra: 'D', texto: `movimento sazonal.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2009,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Geografia - Empresas globais de tecnologia e leis antitruste',
+    enunciado: `A presença de empresas globais que dominam o mercado de tecnologia no mundo costuma gerar atritos com os governos nacionais e impactos de diferentes dimensões em sua indústria cultural e na privacidade dos indivíduos. Diante do poder dessas grandes empresas, os Estados nacionais buscam estabelecer regras antitrustes para o setor.
+(Adaptado de Farhad Manjoo, The New York Times/Folha de São Paulo, 11/06/2016, p. 1 e 2.)
+
+Com relação ao poder econômico e político das empresas globais de tecnologia digital e as ações dos governos nacionais, é correto afirmar que:`,
+    opcoes: [
+      { letra: 'A', texto: `A tecnologia digital representou uma expressiva reestruturação da ordem global. Houve maior democratização da circulação de informações pela internet e os Estados nacionais perderam totalmente o controle do conteúdo transmitido pelas redes digitais.` },
+      { letra: 'B', texto: `O poder das grandes empresas de tecnologia predomina apenas nos países pobres, cujos Estados dispõem de limitadas legislações para o controle desses grupos econômicos em seus territórios, sobretudo no que diz respeito às mídias globais.` },
+      { letra: 'C', texto: `As leis antitrustes surgiram no final do século XX e foram criadas pelos Estados nacionais para o controle do poder econômico das empresas globais do mercado de tecnologia digital, setor que costuma desenvolver práticas de mercado anticompetitivas.` },
+      { letra: 'D', texto: `As empresas de tecnologia digital formam verdadeiros oligopólios e controlam diversas redes informacionais; apesar disso, elas ainda dependem das legislações dos Estados nacionais para a atuação nos territórios e comercialização dos seus produtos.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2010,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Geografia - Distribuição regional da população brasileira (Censos IBGE)',
+    enunciado: `| Regiões / Anos | 1950 | 1960 | 1970 | 1980 | 1991 | 2000 | 2010 |
+| Centro-Oeste | 3,0 | 4,9 | 5,8 | 3,8 | 6,4 | 6,9 | 7,4 |
+| Norte | 3,9 | 4,4 | 4,1 | 5,6 | 7,6 | 7,0 | 8,3 |
+| Sul | 15,1 | 16,0 | 17,7 | 16,8 | 14,8 | 15,1 | 14,4 |
+| Nordeste | 34,6 | 30,3 | 29,2 | 31,6 | 28,8 | 28,1 | 27,8 |
+| Sudeste | 43,4 | 43,7 | 42,7 | 43,4 | 42,7 | 42,6 | 42,1 |
+(Fonte: Instituto Brasileiro de Geografia e Estatística - IBGE.)
+
+Os sucessivos Censos Demográficos do IBGE (Instituto Brasileiro de Geografia e Estatística) buscam conhecer a distribuição da população pelo território brasileiro, conhecimento relevante para os mais diversos tipos de planejamento.
+Considerando os dados da tabela acima, assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `As regiões Norte e Centro-Oeste foram as únicas com acréscimos contínuos na participação regional desde 1950, fenômeno associado aos fluxos migratórios nacionais incentivados por políticas governamentais de ocupação do território.` },
+      { letra: 'B', texto: `A região Nordeste foi a única que apresentou redução contínua de participação regional, fenômeno associado às grandes secas do sertão, responsáveis pela migração da população para as outras regiões do país ao longo de todo o século XX.` },
+      { letra: 'C', texto: `A região Sudeste tem maior participação regional na população do país, apresentando redução a partir de 1991, fenômeno associado ao decréscimo, em números absolutos, de sua população pela elevada queda da taxa de fecundidade.` },
+      { letra: 'D', texto: `A região Sul apresentou acréscimo de participação regional até 1991, ocorrendo queda nas décadas seguintes, fenômeno associado ao regresso dos filhos de imigrantes europeus em busca de trabalho nos países de origem de seus pais.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2011,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências Humanas',
+    assunto: 'Sociologia/Filosofia - Octávio Ianni: a violência na sociedade contemporânea',
+    enunciado: `"A fúria do tirano, o terrorismo de Estado, a guerra, o massacre, o escravismo, o racismo, o fundamentalismo, o tribalismo, o nazismo, sempre envolvem alegações racionais, humanitárias, ideais, ao mesmo tempo que se exercem em formas e técnicas brutais, irracionais, enlouquecidas. Em geral, a fúria da violência tem algo a ver com a destruição do 'outro', 'diferente', 'estranho', com o que busca a purificação da sociedade, o exorcismo de dilemas difíceis, a sublimação do absurdo embutido nas formas da sociabilidade e nos jogos das forças sociais."
+(Octávio Ianni, "A violência na sociedade contemporânea", em Estudos de Sociologia, Araraquara, v. 7, n. 12, p. 8, 2002.)
+
+Assinale a alternativa correta.`,
+    opcoes: [
+      { letra: 'A', texto: `Os atos de violência sempre implicam alegações irracionais e práticas racionais que transformam os jogos das forças sociais e as tramas de sociabilidade que envolvem as coletividades.` },
+      { letra: 'B', texto: `A violência nasce como técnica de poder, exercita-se como modo de preservar, ampliar ou conquistar a propriedade, adquirindo desdobramentos psicológicos desprezíveis para agentes e vítimas.` },
+      { letra: 'C', texto: `Os atos de violência não têm excepcional significação, porque mantêm as mesmas formas e técnicas, razões e convicções conforme as configurações e os movimentos da sociedade.` },
+      { letra: 'D', texto: `A violência entra como elemento importante da cultura política com a qual se ordenam ou se transformam as relações entre os donos do poder e os setores sociais tornados subalternos.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2014,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Oxidação e redução: ferro velho e ouro velho',
+    enunciado: `"Ferro Velho Coisa Nova" e "Compro Ouro Velho" são expressões associadas ao comércio de dois materiais que podem ser reaproveitados. Em vista das propriedades químicas dos dois materiais mencionados nas expressões, pode-se afirmar corretamente que`,
+    opcoes: [
+      { letra: 'A', texto: `nos dois casos as expressões são apropriadas, já que ambos os materiais se oxidam com o tempo, o que permite distinguir o "novo" do "velho".` },
+      { letra: 'B', texto: `nos dois casos as expressões são inapropriadas, já que ambos os materiais se reduzem com o tempo, o que não permite distinguir o "novo" do "velho".` },
+      { letra: 'C', texto: `a primeira expressão é apropriada, pois o ferro se reduz com o tempo, enquanto a segunda expressão não é apropriada, pois o ouro é um material inerte.` },
+      { letra: 'D', texto: `a primeira expressão é apropriada, pois o ferro se oxida com o tempo, enquanto a segunda expressão não é apropriada, pois o ouro é um material inerte.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2016,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Teor alcoólico: cerveja versus cachaça',
+    enunciado: `É muito comum o uso de expressões no diminutivo para tentar "diminuir" a quantidade de algo prejudicial à saúde. Se uma pessoa diz que ingeriu 10 latinhas de cerveja (330 mL cada) e se compara a outra que ingeriu 6 doses de cachacinha (50 mL cada), pode-se afirmar corretamente que, apesar de em ambas as situações haver danos à saúde, a pessoa que apresenta maior quantidade de álcool no organismo foi a que ingeriu
+Dados: teor alcoólico na cerveja = 5% V/V; teor alcoólico na cachaça = 45% V/V.`,
+    opcoes: [
+      { letra: 'A', texto: `as latinhas de cerveja, porque o volume ingerido é maior neste caso.` },
+      { letra: 'B', texto: `as cachacinhas, porque a relação entre o teor alcoólico e o volume ingerido é maior neste caso.` },
+      { letra: 'C', texto: `as latinhas de cerveja, porque o produto entre o teor alcoólico e o volume ingerido é maior neste caso.` },
+      { letra: 'D', texto: `as cachacinhas, porque o teor alcoólico é maior neste caso.` },
+    ],
+    correta: 'C',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2018,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Física - Evaporação e resfriamento: "suor" do chope',
+    enunciado: `"Quem tem que suar é o chope, não você". Esse é o slogan que um fabricante de chope encontrou para evidenciar as qualidades de seu produto. Uma das interpretações desse slogan é que o fabricante do chope recomenda que seu produto deve ser ingerido a uma temperatura bem baixa. Pode-se afirmar corretamente que o chope, ao suar, tem a sua temperatura`,
+    opcoes: [
+      { letra: 'A', texto: `diminuída, enquanto a evaporação do suor no corpo humano evita que sua temperatura aumente.` },
+      { letra: 'B', texto: `aumentada, enquanto a evaporação do suor no corpo humano evita que sua temperatura diminua.` },
+      { letra: 'C', texto: `diminuída, enquanto a evaporação do suor no corpo humano evita que sua temperatura diminua.` },
+      { letra: 'D', texto: `aumentada, enquanto a evaporação do suor no corpo humano evita que sua temperatura aumente.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2019,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química/Física - Vapores de combustível e exposição do frentista',
+    enunciado: `"Pode arredondar?" Esta é uma pergunta que frentistas de postos de combustíveis fazem durante o abastecimento, quando o travamento automático da bomba é acionado. O fabricante do veículo faz a recomendação de não arredondar, pensando na preservação do veículo, mas o dono do posto pede que o frentista arredonde, para vender mais combustível. Por outro lado, pensando na saúde do frentista, prejudicada pela exposição aos vapores de combustível, pode-se afirmar corretamente que:`,
+    opcoes: [
+      { letra: 'A', texto: `Qualquer que seja a resposta do consumidor, até o travamento automático ou passando do automático, a saúde do frentista será prejudicada, pois sempre haverá eliminação de vapores durante o abastecimento.` },
+      { letra: 'B', texto: `A resposta mais adequada do consumidor seria "sim", porque a quantidade de vapores eliminados no abastecimento é a mesma, e o prejuízo à saúde do frentista é o mesmo, independentemente do volume de combustível adicionado ao tanque.` },
+      { letra: 'C', texto: `A resposta mais adequada do consumidor seria "não", pois somente a partir do travamento automático é que há eliminação de vapores durante o abastecimento e só depois disso há prejuízo para a saúde do frentista.` },
+      { letra: 'D', texto: `A resposta mais adequada do consumidor seria "sim", porque não haverá eliminação de vapores durante o abastecimento e assim nunca haverá prejuízo para a saúde do frentista.` },
+    ],
+    correta: 'A',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2021,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Ciências da Natureza',
+    assunto: 'Química - Etilenoglicol: propriedades coligativas em radiadores',
+    enunciado: `O etilenoglicol é uma substância muito solúvel em água, largamente utilizado como aditivo em radiadores de motores de automóveis, tanto em países frios como em países quentes. Considerando a função principal de um radiador, pode-se inferir corretamente que`,
+    opcoes: [
+      { letra: 'A', texto: `a solidificação de uma solução aquosa de etilenoglicol deve começar a uma temperatura mais elevada que a da água pura e sua ebulição, a uma temperatura mais baixa que a da água pura.` },
+      { letra: 'B', texto: `a solidificação de uma solução aquosa de etilenoglicol deve começar a uma temperatura mais baixa que a da água pura e sua ebulição, a uma temperatura mais elevada que a da água pura.` },
+      { letra: 'C', texto: `tanto a solidificação de uma solução aquosa de etilenoglicol quanto a sua ebulição devem começar em temperaturas mais baixas que as da água pura.` },
+      { letra: 'D', texto: `tanto a solidificação de uma solução aquosa de etilenoglicol quanto a sua ebulição devem começar em temperaturas mais altas que as da água pura.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2023,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Haruki Murakami: The Birth of My Kitchen-Table Fiction',
+    enunciado: `The Birth of My Kitchen-Table Fiction
+By Haruki Murakami
+Most people – most of us who are part of Japanese society – graduate from school, then find work, then, after some time has passed, get married. Even I originally intended to follow that pattern. Yet in reality I married, then started working, then finally managed to graduate. In other words, the order I chose was the exact opposite to what was considered normal.
+Since I hated the idea of working for a company, I decided to open my own establishment, a place where people could go to listen to jazz records, have a coffee, eat snacks and drink. It was a simple, rather happy-go-lucky kind of idea: running a business like that would let me relax listening to my favorite music from morning till night.
+(Adaptado de H. Murakami, Wind and Pinball: Two Novels. Tradução do japonês para o inglês de Ted Goossen. London: Penguin Random House, 2015, p.5.)
+
+O autor do texto`,
+    opcoes: [
+      { letra: 'A', texto: `fez o que era normal para os jovens japoneses na época, abrindo uma loja de discos.` },
+      { letra: 'B', texto: `fez o que era normal para os jovens japoneses, mas em uma ordem totalmente diferente.` },
+      { letra: 'C', texto: `queria viver feliz ouvindo música o dia todo, sem trabalhar.` },
+      { letra: 'D', texto: `queria ganhar dinheiro trabalhando só com música e viver feliz.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2025,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Ranking Universities by "Greenness"',
+    enunciado: `Ranking Universities by 'Greenness'
+Universities these days are working hard to improve their sustainability credentials, with efforts that include wind power, organic food and competitions to save energy. They are also adding courses related to sustainability and energy. But which university is the greenest?
+Several ranking systems have emerged to offer their take. The Princeton Review recently came out with its second annual green ratings. Fifteen colleges earned the highest possible score - including Harvard, Yale and the University of California, Berkeley.
+Another group, the Sustainable Endowment Institute's Green ReportCard.org, rates colleges on several different areas of green compliance, such as recycling, student involvement and green building. Its top grade for overall excellence, an A-, was earned by 15 schools.
+(Adaptado de http://green.blogs.nytimes.com/2009/08/20/ranking-universities-by-greenness/?_r=0. Acessado em 31/08/2016.)
+
+Conforme o texto, universidades norte-americanas estão se empenhando para`,
+    opcoes: [
+      { letra: 'A', texto: `oferecer mais cursos sobre ecologia.` },
+      { letra: 'B', texto: `melhorar sua posição em um ranking que define as instituições mais "verdes".` },
+      { letra: 'C', texto: `oferecer os melhores cursos sobre preservação ambiental.` },
+      { letra: 'D', texto: `participar de uma competição que define os campi com maior área verde.` },
+    ],
+    correta: 'B',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2026,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Why Everyone Should Read Harry Potter',
+    enunciado: `Why Everyone Should Read Harry Potter
+September 9, 2014
+Harry Potter is the best selling book series of all time. But it's had its reproaches. Various Christian groups claimed the books promoted paganism and witchcraft to children. Washington Post book critic Ron Charles called the fact that adults were also hooked on Potter a "bad case of cultural infantilism." Charles and others also cited a certain artistic banality in massively commercial story-telling, while others criticized Hogwarts, the wizardry academy attended by Potter, for only rewarding innate talents.
+The Anglo-American writer Christopher Hitchens, on the other hand, praised J. K. Rowling for freeing English children's literature from dreams of riches and class and snobbery and giving us a world of youthful democracy and diversity. A growing body of evidence suggests that reading Rowling's work, at least as a youth, might be a good thing.
+(Adaptado de http://www.scientificamerican.com/article/why-everyone-should-read-harry-potter/. Acessado em 02/09/2016.)
+
+A leitura do excerto permite concluir adequadamente que:`,
+    opcoes: [
+      { letra: 'A', texto: `A série Harry Potter é aprovada por críticos literários e grupos religiosos com base nos mesmos argumentos.` },
+      { letra: 'B', texto: `As qualidades literárias de Harry Potter justificam seu sucesso entre os adultos.` },
+      { letra: 'C', texto: `A abordagem educacional de Hogwarts recompensa as habilidades desenvolvidas por meio do esforço pessoal.` },
+      { letra: 'D', texto: `Para os personagens da série Harry Potter, o sonho de ascendência social e poder financeiro é pouco relevante.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
+  {
+    id: 2028,
+    ano: 2017,
+    prova: 'UNICAMP',
+    area: 'Linguagens',
+    assunto: 'Inglês - Roman documents discovered (Vindolanda)',
+    enunciado: `Roman documents discovered
+We often think that the best information from the Roman world comes from Egypt, where the dryness preserves papyri. However, in Britain the reverse conditions occur. At Vindolanda – a Roman fort located two miles behind Hadrian's Wall – the humidity preserved wooden writing tablets that were thrown into a bonfire when the fort was evacuated in CE 105. These wooden tablets were one of the most important discoveries made in Roman Britain in the 20th century. They were used not for grand writings but for memoranda and accounts, so they provide the best insight into life in the Roman army found anywhere in the world. One of the tablets says:
+"Octavius to Candidus: 'I need money. I have bought 5,000 bushels of grain, and unless you send me some money, I shall lose my deposit and be embarrassed'".
+(Adaptado de http://www.archaeology.co.uk/specials/the-timeline-of-britain/vindolanda-2.htm. Acessado em 28/08/2016.)
+
+Os documentos descobertos em Vindolanda`,
+    opcoes: [
+      { letra: 'A', texto: `são papiros preservados pelo clima seco da região em que foram encontrados.` },
+      { letra: 'B', texto: `contêm informações sobre a evacuação do forte no ano 105 da Era Cristã.` },
+      { letra: 'C', texto: `preservam registros de disputas financeiras entre cidadãos comuns.` },
+      { letra: 'D', texto: `são registros em madeira, com informações preciosas sobre a vida no exército romano.` },
+    ],
+    correta: 'D',
+    temImagem: false,
+    imagem: null,
+  },
 ]
 export const AREAS = ["Todas", "Ciências da Natureza", "Ciências Humanas", "Matemática", "Linguagens"]
 export const PROVAS = ["Todas", "ENEM", "FUVEST", "UNICAMP", "UNESP"]
