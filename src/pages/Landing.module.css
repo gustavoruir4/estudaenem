@@ -83,10 +83,8 @@
 .logoAprov { color: #fff; }
 .logoAI { color: #8B5CF6; }
 .logoMark {
-  width: 30px; height: 30px; border-radius: 9px;
-  overflow: hidden;
+  width: 30px; height: 30px;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 2px 12px rgba(139, 92, 246, 0.5);
 }
 .logoImg {
   width: 100%; height: 100%;

@@ -46,13 +46,10 @@
 .logoMark {
   width: 54px;
   height: 54px;
-  border-radius: 16px;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 18px;
-  box-shadow: var(--shadow-glow);
 }
 .logoImg {
   width: 100%;
